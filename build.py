@@ -76,6 +76,18 @@ td code{font:13px ui-monospace,Menlo,Consolas,monospace;direction:ltr;unicode-bi
 .tag{display:inline-block;font-size:.75rem;border:1px solid var(--bd);border-radius:99px;padding:0 8px;color:var(--mut)}
 .badge-live{color:var(--ok);border-color:var(--ok)}
 .ad{margin:18px 0;min-height:90px}
+textarea,select{width:100%;padding:9px 11px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--fg);font:inherit}
+textarea{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9rem}
+select{width:auto;max-width:100%}input[type=checkbox]{width:auto}
+.row{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}.row label{margin:0}
+.two{display:grid;gap:12px;grid-template-columns:1fr 1fr}@media(max-width:700px){.two{grid-template-columns:1fr}}
+.checks{display:grid;gap:4px 14px;grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}.chk{margin:0;font-size:.88rem}
+pre .add{color:#6fdc9a}pre .del{color:#ff8a80}.sep{color:var(--mut)}
+.risk{display:inline-block;border-radius:99px;padding:0 8px;font-size:.78rem;border:1px solid var(--bd)}
+.risk-medium{color:#b26a00;border-color:#b26a00}.risk-high{color:var(--err);border-color:var(--err)}.risk-low,.risk-none{color:var(--ok);border-color:var(--ok)}
+ul.cl{list-style:none;padding:0;margin:8px 0 0}ul.cl li{margin:4px 0}
+details{margin:14px 0}summary{cursor:pointer;font-weight:600}
+@media print{header,footer,.btn,nav,.langs,textarea{display:none}}
 form.box,.panel{max-width:440px;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:18px;margin:16px 0}
 label{display:block;margin:10px 0 4px;font-size:.9rem}
 input{width:100%;padding:9px 11px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--fg);font:inherit}
@@ -152,6 +164,7 @@ ROOT_JS = (
 I18N = {}
 SITECFG = {}
 PROJECTS = []
+LAB = []
 
 
 def esc(s):
@@ -206,9 +219,23 @@ def load_json(name):
 
 
 def load():
-    global I18N, SITECFG, PROJECTS
+    global I18N, SITECFG, PROJECTS, LAB
     items = load_json("commands.json")
     I18N = load_json("i18n.json")
+    extra = load_json("tools_i18n.json")
+    for lang in LANGS:
+        I18N["ui"][lang].update(extra["ui"][lang])
+    LAB = load_json("lab.json")
+    for sc in LAB:
+        for k in ("id", "vendor", "cmd", "output", "title", "question", "answer"):
+            if k not in sc:
+                log.error("lab.json eksik alan: %s", sc.get("id"))
+                sys.exit(1)
+        for k in ("title", "question", "answer"):
+            for lang in LANGS:
+                if not sc[k].get(lang):
+                    log.error("lab.json çeviri eksik: %s/%s/%s", sc["id"], k, lang)
+                    sys.exit(1)
     SITECFG = load_json("site.json")
     PROJECTS = load_json("projects.json")
 
@@ -263,6 +290,7 @@ def header(lang, path):
         '<header><a class="logo" href="{home}">{site}</a>'
         "<nav>"
         '<a href="{home}">{n_home}</a>'
+        '<a href="{tools}">{n_tools}</a>'
         '<a href="{proj}">{n_proj}</a>'
         '<a href="{sup}">{n_sup}</a>'
         '<a id="nav-login" href="{login}" data-acc-href="{acc}" data-acc-text="{acc_t}">{n_login}</a>'
@@ -270,6 +298,7 @@ def header(lang, path):
         '</nav><div class="langs">{langs}</div></header>'
     ).format(
         home=lurl(lang), site=esc(SITE), n_home=t("nav_home"),
+        tools=lurl(lang, "tools/"), n_tools=t("nav_tools"),
         proj=lurl(lang, "projects/"), n_proj=t("nav_projects"),
         sup=lurl(lang, "support/"), n_sup=t("nav_support"),
         login=lurl(lang, "login/"), acc=lurl(lang, "account/"), acc_t=t("nav_account"),
@@ -429,8 +458,9 @@ def build_home(lang, items, cats, paths):
         )
         for i in items
     )
-    body = '<h1>{}</h1><p class="lead">{}</p><p>{}</p>{}<div class="grid">{}</div>'.format(
-        esc(T(lang, "home_h1")), esc(T(lang, "home_lead")), cat_links, ad_slot(), cards
+    body = '<h1>{}</h1><p class="lead">{}</p><p><a class="btn sec" href="{}">{}</a></p><p>{}</p>{}<div class="grid">{}</div>'.format(
+        esc(T(lang, "home_h1")), esc(T(lang, "home_lead")), lurl(lang, "tools/"), esc(T(lang, "tools_title")),
+        cat_links, ad_slot(), cards
     )
     write("{}/index.html".format(lang), page(lang, T(lang, "home_title"), T(lang, "home_desc"), "", body))
     paths.add("")
@@ -541,6 +571,53 @@ def build_auth(lang, paths):
         paths.add(path)
 
 
+TOOLS = [("lab", "lab", "lab"), ("generator", "gen", "generator"), ("safe-change", "safe", "safe"),
+         ("config-diff", "diff", "diff"), ("report", "report", "report")]
+
+
+def build_tools(lang, paths):
+    tdata = {k: v for k, v in I18N["ui"][lang].items() if k.startswith("t_")}
+    cards = ""
+    for slug, key, _js in TOOLS:
+        cards += (
+            '<div class="card"><h3 style="margin:0 0 4px">{}</h3><p style="margin:0 0 8px">{}</p>'
+            '<a class="btn sec" href="{}">{}</a></div>'
+        ).format(
+            esc(T(lang, "tool_%s_name" % key)), esc(T(lang, "tool_%s_desc" % key)),
+            lurl(lang, "tools/%s/" % slug), esc(T(lang, "tool_open")),
+        )
+    body = '<h1>{}</h1><p class="lead">{}</p><div class="note">{}</div><div class="grid">{}</div>'.format(
+        esc(T(lang, "tools_title")), esc(T(lang, "tools_lead")), esc(T(lang, "tools_privacy")), cards
+    )
+    write("{}/tools/index.html".format(lang), page(lang, T(lang, "tools_title") + " | " + SITE, T(lang, "tools_lead"), "tools/", body))
+    paths.add("tools/")
+    for slug, key, js in TOOLS:
+        path = "tools/%s/" % slug
+        data = {"t": tdata}
+        if js == "lab":
+            data["scenarios"] = [
+                {"id": sc["id"], "vendor": sc["vendor"], "cmd": sc["cmd"], "output": sc["output"],
+                 "title": sc["title"][lang], "question": sc["question"][lang], "answer": sc["answer"][lang]}
+                for sc in LAB
+            ]
+        payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+        name = T(lang, "tool_%s_name" % key)
+        desc = T(lang, "tool_%s_desc" % key)
+        body = (
+            '<div class="crumbs"><a href="{home}">{crumb}</a> › <a href="{tools}">{tools_n}</a></div>'
+            '<h1>{name}</h1><p class="lead">{desc}</p><div class="note">{priv}</div><div id="app" data-tool="{js}"></div>'
+        ).format(
+            home=lurl(lang), crumb=esc(T(lang, "crumb_home")), tools=lurl(lang, "tools/"), tools_n=esc(T(lang, "nav_tools")),
+            name=esc(name), desc=esc(desc), priv=esc(T(lang, "tools_privacy")), js=js,
+        )
+        script = (
+            '<script id="tool-data" type="application/json">{}</script>'
+            '<script src="{}/assets/netlib.js?v={}"></script><script src="{}/assets/tools.js?v={}"></script>'
+        ).format(payload, BASE_PATH, TODAY, BASE_PATH, TODAY)
+        write("{}/{}index.html".format(lang, path), page(lang, name + " | " + SITE, desc, path, body, tech_ld(name, desc, lang), script=script))
+        paths.add(path)
+
+
 def write_meta(sitemap_paths):
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -587,6 +664,7 @@ def main():
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir()
+    shutil.copytree(ROOT / "assets", OUT / "assets")
     sitemap_paths = set()
     total = 0
     for lang in LANGS:
@@ -600,6 +678,7 @@ def main():
         build_projects(lang, paths)
         build_support(lang, paths)
         build_auth(lang, paths)
+        build_tools(lang, paths)
         total += len(paths)
         # arama motoru için: auth sayfaları (noindex) sitemap dışında
         sitemap_paths |= {p for p in paths if p not in ("signup/", "login/", "account/")}

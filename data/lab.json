@@ -1,0 +1,104 @@
+[
+  {
+    "id": "errdisable",
+    "vendor": "cisco",
+    "cmd": "show interfaces status",
+    "output": "Port      Name        Status       Vlan  Duplex Speed Type\nGi1/0/1   SERVER-01   connected    10    a-full a-1000 10/100/1000BaseTX\nGi1/0/2   PC-MUH      connected    20    a-full a-100  10/100/1000BaseTX\nGi1/0/3   PRINTER     err-disabled 20    auto   auto   10/100/1000BaseTX\nGi1/0/4               notconnect   20    auto   auto   10/100/1000BaseTX\nGi1/0/5   AP-02       connected    30    a-full a-1000 10/100/1000BaseTX",
+    "title": {"tr": "Cisco: err-disabled ve notconnect farkı", "en": "Cisco: err-disabled vs notconnect", "ar": "Cisco: الفرق بين err-disabled وnotconnect"},
+    "question": {
+      "tr": "Gi1/0/3 ve Gi1/0/4 çalışmıyor. İkisi arasındaki fark nedir ve her biri için ilk adımın ne olurdu?",
+      "en": "Gi1/0/3 and Gi1/0/4 are not working. What is the difference between them and what would be your first step for each?",
+      "ar": "المنفذان Gi1/0/3 وGi1/0/4 لا يعملان. ما الفرق بينهما وما أول خطوة لكل منهما؟"
+    },
+    "answer": {
+      "tr": "Gi1/0/3 err-disabled: switch portu bir ihlal yüzünden kendisi kapattı (port-security, BPDU guard, loop, DHCP snooping rate limit gibi). Nedeni 'show logging' ve 'show errdisable detect' ile bul; neden giderilmeden shutdown/no shutdown yapmak portu tekrar düşürür.\nGi1/0/4 notconnect: link yok. Switch tarafında hata değil; kablo, karşı cihazın gücü veya patch panel kontrol edilir.",
+      "en": "Gi1/0/3 err-disabled: the switch shut the port itself because of a violation (port-security, BPDU guard, a loop, DHCP snooping rate limit, etc.). Find the cause with 'show logging' and 'show errdisable detect'; bouncing the port (shutdown/no shutdown) without fixing the cause will just trip it again.\nGi1/0/4 notconnect: no link. This is not a switch-side fault; check the cable, the power of the far-end device or the patch panel.",
+      "ar": "Gi1/0/3 في حالة err-disabled: أغلق المحوّل المنفذ بنفسه بسبب مخالفة (port-security أو BPDU guard أو حلقة أو حد معدل DHCP snooping وغيرها). اعثر على السبب عبر 'show logging' و'show errdisable detect'؛ وإعادة تشغيل المنفذ (shutdown/no shutdown) دون معالجة السبب ستعيد إسقاطه.\nGi1/0/4 في حالة notconnect: لا يوجد رابط. هذا ليس عطلًا في المحوّل؛ افحص الكابل أو تشغيل الجهاز المقابل أو لوحة التوصيل."
+    }
+  },
+  {
+    "id": "huawei-brief",
+    "vendor": "huawei",
+    "cmd": "display interface brief",
+    "output": "PHY: Physical\n*down: administratively down\n^down: standby\n(l): loopback\n(s): spoofing\nInterface                   PHY   Protocol InUti OutUti   inErrors  outErrors\nGigabitEthernet0/0/1        up    up          2%     1%          0          0\nGigabitEthernet0/0/2        *down down        0%     0%          0          0\nGigabitEthernet0/0/3        down  down        0%     0%          0          0\nGigabitEthernet0/0/4        up    up         45%    12%        312          0",
+    "title": {"tr": "Huawei: *down, down ve hata sayacı", "en": "Huawei: *down, down and error counters", "ar": "Huawei: *down وdown وعدّادات الأخطاء"},
+    "question": {
+      "tr": "GE0/0/2, GE0/0/3 ve GE0/0/4 için ne söylersin?",
+      "en": "What would you say about GE0/0/2, GE0/0/3 and GE0/0/4?",
+      "ar": "ماذا تستنتج بشأن GE0/0/2 وGE0/0/3 وGE0/0/4؟"
+    },
+    "answer": {
+      "tr": "GE0/0/2 *down: yönetimsel olarak kapatılmış (shutdown). Açmak için arayüzde 'undo shutdown'.\nGE0/0/3 down: yönetimsel kapalı değil ama link yok; kablo/karşı cihaz kontrol edilir.\nGE0/0/4 up/up ama inErrors 312: fiziksel katman şüphesi (kablo, SFP, speed/duplex uyumsuzluğu). 'display interface GigabitEthernet0/0/4' ile sayaçların artıp artmadığına bak; 'reset counters interface' ile sıfırlayıp tekrar izle.",
+      "en": "GE0/0/2 *down: administratively shut down. Enable it with 'undo shutdown' under the interface.\nGE0/0/3 down: not administratively shut, but there is no link; check the cable and the far-end device.\nGE0/0/4 is up/up but inErrors is 312: suspect the physical layer (cable, SFP, speed/duplex mismatch). Run 'display interface GigabitEthernet0/0/4' to see whether the counters keep growing; reset the counters and watch again.",
+      "ar": "GE0/0/2 *down: معطّلة إداريًا (shutdown). لتفعيلها استخدم 'undo shutdown' داخل الواجهة.\nGE0/0/3 down: ليست معطّلة إداريًا لكن لا يوجد رابط؛ افحص الكابل والجهاز المقابل.\nGE0/0/4 في حالة up/up لكن inErrors يساوي 312: اشتبه بالطبقة الفيزيائية (كابل أو SFP أو عدم تطابق speed/duplex). نفّذ 'display interface GigabitEthernet0/0/4' لمعرفة هل تتزايد العدّادات، ثم صفّر العدّادات وراقب من جديد."
+    }
+  },
+  {
+    "id": "vlan-brief",
+    "vendor": "cisco",
+    "cmd": "show vlan brief",
+    "output": "VLAN Name                             Status    Ports\n---- -------------------------------- --------- -------------------------------\n1    default                          active    Gi1/0/9, Gi1/0/10, Gi1/0/11\n10   SERVERS                          active    Gi1/0/1, Gi1/0/2\n20   USERS                            active    Gi1/0/3, Gi1/0/4, Gi1/0/5\n30   VOICE                            active\n99   MGMT                             act/lshut\n1002 fddi-default                     act/unsup",
+    "title": {"tr": "Cisco: show vlan brief yorumlama", "en": "Cisco: reading show vlan brief", "ar": "Cisco: قراءة show vlan brief"},
+    "question": {
+      "tr": "Bu çıktıda dikkatini çeken 3 şey nedir?",
+      "en": "What are the 3 things that catch your eye in this output?",
+      "ar": "ما الأمور الثلاثة اللافتة في هذا الناتج؟"
+    },
+    "answer": {
+      "tr": "1) Gi1/0/9-11 default VLAN 1'de: kullanılmayan veya yanlış yapılandırılmış portlar. Güvenlik için kullanılmayan portlar kapatılıp boş bir VLAN'a alınmalı.\n2) VLAN 30'da access portu yok: yalnızca trunk üzerinden taşınıyor olabilir. Trunk portlar bu çıktıda görünmez; 'show interfaces trunk' ile doğrula.\n3) VLAN 99 act/lshut: VLAN yerel olarak kapatılmış (shutdown vlan 99). Yönetim VLAN'ı olması beklenen bir VLAN için bu sürpriz olabilir.\n(1002 fddi-default gibi satırlar rezervedir, yok sayılır.)",
+      "en": "1) Gi1/0/9-11 sit in the default VLAN 1: unused or misconfigured ports. For security, unused ports should be shut down and moved to an unused VLAN.\n2) VLAN 30 has no access ports: it may only be carried over trunks. Trunk ports do not appear in this output; confirm with 'show interfaces trunk'.\n3) VLAN 99 act/lshut: the VLAN is locally shut down (shutdown vlan 99). That is a surprise for what is expected to be the management VLAN.\n(Rows such as 1002 fddi-default are reserved and can be ignored.)",
+      "ar": "1) المنافذ Gi1/0/9-11 في VLAN 1 الافتراضي: منافذ غير مستخدمة أو مضبوطة خطأً. لأسباب أمنية يجب تعطيل المنافذ غير المستخدمة ونقلها إلى VLAN غير مستخدم.\n2) لا توجد منافذ access في VLAN 30: ربما تُنقل عبر منافذ trunk فقط. منافذ trunk لا تظهر في هذا الناتج؛ تحقق عبر 'show interfaces trunk'.\n3) VLAN 99 بحالة act/lshut: الـ VLAN معطّل محليًا (shutdown vlan 99). وهذا مفاجئ لشبكة يُفترض أنها VLAN الإدارة.\n(الصفوف مثل 1002 fddi-default محجوزة ويمكن تجاهلها.)"
+    }
+  },
+  {
+    "id": "ipsg-binding",
+    "vendor": "cisco",
+    "cmd": "show ip dhcp snooping binding",
+    "output": "MacAddress          IpAddress        Lease(sec)  Type           VLAN  Interface\n------------------  ---------------  ----------  -------------  ----  --------------------\n00:1A:2B:3C:4D:01   10.20.0.15       86012       dhcp-snooping  20    GigabitEthernet1/0/3\n00:1A:2B:3C:4D:02   10.20.0.16       85870       dhcp-snooping  20    GigabitEthernet1/0/4\nTotal number of bindings: 2",
+    "title": {"tr": "Cisco: IPSG açıkken statik IP'li sunucu", "en": "Cisco: static-IP server with IPSG enabled", "ar": "Cisco: خادم بعنوان ثابت مع تفعيل IPSG"},
+    "question": {
+      "tr": "VLAN 20'de IP Source Guard açık. Gi1/0/5'e bağlı, statik IP'li (10.20.0.50) sunucu ağa çıkamıyor. Neden?",
+      "en": "IP Source Guard is enabled on VLAN 20. A server with a static IP (10.20.0.50) on Gi1/0/5 cannot reach the network. Why?",
+      "ar": "تم تفعيل IP Source Guard على VLAN 20. خادم بعنوان ثابت (10.20.0.50) على Gi1/0/5 لا يستطيع الوصول إلى الشبكة. لماذا؟"
+    },
+    "answer": {
+      "tr": "Statik IP'li cihaz DHCP'den kira almadığı için binding tablosunda kaydı yok. IPSG, kaynak IP'si bu tabloda olmayan trafiği düşürür.\nÇözüm: o port için statik binding ekle (ör. 'ip source binding <mac> vlan 20 10.20.0.50 interface Gi1/0/5') ya da bu portu IPSG kapsamı dışına al. DAI açıksa statik hostlar için ARP ACL (ip arp inspection filter) de gerekir. Huawei'de karşılığı statik user-bind kaydıdır.",
+      "en": "A static-IP host never gets a DHCP lease, so it has no entry in the binding table. IPSG drops traffic whose source IP is not in that table.\nFix: add a static binding for that port (for example 'ip source binding <mac> vlan 20 10.20.0.50 interface Gi1/0/5') or exclude the port from IPSG. If DAI is on, static hosts also need an ARP ACL (ip arp inspection filter). On Huawei the equivalent is a static user-bind entry.",
+      "ar": "الجهاز ذو العنوان الثابت لا يحصل على إيجار DHCP، لذلك لا يوجد له سجل في جدول binding. ويقوم IPSG بإسقاط الحركة التي لا يوجد عنوان مصدرها في هذا الجدول.\nالحل: أضف binding ثابتًا لذلك المنفذ (مثل 'ip source binding <mac> vlan 20 10.20.0.50 interface Gi1/0/5') أو استثنِ المنفذ من IPSG. وإذا كان DAI مفعّلًا فالأجهزة الثابتة تحتاج أيضًا إلى ARP ACL (ip arp inspection filter). المكافئ في Huawei هو سجل user-bind ثابت."
+    }
+  },
+  {
+    "id": "crc",
+    "vendor": "cisco",
+    "cmd": "show interfaces GigabitEthernet1/0/12",
+    "output": "GigabitEthernet1/0/12 is up, line protocol is up (connected)\n  Full-duplex, 1000Mb/s, media type is 10/100/1000BaseTX\n  5 minute input rate 4821000 bits/sec, 612 packets/sec\n     1587 input errors, 1587 CRC, 0 frame, 0 overrun, 0 ignored\n     0 output errors, 0 collisions, 0 interface resets",
+    "title": {"tr": "Cisco: CRC hataları", "en": "Cisco: CRC errors", "ar": "Cisco: أخطاء CRC"},
+    "question": {
+      "tr": "Port up/up ama 1587 CRC var. Ne anlama gelir, sonraki adımın ne olur?",
+      "en": "The port is up/up but shows 1587 CRC errors. What does it mean and what is your next step?",
+      "ar": "المنفذ في حالة up/up لكن فيه 1587 خطأ CRC. ماذا يعني ذلك وما خطوتك التالية؟"
+    },
+    "answer": {
+      "tr": "Girişte bozuk frame alınıyor. Genellikle fiziksel katman: kötü/uzun patch kablo, kirli veya bozuk SFP, parazit ya da duplex/speed uyumsuzluğu.\nSonraki adım: 'clear counters' ile sayaçları sıfırla ve artıp artmadığını izle (artmıyorsa eski bir olaydır). Artıyorsa kabloyu değiştir, 'show interfaces transceiver detail' ile optik değerlere bak, iki uçta speed/duplex ayarını doğrula.",
+      "en": "Corrupted frames are arriving on the port. This is usually the physical layer: a bad or over-long patch cable, a dirty or failing SFP, interference, or a duplex/speed mismatch.\nNext step: run 'clear counters' and watch whether they grow again (if not, it was an old event). If they grow, replace the cable, check optical levels with 'show interfaces transceiver detail', and verify speed/duplex on both ends.",
+      "ar": "تصل إلى المنفذ إطارات تالفة. غالبًا السبب في الطبقة الفيزيائية: كابل توصيل رديء أو طويل، أو SFP متسخ أو معطوب، أو تداخل، أو عدم تطابق duplex/speed.\nالخطوة التالية: نفّذ 'clear counters' وراقب هل تتزايد من جديد (وإن لم تتزايد فهو حدث قديم). وإن تزايدت فبدّل الكابل وافحص القيم الضوئية عبر 'show interfaces transceiver detail' وتحقق من speed/duplex في الطرفين."
+    }
+  },
+  {
+    "id": "stp-brief",
+    "vendor": "huawei",
+    "cmd": "display stp brief",
+    "output": " MSTID  Port                        Role  STP State     Protection\n   0    GigabitEthernet0/0/1        DESI  FORWARDING      NONE\n   0    GigabitEthernet0/0/47       ROOT  FORWARDING      NONE\n   0    GigabitEthernet0/0/48       ALTE  DISCARDING      NONE",
+    "title": {"tr": "Huawei: STP port rolleri", "en": "Huawei: STP port roles", "ar": "Huawei: أدوار منافذ STP"},
+    "question": {
+      "tr": "Hangi port root bridge'e gidiyor, hangisi bloklu ve neden?",
+      "en": "Which port leads to the root bridge, which one is blocked, and why?",
+      "ar": "أي منفذ يؤدي إلى root bridge، وأيها محجوب، ولماذا؟"
+    },
+    "answer": {
+      "tr": "GE0/0/47 ROOT: root bridge'e en iyi yol, FORWARDING.\nGE0/0/48 ALTE (alternate) DISCARDING: yedek yol; döngüyü önlemek için bloklanmış. 47 düşerse root port olur.\nGE0/0/1 DESI FORWARDING: aşağı yöndeki segment için designated port.\nRoot bridge kimliğini 'display stp' ile doğrula.",
+      "en": "GE0/0/47 ROOT: the best path to the root bridge, FORWARDING.\nGE0/0/48 ALTE (alternate) DISCARDING: the backup path, blocked to prevent a loop. It becomes the root port if 47 fails.\nGE0/0/1 DESI FORWARDING: designated port for the downstream segment.\nConfirm the root bridge ID with 'display stp'.",
+      "ar": "GE0/0/47 ROOT: أفضل مسار إلى root bridge، وهو في حالة FORWARDING.\nGE0/0/48 ALTE (alternate) DISCARDING: المسار الاحتياطي، محجوب لمنع الحلقات. ويصبح root port إذا تعطل 47.\nGE0/0/1 DESI FORWARDING: المنفذ designated للقطاع السفلي.\nتحقق من معرّف root bridge عبر 'display stp'."
+    }
+  }
+]
