@@ -1,36 +1,27 @@
-# Doğa/Orman Bilgi Botu — Kurulum (ücretsiz sürüm)
+# NetCmd – Cisco / Huawei / Aruba komut karşılıkları (programmatic SEO)
 
-Bu sürüm Anthropic/OpenAI kullanmıyor — sabit bir bilgi havuzundan rastgele
-seçim yapıyor ve Unsplash'ten ücretsiz, lisanslı bir görsel çekiyor. Tek
-maliyet X (Twitter) API'nin post başına küçük ücretidir.
+Bağımlılıksız Python static site generator. Veri: `data/commands.json`. Çıktı: `dist/`.
 
-## 1. API anahtarlarını al
-- **X (Twitter)**: developer.x.com → yeni App oluştur → App permissions'ı
-  **Read and Write** yap → Keys and tokens'tan 4 değeri al (API Key/Secret,
-  Access Token/Secret oluştur). Yeni hesaplarda pay-per-use varsayılan;
-  metin+görselli bir post ~0.015$ civarı, günde 1 post ayda ~0.5$ eder.
-  Kredi kartı bağlayıp Developer Console'dan ön ödeme yapman gerekiyor.
-- **Unsplash**: unsplash.com/developers → yeni app → Access Key (tamamen ücretsiz)
+## Yayına alma ($0)
 
-## 2. Yerelde test et (opsiyonel)
+1. GitHub'da yeni repo aç (örn. `netcmd-site`), dosyaları push et (`main` branch).
+2. Repo → Settings → Pages → Source: **GitHub Actions**.
+3. Push sonrası workflow otomatik build + deploy eder. Adres: `https://<kullanici>.github.io/netcmd-site/`
+4. Google Search Console → URL prefix property ekle → `sitemap.xml` gönder.
+
+## Yerel test
+
 ```bash
-pip install -r requirements.txt
-cp .env.example .env   # değerleri doldur
-export $(cat .env | xargs)
-python twitter_nature_bot.py
+BASE_URL=http://localhost:8000 python build.py
+cd dist && python -m http.server 8000
 ```
 
-## 3. Otomatik/günlük çalıştırma (GitHub Actions — ücretsiz)
-1. Bu dosyaları GitHub reponuza yükle
-2. `.github_workflows_template/nature_bot.yml` dosyasını
-   `.github/workflows/nature_bot.yml` yoluna taşı
-3. Repo → Settings → Secrets and variables → Actions → şu 5 secret'ı ekle:
-   `TWITTER_API_KEY`, `TWITTER_API_SECRET`, `TWITTER_ACCESS_TOKEN`,
-   `TWITTER_ACCESS_SECRET`, `UNSPLASH_ACCESS_KEY`
-4. Actions sekmesinden "Run workflow" ile elle test et
+## Ölçekleme
 
-## Notlar
-- Bilgi havuzunu (`FACTS` listesi, twitter_nature_bot.py içinde) istediğin
-  kadar genişletebilirsin — ne kadar çok madde olursa tekrarlar o kadar azalır.
-- Twitter/X App'in "Read and Write" izni olmazsa 403 hatası alırsın —
-  en sık karşılaşılan sorun bu.
+`data/commands.json`'a yeni kayıt ekle (alanlar: slug, title, cat, note, cisco/huawei/aruba → mode + cmds). Her kayıt 7 sayfa üretir
+(1 ana + 6 vendor-çeviri). Önce kaliteyi koru: komutları gerçek cihazda doğrula, `note` alanına operasyonel ipucu yaz.
+
+## AdSense
+
+Önce özel domain al, AdSense onayı çıkınca repo → Settings → Variables → `ADSENSE_CLIENT=ca-pub-XXXX`. Build `ads.txt` ve script'i ekler.
+Reklam yerleşimi için `ad_slot()` fonksiyonuna ad unit kodunu koy.
