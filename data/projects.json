@@ -1,0 +1,28 @@
+[
+  {
+    "id": "netcmd",
+    "status": "live",
+    "url": "",
+    "name": {"tr": "NetCmd", "en": "NetCmd", "ar": "NetCmd"},
+    "desc": {
+      "tr": "Cisco / Huawei / Aruba komut karşılıkları rehberi (ücretsiz).",
+      "en": "Cisco / Huawei / Aruba command equivalents guide (free).",
+      "ar": "دليل مقابل أوامر Cisco / Huawei / Aruba (مجاني)."
+    }
+  },
+  {
+    "id": "automation-templates",
+    "status": "soon",
+    "url": "",
+    "name": {
+      "tr": "Ağ otomasyon şablonları",
+      "en": "Network automation templates",
+      "ar": "قوالب أتمتة الشبكات"
+    },
+    "desc": {
+      "tr": "Ansible / Netmiko için hazır, hata yönetimli şablon paketleri.",
+      "en": "Ready-made Ansible / Netmiko template packs with error handling.",
+      "ar": "حزم قوالب جاهزة لـ Ansible / Netmiko مع معالجة الأخطاء."
+    }
+  }
+]

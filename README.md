@@ -1,27 +1,19 @@
-# NetCmd – Cisco / Huawei / Aruba komut karşılıkları (programmatic SEO)
+# NetCmd – Cisco / Huawei / Aruba komut karşılıkları
 
-Bağımlılıksız Python static site generator. Veri: `data/commands.json`. Çıktı: `dist/`.
+Bağımlılıksız Python static site generator. Diller: TR / EN / AR (RTL).
+Render static site: build `python3 build.py`, publish `dist`, env `BASE_URL`.
 
-## Yayına alma ($0)
+## Düzenlenecek dosyalar (data/)
+- `commands.json`  komutlar (TR ana metin)
+- `i18n.json`      arayüz + EN/AR çevirileri (yeni komut eklerken `items` altına en/ar ekle, yoksa build hata verir)
+- `site.json`      `iban`, `holder`, `bank` (Destek ol sayfası); Supabase url + publishable key
+- `projects.json`  Projeler sayfası (status: live | soon)
 
-1. GitHub'da yeni repo aç (örn. `netcmd-site`), dosyaları push et (`main` branch).
-2. Repo → Settings → Pages → Source: **GitHub Actions**.
-3. Push sonrası workflow otomatik build + deploy eder. Adres: `https://<kullanici>.github.io/netcmd-site/`
-4. Google Search Console → URL prefix property ekle → `sitemap.xml` gönder.
+## Üyelik
+Supabase Auth (e-posta + şifre). Supabase → Authentication → URL Configuration:
+Site URL = `https://netcmd-site.onrender.com`, Redirect URLs'e `https://netcmd-site.onrender.com/**` ekle.
 
 ## Yerel test
-
 ```bash
-BASE_URL=http://localhost:8000 python build.py
-cd dist && python -m http.server 8000
+BASE_URL=http://localhost:8000 python3 build.py && cd dist && python3 -m http.server 8000
 ```
-
-## Ölçekleme
-
-`data/commands.json`'a yeni kayıt ekle (alanlar: slug, title, cat, note, cisco/huawei/aruba → mode + cmds). Her kayıt 7 sayfa üretir
-(1 ana + 6 vendor-çeviri). Önce kaliteyi koru: komutları gerçek cihazda doğrula, `note` alanına operasyonel ipucu yaz.
-
-## AdSense
-
-Önce özel domain al, AdSense onayı çıkınca repo → Settings → Variables → `ADSENSE_CLIENT=ca-pub-XXXX`. Build `ads.txt` ve script'i ekler.
-Reklam yerleşimi için `ad_slot()` fonksiyonuna ad unit kodunu koy.

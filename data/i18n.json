@@ -1,0 +1,263 @@
+{
+  "ui": {
+    "tr": {
+      "nav_home": "Komutlar", "nav_projects": "Projeler", "nav_support": "Destek ol",
+      "nav_login": "Giriş", "nav_signup": "Üye ol", "nav_account": "Hesabım",
+      "home_h1": "Cisco ↔ Huawei ↔ Aruba komut karşılıkları",
+      "home_lead": "Çoklu vendor ağlarda çalışan mühendisler için hızlı komut rehberi.",
+      "home_title": "NetCmd: Cisco, Huawei ve Aruba Komut Karşılıkları",
+      "home_desc": "Cisco IOS, Huawei VRP ve Aruba AOS komutlarını yan yana karşılaştıran ağ mühendisi başvuru rehberi.",
+      "crumb_home": "Ana sayfa",
+      "cmd_count": "{n} komut",
+      "cat_title": "{cat} Komutları: Cisco, Huawei, Aruba",
+      "cat_desc": "{cat} kategorisindeki {n} ağ komutunun Cisco, Huawei ve Aruba karşılıkları.",
+      "cat_h1": "{cat} komutları",
+      "cmd_title": "{title}: Cisco, Huawei ve Aruba Komutları",
+      "cmd_h1": "{title}: Cisco / Huawei / Aruba",
+      "cmd_lead": "Üç platformda aynı işin komut karşılıkları.",
+      "cmd_desc": "{title} için Cisco {c}, Huawei {h} ve Aruba {a} komutlarının karşılaştırması.",
+      "table_h": "Karşılaştırma tablosu", "th_vendor": "Vendor", "th_cmd": "Komut", "th_mode": "Mod",
+      "note_label": "Not:", "warn_label": "Dikkat:",
+      "translate_h": "Vendor çevirisi", "related_h": "İlgili komutlar",
+      "pair_title": "{A} {cmd} Komutunun {B} Karşılığı",
+      "pair_desc": "{A} {Aos} üzerindeki '{cmd}' komutunun {B} {Bos} karşılığı: {bcmd}.",
+      "pair_lead": "{title} işlemi için {A} komutunun {B} tarafındaki eşdeğeri.",
+      "pair_all": "Üç vendor'ın tamamını görmek için:",
+      "footer": "Komutlar yazılım sürümüne göre değişebilir; üretimde uygulamadan önce lab ortamında doğrulayın.",
+      "updated": "Son güncelleme",
+      "signup_title": "Üye ol", "signup_lead": "Yeni komut ve projelerden haberdar ol.",
+      "f_name": "Ad", "f_email": "E-posta", "f_password": "Şifre (en az 8 karakter)",
+      "btn_signup": "Üye ol",
+      "signup_ok": "Doğrulama e-postası gönderildi. E-postanı kontrol edip bağlantıya tıkla.",
+      "have_account": "Zaten üye misin?", "no_account": "Hesabın yok mu?",
+      "login_title": "Giriş yap", "btn_login": "Giriş yap",
+      "login_err": "E-posta veya şifre hatalı.",
+      "account_title": "Hesabım", "acc_email": "E-posta", "acc_name": "Ad",
+      "btn_logout": "Çıkış yap", "loading": "Yükleniyor…", "generic_err": "Bir hata oluştu.",
+      "auth_unavailable": "Üyelik şu an yapılandırılmamış.",
+      "support_title": "Destek ol",
+      "support_lead": "NetCmd ücretsiz bir proje. Faydalı bulduysan banka havalesi/EFT ile destek olabilirsin. Destek tamamen isteğe bağlıdır.",
+      "iban_label": "IBAN", "holder_label": "Hesap sahibi", "bank_label": "Banka",
+      "copy": "Kopyala", "copied": "Kopyalandı",
+      "support_soon": "IBAN bilgisi yakında eklenecek.",
+      "support_note": "Açıklama kısmına “NetCmd” yazabilirsin. Teşekkürler!",
+      "projects_title": "Projeler", "projects_lead": "Geliştirdiğimiz proje ve ürünler.",
+      "status_live": "Aktif", "status_soon": "Yakında", "open": "Aç",
+      "projects_cta": "Yeni projelerden haberdar olmak için üye ol.",
+      "not_found": "Sayfa bulunamadı", "back_home": "Ana sayfaya dön"
+    },
+    "en": {
+      "nav_home": "Commands", "nav_projects": "Projects", "nav_support": "Support us",
+      "nav_login": "Log in", "nav_signup": "Sign up", "nav_account": "My account",
+      "home_h1": "Cisco ↔ Huawei ↔ Aruba command equivalents",
+      "home_lead": "A quick command reference for engineers working in multi-vendor networks.",
+      "home_title": "NetCmd: Cisco, Huawei and Aruba Command Equivalents",
+      "home_desc": "A network engineer's reference comparing Cisco IOS, Huawei VRP and Aruba AOS commands side by side.",
+      "crumb_home": "Home",
+      "cmd_count": "{n} commands",
+      "cat_title": "{cat} Commands: Cisco, Huawei, Aruba",
+      "cat_desc": "Cisco, Huawei and Aruba equivalents for {n} network commands in the {cat} category.",
+      "cat_h1": "{cat} commands",
+      "cmd_title": "{title}: Cisco, Huawei and Aruba Commands",
+      "cmd_h1": "{title}: Cisco / Huawei / Aruba",
+      "cmd_lead": "Command equivalents for the same task on three platforms.",
+      "cmd_desc": "{title}: comparison of Cisco {c}, Huawei {h} and Aruba {a} commands.",
+      "table_h": "Comparison table", "th_vendor": "Vendor", "th_cmd": "Command", "th_mode": "Mode",
+      "note_label": "Note:", "warn_label": "Heads up:",
+      "translate_h": "Vendor translation", "related_h": "Related commands",
+      "pair_title": "{B} Equivalent of the {A} {cmd} Command",
+      "pair_desc": "The {B} {Bos} equivalent of the '{cmd}' command on {A} {Aos}: {bcmd}.",
+      "pair_lead": "The {B} equivalent of the {A} command for: {title}.",
+      "pair_all": "To see all three vendors together:",
+      "footer": "Commands can vary by software version; verify in a lab before applying to production.",
+      "updated": "Last updated",
+      "signup_title": "Sign up", "signup_lead": "Stay up to date with new commands and projects.",
+      "f_name": "Name", "f_email": "Email", "f_password": "Password (at least 8 characters)",
+      "btn_signup": "Sign up",
+      "signup_ok": "Verification email sent. Check your inbox and click the link.",
+      "have_account": "Already a member?", "no_account": "No account yet?",
+      "login_title": "Log in", "btn_login": "Log in",
+      "login_err": "Incorrect email or password.",
+      "account_title": "My account", "acc_email": "Email", "acc_name": "Name",
+      "btn_logout": "Log out", "loading": "Loading…", "generic_err": "Something went wrong.",
+      "auth_unavailable": "Membership is not configured right now.",
+      "support_title": "Support us",
+      "support_lead": "NetCmd is a free project. If you find it useful, you can support it with a bank transfer. Support is entirely optional.",
+      "iban_label": "IBAN", "holder_label": "Account holder", "bank_label": "Bank",
+      "copy": "Copy", "copied": "Copied",
+      "support_soon": "Bank details will be added soon.",
+      "support_note": "You can write “NetCmd” in the transfer description. Thank you!",
+      "projects_title": "Projects", "projects_lead": "Projects and products we are building.",
+      "status_live": "Live", "status_soon": "Coming soon", "open": "Open",
+      "projects_cta": "Sign up to hear about new projects.",
+      "not_found": "Page not found", "back_home": "Back to home"
+    },
+    "ar": {
+      "nav_home": "الأوامر", "nav_projects": "المشاريع", "nav_support": "ادعمنا",
+      "nav_login": "تسجيل الدخول", "nav_signup": "إنشاء حساب", "nav_account": "حسابي",
+      "home_h1": "مقابل أوامر Cisco وHuawei وAruba",
+      "home_lead": "دليل سريع للمهندسين العاملين في شبكات متعددة الموردين.",
+      "home_title": "NetCmd: مقابل أوامر Cisco وHuawei وAruba",
+      "home_desc": "مرجع لمهندسي الشبكات يقارن أوامر Cisco IOS وHuawei VRP وAruba AOS جنبًا إلى جنب.",
+      "crumb_home": "الصفحة الرئيسية",
+      "cmd_count": "{n} أمر",
+      "cat_title": "أوامر {cat}: Cisco وHuawei وAruba",
+      "cat_desc": "مقابلات Cisco وHuawei وAruba لـ {n} أمر شبكة ضمن فئة {cat}.",
+      "cat_h1": "أوامر {cat}",
+      "cmd_title": "{title}: أوامر Cisco وHuawei وAruba",
+      "cmd_h1": "{title}: Cisco / Huawei / Aruba",
+      "cmd_lead": "مقابلات الأوامر لنفس المهمة على المنصات الثلاث.",
+      "cmd_desc": "مقارنة أوامر {title}: ‏Cisco {c} وHuawei {h} وAruba {a}.",
+      "table_h": "جدول المقارنة", "th_vendor": "المورّد", "th_cmd": "الأمر", "th_mode": "الوضع",
+      "note_label": "ملاحظة:", "warn_label": "تنبيه:",
+      "translate_h": "الترجمة بين الموردين", "related_h": "أوامر ذات صلة",
+      "pair_title": "مقابل أمر {A} ‏{cmd} في {B}",
+      "pair_desc": "مقابل الأمر '{cmd}' في {A} {Aos} على {B} {Bos}: ‏{bcmd}.",
+      "pair_lead": "المكافئ في {B} لأمر {A} الخاص بـ: {title}.",
+      "pair_all": "لعرض الموردين الثلاثة معًا:",
+      "footer": "قد تختلف الأوامر حسب إصدار البرنامج؛ تحقق منها في بيئة اختبار قبل التطبيق على الإنتاج.",
+      "updated": "آخر تحديث",
+      "signup_title": "إنشاء حساب", "signup_lead": "تابع الأوامر والمشاريع الجديدة.",
+      "f_name": "الاسم", "f_email": "البريد الإلكتروني", "f_password": "كلمة المرور (8 أحرف على الأقل)",
+      "btn_signup": "إنشاء حساب",
+      "signup_ok": "تم إرسال رسالة التحقق. افتح بريدك وانقر على الرابط.",
+      "have_account": "لديك حساب؟", "no_account": "ليس لديك حساب؟",
+      "login_title": "تسجيل الدخول", "btn_login": "دخول",
+      "login_err": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+      "account_title": "حسابي", "acc_email": "البريد الإلكتروني", "acc_name": "الاسم",
+      "btn_logout": "تسجيل الخروج", "loading": "جارٍ التحميل…", "generic_err": "حدث خطأ.",
+      "auth_unavailable": "خدمة الحسابات غير مفعّلة حاليًا.",
+      "support_title": "ادعمنا",
+      "support_lead": "NetCmd مشروع مجاني. إذا وجدته مفيدًا يمكنك دعمه بحوالة مصرفية. الدعم اختياري تمامًا.",
+      "iban_label": "IBAN", "holder_label": "صاحب الحساب", "bank_label": "البنك",
+      "copy": "نسخ", "copied": "تم النسخ",
+      "support_soon": "سيتم إضافة بيانات IBAN قريبًا.",
+      "support_note": "يمكنك كتابة «NetCmd» في خانة الوصف. شكرًا لك!",
+      "projects_title": "المشاريع", "projects_lead": "المشاريع والمنتجات التي نطورها.",
+      "status_live": "نشط", "status_soon": "قريبًا", "open": "فتح",
+      "projects_cta": "أنشئ حسابًا لتصلك أخبار المشاريع الجديدة.",
+      "not_found": "الصفحة غير موجودة", "back_home": "العودة إلى الرئيسية"
+    }
+  },
+  "cats": {
+    "Görüntüleme": {"en": "Display", "ar": "العرض"},
+    "Sistem": {"en": "System", "ar": "النظام"},
+    "Routing": {"en": "Routing", "ar": "التوجيه"},
+    "VLAN / Port": {"en": "VLAN / Port", "ar": "VLAN / المنفذ"},
+    "L2 Güvenlik": {"en": "L2 Security", "ar": "أمان الطبقة الثانية"}
+  },
+  "items": {
+    "vlan-listeleme": {
+      "en": {"title": "Display the VLAN list", "note": "On Huawei VRP, display commands also work inside system-view; the 'do' prefix used on Cisco is not needed."},
+      "ar": {"title": "عرض قائمة VLAN", "note": "في Huawei VRP تعمل أوامر display أيضًا داخل system-view، ولا حاجة للبادئة 'do' المستخدمة في Cisco."}
+    },
+    "arayuz-ip-ozeti": {
+      "en": {"title": "Interface IP summary", "note": "All three platforms show interface name, IP address and status (up/down) columns."},
+      "ar": {"title": "ملخص عناوين IP للواجهات", "note": "تعرض المنصات الثلاث أعمدة اسم الواجهة وعنوان IP والحالة (up/down)."}
+    },
+    "calisan-konfigurasyon": {
+      "en": {"title": "Display the running configuration", "note": "On Huawei, use 'display saved-configuration' to see the saved configuration."},
+      "ar": {"title": "عرض الإعدادات الجارية", "note": "في Huawei استخدم 'display saved-configuration' لعرض الإعدادات المحفوظة."}
+    },
+    "konfigurasyon-kaydetme": {
+      "en": {"title": "Save the configuration", "note": "Huawei's 'save' asks for confirmation (Y/N); handle this prompt separately in automation (Netmiko)."},
+      "ar": {"title": "حفظ الإعدادات", "note": "الأمر 'save' في Huawei يطلب تأكيدًا (Y/N)؛ تعامل مع هذه الرسالة بشكل منفصل في الأتمتة (Netmiko)."}
+    },
+    "mac-adres-tablosu": {
+      "en": {"title": "Display the MAC address table", "note": "For a specific MAC use 'address <mac>' on Cisco and 'display mac-address <mac>' on Huawei."},
+      "ar": {"title": "عرض جدول عناوين MAC", "note": "لعنوان MAC محدد استخدم 'address <mac>' في Cisco و'display mac-address <mac>' في Huawei."}
+    },
+    "arp-tablosu": {
+      "en": {"title": "Display the ARP table", "note": "Only meaningful on devices that have L3 interfaces."},
+      "ar": {"title": "عرض جدول ARP", "note": "مفيد فقط على الأجهزة التي تحتوي على واجهات من الطبقة الثالثة."}
+    },
+    "routing-tablosu": {
+      "en": {"title": "Display the routing table", "note": "On Huawei the table is called 'routing-table', not 'route'."},
+      "ar": {"title": "عرض جدول التوجيه", "note": "في Huawei يُسمّى الجدول 'routing-table' وليس 'route'."}
+    },
+    "versiyon-bilgisi": {
+      "en": {"title": "Software version and uptime", "note": "The output includes uptime, model and image details; it is the first command checked in inventory automation."},
+      "ar": {"title": "إصدار البرنامج ومدة التشغيل", "note": "يتضمن الناتج مدة التشغيل والطراز ومعلومات الصورة؛ وهو أول أمر يُفحص في أتمتة الجرد."}
+    },
+    "arayuz-durumu": {
+      "en": {"title": "Interface status summary", "note": "Cisco output also includes VLAN, duplex and speed columns; Huawei 'brief' output shows PHY/Protocol state."},
+      "ar": {"title": "ملخص حالة الواجهات", "note": "يتضمن ناتج Cisco أيضًا أعمدة VLAN وduplex والسرعة؛ ويعرض ناتج Huawei 'brief' حالة PHY/Protocol."}
+    },
+    "vlan-olusturma": {
+      "en": {"title": "Create a VLAN", "note": "On Huawei, 'vlan batch 10 20 30' can create several VLANs at once."},
+      "ar": {"title": "إنشاء VLAN", "note": "في Huawei يمكن استخدام 'vlan batch 10 20 30' لإنشاء عدة VLAN دفعة واحدة."}
+    },
+    "access-port": {
+      "en": {"title": "Configure an access port", "note": "Huawei interface names look like GigabitEthernet0/0/1; AOS-CX uses 1/1/1 (member/slot/port)."},
+      "ar": {"title": "إعداد منفذ access", "note": "أسماء واجهات Huawei على شكل GigabitEthernet0/0/1؛ أما AOS-CX فتستخدم 1/1/1 (member/slot/port)."}
+    },
+    "trunk-port": {
+      "en": {"title": "Configure a trunk port", "note": "On Huawei the allow-pass list is space-separated (not comma-separated). On some Cisco platforms 'switchport trunk encapsulation dot1q' is needed first."},
+      "ar": {"title": "إعداد منفذ trunk", "note": "في Huawei تُفصل قائمة allow-pass بمسافات وليس بفواصل. وفي بعض منصات Cisco يلزم أولًا الأمر 'switchport trunk encapsulation dot1q'."}
+    },
+    "dhcp-snooping": {
+      "en": {"title": "Enable DHCP Snooping", "note": "Uplink and DHCP server ports must be trusted; otherwise legitimate DHCP replies are dropped."},
+      "ar": {"title": "تفعيل DHCP Snooping", "note": "يجب أن تكون منافذ الربط العلوي وخادم DHCP من النوع trusted، وإلا تُسقَط ردود DHCP الشرعية."}
+    },
+    "dhcp-snooping-binding": {
+      "en": {"title": "DHCP Snooping binding table", "note": "IPSG and DAI depend on this table; if it is empty, these features can block all traffic."},
+      "ar": {"title": "جدول DHCP Snooping binding", "note": "يعتمد IPSG وDAI على هذا الجدول؛ وإذا كان فارغًا فقد تحجب هذه الميزات كل حركة المرور."}
+    },
+    "ip-source-guard": {
+      "en": {"title": "IP Source Guard (IPSG)", "note": "DHCP Snooping must be running first. The Aruba command may vary by software version; verify in a lab first."},
+      "ar": {"title": "IP Source Guard (IPSG)", "note": "يجب أن يكون DHCP Snooping يعمل أولًا. قد يختلف أمر Aruba حسب إصدار البرنامج؛ تحقق منه في بيئة اختبار أولًا."}
+    },
+    "dynamic-arp-inspection": {
+      "en": {"title": "Dynamic ARP Inspection (DAI)", "note": "ARP inspection must be disabled (trusted) on trusted uplink ports. Verify the Aruba command against your software version."},
+      "ar": {"title": "Dynamic ARP Inspection (DAI)", "note": "يجب جعل المنافذ العلوية الموثوقة trusted لتعطيل فحص ARP عليها. تحقق من أمر Aruba وفق إصدار البرنامج لديك."}
+    },
+    "stp-modu": {
+      "en": {"title": "Set the Spanning Tree mode", "note": "In mixed-vendor networks, test root and BPDU behavior separately for Cisco Rapid-PVST+ vs Huawei RSTP/MSTP compatibility."},
+      "ar": {"title": "ضبط وضع Spanning Tree", "note": "في الشبكات متعددة الموردين اختبر سلوك root وBPDU بشكل منفصل لضمان التوافق بين Rapid-PVST+ في Cisco وRSTP/MSTP في Huawei."}
+    },
+    "stp-durumu": {
+      "en": {"title": "Display Spanning Tree status", "note": "Use it to check the root bridge and port roles (root/designated/alternate)."},
+      "ar": {"title": "عرض حالة Spanning Tree", "note": "يُستخدم للتحقق من root bridge وأدوار المنافذ (root/designated/alternate)."}
+    },
+    "lacp-port-kanali": {
+      "en": {"title": "LACP port channel (LAG)", "note": "On Huawei, create the Eth-Trunk first and add members under the interface or with trunkport."},
+      "ar": {"title": "قناة المنافذ LACP (LAG)", "note": "في Huawei يُنشأ Eth-Trunk أولًا ثم تُضاف الأعضاء تحت الواجهة أو عبر trunkport."}
+    },
+    "ntp-sunucusu": {
+      "en": {"title": "Configure an NTP server", "note": "Use the same NTP source on all devices for log correlation and certificate validation."},
+      "ar": {"title": "تعريف خادم NTP", "note": "استخدم مصدر NTP نفسه على جميع الأجهزة لربط السجلات والتحقق من الشهادات."}
+    },
+    "log-goruntuleme": {
+      "en": {"title": "Display log entries", "note": "On Huawei the log buffer is called 'logbuffer'."},
+      "ar": {"title": "عرض سجلات الأحداث", "note": "في Huawei يُسمّى مخزن السجلات 'logbuffer'."}
+    },
+    "lldp-komsulari": {
+      "en": {"title": "Display LLDP neighbors", "note": "One of the most practical commands for topology discovery and patch panel verification."},
+      "ar": {"title": "عرض جيران LLDP", "note": "من أكثر الأوامر عمليةً لاكتشاف الطوبولوجيا والتحقق من لوحات التوصيل."}
+    },
+    "arayuz-detay": {
+      "en": {"title": "Interface details and error counters", "note": "CRC, input error and drop counters are the first indicators of physical-layer problems."},
+      "ar": {"title": "تفاصيل الواجهة وعدّادات الأخطاء", "note": "عدّادات CRC وأخطاء الإدخال والإسقاط هي أول مؤشرات مشكلات الطبقة الفيزيائية."}
+    },
+    "arayuz-kapatma-acma": {
+      "en": {"title": "Shut down / enable an interface", "note": "On Huawei, negation uses 'undo' instead of 'no'."},
+      "ar": {"title": "تعطيل / تفعيل واجهة", "note": "في Huawei يتم النفي بـ 'undo' بدلًا من 'no'."}
+    },
+    "vlan-svi": {
+      "en": {"title": "Create a VLAN interface (SVI)", "note": "On Huawei the interface name is written Vlanif10."},
+      "ar": {"title": "إنشاء واجهة VLAN (SVI)", "note": "في Huawei يُكتب اسم الواجهة Vlanif10."}
+    },
+    "statik-route": {
+      "en": {"title": "Add a static default route", "note": "On Huawei the command is 'ip route-static'; Aruba AOS-CX uses CIDR notation."},
+      "ar": {"title": "إضافة مسار افتراضي ثابت", "note": "في Huawei الأمر هو 'ip route-static'؛ وتستخدم Aruba AOS-CX صيغة CIDR."}
+    },
+    "cpu-kullanimi": {
+      "en": {"title": "Display CPU usage", "note": "Checking the 1/5-minute averages along with instant load helps distinguish transient spikes."},
+      "ar": {"title": "عرض استخدام المعالج", "note": "فحص متوسط الدقيقة والخمس دقائق مع الحمل اللحظي يساعد على تمييز الارتفاعات المؤقتة."}
+    },
+    "transceiver-bilgisi": {
+      "en": {"title": "SFP / transceiver info and DOM", "note": "Rx/Tx power levels (dBm) are used to diagnose fiber link problems."},
+      "ar": {"title": "معلومات SFP / transceiver وDOM", "note": "تُستخدم مستويات قدرة Rx/Tx (dBm) لتشخيص مشكلات وصلات الألياف."}
+    }
+  }
+}
