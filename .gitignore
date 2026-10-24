@@ -1,2 +1,4 @@
 dist/
 __pycache__/
+private/
+supabase/premium_bundle.sql

@@ -103,6 +103,9 @@ footer{padding:24px 16px 40px;color:var(--mut);font-size:.85rem;border-top:1px s
 .tablewrap{overflow-x:auto}
 .planbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .badge{display:inline-block;font:700 11px ui-monospace,Menlo,Consolas,monospace;color:#031014;background:linear-gradient(135deg,var(--ac2),var(--ac));border-radius:999px;padding:2px 9px;vertical-align:middle;margin:0 6px}
+.oldprice{color:var(--mut);margin-inline-end:6px}.newprice{font-size:1.6rem;color:var(--ac2)}.pricebox{font-size:1.1rem}
+.cmd-card{position:relative}.fav{position:absolute;top:6px;inset-inline-end:8px;background:none;border:0;color:var(--ac2);font-size:1.15rem;cursor:pointer;padding:2px 4px;line-height:1}
+.favchip{cursor:pointer;font:inherit}.favchip[aria-pressed=true]{background:rgba(57,255,156,.18);border-color:var(--ac2);color:var(--ac2)}
 .support-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
 .support-grid .panel h2{margin-top:0}
 html{background:#050a0f;color-scheme:dark}
@@ -407,7 +410,8 @@ def page(lang, title, desc, path, body, jsonld=None, noindex=False, head_extra="
         header=header(lang, path), body=body, site=esc(SITE),
         footer=esc(T(lang, "footer")), upd=esc(T(lang, "updated")), today=TODAY,
         nav_js=NAV_SWAP_JS, script=script,
-        bgjs='<script src="{}/assets/bg.js?v={}" defer></script>'.format(BASE_PATH, TODAY),
+        bgjs='<script src="{}/assets/bg.js?v={}" defer></script><script src="{}/assets/fav.js?v={}" data-url="{}" data-key="{}" defer></script>'.format(
+            BASE_PATH, TODAY, BASE_PATH, TODAY, esc(SITECFG.get("supabase_url", "")), esc(SITECFG.get("supabase_key", ""))),
     )
 
 
@@ -639,7 +643,8 @@ def build_support(lang, paths):
     paths.add("support/")
 
 
-PREMIUM_TOOLS = [("aud", "aud", "aud"), ("trouble", "trouble", "trouble"), ("comp", "comp", "comp"), ("topo", "topo", "topo")]
+PREMIUM_TOOLS = [("aud", "aud", "aud"), ("trouble", "trouble", "trouble"), ("comp", "comp", "comp"), ("topo", "topo", "topo"),
+                 ("bulk", "bulk", "bulk"), ("coll", "coll", "coll")]
 
 
 def premium_script(lang, tool):
@@ -660,14 +665,23 @@ def premium_script(lang, tool):
 def build_premium(lang, paths):
     t = lambda k: esc(T(lang, k))
     rows = ""
-    for key in ("aud", "trouble", "comp", "topo"):
+    for key in ("aud", "trouble", "comp", "topo", "bulk", "coll"):
         rows += '<tr><td><a href="{}">{}</a></td><td>{}</td><td>{}</td></tr>'.format(
             lurl(lang, "tools/%s/" % key), t("tool_%s_name" % key), t("pg_%s_f" % key), t("pg_%s_p" % key))
-    price = esc(SITECFG.get("premium_price", "").strip()) or t("pg_price_soon")
+    for key in ("fav", "exp"):
+        rows += "<tr><td>{}</td><td>{}</td><td>{}</td></tr>".format(t("pg_%s_name" % key), t("pg_%s_f" % key), t("pg_%s_p" % key))
+    cur = esc(SITECFG.get("premium_currency", "$"))
+    new_p = SITECFG.get("premium_price", "").strip()
+    old_p = SITECFG.get("premium_price_old", "").strip()
+    if new_p:
+        price = ('<s class="oldprice">{c}{o}</s> ' if old_p else "") + '<strong class="newprice">{c}{n}</strong> <span class="badge">{l}</span>'
+        price = price.format(c=cur, o=esc(old_p), n=esc(new_p), l=t("pg_launch"))
+    else:
+        price = t("pg_price_soon")
     body = (
         '<h1>{h} <span class="badge">PRO</span></h1><p class="lead">{lead}</p>'
         '<div class="tablewrap"><table><tr><th>{f}</th><th>{fr}</th><th>{pr}</th></tr>{rows}</table></div>'
-        '<h2>{how_t}</h2><p>{how}</p><p><strong>{price_l}:</strong> {price}</p>'
+        '<h2>{how_t}</h2><p>{how}</p><p class="pricebox"><strong>{price_l}:</strong> {price}</p>'
         '<p><a class="btn sec" href="{sup}">{sup_t}</a></p><div id="prem-box"><div id="app" data-tool="premium"></div></div>'
     ).format(
         h=t("pg_title"), lead=t("pg_lead"), f=t("pg_feature"), fr=t("pg_free"), pr=t("pg_premium"), rows=rows,

@@ -22,3 +22,9 @@ BASE_URL=http://localhost:8000 python3 build.py && cd dist && python3 -m http.se
 - `data/site.json`: `iban` (mod-97 doğrulanır), `holder`, `bank`, `bmc_url` (Buy Me a Coffee, https://...), `premium_price`.
 - Premium araçlar: `assets/plib.js` (saf mantık, Node'da test edilir) + `assets/premium.js` (arayüz). Üyelik `profiles.is_premium` alanından okunur; kapı istemci tarafındadır.
 - Premium vermek için Supabase SQL: `update public.profiles set is_premium = true where id = '<user uuid>';` Talepler `premium_requests` tablosunda.
+
+### Premium modülü (sunucu tarafı)
+- Herkese açık: `assets/plib.js` (temel kurallar, sorun giderme). Premium kodu: `private/plib-premium.js` (**gitignore'da**, repoya girmez).
+- Yayınlamak için: `python3 tools/make_bundle_sql.py` → `private/premium_bundle.sql` üretir; Supabase SQL Editor'de çalıştırın. Modül `premium_assets` tablosunda, RLS ile yalnızca Premium üyeye okunur.
+- Premium kodunu değiştirirseniz SQL'i yeniden üretip çalıştırın.
+- Not: repo herkese açık olduğu sürece geçmiş commit'lerdeki eski (tam) Premium kodu görülebilir; tam koruma için repoyu özel (private) yapın.

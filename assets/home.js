@@ -18,6 +18,7 @@
       cards.forEach(function (c) {
         var hay = c.getAttribute('data-s') || '';
         var ok = words.every(function (w) { return hay.indexOf(w) !== -1; });
+        if (window.__favOnly && c.getAttribute('data-fav') !== '1') ok = false;
         c.hidden = !ok;
         if (ok) shown++;
       });
