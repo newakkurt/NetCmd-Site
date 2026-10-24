@@ -1,3 +1,4 @@
+
 -- NetCmd Premium: Supabase Dashboard > SQL Editor'de bir kez çalıştırın.
 alter table public.profiles add column if not exists is_premium boolean not null default false;
 alter table public.profiles add column if not exists premium_until timestamptz;
@@ -29,6 +30,8 @@ drop policy if exists pr_insert_own on public.premium_requests;
 create policy pr_insert_own on public.premium_requests for insert to authenticated with check (auth.uid() = user_id);
 
 olbyrzqjdbxxsfaonsew
+
+update public.profiles set is_premium = true where id = (select id from auth.users where email = 'newakkurt@gmail.com');
 
 -- Premium vermek için (talebi onayladıktan sonra):
 -- update public.profiles set is_premium = true where id = (select id from auth.users where email = 'kullanici@ornek.com');
