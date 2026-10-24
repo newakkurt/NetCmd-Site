@@ -1,0 +1,746 @@
+{
+ "cats": {
+  "Yönetim ve Erişim": {
+   "en": "Management & Access",
+   "ar": "الإدارة والوصول"
+  },
+  "Yönlendirme Protokolleri": {
+   "en": "Routing Protocols",
+   "ar": "بروتوكولات التوجيه"
+  },
+  "ACL ve Filtreleme": {
+   "en": "ACL & Filtering",
+   "ar": "ACL والتصفية"
+  },
+  "Sorun Giderme": {
+   "en": "Troubleshooting",
+   "ar": "استكشاف الأخطاء"
+  },
+  "Yedeklilik ve Stack": {
+   "en": "Redundancy & Stacking",
+   "ar": "التكرار والتجميع (Stack)"
+  }
+ },
+ "items": {
+  "envanter-bilgisi": {
+   "en": {
+    "title": "Hardware inventory and serial numbers",
+    "note": "Serial numbers and module details are used for warranty/RMA processes and inventory automation."
+   },
+   "ar": {
+    "title": "جرد العتاد والأرقام التسلسلية",
+    "note": "تُستخدم الأرقام التسلسلية ومعلومات الوحدات في الضمان وعمليات RMA وأتمتة الجرد."
+   }
+  },
+  "fan-guc-sicaklik": {
+   "en": {
+    "title": "Fan, power supply and temperature status",
+    "note": "High temperature or a failed fan can cause unexpected reboots; check them regularly."
+   },
+   "ar": {
+    "title": "حالة المراوح ومصدر الطاقة ودرجة الحرارة",
+    "note": "قد يؤدي ارتفاع الحرارة أو تعطل المروحة إلى إعادة تشغيل غير متوقعة؛ افحصها بانتظام."
+   }
+  },
+  "startup-config": {
+   "en": {
+    "title": "Display the saved (startup) configuration",
+    "note": "If the running configuration was not saved it differs from startup; startup is what loads on reboot."
+   },
+   "ar": {
+    "title": "عرض الإعدادات المحفوظة (startup)",
+    "note": "إذا لم تُحفظ الإعدادات الجارية فستختلف عن startup، وهي التي تُحمَّل عند إعادة التشغيل."
+   }
+  },
+  "arayuz-config": {
+   "en": {
+    "title": "Display the configuration of a single interface",
+    "note": "Shows only the relevant interface block instead of scanning the whole configuration."
+   },
+   "ar": {
+    "title": "عرض إعدادات واجهة واحدة",
+    "note": "يعرض كتلة الواجهة المطلوبة فقط بدلًا من تصفح الإعدادات كاملة."
+   }
+  },
+  "vlan-detay": {
+   "en": {
+    "title": "Display the details of a single VLAN",
+    "note": "Verifies the VLAN's name, status and member ports."
+   },
+   "ar": {
+    "title": "عرض تفاصيل VLAN واحد",
+    "note": "يتحقق من اسم الـ VLAN وحالته والمنافذ الأعضاء فيه."
+   }
+  },
+  "mac-adresi-bulma": {
+   "en": {
+    "title": "Find which port a MAC address is on",
+    "note": "The MAC format differs per platform: Cisco 0011.2233.4455, Huawei 0011-2233-4455, Aruba AOS-CX 00:11:22:33:44:55."
+   },
+   "ar": {
+    "title": "معرفة المنفذ الذي يوجد عليه عنوان MAC",
+    "note": "تختلف صيغة MAC حسب المنصة: Cisco ‏0011.2233.4455 وHuawei ‏0011-2233-4455 وAruba AOS-CX ‏00:11:22:33:44:55."
+   }
+  },
+  "arp-ip-sorgu": {
+   "en": {
+    "title": "Find the MAC for an IP address from ARP",
+    "note": "Once you have the MAC, look it up in the MAC table to find the physical port."
+   },
+   "ar": {
+    "title": "إيجاد MAC لعنوان IP من جدول ARP",
+    "note": "بعد الحصول على MAC ابحث عنه في جدول MAC لمعرفة المنفذ الفعلي."
+   }
+  },
+  "trunk-durumu": {
+   "en": {
+    "title": "Display trunk ports and allowed VLANs",
+    "note": "Mismatched allowed-VLAN lists on the two ends are a common connectivity problem."
+   },
+   "ar": {
+    "title": "عرض منافذ trunk والـ VLAN المسموح بها",
+    "note": "عدم تطابق قوائم VLAN المسموح بها على الطرفين مشكلة اتصال شائعة."
+   }
+  },
+  "porttaki-cihaz": {
+   "en": {
+    "title": "List the devices (MACs) on a port",
+    "note": "If several MACs appear on one port, a hub, AP or another switch may sit in between."
+   },
+   "ar": {
+    "title": "سرد الأجهزة (MAC) على منفذ",
+    "note": "إذا ظهرت عدة عناوين MAC على منفذ واحد فقد يوجد hub أو AP أو محوّل آخر بينهما."
+   }
+  },
+  "port-kanali-durumu": {
+   "en": {
+    "title": "Display port-channel (LAG) status",
+    "note": "Shows whether member ports joined the bundle and the LACP state."
+   },
+   "ar": {
+    "title": "عرض حالة قناة المنافذ (LAG)",
+    "note": "يُظهر هل انضمت المنافذ الأعضاء إلى الحزمة وحالة LACP."
+   }
+  },
+  "saat-bilgisi": {
+   "en": {
+    "title": "Display the device clock",
+    "note": "A wrong clock breaks log correlation and certificates; check NTP synchronization as well."
+   },
+   "ar": {
+    "title": "عرض ساعة الجهاز",
+    "note": "الساعة الخاطئة تفسد ربط السجلات والشهادات؛ تحقق من مزامنة NTP أيضًا."
+   }
+  },
+  "hostname": {
+   "en": {
+    "title": "Set the hostname",
+    "note": "On Huawei the command is 'sysname', not 'hostname'."
+   },
+   "ar": {
+    "title": "ضبط اسم المضيف (hostname)",
+    "note": "في Huawei الأمر هو 'sysname' وليس 'hostname'."
+   }
+  },
+  "syslog-sunucusu": {
+   "en": {
+    "title": "Configure a syslog server",
+    "note": "When logs are sent to a central server, they survive a device reboot."
+   },
+   "ar": {
+    "title": "تعريف خادم syslog",
+    "note": "عند إرسال السجلات إلى خادم مركزي لا تضيع حتى لو أُعيد تشغيل الجهاز."
+   }
+  },
+  "bellek-kullanimi": {
+   "en": {
+    "title": "Display memory usage",
+    "note": "Steadily growing memory use can indicate a leak; monitor it together with CPU."
+   },
+   "ar": {
+    "title": "عرض استخدام الذاكرة",
+    "note": "الزيادة المستمرة في استخدام الذاكرة قد تدل على تسرّب؛ راقبها مع المعالج."
+   }
+  },
+  "konfig-yedek-tftp": {
+   "en": {
+    "title": "Back up the configuration with TFTP",
+    "note": "TFTP is unencrypted; prefer SFTP/SCP in production. On Huawei the saved configuration file is vrpcfg.zip."
+   },
+   "ar": {
+    "title": "نسخ الإعدادات احتياطيًا عبر TFTP",
+    "note": "TFTP غير مشفّر؛ فضّل SFTP/SCP في الإنتاج. في Huawei ملف الإعدادات المحفوظ هو vrpcfg.zip."
+   }
+  },
+  "ntp-dogrulama": {
+   "en": {
+    "title": "Verify NTP synchronization",
+    "note": "Check the stratum and the 'synchronized' state; logs from an unsynchronized device are unreliable."
+   },
+   "ar": {
+    "title": "التحقق من مزامنة NTP",
+    "note": "افحص قيمة stratum وحالة 'synchronized'؛ سجلات الجهاز غير المتزامن غير موثوقة."
+   }
+  },
+  "cihaz-yeniden-baslat": {
+   "en": {
+    "title": "Reboot the device",
+    "note": "Save the configuration first; a reboot interrupts traffic, so avoid it outside a maintenance window."
+   },
+   "ar": {
+    "title": "إعادة تشغيل الجهاز",
+    "note": "احفظ الإعدادات أولًا؛ إعادة التشغيل تقطع الحركة فلا تنفذها خارج نافذة الصيانة."
+   }
+  },
+  "lldp-etkinlestir": {
+   "en": {
+    "title": "Enable LLDP",
+    "note": "LLDP must also be enabled on the neighbor for discovery; on Cisco, CDP runs separately."
+   },
+   "ar": {
+    "title": "تفعيل LLDP",
+    "note": "يجب تفعيل LLDP على الجهاز المجاور أيضًا لاكتشاف الجيران؛ وفي Cisco يعمل CDP بشكل منفصل."
+   }
+  },
+  "dns-sunucusu": {
+   "en": {
+    "title": "Configure a DNS server",
+    "note": "Needed so the device can resolve hostnames (for ping, NTP, syslog)."
+   },
+   "ar": {
+    "title": "تعريف خادم DNS",
+    "note": "مطلوب ليتمكن الجهاز من حلّ أسماء المضيفين (لـ ping وNTP وsyslog)."
+   }
+  },
+  "ssh-etkinlestirme": {
+   "en": {
+    "title": "Enable SSH access",
+    "note": "Telnet is unencrypted; use SSH v2 for management. On Cisco the RSA key needs a hostname and domain name; on Huawei also define 'ssh user <name> authentication-type password' and 'service-type stelnet'."
+   },
+   "ar": {
+    "title": "تفعيل الوصول عبر SSH",
+    "note": "Telnet غير مشفّر؛ استخدم SSH v2 للإدارة. في Cisco يحتاج مفتاح RSA إلى hostname وdomain-name؛ وفي Huawei عرّف أيضًا 'ssh user <name> authentication-type password' و'service-type stelnet'."
+   }
+  },
+  "yerel-kullanici": {
+   "en": {
+    "title": "Create a local admin user",
+    "note": "A local user is the last-resort access if TACACS+/RADIUS is unreachable; never keep the password in plain text in scripts."
+   },
+   "ar": {
+    "title": "إنشاء مستخدم مسؤول محلي",
+    "note": "المستخدم المحلي هو وسيلة الوصول الأخيرة إذا تعذّر الوصول إلى TACACS+/RADIUS؛ لا تحتفظ بكلمة المرور كنص عادي في السكربتات."
+   }
+  },
+  "tacacs-sunucusu": {
+   "en": {
+    "title": "Central authentication with TACACS+",
+    "note": "Always add the 'local' fallback so you can still log in if the server is unreachable; otherwise you can lock yourself out. Aruba AOS-CX syntax varies by version."
+   },
+   "ar": {
+    "title": "المصادقة المركزية عبر TACACS+",
+    "note": "أضف دائمًا الخيار الاحتياطي 'local' للدخول إذا تعذّر الوصول إلى الخادم، وإلا قد تفقد الوصول إلى الجهاز. تختلف صياغة Aruba AOS-CX حسب الإصدار."
+   }
+  },
+  "snmpv3": {
+   "en": {
+    "title": "Define an SNMPv3 user and group",
+    "note": "SNMPv3 provides authentication and encryption; v2c community strings travel in clear text. Do not store passwords in scripts."
+   },
+   "ar": {
+    "title": "تعريف مستخدم ومجموعة SNMPv3",
+    "note": "يوفّر SNMPv3 المصادقة والتشفير بينما تنتقل سلاسل v2c كنص عادي. لا تخزّن كلمات المرور في السكربتات."
+   }
+  },
+  "snmp-community": {
+   "en": {
+    "title": "Define an SNMP v2c community",
+    "note": "v2c is unencrypted; use SNMPv3 where possible. Use a read-only community and restrict access to the monitoring server."
+   },
+   "ar": {
+    "title": "تعريف community لـ SNMP v2c",
+    "note": "v2c غير مشفّر؛ استخدم SNMPv3 قدر الإمكان. استخدم community للقراءة فقط وقيّد الوصول بخادم المراقبة."
+   }
+  },
+  "snmp-trap": {
+   "en": {
+    "title": "Define an SNMP trap destination",
+    "note": "Traps push events to the monitoring system immediately; make sure UDP 162 is open on the server."
+   },
+   "ar": {
+    "title": "تعريف وجهة SNMP trap",
+    "note": "ترسل traps الأحداث إلى نظام المراقبة فورًا؛ تأكد من فتح UDP 162 على الخادم."
+   }
+  },
+  "vty-erisim-kisitlama": {
+   "en": {
+    "title": "Restrict management access with an ACL (VTY)",
+    "note": "Management access should come only from the management network; a wrong ACL can lock you out too, so keep the console path ready."
+   },
+   "ar": {
+    "title": "تقييد الوصول الإداري باستخدام ACL (VTY)",
+    "note": "يجب أن يكون الوصول الإداري من شبكة الإدارة فقط؛ وقد يقطع ACL خاطئ وصولك أنت أيضًا، فأبقِ مسار console جاهزًا."
+   }
+  },
+  "radius-sunucu": {
+   "en": {
+    "title": "Define a RADIUS server",
+    "note": "The first step for 802.1X and NAC (e.g. FortiNAC) integration; UDP 1812 is used for authentication and 1813 for accounting."
+   },
+   "ar": {
+    "title": "تعريف خادم RADIUS",
+    "note": "هي الخطوة الأولى لدمج 802.1X وNAC (مثل FortiNAC)؛ يُستخدم المنفذ UDP 1812 للمصادقة و1813 للمحاسبة."
+   }
+  },
+  "protokol-routing": {
+   "en": {
+    "title": "Filter the routing table by protocol",
+    "note": "Shows which routes were learned from which protocol."
+   },
+   "ar": {
+    "title": "تصفية جدول التوجيه حسب البروتوكول",
+    "note": "يُستخدم لمعرفة أي المسارات تم تعلّمها من أي بروتوكول."
+   }
+  },
+  "varsayilan-gateway-l2": {
+   "en": {
+    "title": "Default gateway for an L2 switch",
+    "note": "Needed to reach the management IP of an L2 switch from another network; L3 devices use 'ip route'."
+   },
+   "ar": {
+    "title": "البوابة الافتراضية لمحوّل الطبقة الثانية",
+    "note": "مطلوبة للوصول إلى عنوان الإدارة لمحوّل L2 من شبكة أخرى؛ وتستخدم أجهزة L3 الأمر 'ip route'."
+   }
+  },
+  "vrf-olusturma": {
+   "en": {
+    "title": "Create a VRF and bind it to an interface",
+    "note": "VRFs are often used to separate management from data traffic. Binding an interface to a VRF removes its IP address; re-apply the IP afterwards."
+   },
+   "ar": {
+    "title": "إنشاء VRF وربطه بواجهة",
+    "note": "يُستخدم VRF كثيرًا لفصل حركة الإدارة عن حركة البيانات. ربط الواجهة بـ VRF يحذف عنوان IP الخاص بها؛ أعد ضبط العنوان بعد الربط."
+   }
+  },
+  "routed-port": {
+   "en": {
+    "title": "Configure a routed port (L3 interface)",
+    "note": "The port leaves switchport mode and works directly with an IP; used for uplinks and point-to-point links."
+   },
+   "ar": {
+    "title": "إعداد منفذ موجَّه (واجهة L3)",
+    "note": "يخرج المنفذ من وضع switchport ويعمل مباشرة بعنوان IP؛ يُستخدم للروابط العلوية والروابط نقطة إلى نقطة."
+   }
+  },
+  "dhcp-relay": {
+   "en": {
+    "title": "DHCP relay (ip helper-address)",
+    "note": "If the DHCP server is on a different network, relay must be configured on the clients' VLAN interface."
+   },
+   "ar": {
+    "title": "ترحيل DHCP (ip helper-address)",
+    "note": "إذا كان خادم DHCP في شبكة مختلفة فيجب ضبط relay على واجهة VLAN الخاصة بالعملاء."
+   }
+  },
+  "prefix-list": {
+   "en": {
+    "title": "Define a prefix-list",
+    "note": "Used for route filtering; 'le/ge' sets a prefix-length range. On Huawei the command is 'ip ip-prefix'."
+   },
+   "ar": {
+    "title": "تعريف prefix-list",
+    "note": "تُستخدم لتصفية المسارات؛ يحدد 'le/ge' نطاق طول البادئة. في Huawei الأمر هو 'ip ip-prefix'."
+   }
+  },
+  "route-sorgu": {
+   "en": {
+    "title": "Look up the route for a specific destination",
+    "note": "Shows which route and egress interface are chosen for an IP."
+   },
+   "ar": {
+    "title": "الاستعلام عن المسار لوجهة محددة",
+    "note": "يُظهر أي مسار وواجهة خروج يتم اختيارهما لعنوان IP."
+   }
+  },
+  "ospf-temel": {
+   "en": {
+    "title": "Basic OSPF configuration",
+    "note": "Set the router ID manually; area 0 is the backbone. On Huawei the router-id is given on the ospf process line."
+   },
+   "ar": {
+    "title": "إعداد OSPF الأساسي",
+    "note": "اضبط معرّف الموجّه يدويًا؛ المنطقة 0 هي الشبكة الأساسية (backbone). في Huawei يُحدَّد router-id في سطر عملية ospf."
+   }
+  },
+  "ospf-komsu": {
+   "en": {
+    "title": "Display OSPF neighbors",
+    "note": "A neighbor should be in 'FULL' state; 'EXSTART/EXCHANGE' usually points to an MTU mismatch."
+   },
+   "ar": {
+    "title": "عرض جيران OSPF",
+    "note": "يجب أن يكون الجار في حالة 'FULL'؛ وتشير حالة 'EXSTART/EXCHANGE' غالبًا إلى عدم تطابق MTU."
+   }
+  },
+  "ospf-pasif-arayuz": {
+   "en": {
+    "title": "OSPF passive interface",
+    "note": "Stops hellos on user VLANs; the network is still advertised but no adjacency forms."
+   },
+   "ar": {
+    "title": "واجهة OSPF الخاملة (passive)",
+    "note": "تمنع إرسال hello على VLAN المستخدمين؛ تبقى الشبكة معلنة لكن لا تتشكل علاقة جوار."
+   }
+  },
+  "ospf-maliyet": {
+   "en": {
+    "title": "OSPF interface cost",
+    "note": "The path with the lower cost is preferred; if the reference bandwidth was changed it must be identical on all devices."
+   },
+   "ar": {
+    "title": "تكلفة واجهة OSPF (cost)",
+    "note": "يُفضَّل المسار ذو التكلفة الأقل؛ وإذا غُيّر عرض النطاق المرجعي فيجب أن يتطابق على جميع الأجهزة."
+   }
+  },
+  "ospf-kimlik-dogrulama": {
+   "en": {
+    "title": "OSPF MD5 authentication",
+    "note": "Prevents unauthorized routers from joining OSPF; the key and key-id must match on both ends."
+   },
+   "ar": {
+    "title": "مصادقة OSPF بـ MD5",
+    "note": "تمنع الموجّهات غير المصرّح بها من الانضمام إلى OSPF؛ يجب أن يتطابق المفتاح ومعرّفه على الطرفين."
+   }
+  },
+  "bgp-temel": {
+   "en": {
+    "title": "Establish a BGP (eBGP) neighbor",
+    "note": "The neighbor AS number must be consistent on both ends; eBGP neighbors must be directly connected by default."
+   },
+   "ar": {
+    "title": "إنشاء جوار BGP (eBGP)",
+    "note": "يجب أن يكون رقم AS للجار متسقًا على الطرفين؛ ويجب أن يكون جيران eBGP متصلين مباشرة افتراضيًا."
+   }
+  },
+  "bgp-ozet": {
+   "en": {
+    "title": "Display the BGP neighbor summary",
+    "note": "The state should be 'Established'; 'Idle' or 'Active' means the neighbor cannot form."
+   },
+   "ar": {
+    "title": "عرض ملخص جيران BGP",
+    "note": "يجب أن تكون الحالة 'Established'؛ وتعني 'Idle' أو 'Active' أن الجوار لم يتشكل."
+   }
+  },
+  "acl-genisletilmis": {
+   "en": {
+    "title": "Block traffic with an extended ACL",
+    "note": "ACLs are evaluated in order; on Cisco the implicit deny drops everything else unless you add a final 'permit'. On Huawei the default action is permit."
+   },
+   "ar": {
+    "title": "حجب الحركة باستخدام ACL موسّع",
+    "note": "تُقيَّم ACL بالترتيب؛ في Cisco يُسقط deny الضمني كل ما تبقى ما لم تضف 'permit' في النهاية. وفي Huawei الإجراء الافتراضي هو permit."
+   }
+  },
+  "acl-arayuz-uygula": {
+   "en": {
+    "title": "Apply an ACL to an interface",
+    "note": "Direction matters (in/out). Apply it on a test VLAN first; a wrong ACL can cut management access."
+   },
+   "ar": {
+    "title": "تطبيق ACL على واجهة",
+    "note": "الاتجاه مهم (in/out). طبّقه أولًا على VLAN اختبار؛ فقد يقطع ACL خاطئ الوصول الإداري."
+   }
+  },
+  "acl-goruntuleme": {
+   "en": {
+    "title": "Display ACL rules and match counters",
+    "note": "Match counters show which rule is catching the traffic."
+   },
+   "ar": {
+    "title": "عرض قواعد ACL وعدّادات المطابقة",
+    "note": "تُظهر عدّادات المطابقة أي قاعدة تلتقط الحركة."
+   }
+  },
+  "port-security": {
+   "en": {
+    "title": "Limit MAC addresses with Port Security",
+    "note": "Set the maximum MAC count and violation action on production ports; the 'shutdown' action puts the port in err-disabled."
+   },
+   "ar": {
+    "title": "تحديد عدد عناوين MAC عبر Port Security",
+    "note": "حدّد الحد الأقصى لعناوين MAC وإجراء المخالفة على منافذ الإنتاج؛ يضع إجراء 'shutdown' المنفذ في حالة err-disabled."
+   }
+  },
+  "port-security-durum": {
+   "en": {
+    "title": "Display Port Security status",
+    "note": "The violation count and the last offending MAC are shown here."
+   },
+   "ar": {
+    "title": "عرض حالة Port Security",
+    "note": "يظهر هنا عدد المخالفات وآخر عنوان MAC مخالف."
+   }
+  },
+  "bpdu-guard": {
+   "en": {
+    "title": "Edge port protection (PortFast + BPDU Guard)",
+    "note": "Prevents a switch or loop plugged into a user port from disrupting STP; the port shuts down if a BPDU arrives."
+   },
+   "ar": {
+    "title": "حماية منفذ الحافة (PortFast + BPDU Guard)",
+    "note": "تمنع محوّلًا أو حلقة موصولة بمنفذ مستخدم من تعطيل STP؛ يُغلق المنفذ إذا وصلت BPDU."
+   }
+  },
+  "root-guard": {
+   "en": {
+    "title": "Root Guard",
+    "note": "Stops another switch from becoming root on non-uplink ports; if a superior BPDU arrives the port goes root-inconsistent."
+   },
+   "ar": {
+    "title": "Root Guard",
+    "note": "يمنع محوّلًا آخر من أن يصبح root على المنافذ غير العلوية؛ وإذا وصلت BPDU أفضل يدخل المنفذ حالة root-inconsistent."
+   }
+  },
+  "loop-guard": {
+   "en": {
+    "title": "Loop Guard / loop protection",
+    "note": "Prevents loops caused by unidirectional links when BPDUs are lost; use it only on point-to-point uplinks."
+   },
+   "ar": {
+    "title": "Loop Guard / الحماية من الحلقات",
+    "note": "يمنع الحلقات الناتجة عن الروابط أحادية الاتجاه عند فقدان BPDU؛ استخدمه على الروابط العلوية نقطة إلى نقطة فقط."
+   }
+  },
+  "storm-control": {
+   "en": {
+    "title": "Storm control (limit broadcast storms)",
+    "note": "A broadcast/multicast storm can lock up the network; set the threshold according to your traffic profile."
+   },
+   "ar": {
+    "title": "Storm control (الحد من عواصف البث)",
+    "note": "قد تعطّل عاصفة البث (broadcast/multicast) الشبكة؛ حدّد العتبة وفق نمط حركتك."
+   }
+  },
+  "dhcp-snooping-durum": {
+   "en": {
+    "title": "Display DHCP Snooping status",
+    "note": "Verifies which VLANs have it enabled and which ports are trusted; check the binding table separately."
+   },
+   "ar": {
+    "title": "عرض حالة DHCP Snooping",
+    "note": "يتحقق من الـ VLAN المفعّل عليها والمنافذ الموثوقة (trusted)؛ ويُفحص جدول binding بشكل منفصل."
+   }
+  },
+  "dot1x-temel": {
+   "en": {
+    "title": "802.1X port authentication (basic)",
+    "note": "A RADIUS server must be defined first. Apply it to a single port first; a wrong policy cuts connectivity."
+   },
+   "ar": {
+    "title": "مصادقة المنفذ 802.1X (أساسي)",
+    "note": "يجب تعريف خادم RADIUS مسبقًا. طبّقها أولًا على منفذ واحد؛ فقد تقطع السياسة الخاطئة الاتصال."
+   }
+  },
+  "dot1x-durum": {
+   "en": {
+    "title": "Display 802.1X sessions",
+    "note": "Shows which port was authorized with which identity and VLAN; the first step when troubleshooting NAC integrations."
+   },
+   "ar": {
+    "title": "عرض جلسات 802.1X",
+    "note": "يُظهر أي منفذ جرى ترخيصه وبأي هوية وVLAN؛ وهي أول خطوة لاستكشاف أخطاء تكامل NAC."
+   }
+  },
+  "vlan-silme": {
+   "en": {
+    "title": "Delete a VLAN",
+    "note": "If member ports exist, move them to another VLAN first; otherwise they lose connectivity. On Huawei negation is 'undo'."
+   },
+   "ar": {
+    "title": "حذف VLAN",
+    "note": "إن وُجدت منافذ أعضاء فانقلها أولًا إلى VLAN آخر وإلا فقدت الاتصال. في Huawei يكون النفي بـ 'undo'."
+   }
+  },
+  "vlan-araligi": {
+   "en": {
+    "title": "Create several VLANs with one command",
+    "note": "Use a list or range instead of entering many VLANs one by one."
+   },
+   "ar": {
+    "title": "إنشاء عدة VLAN بأمر واحد",
+    "note": "استخدم قائمة أو نطاقًا بدلًا من إدخال كل VLAN على حدة."
+   }
+  },
+  "port-aciklama": {
+   "en": {
+    "title": "Add a port description",
+    "note": "Put the patch panel or device name in the description; it saves time in troubleshooting and inventory automation."
+   },
+   "ar": {
+    "title": "إضافة وصف للمنفذ (description)",
+    "note": "اكتب اسم لوحة التوصيل أو الجهاز في الوصف؛ فهو يوفّر الوقت في استكشاف الأخطاء وأتمتة الجرد."
+   }
+  },
+  "port-grubu-araligi": {
+   "en": {
+    "title": "Apply the same settings to several ports",
+    "note": "Be careful not to give the wrong port range when applying bulk settings."
+   },
+   "ar": {
+    "title": "تطبيق نفس الإعدادات على عدة منافذ",
+    "note": "احرص على عدم إدخال نطاق منافذ خاطئ عند التطبيق الجماعي."
+   }
+  },
+  "native-vlan": {
+   "en": {
+    "title": "Set the trunk native VLAN",
+    "note": "The native VLAN must match on both ends; a mismatch causes STP warnings and VLAN leakage. Choose a VLAN that carries no user traffic."
+   },
+   "ar": {
+    "title": "ضبط native VLAN لمنفذ trunk",
+    "note": "يجب أن يتطابق native VLAN على الطرفين؛ فعدم التطابق يسبب تحذيرات STP وتسرّب VLAN. اختر VLAN لا يحمل حركة مستخدمين."
+   }
+  },
+  "trunk-vlan-ekle": {
+   "en": {
+    "title": "Add a VLAN to a trunk",
+    "note": "On Cisco, without 'add' the command replaces the whole list; this is one of the most common causes of outages."
+   },
+   "ar": {
+    "title": "إضافة VLAN إلى منفذ trunk",
+    "note": "في Cisco يستبدل الأمر القائمة بالكامل إذا لم تستخدم 'add'؛ وهذا من أكثر أسباب الانقطاع شيوعًا."
+   }
+  },
+  "trunk-vlan-cikar": {
+   "en": {
+    "title": "Remove a VLAN from a trunk",
+    "note": "Before removing, make sure the VLAN is not needed over that trunk for another path."
+   },
+   "ar": {
+    "title": "إزالة VLAN من منفذ trunk",
+    "note": "قبل الإزالة تأكد من أن الـ VLAN غير مطلوب عبر هذا الـ trunk لمسار آخر."
+   }
+  },
+  "poe-durumu": {
+   "en": {
+    "title": "Display PoE power status",
+    "note": "For power problems with APs and IP phones, check the total budget and per-port consumption."
+   },
+   "ar": {
+    "title": "عرض حالة طاقة PoE",
+    "note": "عند مشكلات الطاقة في نقاط الوصول وهواتف IP افحص الميزانية الكلية والاستهلاك لكل منفذ."
+   }
+  },
+  "ping-kaynak": {
+   "en": {
+    "title": "Ping with a specified source interface",
+    "note": "Testing from a management or VLAN interface also verifies the return path; the default source is the egress interface."
+   },
+   "ar": {
+    "title": "ping مع تحديد واجهة المصدر",
+    "note": "الاختبار من واجهة الإدارة أو VLAN يتحقق أيضًا من مسار العودة؛ المصدر الافتراضي هو واجهة الخروج."
+   }
+  },
+  "traceroute": {
+   "en": {
+    "title": "Trace the path with traceroute",
+    "note": "On Huawei the command is 'tracert'. A '* * *' hop does not necessarily mean the packet was dropped; ICMP may be filtered."
+   },
+   "ar": {
+    "title": "تتبّع المسار باستخدام traceroute",
+    "note": "في Huawei الأمر هو 'tracert'. ظهور '* * *' في قفزة لا يعني بالضرورة إسقاط الحزمة؛ فقد يكون ICMP مفلترًا."
+   }
+  },
+  "port-mirroring": {
+   "en": {
+    "title": "Port mirroring (SPAN)",
+    "note": "Copies a port's traffic to an analysis port for traffic inspection; the destination port no longer carries normal traffic."
+   },
+   "ar": {
+    "title": "نسخ حركة المنفذ (SPAN)",
+    "note": "ينسخ حركة منفذ إلى منفذ تحليل لفحص الحركة؛ ولا يحمل منفذ الوجهة حركة عادية."
+   }
+  },
+  "sayfalama-kapatma": {
+   "en": {
+    "title": "Disable output paging (--More--)",
+    "note": "Used so scripts and automation receive output in one go; Netmiko usually does this itself."
+   },
+   "ar": {
+    "title": "تعطيل تقسيم الناتج إلى صفحات (--More--)",
+    "note": "يُستخدم لتصل المخرجات دفعة واحدة إلى السكربتات والأتمتة؛ وغالبًا يفعل Netmiko ذلك بنفسه."
+   }
+  },
+  "log-arama": {
+   "en": {
+    "title": "Search the logs for link up/down events",
+    "note": "Filtering with a pipe shrinks the output; useful for finding flapping ports."
+   },
+   "ar": {
+    "title": "البحث في السجلات عن أحداث link up/down",
+    "note": "التصفية بـ pipe تقلّل الناتج؛ وهي مفيدة لإيجاد المنافذ المتذبذبة (flap)."
+   }
+  },
+  "tech-support": {
+   "en": {
+    "title": "Collect diagnostic output for vendor support",
+    "note": "The output is very large; enable terminal logging to a file and send it to vendor support."
+   },
+   "ar": {
+    "title": "جمع ناتج التشخيص لدعم المورّد",
+    "note": "الناتج كبير جدًا؛ فعّل تسجيل الجلسة إلى ملف وأرسله إلى دعم المورّد."
+   }
+  },
+  "vrrp-temel": {
+   "en": {
+    "title": "Gateway redundancy with VRRP",
+    "note": "The virtual IP becomes the clients' gateway. Cisco's own protocol is HSRP; VRRP is the common standard."
+   },
+   "ar": {
+    "title": "تكرار البوابة باستخدام VRRP",
+    "note": "يصبح عنوان IP الافتراضي بوابة العملاء. بروتوكول Cisco الخاص هو HSRP بينما VRRP هو المعيار المشترك."
+   }
+  },
+  "vrrp-durum": {
+   "en": {
+    "title": "Display VRRP status",
+    "note": "Shows Master/Backup roles and the virtual IP; if both devices show Master, check the L2 link."
+   },
+   "ar": {
+    "title": "عرض حالة VRRP",
+    "note": "يُظهر أدوار Master/Backup وعنوان IP الافتراضي؛ وإذا ظهر الجهازان Master معًا فافحص رابط L2."
+   }
+  },
+  "stack-durum": {
+   "en": {
+    "title": "Display stack / VSF members",
+    "note": "Verifies the member count, roles (master/standby) and stack link state."
+   },
+   "ar": {
+    "title": "عرض أعضاء Stack / VSF",
+    "note": "يتحقق من عدد الأعضاء وأدوارهم (master/standby) وحالة روابط التجميع."
+   }
+  },
+  "stp-oncelik": {
+   "en": {
+    "title": "Set the STP root bridge priority",
+    "note": "Deliberately place the root on the core switch; priority must be a multiple of 4096 (Aruba AOS-CX uses a 0-15 step value, each step being 4096)."
+   },
+   "ar": {
+    "title": "ضبط أولوية STP root bridge",
+    "note": "اجعل الـ root على محوّل core عن قصد؛ يجب أن تكون الأولوية من مضاعفات 4096 (تستخدم Aruba AOS-CX قيمة خطوة من 0 إلى 15، وكل خطوة تساوي 4096)."
+   }
+  },
+  "mstp-bolge": {
+   "en": {
+    "title": "MSTP region configuration",
+    "note": "In mixed-vendor networks the region name, revision and VLAN-to-instance mapping must be identical on all switches; otherwise they count as different regions."
+   },
+   "ar": {
+    "title": "إعداد منطقة MSTP",
+    "note": "في الشبكات متعددة الموردين يجب أن يتطابق اسم المنطقة والمراجعة وربط VLAN بالـ instance على جميع المحوّلات، وإلا اعتُبرت مناطق مختلفة."
+   }
+  }
+ }
+}

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-NetCmd static site generator (Python stdlib only).
+NetCmd static site generator (Python stdlib only). Networking komut rehberi.
 
 Diller: tr, en, ar (RTL). Çıktı yapısı:
   /                      dil seçici (JS ile tarayıcı diline yönlendirir)
@@ -40,6 +40,11 @@ ADSENSE = os.environ.get("ADSENSE_CLIENT", "").strip()
 SITE = os.environ.get("SITE_NAME", "NetCmd")
 TODAY = date.today().isoformat()
 
+CAT_ORDER = [
+    "Görüntüleme", "VLAN / Port", "L2 Güvenlik", "Routing", "Yönlendirme Protokolleri", "ACL ve Filtreleme",
+    "Yönetim ve Erişim", "Sistem", "Yedeklilik ve Stack", "Sorun Giderme",
+]
+
 LANGS = ["tr", "en", "ar"]
 LANG_NAMES = {"tr": "Türkçe", "en": "English", "ar": "العربية"}
 DIRS = {"tr": "ltr", "en": "ltr", "ar": "rtl"}
@@ -51,8 +56,7 @@ VENDORS = {
 }
 
 CSS = """
-:root{--bg:#fff;--fg:#14202b;--mut:#5b6b7a;--bd:#dde4ea;--ac:#0b6bcb;--code:#0f1b26;--codefg:#d7e6f5;--card:#f6f9fc;--ok:#16794a;--err:#b3261e}
-@media(prefers-color-scheme:dark){:root{--bg:#0e141a;--fg:#e4ecf3;--mut:#93a4b4;--bd:#243240;--ac:#5aa8ff;--code:#070b0f;--codefg:#d7e6f5;--card:#131c25;--ok:#5fd39a;--err:#ff8a80}}
+:root{--bg:#050a0f;--fg:#e2f0ea;--mut:#8fa8a0;--bd:#16323a;--ac:#3de0ff;--ac2:#39ff9c;--code:#02060a;--codefg:#b8ffd9;--card:rgba(9,20,26,.74);--ok:#39ff9c;--err:#ff6b6b}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Tahoma,sans-serif}
 a{color:var(--ac)}header,main,footer{max-width:980px;margin:0 auto;padding:0 16px}
 header{display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px;border-bottom:1px solid var(--bd)}
@@ -94,6 +98,53 @@ input{width:100%;padding:9px 11px;border:1px solid var(--bd);border-radius:8px;b
 .msg{margin:12px 0;padding:9px 12px;border-radius:8px;border:1px solid var(--bd)}.msg.ok{color:var(--ok);border-color:var(--ok)}.msg.err{color:var(--err);border-color:var(--err)}
 .iban{font:600 1.15rem ui-monospace,Menlo,Consolas,monospace;direction:ltr;unicode-bidi:embed;word-break:break-all}
 footer{padding:24px 16px 40px;color:var(--mut);font-size:.85rem;border-top:1px solid var(--bd);margin-top:32px}
+
+[hidden]{display:none!important}
+html{background:#050a0f;color-scheme:dark}
+body{background:transparent;position:relative;overflow-x:hidden}
+canvas#bg-rain,canvas#bg-net{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
+#bg-rain{opacity:.2}#bg-net{opacity:.5}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 15% 0%,rgba(61,224,255,.10),transparent 55%),radial-gradient(ellipse at 90% 100%,rgba(57,255,156,.08),transparent 50%),repeating-linear-gradient(0deg,rgba(255,255,255,.018) 0 1px,transparent 1px 3px)}
+main p,main li,main h1,main h2,main h3{text-shadow:0 0 8px rgba(5,10,15,.95)}
+a:hover{text-shadow:0 0 8px rgba(61,224,255,.45)}
+header{position:sticky;top:0;z-index:20;background:rgba(5,10,15,.8);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+header a.logo{font:700 1.25rem ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ac2);text-shadow:0 0 12px rgba(57,255,156,.5);direction:ltr;unicode-bidi:isolate}
+header a.logo::before{content:"> ";color:var(--ac)}
+header a.logo::after{content:"_";animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+h1,h2,h3{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+h1{color:#eafff5}h2{color:var(--ac2)}
+.btn{background:linear-gradient(135deg,var(--ac2),var(--ac));color:#031014;font-weight:700;box-shadow:0 0 0 1px rgba(57,255,156,.4),0 0 18px rgba(57,255,156,.18)}
+.btn:hover{filter:brightness(1.12)}
+nav a.btn{color:#031014}
+.btn.sec{background:rgba(5,10,15,.6);color:var(--ac);border:1px solid var(--ac);box-shadow:none}
+.btn.sec:hover{background:rgba(61,224,255,.12)}
+.card{-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:border-color .15s,box-shadow .15s}
+.card:hover{border-color:var(--ac);box-shadow:0 0 0 1px rgba(61,224,255,.25),0 0 20px rgba(61,224,255,.12)}
+.vend,table,.note,.panel,form.box,.msg{background:rgba(7,14,19,.74)}
+th{background:rgba(12,28,36,.9)}
+textarea,select,input{background:rgba(3,8,12,.88)}
+.tag{background:rgba(7,14,19,.6)}
+.risk-medium{color:#ffb454;border-color:#ffb454}
+.hero{padding:26px 0 8px}
+.hero h1{font-size:clamp(1.9rem,5.2vw,3.1rem);margin:.2rem 0 .5rem;letter-spacing:-.5px}
+.hero h1::before{content:"$ ";color:var(--ac2)}
+html[dir=rtl] .hero h1::before{content:""}
+.term{direction:ltr;text-align:left;max-width:680px;background:rgba(2,6,9,.85);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;font:15px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--codefg);box-shadow:0 0 28px rgba(57,255,156,.09);min-height:52px;overflow:hidden;white-space:nowrap;margin:14px 0}
+.term .tp{color:var(--ac)}.term .tc{color:#d8ffe9}
+.cursor{display:inline-block;width:.6em;height:1.05em;vertical-align:text-bottom;background:var(--ac2);margin-left:3px;animation:blink 1s steps(1) infinite}
+.plats{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.tag.plat{color:var(--ac2);border-color:rgba(57,255,156,.45)}
+.stat{color:var(--mut);font:13px ui-monospace,Menlo,Consolas,monospace}
+.searchbar{display:flex;gap:10px;align-items:center;margin:20px 0 10px}
+.searchbar input{flex:1;font:16px ui-monospace,Menlo,Consolas,monospace;padding:12px 14px;border-radius:10px;border:1px solid var(--bd);color:var(--fg)}
+.searchbar input:focus{outline:none;border-color:var(--ac2);box-shadow:0 0 0 2px rgba(57,255,156,.2)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 18px}
+a.tag.chip{text-decoration:none;color:var(--ac)}a.tag.chip:hover{border-color:var(--ac);background:rgba(61,224,255,.1)}
+.cmd-card small{display:block;color:var(--mut);font:12px ui-monospace,Menlo,Consolas,monospace;margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;direction:ltr;text-align:left}
+section.cat h2 .tag{font-size:.7rem;vertical-align:middle}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+@media print{html,body{background:#fff!important;color:#000!important}canvas,body::before{display:none!important}.card,.vend,table,.note,.panel{background:#fff!important}}
 """
 
 NAV_SWAP_JS = (
@@ -221,7 +272,13 @@ def load_json(name):
 def load():
     global I18N, SITECFG, PROJECTS, LAB
     items = load_json("commands.json")
+    for f in sorted(DATA.glob("commands_*.json")):
+        items += load_json(f.name)
     I18N = load_json("i18n.json")
+    for f in sorted(DATA.glob("i18n_*.json")):
+        ex = load_json(f.name)
+        I18N["cats"].update(ex.get("cats", {}))
+        I18N["items"].update(ex.get("items", {}))
     extra = load_json("tools_i18n.json")
     for lang in LANGS:
         I18N["ui"][lang].update(extra["ui"][lang])
@@ -328,16 +385,19 @@ def page(lang, title, desc, path, body, jsonld=None, noindex=False, head_extra="
         '<link rel="canonical" href="{canon}">{alts}'
         '<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">'
         '<meta property="og:type" content="article"><meta property="og:url" content="{canon}">'
+        '<meta name="theme-color" content="#050a0f">'
         "<style>{css}</style>{ads}{ld}{head_extra}</head><body>"
+        '<canvas id="bg-rain" aria-hidden="true"></canvas><canvas id="bg-net" aria-hidden="true"></canvas>'
         "{header}<main>{body}</main>"
         "<footer>{site} · {footer} {upd}: {today}</footer>"
-        "<script>{nav_js}</script>{script}</body></html>"
+        "<script>{nav_js}</script>{script}{bgjs}</body></html>"
     ).format(
         lang=lang, dir=DIRS[lang], title=esc(title), desc=esc(desc), robots=robots,
         canon=esc(canonical), alts=alts, css=CSS, ads=ads, ld=ld, head_extra=head_extra,
         header=header(lang, path), body=body, site=esc(SITE),
         footer=esc(T(lang, "footer")), upd=esc(T(lang, "updated")), today=TODAY,
         nav_js=NAV_SWAP_JS, script=script,
+        bgjs='<script src="{}/assets/bg.js?v={}" defer></script>'.format(BASE_PATH, TODAY),
     )
 
 
@@ -444,25 +504,52 @@ def build_categories(lang, items, paths):
         )
         write("{}/{}index.html".format(lang, path), page(lang, title, desc, path, body))
         paths.add(path)
-    return cats
+    return dict(sorted(cats.items(), key=lambda kv: CAT_ORDER.index(kv[0]) if kv[0] in CAT_ORDER else 99))
 
 
 def build_home(lang, items, cats, paths):
-    cat_links = " ".join(
-        '<a class="tag" href="{}">{} ({})</a>'.format(lurl(lang, "category/{}/".format(slugify(c))), esc(cat_name(c, lang)), len(l))
+    chips = " ".join(
+        '<a class="tag chip" href="{}">{} ({})</a>'.format(lurl(lang, "category/{}/".format(slugify(c))), esc(cat_name(c, lang)), len(l))
         for c, l in cats.items()
     )
-    cards = "".join(
-        '<div class="card"><a href="{}">{}</a><br><span class="tag">{}</span></div>'.format(
-            lurl(lang, "cmd/{}/".format(i["slug"])), esc(item_title(i, lang)), esc(cat_name(i["cat"], lang))
+    sections = ""
+    for cat, lst in cats.items():
+        cards = ""
+        for i in lst:
+            hay = " ".join(
+                [item_title(i, lang), i["title"], i["slug"], cat_name(cat, lang)]
+                + [c for v in VENDORS for c in i[v]["cmds"]]
+            ).lower()
+            cards += (
+                '<div class="card cmd-card" data-s="{}"><a href="{}">{}</a>'
+                '<small>{} · {}</small></div>'
+            ).format(esc(hay), lurl(lang, "cmd/{}/".format(i["slug"])), esc(item_title(i, lang)),
+                     esc(i["cisco"]["cmds"][0]), esc(i["huawei"]["cmds"][0]))
+        sections += '<section class="cat"><h2 id="{}">{} <span class="tag">{}</span></h2><div class="grid">{}</div></section>'.format(
+            slugify(cat), esc(cat_name(cat, lang)), len(lst), cards
         )
-        for i in items
+    n = len(items)
+    hero = (
+        '<section class="hero"><h1>{h1}</h1><p class="lead">{lead}</p>'
+        '<div class="term" aria-hidden="true"><span class="tp" id="tp"></span> <span class="tc" id="tc"></span><span class="cursor"></span></div>'
+        '<p class="plats"><span class="tag plat">Cisco IOS</span><span class="tag plat">Huawei VRP</span><span class="tag plat">Aruba AOS</span></p>'
+        '<p class="stat">{stat}</p>'
+        '<p><a class="btn" href="{tools}">{tools_t}</a> <a class="btn sec" href="{signup}">{signup_t}</a></p></section>'
+    ).format(
+        h1=esc(T(lang, "home_h1")), lead=esc(T(lang, "home_lead")),
+        stat=esc(T(lang, "hero_stat", n=n, c=len(cats))),
+        tools=lurl(lang, "tools/"), tools_t=esc(T(lang, "tools_title")),
+        signup=lurl(lang, "signup/"), signup_t=esc(T(lang, "nav_signup")),
     )
-    body = '<h1>{}</h1><p class="lead">{}</p><p><a class="btn sec" href="{}">{}</a></p><p>{}</p>{}<div class="grid">{}</div>'.format(
-        esc(T(lang, "home_h1")), esc(T(lang, "home_lead")), lurl(lang, "tools/"), esc(T(lang, "tools_title")),
-        cat_links, ad_slot(), cards
+    search = (
+        '<div class="searchbar"><input id="q" type="search" placeholder="{ph}" aria-label="{ph}" autocomplete="off">'
+        '<span class="tag" id="cnt" data-fmt="{fmt}">{count}</span></div>'
+    ).format(ph=esc(T(lang, "search_ph")), fmt=esc(I18N["ui"][lang]["search_count"]), count=esc(T(lang, "search_count", n=n, t=n)))
+    body = "{}{}<p class=\"chips\">{}</p>{}{}<p id=\"none\" class=\"lead\" hidden>{}</p>".format(
+        hero, search, chips, ad_slot(), sections, esc(T(lang, "no_results"))
     )
-    write("{}/index.html".format(lang), page(lang, T(lang, "home_title"), T(lang, "home_desc"), "", body))
+    script = '<script src="{}/assets/home.js?v={}" defer></script>'.format(BASE_PATH, TODAY)
+    write("{}/index.html".format(lang), page(lang, T(lang, "home_title"), T(lang, "home_desc"), "", body, script=script))
     paths.add("")
 
 

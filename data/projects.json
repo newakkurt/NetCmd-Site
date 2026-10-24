@@ -3,11 +3,15 @@
     "id": "netcmd",
     "status": "live",
     "url": "",
-    "name": {"tr": "NetCmd", "en": "NetCmd", "ar": "NetCmd"},
+    "name": {
+      "tr": "NetCmd",
+      "en": "NetCmd",
+      "ar": "NetCmd"
+    },
     "desc": {
-      "tr": "Cisco / Huawei / Aruba komut karşılıkları rehberi (ücretsiz).",
-      "en": "Cisco / Huawei / Aruba command equivalents guide (free).",
-      "ar": "دليل مقابل أوامر Cisco / Huawei / Aruba (مجاني)."
+      "tr": "Networking komut rehberi, araçlar ve lab senaryoları (ücretsiz).",
+      "en": "Networking command reference, tools and lab scenarios (free).",
+      "ar": "مرجع أوامر الشبكات وأدوات وسيناريوهات مختبر (مجاني)."
     }
   },
   {
