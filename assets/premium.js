@@ -31,14 +31,25 @@
   function sevCell(s) { return '<span class="risk risk-' + s + '">' + esc(T['p_sev_' + s]) + '</span>'; }
 
   /* ---------- Premium modülü: yalnızca Premium üyeye Supabase'den verilir (RLS) ---------- */
+  function runPro(code, cb) {
+    try { (new Function(code))(); cb(!!P.PREMIUM_LOADED); } catch (e) { cb(false); }
+  }
   function loadPro(plan, cb) {
     if (P.PREMIUM_LOADED) { cb(true); return; }
     if (!plan.premium || !plan.sb) { cb(false); return; }
-    plan.sb.from('premium_assets').select('code').eq('name', 'plib-premium').maybeSingle().then(function (r) {
-      var code = r && r.data && r.data.code;
-      if (!code) { cb(false); return; }
-      try { (new Function(code))(); cb(!!P.PREMIUM_LOADED); } catch (e) { cb(false); }
-    }).catch(function () { cb(false); });
+    function fromTable() {
+      plan.sb.from('premium_assets').select('code').eq('name', 'plib-premium').maybeSingle().then(function (r) {
+        var code = r && r.data && r.data.code;
+        if (code) runPro(code, cb); else cb(false);
+      }).catch(function () { cb(false); });
+    }
+    // 1) özel Storage bucket'ı (RLS: yalnızca Premium), 2) yedek: premium_assets tablosu
+    try {
+      plan.sb.storage.from('premium').download('plib-premium.js').then(function (r) {
+        if (r && r.data && r.data.text) r.data.text().then(function (code) { if (code) runPro(code, cb); else fromTable(); }).catch(fromTable);
+        else fromTable();
+      }).catch(fromTable);
+    } catch (e) { fromTable(); }
   }
   function bytesDownload(name, bytes, type) {
     var a = document.createElement('a');
