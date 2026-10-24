@@ -1,0 +1,286 @@
+/* NetCmd Premium arayüzü. Üyelik durumu Supabase'den okunur; analiz tarayıcıda yapılır.
+   NOT: Premium kapısı istemci tarafındadır (statik site); amaç ücretli özellikleri üyelere ayırmaktır, DRM değildir. */
+(function () {
+  'use strict';
+  var P = window.PLib;
+  var dataEl = document.getElementById('tool-data');
+  var app = document.getElementById('app');
+  if (!dataEl || !app || !P) return;
+  var D = JSON.parse(dataEl.textContent);
+  var T = D.t, C = D.cfg || {};
+  var tool = app.getAttribute('data-tool');
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; });
+  }
+  function $(id) { return document.getElementById(id); }
+  function fmt(s, o) { return s.replace(/\{(\w+)\}/g, function (_, k) { return o[k] === undefined ? '' : o[k]; }); }
+  function csvCell(v) { v = String(v == null ? '' : v); return /[",\n;]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; }
+  function download(name, text, type) {
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob(['﻿' + text], { type: type || 'text/plain;charset=utf-8' }));
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  }
+  function store(key, val) {
+    try { if (val === undefined) return JSON.parse(localStorage.getItem(key) || 'null'); localStorage.setItem(key, JSON.stringify(val)); } catch (e) { /* kapalı olabilir */ }
+    return null;
+  }
+  function sevCell(s) { return '<span class="risk risk-' + s + '">' + esc(T['p_sev_' + s]) + '</span>'; }
+
+  /* ---------- üyelik durumu ---------- */
+  function getPlan(cb) {
+    if (!C.url || !C.key || !window.supabase) { cb({ premium: false, logged: false, unavailable: true }); return; }
+    var sb;
+    try { sb = window.supabase.createClient(C.url, C.key); } catch (e) { cb({ premium: false, logged: false, unavailable: true }); return; }
+    sb.auth.getSession().then(function (r) {
+      var s = r.data && r.data.session;
+      if (!s) { cb({ premium: false, logged: false, sb: sb }); return; }
+      sb.from('profiles').select('is_premium,premium_until').eq('id', s.user.id).maybeSingle().then(function (p) {
+        var d = p.data || {};
+        var ok = !!d.is_premium && (!d.premium_until || new Date(d.premium_until) > new Date());
+        cb({ premium: ok, logged: true, sb: sb, user: s.user });
+      }).catch(function () { cb({ premium: false, logged: true, sb: sb, user: s.user }); });
+    }).catch(function () { cb({ premium: false, logged: false, unavailable: true }); });
+  }
+
+  function planBar(plan) {
+    var h = '<div class="note planbar"><strong>' + esc(T.p_plan) + ':</strong> ' +
+      esc(plan.premium ? T.p_plan_premium : T.p_plan_free) + ' ';
+    if (plan.unavailable) h += '<span>· ' + esc(T.p_unavailable) + '</span> ';
+    if (!plan.premium) {
+      if (!plan.logged) h += '<a class="btn sec" href="' + esc(C.loginPath) + '">' + esc(T.p_login) + '</a> ';
+      h += '<a class="btn" href="' + esc(C.premiumPath) + '">' + esc(T.p_upgrade) + '</a>';
+    }
+    return h + '</div>';
+  }
+  function upsell(msg) {
+    return '<div class="panel"><p>' + esc(msg) + '</p><p><a class="btn" href="' + esc(C.premiumPath) + '">' + esc(T.p_upgrade) + '</a></p></div>';
+  }
+
+  /* ---------- 1) Config Auditor ---------- */
+  function renderAuditor(plan) {
+    app.innerHTML = planBar(plan) +
+      '<div class="row"><label for="a-v">' + esc(T.p_vendor) + '</label><select id="a-v"><option value="cisco">Cisco IOS</option><option value="huawei">Huawei VRP</option><option value="aruba">Aruba AOS-S / AOS-CX</option></select></div>' +
+      '<label for="a-in">' + esc(T.p_aud_paste) + '</label><textarea id="a-in" rows="12" dir="ltr" spellcheck="false"></textarea>' +
+      '<p><label for="a-f">' + esc(T.p_aud_files) + '</label> <input type="file" id="a-f" accept=".txt,.cfg,.conf,.log,text/plain"' + (plan.premium ? ' multiple' : '') + '></p>' +
+      '<p><button class="btn" id="a-run" type="button">' + esc(T.p_run) + '</button></p>' +
+      '<div id="a-out"></div>';
+    var files = [];
+    $('a-f').addEventListener('change', function (e) {
+      files = [];
+      var list = [].slice.call(e.target.files || [], 0, plan.premium ? 20 : 1);
+      var left = list.length;
+      if (!left) return;
+      list.forEach(function (f) {
+        var r = new FileReader();
+        r.onload = function () { files.push({ name: f.name, text: String(r.result || '').slice(0, 2000000) }); left--; if (!left) $('a-in').placeholder = files.map(function (x) { return x.name; }).join(', '); };
+        r.readAsText(f);
+      });
+    });
+    $('a-run').addEventListener('click', function () {
+      var v = $('a-v').value, txt = $('a-in').value;
+      var inputs = txt.trim() ? [{ name: '-', text: txt }] : [];
+      inputs = inputs.concat(files);
+      var out = $('a-out');
+      if (!inputs.length) { out.innerHTML = '<div class="msg err">' + esc(T.p_empty) + '</div>'; return; }
+      var rows = [], hidden = 0, cnt = { high: 0, medium: 0, low: 0 };
+      inputs.forEach(function (inp) {
+        var r = P.audit(v, inp.text, plan.premium);
+        hidden = r.hidden;
+        r.findings.forEach(function (f) { cnt[f.sev]++; rows.push({ file: inp.name, f: f }); });
+      });
+      var html = '<p><strong>' + esc(fmt(T.p_aud_summary, { n: rows.length, h: cnt.high, m: cnt.medium, l: cnt.low, f: inputs.length })) + '</strong></p>';
+      if (!rows.length) html += '<div class="msg ok">' + esc(T.p_none) + '</div>';
+      else {
+        html += '<div class="tablewrap"><table><tr><th>' + esc(T.p_col_sev) + '</th>' + (inputs.length > 1 ? '<th>' + esc(T.p_col_file) + '</th>' : '') +
+          '<th>' + esc(T.p_col_find) + '</th><th>' + esc(T.p_col_ev) + '</th><th>' + esc(T.p_col_fix) + '</th></tr>';
+        rows.forEach(function (x) {
+          html += '<tr><td>' + sevCell(x.f.sev) + '</td>' + (inputs.length > 1 ? '<td>' + esc(x.file) + '</td>' : '') +
+            '<td>' + esc(T['p_r_' + x.f.id]) + '</td><td dir="ltr"><code>' + esc(x.f.ev) + '</code></td><td dir="ltr"><code>' + esc(x.f.fix) + '</code></td></tr>';
+        });
+        html += '</table></div>';
+      }
+      if (!plan.premium && hidden) html += upsell(fmt(T.p_aud_hidden, { n: hidden }));
+      if (plan.premium && rows.length) html += '<p><button class="btn sec" id="a-csv" type="button">' + esc(T.p_dl_csv) + '</button></p>';
+      out.innerHTML = html;
+      if (plan.premium && rows.length) {
+        $('a-csv').addEventListener('click', function () {
+          var head = ['file', 'severity', 'finding', 'evidence', 'fix'];
+          var lines = [head.join(',')];
+          rows.forEach(function (x) { lines.push([x.file, x.f.sev, T['p_r_' + x.f.id], x.f.ev, x.f.fix].map(csvCell).join(',')); });
+          download('netcmd-audit.csv', lines.join('\n'), 'text/csv;charset=utf-8');
+        });
+      }
+    });
+  }
+
+  /* ---------- 2) Troubleshooting ---------- */
+  function renderTrouble(plan) {
+    app.innerHTML = planBar(plan) +
+      '<label for="t-in">' + esc(T.p_ts_paste) + '</label><textarea id="t-in" rows="12" dir="ltr" spellcheck="false"></textarea>' +
+      '<p><label for="t-v">' + esc(T.p_ts_vlan) + '</label> <input id="t-v" type="number" min="1" max="4094" style="max-width:140px"></p>' +
+      '<p><button class="btn" id="t-run" type="button">' + esc(T.p_run) + '</button></p><div id="t-out"></div>';
+    $('t-run').addEventListener('click', function () {
+      var txt = $('t-in').value, out = $('t-out');
+      if (!txt.trim()) { out.innerHTML = '<div class="msg err">' + esc(T.p_empty) + '</div>'; return; }
+      var vl = parseInt($('t-v').value, 10);
+      var res = P.troubleshoot(txt, vl > 0 && vl < 4095 ? vl : 0);
+      if (!res.length) { out.innerHTML = '<div class="msg ok">' + esc(T.p_none) + '</div>'; return; }
+      var shown = plan.premium ? res : res.slice(0, 1);
+      var html = '';
+      shown.forEach(function (f) {
+        html += '<div class="panel"><h3 style="margin-top:0">' + sevCell(f.sev) + ' ' + esc(T['p_ts_' + f.id + '_t']) + '</h3>' +
+          '<p dir="ltr"><code>' + esc(f.ev) + '</code></p>';
+        if (plan.premium) {
+          html += '<p><strong>' + esc(T.p_ts_steps) + ':</strong></p><ol>' +
+            String(T['p_ts_' + f.id + '_s']).split('|').map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') + '</ol>';
+        }
+        html += '</div>';
+      });
+      if (!plan.premium) html += upsell(res.length > 1 ? fmt(T.p_ts_hidden, { n: res.length - 1 }) : T.p_limited);
+      out.innerHTML = html;
+    });
+  }
+
+  /* ---------- 3) Compliance ---------- */
+  var KEY_PROF = 'netcmd.policies.v1';
+  function renderCompliance(plan) {
+    if (!plan.premium) { app.innerHTML = planBar(plan) + upsell(T.p_locked); return; }
+    var profs = store(KEY_PROF) || {};
+    app.innerHTML = planBar(plan) +
+      '<div class="row"><label for="c-p">' + esc(T.p_cmp_profile) + '</label><select id="c-p"></select> ' +
+      '<button class="btn sec" id="c-del" type="button">' + esc(T.p_cmp_del) + '</button></div>' +
+      '<div class="row"><label for="c-pre">' + esc(T.p_cmp_preset) + '</label><select id="c-pre"><option value="">–</option><option value="cisco">Cisco IOS</option><option value="huawei">Huawei VRP</option><option value="aruba">Aruba</option></select></div>' +
+      '<label for="c-rules">' + esc(T.p_cmp_rules) + '</label><textarea id="c-rules" rows="9" dir="ltr" spellcheck="false"></textarea>' +
+      '<p class="stat">' + esc(T.p_cmp_help) + '</p>' +
+      '<div class="row"><input id="c-name" placeholder="' + esc(T.p_cmp_name) + '" style="max-width:260px"> <button class="btn sec" id="c-save" type="button">' + esc(T.p_cmp_save) + '</button> <span id="c-saved"></span></div>' +
+      '<label for="c-cfg">' + esc(T.p_cmp_cfg) + '</label><textarea id="c-cfg" rows="10" dir="ltr" spellcheck="false"></textarea>' +
+      '<p><button class="btn" id="c-run" type="button">' + esc(T.p_run) + '</button></p><div id="c-out"></div>';
+    function fillSelect() {
+      var sel = $('c-p'), names = Object.keys(profs);
+      sel.innerHTML = '<option value="">–</option>' + names.map(function (n) { return '<option>' + esc(n) + '</option>'; }).join('');
+    }
+    fillSelect();
+    $('c-p').addEventListener('change', function () {
+      var n = this.value;
+      if (n && profs[n] !== undefined) { $('c-rules').value = profs[n]; $('c-name').value = n; }
+    });
+    $('c-pre').addEventListener('change', function () { if (this.value) $('c-rules').value = P.PRESETS[this.value]; });
+    $('c-save').addEventListener('click', function () {
+      var n = $('c-name').value.trim().slice(0, 60);
+      if (!n || !$('c-rules').value.trim()) { $('c-saved').textContent = T.p_cmp_norules; return; }
+      profs[n] = $('c-rules').value;
+      store(KEY_PROF, profs);
+      fillSelect();
+      $('c-p').value = n;
+      $('c-saved').textContent = T.p_cmp_saved;
+    });
+    $('c-del').addEventListener('click', function () {
+      var n = $('c-p').value;
+      if (n) { delete profs[n]; store(KEY_PROF, profs); fillSelect(); }
+    });
+    $('c-run').addEventListener('click', function () {
+      var out = $('c-out');
+      if (!$('c-cfg').value.trim()) { out.innerHTML = '<div class="msg err">' + esc(T.p_empty) + '</div>'; return; }
+      var r = P.comply($('c-rules').value, $('c-cfg').value);
+      if (!r.total) { out.innerHTML = '<div class="msg err">' + esc(T.p_cmp_norules) + '</div>'; return; }
+      var html = '<p><strong>' + esc(fmt(T.p_cmp_score, { s: r.score, p: r.pass, t: r.total })) + '</strong></p><div class="tablewrap"><table><tr><th></th><th>' + esc(T.p_col_find) + '</th><th>' + esc(T.p_col_ev) + '</th></tr>';
+      r.results.forEach(function (x) {
+        html += '<tr><td>' + (x.ok ? '<span class="risk risk-low">' + esc(T.p_cmp_ok) + '</span>' : '<span class="risk risk-high">' + esc(T.p_cmp_fail) + '</span>') +
+          '</td><td dir="ltr"><code>' + (x.type === 'require' ? '+ ' : '- ') + esc(x.label) + '</code> <small>(' + esc(x.type === 'require' ? T.p_cmp_require : T.p_cmp_forbid) + ')</small></td><td dir="ltr"><code>' + esc(x.ev) + '</code></td></tr>';
+      });
+      html += '</table></div><p><button class="btn sec" id="c-csv" type="button">' + esc(T.p_dl_csv) + '</button></p>';
+      out.innerHTML = html;
+      $('c-csv').addEventListener('click', function () {
+        var lines = ['type,rule,result,evidence'];
+        r.results.forEach(function (x) { lines.push([x.type, x.label, x.ok ? 'pass' : 'fail', x.ev].map(csvCell).join(',')); });
+        download('netcmd-compliance.csv', lines.join('\n'), 'text/csv;charset=utf-8');
+      });
+    });
+  }
+
+  /* ---------- 4) Topology ---------- */
+  var KEY_TOPO = 'netcmd.topology.last.v1';
+  function renderTopology(plan) {
+    app.innerHTML = planBar(plan) +
+      '<label for="p-in">' + esc(T.p_top_in) + '</label><textarea id="p-in" rows="14" dir="ltr" spellcheck="false"' + (plan.premium ? '' : ' readonly') + '></textarea>' +
+      '<p class="stat">' + esc(T.p_top_help) + '</p>' +
+      (plan.premium
+        ? '<label for="p-inv">' + esc(T.p_top_inv) + '</label><textarea id="p-inv" rows="4" dir="ltr" spellcheck="false"></textarea><p><button class="btn sec" id="p-sample" type="button">' + esc(T.p_top_sample) + '</button></p>'
+        : '<div class="note">' + esc(T.p_top_demo) + '</div>') +
+      '<p><button class="btn" id="p-run" type="button">' + esc(T.p_run) + '</button></p><div id="p-out"></div>';
+    $('p-in').value = P.SAMPLE;
+    if ($('p-sample')) $('p-sample').addEventListener('click', function () { $('p-in').value = P.SAMPLE; $('p-inv').value = 'CORE1\nDIST1\nDIST2\nACC1\nACC2\nACC3'; });
+    $('p-run').addEventListener('click', function () {
+      var out = $('p-out');
+      var topo = P.topology($('p-in').value, plan.premium ? $('p-inv').value : '');
+      if (!topo.links.length) { out.innerHTML = '<div class="msg err">' + esc(T.p_top_none) + '</div>'; return; }
+      var svg = P.topoSvg(topo);
+      var html = '<div class="panel">' + svg + '</div>';
+      html += '<h3>' + esc(T.p_top_links) + ' (' + topo.links.length + ')</h3><div class="tablewrap"><table><tr><th>A</th><th>A port</th><th>B</th><th>B port</th></tr>' +
+        topo.links.map(function (l) { return '<tr><td>' + esc(l.a) + '</td><td dir="ltr"><code>' + esc(l.ai) + '</code></td><td>' + esc(l.b) + '</td><td dir="ltr"><code>' + esc(l.bi) + '</code></td></tr>'; }).join('') + '</table></div>';
+      if (topo.unknown.length) html += '<p class="msg err"><strong>' + esc(T.p_top_unknown) + ':</strong> ' + esc(topo.unknown.join(', ')) + '</p>';
+      if (topo.missing.length) html += '<p class="msg err"><strong>' + esc(T.p_top_missing) + ':</strong> ' + esc(topo.missing.join(', ')) + '</p>';
+      if (plan.premium) {
+        var prev = store(KEY_TOPO);
+        html += '<h3>' + esc(T.p_top_changes) + '</h3>';
+        if (!prev) html += '<p>' + esc(T.p_top_first) + '</p>';
+        else {
+          var d = P.topoDiff(prev, topo.links);
+          if (!d.added.length && !d.removed.length) html += '<p>' + esc(T.p_top_nochange) + '</p>';
+          else html += '<ul dir="ltr">' + d.added.map(function (k) { return '<li>+ ' + esc(T.p_top_new) + ': <code>' + esc(k) + '</code></li>'; }).join('') +
+            d.removed.map(function (k) { return '<li>− ' + esc(T.p_top_gone) + ': <code>' + esc(k) + '</code></li>'; }).join('') + '</ul>';
+        }
+        store(KEY_TOPO, topo.links);
+        html += '<p><button class="btn sec" id="p-svg" type="button">' + esc(T.p_top_svg) + '</button> <button class="btn sec" id="p-csv" type="button">' + esc(T.p_dl_csv) + '</button></p>';
+      }
+      out.innerHTML = html;
+      if (plan.premium) {
+        $('p-svg').addEventListener('click', function () { download('netcmd-topology.svg', svg, 'image/svg+xml'); });
+        $('p-csv').addEventListener('click', function () {
+          var lines = ['a,a_port,b,b_port'];
+          topo.links.forEach(function (l) { lines.push([l.a, l.ai, l.b, l.bi].map(csvCell).join(',')); });
+          download('netcmd-topology.csv', lines.join('\n'), 'text/csv;charset=utf-8');
+        });
+      }
+    });
+  }
+
+  /* ---------- Premium sayfası: durum + talep ---------- */
+  function renderPremiumPage(plan) {
+    var box = $('prem-box');
+    if (!box) return;
+    if (plan.premium) { box.innerHTML = '<div class="msg ok">' + esc(T.p_already) + '</div>'; return; }
+    if (!plan.logged) { box.innerHTML = '<p>' + esc(T.p_login_req) + '</p><p><a class="btn" href="' + esc(C.loginPath) + '">' + esc(T.p_login) + '</a> <a class="btn sec" href="' + esc(C.signupPath) + '">' + esc(C.signupText) + '</a></p>'; return; }
+    box.innerHTML = '<h2>' + esc(T.p_req_title) + '</h2><form class="box" id="rq"><label for="rq-ref">' + esc(T.p_req_ref) + '</label>' +
+      '<input id="rq-ref" maxlength="200" minlength="3" required><p><button class="btn" id="rq-b" type="submit">' + esc(T.p_req_btn) + '</button></p></form><div id="rq-m" class="msg" hidden></div>';
+    function msg(t, ok) { var m = $('rq-m'); m.textContent = t; m.className = 'msg ' + (ok ? 'ok' : 'err'); m.hidden = false; }
+    plan.sb.from('premium_requests').select('status').eq('status', 'pending').limit(1).then(function (r) {
+      if (r.data && r.data.length) { msg(T.p_req_pending, true); }
+    });
+    $('rq').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var b = $('rq-b'); b.disabled = true;
+      plan.sb.from('premium_requests').insert({ reference: $('rq-ref').value.trim() }).then(function (r) {
+        b.disabled = false;
+        if (r.error) { msg(T.p_req_err, false); return; }
+        msg(T.p_req_ok, true); $('rq').reset();
+      }).catch(function () { b.disabled = false; msg(T.p_req_err, false); });
+    });
+  }
+
+  getPlan(function (plan) {
+    try {
+      if (tool === 'premium') renderPremiumPage(plan);
+      else if (tool === 'aud') renderAuditor(plan);
+      else if (tool === 'trouble') renderTrouble(plan);
+      else if (tool === 'comp') renderCompliance(plan);
+      else if (tool === 'topo') renderTopology(plan);
+    } catch (e) {
+      app.innerHTML = '<div class="msg err">' + esc(String(e && e.message || e)) + '</div>';
+    }
+  });
+})();

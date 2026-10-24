@@ -100,6 +100,11 @@ input{width:100%;padding:9px 11px;border:1px solid var(--bd);border-radius:8px;b
 footer{padding:24px 16px 40px;color:var(--mut);font-size:.85rem;border-top:1px solid var(--bd);margin-top:32px}
 
 [hidden]{display:none!important}
+.tablewrap{overflow-x:auto}
+.planbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.badge{display:inline-block;font:700 11px ui-monospace,Menlo,Consolas,monospace;color:#031014;background:linear-gradient(135deg,var(--ac2),var(--ac));border-radius:999px;padding:2px 9px;vertical-align:middle;margin:0 6px}
+.support-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.support-grid .panel h2{margin-top:0}
 html{background:#050a0f;color-scheme:dark}
 body{background:transparent;position:relative;overflow-x:hidden}
 canvas#bg-rain,canvas#bg-net{position:fixed;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none}
@@ -282,6 +287,9 @@ def load():
     extra = load_json("tools_i18n.json")
     for lang in LANGS:
         I18N["ui"][lang].update(extra["ui"][lang])
+    prem = load_json("premium_i18n.json")
+    for lang in LANGS:
+        I18N["ui"][lang].update(prem["ui"][lang])
     LAB = load_json("lab.json")
     for sc in LAB:
         for k in ("id", "vendor", "cmd", "output", "title", "question", "answer"):
@@ -348,6 +356,7 @@ def header(lang, path):
         "<nav>"
         '<a href="{home}">{n_home}</a>'
         '<a href="{tools}">{n_tools}</a>'
+        '<a href="{prem}">{n_prem}</a>'
         '<a href="{proj}">{n_proj}</a>'
         '<a href="{sup}">{n_sup}</a>'
         '<a id="nav-login" href="{login}" data-acc-href="{acc}" data-acc-text="{acc_t}">{n_login}</a>'
@@ -356,6 +365,7 @@ def header(lang, path):
     ).format(
         home=lurl(lang), site=esc(SITE), n_home=t("nav_home"),
         tools=lurl(lang, "tools/"), n_tools=t("nav_tools"),
+        prem=lurl(lang, "premium/"), n_prem=t("pg_nav"),
         proj=lurl(lang, "projects/"), n_proj=t("nav_projects"),
         sup=lurl(lang, "support/"), n_sup=t("nav_support"),
         login=lurl(lang, "login/"), acc=lurl(lang, "account/"), acc_t=t("nav_account"),
@@ -570,22 +580,42 @@ def build_projects(lang, paths):
     paths.add("projects/")
 
 
+def iban_valid(iban):
+    """TR IBAN mod-97 doğrulaması (yanlış IBAN yayınlamayı önler)."""
+    v = iban.replace(" ", "").upper()
+    if not re.fullmatch(r"[A-Z]{2}\d{2}[A-Z0-9]{11,30}", v):
+        return False
+    r = v[4:] + v[:4]
+    return int("".join(str(int(c, 36)) for c in r)) % 97 == 1
+
+
 def build_support(lang, paths):
+    t = lambda k: esc(T(lang, k))
+    # 1) Buy Me a Coffee
+    bmc = SITECFG.get("bmc_url", "").strip()
+    if bmc.startswith("https://"):
+        bmc_html = '<p><a class="btn" href="{}" target="_blank" rel="noopener noreferrer">☕ {}</a></p>'.format(esc(bmc), t("sup_bmc_btn"))
+    else:
+        bmc_html = "<p>{}</p>".format(t("sup_bmc_soon"))
+    bmc_panel = '<div class="panel"><h2>☕ {}</h2><p>{}</p>{}</div>'.format(t("sup_bmc_title"), t("sup_bmc_text"), bmc_html)
+
+    # 2) IBAN
     iban = SITECFG.get("iban", "").replace(" ", "").upper()
+    script = ""
     if iban:
+        if not iban_valid(iban):
+            log.error("site.json: IBAN doğrulaması başarısız (mod-97): %s", iban)
+            sys.exit(1)
         spaced = " ".join(iban[i:i + 4] for i in range(0, len(iban), 4))
         rows = ""
         if SITECFG.get("holder"):
-            rows += "<p><strong>{}:</strong> {}</p>".format(esc(T(lang, "holder_label")), esc(SITECFG["holder"]))
+            rows += "<p><strong>{}:</strong> {}</p>".format(t("holder_label"), esc(SITECFG["holder"]))
         if SITECFG.get("bank"):
-            rows += "<p><strong>{}:</strong> {}</p>".format(esc(T(lang, "bank_label")), esc(SITECFG["bank"]))
-        panel = (
-            '<div class="panel"><p><strong>{lbl}</strong></p><p class="iban" id="iban-raw" data-v="{raw}">{sp}</p>'
-            '{rows}<button class="btn" id="copy" type="button" data-done="{done}">{copy}</button></div><p>{note}</p>'
-        ).format(
-            lbl=esc(T(lang, "iban_label")), raw=esc(iban), sp=esc(spaced), rows=rows,
-            done=esc(T(lang, "copied")), copy=esc(T(lang, "copy")), note=esc(T(lang, "support_note")),
-        )
+            rows += "<p><strong>{}:</strong> {}</p>".format(t("bank_label"), esc(SITECFG["bank"]))
+        iban_body = (
+            '<p><strong>{lbl}</strong></p><p class="iban" id="iban-raw" dir="ltr" data-v="{raw}">{sp}</p>{rows}'
+            '<button class="btn" id="copy" type="button" data-done="{done}">{copy}</button><p>{note}</p>'
+        ).format(lbl=t("iban_label"), raw=esc(iban), sp=esc(spaced), rows=rows, done=t("copied"), copy=t("copy"), note=t("support_note"))
         script = "<script>{}</script>".format(
             "(function(){var b=document.getElementById('copy');if(!b)return;"
             "b.addEventListener('click',function(){var t=document.getElementById('iban-raw').getAttribute('data-v');"
@@ -593,14 +623,74 @@ def build_support(lang, paths):
             "if(navigator.clipboard){navigator.clipboard.writeText(t).then(done);}});})();"
         )
     else:
-        panel = '<div class="panel">{}</div>'.format(esc(T(lang, "support_soon")))
-        script = ""
-    body = '<h1>{}</h1><p class="lead">{}</p>{}'.format(esc(T(lang, "support_title")), esc(T(lang, "support_lead")), panel)
+        iban_body = "<p>{}</p>".format(t("support_soon"))
+    iban_panel = '<div class="panel"><h2>🏦 {}</h2><p>{}</p>{}</div>'.format(t("sup_iban_title"), t("sup_iban_text"), iban_body)
+
+    # 3) Premium
+    prem_panel = '<div class="panel"><h2>⚡ {}</h2><p>{}</p><p><a class="btn" href="{}">{}</a></p></div>'.format(
+        t("sup_prem_title"), t("sup_prem_text"), lurl(lang, "premium/"), t("sup_prem_btn"))
+
+    body = '<h1>{}</h1><p class="lead">{}</p><div class="support-grid">{}{}{}</div>'.format(
+        t("support_title"), t("support_lead"), bmc_panel, iban_panel, prem_panel)
     write(
         "{}/support/index.html".format(lang),
         page(lang, T(lang, "support_title") + " | " + SITE, T(lang, "support_lead"), "support/", body, script=script),
     )
     paths.add("support/")
+
+
+PREMIUM_TOOLS = [("aud", "aud", "aud"), ("trouble", "trouble", "trouble"), ("comp", "comp", "comp"), ("topo", "topo", "topo")]
+
+
+def premium_script(lang, tool):
+    pt = {k: v for k, v in I18N["ui"][lang].items() if k.startswith("p_")}
+    cfg = {
+        "url": SITECFG.get("supabase_url", ""), "key": SITECFG.get("supabase_key", ""),
+        "loginPath": lurl(lang, "login/"), "signupPath": lurl(lang, "signup/"), "signupText": T(lang, "nav_signup"),
+        "premiumPath": lurl(lang, "premium/"),
+    }
+    payload = json.dumps({"t": pt, "cfg": cfg}, ensure_ascii=False).replace("</", "<\\/")
+    return (
+        '<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>'
+        '<script id="tool-data" type="application/json">{}</script>'
+        '<script src="{}/assets/plib.js?v={}"></script><script src="{}/assets/premium.js?v={}"></script>'
+    ).format(payload, BASE_PATH, TODAY, BASE_PATH, TODAY)
+
+
+def build_premium(lang, paths):
+    t = lambda k: esc(T(lang, k))
+    rows = ""
+    for key in ("aud", "trouble", "comp", "topo"):
+        rows += '<tr><td><a href="{}">{}</a></td><td>{}</td><td>{}</td></tr>'.format(
+            lurl(lang, "tools/%s/" % key), t("tool_%s_name" % key), t("pg_%s_f" % key), t("pg_%s_p" % key))
+    price = esc(SITECFG.get("premium_price", "").strip()) or t("pg_price_soon")
+    body = (
+        '<h1>{h} <span class="badge">PRO</span></h1><p class="lead">{lead}</p>'
+        '<div class="tablewrap"><table><tr><th>{f}</th><th>{fr}</th><th>{pr}</th></tr>{rows}</table></div>'
+        '<h2>{how_t}</h2><p>{how}</p><p><strong>{price_l}:</strong> {price}</p>'
+        '<p><a class="btn sec" href="{sup}">{sup_t}</a></p><div id="prem-box"><div id="app" data-tool="premium"></div></div>'
+    ).format(
+        h=t("pg_title"), lead=t("pg_lead"), f=t("pg_feature"), fr=t("pg_free"), pr=t("pg_premium"), rows=rows,
+        how_t=t("pg_how_title"), how=t("pg_how"), price_l=t("pg_price"), price=price,
+        sup=lurl(lang, "support/"), sup_t=t("support_title"),
+    )
+    # premium sayfasında #prem-box içinde #app kullanılıyor; premium.js bunu doldurur
+    write("{}/premium/index.html".format(lang),
+          page(lang, T(lang, "pg_title") + " | " + SITE, T(lang, "pg_lead"), "premium/", body, script=premium_script(lang, "premium")))
+    paths.add("premium/")
+    for slug, key, js in PREMIUM_TOOLS:
+        path = "tools/%s/" % slug
+        name, desc = T(lang, "tool_%s_name" % key), T(lang, "tool_%s_desc" % key)
+        body = (
+            '<div class="crumbs"><a href="{home}">{crumb}</a> › <a href="{tools}">{tools_n}</a></div>'
+            '<h1>{name} <span class="badge">PRO</span></h1><p class="lead">{desc}</p><div class="note">{priv}</div><div id="app" data-tool="{js}"></div>'
+        ).format(
+            home=lurl(lang), crumb=esc(T(lang, "crumb_home")), tools=lurl(lang, "tools/"), tools_n=esc(T(lang, "nav_tools")),
+            name=esc(name), desc=esc(desc), priv=esc(T(lang, "p_privacy")), js=js,
+        )
+        write("{}/{}index.html".format(lang, path),
+              page(lang, name + " | " + SITE, desc, path, body, tech_ld(name, desc, lang), script=premium_script(lang, js)))
+        paths.add(path)
 
 
 def auth_script(lang, kind):
@@ -673,8 +763,16 @@ def build_tools(lang, paths):
             esc(T(lang, "tool_%s_name" % key)), esc(T(lang, "tool_%s_desc" % key)),
             lurl(lang, "tools/%s/" % slug), esc(T(lang, "tool_open")),
         )
-    body = '<h1>{}</h1><p class="lead">{}</p><div class="note">{}</div><div class="grid">{}</div>'.format(
-        esc(T(lang, "tools_title")), esc(T(lang, "tools_lead")), esc(T(lang, "tools_privacy")), cards
+    pcards = ""
+    for slug, key, _js in PREMIUM_TOOLS:
+        pcards += (
+            '<div class="card"><h3 style="margin:0 0 4px">{}<span class="badge">PRO</span></h3><p style="margin:0 0 8px">{}</p>'
+            '<a class="btn sec" href="{}">{}</a></div>'
+        ).format(esc(T(lang, "tool_%s_name" % key)), esc(T(lang, "tool_%s_desc" % key)),
+                 lurl(lang, "tools/%s/" % slug), esc(T(lang, "tool_open")))
+    body = '<h1>{}</h1><p class="lead">{}</p><div class="note">{}</div><div class="grid">{}</div><h2>{}</h2><div class="grid">{}</div>'.format(
+        esc(T(lang, "tools_title")), esc(T(lang, "tools_lead")), esc(T(lang, "tools_privacy")), cards,
+        esc(T(lang, "pg_tools_title")), pcards
     )
     write("{}/tools/index.html".format(lang), page(lang, T(lang, "tools_title") + " | " + SITE, T(lang, "tools_lead"), "tools/", body))
     paths.add("tools/")
@@ -766,6 +864,7 @@ def main():
         build_support(lang, paths)
         build_auth(lang, paths)
         build_tools(lang, paths)
+        build_premium(lang, paths)
         total += len(paths)
         # arama motoru için: auth sayfaları (noindex) sitemap dışında
         sitemap_paths |= {p for p in paths if p not in ("signup/", "login/", "account/")}
