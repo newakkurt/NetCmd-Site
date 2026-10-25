@@ -32,7 +32,14 @@
 
   /* ---------- Premium modülü: yalnızca Premium üyeye Supabase'den verilir (RLS) ---------- */
   function runPro(code, cb) {
-    try { (new Function(code))(); cb(!!P.PREMIUM_LOADED); } catch (e) { cb(false); }
+    try {
+      var u = URL.createObjectURL(new Blob([code], { type: 'text/javascript' }));
+      var sc = document.createElement('script');
+      sc.src = u;
+      sc.onload = function () { URL.revokeObjectURL(u); cb(!!P.PREMIUM_LOADED); };
+      sc.onerror = function () { URL.revokeObjectURL(u); cb(false); };
+      document.head.appendChild(sc);
+    } catch (e) { cb(false); }
   }
   function loadPro(plan, cb) {
     if (P.PREMIUM_LOADED) { cb(true); return; }

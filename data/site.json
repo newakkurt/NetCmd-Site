@@ -1,5 +1,4 @@
 {
-  "iban": "TR51 0001 0011 6505 0717 1250 06",
   "holder": "Şevket Kaynar",
   "bank": "",
   "supabase_url": "https://olbyrzqjdbxxsfaonsew.supabase.co",
@@ -7,5 +6,15 @@
   "bmc_url": "https://buymeacoffee.com/sevketkaynar",
   "premium_price": "22",
   "premium_price_old": "30",
-  "premium_currency": "$"
+  "premium_currency": "$",
+  "ibans": [
+    {
+      "cur": "TL",
+      "iban": "TR51 0001 0011 6505 0717 1250 06"
+    },
+    {
+      "cur": "USD",
+      "iban": "TR29 0001 0011 6505 0717 1250 14"
+    }
+  ]
 }

@@ -3,7 +3,7 @@
 (function () {
   'use strict';
   var me = document.currentScript;
-  var URL_ = me && me.getAttribute('data-url'), KEY = me && me.getAttribute('data-key');
+  var URL_ = me && me.getAttribute('data-url'), KEY = me && me.getAttribute('data-key'), SB_SRC = (me && me.getAttribute('data-sb')) || '';
   var L = { tr: { fav: 'Favoriler', add: 'Favorilere ekle', del: 'Favoriden çıkar' }, en: { fav: 'Favorites', add: 'Add to favorites', del: 'Remove from favorites' }, ar: { fav: 'المفضلة', add: 'أضف إلى المفضلة', del: 'أزل من المفضلة' } };
   var lang = (document.documentElement.lang || 'tr').slice(0, 2);
   var TX = L[lang] || L.tr;
@@ -18,7 +18,7 @@
     if (c && Date.now() - c.t < 12 * 3600 * 1000) { cb(!!c.p); return; }
     if (!hasSession() || !URL_ || !KEY) { set('netcmd.plan', { p: false, t: Date.now() }); cb(false); return; }
     var s = document.createElement('script');
-    s.src = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
+    s.src = SB_SRC;
     s.onload = function () {
       var sb = window.supabase.createClient(URL_, KEY);
       sb.auth.getSession().then(function (r) {

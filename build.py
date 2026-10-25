@@ -159,6 +159,44 @@ a.tag.chip{text-decoration:none;color:var(--ac)}a.tag.chip:hover{border-color:va
 .cmd-card small{display:block;color:var(--mut);font:12px ui-monospace,Menlo,Consolas,monospace;margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;direction:ltr;text-align:left}
 section.cat h2 .tag{font-size:.7rem;vertical-align:middle}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+.hbtn{background:transparent;border:1px solid var(--bd);color:var(--ac);border-radius:8px;padding:2px 9px;font:inherit;cursor:pointer;line-height:1.5}
+.hbtn:hover{border-color:var(--ac)}
+nav{align-items:center}
+#qs-ov{position:fixed;inset:0;z-index:100;background:rgba(2,6,9,.72);display:flex;align-items:flex-start;justify-content:center;padding:10vh 12px 0}
+#qs-box{width:100%;max-width:620px;background:var(--bg);border:1px solid var(--ac);border-radius:12px;box-shadow:0 0 30px rgba(61,224,255,.25);overflow:hidden}
+#qs-in{width:100%;border:0;border-bottom:1px solid var(--bd);border-radius:0;padding:14px 16px;font:16px ui-monospace,Menlo,Consolas,monospace;background:transparent;color:var(--fg)}
+#qs-in:focus{outline:none}
+#qs-list{list-style:none;margin:0;padding:0;max-height:55vh;overflow-y:auto}
+#qs-list li a{display:block;padding:9px 16px;text-decoration:none;color:var(--fg);border-bottom:1px solid var(--bd)}
+#qs-list li a small{display:block;color:var(--mut);font:12px ui-monospace,Menlo,Consolas,monospace;direction:ltr;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#qs-list li.on a,#qs-list li a:hover{background:rgba(61,224,255,.14)}
+#qs-hint{padding:7px 16px;color:var(--mut);font-size:.78rem}
+.as-box textarea{min-height:90px}
+.as-step{margin:18px 0}.as-step h3{margin:0 0 6px;font-size:1rem;color:var(--ac2)}
+.as-grid{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.as-grid .vend{margin:0}
+.cheat-tools{display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center;margin:12px 0}
+.cheat-tools label{display:inline-flex;gap:6px;align-items:center;margin:0}
+table.cheat td,table.cheat th{font-size:.85rem}table.cheat td code{white-space:pre-wrap;word-break:break-word}
+.com-item{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:12px 14px;margin:12px 0}
+.com-item h3{margin:0 0 4px}.com-item pre{margin:8px 0;border-radius:6px}
+form.wide{max-width:640px}
+html[data-theme=light]{--bg:#f3f7f9;--fg:#0e2230;--mut:#4a6472;--bd:#c3d4db;--ac:#0b6fa0;--ac2:#0a7a4a;--card:rgba(255,255,255,.9);--ok:#0a7a4a;--err:#c62828;color-scheme:light;background:#f3f7f9}
+html[data-theme=light] canvas#bg-rain,html[data-theme=light] canvas#bg-net,html[data-theme=light] body::before{display:none}
+html[data-theme=light] header{background:rgba(243,247,249,.9)}
+html[data-theme=light] header a.logo{text-shadow:none}
+html[data-theme=light] main p,html[data-theme=light] main li,html[data-theme=light] main h1,html[data-theme=light] main h2,html[data-theme=light] main h3,html[data-theme=light] a:hover{text-shadow:none}
+html[data-theme=light] h1{color:#0a1a24}
+html[data-theme=light] .vend,html[data-theme=light] table,html[data-theme=light] .note,html[data-theme=light] .panel,html[data-theme=light] form.box,html[data-theme=light] .msg,html[data-theme=light] .tag,html[data-theme=light] .card{background:rgba(255,255,255,.92)}
+html[data-theme=light] th{background:#e3edf1}
+html[data-theme=light] textarea,html[data-theme=light] select,html[data-theme=light] input{background:#fff;color:var(--fg)}
+html[data-theme=light] .btn,html[data-theme=light] nav a.btn{color:#fff;box-shadow:none}
+html[data-theme=light] .btn.sec{background:#fff;color:var(--ac)}
+html[data-theme=light] .newprice{color:var(--ac2)}
+html[data-theme=light] #qs-ov{background:rgba(20,40,55,.45)}
+html[data-theme=light] .risk-medium{color:#a85d00;border-color:#a85d00}
+@media print{header,footer,.cheat-tools,#qs-ov{display:none!important}table.cheat{font-size:9pt}table.cheat td,table.cheat th{border-color:#999!important;color:#000!important}@page{size:A4 landscape;margin:10mm}}
+
 @media print{html,body{background:#fff!important;color:#000!important}canvas,body::before{display:none!important}.card,.vend,table,.note,.panel{background:#fff!important}}
 """
 
@@ -387,9 +425,14 @@ def header(lang, path):
         '<a href="{tools}">{n_tools}</a>'
         '<a href="{prem}">{n_prem}</a>'
         '<a href="{proj}">{n_proj}</a>'
+        '<a href="{asst}">{n_asst}</a>'
+        '<a href="{cheat}">{n_cheat}</a>'
+        '<a href="{comm}">{n_comm}</a>'
         '<a href="{sup}">{n_sup}</a>'
         '<a id="nav-login" href="{login}" data-acc-href="{acc}" data-acc-text="{acc_t}">{n_login}</a>'
         '<a id="nav-signup" class="btn" href="{signup}">{n_signup}</a>'
+        '<button class="hbtn" id="qs-open" type="button" aria-label="{n_srch}" title="{n_srch}">🔍</button>'
+        '<button class="hbtn" id="theme-btn" type="button" aria-label="{n_theme}" title="{n_theme}">🌓</button>'
         '</nav><div class="langs">{langs}</div></header>'
     ).format(
         home=lurl(lang), site=esc(SITE), n_home=t("nav_home"),
@@ -400,7 +443,29 @@ def header(lang, path):
         login=lurl(lang, "login/"), acc=lurl(lang, "account/"), acc_t=t("nav_account"),
         n_login=t("nav_login"), signup=lurl(lang, "signup/"), n_signup=t("nav_signup"),
         langs=langs,
+        asst=lurl(lang, "assistant/"), n_asst=t("nav_assistant"),
+        cheat=lurl(lang, "cheatsheet/"), n_cheat=t("nav_cheat"),
+        comm=lurl(lang, "community/"), n_comm=t("nav_community"),
+        n_srch=t("search_btn"), n_theme=t("theme_btn"),
     )
+
+
+def csp():
+    ads = ""
+    if ADSENSE:
+        ads = " https://pagead2.googlesyndication.com https://*.google.com https://*.googlesyndication.com https://*.doubleclick.net https://*.googleadservices.com"
+    sup = SITECFG.get("supabase_url", "")
+    return (
+        "default-src 'self'; script-src 'self' 'unsafe-inline' blob:" + ads + "; style-src 'self' 'unsafe-inline'; "
+        "img-src 'self' data: blob:" + (" https:" if ADSENSE else "") + "; font-src 'self' data:; connect-src 'self' " + sup + " " + sup.replace("https://", "wss://") + ads + "; "
+        + ("frame-src" + ads + "; " if ADSENSE else "") + "object-src 'none'; base-uri 'self'; form-action 'self'"
+    )
+
+
+HEAD_JS = (
+    "try{var t=localStorage.getItem('netcmd.theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}"
+    "try{if(window.top!==window.self){window.top.location=window.self.location;}}catch(e){document.documentElement.style.display='none';}"
+)
 
 
 def page(lang, title, desc, path, body, jsonld=None, noindex=False, head_extra="", script=""):
@@ -425,19 +490,20 @@ def page(lang, title, desc, path, body, jsonld=None, noindex=False, head_extra="
         '<meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">'
         '<meta property="og:type" content="article"><meta property="og:url" content="{canon}">'
         '<meta name="theme-color" content="#050a0f">'
-        "<style>{css}</style>{ads}{ld}{head_extra}</head><body>"
+        '<meta http-equiv="Content-Security-Policy" content="{csp}"><meta name="referrer" content="strict-origin-when-cross-origin">'
+        "<script>{headjs}</script><style>{css}</style>{ads}{ld}{head_extra}</head><body>"
         '<canvas id="bg-rain" aria-hidden="true"></canvas><canvas id="bg-net" aria-hidden="true"></canvas>'
         "{header}<main>{body}</main>"
         "<footer>{site} · {footer} {upd}: {today}</footer>"
         "<script>{nav_js}</script>{script}{bgjs}</body></html>"
     ).format(
         lang=lang, dir=DIRS[lang], title=esc(title), desc=esc(desc), robots=robots,
-        canon=esc(canonical), alts=alts, css=CSS, ads=ads, ld=ld, head_extra=head_extra,
+        canon=esc(canonical), alts=alts, css=CSS, csp=esc(csp()), headjs=HEAD_JS, ads=ads, ld=ld, head_extra=head_extra,
         header=header(lang, path), body=body, site=esc(SITE),
         footer=esc(T(lang, "footer")), upd=esc(T(lang, "updated")), today=TODAY,
         nav_js=NAV_SWAP_JS, script=script,
-        bgjs='<script src="{}/assets/bg.js?v={}" defer></script><script src="{}/assets/fav.js?v={}" data-url="{}" data-key="{}" defer></script>'.format(
-            BASE_PATH, TODAY, BASE_PATH, TODAY, esc(SITECFG.get("supabase_url", "")), esc(SITECFG.get("supabase_key", ""))),
+        bgjs='<script src="{}/assets/ui.js?v={}" data-idx="{}/assets/search-{}.json" defer></script><script src="{}/assets/bg.js?v={}" defer></script><script src="{}/assets/fav.js?v={}" data-url="{}" data-key="{}" data-sb="{}/assets/vendor/supabase.js" defer></script>'.format(
+            BASE_PATH, TODAY, BASE_PATH, lang, BASE_PATH, TODAY, BASE_PATH, TODAY, esc(SITECFG.get("supabase_url", "")), esc(SITECFG.get("supabase_key", "")), BASE_PATH),
     )
 
 
@@ -581,7 +647,7 @@ def build_home(lang, items, cats, paths):
         )
     n = len(items)
     hero = (
-        '<section class="hero"><h1>{h1}</h1><p class="lead">{lead}</p>'
+        '<section class="hero"><h1>{h1}</h1><p class="lead">{lead}</p>@@SEARCH@@'
         '<div class="term" aria-hidden="true"><span class="tp" id="tp"></span> <span class="tc" id="tc"></span><span class="cursor"></span></div>'
         '<p class="plats"><span class="tag plat">Cisco IOS</span><span class="tag plat">Huawei VRP</span><span class="tag plat">Aruba AOS</span><span class="tag plat">Juniper Junos</span><span class="tag plat">MikroTik RouterOS</span></p>'
         '<p class="stat">{stat}</p>'
@@ -596,8 +662,8 @@ def build_home(lang, items, cats, paths):
         '<div class="searchbar"><input id="q" type="search" placeholder="{ph}" aria-label="{ph}" autocomplete="off">'
         '<span class="tag" id="cnt" data-fmt="{fmt}">{count}</span></div>'
     ).format(ph=esc(T(lang, "search_ph")), fmt=esc(I18N["ui"][lang]["search_count"]), count=esc(T(lang, "search_count", n=n, t=n)))
-    body = "{}{}<p class=\"chips\">{}</p>{}{}<p id=\"none\" class=\"lead\" hidden>{}</p>".format(
-        hero, search, chips, ad_slot(), sections, esc(T(lang, "no_results"))
+    body = "{}<p class=\"chips\">{}</p>{}{}<p id=\"none\" class=\"lead\" hidden>{}</p>".format(
+        hero.replace("@@SEARCH@@", search), chips, ad_slot(), sections, esc(T(lang, "no_results"))
     )
     script = '<script src="{}/assets/home.js?v={}" defer></script>'.format(BASE_PATH, TODAY)
     write("{}/index.html".format(lang), page(lang, T(lang, "home_title"), T(lang, "home_desc"), "", body, script=script))
@@ -640,28 +706,32 @@ def build_support(lang, paths):
         bmc_html = "<p>{}</p>".format(t("sup_bmc_soon"))
     bmc_panel = '<div class="panel"><h2>☕ {}</h2><p>{}</p>{}</div>'.format(t("sup_bmc_title"), t("sup_bmc_text"), bmc_html)
 
-    # 2) IBAN
-    iban = SITECFG.get("iban", "").replace(" ", "").upper()
+    # 2) IBAN (TL + USD)
     script = ""
-    if iban:
-        if not iban_valid(iban):
-            log.error("site.json: IBAN doğrulaması başarısız (mod-97): %s", iban)
-            sys.exit(1)
-        spaced = " ".join(iban[i:i + 4] for i in range(0, len(iban), 4))
+    ibans = SITECFG.get("ibans", [])
+    if ibans:
+        blocks = ""
+        for n, e in enumerate(ibans):
+            raw = e["iban"].replace(" ", "").upper()
+            if not iban_valid(raw):
+                log.error("site.json: IBAN doğrulaması başarısız (mod-97): %s", raw)
+                sys.exit(1)
+            spaced = " ".join(raw[i:i + 4] for i in range(0, len(raw), 4))
+            blocks += (
+                '<p><strong>{lbl} ({cur})</strong></p><p class="iban" dir="ltr" id="ib{n}" data-v="{raw}">{sp}</p>'
+                '<button class="btn copy" type="button" data-t="ib{n}" data-done="{done}">{copy}</button>'
+            ).format(lbl=t("iban_label"), cur=esc(e["cur"]), n=n, raw=esc(raw), sp=esc(spaced), done=t("copied"), copy=t("copy"))
         rows = ""
         if SITECFG.get("holder"):
             rows += "<p><strong>{}:</strong> {}</p>".format(t("holder_label"), esc(SITECFG["holder"]))
         if SITECFG.get("bank"):
             rows += "<p><strong>{}:</strong> {}</p>".format(t("bank_label"), esc(SITECFG["bank"]))
-        iban_body = (
-            '<p><strong>{lbl}</strong></p><p class="iban" id="iban-raw" dir="ltr" data-v="{raw}">{sp}</p>{rows}'
-            '<button class="btn" id="copy" type="button" data-done="{done}">{copy}</button><p>{note}</p>'
-        ).format(lbl=t("iban_label"), raw=esc(iban), sp=esc(spaced), rows=rows, done=t("copied"), copy=t("copy"), note=t("support_note"))
+        iban_body = rows + blocks + "<p>{}</p>".format(t("support_note"))
         script = "<script>{}</script>".format(
-            "(function(){var b=document.getElementById('copy');if(!b)return;"
-            "b.addEventListener('click',function(){var t=document.getElementById('iban-raw').getAttribute('data-v');"
+            "(function(){[].forEach.call(document.querySelectorAll('button.copy'),function(b){"
+            "b.addEventListener('click',function(){var t=document.getElementById(b.getAttribute('data-t')).getAttribute('data-v');"
             "var done=function(){var o=b.textContent;b.textContent=b.getAttribute('data-done');setTimeout(function(){b.textContent=o;},1500);};"
-            "if(navigator.clipboard){navigator.clipboard.writeText(t).then(done);}});})();"
+            "if(navigator.clipboard){navigator.clipboard.writeText(t).then(done);}});});})();"
         )
     else:
         iban_body = "<p>{}</p>".format(t("support_soon"))
@@ -693,7 +763,7 @@ def premium_script(lang, tool):
     }
     payload = json.dumps({"t": pt, "cfg": cfg}, ensure_ascii=False).replace("</", "<\\/")
     return (
-        '<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>'
+        '<script src="' + BASE_PATH + '/assets/vendor/supabase.js"></script>'
         '<script id="tool-data" type="application/json">{}</script>'
         '<script src="{}/assets/plib.js?v={}"></script><script src="{}/assets/premium.js?v={}"></script>'
     ).format(payload, BASE_PATH, TODAY, BASE_PATH, TODAY)
@@ -754,7 +824,7 @@ def auth_script(lang, kind):
     }
     js = AUTH_JS.replace("__CFG__", json.dumps(cfg, ensure_ascii=False).replace("</", "<\\/"))
     return (
-        '<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script>{}</script>'.format(js)
+        '<script src="' + BASE_PATH + '/assets/vendor/supabase.js"></script><script>' + js + '</script>'
     )
 
 
@@ -854,6 +924,121 @@ def build_tools(lang, paths):
         paths.add(path)
 
 
+def vlabel(v):
+    return {"cisco": "Cisco IOS", "huawei": "Huawei VRP", "aruba": "Aruba AOS", "juniper": "Junos", "mikrotik": "RouterOS"}[v]
+
+
+def build_indexes(lang, items):
+    """Ctrl+K arama indeksi + asistan indeksi (dile göre)."""
+    sidx, aidx = [], []
+    for it in items:
+        cat = cat_name(it["cat"], lang)
+        title = item_title(it, lang)
+        cmds = [c for v in vends(it) for c in it[v]["cmds"]]
+        hay = " ".join([title, it["title"], it["slug"], cat] + cmds).lower()
+        url = lurl(lang, "cmd/{}/".format(it["slug"]))
+        sidx.append({"t": title, "u": url, "s": hay, "c": cat, "k": it["cisco"]["cmds"][0]})
+        kw = " ".join([it["title"], it["slug"].replace("-", " "), it["cat"]]
+                      + [I18N["items"].get(it["slug"], {}).get(l, {}).get("title", "") for l in LANGS]
+                      + [it.get("note", "")] + cmds).lower()
+        aidx.append({"t": title, "u": url, "c": cat, "k": kw, "v": {v: it[v]["cmds"] for v in vends(it)}})
+    write("assets/search-{}.json".format(lang), json.dumps(sidx + _page_entries(lang), ensure_ascii=False, separators=(",", ":")))
+    write("assets/assistant-{}.json".format(lang), json.dumps(aidx, ensure_ascii=False, separators=(",", ":")))
+
+
+def _page_entries(lang):
+    out = []
+    for path, key in (("tools/", "tools_title"), ("assistant/", "as_title"), ("cheatsheet/", "nav_cheat"),
+                      ("community/", "com_title"), ("premium/", "pg_nav"), ("support/", "support_title"), ("projects/", "nav_projects")):
+        title = T(lang, key)
+        out.append({"t": title, "u": lurl(lang, path), "s": title.lower(), "c": "·", "k": ""})
+    return out
+
+
+def build_cheatsheet(lang, items, paths):
+    vs = list(VENDORS)
+    head = "".join('<th data-v="{}">{}</th>'.format(v, vlabel(v)) for v in vs)
+    rows = ""
+    md = ["# NetCmd cheat-sheet ({})".format(lang), "", "| {} | {} |".format(T(lang, "cheat_cmd"), " | ".join(vlabel(v) for v in vs)),
+          "|---|" + "---|" * len(vs)]
+    cats = {}
+    for it in items:
+        cats.setdefault(it["cat"], []).append(it)
+    for cat, lst in cats.items():
+        rows += '<tr class="catrow"><th colspan="{}">{}</th></tr>'.format(len(vs) + 1, esc(cat_name(cat, lang)))
+        for it in lst:
+            cells = ""
+            mcells = []
+            for v in vs:
+                if it.get(v):
+                    cells += '<td data-v="{}"><code>{}</code></td>'.format(v, "<br>".join(esc(c) for c in it[v]["cmds"]))
+                    mcells.append("<br>".join("`{}`".format(c.replace("|", "\\|")) for c in it[v]["cmds"]))
+                else:
+                    cells += '<td data-v="{}">—</td>'.format(v)
+                    mcells.append("—")
+            rows += '<tr><td><a href="{}">{}</a></td>{}</tr>'.format(lurl(lang, "cmd/{}/".format(it["slug"])), esc(item_title(it, lang)), cells)
+            md.append("| {} | {} |".format(item_title(it, lang).replace("|", "/"), " | ".join(mcells)))
+    mdname = "netcmd-cheatsheet-{}.md".format(lang)
+    write("{}/cheatsheet/{}".format(lang, mdname), "\n".join(md) + "\n\nhttps://" + BASE_URL.split("://")[-1] + "\n")
+    checks = "".join('<label><input type="checkbox" class="vchk" value="{v}" checked> {l}</label>'.format(v=v, l=vlabel(v)) for v in vs)
+    body = (
+        '<h1>{h}</h1><p class="lead">{lead}</p>'
+        '<div class="cheat-tools"><strong>{vt}:</strong> {checks}'
+        '<button class="btn sec" id="ch-md" type="button" data-name="netcmd-cheatsheet-{lang}.md">{dmd}</button>'
+        '<a class="btn sec" href="{mdurl}" download>{dall}</a>'
+        '<button class="btn" id="ch-pdf" type="button">{dpdf}</button></div>'
+        '<div class="tablewrap"><table class="cheat" id="cheat"><thead><tr><th>{cmd}</th>{head}</tr></thead><tbody>{rows}</tbody></table></div>'
+    ).format(h=esc(T(lang, "cheat_title")), lead=esc(T(lang, "cheat_lead")), vt=esc(T(lang, "cheat_vendors")), checks=checks,
+             lang=lang, dmd=esc(T(lang, "cheat_dl_md")), mdurl=lurl(lang, "cheatsheet/" + mdname), dall=esc(T(lang, "cheat_dl_md_all")),
+             dpdf=esc(T(lang, "cheat_dl_pdf")), cmd=esc(T(lang, "cheat_cmd")), head=head, rows=rows)
+    script = '<script src="{}/assets/cheat.js?v={}" defer></script>'.format(BASE_PATH, TODAY)
+    write("{}/cheatsheet/index.html".format(lang), page(lang, T(lang, "cheat_title") + " | " + SITE, T(lang, "cheat_lead"), "cheatsheet/", body, script=script))
+    paths.add("cheatsheet/")
+
+
+def build_assistant(lang, paths):
+    exs = "".join('<button class="tag favchip as-ex" type="button">{}</button> '.format(esc(T(lang, "as_ex%d" % i))) for i in (1, 2, 3))
+    body = (
+        '<h1>{h}</h1><p class="lead">{lead}</p>'
+        '<div class="as-box"><textarea id="as-in" placeholder="{ph}" aria-label="{ph}"></textarea>'
+        '<p><button class="btn" id="as-go" type="button">{btn}</button> <span class="lead">{ex}:</span> {exs}</p></div>'
+        '<div id="as-out"></div><div class="note">{disc}</div>'
+    ).format(h=esc(T(lang, "as_title")), lead=esc(T(lang, "as_lead")), ph=esc(T(lang, "as_ph")), btn=esc(T(lang, "as_btn")),
+             ex=esc(T(lang, "as_ex")), exs=exs, disc=esc(T(lang, "as_disclaimer")))
+    cfg = {"idx": "{}/assets/assistant-{}.json".format(BASE_PATH, lang),
+           "t": {k: T(lang, k) for k in ("as_none", "as_step", "as_values", "as_open")},
+           "v": {v: vlabel(v) for v in VENDORS}}
+    script = '<script id="as-cfg" type="application/json">{}</script><script src="{}/assets/assistant.js?v={}" defer></script>'.format(
+        json.dumps(cfg, ensure_ascii=False).replace("</", "<\\/"), BASE_PATH, TODAY)
+    write("{}/assistant/index.html".format(lang), page(lang, T(lang, "as_title") + " | " + SITE, T(lang, "as_lead"), "assistant/", body, script=script))
+    paths.add("assistant/")
+
+
+def build_community(lang, paths):
+    opts = "".join('<option value="{}">{}</option>'.format(v, vlabel(v)) for v in VENDORS)
+    body = (
+        '<h1>{h}</h1><p class="lead">{lead}</p>'
+        '<div id="com-msg" class="msg" hidden></div>'
+        '<form id="com-form" class="box wide" hidden><h2 style="margin-top:0">{ft}</h2>'
+        '<label for="c-title">{lt}</label><input id="c-title" maxlength="120" required>'
+        '<label for="c-vendor">{lv}</label><select id="c-vendor">{opts}</select>'
+        '<label for="c-cmds">{lc}</label><textarea id="c-cmds" maxlength="2000" rows="6" required spellcheck="false"></textarea>'
+        '<label for="c-desc">{ld}</label><textarea id="c-desc" maxlength="600" rows="3"></textarea>'
+        '<p><button class="btn" id="c-btn" type="submit">{fb}</button></p></form>'
+        '<p id="com-login" hidden>{lg} <a class="btn sec" href="{loginurl}">{lgb}</a></p>'
+        '<h2>{lt2}</h2><div id="com-list"></div>'
+    ).format(h=esc(T(lang, "com_title")), lead=esc(T(lang, "com_lead")), ft=esc(T(lang, "com_form_title")), lt=esc(T(lang, "com_f_title")),
+             lv=esc(T(lang, "com_f_vendor")), opts=opts, lc=esc(T(lang, "com_f_cmds")), ld=esc(T(lang, "com_f_desc")), fb=esc(T(lang, "com_f_btn")),
+             lg=esc(T(lang, "com_login")), loginurl=lurl(lang, "login/"), lgb=esc(T(lang, "com_login_btn")), lt2=esc(T(lang, "com_list_title")))
+    cfg = {"url": SITECFG.get("supabase_url", ""), "key": SITECFG.get("supabase_key", ""),
+           "t": {k: T(lang, k) for k in ("com_ok", "com_err", "com_empty", "com_unavail", "com_copy", "com_copied", "com_by")},
+           "v": {v: vlabel(v) for v in VENDORS}}
+    script = '<script src="{b}/assets/vendor/supabase.js"></script><script id="com-cfg" type="application/json">{c}</script><script src="{b}/assets/community.js?v={t}" defer></script>'.format(
+        b=BASE_PATH, c=json.dumps(cfg, ensure_ascii=False).replace("</", "<\\/"), t=TODAY)
+    write("{}/community/index.html".format(lang), page(lang, T(lang, "com_title") + " | " + SITE, T(lang, "com_lead"), "community/", body, script=script))
+    paths.add("community/")
+
+
 def write_meta(sitemap_paths):
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -916,6 +1101,10 @@ def main():
         build_auth(lang, paths)
         build_tools(lang, paths)
         build_premium(lang, paths)
+        build_cheatsheet(lang, items, paths)
+        build_assistant(lang, paths)
+        build_community(lang, paths)
+        build_indexes(lang, items)
         total += len(paths)
         # arama motoru için: auth sayfaları (noindex) sitemap dışında
         sitemap_paths |= {p for p in paths if p not in ("signup/", "login/", "account/")}
