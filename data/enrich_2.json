@@ -1,0 +1,1924 @@
+{
+ "statik-route": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set routing-options static route 0.0.0.0/0 next-hop 10.0.0.1",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip route add dst-address=0.0.0.0/0 gateway=10.0.0.1"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "0.0.0.0 0.0.0.0 / 0.0.0.0/0",
+      "d": "Hedef ağ ve maskesi; sıfırlar default route (tüm ağlar) anlamına gelir."
+     },
+     {
+      "p": "10.0.0.1",
+      "d": "Next-hop: paketlerin yönlendirileceği bir sonraki router'ın IP adresi."
+     }
+    ],
+    "example": "Üretim hattındaki access switch'in yönetim VLAN'ı dışındaki ağlara çıkabilmesi için çekirdek switch'e (10.0.0.1) giden default route eklenir. Ardından show ip route ile rotanın tabloya girdiği ve 8.8.8.8'e ping atılabildiği doğrulanır.",
+    "mistakes": [
+     "Next-hop IP'sinin cihazın bağlı olduğu bir alt ağda olmaması; rota tabloya girmez.",
+     "Huawei'de 'ip route' yazmak; doğru komut 'ip route-static'tir.",
+     "Aruba AOS-CX'te maske yerine CIDR (/0) yazmak gerektiğini unutmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "0.0.0.0 0.0.0.0 / 0.0.0.0/0",
+      "d": "Destination network and mask; all zeros means the default route (all networks)."
+     },
+     {
+      "p": "10.0.0.1",
+      "d": "Next hop: the IP address of the next router the packets are forwarded to."
+     }
+    ],
+    "example": "So that an access switch on the factory floor can reach networks outside its management VLAN, a default route pointing to the core switch (10.0.0.1) is added. Then show ip route confirms the route is installed and a ping to 8.8.8.8 succeeds.",
+    "mistakes": [
+     "Using a next-hop that is not in a directly connected subnet; the route will not be installed.",
+     "Typing 'ip route' on Huawei; the correct command is 'ip route-static'.",
+     "Forgetting that Aruba AOS-CX uses CIDR (/0) instead of a dotted mask."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "0.0.0.0 0.0.0.0 / 0.0.0.0/0",
+      "d": "الشبكة الهدف وقناعها؛ الأصفار تعني المسار الافتراضي (كل الشبكات)."
+     },
+     {
+      "p": "10.0.0.1",
+      "d": "القفزة التالية: عنوان IP للراوتر التالي الذي تُوجَّه إليه الحزم."
+     }
+    ],
+    "example": "لكي يصل سويتش الوصول في خط الإنتاج إلى شبكات خارج VLAN الإدارة، يُضاف مسار افتراضي نحو السويتش الأساسي (10.0.0.1). بعد ذلك يؤكد الأمر show ip route دخول المسار إلى الجدول، وينجح ping إلى 8.8.8.8.",
+    "mistakes": [
+     "استخدام next-hop ليس ضمن شبكة فرعية متصلة مباشرة، فلا يدخل المسار إلى الجدول.",
+     "كتابة 'ip route' على Huawei بينما الأمر الصحيح هو 'ip route-static'.",
+     "نسيان أن Aruba AOS-CX يستخدم صيغة CIDR (/0) بدل القناع العشري."
+    ]
+   }
+  }
+ },
+ "cpu-kullanimi": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show chassis routing-engine"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/system resource print",
+    "/system resource cpu print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "sorted",
+      "d": "Cisco'da süreçleri CPU kullanımına göre sıralar; en yoğun süreç en üstte görünür."
+     },
+     {
+      "p": "1 / 5 dk ortalaması",
+      "d": "Anlık değer yerine kısa süreli spike'ları ayırt etmek için son 1 ve 5 dakikalık ortalamalara bakılır."
+     }
+    ],
+    "example": "Çekirdek switch'te yönetim arayüzü yavaşladığında CPU'ya bakılır. Anlık değer yüksek ama 5 dakikalık ortalama düşükse geçici bir spike vardır; ortalama da yüksekse sorumlu süreç sıralı çıktıdan bulunur.",
+    "mistakes": [
+     "Yalnızca anlık değere bakıp kalıcı yük olduğunu sanmak.",
+     "Tek bir CPU çekirdeğine bakıp tüm cihazın durumunu yorumlamak.",
+     "Yüksek CPU'nun nedenini (ARP, STP, loglama) incelemeden cihazı yeniden başlatmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "sorted",
+      "d": "On Cisco, sorts processes by CPU usage so the busiest process is on top."
+     },
+     {
+      "p": "1 / 5 min average",
+      "d": "Look at the last 1 and 5 minute averages instead of the instant value to tell short spikes from sustained load."
+     }
+    ],
+    "example": "When the management interface of a core switch becomes sluggish, you check the CPU. If the instant value is high but the 5-minute average is low it is a transient spike; if the average is high too, the sorted output shows which process is responsible.",
+    "mistakes": [
+     "Reading only the instant value and assuming the load is sustained.",
+     "Judging the whole device from a single CPU core.",
+     "Rebooting the device without investigating the cause (ARP, STP, logging) of the high CPU."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "sorted",
+      "d": "في Cisco يرتّب العمليات بحسب استهلاك المعالج فتظهر الأكثر استهلاكًا في الأعلى."
+     },
+     {
+      "p": "متوسط 1 / 5 دقائق",
+      "d": "يُنظر إلى متوسط آخر دقيقة وخمس دقائق بدل القيمة اللحظية للتمييز بين الارتفاعات المؤقتة والحمل المستمر."
+     }
+    ],
+    "example": "عندما تصبح واجهة الإدارة على السويتش الأساسي بطيئة يُفحص المعالج. إذا كانت القيمة اللحظية مرتفعة والمتوسط لخمس دقائق منخفضًا فهو ارتفاع مؤقت؛ أما إذا ارتفع المتوسط أيضًا فيحدد الإخراج المرتب العملية المسؤولة.",
+    "mistakes": [
+     "الاكتفاء بالقيمة اللحظية واعتبار الحمل مستمرًا.",
+     "الحكم على الجهاز كله من خلال نواة معالج واحدة.",
+     "إعادة تشغيل الجهاز دون فحص سبب ارتفاع المعالج (ARP أو STP أو التسجيل)."
+    ]
+   }
+  }
+ },
+ "transceiver-bilgisi": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show interfaces diagnostics optics ge-0/0/1"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface ethernet monitor sfp1 once"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Rx / Tx Power (dBm)",
+      "d": "Alınan ve gönderilen optik güç; Rx çok düşükse fiber, konnektör veya karşı uç sorunludur."
+     },
+     {
+      "p": "Sıcaklık / voltaj / akım",
+      "d": "DOM verileri modülün sağlığını gösterir; sınır değerlere yaklaşan modül arızaya gidiyordur."
+     },
+     {
+      "p": "Vendor / part number",
+      "d": "Modülün üreticisi ve parça numarası; uyumsuz (3rd party) modül tespitinde işe yarar."
+     }
+    ],
+    "example": "Binalar arası fiber linkte paket kaybı var. Transceiver detayında Rx gücünün -22 dBm'e düştüğü görülür; temizlik sonrası değer -8 dBm'e çıkarsa sorun kirli konnektördü.",
+    "mistakes": [
+     "Rx değerini modülün hassasiyet sınırıyla karşılaştırmadan yorumlamak.",
+     "Tüm SFP'lerin DOM'u desteklediğini varsaymak; bazı bakır veya eski modüllerde veri gelmez.",
+     "Fiber temizliği yapmadan doğrudan modülü değiştirmek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Rx / Tx Power (dBm)",
+      "d": "Received and transmitted optical power; a very low Rx means a fiber, connector or far-end problem."
+     },
+     {
+      "p": "Temperature / voltage / current",
+      "d": "DOM readings show module health; a module near its limits is heading for failure."
+     },
+     {
+      "p": "Vendor / part number",
+      "d": "Manufacturer and part number of the module; useful for spotting unsupported third-party optics."
+     }
+    ],
+    "example": "A fiber link between buildings shows packet loss. The transceiver detail reveals Rx power has dropped to -22 dBm; if it rises to -8 dBm after cleaning, the connector was dirty.",
+    "mistakes": [
+     "Reading the Rx value without comparing it with the module's receiver sensitivity.",
+     "Assuming every SFP supports DOM; some copper or older modules return no data.",
+     "Replacing the module without cleaning the fiber first."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Rx / Tx Power (dBm)",
+      "d": "قدرة الإشارة الضوئية المستقبلة والمرسلة؛ انخفاض Rx كثيرًا يعني مشكلة في الليف أو الموصل أو الطرف الآخر."
+     },
+     {
+      "p": "الحرارة / الجهد / التيار",
+      "d": "بيانات DOM تُظهر صحة الوحدة؛ والوحدة القريبة من الحدود تتجه نحو العطل."
+     },
+     {
+      "p": "Vendor / part number",
+      "d": "الشركة المصنّعة ورقم القطعة، ويفيد في اكتشاف الوحدات غير المدعومة من طرف ثالث."
+     }
+    ],
+    "example": "يوجد فقدان حزم على ليف ضوئي بين مبنيين. تُظهر تفاصيل الـ transceiver أن قدرة Rx هبطت إلى -22 dBm؛ فإذا ارتفعت إلى -8 dBm بعد التنظيف فالمشكلة كانت في اتساخ الموصل.",
+    "mistakes": [
+     "تفسير قيمة Rx دون مقارنتها بحساسية الاستقبال للوحدة.",
+     "افتراض أن كل SFP يدعم DOM، فبعض الوحدات النحاسية أو القديمة لا تعيد بيانات.",
+     "استبدال الوحدة قبل تنظيف الليف."
+    ]
+   }
+  }
+ },
+ "envanter-bilgisi": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show chassis hardware"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/system routerboard print",
+    "/system resource print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Seri numarası",
+      "d": "Garanti ve RMA başvurusunda cihazı tanımlayan benzersiz numara."
+     },
+     {
+      "p": "Modül / PSU / SFP listesi",
+      "d": "Takılı kartları, güç kaynaklarını ve transceiver'ları parça numarasıyla gösterir."
+     },
+     {
+      "p": "elabel (Huawei)",
+      "d": "Huawei'de üretim ve seri bilgisini elektronik etiketten okur."
+     }
+    ],
+    "example": "Yıllık envanter sayımında 3.000 cihazın seri numarası elle yazılmak yerine bu komut Ansible ile toplu çalıştırılır; çıktı CMDB'ye aktarılır ve arızalı bir switch için RMA formu seri numarasıyla doldurulur.",
+    "mistakes": [
+     "Huawei'de yalnızca 'display device' çıktısına bakıp seri numarasını aramak; elabel gerekir.",
+     "Stack'te yalnızca master üyenin bilgisini alıp diğer üyeleri atlamak.",
+     "Seri numarasını elle kopyalarken 0 ile O harfini karıştırmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Serial number",
+      "d": "Unique identifier of the device for warranty and RMA requests."
+     },
+     {
+      "p": "Module / PSU / SFP list",
+      "d": "Shows installed cards, power supplies and transceivers with part numbers."
+     },
+     {
+      "p": "elabel (Huawei)",
+      "d": "On Huawei, reads manufacturing and serial data from the electronic label."
+     }
+    ],
+    "example": "For the annual inventory audit, instead of writing down serial numbers of 3,000 devices by hand, this command is run in bulk with Ansible and the output is imported into the CMDB; an RMA form for a faulty switch is then filled in with its serial number.",
+    "mistakes": [
+     "Looking only at 'display device' on Huawei for the serial number; elabel is needed.",
+     "Collecting data only from the stack master and skipping the other members.",
+     "Mixing up the digit 0 and the letter O when copying serial numbers by hand."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الرقم التسلسلي",
+      "d": "معرّف فريد للجهاز يُستخدم في طلبات الضمان وRMA."
+     },
+     {
+      "p": "قائمة الوحدات / PSU / SFP",
+      "d": "يعرض البطاقات ومصادر الطاقة والـ transceivers مع أرقام القطع."
+     },
+     {
+      "p": "elabel (Huawei)",
+      "d": "في Huawei يقرأ بيانات التصنيع والرقم التسلسلي من البطاقة الإلكترونية."
+     }
+    ],
+    "example": "في الجرد السنوي بدل تدوين الأرقام التسلسلية لـ 3000 جهاز يدويًا يُنفَّذ هذا الأمر دفعة واحدة عبر Ansible وتُنقل النتائج إلى CMDB، ثم يُملأ نموذج RMA لسويتش معطّل بالرقم التسلسلي.",
+    "mistakes": [
+     "الاكتفاء بإخراج 'display device' في Huawei للبحث عن الرقم التسلسلي، فالمطلوب elabel.",
+     "جمع البيانات من السويتش الرئيسي في الـ stack وتجاهل بقية الأعضاء.",
+     "الخلط بين الرقم 0 والحرف O عند النسخ اليدوي للأرقام التسلسلية."
+    ]
+   }
+  }
+ },
+ "fan-guc-sicaklik": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show chassis environment",
+    "show chassis fan",
+    "show chassis power"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/system health print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Fan",
+      "d": "Fan durumu ve hızı; arızalı fan sıcaklığı hızla yükseltir."
+     },
+     {
+      "p": "Power supply",
+      "d": "PSU'nun çalışıyor/arızalı durumu ve yedeklilik bilgisi."
+     },
+     {
+      "p": "Sıcaklık",
+      "d": "Sensör değerleri ve eşikler; sınırı aşan cihaz kendini kapatabilir."
+     }
+    ],
+    "example": "Üretim sahasındaki tozlu panoda bir switch rastgele yeniden başlıyor. Sıcaklık çıktısında 70 derece üzeri değerler ve yavaşlamış fan görülür; pano havalandırması ve filtre temizliği yapılınca sorun biter.",
+    "mistakes": [
+     "Çift PSU'lu cihazda yalnızca birinin çalıştığını fark etmeyip yedekliliği kaybetmek.",
+     "Eşik değerlere bakmadan sıcaklığı 'normal' saymak.",
+     "Fan arızasında cihazı fiziksel kontrol etmeden yalnızca yeniden başlatmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Fan",
+      "d": "Fan status and speed; a failed fan quickly raises temperatures."
+     },
+     {
+      "p": "Power supply",
+      "d": "Whether each PSU is working or failed, plus redundancy information."
+     },
+     {
+      "p": "Temperature",
+      "d": "Sensor readings and thresholds; a device that exceeds the limit may shut itself down."
+     }
+    ],
+    "example": "A switch in a dusty cabinet on the production floor reboots at random. The temperature output shows readings above 70 degrees and a slowed fan; after the cabinet ventilation and filters are cleaned the problem disappears.",
+    "mistakes": [
+     "Not noticing that only one of two PSUs is working and losing redundancy.",
+     "Calling a temperature 'normal' without checking the thresholds.",
+     "Only rebooting after a fan failure instead of inspecting the device physically."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Fan",
+      "d": "حالة المروحة وسرعتها؛ تعطّل المروحة يرفع الحرارة بسرعة."
+     },
+     {
+      "p": "Power supply",
+      "d": "حالة كل PSU (يعمل أو معطّل) ومعلومات التكرار."
+     },
+     {
+      "p": "الحرارة",
+      "d": "قراءات الحساسات والحدود؛ وقد يطفئ الجهاز نفسه عند تجاوز الحد."
+     }
+    ],
+    "example": "سويتش داخل لوحة مغبرّة في أرضية الإنتاج يعيد التشغيل عشوائيًا. يُظهر إخراج الحرارة قراءات فوق 70 درجة ومروحة بطيئة؛ وبعد تنظيف تهوية اللوحة والفلاتر تنتهي المشكلة.",
+    "mistakes": [
+     "عدم ملاحظة أن أحد مصدري الطاقة فقط يعمل وفقدان التكرار.",
+     "اعتبار الحرارة 'طبيعية' دون مقارنتها بالحدود.",
+     "الاكتفاء بإعادة التشغيل عند تعطل المروحة دون فحص الجهاز فيزيائيًا."
+    ]
+   }
+  }
+ },
+ "startup-config": {
+  "juniper": null,
+  "mikrotik": null,
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "startup vs running",
+      "d": "Startup kalıcı belleğe yazılmış, running ise o an çalışan konfigürasyondur."
+     },
+     {
+      "p": "Kaydetme",
+      "d": "Running'deki değişiklikler write memory (Huawei'de save) ile kaydedilmezse yeniden başlatmada kaybolur."
+     }
+    ],
+    "example": "Bakım öncesi switch'in startup konfigürasyonu çekilir ve running ile karşılaştırılır. Farklar varsa kaydedilmemiş değişiklikler var demektir; yeniden başlatmadan önce bunlar gözden geçirilip kaydedilir.",
+    "mistakes": [
+     "Değişikliği yapıp kaydetmeden cihazı yeniden başlatmak.",
+     "Startup'ı running ile aynı sanmak.",
+     "Aruba AOS-S ile AOS-CX komutlarını karıştırmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "startup vs running",
+      "d": "Startup is the configuration saved to persistent memory; running is what the device is using now."
+     },
+     {
+      "p": "Saving",
+      "d": "Changes in running are lost on reboot unless saved with write memory (save on Huawei)."
+     }
+    ],
+    "example": "Before maintenance, the switch's startup configuration is pulled and compared with running. Any differences mean unsaved changes; they are reviewed and saved before the reboot.",
+    "mistakes": [
+     "Making a change and rebooting without saving it.",
+     "Assuming startup is identical to running.",
+     "Mixing up AOS-S and AOS-CX commands."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "startup مقابل running",
+      "d": "startup هي الإعدادات المحفوظة في الذاكرة الدائمة، وrunning هي ما يعمل به الجهاز الآن."
+     },
+     {
+      "p": "الحفظ",
+      "d": "تضيع تغييرات running عند إعادة التشغيل ما لم تُحفظ بـ write memory (وفي Huawei بـ save)."
+     }
+    ],
+    "example": "قبل الصيانة تُسحب إعدادات startup للسويتش وتُقارن مع running. وجود فروق يعني وجود تغييرات غير محفوظة، فتُراجع وتُحفظ قبل إعادة التشغيل.",
+    "mistakes": [
+     "إجراء تغيير وإعادة التشغيل دون حفظه.",
+     "افتراض أن startup مطابقة لـ running.",
+     "الخلط بين أوامر AOS-S وAOS-CX."
+    ]
+   }
+  }
+ },
+ "arayuz-config": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show configuration interfaces ge-0/0/1"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface ethernet print detail where name=ether1"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Arayüz adı",
+      "d": "Yalnızca belirtilen arayüzün bloğunu gösterir; ad platforma göre biçim değiştirir."
+     },
+     {
+      "p": "Çıktı kapsamı",
+      "d": "Description, VLAN, port-security, QoS gibi o arayüze ait tüm satırlar tek çıktıda görülür."
+     }
+    ],
+    "example": "Bir kullanıcı portunda bağlantı sorunu bildirildi. Tüm konfigürasyonu taramak yerine yalnızca Gi1/0/1 bloğuna bakılır; yanlış access VLAN'ı veya shutdown satırı hemen fark edilir.",
+    "mistakes": [
+     "Arayüz adını eksik veya yanlış biçimde yazmak (Gi1/0/1 ile GigabitEthernet1/0/1 farkı).",
+     "Aruba'da port numarasını 1/1/1 biçimi yerine eski AOS-S biçimiyle yazmak.",
+     "Varsayılan değerlerin çıktıda görünmediğini bilmemek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Interface name",
+      "d": "Shows only the block of the given interface; the name format differs by platform."
+     },
+     {
+      "p": "Output scope",
+      "d": "All lines for that interface (description, VLAN, port security, QoS) appear in one output."
+     }
+    ],
+    "example": "A connection problem is reported on a user port. Instead of scanning the whole configuration, only the Gi1/0/1 block is displayed; a wrong access VLAN or a shutdown line is spotted immediately.",
+    "mistakes": [
+     "Typing the interface name incompletely or wrongly (Gi1/0/1 vs GigabitEthernet1/0/1).",
+     "Using the old AOS-S port format instead of 1/1/1 on Aruba.",
+     "Not knowing that default values are not shown in the output."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "اسم الواجهة",
+      "d": "يعرض كتلة الواجهة المحددة فقط، وتختلف صيغة الاسم بحسب المنصة."
+     },
+     {
+      "p": "نطاق المخرجات",
+      "d": "تظهر في مخرج واحد كل الأسطر الخاصة بالواجهة (الوصف وVLAN وport-security وQoS)."
+     }
+    ],
+    "example": "أُبلغ عن مشكلة اتصال في منفذ مستخدم. بدل مسح الإعدادات كلها تُعرض كتلة Gi1/0/1 فقط فيظهر فورًا access VLAN خاطئ أو سطر shutdown.",
+    "mistakes": [
+     "كتابة اسم الواجهة ناقصًا أو بصيغة خاطئة (Gi1/0/1 بدل GigabitEthernet1/0/1).",
+     "استخدام صيغة منافذ AOS-S القديمة بدل 1/1/1 على Aruba.",
+     "عدم معرفة أن القيم الافتراضية لا تظهر في المخرجات."
+    ]
+   }
+  }
+ },
+ "vlan-detay": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show vlans USERS"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge vlan print where vlan-ids=10"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "VLAN ID",
+      "d": "Ayrıntısı istenen VLAN numarası (burada 10)."
+     },
+     {
+      "p": "Üye portlar",
+      "d": "VLAN'a ait portları ve etiketli/etiketsiz durumunu listeler."
+     },
+     {
+      "p": "Durum",
+      "d": "VLAN'ın aktif olup olmadığını ve adını gösterir."
+     }
+    ],
+    "example": "VLAN 10'daki bir yazıcıya erişilemiyor. VLAN 10 detayında yazıcının bağlı olduğu portun üye listesinde bulunmadığı görülür; port VLAN'a eklenince erişim düzelir.",
+    "mistakes": [
+     "VLAN'ın var olmasını portun üye olduğu şeklinde yorumlamak.",
+     "Junos'ta VLAN'ı ID yerine ad ile sorgulamak gerektiğini unutmak.",
+     "MikroTik'te bridge VLAN filtering kapalıyken tabloyu etkin sanmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "VLAN ID",
+      "d": "The VLAN number to inspect (10 here)."
+     },
+     {
+      "p": "Member ports",
+      "d": "Lists the ports in the VLAN and whether they are tagged or untagged."
+     },
+     {
+      "p": "State",
+      "d": "Shows the VLAN name and whether it is active."
+     }
+    ],
+    "example": "A printer in VLAN 10 is unreachable. The VLAN 10 detail shows that the port the printer is plugged into is not in the member list; once the port is added to the VLAN, access is restored.",
+    "mistakes": [
+     "Treating the existence of a VLAN as proof that the port is a member.",
+     "Forgetting that Junos queries the VLAN by name rather than ID.",
+     "Assuming the bridge VLAN table is active while VLAN filtering is disabled on MikroTik."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "VLAN ID",
+      "d": "رقم الـ VLAN المطلوب تفصيله (هنا 10)."
+     },
+     {
+      "p": "المنافذ الأعضاء",
+      "d": "يسرد منافذ الـ VLAN وكونها tagged أو untagged."
+     },
+     {
+      "p": "الحالة",
+      "d": "يعرض اسم الـ VLAN وهل هي نشطة."
+     }
+    ],
+    "example": "لا يمكن الوصول إلى طابعة في VLAN 10. تُظهر تفاصيل VLAN 10 أن المنفذ المتصلة به الطابعة غير موجود في قائمة الأعضاء؛ وبعد إضافته إلى الـ VLAN يعود الوصول.",
+    "mistakes": [
+     "اعتبار وجود الـ VLAN دليلًا على أن المنفذ عضو فيها.",
+     "نسيان أن Junos يستعلم عن الـ VLAN بالاسم لا بالرقم.",
+     "افتراض أن جدول bridge VLAN فعّال بينما VLAN filtering معطّل في MikroTik."
+    ]
+   }
+  }
+ },
+ "mac-adresi-bulma": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show ethernet-switching table | match 00:11:22:33:44:55"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge host print where mac-address=00:11:22:33:44:55"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "MAC adresi",
+      "d": "Aranan cihazın MAC adresi; biçim platforma göre değişir."
+     },
+     {
+      "p": "Port çıktısı",
+      "d": "Adresin öğrenildiği arayüzü ve VLAN'ı gösterir."
+     }
+    ],
+    "example": "Ağda şüpheli bir cihaz var. MAC adresi bulunur ve çıktıdaki port Gi1/0/12 olarak görünür; port bir uplink ise MAC'i bir sonraki switch'te aynı komutla aramaya devam edersiniz.",
+    "mistakes": [
+     "MAC adresini platformun beklediği biçimde yazmamak (nokta, tire, iki nokta).",
+     "Uplink portunda görülen MAC'i son kullanıcı portu sanmak.",
+     "Cihaz trafik göndermediği için MAC tablosunda kaydın bulunmamasını arıza saymak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "MAC address",
+      "d": "MAC address of the device you are looking for; the format differs by platform."
+     },
+     {
+      "p": "Port output",
+      "d": "Shows the interface and VLAN where the address was learned."
+     }
+    ],
+    "example": "There is a suspicious device on the network. Searching its MAC shows port Gi1/0/12; if that port is an uplink, you keep tracing by running the same command on the next switch.",
+    "mistakes": [
+     "Not typing the MAC in the format the platform expects (dots, hyphens, colons).",
+     "Mistaking a MAC seen on an uplink port for the end-user port.",
+     "Treating a missing MAC entry as a fault when the device simply is not sending traffic."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "عنوان MAC",
+      "d": "عنوان MAC للجهاز المطلوب، وتختلف صيغته بحسب المنصة."
+     },
+     {
+      "p": "مخرج المنفذ",
+      "d": "يبيّن الواجهة والـ VLAN اللتين تعلّم عليهما العنوان."
+     }
+    ],
+    "example": "يوجد جهاز مشبوه في الشبكة. يُبحث عن عنوان MAC فيظهر المنفذ Gi1/0/12؛ وإذا كان منفذ uplink يُتابَع التتبع بتنفيذ الأمر نفسه على السويتش التالي.",
+    "mistakes": [
+     "عدم كتابة MAC بالصيغة التي تتوقعها المنصة (نقاط أو شرطات أو نقطتان).",
+     "اعتبار MAC الظاهر على منفذ uplink منفذ المستخدم النهائي.",
+     "عدّ غياب السجل في جدول MAC عطلًا بينما الجهاز لا يرسل حركة مرور."
+    ]
+   }
+  }
+ },
+ "arp-ip-sorgu": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show arp no-resolve | match 10.10.20.15"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip arp print where address=10.10.20.15"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "IP adresi",
+      "d": "MAC karşılığı aranan IP (10.10.20.15)."
+     },
+     {
+      "p": "include / match filtresi",
+      "d": "Uzun ARP tablosunu tek satıra indirger."
+     }
+    ],
+    "example": "10.10.20.15 IP'li kamera ping'e cevap vermiyor. ARP tablosunda MAC'i görülür; ardından bu MAC MAC tablosunda aranarak kameranın hangi porta bağlı olduğu bulunur.",
+    "mistakes": [
+     "ARP'de kaydın olmamasını cihazın kapalı olduğu şeklinde kesin yorumlamak.",
+     "ARP'ı yalnızca farklı VLAN'daki router'dan sorgulayıp yanlış tabloya bakmak.",
+     "Eski (stale) ARP kaydına güvenmek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "IP address",
+      "d": "The IP whose MAC you want (10.10.20.15)."
+     },
+     {
+      "p": "include / match filter",
+      "d": "Reduces a long ARP table to a single line."
+     }
+    ],
+    "example": "A camera at 10.10.20.15 does not answer pings. Its MAC is read from the ARP table, and searching that MAC in the MAC table reveals which port the camera is connected to.",
+    "mistakes": [
+     "Concluding the device is off just because there is no ARP entry.",
+     "Querying ARP on the wrong device, not the router for that VLAN.",
+     "Trusting a stale ARP entry."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "عنوان IP",
+      "d": "العنوان المطلوب معرفة MAC الخاص به (10.10.20.15)."
+     },
+     {
+      "p": "مرشح include / match",
+      "d": "يختزل جدول ARP الطويل إلى سطر واحد."
+     }
+    ],
+    "example": "كاميرا بعنوان 10.10.20.15 لا ترد على ping. يُقرأ عنوان MAC من جدول ARP، ثم يُبحث عنه في جدول MAC لمعرفة المنفذ المتصلة به الكاميرا.",
+    "mistakes": [
+     "الجزم بأن الجهاز مطفأ لمجرد غياب سجل ARP.",
+     "الاستعلام عن ARP على جهاز خاطئ بدل الراوتر المسؤول عن ذلك الـ VLAN.",
+     "الاعتماد على سجل ARP قديم."
+    ]
+   }
+  }
+ },
+ "trunk-durumu": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show ethernet-switching interface ge-0/0/48",
+    "show configuration interfaces ge-0/0/48 unit 0 family ethernet-switching"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge vlan print",
+    "/interface bridge port print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Native VLAN",
+      "d": "Etiketsiz trafiğin ait olduğu VLAN; iki uçta aynı olmalıdır."
+     },
+     {
+      "p": "İzinli VLAN listesi",
+      "d": "Trunk üzerinden taşınmasına izin verilen VLAN'lar."
+     },
+     {
+      "p": "Trunk durumu",
+      "d": "Portun gerçekten trunk modda çalışıp çalışmadığı."
+     }
+    ],
+    "example": "Yeni açılan VLAN 30 iki switch arasında geçmiyor. Trunk çıktısında VLAN 30'un bir uçta izinli listede olmadığı görülür; eklendiğinde iki uç haberleşmeye başlar.",
+    "mistakes": [
+     "Sadece bir uçtaki izinli VLAN listesini kontrol etmek.",
+     "Native VLAN uyuşmazlığını gözden kaçırmak.",
+     "Huawei'de display port vlan çıktısını yalnızca trunk portlar sanmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Native VLAN",
+      "d": "VLAN that carries untagged traffic; it must match on both ends."
+     },
+     {
+      "p": "Allowed VLAN list",
+      "d": "VLANs permitted to cross the trunk."
+     },
+     {
+      "p": "Trunk status",
+      "d": "Whether the port is really operating as a trunk."
+     }
+    ],
+    "example": "The newly created VLAN 30 does not pass between two switches. The trunk output shows VLAN 30 is missing from the allowed list on one side; once added, both ends communicate.",
+    "mistakes": [
+     "Checking the allowed VLAN list on only one end.",
+     "Overlooking a native VLAN mismatch.",
+     "Assuming 'display port vlan' on Huawei lists only trunk ports."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Native VLAN",
+      "d": "الـ VLAN التي تحمل الحركة غير الموسومة، ويجب أن تتطابق على الطرفين."
+     },
+     {
+      "p": "قائمة VLAN المسموحة",
+      "d": "الـ VLANs المسموح بمرورها عبر الـ trunk."
+     },
+     {
+      "p": "حالة الـ trunk",
+      "d": "هل المنفذ يعمل فعلًا في وضع trunk."
+     }
+    ],
+    "example": "الـ VLAN 30 المُنشأة حديثًا لا تمر بين سويتشين. يُظهر إخراج الـ trunk أن VLAN 30 غير موجودة في القائمة المسموحة على أحد الطرفين؛ وبعد إضافتها يتواصل الطرفان.",
+    "mistakes": [
+     "فحص قائمة VLAN المسموحة على طرف واحد فقط.",
+     "إغفال عدم تطابق الـ native VLAN.",
+     "افتراض أن 'display port vlan' في Huawei يسرد منافذ trunk فقط."
+    ]
+   }
+  }
+ },
+ "porttaki-cihaz": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show ethernet-switching table | match ge-0/0/5"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge host print where on-interface=ether5"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Arayüz",
+      "d": "MAC'leri listelenecek port (örneğin 5 numaralı port)."
+     },
+     {
+      "p": "MAC sayısı",
+      "d": "Tek bir porttaki MAC adedi, arkada kaç cihaz olduğunu gösterir."
+     }
+    ],
+    "example": "Bir kullanıcı portunda 4 farklı MAC görünüyor. Bu, kullanıcının araya izinsiz bir mini switch ya da AP bağladığının işaretidir; port-security ihlali olarak ele alınır.",
+    "mistakes": [
+     "Uplink veya trunk portta çok sayıda MAC görmeyi anormal sanmak.",
+     "IP telefon arkasındaki PC'nin ikinci MAC olduğunu unutmak.",
+     "Yaşlanma süresi dolmuş kayıtlar yüzünden eksik liste almak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Interface",
+      "d": "The port whose MACs you want to list (for example port 5)."
+     },
+     {
+      "p": "MAC count",
+      "d": "The number of MACs on a single port shows how many devices sit behind it."
+     }
+    ],
+    "example": "A user port shows 4 different MACs. This indicates an unauthorized mini switch or AP was inserted; it is handled as a port-security violation.",
+    "mistakes": [
+     "Treating many MACs on an uplink or trunk port as abnormal.",
+     "Forgetting that a PC behind an IP phone appears as a second MAC.",
+     "Getting an incomplete list because entries have aged out."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الواجهة",
+      "d": "المنفذ المراد سرد عناوين MAC عليه (مثل المنفذ 5)."
+     },
+     {
+      "p": "عدد MAC",
+      "d": "عدد العناوين على منفذ واحد يدل على عدد الأجهزة خلفه."
+     }
+    ],
+    "example": "يظهر على منفذ مستخدم 4 عناوين MAC مختلفة. هذا يدل على توصيل سويتش صغير أو AP دون إذن، ويُعامل كانتهاك لـ port-security.",
+    "mistakes": [
+     "اعتبار كثرة عناوين MAC على منفذ uplink أو trunk أمرًا غير طبيعي.",
+     "نسيان أن الحاسوب خلف هاتف IP يظهر كعنوان MAC ثانٍ.",
+     "الحصول على قائمة ناقصة بسبب انتهاء مدة بقاء السجلات."
+    ]
+   }
+  }
+ },
+ "port-kanali-durumu": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show lacp interfaces",
+    "show interfaces ae0 terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bonding print",
+    "/interface bonding monitor bond1 once"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Üye portlar",
+      "d": "Bundle'a dahil olan ve olmayan fiziksel portlar."
+     },
+     {
+      "p": "LACP durumu",
+      "d": "Her üyenin LACP partner ile uyum durumu."
+     },
+     {
+      "p": "Protokol",
+      "d": "LACP veya statik mod; iki uçta aynı olmalıdır."
+     }
+    ],
+    "example": "Switch'ler arası 2x1G LAG'da hız beklenenin yarısı. Çıktıda bir üyenin bundle dışında kaldığı görülür; karşı uçtaki mod uyumsuzluğu düzeltilince iki üye de aktif olur.",
+    "mistakes": [
+     "Bir uçta LACP, diğer uçta statik mod kullanmak.",
+     "Üye portların hız/duplex ayarlarının farklı olması.",
+     "Trunk ve allowed VLAN ayarlarını port-channel yerine üyelere uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Member ports",
+      "d": "Physical ports that are in or out of the bundle."
+     },
+     {
+      "p": "LACP state",
+      "d": "Negotiation state of each member with the LACP partner."
+     },
+     {
+      "p": "Protocol",
+      "d": "LACP or static mode; must match on both ends."
+     }
+    ],
+    "example": "A 2x1G LAG between switches delivers half the expected throughput. The output shows one member outside the bundle; after fixing the mode mismatch on the far end both members become active.",
+    "mistakes": [
+     "Using LACP on one end and static mode on the other.",
+     "Member ports having different speed/duplex settings.",
+     "Applying trunk and allowed VLAN settings to members instead of the port-channel."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "المنافذ الأعضاء",
+      "d": "المنافذ الفيزيائية الداخلة في الحزمة أو الخارجة عنها."
+     },
+     {
+      "p": "حالة LACP",
+      "d": "حالة التفاوض بين كل عضو والطرف الآخر."
+     },
+     {
+      "p": "البروتوكول",
+      "d": "LACP أو الوضع الثابت، ويجب أن يتطابق على الطرفين."
+     }
+    ],
+    "example": "سرعة LAG بحجم 2x1G بين السويتشين نصف المتوقع. يُظهر الإخراج أن أحد الأعضاء خارج الحزمة؛ وبعد إصلاح عدم تطابق الوضع في الطرف الآخر يصبح العضوان نشطين.",
+    "mistakes": [
+     "استخدام LACP في طرف والوضع الثابت في الطرف الآخر.",
+     "اختلاف إعدادات السرعة/duplex بين المنافذ الأعضاء.",
+     "تطبيق إعدادات trunk وallowed VLAN على الأعضاء بدل واجهة port-channel."
+    ]
+   }
+  }
+ },
+ "saat-bilgisi": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show system uptime"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/system clock print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Saat dilimi",
+      "d": "Gösterilen saatin hangi saat diliminde olduğu; log korelasyonu için önemlidir."
+     },
+     {
+      "p": "Detay",
+      "d": "Cisco'da 'detail' saat kaynağını (NTP veya manuel) gösterir."
+     }
+    ],
+    "example": "Güvenlik olayı incelenirken bir switch logunun 3 saat geriden geldiği fark edilir. Saat kontrolü yapılır, NTP senkronu olmadığı bulunur ve log korelasyonu bozulmadan düzeltilir.",
+    "mistakes": [
+     "Saat dilimini kontrol etmeden loglardaki zamanı yorumlamak.",
+     "Saati elle ayarlayıp NTP'yi yapılandırmamak.",
+     "Saati doğru görüp senkron durumunu kontrol etmemek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Time zone",
+      "d": "The time zone of the displayed clock; important for log correlation."
+     },
+     {
+      "p": "Detail",
+      "d": "On Cisco 'detail' shows the time source (NTP or manual)."
+     }
+    ],
+    "example": "During a security investigation, one switch's logs are found to be 3 hours behind. A clock check reveals NTP is not synchronized, and it is fixed before log correlation is affected.",
+    "mistakes": [
+     "Interpreting log times without checking the time zone.",
+     "Setting the clock manually and not configuring NTP.",
+     "Seeing the right time and not checking the sync status."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "المنطقة الزمنية",
+      "d": "المنطقة الزمنية للساعة المعروضة، وهي مهمة لربط السجلات."
+     },
+     {
+      "p": "detail",
+      "d": "في Cisco يبيّن مصدر الوقت (NTP أو يدوي)."
+     }
+    ],
+    "example": "أثناء التحقيق في حادثة أمنية يُلاحظ تأخر سجلات أحد السويتشات بثلاث ساعات. يكشف فحص الساعة غياب مزامنة NTP فيُصلح الأمر قبل أن يتأثر ربط السجلات.",
+    "mistakes": [
+     "تفسير أوقات السجلات دون فحص المنطقة الزمنية.",
+     "ضبط الساعة يدويًا دون إعداد NTP.",
+     "رؤية الوقت صحيحًا وعدم فحص حالة المزامنة."
+    ]
+   }
+  }
+ },
+ "hostname": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set system host-name SW-CORE-01",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/system identity set name=SW-CORE-01"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "SW-CORE-01",
+      "d": "Cihaz adı; konum ve rolü yansıtan tutarlı bir adlandırma standardı kullanın."
+     },
+     {
+      "p": "Komut adı",
+      "d": "Cisco/Aruba'da hostname, Huawei'de sysname, Junos'ta host-name, MikroTik'te identity."
+     }
+    ],
+    "example": "3.000 cihazlık envanterde cihazlar fabrika-bina-rol düzenine göre adlandırılır. İsim değiştirilince CLI isteminde hemen görünür ve SSH oturumunda doğru cihazda olunduğu anlaşılır.",
+    "mistakes": [
+     "Huawei'de hostname yazmak; doğrusu sysname.",
+     "Boşluk veya özel karakter içeren ad vermek.",
+     "İsim değişince syslog ve izleme sistemlerindeki kaydı güncellememek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "SW-CORE-01",
+      "d": "Device name; use a consistent naming standard that reflects location and role."
+     },
+     {
+      "p": "Command name",
+      "d": "hostname on Cisco/Aruba, sysname on Huawei, host-name on Junos, identity on MikroTik."
+     }
+    ],
+    "example": "In an inventory of 3,000 devices, names follow a site-building-role scheme. After the rename, the new name shows in the CLI prompt so you know you are on the right device in an SSH session.",
+    "mistakes": [
+     "Typing hostname on Huawei; the correct command is sysname.",
+     "Using a name with spaces or special characters.",
+     "Not updating the entry in syslog and monitoring systems after a rename."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "SW-CORE-01",
+      "d": "اسم الجهاز؛ استخدم معيار تسمية موحدًا يعكس الموقع والدور."
+     },
+     {
+      "p": "اسم الأمر",
+      "d": "hostname في Cisco/Aruba وsysname في Huawei وhost-name في Junos وidentity في MikroTik."
+     }
+    ],
+    "example": "في جرد من 3000 جهاز تُسمّى الأجهزة وفق نمط الموقع-المبنى-الدور. بعد تغيير الاسم يظهر في موجه CLI فيُعرف أنك على الجهاز الصحيح في جلسة SSH.",
+    "mistakes": [
+     "كتابة hostname على Huawei بينما الصحيح sysname.",
+     "استخدام اسم يحتوي مسافات أو رموزًا خاصة.",
+     "عدم تحديث السجل في أنظمة syslog والمراقبة بعد تغيير الاسم."
+    ]
+   }
+  }
+ },
+ "syslog-sunucusu": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set system syslog host 10.0.0.5 any notice",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/system logging action add name=remote target=remote remote=10.0.0.5",
+    "/system logging add topics=info action=remote"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "10.0.0.5",
+      "d": "Logların gönderileceği syslog sunucusunun IP adresi."
+     },
+     {
+      "p": "Seviye (trap)",
+      "d": "Hangi önem seviyesinden itibaren log gönderileceği; informational çoğu durumda yeterlidir."
+     },
+     {
+      "p": "info-center enable",
+      "d": "Huawei'de log altyapısını açar; kapalıysa loghost çalışmaz."
+     }
+    ],
+    "example": "Switch beklenmedik yeniden başladığında yerel loglar silinir. Merkezi syslog sayesinde yeniden başlama öncesindeki port flap ve güç mesajları sunucuda kalır ve neden analiz edilebilir.",
+    "mistakes": [
+     "Huawei'de info-center'ı etkinleştirmeyi unutmak.",
+     "Sunucuya UDP 514 erişimini firewall'da açmamak.",
+     "Cihaz saatini senkronize etmeyip log zamanlarını güvenilmez bırakmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "10.0.0.5",
+      "d": "IP address of the syslog server that receives the logs."
+     },
+     {
+      "p": "Severity (trap)",
+      "d": "The minimum severity to send; informational is enough in most cases."
+     },
+     {
+      "p": "info-center enable",
+      "d": "Turns on the logging subsystem on Huawei; loghost does not work without it."
+     }
+    ],
+    "example": "When a switch reboots unexpectedly, local logs are lost. With central syslog, the port flaps and power messages before the reboot remain on the server so the cause can be analyzed.",
+    "mistakes": [
+     "Forgetting to enable info-center on Huawei.",
+     "Not allowing UDP 514 to the server on the firewall.",
+     "Leaving the device clock unsynchronized so log timestamps are unreliable."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "10.0.0.5",
+      "d": "عنوان IP لخادم syslog الذي تُرسل إليه السجلات."
+     },
+     {
+      "p": "مستوى الخطورة (trap)",
+      "d": "أدنى مستوى خطورة يُرسل؛ ويكفي informational في أغلب الحالات."
+     },
+     {
+      "p": "info-center enable",
+      "d": "يفعّل نظام السجلات في Huawei؛ ولا يعمل loghost بدونه."
+     }
+    ],
+    "example": "عند إعادة تشغيل السويتش بشكل غير متوقع تُمحى السجلات المحلية. بفضل syslog المركزي تبقى رسائل تذبذب المنافذ والطاقة قبل إعادة التشغيل على الخادم ويمكن تحليل السبب.",
+    "mistakes": [
+     "نسيان تفعيل info-center في Huawei.",
+     "عدم السماح بـ UDP 514 إلى الخادم في الجدار الناري.",
+     "ترك ساعة الجهاز غير متزامنة فتصبح أوقات السجلات غير موثوقة."
+    ]
+   }
+  }
+ },
+ "bellek-kullanimi": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show chassis routing-engine",
+    "show system processes extensive"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/system resource print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Kullanılan / boş bellek",
+      "d": "Toplam belleğin ne kadarının kullanıldığını gösterir."
+     },
+     {
+      "p": "sorted",
+      "d": "Cisco'da süreçleri bellek kullanımına göre sıralar."
+     },
+     {
+      "p": "Eğilim",
+      "d": "Tek ölçüm yerine zaman içindeki artış önemlidir."
+     }
+    ],
+    "example": "Aylardır çalışan bir switch'te bellek %60'tan %92'ye çıkmış. Sıralı çıktıda bir sürecin sürekli büyüdüğü görülür; bu bellek sızıntısıdır ve yazılım yükseltmesi planlanır.",
+    "mistakes": [
+     "Önbellek kullanımını da sorun sanıp panik yapmak.",
+     "Tek ölçümle sızıntı teşhisi koymak.",
+     "CPU'ya bakmayıp yalnızca belleğe odaklanmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Used / free memory",
+      "d": "Shows how much of the total memory is in use."
+     },
+     {
+      "p": "sorted",
+      "d": "On Cisco, sorts processes by memory usage."
+     },
+     {
+      "p": "Trend",
+      "d": "The increase over time matters more than a single reading."
+     }
+    ],
+    "example": "A switch that has run for months shows memory rising from 60% to 92%. The sorted output reveals a process that keeps growing; this is a memory leak and a software upgrade is planned.",
+    "mistakes": [
+     "Panicking because cache usage is counted as used memory.",
+     "Diagnosing a leak from a single measurement.",
+     "Focusing only on memory and ignoring the CPU."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الذاكرة المستخدمة / الحرة",
+      "d": "يبيّن مقدار ما استُهلك من إجمالي الذاكرة."
+     },
+     {
+      "p": "sorted",
+      "d": "في Cisco يرتّب العمليات بحسب استهلاك الذاكرة."
+     },
+     {
+      "p": "الاتجاه",
+      "d": "الزيادة عبر الزمن أهم من قراءة واحدة."
+     }
+    ],
+    "example": "سويتش يعمل منذ أشهر ارتفعت ذاكرته من 60% إلى 92%. يُظهر الإخراج المرتب عملية تكبر باستمرار؛ وهذا تسرّب ذاكرة فيُخطَّط لترقية البرنامج.",
+    "mistakes": [
+     "الذعر بسبب احتساب الذاكرة المؤقتة (cache) ضمن المستخدمة.",
+     "تشخيص تسرّب من قياس واحد.",
+     "التركيز على الذاكرة وتجاهل المعالج."
+    ]
+   }
+  }
+ },
+ "konfig-yedek-tftp": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "file copy /config/juniper.conf.gz scp://backup@10.0.0.5/sw1.conf.gz"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/export file=sw1",
+    "/tool fetch upload=yes mode=sftp address=10.0.0.5 src-path=sw1.rsc dst-path=sw1.rsc user=backup password=Secret123"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "10.0.0.5",
+      "d": "Yedeğin gönderileceği sunucunun IP adresi."
+     },
+     {
+      "p": "Dosya adı",
+      "d": "Sunucuda oluşacak dosya adı; cihaz adı ve tarih içermesi önerilir."
+     },
+     {
+      "p": "vrf mgmt",
+      "d": "Aruba AOS-CX'te yönetim VRF'i üzerinden gönderilmesini sağlar."
+     }
+    ],
+    "example": "Büyük bir değişiklik öncesi konfigürasyon yedeği sunucuya alınır. Değişiklik sorun çıkarırsa dosya cihaza geri yüklenerek eski duruma dönülür.",
+    "mistakes": [
+     "Huawei'de save yapmadan transfer etmek; eski kayıtlı dosya gönderilir.",
+     "TFTP'yi üretimde kullanmak; veri şifresizdir, SFTP/SCP tercih edin.",
+     "Aruba'da VRF belirtmeyip yönetim ağına erişememek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "10.0.0.5",
+      "d": "IP address of the server that receives the backup."
+     },
+     {
+      "p": "File name",
+      "d": "Name of the file created on the server; including device name and date is recommended."
+     },
+     {
+      "p": "vrf mgmt",
+      "d": "On Aruba AOS-CX, sends the transfer through the management VRF."
+     }
+    ],
+    "example": "Before a major change, the configuration is backed up to the server. If the change causes problems, the file is restored to the device to roll back.",
+    "mistakes": [
+     "Transferring on Huawei without save; the old saved file is sent.",
+     "Using TFTP in production; data is unencrypted, so prefer SFTP/SCP.",
+     "Not specifying the VRF on Aruba and failing to reach the management network."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "10.0.0.5",
+      "d": "عنوان IP للخادم الذي يستقبل النسخة الاحتياطية."
+     },
+     {
+      "p": "اسم الملف",
+      "d": "اسم الملف الذي يُنشأ على الخادم، ويُفضَّل أن يتضمن اسم الجهاز والتاريخ."
+     },
+     {
+      "p": "vrf mgmt",
+      "d": "في Aruba AOS-CX يرسل النقل عبر VRF الإدارة."
+     }
+    ],
+    "example": "قبل تغيير كبير تؤخذ نسخة احتياطية من الإعدادات إلى الخادم. وإذا سبّب التغيير مشاكل يُعاد الملف إلى الجهاز للرجوع إلى الحالة السابقة.",
+    "mistakes": [
+     "النقل في Huawei دون save فيُرسل الملف المحفوظ القديم.",
+     "استخدام TFTP في الإنتاج؛ فالبيانات غير مشفرة، والأفضل SFTP/SCP.",
+     "عدم تحديد VRF في Aruba وبالتالي تعذر الوصول إلى شبكة الإدارة."
+    ]
+   }
+  }
+ },
+ "ntp-dogrulama": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show ntp associations",
+    "show ntp status"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/system ntp client print",
+    "/system ntp client monitor"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Stratum",
+      "d": "Zaman kaynağına uzaklık; düşük değer daha güvenilirdir (16 senkron değil demektir)."
+     },
+     {
+      "p": "synchronized",
+      "d": "Cihazın bir kaynakla gerçekten senkron olup olmadığı."
+     },
+     {
+      "p": "Sunucu listesi",
+      "d": "Seçilen kaynak (* işaretli) ve erişilebilirlik bilgisi."
+     }
+    ],
+    "example": "Syslog sunucusunda bir switch'in kayıtları 2 dakika sapmış görünüyor. NTP durumunda cihazın senkron olmadığı ve stratum 16 olduğu görülür; sunucu erişimi (UDP 123) düzeltilince saat oturur.",
+    "mistakes": [
+     "NTP sunucusunu tanımlayıp senkronun gerçekleştiğini doğrulamamak.",
+     "UDP 123'ü firewall'da engellemek.",
+     "Yönetim VRF'ini veya kaynak arayüzü belirtmemek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Stratum",
+      "d": "Distance from the time source; lower is more reliable (16 means unsynchronized)."
+     },
+     {
+      "p": "synchronized",
+      "d": "Whether the device is really synchronized to a source."
+     },
+     {
+      "p": "Server list",
+      "d": "The selected source (marked *) and reachability information."
+     }
+    ],
+    "example": "On the syslog server, one switch's entries seem 2 minutes off. NTP status shows the device is unsynchronized with stratum 16; once server reachability (UDP 123) is fixed, the clock settles.",
+    "mistakes": [
+     "Defining an NTP server without verifying that sync has happened.",
+     "Blocking UDP 123 on the firewall.",
+     "Not specifying the management VRF or source interface."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Stratum",
+      "d": "البعد عن مصدر الوقت؛ كلما قلّ كان أوثق (16 تعني غير متزامن)."
+     },
+     {
+      "p": "synchronized",
+      "d": "هل الجهاز متزامن فعلًا مع مصدر."
+     },
+     {
+      "p": "قائمة الخوادم",
+      "d": "المصدر المختار (المعلَّم بـ *) ومعلومات إمكانية الوصول."
+     }
+    ],
+    "example": "على خادم syslog تبدو سجلات أحد السويتشات منحرفة بدقيقتين. تُظهر حالة NTP أن الجهاز غير متزامن وأن stratum يساوي 16؛ وبعد إصلاح الوصول إلى الخادم (UDP 123) تستقر الساعة.",
+    "mistakes": [
+     "تعريف خادم NTP دون التحقق من حدوث المزامنة.",
+     "حظر UDP 123 في الجدار الناري.",
+     "عدم تحديد VRF الإدارة أو واجهة المصدر."
+    ]
+   }
+  }
+ },
+ "cihaz-yeniden-baslat": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "request system reboot"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/system reboot"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Kaydetme",
+      "d": "Yeniden başlatmadan önce konfigürasyon write memory (Huawei'de save) ile kaydedilmelidir."
+     },
+     {
+      "p": "Onay",
+      "d": "Cihaz onay ister; evet denince bağlantı kopar."
+     }
+    ],
+    "example": "Yazılım yükseltmesi sonrası switch bakım penceresinde yeniden başlatılır. Önce konfigürasyon kaydedilir, böylece cihaz son ayarlarla geri gelir.",
+    "mistakes": [
+     "Kaydetmeden yeniden başlatıp son değişiklikleri kaybetmek.",
+     "Bakım penceresi dışında üretim switch'ini yeniden başlatmak.",
+     "Uzaktan başlatırken geri dönmeyecek bir yapılandırma hatasına karşı konsol erişimi hazırlamamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Saving",
+      "d": "Before reloading, the configuration must be saved with write memory (save on Huawei)."
+     },
+     {
+      "p": "Confirmation",
+      "d": "The device asks for confirmation; after you confirm, the session drops."
+     }
+    ],
+    "example": "After a software upgrade the switch is rebooted in the maintenance window. The configuration is saved first so the device returns with the latest settings.",
+    "mistakes": [
+     "Rebooting without saving and losing the latest changes.",
+     "Rebooting a production switch outside the maintenance window.",
+     "Not preparing console access in case a remote reboot brings the device back misconfigured."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الحفظ",
+      "d": "قبل إعادة التشغيل يجب حفظ الإعدادات بـ write memory (وفي Huawei بـ save)."
+     },
+     {
+      "p": "التأكيد",
+      "d": "يطلب الجهاز تأكيدًا، وبعده تنقطع الجلسة."
+     }
+    ],
+    "example": "بعد ترقية البرنامج يُعاد تشغيل السويتش في نافذة الصيانة. تُحفظ الإعدادات أولًا ليعود الجهاز بآخر الإعدادات.",
+    "mistakes": [
+     "إعادة التشغيل دون حفظ وفقدان آخر التغييرات.",
+     "إعادة تشغيل سويتش إنتاج خارج نافذة الصيانة.",
+     "عدم تجهيز وصول console تحسبًا لعودة الجهاز بإعدادات خاطئة بعد إعادة تشغيل عن بُعد."
+    ]
+   }
+  }
+ },
+ "lldp-etkinlestir": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set protocols lldp interface all",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip neighbor discovery-settings set discover-interface-list=all protocol=lldp,mndp"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Genel etkinleştirme",
+      "d": "LLDP cihaz genelinde açılır; arayüz bazında kapatılabilir."
+     },
+     {
+      "p": "Komşu bilgisi",
+      "d": "Karşı cihazın adı, portu ve yeteneklerini öğrenmeyi sağlar."
+     }
+    ],
+    "example": "Yeni kurulan switch'in uplink'inin hangi çekirdek porta bağlı olduğu bilinmiyor. LLDP açılıp komşu listesine bakılınca karşı cihaz ve port adı görülür; patch panel kayıtları doğrulanır.",
+    "mistakes": [
+     "Yalnızca bir uçta LLDP açıp komşu görmeyi beklemek.",
+     "Cisco'da CDP ile LLDP'yi aynı sanmak.",
+     "Güvenlik açısından son kullanıcı portlarında LLDP'yi açık bırakmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Global enable",
+      "d": "LLDP is turned on device-wide and can be disabled per interface."
+     },
+     {
+      "p": "Neighbor info",
+      "d": "Lets you learn the far-end device name, port and capabilities."
+     }
+    ],
+    "example": "It is unknown which core port a newly installed switch's uplink connects to. After enabling LLDP, the neighbor list shows the far-end device and port name; patch panel records are verified.",
+    "mistakes": [
+     "Enabling LLDP on only one end and expecting to see neighbors.",
+     "Assuming CDP and LLDP are the same on Cisco.",
+     "Leaving LLDP enabled on end-user ports from a security standpoint."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "التفعيل العام",
+      "d": "يُفعَّل LLDP على مستوى الجهاز كله ويمكن تعطيله لكل واجهة."
+     },
+     {
+      "p": "معلومات الجيران",
+      "d": "تتيح معرفة اسم الجهاز المقابل ومنفذه وإمكاناته."
+     }
+    ],
+    "example": "لا يُعرف بأي منفذ أساسي يتصل uplink لسويتش جديد. بعد تفعيل LLDP تُظهر قائمة الجيران اسم الجهاز المقابل ومنفذه فتُراجع سجلات patch panel.",
+    "mistakes": [
+     "تفعيل LLDP على طرف واحد وتوقع رؤية الجيران.",
+     "افتراض أن CDP وLLDP شيء واحد في Cisco.",
+     "ترك LLDP مفعّلًا على منافذ المستخدمين النهائيين من الناحية الأمنية."
+    ]
+   }
+  }
+ },
+ "dns-sunucusu": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set system name-server 10.0.0.2",
+    "set system domain-name lab.local",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip dns set servers=10.0.0.2"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "10.0.0.2",
+      "d": "DNS sunucusunun IP adresi."
+     },
+     {
+      "p": "domain-name",
+      "d": "Kısa adlara eklenecek alan adı soneki."
+     },
+     {
+      "p": "dns resolve",
+      "d": "Huawei'de DNS çözümlemeyi açar; kapalıyken sunucu tanımı işe yaramaz."
+     }
+    ],
+    "example": "Switch'te syslog ve NTP sunucuları isimle tanımlanmış ama çözülemiyor. DNS sunucusu eklenince isimler IP'ye çevrilir ve ping ile hostname testi başarılı olur.",
+    "mistakes": [
+     "Huawei'de dns resolve komutunu unutmak.",
+     "Aruba AOS-CX'te doğru VRF'i belirtmemek.",
+     "DNS sunucusuna yönetim ağından erişim olmadığını kontrol etmemek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "10.0.0.2",
+      "d": "IP address of the DNS server."
+     },
+     {
+      "p": "domain-name",
+      "d": "Domain suffix appended to short names."
+     },
+     {
+      "p": "dns resolve",
+      "d": "Enables DNS resolution on Huawei; the server setting does nothing while it is off."
+     }
+    ],
+    "example": "Syslog and NTP servers are configured by name on the switch but cannot be resolved. Once the DNS server is added, names resolve to IPs and ping and hostname tests succeed.",
+    "mistakes": [
+     "Forgetting the dns resolve command on Huawei.",
+     "Not specifying the correct VRF on Aruba AOS-CX.",
+     "Not verifying that the DNS server is reachable from the management network."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "10.0.0.2",
+      "d": "عنوان IP لخادم DNS."
+     },
+     {
+      "p": "domain-name",
+      "d": "لاحقة النطاق التي تُضاف إلى الأسماء القصيرة."
+     },
+     {
+      "p": "dns resolve",
+      "d": "يفعّل حل DNS في Huawei؛ وبدونه لا يفيد تعريف الخادم."
+     }
+    ],
+    "example": "خوادم syslog وNTP معرّفة بالأسماء على السويتش لكن لا يمكن حلّها. بعد إضافة خادم DNS تُحوَّل الأسماء إلى عناوين IP وينجح ping واختبار hostname.",
+    "mistakes": [
+     "نسيان الأمر dns resolve في Huawei.",
+     "عدم تحديد VRF الصحيح في Aruba AOS-CX.",
+     "عدم التحقق من إمكانية الوصول إلى خادم DNS من شبكة الإدارة."
+    ]
+   }
+  }
+ },
+ "ssh-etkinlestirme": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set system services ssh protocol-version v2",
+    "set system services ssh root-login deny",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip service set ssh disabled=no port=22",
+    "/ip service set telnet disabled=yes",
+    "/ip ssh set strong-crypto=yes"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "RSA anahtarı",
+      "d": "SSH için gerekli anahtar çifti; Cisco'da en az 2048 bit önerilir."
+     },
+     {
+      "p": "SSH sürümü 2",
+      "d": "Sürüm 1 güvensizdir; yalnızca v2 kullanılmalıdır."
+     },
+     {
+      "p": "transport / protocol inbound",
+      "d": "VTY hatlarında yalnızca SSH'a izin verip Telnet'i kapatır."
+     }
+    ],
+    "example": "Saha switch'lerine Telnet ile bağlanılıyor ve şifreler ağda düz metin gidiyor. SSH v2 açılıp VTY'de Telnet kapatılınca yönetim trafiği şifreli hale gelir.",
+    "mistakes": [
+     "Cisco'da hostname ve domain-name tanımlamadan RSA anahtarı üretmeye çalışmak.",
+     "Telnet'i kapatmadan SSH açıp güvenliği artırdığını sanmak.",
+     "Huawei'de kullanıcıya ssh servis tipini tanımlamamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "RSA key",
+      "d": "Key pair required for SSH; at least 2048 bits is recommended on Cisco."
+     },
+     {
+      "p": "SSH version 2",
+      "d": "Version 1 is insecure; only v2 should be used."
+     },
+     {
+      "p": "transport / protocol inbound",
+      "d": "Allows only SSH on the VTY lines and disables Telnet."
+     }
+    ],
+    "example": "Field switches are managed over Telnet and passwords cross the network in clear text. After enabling SSH v2 and disabling Telnet on the VTY lines, management traffic is encrypted.",
+    "mistakes": [
+     "Trying to generate an RSA key on Cisco without a hostname and domain-name.",
+     "Enabling SSH without disabling Telnet and assuming security improved.",
+     "Not assigning the SSH service type to the user on Huawei."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "مفتاح RSA",
+      "d": "زوج المفاتيح اللازم لـ SSH؛ يُوصى بـ 2048 بت على الأقل في Cisco."
+     },
+     {
+      "p": "الإصدار 2",
+      "d": "الإصدار 1 غير آمن ويجب استخدام v2 فقط."
+     },
+     {
+      "p": "transport / protocol inbound",
+      "d": "يسمح بـ SSH فقط على خطوط VTY ويعطّل Telnet."
+     }
+    ],
+    "example": "تُدار سويتشات الموقع عبر Telnet وكلمات المرور تنتقل بنص صريح. بعد تفعيل SSH v2 وتعطيل Telnet على خطوط VTY تصبح حركة الإدارة مشفرة.",
+    "mistakes": [
+     "محاولة توليد مفتاح RSA في Cisco دون hostname وdomain-name.",
+     "تفعيل SSH دون تعطيل Telnet والظن بتحسن الأمان.",
+     "عدم تعيين نوع خدمة SSH للمستخدم في Huawei."
+    ]
+   }
+  }
+ },
+ "yerel-kullanici": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set system login user admin2 class super-user authentication plain-text-password",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/user add name=admin2 group=full password=ChangeMe123"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "privilege 15 / yetki",
+      "d": "Kullanıcının tam yönetici yetkisine sahip olduğunu belirtir."
+     },
+     {
+      "p": "secret / irreversible-cipher",
+      "d": "Parolanın yapılandırmada tersine çevrilemez biçimde saklanmasını sağlar."
+     },
+     {
+      "p": "service-type ssh",
+      "d": "Huawei'de kullanıcının hangi servisle bağlanabileceğini sınırlar."
+     }
+    ],
+    "example": "TACACS+ sunucusu bakımdayken switch'e yönetim erişimi gerekir. Önceden tanımlı yerel kullanıcıyla cihaza girilir; bu hesap yalnızca acil durum için tutulur ve parolası güvenli bir kasada saklanır.",
+    "mistakes": [
+     "Cisco'da password yerine secret kullanmamak; parola zayıf şifrelenir.",
+     "Parolayı betik ve repo içinde düz metin bırakmak.",
+     "Yerel kullanıcıyı hiç tanımlamadan yalnızca TACACS+'e güvenmek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "privilege 15 / role",
+      "d": "Marks the user as having full administrative rights."
+     },
+     {
+      "p": "secret / irreversible-cipher",
+      "d": "Stores the password in a non-reversible form in the configuration."
+     },
+     {
+      "p": "service-type ssh",
+      "d": "On Huawei, restricts which services the user can log in with."
+     }
+    ],
+    "example": "Management access to the switch is needed while the TACACS+ server is under maintenance. The pre-defined local user is used to log in; this account is kept for emergencies only and its password is stored in a secure vault.",
+    "mistakes": [
+     "Using password instead of secret on Cisco; the password is weakly encrypted.",
+     "Leaving the password in clear text in scripts or repositories.",
+     "Relying on TACACS+ alone without defining any local user."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "privilege 15 / role",
+      "d": "يحدد أن للمستخدم صلاحيات إدارية كاملة."
+     },
+     {
+      "p": "secret / irreversible-cipher",
+      "d": "يحفظ كلمة المرور في الإعدادات بصيغة لا يمكن عكسها."
+     },
+     {
+      "p": "service-type ssh",
+      "d": "في Huawei يحدد الخدمات التي يمكن للمستخدم الدخول بها."
+     }
+    ],
+    "example": "يلزم الوصول الإداري إلى السويتش أثناء صيانة خادم TACACS+. يُدخل بالمستخدم المحلي المعرّف مسبقًا، ويُحتفظ بهذا الحساب للطوارئ فقط وتُخزَّن كلمته في خزنة آمنة.",
+    "mistakes": [
+     "استخدام password بدل secret في Cisco فتكون كلمة المرور ضعيفة التشفير.",
+     "ترك كلمة المرور بنص صريح في السكربتات أو المستودعات.",
+     "الاعتماد على TACACS+ وحده دون تعريف أي مستخدم محلي."
+    ]
+   }
+  }
+ },
+ "tacacs-sunucusu": {
+  "juniper": null,
+  "mikrotik": null,
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Sunucu IP'si ve anahtar",
+      "d": "TACACS+ sunucusunun adresi ve paylaşılan anahtar; iki uçta aynı olmalıdır."
+     },
+     {
+      "p": "local yedeği",
+      "d": "Sunucuya ulaşılamazsa yerel kullanıcıya düşülmesini sağlar."
+     },
+     {
+      "p": "Authorization",
+      "d": "Komut ve yetki seviyesinin sunucu tarafından belirlenmesini sağlar."
+     }
+    ],
+    "example": "Fabrikadaki tüm switch'ler merkezi TACACS+ ile yönetilir; bir kişi ayrılınca hesabı tek yerden kapatılır. Sunucu çökerse 'local' yedeği sayesinde yerel yönetici hesabıyla cihaza hâlâ girilebilir.",
+    "mistakes": [
+     "'local' yedeğini eklemeden cihazı sunucuya bağlamak; sunucu çökünce erişim kaybolur.",
+     "Paylaşılan anahtarı iki uçta farklı yazmak.",
+     "Yapılandırmayı mevcut SSH oturumunu kapatmadan, ikinci bir oturumla test etmemek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Server IP and key",
+      "d": "Address of the TACACS+ server and the shared key; both must match on each side."
+     },
+     {
+      "p": "local fallback",
+      "d": "Falls back to the local user if the server is unreachable."
+     },
+     {
+      "p": "Authorization",
+      "d": "Lets the server decide command sets and privilege levels."
+     }
+    ],
+    "example": "All switches in the factory are managed with central TACACS+; when someone leaves, the account is disabled in one place. If the server goes down, the 'local' fallback still lets you in with the local admin account.",
+    "mistakes": [
+     "Pointing the device to the server without the 'local' fallback; access is lost when the server fails.",
+     "Typing a different shared key on each side.",
+     "Not testing the configuration from a second session while keeping the current SSH session open."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "عنوان الخادم والمفتاح",
+      "d": "عنوان خادم TACACS+ والمفتاح المشترك، ويجب أن يتطابقا على الطرفين."
+     },
+     {
+      "p": "الاحتياطي local",
+      "d": "يتيح الرجوع إلى المستخدم المحلي عند تعذر الوصول إلى الخادم."
+     },
+     {
+      "p": "Authorization",
+      "d": "يتيح للخادم تحديد الأوامر ومستويات الصلاحية."
+     }
+    ],
+    "example": "تُدار كل السويتشات في المصنع عبر TACACS+ مركزي؛ وعند مغادرة موظف يُعطَّل حسابه من مكان واحد. وإذا تعطل الخادم يتيح الاحتياطي 'local' الدخول بحساب المدير المحلي.",
+    "mistakes": [
+     "ربط الجهاز بالخادم دون الاحتياطي 'local' فيضيع الوصول عند تعطل الخادم.",
+     "كتابة مفتاح مشترك مختلف على كل طرف.",
+     "عدم اختبار الإعدادات من جلسة ثانية مع إبقاء جلسة SSH الحالية مفتوحة."
+    ]
+   }
+  }
+ }
+}

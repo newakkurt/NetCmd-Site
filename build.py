@@ -53,7 +53,14 @@ VENDORS = {
     "cisco": {"name": "Cisco", "os": "IOS / IOS-XE"},
     "huawei": {"name": "Huawei", "os": "VRP"},
     "aruba": {"name": "Aruba", "os": "AOS-S / AOS-CX"},
+    "juniper": {"name": "Juniper", "os": "Junos OS"},
+    "mikrotik": {"name": "MikroTik", "os": "RouterOS"},
 }
+CORE_VENDORS = ("cisco", "huawei", "aruba")  # her komutta zorunlu; diğerleri varsa gösterilir
+
+
+def vends(it):
+    return [v for v in VENDORS if it.get(v)]
 
 CSS = """
 :root{--bg:#050a0f;--fg:#e2f0ea;--mut:#8fa8a0;--bd:#16323a;--ac:#3de0ff;--ac2:#39ff9c;--code:#02060a;--codefg:#b8ffd9;--card:rgba(9,20,26,.74);--ok:#39ff9c;--err:#ff6b6b}
@@ -282,11 +289,30 @@ def load():
     items = load_json("commands.json")
     for f in sorted(DATA.glob("commands_*.json")):
         items += load_json(f.name)
+    enrich = {}
+    for f in sorted(DATA.glob("enrich_*.json")):
+        enrich.update(load_json(f.name))
+    for it in items:
+        e = enrich.get(it["slug"])
+        if not e:
+            log.error("enrich verisi eksik: %s", it["slug"])
+            sys.exit(1)
+        for v in ("juniper", "mikrotik"):
+            if e.get(v):
+                it[v] = e[v]
+        it["details"] = e["details"]
+        for lang in LANGS:
+            d = it["details"].get(lang) or {}
+            if not (d.get("params") and d.get("example") and d.get("mistakes")):
+                log.error("detay eksik: %s/%s", it["slug"], lang)
+                sys.exit(1)
     I18N = load_json("i18n.json")
     for f in sorted(DATA.glob("i18n_*.json")):
         ex = load_json(f.name)
         I18N["cats"].update(ex.get("cats", {}))
         I18N["items"].update(ex.get("items", {}))
+        for lang in LANGS:
+            I18N["ui"][lang].update(ex.get("ui", {}).get(lang, {}))
     extra = load_json("tools_i18n.json")
     for lang in LANGS:
         I18N["ui"][lang].update(extra["ui"][lang])
@@ -316,11 +342,11 @@ def load():
 
     seen = set()
     for it in items:
-        for k in ("slug", "title", "cat", "note", *VENDORS):
+        for k in ("slug", "title", "cat", "note", *CORE_VENDORS):
             if k not in it:
                 log.error("Eksik alan %s: %s", k, it.get("slug"))
                 sys.exit(1)
-        for v in VENDORS:
+        for v in vends(it):
             if not it[v].get("cmds"):
                 log.error("Boş komut: %s/%s", it["slug"], v)
                 sys.exit(1)
@@ -432,7 +458,8 @@ def build_command(lang, it, items, paths):
     path = "cmd/{}/".format(it["slug"])
     title_it = item_title(it, lang)
     vend_html, rows = "", ""
-    for v, meta in VENDORS.items():
+    for v in vends(it):
+        meta = VENDORS[v]
         d = it[v]
         vend_html += '<div class="vend"><h3>{} <small>{} · {}</small></h3>{}</div>'.format(
             meta["name"], esc(meta["os"]), esc(d["mode"]), code_block(d["cmds"])
@@ -442,7 +469,17 @@ def build_command(lang, it, items, paths):
         )
     pair_links = " · ".join(
         '<a href="{}">{} → {}</a>'.format(lurl(lang, "{}-{}/{}/".format(a, b, it["slug"])), VENDORS[a]["name"], VENDORS[b]["name"])
-        for a, b in permutations(VENDORS, 2)
+        for a, b in permutations(vends(it), 2)
+    )
+    det = it["details"][lang]
+    detail_html = (
+        "<h2>{ph}</h2><div class=\"tablewrap\"><table><tr><th>{pp}</th><th>{pd}</th></tr>{prow}</table></div>"
+        "<h2>{eh}</h2><p>{ex}</p><h2>{mh}</h2><ul>{mli}</ul>"
+    ).format(
+        ph=esc(T(lang, "det_params")), pp=esc(T(lang, "det_param")), pd=esc(T(lang, "det_desc")),
+        prow="".join("<tr><td dir=\"auto\"><code>{}</code></td><td>{}</td></tr>".format(esc(x["p"]), esc(x["d"])) for x in det["params"]),
+        eh=esc(T(lang, "det_example")), ex=esc(det["example"]),
+        mh=esc(T(lang, "det_mistakes")), mli="".join("<li>{}</li>".format(esc(m)) for m in det["mistakes"]),
     )
     rel = "".join(
         '<div class="card"><a href="{}">{}</a></div>'.format(lurl(lang, "cmd/{}/".format(r["slug"])), esc(item_title(r, lang)))
@@ -456,7 +493,7 @@ def build_command(lang, it, items, paths):
         '<p class="lead"><span class="tag">{cat}</span> {lead}</p>'
         "{ad}{vend}<h2>{table_h}</h2>"
         "<table><tr><th>{th_v}</th><th>{th_c}</th><th>{th_m}</th></tr>{rows}</table>"
-        '<div class="note"><strong>{note_l}</strong> {note}</div>'
+        '<div class="note"><strong>{note_l}</strong> {note}</div>{detail}'
         "<h2>{tr_h}</h2><p>{pairs}</p><h2>{rel_h}</h2><div class=\"grid\">{rel}</div>"
     ).format(
         home=lurl(lang), crumb=esc(T(lang, "crumb_home")),
@@ -464,7 +501,7 @@ def build_command(lang, it, items, paths):
         h1=esc(T(lang, "cmd_h1", title=title_it)), lead=esc(T(lang, "cmd_lead")),
         ad=ad_slot(), vend=vend_html, table_h=esc(T(lang, "table_h")),
         th_v=esc(T(lang, "th_vendor")), th_c=esc(T(lang, "th_cmd")), th_m=esc(T(lang, "th_mode")),
-        rows=rows, note_l=esc(T(lang, "note_label")), note=esc(item_note(it, lang)),
+        rows=rows, note_l=esc(T(lang, "note_label")), note=esc(item_note(it, lang)), detail=detail_html,
         tr_h=esc(T(lang, "translate_h")), pairs=pair_links, rel_h=esc(T(lang, "related_h")), rel=rel,
     )
     write("{}/{}index.html".format(lang, path), page(lang, title, desc, path, body, tech_ld(title, desc, lang)))
@@ -532,7 +569,7 @@ def build_home(lang, items, cats, paths):
         for i in lst:
             hay = " ".join(
                 [item_title(i, lang), i["title"], i["slug"], cat_name(cat, lang)]
-                + [c for v in VENDORS for c in i[v]["cmds"]]
+                + [c for v in vends(i) for c in i[v]["cmds"]]
             ).lower()
             cards += (
                 '<div class="card cmd-card" data-s="{}"><a href="{}">{}</a>'
@@ -546,7 +583,7 @@ def build_home(lang, items, cats, paths):
     hero = (
         '<section class="hero"><h1>{h1}</h1><p class="lead">{lead}</p>'
         '<div class="term" aria-hidden="true"><span class="tp" id="tp"></span> <span class="tc" id="tc"></span><span class="cursor"></span></div>'
-        '<p class="plats"><span class="tag plat">Cisco IOS</span><span class="tag plat">Huawei VRP</span><span class="tag plat">Aruba AOS</span></p>'
+        '<p class="plats"><span class="tag plat">Cisco IOS</span><span class="tag plat">Huawei VRP</span><span class="tag plat">Aruba AOS</span><span class="tag plat">Juniper Junos</span><span class="tag plat">MikroTik RouterOS</span></p>'
         '<p class="stat">{stat}</p>'
         '<p><a class="btn" href="{tools}">{tools_t}</a> <a class="btn sec" href="{signup}">{signup_t}</a></p></section>'
     ).format(
@@ -870,7 +907,7 @@ def main():
         paths = set()
         for it in items:
             build_command(lang, it, items, paths)
-            for a, b in permutations(VENDORS, 2):
+            for a, b in permutations(vends(it), 2):
                 build_pair(lang, it, a, b, paths)
         cats = build_categories(lang, items, paths)
         build_home(lang, items, cats, paths)

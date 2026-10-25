@@ -1,0 +1,2315 @@
+{
+ "vlan-listeleme": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show vlans"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge vlan print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "brief / VLAN listesi",
+      "d": "Cihazda tanımlı VLAN ID ve isimlerini listeler."
+     },
+     {
+      "p": "Üye portlar",
+      "d": "Her VLAN'a ait access/trunk portları gösterir; Junos'ta 'show vlans USERS' ile tek VLAN seçilebilir."
+     },
+     {
+      "p": "Tagged / untagged",
+      "d": "Portun VLAN'a etiketli mi etiketsiz mi üye olduğunu ayırt etmeye yarar."
+     }
+    ],
+    "example": "Access switch'te VLAN 20 kullanıcıların bilgisayarına IP vermiyor. VLAN listesine bakıp VLAN 20'nin tanımlı olduğunu ve Gi1/0/12 portunun üye göründüğünü doğrularsınız; port listede yoksa sorun port atamasındadır.",
+    "mistakes": [
+     "VLAN'ın tanımlı olmasını portun üye olduğu anlamında yorumlamak; üyelik ayrıca kontrol edilmelidir.",
+     "Trunk portlarının brief çıktısında görünmediğini fark etmeyip VLAN'ı eksik sanmak.",
+     "Huawei'de 'display vlan' ile 'display vlan summary' çıktısını karıştırmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "brief / VLAN list",
+      "d": "Lists the VLAN IDs and names defined on the device."
+     },
+     {
+      "p": "Member ports",
+      "d": "Shows the access/trunk ports in each VLAN; on Junos 'show vlans USERS' selects a single VLAN."
+     },
+     {
+      "p": "Tagged / untagged",
+      "d": "Tells you whether a port is a tagged or untagged member of the VLAN."
+     }
+    ],
+    "example": "VLAN 20 users on an access switch get no IP address. Checking the VLAN list confirms VLAN 20 exists and Gi1/0/12 is a member; if the port is missing, the problem is the port assignment.",
+    "mistakes": [
+     "Assuming a VLAN being defined means the port is a member; membership must be checked separately.",
+     "Not noticing that trunk ports are omitted from the brief output and thinking the VLAN is missing.",
+     "Confusing 'display vlan' with 'display vlan summary' on Huawei."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "brief / قائمة VLAN",
+      "d": "يعرض أرقام وأسماء شبكات VLAN المعرّفة على الجهاز."
+     },
+     {
+      "p": "المنافذ الأعضاء",
+      "d": "يبيّن منافذ access/trunk التابعة لكل VLAN؛ وفي Junos يحدد 'show vlans USERS' شبكة واحدة."
+     },
+     {
+      "p": "tagged / untagged",
+      "d": "يوضح هل المنفذ عضو في الـ VLAN بوسم أم بدون وسم."
+     }
+    ],
+    "example": "مستخدمو VLAN 20 على سويتش الوصول لا يحصلون على عنوان IP. بمراجعة قائمة VLAN تتأكد من تعريف VLAN 20 ومن عضوية المنفذ Gi1/0/12؛ وإذا غاب المنفذ فالمشكلة في إسناد المنفذ.",
+    "mistakes": [
+     "افتراض أن تعريف الـ VLAN يعني أن المنفذ عضو فيها، بينما يجب فحص العضوية بشكل منفصل.",
+     "عدم الانتباه إلى أن منافذ trunk لا تظهر في مخرجات brief فيُظن أن الـ VLAN ناقصة.",
+     "الخلط بين display vlan و display vlan summary في Huawei."
+    ]
+   }
+  }
+ },
+ "arayuz-ip-ozeti": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip address print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Arayüz adı",
+      "d": "Fiziksel ve mantıksal (VLAN/SVI, loopback) arayüzleri listeler."
+     },
+     {
+      "p": "IP adresi",
+      "d": "Arayüze atanmış IPv4 adresini gösterir."
+     },
+     {
+      "p": "Durum (Status/Protocol)",
+      "d": "Admin ve hat durumunu verir; up/down ayrımı sorun yerini daraltır."
+     }
+    ],
+    "example": "Core switch'te Vlan10 arayüzünün gateway olarak çalışmadığını düşünüyorsunuz. Özet çıktıda Vlan10 için 10.10.10.1 adresinin göründüğünü ve durumun up/up olduğunu kontrol edersiniz.",
+    "mistakes": [
+     "'administratively down' ile 'down' durumunu aynı sanmak; ilki shutdown, ikincisi hat sorunudur.",
+     "Aruba/Huawei'de L2 portlarda IP görünmemesini hata sanmak.",
+     "Çıktıdaki alt arayüzleri veya secondary adresleri gözden kaçırmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Interface name",
+      "d": "Lists physical and logical interfaces (VLAN/SVI, loopback)."
+     },
+     {
+      "p": "IP address",
+      "d": "Shows the IPv4 address assigned to the interface."
+     },
+     {
+      "p": "Status (Status/Protocol)",
+      "d": "Shows admin and link state; the up/down split narrows down where the problem is."
+     }
+    ],
+    "example": "You suspect Vlan10 is not working as the gateway on the core switch. In the summary you check that Vlan10 shows 10.10.10.1 and the state is up/up.",
+    "mistakes": [
+     "Treating 'administratively down' and 'down' as the same; the first is a shutdown, the second a link problem.",
+     "Thinking missing IPs on L2 ports are an error on Aruba/Huawei.",
+     "Overlooking sub-interfaces or secondary addresses in the output."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "اسم الواجهة",
+      "d": "يسرد الواجهات الفيزيائية والمنطقية (VLAN/SVI وloopback)."
+     },
+     {
+      "p": "عنوان IP",
+      "d": "يعرض عنوان IPv4 المسند للواجهة."
+     },
+     {
+      "p": "الحالة (Status/Protocol)",
+      "d": "يبيّن الحالة الإدارية وحالة الوصلة، وتفصيل up/down يحدد موضع المشكلة."
+     }
+    ],
+    "example": "تشك في أن الواجهة Vlan10 لا تعمل كبوابة على سويتش النواة. من الملخص تتأكد أن Vlan10 تحمل العنوان 10.10.10.1 وأن حالتها up/up.",
+    "mistakes": [
+     "اعتبار 'administratively down' و'down' شيئًا واحدًا، فالأولى بسبب shutdown والثانية مشكلة في الوصلة.",
+     "ظن أن غياب IP على منافذ الطبقة الثانية خطأ في Aruba/Huawei.",
+     "إغفال الواجهات الفرعية أو العناوين الثانوية في المخرجات."
+    ]
+   }
+  }
+ },
+ "calisan-konfigurasyon": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show configuration"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/export"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Çalışan konfigürasyon",
+      "d": "Cihazın RAM'de aktif olan, henüz kaydedilmemiş olabilecek ayarlarının tamamıdır."
+     },
+     {
+      "p": "Filtreleme",
+      "d": "Cisco'da '| section', Junos'ta '| match', Huawei'de '| include' ile çıktı daraltılır."
+     },
+     {
+      "p": "Bölüm bazlı çıktı",
+      "d": "RouterOS'ta '/ip firewall export' gibi yol bazlı export alınabilir."
+     }
+    ],
+    "example": "Değişiklikten sonra portun gerçekten VLAN 10'da olduğunu doğrulamak için aktif konfigürasyonda ilgili interface bölümünü filtreleyerek bakarsınız.",
+    "mistakes": [
+     "Çalışan ve kayıtlı konfigürasyonu aynı sanıp reload sonrası ayarların kaybolmasını göz ardı etmek.",
+     "Çıktıyı parola içerebileceğini unutup güvenli olmayan kanallarda paylaşmak.",
+     "Junos'ta commit edilmemiş adaylar için 'show configuration' yerine 'show | compare' kullanmamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Running configuration",
+      "d": "The full active configuration in RAM, which may not yet be saved."
+     },
+     {
+      "p": "Filtering",
+      "d": "Narrow the output with '| section' on Cisco, '| match' on Junos or '| include' on Huawei."
+     },
+     {
+      "p": "Per-path output",
+      "d": "RouterOS lets you export a single path such as '/ip firewall export'."
+     }
+    ],
+    "example": "After a change you verify that the port is really in VLAN 10 by filtering the active configuration for the relevant interface section.",
+    "mistakes": [
+     "Confusing running and saved configuration and ignoring that settings are lost after a reload.",
+     "Forgetting that the output may contain passwords and sharing it over insecure channels.",
+     "On Junos, not using 'show | compare' to see uncommitted candidate changes."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الإعداد الجاري",
+      "d": "كامل الإعدادات الفعّالة في الذاكرة، وقد لا تكون محفوظة بعد."
+     },
+     {
+      "p": "التصفية",
+      "d": "تُضيَّق المخرجات بـ '| section' في Cisco و'| match' في Junos و'| include' في Huawei."
+     },
+     {
+      "p": "تصدير بحسب المسار",
+      "d": "يتيح RouterOS تصدير مسار محدد مثل '/ip firewall export'."
+     }
+    ],
+    "example": "بعد إجراء تغيير تتحقق من أن المنفذ فعلًا ضمن VLAN 10 بتصفية الإعداد الجاري لقسم الواجهة المعنية.",
+    "mistakes": [
+     "الخلط بين الإعداد الجاري والمحفوظ وإهمال فقدان الإعدادات بعد إعادة التشغيل.",
+     "نسيان أن المخرجات قد تحوي كلمات مرور ومشاركتها عبر قنوات غير آمنة.",
+     "في Junos، عدم استخدام 'show | compare' لرؤية التغييرات المرشحة غير المعتمدة."
+    ]
+   }
+  }
+ },
+ "konfigurasyon-kaydetme": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "commit"
+   ]
+  },
+  "mikrotik": null,
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "write memory / save",
+      "d": "Çalışan konfigürasyonu kalıcı belleğe (startup) yazar."
+     },
+     {
+      "p": "Onay istemi",
+      "d": "Huawei 'save' komutu Y/N sorar; otomasyonda bu prompt ele alınmalıdır."
+     },
+     {
+      "p": "commit (Junos)",
+      "d": "Junos'ta değişiklikler 'commit' ile hem aktif hem kalıcı olur."
+     }
+    ],
+    "example": "VLAN ve trunk değişikliklerini yaptıktan sonra Netmiko ile 20 switch'e ayar basıyorsunuz; her cihazın sonunda kaydetme komutunu çalıştırır ve Huawei'de Y onayını da gönderirsiniz.",
+    "mistakes": [
+     "Kaydetmeyi unutup elektrik kesintisi veya reload sonrası değişikliklerin kaybolması.",
+     "Huawei'de save onayını otomasyonda yanıtlamamak ve scriptin takılması.",
+     "Junos'ta commit yapmadan 'exit' ile çıkıp değişikliğin uygulanmamasını fark etmemek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "write memory / save",
+      "d": "Writes the running configuration to persistent storage (startup)."
+     },
+     {
+      "p": "Confirmation prompt",
+      "d": "Huawei 'save' asks Y/N; automation must handle this prompt."
+     },
+     {
+      "p": "commit (Junos)",
+      "d": "On Junos, changes become active and persistent with 'commit'."
+     }
+    ],
+    "example": "After pushing VLAN and trunk changes to 20 switches with Netmiko, you run the save command at the end of each device and also send the Y confirmation on Huawei.",
+    "mistakes": [
+     "Forgetting to save, so changes are lost after a power cut or reload.",
+     "Not answering the Huawei save prompt in automation, leaving the script hanging.",
+     "On Junos, leaving configuration mode without 'commit' and not noticing the change was never applied."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "write memory / save",
+      "d": "يكتب الإعداد الجاري في الذاكرة الدائمة (startup)."
+     },
+     {
+      "p": "رسالة التأكيد",
+      "d": "الأمر save في Huawei يسأل Y/N، ويجب التعامل مع هذه الرسالة في الأتمتة."
+     },
+     {
+      "p": "commit (Junos)",
+      "d": "في Junos تصبح التغييرات فعّالة ودائمة بالأمر 'commit'."
+     }
+    ],
+    "example": "بعد دفع تغييرات VLAN وtrunk إلى 20 سويتشًا عبر Netmiko، تنفّذ أمر الحفظ في نهاية كل جهاز وترسل تأكيد Y في أجهزة Huawei.",
+    "mistakes": [
+     "نسيان الحفظ فتضيع التغييرات بعد انقطاع الكهرباء أو إعادة التشغيل.",
+     "عدم الرد على رسالة تأكيد save في Huawei داخل الأتمتة فيتوقف السكربت.",
+     "في Junos، الخروج من وضع الإعداد دون 'commit' وعدم ملاحظة أن التغيير لم يُطبَّق."
+    ]
+   }
+  }
+ },
+ "mac-adres-tablosu": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show ethernet-switching table"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge host print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "MAC adresi",
+      "d": "Öğrenilen cihaz MAC adreslerini listeler; tek MAC için komuta adres eklenir."
+     },
+     {
+      "p": "VLAN",
+      "d": "MAC'in hangi VLAN'da öğrenildiğini gösterir."
+     },
+     {
+      "p": "Port",
+      "d": "MAC'in hangi porttan öğrenildiğini gösterir; cihazı fiziksel olarak bulmak için kullanılır."
+     },
+     {
+      "p": "Tip (dynamic/static)",
+      "d": "Adresin otomatik mi sabit mi olduğunu belirtir."
+     }
+    ],
+    "example": "Fabrikada bir yazıcının hangi switch portuna bağlı olduğunu bulmanız gerekiyor. Yazıcının MAC adresini tabloda aratıp port ve VLAN bilgisini alırsınız.",
+    "mistakes": [
+     "MAC adres formatını platforma göre yanlış yazmak (aabb.ccdd.eeff, aa:bb:cc:dd:ee:ff, aabb-ccdd-eeff).",
+     "MAC'i uplink/trunk portunda görüp cihazın orada bağlı olduğunu sanmak; alt switch'e kadar izlemek gerekir.",
+     "Aging süresi dolan kayıtların tabloda bulunmamasını cihazın kapalı olması saymak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "MAC address",
+      "d": "Lists learned device MAC addresses; add an address to the command to look up one MAC."
+     },
+     {
+      "p": "VLAN",
+      "d": "Shows which VLAN the MAC was learned in."
+     },
+     {
+      "p": "Port",
+      "d": "Shows the port the MAC was learned on; used to physically locate the device."
+     },
+     {
+      "p": "Type (dynamic/static)",
+      "d": "Indicates whether the entry is learned or static."
+     }
+    ],
+    "example": "You need to find which switch port a factory printer is connected to. You look up its MAC address in the table and read the port and VLAN.",
+    "mistakes": [
+     "Writing the MAC format wrongly for the platform (aabb.ccdd.eeff, aa:bb:cc:dd:ee:ff, aabb-ccdd-eeff).",
+     "Seeing the MAC on an uplink/trunk port and assuming the device is there; you must trace down to the access switch.",
+     "Treating an aged-out entry as proof the device is powered off."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "عنوان MAC",
+      "d": "يسرد عناوين MAC المتعلَّمة؛ ولإيجاد عنوان واحد يُضاف إلى الأمر."
+     },
+     {
+      "p": "VLAN",
+      "d": "يبيّن الـ VLAN التي تعلَّم فيها العنوان."
+     },
+     {
+      "p": "المنفذ",
+      "d": "يبيّن المنفذ الذي تعلَّم منه العنوان، ويُستخدم لتحديد موقع الجهاز فيزيائيًا."
+     },
+     {
+      "p": "النوع (dynamic/static)",
+      "d": "يوضح هل الإدخال متعلَّم تلقائيًا أم ثابت."
+     }
+    ],
+    "example": "تحتاج إلى معرفة أي منفذ على السويتش تتصل به طابعة في المصنع. تبحث عن عنوان MAC الخاص بها في الجدول وتقرأ المنفذ والـ VLAN.",
+    "mistakes": [
+     "كتابة صيغة MAC بشكل خاطئ بالنسبة للمنصة (aabb.ccdd.eeff أو aa:bb:cc:dd:ee:ff أو aabb-ccdd-eeff).",
+     "رؤية العنوان على منفذ uplink/trunk وافتراض أن الجهاز هناك، بينما يجب تتبعه حتى سويتش الوصول.",
+     "اعتبار غياب إدخال انتهت مدته دليلًا على أن الجهاز مطفأ."
+    ]
+   }
+  }
+ },
+ "arp-tablosu": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show arp no-resolve"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip arp print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "IP adresi",
+      "d": "Komşu cihazın IP adresi."
+     },
+     {
+      "p": "MAC adresi",
+      "d": "IP'ye karşılık gelen L2 adresi."
+     },
+     {
+      "p": "Arayüz",
+      "d": "Kaydın öğrenildiği L3 arayüz (SVI/port)."
+     },
+     {
+      "p": "Yaş / durum",
+      "d": "Kaydın ne kadar süredir tutulduğu veya incomplete/stale durumu."
+     }
+    ],
+    "example": "10.10.10.50 adresindeki sunucuya ping atılamıyor. ARP tablosunda bu IP için MAC görünmüyorsa ARP çözülmüyordur; MAC görünüyorsa sorun yönlendirme veya güvenlik duvarındadır.",
+    "mistakes": [
+     "L2 switch'te ARP tablosunun boş olmasını arıza sanmak.",
+     "Aynı IP için farklı MAC görüp (IP çakışması/ARP spoofing) bunu araştırmamak.",
+     "Incomplete kayıtları cihaz erişilebilir sanmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "IP address",
+      "d": "IP address of the neighbor."
+     },
+     {
+      "p": "MAC address",
+      "d": "The L2 address mapped to that IP."
+     },
+     {
+      "p": "Interface",
+      "d": "The L3 interface (SVI/port) the entry was learned on."
+     },
+     {
+      "p": "Age / state",
+      "d": "How long the entry has been kept, or an incomplete/stale state."
+     }
+    ],
+    "example": "You cannot ping the server at 10.10.10.50. If the ARP table shows no MAC for it, ARP is not resolving; if a MAC is shown, the issue is routing or a firewall.",
+    "mistakes": [
+     "Thinking an empty ARP table on a pure L2 switch is a fault.",
+     "Seeing different MACs for the same IP (IP conflict/ARP spoofing) and not investigating.",
+     "Assuming incomplete entries mean the host is reachable."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "عنوان IP",
+      "d": "عنوان IP الخاص بالجار."
+     },
+     {
+      "p": "عنوان MAC",
+      "d": "عنوان الطبقة الثانية المقابل للـ IP."
+     },
+     {
+      "p": "الواجهة",
+      "d": "واجهة الطبقة الثالثة (SVI/منفذ) التي تعلَّم منها الإدخال."
+     },
+     {
+      "p": "العمر / الحالة",
+      "d": "مدة بقاء الإدخال أو حالة incomplete/stale."
+     }
+    ],
+    "example": "لا يمكنك عمل ping للخادم 10.10.10.50. إذا لم يظهر MAC له في جدول ARP فالتحليل لا يعمل؛ وإذا ظهر فالمشكلة في التوجيه أو جدار الحماية.",
+    "mistakes": [
+     "اعتبار جدول ARP الفارغ على سويتش طبقة ثانية عطلًا.",
+     "رؤية عناوين MAC مختلفة لنفس IP (تعارض IP/انتحال ARP) وعدم التحقيق فيه.",
+     "افتراض أن إدخالات incomplete تعني أن المضيف يمكن الوصول إليه."
+    ]
+   }
+  }
+ },
+ "routing-tablosu": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show route"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip route print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Prefix / hedef ağ",
+      "d": "Yönlendirme tablosundaki hedef ağlar."
+     },
+     {
+      "p": "Next-hop",
+      "d": "Paketin iletileceği sonraki router."
+     },
+     {
+      "p": "Protokol kodu",
+      "d": "Rotanın kaynağı: connected, static, OSPF vb."
+     },
+     {
+      "p": "Metric / AD",
+      "d": "Aynı hedef için rota seçiminde kullanılan değerler."
+     }
+    ],
+    "example": "Şube ofisinden merkezdeki 172.16.0.0/16 ağına erişilemiyor. Routing tablosunda bu prefix'i arar, yoksa OSPF komşuluğuna veya statik rotaya bakarsınız.",
+    "mistakes": [
+     "Default route'un bulunmadığını fark etmeden tek tek rota aramak.",
+     "Longest-prefix-match mantığını unutup daha spesifik rotanın trafiği çektiğini atlamak.",
+     "Huawei'de 'display ip routing-table' yerine 'display ip route' yazmaya çalışmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Prefix / destination",
+      "d": "Destination networks in the routing table."
+     },
+     {
+      "p": "Next hop",
+      "d": "The next router the packet is forwarded to."
+     },
+     {
+      "p": "Protocol code",
+      "d": "Route source: connected, static, OSPF, etc."
+     },
+     {
+      "p": "Metric / AD",
+      "d": "Values used to select among routes to the same destination."
+     }
+    ],
+    "example": "A branch office cannot reach 172.16.0.0/16 at headquarters. You look for the prefix in the routing table and, if absent, check the OSPF adjacency or the static route.",
+    "mistakes": [
+     "Searching route by route without noticing that there is no default route.",
+     "Forgetting longest-prefix match and missing that a more specific route attracts the traffic.",
+     "Typing 'display ip route' instead of 'display ip routing-table' on Huawei."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "البادئة / الوجهة",
+      "d": "شبكات الوجهة الموجودة في جدول التوجيه."
+     },
+     {
+      "p": "Next hop",
+      "d": "الموجّه التالي الذي تُمرَّر إليه الحزمة."
+     },
+     {
+      "p": "رمز البروتوكول",
+      "d": "مصدر المسار: connected أو static أو OSPF وغيرها."
+     },
+     {
+      "p": "Metric / AD",
+      "d": "قيم تُستخدم لاختيار المسار عند تعدد المسارات لنفس الوجهة."
+     }
+    ],
+    "example": "لا يمكن لفرع الشركة الوصول إلى الشبكة 172.16.0.0/16 في المقر. تبحث عن هذه البادئة في جدول التوجيه، وإن غابت تفحص جوار OSPF أو المسار الثابت.",
+    "mistakes": [
+     "البحث عن المسارات واحدًا واحدًا دون ملاحظة غياب default route.",
+     "نسيان قاعدة longest-prefix-match وإغفال أن مسارًا أكثر تحديدًا يجذب الحركة.",
+     "كتابة 'display ip route' بدل 'display ip routing-table' في Huawei."
+    ]
+   }
+  }
+ },
+ "versiyon-bilgisi": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show version"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/system resource print",
+    "/system routerboard print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Yazılım sürümü",
+      "d": "Çalışan işletim sistemi/image sürümü; güvenlik açığı ve uyumluluk kontrolünde kullanılır."
+     },
+     {
+      "p": "Uptime",
+      "d": "Cihazın son reload'dan beri çalışma süresi; beklenmeyen reboot'u gösterir."
+     },
+     {
+      "p": "Model / seri no",
+      "d": "Donanım modeli ve envanter bilgisi."
+     },
+     {
+      "p": "Reload nedeni",
+      "d": "Son yeniden başlatmanın sebebi (Cisco'da çıktıda yer alır)."
+     }
+    ],
+    "example": "Envanter script'iniz 3.000 cihazda sürüm bilgisini toplar. Bir switch'te uptime'ın 2 saat çıkması gece bir reload yaşandığını gösterir.",
+    "mistakes": [
+     "Sürüm bilgisini image dosya adıyla karıştırmak.",
+     "Stack yapılarda yalnızca master üyenin bilgisine bakıp diğer üyelerin farklı sürümde olduğunu atlamak.",
+     "Uptime'ı sıfırlanmış sayacı fark etmeden güvenilir sanmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Software version",
+      "d": "Running OS/image version; used for vulnerability and compatibility checks."
+     },
+     {
+      "p": "Uptime",
+      "d": "Time since the last reload; reveals unexpected reboots."
+     },
+     {
+      "p": "Model / serial",
+      "d": "Hardware model and inventory information."
+     },
+     {
+      "p": "Reload reason",
+      "d": "Reason for the last restart (shown in Cisco output)."
+     }
+    ],
+    "example": "Your inventory script collects version data from 3,000 devices. A switch showing 2 hours of uptime indicates it reloaded overnight.",
+    "mistakes": [
+     "Confusing the software version with the image file name.",
+     "Looking only at the master in a stack and missing members on a different version.",
+     "Trusting uptime without noticing the counter was reset."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "إصدار البرنامج",
+      "d": "إصدار نظام التشغيل/الصورة العاملة، ويُستخدم لفحص الثغرات والتوافق."
+     },
+     {
+      "p": "Uptime",
+      "d": "المدة منذ آخر إعادة تشغيل، وتكشف إعادة التشغيل غير المتوقعة."
+     },
+     {
+      "p": "الطراز / الرقم التسلسلي",
+      "d": "طراز العتاد ومعلومات الجرد."
+     },
+     {
+      "p": "سبب إعادة التشغيل",
+      "d": "سبب آخر إعادة تشغيل (يظهر في مخرجات Cisco)."
+     }
+    ],
+    "example": "سكربت الجرد لديك يجمع معلومات الإصدار من 3000 جهاز. سويتش يُظهر uptime مدته ساعتان يدل على أنه أعاد التشغيل خلال الليل.",
+    "mistakes": [
+     "الخلط بين إصدار البرنامج واسم ملف الصورة.",
+     "فحص العضو الرئيسي فقط في الـ stack وإغفال أعضاء بإصدار مختلف.",
+     "الوثوق بقيمة uptime دون ملاحظة أن العداد أُعيد تصفيره."
+    ]
+   }
+  }
+ },
+ "arayuz-durumu": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Port adı",
+      "d": "Arayüzlerin kısa listesi."
+     },
+     {
+      "p": "Status / Link",
+      "d": "Fiziksel hat durumu (connected/up, notconnect/down)."
+     },
+     {
+      "p": "VLAN",
+      "d": "Cisco'da portun atanmış VLAN'ı veya trunk bilgisi."
+     },
+     {
+      "p": "Duplex / hız",
+      "d": "Negotiate edilen değerler; uyumsuzlukta hata artar."
+     }
+    ],
+    "example": "Hattaki makine koptu. Switch'te arayüz durum özetine bakarak Gi1/0/15'in notconnect olduğunu görür, kablo veya cihaz tarafını kontrol edersiniz.",
+    "mistakes": [
+     "err-disabled durumunu normal down sanmak; nedeni 'show errdisable recovery' ile bakılmalıdır.",
+     "Huawei'de PHY up, Protocol down durumunu hat sorunu sanmak.",
+     "Duplex mismatch'i (half/full) yalnızca çıktıdaki hız sütununa bakarak kaçırmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Port name",
+      "d": "Short list of interfaces."
+     },
+     {
+      "p": "Status / Link",
+      "d": "Physical link state (connected/up, notconnect/down)."
+     },
+     {
+      "p": "VLAN",
+      "d": "On Cisco, the port's assigned VLAN or trunk info."
+     },
+     {
+      "p": "Duplex / speed",
+      "d": "Negotiated values; mismatches cause growing errors."
+     }
+    ],
+    "example": "A machine on the line dropped off. In the interface status summary you see Gi1/0/15 is notconnect and check the cable or the device side.",
+    "mistakes": [
+     "Treating err-disabled as a normal down; check the cause with 'show errdisable recovery'.",
+     "Reading PHY up / Protocol down on Huawei as a cable problem.",
+     "Missing a duplex mismatch (half/full) by only looking at the speed column."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "اسم المنفذ",
+      "d": "قائمة موجزة بالواجهات."
+     },
+     {
+      "p": "Status / Link",
+      "d": "حالة الوصلة الفيزيائية (connected/up أو notconnect/down)."
+     },
+     {
+      "p": "VLAN",
+      "d": "في Cisco الـ VLAN المسندة للمنفذ أو معلومة trunk."
+     },
+     {
+      "p": "Duplex / السرعة",
+      "d": "القيم المتفاوض عليها؛ وعدم التطابق يزيد الأخطاء."
+     }
+    ],
+    "example": "انقطعت آلة على خط الإنتاج. من ملخص حالة الواجهات ترى أن Gi1/0/15 في حالة notconnect فتفحص الكابل أو الجهاز.",
+    "mistakes": [
+     "اعتبار حالة err-disabled انقطاعًا عاديًا، فيجب فحص السبب بـ 'show errdisable recovery'.",
+     "فهم PHY up وProtocol down في Huawei على أنه مشكلة كابل.",
+     "إغفال عدم تطابق duplex (half/full) بالنظر إلى عمود السرعة فقط."
+    ]
+   }
+  }
+ },
+ "vlan-olusturma": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set vlans USERS vlan-id 10",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge vlan add bridge=bridge1 vlan-ids=10 tagged=ether24"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "vlan 10",
+      "d": "VLAN ID; 1-4094 arası değer verilir."
+     },
+     {
+      "p": "name / description",
+      "d": "VLAN'a okunabilir isim verir (Huawei'de description)."
+     },
+     {
+      "p": "vlan batch (Huawei)",
+      "d": "Birden fazla VLAN'ı tek komutta oluşturur: vlan batch 10 20 30."
+     },
+     {
+      "p": "bridge vlan (MikroTik)",
+      "d": "Bridge VLAN filtering ile VLAN ID ve portların tagged/untagged üyeliğini tanımlar."
+     }
+    ],
+    "example": "Yeni üretim hattı için VLAN 10'u USERS adıyla tüm access switch'lerde oluşturursunuz; ardından portları bu VLAN'a atarsınız.",
+    "mistakes": [
+     "VLAN oluşturup trunk'ın allowed listesine eklememek, bu yüzden trafiğin uplink'ten geçmemesi.",
+     "Aynı VLAN ID'ye farklı switch'lerde farklı isim vermek.",
+     "Junos'ta commit unutmak; MikroTik'te bridge'de vlan-filtering=yes yapmamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "vlan 10",
+      "d": "The VLAN ID; a value from 1 to 4094."
+     },
+     {
+      "p": "name / description",
+      "d": "Gives the VLAN a readable name (description on Huawei)."
+     },
+     {
+      "p": "vlan batch (Huawei)",
+      "d": "Creates several VLANs in one command: vlan batch 10 20 30."
+     },
+     {
+      "p": "bridge vlan (MikroTik)",
+      "d": "Defines the VLAN ID and the tagged/untagged port membership under bridge VLAN filtering."
+     }
+    ],
+    "example": "For a new production line you create VLAN 10 named USERS on all access switches, then assign the ports to it.",
+    "mistakes": [
+     "Creating the VLAN but not adding it to the trunk allowed list, so traffic never crosses the uplink.",
+     "Using different names for the same VLAN ID on different switches.",
+     "Forgetting commit on Junos; not enabling vlan-filtering=yes on the MikroTik bridge."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "vlan 10",
+      "d": "معرّف الـ VLAN، بقيمة من 1 إلى 4094."
+     },
+     {
+      "p": "name / description",
+      "d": "يمنح الـ VLAN اسمًا مقروءًا (description في Huawei)."
+     },
+     {
+      "p": "vlan batch (Huawei)",
+      "d": "ينشئ عدة VLAN بأمر واحد: vlan batch 10 20 30."
+     },
+     {
+      "p": "bridge vlan (MikroTik)",
+      "d": "يعرّف رقم الـ VLAN وعضوية المنافذ tagged/untagged ضمن تصفية VLAN على الـ bridge."
+     }
+    ],
+    "example": "لخط إنتاج جديد تنشئ VLAN 10 باسم USERS على جميع سويتشات الوصول ثم تسند المنافذ إليها.",
+    "mistakes": [
+     "إنشاء الـ VLAN دون إضافتها إلى قائمة allowed على trunk فلا تعبر الحركة عبر uplink.",
+     "استخدام أسماء مختلفة لنفس رقم الـ VLAN على سويتشات مختلفة.",
+     "نسيان commit في Junos، وعدم تفعيل vlan-filtering=yes على bridge في MikroTik."
+    ]
+   }
+  }
+ },
+ "access-port": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set interfaces ge-0/0/1 unit 0 family ethernet-switching interface-mode access",
+    "set interfaces ge-0/0/1 unit 0 family ethernet-switching vlan members USERS",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge port add bridge=bridge1 interface=ether1 pvid=10",
+    "/interface bridge vlan add bridge=bridge1 vlan-ids=10 untagged=ether1",
+    "/interface bridge set bridge1 vlan-filtering=yes"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "switchport mode access / link-type access",
+      "d": "Portu etiketsiz tek VLAN taşıyan uç cihaz portu yapar."
+     },
+     {
+      "p": "access vlan / default vlan",
+      "d": "Portun ait olduğu VLAN'ı belirler."
+     },
+     {
+      "p": "Arayüz adı",
+      "d": "Cisco Gi1/0/1, Huawei GigabitEthernet0/0/1, AOS-CX 1/1/1 (member/slot/port)."
+     },
+     {
+      "p": "no routing (AOS-CX)",
+      "d": "AOS-CX'te portu L2 moduna alır."
+     }
+    ],
+    "example": "Üretim hattındaki PLC'yi 1. porta bağlıyorsunuz; portu access yapıp VLAN 10'a atarsınız.",
+    "mistakes": [
+     "Portu access yapıp VLAN'ı hiç oluşturmamak.",
+     "AOS-CX'te 'no routing' yazmadan vlan access vermeye çalışmak.",
+     "Eski trunk ayarlarını temizlemeden port modunu değiştirmek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "switchport mode access / link-type access",
+      "d": "Makes the port an end-device port carrying one untagged VLAN."
+     },
+     {
+      "p": "access vlan / default vlan",
+      "d": "Sets the VLAN the port belongs to."
+     },
+     {
+      "p": "Interface name",
+      "d": "Cisco Gi1/0/1, Huawei GigabitEthernet0/0/1, AOS-CX 1/1/1 (member/slot/port)."
+     },
+     {
+      "p": "no routing (AOS-CX)",
+      "d": "Puts the port in L2 mode on AOS-CX."
+     }
+    ],
+    "example": "You connect a production-line PLC to port 1; you set the port to access mode and assign it to VLAN 10.",
+    "mistakes": [
+     "Setting the port to access but never creating the VLAN.",
+     "Trying to set vlan access on AOS-CX without 'no routing'.",
+     "Changing port mode without clearing old trunk settings."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "switchport mode access / link-type access",
+      "d": "يجعل المنفذ منفذ جهاز طرفي يحمل VLAN واحدة بدون وسم."
+     },
+     {
+      "p": "access vlan / default vlan",
+      "d": "يحدد الـ VLAN التي ينتمي إليها المنفذ."
+     },
+     {
+      "p": "اسم الواجهة",
+      "d": "Cisco Gi1/0/1 وHuawei GigabitEthernet0/0/1 وAOS-CX 1/1/1 (member/slot/port)."
+     },
+     {
+      "p": "no routing (AOS-CX)",
+      "d": "ينقل المنفذ إلى وضع الطبقة الثانية في AOS-CX."
+     }
+    ],
+    "example": "توصل وحدة PLC في خط الإنتاج بالمنفذ 1؛ تضبط المنفذ على access وتسنده إلى VLAN 10.",
+    "mistakes": [
+     "ضبط المنفذ على access دون إنشاء الـ VLAN إطلاقًا.",
+     "محاولة إعطاء vlan access في AOS-CX دون 'no routing'.",
+     "تغيير وضع المنفذ دون تنظيف إعدادات trunk القديمة."
+    ]
+   }
+  }
+ },
+ "trunk-port": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set interfaces ge-0/0/48 unit 0 family ethernet-switching interface-mode trunk",
+    "set interfaces ge-0/0/48 unit 0 family ethernet-switching vlan members [ 10 20 ]",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge port add bridge=bridge1 interface=ether24",
+    "/interface bridge vlan add bridge=bridge1 vlan-ids=10,20 tagged=ether24"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "switchport mode trunk / link-type trunk",
+      "d": "Portu birden fazla VLAN'ı etiketli taşıyan uplink yapar."
+     },
+     {
+      "p": "allowed vlan / allow-pass vlan",
+      "d": "Trunk'tan geçmesine izin verilen VLAN listesi."
+     },
+     {
+      "p": "native vlan",
+      "d": "Etiketsiz trafiğin ait olduğu VLAN; iki uçta aynı olmalıdır."
+     },
+     {
+      "p": "Liste biçimi",
+      "d": "Cisco/Aruba'da virgül (10,20), Huawei'de boşluk (10 20), Junos'ta [ 10 20 ]."
+     }
+    ],
+    "example": "Access switch'in 48. portunu core'a trunk yapıp VLAN 10 ve 20'yi geçirirsiniz. Uzak uçta da aynı VLAN'lar tanımlı olmalıdır.",
+    "mistakes": [
+     "VLAN'ı allowed listesine eklememek; 'allowed vlan 30' ile listeyi ezmek (add yerine).",
+     "İki uçta native VLAN'ın farklı olması.",
+     "Huawei'de listeyi virgülle yazmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "switchport mode trunk / link-type trunk",
+      "d": "Makes the port an uplink carrying multiple tagged VLANs."
+     },
+     {
+      "p": "allowed vlan / allow-pass vlan",
+      "d": "List of VLANs permitted across the trunk."
+     },
+     {
+      "p": "native vlan",
+      "d": "VLAN of untagged traffic; must match on both ends."
+     },
+     {
+      "p": "List syntax",
+      "d": "Commas on Cisco/Aruba (10,20), spaces on Huawei (10 20), [ 10 20 ] on Junos."
+     }
+    ],
+    "example": "You make port 48 of the access switch a trunk to the core, carrying VLANs 10 and 20. The same VLANs must exist on the far end.",
+    "mistakes": [
+     "Not adding the VLAN to the allowed list; overwriting the list with 'allowed vlan 30' instead of using add.",
+     "Different native VLANs on the two ends.",
+     "Using commas for the list on Huawei."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "switchport mode trunk / link-type trunk",
+      "d": "يجعل المنفذ uplink يحمل عدة VLAN موسومة."
+     },
+     {
+      "p": "allowed vlan / allow-pass vlan",
+      "d": "قائمة الـ VLAN المسموح عبورها في الـ trunk."
+     },
+     {
+      "p": "native vlan",
+      "d": "الـ VLAN الخاصة بالحركة غير الموسومة، ويجب أن تتطابق على الطرفين."
+     },
+     {
+      "p": "صيغة القائمة",
+      "d": "فواصل في Cisco/Aruba (10,20) ومسافات في Huawei (10 20) و[ 10 20 ] في Junos."
+     }
+    ],
+    "example": "تجعل المنفذ 48 في سويتش الوصول trunk نحو النواة لتمرير VLAN 10 و20، ويجب أن تكون نفس الـ VLAN معرّفة في الطرف الآخر.",
+    "mistakes": [
+     "عدم إضافة الـ VLAN إلى القائمة المسموحة، أو استبدال القائمة بـ 'allowed vlan 30' بدل استخدام add.",
+     "اختلاف native VLAN بين الطرفين.",
+     "استخدام الفواصل في القائمة على Huawei."
+    ]
+   }
+  }
+ },
+ "dhcp-snooping": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set ethernet-switching-options secure-access-port vlan USERS examine-dhcp",
+    "set ethernet-switching-options secure-access-port interface ge-0/0/48 dhcp-trusted",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge set bridge1 dhcp-snooping=yes add-dhcp-option82=yes",
+    "/interface bridge port set [ find interface=ether24 ] trusted=yes"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Global etkinleştirme",
+      "d": "DHCP Snooping'i cihaz genelinde açar (Huawei'de önce dhcp enable)."
+     },
+     {
+      "p": "VLAN bazlı etkinleştirme",
+      "d": "İncelenecek VLAN'ları belirler."
+     },
+     {
+      "p": "Trusted port",
+      "d": "DHCP sunucusu/uplink yönündeki portlar; DHCP cevapları yalnızca buradan kabul edilir."
+     },
+     {
+      "p": "Binding tablosu",
+      "d": "Öğrenilen IP-MAC-port-VLAN eşleşmeleri."
+     }
+    ],
+    "example": "Fabrikada biri switch'e kendi router'ını takıp DHCP dağıtmaya başladı. VLAN 10'da snooping açıp yalnızca 48. portu trusted yaparak sahte DHCP cevaplarını engellersiniz.",
+    "mistakes": [
+     "Uplink portunu trusted yapmamak; meşru DHCP cevapları düşer.",
+     "Snooping'i global açıp VLAN bazlı etkinleştirmeyi unutmak.",
+     "Binding tablosunu kalıcı depolamamak; reload sonrası IPSG/DAI trafiği keser."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Global enable",
+      "d": "Turns DHCP Snooping on device-wide (Huawei needs dhcp enable first)."
+     },
+     {
+      "p": "Per-VLAN enable",
+      "d": "Selects the VLANs to inspect."
+     },
+     {
+      "p": "Trusted port",
+      "d": "Ports toward the DHCP server/uplink; DHCP replies are accepted only here."
+     },
+     {
+      "p": "Binding table",
+      "d": "Learned IP-MAC-port-VLAN bindings."
+     }
+    ],
+    "example": "Someone plugged a personal router into a factory switch and started handing out DHCP. You enable snooping on VLAN 10 and make only port 48 trusted to block rogue DHCP replies.",
+    "mistakes": [
+     "Not marking the uplink port as trusted; legitimate DHCP replies get dropped.",
+     "Enabling snooping globally but forgetting to enable it per VLAN.",
+     "Not persisting the binding table; after a reload IPSG/DAI can block traffic."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "التفعيل العام",
+      "d": "يشغّل DHCP Snooping على مستوى الجهاز (في Huawei يلزم dhcp enable أولًا)."
+     },
+     {
+      "p": "التفعيل لكل VLAN",
+      "d": "يحدد الـ VLAN التي تُفحص."
+     },
+     {
+      "p": "منفذ trusted",
+      "d": "منافذ باتجاه خادم DHCP/uplink، وتُقبل ردود DHCP منها فقط."
+     },
+     {
+      "p": "جدول binding",
+      "d": "ارتباطات IP-MAC-المنفذ-VLAN المتعلَّمة."
+     }
+    ],
+    "example": "وصل أحدهم موجّهًا شخصيًا بالسويتش في المصنع وبدأ يوزع DHCP. تفعّل snooping على VLAN 10 وتجعل المنفذ 48 فقط trusted لمنع ردود DHCP المزيفة.",
+    "mistakes": [
+     "عدم جعل منفذ uplink من نوع trusted فتُسقَط ردود DHCP المشروعة.",
+     "تفعيل snooping عامًا ونسيان تفعيله لكل VLAN.",
+     "عدم حفظ جدول binding بشكل دائم، وبعد إعادة التشغيل قد يحجب IPSG/DAI الحركة."
+    ]
+   }
+  }
+ },
+ "dhcp-snooping-binding": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show dhcp-security binding"
+   ]
+  },
+  "mikrotik": null,
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "MAC adresi",
+      "d": "Kaydı oluşturan istemcinin MAC adresi."
+     },
+     {
+      "p": "IP adresi",
+      "d": "DHCP ile verilen IP."
+     },
+     {
+      "p": "VLAN / Port",
+      "d": "İstemcinin bulunduğu VLAN ve port."
+     },
+     {
+      "p": "Lease süresi",
+      "d": "Kalan kira süresi; dolunca kayıt silinir."
+     }
+    ],
+    "example": "IPSG açılınca bir bilgisayarın ağa çıkamadığı bildirildi. Binding tablosunda bu makinenin MAC'i yoksa tablo boş olduğu için IPSG trafiği engelliyordur.",
+    "mistakes": [
+     "Statik IP'li cihazlar için ayrıca statik binding eklememek.",
+     "Switch reload sonrası tablonun boşaldığını unutmak.",
+     "Tablo boşken IPSG/DAI'yi açmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "MAC address",
+      "d": "MAC address of the client that created the entry."
+     },
+     {
+      "p": "IP address",
+      "d": "The IP leased via DHCP."
+     },
+     {
+      "p": "VLAN / Port",
+      "d": "The VLAN and port of the client."
+     },
+     {
+      "p": "Lease time",
+      "d": "Remaining lease; the entry is removed when it expires."
+     }
+    ],
+    "example": "After IPSG was enabled, a PC lost network access. If its MAC is missing from the binding table, IPSG is blocking its traffic.",
+    "mistakes": [
+     "Not adding static bindings for statically addressed devices.",
+     "Forgetting the table is empty after a switch reload.",
+     "Enabling IPSG/DAI while the table is empty."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "عنوان MAC",
+      "d": "عنوان MAC للعميل الذي أنشأ الإدخال."
+     },
+     {
+      "p": "عنوان IP",
+      "d": "عنوان IP الممنوح عبر DHCP."
+     },
+     {
+      "p": "VLAN / المنفذ",
+      "d": "الـ VLAN والمنفذ اللذان يوجد فيهما العميل."
+     },
+     {
+      "p": "مدة الإيجار",
+      "d": "المدة المتبقية للإيجار، ويُحذف الإدخال عند انتهائها."
+     }
+    ],
+    "example": "بعد تفعيل IPSG أُبلغ أن حاسوبًا فقد الاتصال بالشبكة. إذا لم يظهر MAC الخاص به في جدول binding فإن IPSG يحجب حركته.",
+    "mistakes": [
+     "عدم إضافة ارتباطات ثابتة للأجهزة ذات العناوين الثابتة.",
+     "نسيان أن الجدول يفرغ بعد إعادة تشغيل السويتش.",
+     "تفعيل IPSG/DAI والجدول فارغ."
+    ]
+   }
+  }
+ },
+ "ip-source-guard": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set ethernet-switching-options secure-access-port vlan USERS ip-source-guard",
+    "commit"
+   ]
+  },
+  "mikrotik": null,
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "ip verify source",
+      "d": "Cisco'da porttaki trafiği binding tablosuna göre filtreler."
+     },
+     {
+      "p": "user-bind (Huawei)",
+      "d": "Binding tablosundaki IP-MAC eşleşmesini zorunlu kılar."
+     },
+     {
+      "p": "Bağımlılık",
+      "d": "DHCP Snooping aktif olmalıdır."
+     },
+     {
+      "p": "Kapsam",
+      "d": "Yalnızca untrusted access portlarda uygulanır."
+     }
+    ],
+    "example": "Bir kullanıcı elle başka IP girip ağa sızmaya çalışıyor. DHCP Snooping açık portta IPSG ile kaynak IP'si binding'e uymayan paketler düşürülür.",
+    "mistakes": [
+     "DHCP Snooping açmadan IPSG'yi etkinleştirmek.",
+     "Trunk/uplink portlarda IPSG açmak.",
+     "Statik IP'li sunucular için statik binding eklememek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "ip verify source",
+      "d": "On Cisco, filters traffic on the port against the binding table."
+     },
+     {
+      "p": "user-bind (Huawei)",
+      "d": "Enforces the IP-MAC match in the binding table."
+     },
+     {
+      "p": "Dependency",
+      "d": "DHCP Snooping must be active."
+     },
+     {
+      "p": "Scope",
+      "d": "Applied only on untrusted access ports."
+     }
+    ],
+    "example": "A user manually sets another IP to sneak onto the network. With IPSG on a snooping-enabled port, packets whose source IP does not match the binding are dropped.",
+    "mistakes": [
+     "Enabling IPSG without DHCP Snooping.",
+     "Enabling IPSG on trunk/uplink ports.",
+     "Not adding static bindings for statically addressed servers."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "ip verify source",
+      "d": "في Cisco يرشّح الحركة على المنفذ وفق جدول binding."
+     },
+     {
+      "p": "user-bind (Huawei)",
+      "d": "يفرض مطابقة IP-MAC الموجودة في جدول binding."
+     },
+     {
+      "p": "الاعتمادية",
+      "d": "يجب أن يكون DHCP Snooping فعّالًا."
+     },
+     {
+      "p": "النطاق",
+      "d": "يُطبَّق على منافذ الوصول غير الموثوقة فقط."
+     }
+    ],
+    "example": "مستخدم يغيّر عنوان IP يدويًا للتسلل إلى الشبكة. مع IPSG على منفذ مفعّل عليه snooping تُسقَط الحزم التي لا يطابق عنوان مصدرها الـ binding.",
+    "mistakes": [
+     "تفعيل IPSG دون تفعيل DHCP Snooping.",
+     "تفعيل IPSG على منافذ trunk/uplink.",
+     "عدم إضافة ارتباطات ثابتة للخوادم ذات العناوين الثابتة."
+    ]
+   }
+  }
+ },
+ "dynamic-arp-inspection": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set ethernet-switching-options secure-access-port vlan USERS arp-inspection",
+    "set ethernet-switching-options secure-access-port interface ge-0/0/48 dhcp-trusted",
+    "commit"
+   ]
+  },
+  "mikrotik": null,
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "arp inspection vlan",
+      "d": "DAI'nin denetleyeceği VLAN'ları belirler."
+     },
+     {
+      "p": "trust",
+      "d": "Uplink portlarını doğrulamadan muaf tutar."
+     },
+     {
+      "p": "Binding tablosu",
+      "d": "ARP paketlerinin IP-MAC eşleşmesi buna göre doğrulanır."
+     },
+     {
+      "p": "Aruba",
+      "d": "VLAN context'inde etkinleştirilir; sürüme göre değişebilir."
+     }
+    ],
+    "example": "ARP spoofing ile gateway taklit edilmeye çalışılıyor. VLAN 10'da DAI'yi açıp 48. portu trusted bırakırsanız binding'e uymayan ARP cevapları atılır.",
+    "mistakes": [
+     "Uplink portunu trusted yapmamak.",
+     "DHCP Snooping binding'i boşken DAI açmak.",
+     "Statik IP'li cihazlar için ARP ACL tanımlamamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "arp inspection vlan",
+      "d": "Selects the VLANs DAI will inspect."
+     },
+     {
+      "p": "trust",
+      "d": "Exempts uplink ports from validation."
+     },
+     {
+      "p": "Binding table",
+      "d": "ARP packets are validated against the IP-MAC bindings."
+     },
+     {
+      "p": "Aruba",
+      "d": "Enabled in VLAN context; may vary by software version."
+     }
+    ],
+    "example": "Someone attempts to impersonate the gateway via ARP spoofing. With DAI on VLAN 10 and port 48 trusted, ARP replies that violate the binding are dropped.",
+    "mistakes": [
+     "Not marking the uplink port as trusted.",
+     "Enabling DAI while the DHCP Snooping binding table is empty.",
+     "Not defining ARP ACLs for statically addressed devices."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "arp inspection vlan",
+      "d": "يحدد الـ VLAN التي سيفحصها DAI."
+     },
+     {
+      "p": "trust",
+      "d": "يعفي منافذ uplink من التحقق."
+     },
+     {
+      "p": "جدول binding",
+      "d": "يُتحقق من مطابقة IP-MAC في حزم ARP وفقه."
+     },
+     {
+      "p": "Aruba",
+      "d": "يُفعَّل في سياق VLAN وقد يختلف بحسب إصدار البرنامج."
+     }
+    ],
+    "example": "يحاول أحدهم انتحال البوابة عبر ARP spoofing. بتفعيل DAI على VLAN 10 وترك المنفذ 48 trusted تُسقَط ردود ARP المخالفة لجدول binding.",
+    "mistakes": [
+     "عدم جعل منفذ uplink من نوع trusted.",
+     "تفعيل DAI بينما جدول DHCP Snooping binding فارغ.",
+     "عدم تعريف ARP ACL للأجهزة ذات العناوين الثابتة."
+    ]
+   }
+  }
+ },
+ "stp-modu": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set protocols rstp",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge set bridge1 protocol-mode=rstp"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "mode rapid-pvst",
+      "d": "Cisco'da VLAN başına hızlı spanning tree."
+     },
+     {
+      "p": "stp mode rstp / mstp",
+      "d": "Huawei'de RSTP veya MSTP modunu seçer."
+     },
+     {
+      "p": "rpvst (Aruba)",
+      "d": "Aruba'da Rapid PVST uyumlu modu seçer."
+     },
+     {
+      "p": "protocol-mode (MikroTik)",
+      "d": "Bridge için stp, rstp veya mstp seçilir."
+     }
+    ],
+    "example": "Eski switch'ler klasik STP çalıştırıp yakınsamayı yavaşlatıyor. Core'da RSTP/Rapid-PVST'ye geçip yakınsamayı saniyelere indirirsiniz.",
+    "mistakes": [
+     "Karışık vendor ortamında modları test etmeden değiştirmek.",
+     "Root bridge'i tanımlamamak; yanlış switch root seçilir.",
+     "Mod değişimini bakım penceresi dışında yapmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "mode rapid-pvst",
+      "d": "Per-VLAN rapid spanning tree on Cisco."
+     },
+     {
+      "p": "stp mode rstp / mstp",
+      "d": "Selects RSTP or MSTP mode on Huawei."
+     },
+     {
+      "p": "rpvst (Aruba)",
+      "d": "Selects the Rapid PVST compatible mode on Aruba."
+     },
+     {
+      "p": "protocol-mode (MikroTik)",
+      "d": "Selects stp, rstp or mstp for the bridge."
+     }
+    ],
+    "example": "Old switches run classic STP and slow down convergence. You move the core to RSTP/Rapid-PVST to bring convergence down to seconds.",
+    "mistakes": [
+     "Changing modes in a multivendor environment without testing.",
+     "Not defining the root bridge, so the wrong switch becomes root.",
+     "Changing the mode outside a maintenance window."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "mode rapid-pvst",
+      "d": "شجرة امتداد سريعة لكل VLAN في Cisco."
+     },
+     {
+      "p": "stp mode rstp / mstp",
+      "d": "يختار وضع RSTP أو MSTP في Huawei."
+     },
+     {
+      "p": "rpvst (Aruba)",
+      "d": "يختار وضعًا متوافقًا مع Rapid PVST في Aruba."
+     },
+     {
+      "p": "protocol-mode (MikroTik)",
+      "d": "يختار stp أو rstp أو mstp للـ bridge."
+     }
+    ],
+    "example": "تعمل السويتشات القديمة بـ STP التقليدي مما يبطئ التقارب. تنقل النواة إلى RSTP/Rapid-PVST لخفض زمن التقارب إلى ثوانٍ.",
+    "mistakes": [
+     "تغيير الأوضاع في بيئة متعددة الموردين دون اختبار.",
+     "عدم تحديد root bridge فيُنتخب سويتش خاطئ.",
+     "تغيير الوضع خارج نافذة الصيانة."
+    ]
+   }
+  }
+ },
+ "stp-durumu": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show spanning-tree bridge",
+    "show spanning-tree interface"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge monitor bridge1 once",
+    "/interface bridge port print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Root bridge",
+      "d": "Ağın kök switch'inin ID ve önceliği."
+     },
+     {
+      "p": "Port rolü",
+      "d": "root, designated, alternate/backup rolleri."
+     },
+     {
+      "p": "Port durumu",
+      "d": "forwarding, discarding/blocking, learning."
+     },
+     {
+      "p": "Cost / öncelik",
+      "d": "Yol seçiminde kullanılan değerler."
+     }
+    ],
+    "example": "Ağda döngü şüphesi var. Çıktıda root bridge'in core switch olmadığını ve bir access switch'in root seçildiğini görür, priority değerlerini düzeltirsiniz.",
+    "mistakes": [
+     "Root'un yanlış switch olduğunu fark etmemek.",
+     "Blocking portları arıza sanmak.",
+     "Her VLAN için ayrı ağaç olduğunu (PVST) unutmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Root bridge",
+      "d": "ID and priority of the network's root switch."
+     },
+     {
+      "p": "Port role",
+      "d": "root, designated, alternate/backup roles."
+     },
+     {
+      "p": "Port state",
+      "d": "forwarding, discarding/blocking, learning."
+     },
+     {
+      "p": "Cost / priority",
+      "d": "Values used for path selection."
+     }
+    ],
+    "example": "A loop is suspected. The output shows the root is not the core switch but an access switch, so you fix the priority values.",
+    "mistakes": [
+     "Not noticing the wrong switch is root.",
+     "Treating blocking ports as faults.",
+     "Forgetting there is a separate tree per VLAN (PVST)."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Root bridge",
+      "d": "معرّف وأولوية السويتش الجذر في الشبكة."
+     },
+     {
+      "p": "دور المنفذ",
+      "d": "أدوار root وdesignated وalternate/backup."
+     },
+     {
+      "p": "حالة المنفذ",
+      "d": "forwarding وdiscarding/blocking وlearning."
+     },
+     {
+      "p": "Cost / الأولوية",
+      "d": "قيم تُستخدم لاختيار المسار."
+     }
+    ],
+    "example": "يُشتبه بوجود حلقة. تُظهر المخرجات أن الجذر ليس سويتش النواة بل سويتش وصول، فتصحّح قيم الأولوية.",
+    "mistakes": [
+     "عدم ملاحظة أن سويتشًا خاطئًا هو الجذر.",
+     "اعتبار المنافذ المحجوبة (blocking) عطلًا.",
+     "نسيان وجود شجرة منفصلة لكل VLAN (PVST)."
+    ]
+   }
+  }
+ },
+ "lacp-port-kanali": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set chassis aggregated-devices ethernet device-count 1",
+    "set interfaces ge-0/0/47 ether-options 802.3ad ae0",
+    "set interfaces ge-0/0/48 ether-options 802.3ad ae0",
+    "set interfaces ae0 aggregated-ether-options lacp active",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bonding add name=bond1 slaves=ether47,ether48 mode=802.3ad lacp-rate=1sec transmit-hash-policy=layer-2-and-3"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "channel-group / Eth-Trunk / lag",
+      "d": "Fiziksel portları mantıksal bir kanalda birleştirir."
+     },
+     {
+      "p": "mode active",
+      "d": "LACP'yi aktif başlatır; en az bir uç active olmalıdır."
+     },
+     {
+      "p": "Üye portlar",
+      "d": "Hız, duplex ve VLAN ayarları aynı olmalıdır."
+     },
+     {
+      "p": "Hash",
+      "d": "Trafik dağıtım yöntemini belirler."
+     }
+    ],
+    "example": "Core ile access arasındaki iki 1G linki tek 2G kanalda birleştirirsiniz; iki uçta da LACP active olmalıdır.",
+    "mistakes": [
+     "Üyelerde farklı hız/VLAN ayarı bırakmak.",
+     "İki ucu da passive bırakmak.",
+     "Port-channel üzerinde trunk ayarlarını unutmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "channel-group / Eth-Trunk / lag",
+      "d": "Bundles physical ports into one logical channel."
+     },
+     {
+      "p": "mode active",
+      "d": "Initiates LACP actively; at least one side must be active."
+     },
+     {
+      "p": "Member ports",
+      "d": "Speed, duplex and VLAN settings must match."
+     },
+     {
+      "p": "Hash",
+      "d": "Determines the traffic distribution method."
+     }
+    ],
+    "example": "You bundle two 1G links between core and access into one 2G channel; LACP must be active on both ends.",
+    "mistakes": [
+     "Leaving mismatched speed/VLAN settings on members.",
+     "Leaving both ends passive.",
+     "Forgetting trunk settings on the port-channel."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "channel-group / Eth-Trunk / lag",
+      "d": "يجمع المنافذ الفيزيائية في قناة منطقية واحدة."
+     },
+     {
+      "p": "mode active",
+      "d": "يبدأ LACP بشكل فعّال، ويجب أن يكون أحد الطرفين active على الأقل."
+     },
+     {
+      "p": "المنافذ الأعضاء",
+      "d": "يجب أن تتطابق إعدادات السرعة وduplex وVLAN."
+     },
+     {
+      "p": "Hash",
+      "d": "يحدد طريقة توزيع الحركة."
+     }
+    ],
+    "example": "تجمع وصلتين 1G بين النواة وسويتش الوصول في قناة 2G واحدة، ويجب أن يكون LACP active على الطرفين.",
+    "mistakes": [
+     "ترك إعدادات سرعة/VLAN غير متطابقة على الأعضاء.",
+     "ترك الطرفين في وضع passive.",
+     "نسيان إعدادات trunk على الـ port-channel."
+    ]
+   }
+  }
+ },
+ "ntp-sunucusu": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set system ntp server 10.0.0.1",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/system ntp client set enabled=yes",
+    "/system ntp client servers add address=10.0.0.1"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "ntp server",
+      "d": "Zaman kaynağı IP adresi."
+     },
+     {
+      "p": "Zaman dilimi",
+      "d": "Ayrı yapılandırılır; NTP UTC taşır."
+     },
+     {
+      "p": "Doğrulama",
+      "d": "Çıktıdan senkronizasyon durumu kontrol edilir."
+     },
+     {
+      "p": "Erişim",
+      "d": "UDP 123 portu açık olmalıdır."
+     }
+    ],
+    "example": "Log korelasyonunda iki switch'in saatleri 3 dakika farklı. Hepsine aynı NTP sunucusunu (10.0.0.1) tanımlayarak sorunu giderirsiniz.",
+    "mistakes": [
+     "Zaman dilimini ayarlamamak.",
+     "NTP trafiğini ACL ile engellemek.",
+     "Farklı cihazlarda farklı NTP kaynakları kullanmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "ntp server",
+      "d": "IP address of the time source."
+     },
+     {
+      "p": "Time zone",
+      "d": "Configured separately; NTP carries UTC."
+     },
+     {
+      "p": "Verification",
+      "d": "Check the sync status in the output."
+     },
+     {
+      "p": "Reachability",
+      "d": "UDP port 123 must be open."
+     }
+    ],
+    "example": "In log correlation two switches differ by 3 minutes. You fix it by configuring the same NTP server (10.0.0.1) on all of them.",
+    "mistakes": [
+     "Not setting the time zone.",
+     "Blocking NTP traffic with an ACL.",
+     "Using different NTP sources on different devices."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "ntp server",
+      "d": "عنوان IP لمصدر الوقت."
+     },
+     {
+      "p": "المنطقة الزمنية",
+      "d": "تُضبط على حدة، فـ NTP ينقل UTC."
+     },
+     {
+      "p": "التحقق",
+      "d": "تُفحص حالة التزامن من المخرجات."
+     },
+     {
+      "p": "إمكانية الوصول",
+      "d": "يجب أن يكون المنفذ UDP 123 مفتوحًا."
+     }
+    ],
+    "example": "في ربط السجلات يختلف توقيت سويتشين بمقدار 3 دقائق. تحل المشكلة بتعريف نفس خادم NTP (10.0.0.1) على جميعها.",
+    "mistakes": [
+     "عدم ضبط المنطقة الزمنية.",
+     "حجب حركة NTP بواسطة ACL.",
+     "استخدام مصادر NTP مختلفة على أجهزة مختلفة."
+    ]
+   }
+  }
+ },
+ "log-goruntuleme": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show log messages"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/log print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Zaman damgası",
+      "d": "Olayın ne zaman oluştuğu."
+     },
+     {
+      "p": "Severity",
+      "d": "Olayın önem seviyesi (error, warning, info)."
+     },
+     {
+      "p": "Mesaj",
+      "d": "Olayın metni (link up/down, login vb.)."
+     },
+     {
+      "p": "Tampon",
+      "d": "Loglar RAM'de sınırlıdır; syslog sunucusuna da gönderilmelidir."
+     }
+    ],
+    "example": "Bir port sürekli flap ediyor. Log kayıtlarında ilgili portun saniyeler içinde up/down yaptığını görürsünüz.",
+    "mistakes": [
+     "NTP olmadan zaman damgalarına güvenmek.",
+     "Log tamponunun dolup eski kayıtların silindiğini unutmak.",
+     "Syslog sunucusuna göndermemek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Timestamp",
+      "d": "When the event occurred."
+     },
+     {
+      "p": "Severity",
+      "d": "Event severity (error, warning, info)."
+     },
+     {
+      "p": "Message",
+      "d": "Event text (link up/down, login, etc.)."
+     },
+     {
+      "p": "Buffer",
+      "d": "Logs in RAM are limited; also send them to a syslog server."
+     }
+    ],
+    "example": "A port keeps flapping. In the logs you see the port going up and down within seconds.",
+    "mistakes": [
+     "Trusting timestamps without NTP.",
+     "Forgetting the buffer fills and old entries are overwritten.",
+     "Not forwarding logs to a syslog server."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الطابع الزمني",
+      "d": "وقت وقوع الحدث."
+     },
+     {
+      "p": "Severity",
+      "d": "مستوى أهمية الحدث (error وwarning وinfo)."
+     },
+     {
+      "p": "الرسالة",
+      "d": "نص الحدث (link up/down وتسجيل الدخول وغيرها)."
+     },
+     {
+      "p": "الذاكرة المؤقتة",
+      "d": "السجلات في RAM محدودة، ويجب إرسالها أيضًا إلى خادم syslog."
+     }
+    ],
+    "example": "منفذ يتذبذب باستمرار. في السجلات ترى المنفذ يتحول بين up وdown خلال ثوانٍ.",
+    "mistakes": [
+     "الوثوق بالطوابع الزمنية دون NTP.",
+     "نسيان أن الذاكرة المؤقتة تمتلئ فتُستبدل الإدخالات القديمة.",
+     "عدم إرسال السجلات إلى خادم syslog."
+    ]
+   }
+  }
+ },
+ "lldp-komsulari": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show lldp neighbors"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip neighbor print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Local port",
+      "d": "Komşunun görüldüğü yerel port."
+     },
+     {
+      "p": "Neighbor / System name",
+      "d": "Komşu cihazın adı."
+     },
+     {
+      "p": "Port ID",
+      "d": "Komşudaki bağlı port."
+     },
+     {
+      "p": "Capability",
+      "d": "Cihaz tipi (bridge, router, telephone)."
+     }
+    ],
+    "example": "Patch panel'de hangi porta hangi switch bağlı bilinmiyor. LLDP komşu tablosundan Gi1/0/48'in karşı uçta core'un Te1/1/1 portuna gittiğini görürsünüz.",
+    "mistakes": [
+     "LLDP'nin iki uçta da açık olduğundan emin olmamak.",
+     "Sadece CDP açık cihazları (Cisco) görememek.",
+     "LLDP'yi güvenlik gerekçesiyle kapatıp unutmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Local port",
+      "d": "The local port where the neighbor was seen."
+     },
+     {
+      "p": "Neighbor / System name",
+      "d": "Name of the neighboring device."
+     },
+     {
+      "p": "Port ID",
+      "d": "The connected port on the neighbor."
+     },
+     {
+      "p": "Capability",
+      "d": "Device type (bridge, router, telephone)."
+     }
+    ],
+    "example": "It is unclear which switch is on which patch panel port. From the LLDP table you see Gi1/0/48 goes to Te1/1/1 on the core.",
+    "mistakes": [
+     "Not ensuring LLDP is enabled on both ends.",
+     "Missing devices that only run CDP (Cisco).",
+     "Disabling LLDP for security reasons and forgetting it."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Local port",
+      "d": "المنفذ المحلي الذي شوهد عليه الجار."
+     },
+     {
+      "p": "Neighbor / System name",
+      "d": "اسم الجهاز المجاور."
+     },
+     {
+      "p": "Port ID",
+      "d": "المنفذ المتصل لدى الجار."
+     },
+     {
+      "p": "Capability",
+      "d": "نوع الجهاز (bridge أو router أو telephone)."
+     }
+    ],
+    "example": "لا يُعرف أي سويتش متصل بأي منفذ في patch panel. من جدول LLDP ترى أن Gi1/0/48 يتجه إلى Te1/1/1 على النواة.",
+    "mistakes": [
+     "عدم التأكد من تفعيل LLDP على الطرفين.",
+     "إغفال الأجهزة التي تعمل بـ CDP فقط (Cisco).",
+     "تعطيل LLDP لأسباب أمنية ثم نسيان ذلك."
+    ]
+   }
+  }
+ },
+ "arayuz-detay": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show interfaces ge-0/0/1 extensive"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface ethernet monitor ether1 once",
+    "/interface print stats"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "CRC / input errors",
+      "d": "Fiziksel katman (kablo, SFP) sorunlarını gösterir."
+     },
+     {
+      "p": "Drops",
+      "d": "Tampon taşması veya kuyruk düşmesi."
+     },
+     {
+      "p": "Hız / duplex",
+      "d": "Negotiate edilen değerler."
+     },
+     {
+      "p": "Counters",
+      "d": "Paket ve bayt sayaçları; zaman içinde artışa bakılır."
+     }
+    ],
+    "example": "Hat üzerindeki bir makinenin bağlantısı yavaş. Arayüz detayında CRC sayacının artmaya devam ettiğini görüp kabloyu değiştirirsiniz.",
+    "mistakes": [
+     "Sayaçları temizlemeden eski hataları güncel sanmak.",
+     "Duplex mismatch'i atlamak.",
+     "Sayacın bir kez bakılarak yorumlanması; artış hızı önemlidir."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "CRC / input errors",
+      "d": "Indicate physical layer problems (cable, SFP)."
+     },
+     {
+      "p": "Drops",
+      "d": "Buffer overflow or queue drops."
+     },
+     {
+      "p": "Speed / duplex",
+      "d": "The negotiated values."
+     },
+     {
+      "p": "Counters",
+      "d": "Packet and byte counters; watch growth over time."
+     }
+    ],
+    "example": "A machine on the line has a slow link. The interface details show the CRC counter keeps rising, so you replace the cable.",
+    "mistakes": [
+     "Not clearing counters and mistaking old errors for current ones.",
+     "Missing a duplex mismatch.",
+     "Judging counters from a single look; the growth rate matters."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "CRC / input errors",
+      "d": "تدل على مشاكل الطبقة الفيزيائية (كابل أو SFP)."
+     },
+     {
+      "p": "Drops",
+      "d": "امتلاء الذاكرة المؤقتة أو إسقاط الطوابير."
+     },
+     {
+      "p": "السرعة / duplex",
+      "d": "القيم المتفاوض عليها."
+     },
+     {
+      "p": "العدّادات",
+      "d": "عدّادات الحزم والبايتات، ويُنظر إلى تزايدها مع الزمن."
+     }
+    ],
+    "example": "اتصال آلة على الخط بطيء. تُظهر تفاصيل الواجهة أن عدّاد CRC يواصل الارتفاع فتستبدل الكابل.",
+    "mistakes": [
+     "عدم تصفير العدّادات واعتبار أخطاء قديمة حالية.",
+     "إغفال عدم تطابق duplex.",
+     "الحكم على العدّادات من نظرة واحدة، فمعدل التزايد هو المهم."
+    ]
+   }
+  }
+ },
+ "arayuz-kapatma-acma": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set interfaces ge-0/0/1 disable",
+    "delete interfaces ge-0/0/1 disable",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface set ether1 disabled=yes",
+    "/interface set ether1 disabled=no"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "shutdown",
+      "d": "Arayüzü yönetimsel olarak kapatır."
+     },
+     {
+      "p": "no/undo shutdown",
+      "d": "Arayüzü yeniden açar (Huawei'de undo)."
+     },
+     {
+      "p": "Etki",
+      "d": "Bağlı cihazın bağlantısı kesilir."
+     },
+     {
+      "p": "Doğrulama",
+      "d": "Durum çıktısında administratively down görünür."
+     }
+    ],
+    "example": "Şüpheli bir cihaz switch'in 15. portuna takıldı. Portu hemen shutdown ile kapatır, inceleme sonrası no shutdown ile açarsınız.",
+    "mistakes": [
+     "Yanlış portu kapatmak, özellikle uplink'i.",
+     "Huawei'de no shutdown yazmak (undo gerekir).",
+     "Değişikliği kaydetmeyi veya Junos'ta commit'i unutmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "shutdown",
+      "d": "Administratively disables the interface."
+     },
+     {
+      "p": "no/undo shutdown",
+      "d": "Re-enables the interface (undo on Huawei)."
+     },
+     {
+      "p": "Impact",
+      "d": "The connected device loses connectivity."
+     },
+     {
+      "p": "Verification",
+      "d": "Status shows administratively down."
+     }
+    ],
+    "example": "A suspicious device was plugged into port 15. You shut the port immediately, then re-enable it after investigation.",
+    "mistakes": [
+     "Shutting the wrong port, especially an uplink.",
+     "Typing no shutdown on Huawei (undo is required).",
+     "Forgetting to save, or to commit on Junos."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "shutdown",
+      "d": "يعطّل الواجهة إداريًا."
+     },
+     {
+      "p": "no/undo shutdown",
+      "d": "يعيد تفعيل الواجهة (undo في Huawei)."
+     },
+     {
+      "p": "التأثير",
+      "d": "ينقطع اتصال الجهاز المتصل."
+     },
+     {
+      "p": "التحقق",
+      "d": "تظهر الحالة administratively down."
+     }
+    ],
+    "example": "وُصل جهاز مشبوه بالمنفذ 15. تغلق المنفذ فورًا بـ shutdown ثم تعيد فتحه بعد التحقيق.",
+    "mistakes": [
+     "إغلاق منفذ خاطئ وخصوصًا uplink.",
+     "كتابة no shutdown في Huawei بينما يلزم undo.",
+     "نسيان الحفظ أو commit في Junos."
+    ]
+   }
+  }
+ },
+ "vlan-svi": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set vlans USERS l3-interface irb.10",
+    "set interfaces irb unit 10 family inet address 10.10.10.1/24",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface vlan add name=vlan10 vlan-id=10 interface=bridge1",
+    "/ip address add address=10.10.10.1/24 interface=vlan10"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "interface vlan 10 / Vlanif10",
+      "d": "VLAN için L3 arayüz (SVI) oluşturur."
+     },
+     {
+      "p": "ip address",
+      "d": "SVI'ye gateway IP adresi atar."
+     },
+     {
+      "p": "Ön koşul",
+      "d": "VLAN tanımlı ve en az bir port up olmalıdır."
+     },
+     {
+      "p": "Maske",
+      "d": "Cisco/Huawei'de 255.255.255.0, Aruba'da /24."
+     }
+    ],
+    "example": "VLAN 10 için gateway'i core switch'te oluşturursunuz. SVI'ye 10.10.10.1/24 verirsiniz; istemciler bu adresi gateway olarak kullanır.",
+    "mistakes": [
+     "VLAN oluşturmadan SVI'yi yapmak.",
+     "Hiç port up değilken SVI'nin down kalmasına şaşırmak.",
+     "ip routing'i açmamak (Cisco L3 switch)."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "interface vlan 10 / Vlanif10",
+      "d": "Creates the L3 interface (SVI) for a VLAN."
+     },
+     {
+      "p": "ip address",
+      "d": "Assigns the gateway IP to the SVI."
+     },
+     {
+      "p": "Prerequisite",
+      "d": "The VLAN must exist and at least one port must be up."
+     },
+     {
+      "p": "Mask",
+      "d": "255.255.255.0 on Cisco/Huawei, /24 on Aruba."
+     }
+    ],
+    "example": "You create the VLAN 10 gateway on the core switch by giving the SVI 10.10.10.1/24; clients use it as their gateway.",
+    "mistakes": [
+     "Creating the SVI without creating the VLAN.",
+     "Being surprised the SVI stays down when no port is up.",
+     "Not enabling ip routing (Cisco L3 switch)."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "interface vlan 10 / Vlanif10",
+      "d": "ينشئ واجهة الطبقة الثالثة (SVI) لشبكة VLAN."
+     },
+     {
+      "p": "ip address",
+      "d": "يسند عنوان البوابة إلى الـ SVI."
+     },
+     {
+      "p": "المتطلب المسبق",
+      "d": "يجب أن تكون الـ VLAN معرّفة ومنفذ واحد على الأقل up."
+     },
+     {
+      "p": "القناع",
+      "d": "255.255.255.0 في Cisco/Huawei و/24 في Aruba."
+     }
+    ],
+    "example": "تنشئ بوابة VLAN 10 على سويتش النواة بإعطاء الـ SVI العنوان 10.10.10.1/24، ويستخدمه العملاء كبوابة.",
+    "mistakes": [
+     "إنشاء SVI دون إنشاء الـ VLAN.",
+     "الاستغراب من بقاء SVI في حالة down عند عدم وجود منفذ up.",
+     "عدم تفعيل ip routing (سويتش Cisco طبقة ثالثة)."
+    ]
+   }
+  }
+ }
+}

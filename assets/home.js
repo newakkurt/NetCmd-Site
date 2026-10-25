@@ -43,9 +43,13 @@
     { p: 'SW-CISCO#', c: 'show vlan brief' },
     { p: '<HUAWEI>', c: 'display vlan' },
     { p: 'ARUBA#', c: 'show vlan' },
+    { p: 'user@junos>', c: 'show vlans' },
+    { p: '[admin@MikroTik] >', c: '/interface bridge vlan print' },
     { p: 'SW-CISCO#', c: 'show ip ospf neighbor' },
     { p: '<HUAWEI>', c: 'display ospf peer brief' },
     { p: 'ARUBA#', c: 'show ip ospf neighbors' },
+    { p: 'user@junos>', c: 'show ospf neighbor' },
+    { p: '[admin@MikroTik] >', c: '/routing ospf neighbor print' },
     { p: 'SW-CISCO#', c: 'show port-security' },
     { p: '<HUAWEI>', c: 'display port-security interface GigabitEthernet 0/0/5' }
   ];

@@ -1,0 +1,1928 @@
+{
+ "snmpv3": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set snmp v3 usm local-engine user monitor authentication-sha authentication-password \"AuthPass123\"",
+    "set snmp v3 usm local-engine user monitor privacy-aes128 privacy-password \"PrivPass123\"",
+    "set snmp v3 vacm security-to-group security-model usm security-name monitor group NMS",
+    "set snmp v3 vacm access group NMS default-context-prefix security-model usm security-level privacy read-view ALL",
+    "set snmp view ALL oid .1 include",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/snmp set enabled=yes",
+    "/snmp community add name=monitor addresses=10.0.0.5/32 security=private authentication-protocol=SHA1 authentication-password=AuthPass123 encryption-protocol=AES encryption-password=PrivPass123 read-access=yes write-access=no"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "auth sha / priv aes",
+      "d": "Kimlik doğrulama (SHA) ve şifreleme (AES) algoritmalarını belirler; ikisi birlikte 'priv' güvenlik seviyesini oluşturur."
+     },
+     {
+      "p": "Grup / görünüm (view)",
+      "d": "Kullanıcının hangi MIB alt ağacını okuyabileceğini grup ve view üzerinden sınırlar."
+     },
+     {
+      "p": "Parolalar",
+      "d": "Auth ve priv parolaları genellikle en az 8 karakter olmalıdır; iki uçta birebir aynı girilmelidir."
+     }
+    ],
+    "example": "İzleme sunucusu (10.0.0.5) fabrikadaki switch'leri SNMPv2c ile tarıyordu ve topluluk dizesi ağda düz metin gidiyordu. 'monitor' kullanıcısını SHA+AES ile tanımlayıp NMS'te aynı parolalarla v3 profili açarsınız; bundan sonra trafik şifreli akar.",
+    "mistakes": [
+     "Auth/priv parolasını iki uçta farklı girmek; NMS 'authentication failure' veya timeout verir.",
+     "Güvenlik seviyesini (noAuth/auth/priv) NMS'te farklı seçmek.",
+     "Parolaları betik veya repo içinde düz metin saklamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "auth sha / priv aes",
+      "d": "Selects the authentication (SHA) and encryption (AES) algorithms; together they form the 'priv' security level."
+     },
+     {
+      "p": "Grup / görünüm (view)",
+      "d": "Limits which MIB subtree the user can read through the group and view."
+     },
+     {
+      "p": "Parolalar",
+      "d": "Auth and priv passwords normally need at least 8 characters and must match exactly on both ends."
+     }
+    ],
+    "example": "The monitoring server (10.0.0.5) polled the factory switches with SNMPv2c and the community string crossed the network in clear text. You define user 'monitor' with SHA+AES and create a matching v3 profile in the NMS with the same passwords; traffic is then encrypted.",
+    "mistakes": [
+     "Entering different auth/priv passwords on the two ends; the NMS reports an authentication failure or times out.",
+     "Choosing a different security level (noAuth/auth/priv) in the NMS than on the device.",
+     "Storing the passwords in plain text inside scripts or repositories."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "auth sha / priv aes",
+      "d": "يحدد خوارزميتي المصادقة (SHA) والتشفير (AES)؛ وتشكّلان معًا مستوى الأمان 'priv'."
+     },
+     {
+      "p": "Grup / görünüm (view)",
+      "d": "يقيّد شجرة MIB التي يستطيع المستخدم قراءتها عبر المجموعة والـ view."
+     },
+     {
+      "p": "Parolalar",
+      "d": "يجب أن تكون كلمتا المرور (auth وpriv) غالبًا 8 أحرف على الأقل وأن تتطابقا تمامًا على الطرفين."
+     }
+    ],
+    "example": "كان خادم المراقبة (10.0.0.5) يستعلم عن سويتشات المصنع عبر SNMPv2c وتنتقل سلسلة المجتمع كنص واضح. تعرّف المستخدم 'monitor' بـ SHA وAES وتنشئ ملف v3 مطابقًا في نظام المراقبة بنفس كلمات المرور، فتصبح الحركة مشفّرة.",
+    "mistakes": [
+     "إدخال كلمتي مرور auth وpriv مختلفتين على الطرفين، فيُظهر نظام المراقبة فشل مصادقة أو انتهاء مهلة.",
+     "اختيار مستوى أمان مختلف (noAuth/auth/priv) في نظام المراقبة عمّا هو على الجهاز.",
+     "تخزين كلمات المرور كنص واضح داخل السكربتات أو المستودعات."
+    ]
+   }
+  }
+ },
+ "snmp-community": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set snmp community Zx9kLm authorization read-only",
+    "set snmp community Zx9kLm clients 10.0.0.5/32",
+    "set snmp community Zx9kLm clients 0.0.0.0/0 restrict",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/snmp set enabled=yes",
+    "/snmp community add name=Zx9kLm addresses=10.0.0.5/32 read-access=yes write-access=no"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Topluluk adı",
+      "d": "SNMP v2c'de parola işlevi görür ve düz metin gider; 'public' gibi varsayılan adlar kullanılmamalıdır."
+     },
+     {
+      "p": "RO / read-only",
+      "d": "Yalnızca okuma yetkisi verir; izleme için yazma yetkisi gereksizdir."
+     },
+     {
+      "p": "İstemci kısıtı",
+      "d": "Topluluğa yalnızca izleme sunucusunun IP'sinden erişime izin verir."
+     }
+    ],
+    "example": "Yeni kurulan bir switch izleme sistemine eklenecek. Salt okunur topluluğu tanımlayıp yalnızca 10.0.0.5 adresinden erişime izin verirsiniz; böylece ağdaki başka bir cihaz topluluk adını tahmin etse bile cihazı sorgulayamaz.",
+    "mistakes": [
+     "'public'/'private' gibi varsayılan topluluk adlarını bırakmak.",
+     "Yazma (RW) yetkili topluluk açıp erişimi kısıtlamamak.",
+     "Huawei'de v2c sürümünü etkinleştirmeden topluluk tanımlamak; ajan v3'te kalır ve sorgular cevapsız kalır."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Topluluk adı",
+      "d": "Acts as the password in SNMP v2c and travels in clear text; default names such as 'public' must not be used."
+     },
+     {
+      "p": "RO / read-only",
+      "d": "Grants read-only access; write access is unnecessary for monitoring."
+     },
+     {
+      "p": "İstemci kısıtı",
+      "d": "Allows access to the community only from the monitoring server's IP."
+     }
+    ],
+    "example": "A newly installed switch is being added to the monitoring system. You define a read-only community and allow access only from 10.0.0.5, so even if another host guesses the community name it cannot query the device.",
+    "mistakes": [
+     "Leaving default community names such as 'public' or 'private'.",
+     "Creating a read-write (RW) community without restricting access.",
+     "Defining a community on Huawei without enabling v2c; the agent stays on v3 and queries get no answer."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Topluluk adı",
+      "d": "يعمل كلمة مرور في SNMP v2c ويُرسل كنص واضح؛ ولا ينبغي استخدام أسماء افتراضية مثل 'public'."
+     },
+     {
+      "p": "RO / read-only",
+      "d": "يمنح صلاحية القراءة فقط؛ ولا حاجة لصلاحية الكتابة في المراقبة."
+     },
+     {
+      "p": "İstemci kısıtı",
+      "d": "يسمح بالوصول إلى المجتمع من عنوان IP خادم المراقبة فقط."
+     }
+    ],
+    "example": "سيُضاف سويتش جديد إلى نظام المراقبة. تعرّف مجتمعًا للقراءة فقط وتسمح بالوصول من 10.0.0.5 وحده، فلا يستطيع جهاز آخر الاستعلام حتى لو خمّن اسم المجتمع.",
+    "mistakes": [
+     "ترك أسماء المجتمع الافتراضية مثل 'public' أو 'private'.",
+     "إنشاء مجتمع بصلاحية كتابة (RW) دون تقييد الوصول.",
+     "تعريف مجتمع على Huawei دون تفعيل الإصدار v2c، فيبقى الوكيل على v3 وتبقى الاستعلامات بلا ردّ."
+    ]
+   }
+  }
+ },
+ "snmp-trap": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set snmp trap-group NMS version v2",
+    "set snmp trap-group NMS targets 10.0.0.5",
+    "set snmp trap-group NMS categories link",
+    "set snmp trap-group NMS categories authentication",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/snmp set enabled=yes trap-community=Zx9kLm trap-target=10.0.0.5 trap-version=2 trap-interfaces=all"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef adres",
+      "d": "Trap'lerin gönderileceği izleme sunucusunun IP adresidir (10.0.0.5)."
+     },
+     {
+      "p": "Sürüm / topluluk",
+      "d": "Trap'in SNMP sürümü ve topluluk adı sunucudaki ayarla aynı olmalıdır."
+     },
+     {
+      "p": "Trap kategorileri",
+      "d": "Hangi olayların (link, kimlik doğrulama vb.) gönderileceğini belirler; hepsini açmak sunucuyu gereksiz yükler."
+     }
+    ],
+    "example": "Üretim hattındaki bir uplink koptuğunda izleme ekranı dakikalarca haber almıyordu. Trap hedefini 10.0.0.5 olarak tanımlayınca link down olayı anında düşer; sunucuda UDP 162'nin açık olduğunu da doğrularsınız.",
+    "mistakes": [
+     "Sunucudaki güvenlik duvarında UDP 162'yi açmamak.",
+     "Trap topluluk adını NMS'tekiyle farklı yazmak; mesajlar sessizce atılır.",
+     "Cisco'da 'snmp-server enable traps' vermeyip yalnızca host tanımlamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Hedef adres",
+      "d": "The IP address of the monitoring server that receives the traps (10.0.0.5)."
+     },
+     {
+      "p": "Sürüm / topluluk",
+      "d": "The trap's SNMP version and community must match the server settings."
+     },
+     {
+      "p": "Trap kategorileri",
+      "d": "Selects which events (link, authentication, etc.) are sent; enabling everything needlessly loads the server."
+     }
+    ],
+    "example": "When an uplink on the production line went down, the monitoring screen only noticed minutes later. After setting 10.0.0.5 as the trap target, the link-down event arrives instantly; you also confirm that UDP 162 is open on the server.",
+    "mistakes": [
+     "Not opening UDP 162 on the server's firewall.",
+     "Using a trap community different from the NMS one; messages are silently dropped.",
+     "On Cisco, defining only the host without 'snmp-server enable traps'."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Hedef adres",
+      "d": "عنوان IP لخادم المراقبة الذي يستقبل الـ trap (10.0.0.5)."
+     },
+     {
+      "p": "Sürüm / topluluk",
+      "d": "يجب أن يطابق إصدار SNMP واسم المجتمع للـ trap إعدادات الخادم."
+     },
+     {
+      "p": "Trap kategorileri",
+      "d": "يحدد الأحداث التي تُرسل (link وauthentication وغيرها)؛ وتفعيل الكل يثقل الخادم دون حاجة."
+     }
+    ],
+    "example": "عند انقطاع وصلة uplink في خط الإنتاج كانت شاشة المراقبة تعلم بعد دقائق. بعد تعريف 10.0.0.5 كهدف للـ trap يصل حدث link down فورًا، مع التأكد من فتح UDP 162 على الخادم.",
+    "mistakes": [
+     "عدم فتح UDP 162 في جدار حماية الخادم.",
+     "كتابة اسم مجتمع trap مختلف عن المضبوط في نظام المراقبة، فتُهمل الرسائل بصمت.",
+     "في Cisco تعريف المضيف فقط دون الأمر 'snmp-server enable traps'."
+    ]
+   }
+  }
+ },
+ "vty-erisim-kisitlama": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set firewall filter PROTECT-RE term MGMT from source-address 10.99.0.0/24",
+    "set firewall filter PROTECT-RE term MGMT from protocol tcp",
+    "set firewall filter PROTECT-RE term MGMT from destination-port ssh",
+    "set firewall filter PROTECT-RE term MGMT then accept",
+    "set firewall filter PROTECT-RE term SSH-DENY from protocol tcp",
+    "set firewall filter PROTECT-RE term SSH-DENY from destination-port ssh",
+    "set firewall filter PROTECT-RE term SSH-DENY then discard",
+    "set firewall filter PROTECT-RE term OTHER then accept",
+    "set interfaces lo0 unit 0 family inet filter input PROTECT-RE",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip service set ssh address=10.99.0.0/24",
+    "/ip service set winbox address=10.99.0.0/24",
+    "/ip service set telnet disabled=yes"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "ACL / filtre",
+      "d": "Yönetim ağından (10.99.0.0/24) gelen bağlantıları kabul eden kuralı tanımlar."
+     },
+     {
+      "p": "Uygulama noktası",
+      "d": "Cisco/Huawei'de VTY hattına, Junos'ta lo0 arayüzüne, MikroTik'te servis adres kısıtına bağlanır."
+     },
+     {
+      "p": "Yön (in)",
+      "d": "Yalnızca cihaza gelen yönetim trafiği süzülür."
+     }
+    ],
+    "example": "Core switch'e SSH ile yalnızca 10.99.0.0/24 yönetim ağından girilmesini istiyorsunuz. ACL'yi VTY hattına bağlarsınız; kural yanlışsa kendi erişiminiz de kesileceği için önce konsol veya ikinci oturum hazır tutulur.",
+    "mistakes": [
+     "ACL'yi uygulamadan önce kendi IP'sini izin listesine eklememek.",
+     "Cisco'da 'transport input ssh' olmadan Telnet'i açık bırakmak.",
+     "Huawei'de ACL'yi 'user-interface vty' aralığının tamamına uygulamamak.",
+     "Junos'ta lo0 filtresinin sonuna kabul kuralı koymayıp OSPF/BGP gibi protokol trafiğini düşürmek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "ACL / filtre",
+      "d": "Defines the rule that accepts connections from the management network (10.99.0.0/24)."
+     },
+     {
+      "p": "Uygulama noktası",
+      "d": "Bound to the VTY lines on Cisco/Huawei, to lo0 on Junos and to the service address restriction on MikroTik."
+     },
+     {
+      "p": "Yön (in)",
+      "d": "Only management traffic arriving at the device is filtered."
+     }
+    ],
+    "example": "You want SSH to the core switch allowed only from the 10.99.0.0/24 management network. You bind the ACL to the VTY lines; since a wrong rule can cut your own access, keep a console or second session ready first.",
+    "mistakes": [
+     "Not adding your own IP to the permit list before applying the ACL.",
+     "Leaving Telnet open on Cisco by omitting 'transport input ssh'.",
+     "On Huawei, not applying the ACL to the whole 'user-interface vty' range.",
+     "On Junos, omitting a final accept term in the lo0 filter and dropping protocol traffic such as OSPF/BGP."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "ACL / filtre",
+      "d": "يعرّف القاعدة التي تقبل الاتصالات القادمة من شبكة الإدارة (10.99.0.0/24)."
+     },
+     {
+      "p": "Uygulama noktası",
+      "d": "يُربط بخطوط VTY في Cisco وHuawei، وبواجهة lo0 في Junos، وبقيد عنوان الخدمة في MikroTik."
+     },
+     {
+      "p": "Yön (in)",
+      "d": "تُصفّى حركة الإدارة الواردة إلى الجهاز فقط."
+     }
+    ],
+    "example": "تريد السماح بـ SSH إلى سويتش النواة من شبكة الإدارة 10.99.0.0/24 فقط. تربط الـ ACL بخطوط VTY، ولأن خطأ القاعدة قد يقطع وصولك أنت أيضًا تُبقي منفذ الكونسول أو جلسة ثانية جاهزة.",
+    "mistakes": [
+     "عدم إضافة عنوان IP الخاص بك إلى قائمة السماح قبل تطبيق الـ ACL.",
+     "ترك Telnet مفتوحًا في Cisco بإغفال 'transport input ssh'.",
+     "في Huawei عدم تطبيق الـ ACL على كامل نطاق 'user-interface vty'.",
+     "في Junos عدم وضع قاعدة قبول أخيرة في فلتر lo0 فتُسقط حركة البروتوكولات مثل OSPF وBGP."
+    ]
+   }
+  }
+ },
+ "radius-sunucu": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set access radius-server 10.0.0.20 port 1812",
+    "set access radius-server 10.0.0.20 accounting-port 1813",
+    "set access radius-server 10.0.0.20 secret \"Sh4redKey\"",
+    "set access profile NAC authentication-order radius",
+    "set access profile NAC radius authentication-server 10.0.0.20",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/radius add address=10.0.0.20 secret=Sh4redKey service=login authentication-port=1812 accounting-port=1813",
+    "/user aaa set use-radius=yes"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Sunucu IP",
+      "d": "RADIUS/NAC sunucusunun adresi (10.0.0.20)."
+     },
+     {
+      "p": "Paylaşılan anahtar",
+      "d": "Cihaz ve sunucuda birebir aynı olmalıdır; farklıysa istekler sessizce reddedilir."
+     },
+     {
+      "p": "auth-port / acct-port",
+      "d": "Kimlik doğrulama için UDP 1812, accounting için UDP 1813 kullanılır."
+     }
+    ],
+    "example": "FortiNAC ile 802.1X devreye alınacak. İlk adım olarak switch'e RADIUS sunucusunu (10.0.0.20) ve anahtarı tanımlarsınız; sunucu tarafında switch IP'si NAS/istemci olarak eklenmezse istekler cevapsız kalır.",
+    "mistakes": [
+     "Sunucuda switch'i NAS/istemci olarak eklememek.",
+     "Paylaşılan anahtarda boşluk veya yanlış karakter bırakmak.",
+     "Cisco'da 'aaa new-model' vermeden RADIUS kullanmayı beklemek.",
+     "Güvenlik duvarında UDP 1812/1813'ü açmamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Sunucu IP",
+      "d": "Address of the RADIUS/NAC server (10.0.0.20)."
+     },
+     {
+      "p": "Paylaşılan anahtar",
+      "d": "Must be identical on the device and the server; otherwise requests are silently rejected."
+     },
+     {
+      "p": "auth-port / acct-port",
+      "d": "UDP 1812 is used for authentication and UDP 1813 for accounting."
+     }
+    ],
+    "example": "802.1X is being rolled out with FortiNAC. As the first step you define the RADIUS server (10.0.0.20) and key on the switch; if the switch IP is not added as a NAS/client on the server, requests go unanswered.",
+    "mistakes": [
+     "Not adding the switch as a NAS/client on the server.",
+     "Leaving a stray space or wrong character in the shared key.",
+     "Expecting RADIUS to work on Cisco without 'aaa new-model'.",
+     "Not opening UDP 1812/1813 on the firewall."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Sunucu IP",
+      "d": "عنوان خادم RADIUS/NAC (10.0.0.20)."
+     },
+     {
+      "p": "Paylaşılan anahtar",
+      "d": "يجب أن يتطابق تمامًا على الجهاز والخادم، وإلا تُرفض الطلبات بصمت."
+     },
+     {
+      "p": "auth-port / acct-port",
+      "d": "يُستخدم UDP 1812 للمصادقة وUDP 1813 للمحاسبة."
+     }
+    ],
+    "example": "يجري تفعيل 802.1X مع FortiNAC. كخطوة أولى تعرّف خادم RADIUS (10.0.0.20) والمفتاح على السويتش؛ وإذا لم يُضف عنوان السويتش كـ NAS/عميل على الخادم تبقى الطلبات دون ردّ.",
+    "mistakes": [
+     "عدم إضافة السويتش كـ NAS/عميل على الخادم.",
+     "ترك مسافة أو حرف خاطئ في المفتاح المشترك.",
+     "توقع عمل RADIUS في Cisco دون الأمر 'aaa new-model'.",
+     "عدم فتح UDP 1812/1813 في جدار الحماية."
+    ]
+   }
+  }
+ },
+ "protokol-routing": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show route protocol ospf"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip route print where ospf"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "protocol ospf",
+      "d": "Route tablosunu yalnızca OSPF'ten öğrenilen girdilerle sınırlar; bgp, static, connected gibi değerler de verilebilir."
+     }
+    ],
+    "example": "Bir ağa erişilemiyor ve hangi protokolün bu route'u getirdiğinden emin değilsiniz. Route'ları OSPF'e göre filtrelediğinizde beklenen 10.20.0.0/24 girişi yoksa komşuluk veya ilan sorununa, varsa metrik/yol sorununa bakarsınız.",
+    "mistakes": [
+     "Çıktıda route görünmeyince OSPF'in kapalı olduğunu düşünmek; komşuluk veya network ifadesi eksik olabilir.",
+     "Huawei'de 'display ip routing-table' çıktısını protokol filtresi vermeden okuyup kalabalıkta route'u kaçırmak.",
+     "Farklı VRF'teki route'ları varsayılan tabloda aramak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "protocol ospf",
+      "d": "Limits the routing table to entries learned via OSPF; other values such as bgp, static or connected can also be used."
+     }
+    ],
+    "example": "A network is unreachable and you are unsure which protocol supplies the route. Filtering routes by OSPF, a missing 10.20.0.0/24 entry points to a neighbor or advertisement problem, while a present one points to a metric or path problem.",
+    "mistakes": [
+     "Assuming OSPF is down when no route appears; the neighbor or network statement may be missing.",
+     "Reading the full 'display ip routing-table' output on Huawei without a protocol filter and missing the route in the noise.",
+     "Searching for routes of another VRF in the default table."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "protocol ospf",
+      "d": "يحصر جدول التوجيه في المسارات المتعلَّمة عبر OSPF؛ ويمكن استخدام قيم أخرى مثل bgp وstatic وconnected."
+     }
+    ],
+    "example": "شبكة غير قابلة للوصول ولا تعرف أي بروتوكول يوفّر المسار. عند التصفية حسب OSPF، غياب المدخل 10.20.0.0/24 يشير إلى مشكلة جوار أو إعلان، ووجوده يشير إلى مشكلة مقياس أو مسار.",
+    "mistakes": [
+     "افتراض أن OSPF متوقف عند عدم ظهور المسار، بينما قد يكون الجوار أو أمر network ناقصًا.",
+     "قراءة مخرجات 'display ip routing-table' كاملة في Huawei دون مرشّح بروتوكول فيضيع المسار وسط الزحام.",
+     "البحث عن مسارات VRF آخر في الجدول الافتراضي."
+    ]
+   }
+  }
+ },
+ "varsayilan-gateway-l2": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set routing-options static route 0.0.0.0/0 next-hop 10.99.0.1",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip route add dst-address=0.0.0.0/0 gateway=10.99.0.1"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Gateway IP",
+      "d": "Yönetim ağındaki router veya L3 switch arayüzünün adresi (10.99.0.1); switch'in yönetim IP'siyle aynı subnette olmalıdır."
+     }
+    ],
+    "example": "Access switch'in yönetim IP'si 10.99.0.50, ancak başka bir subnet'teki laptop'tan SSH açılamıyor. Varsayılan gateway olarak 10.99.0.1 tanımlanınca dönüş trafiği doğru yöne gider ve oturum kurulur.",
+    "mistakes": [
+     "L3 (routing açık) Cisco cihazda 'ip default-gateway' kullanmak; çalışmaz, 'ip route' gerekir.",
+     "Gateway'i yönetim VLAN'ıyla farklı subnet'te seçmek.",
+     "Yönetim VLAN arayüzü 'no shutdown' değilken gateway'e ulaşmayı beklemek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Gateway IP",
+      "d": "The address of the router or L3 switch interface on the management network (10.99.0.1); it must be in the same subnet as the switch management IP."
+     }
+    ],
+    "example": "An access switch has management IP 10.99.0.50, but SSH from a laptop in another subnet fails. Once 10.99.0.1 is set as the default gateway, return traffic takes the right path and the session is established.",
+    "mistakes": [
+     "Using 'ip default-gateway' on a Cisco device with routing enabled; it does not work, 'ip route' is required.",
+     "Choosing a gateway in a different subnet than the management VLAN.",
+     "Expecting to reach the gateway while the management VLAN interface is shut down."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Gateway IP",
+      "d": "عنوان واجهة الراوتر أو سويتش L3 في شبكة الإدارة (10.99.0.1)؛ ويجب أن يكون في نفس شبكة IP الإدارة للسويتش."
+     }
+    ],
+    "example": "عنوان إدارة سويتش الوصول 10.99.0.50 لكن SSH من حاسوب في شبكة أخرى لا يعمل. بعد ضبط 10.99.0.1 كبوابة افتراضية تعود الحركة في المسار الصحيح وتنجح الجلسة.",
+    "mistakes": [
+     "استخدام 'ip default-gateway' في جهاز Cisco يعمل بالتوجيه، وهو لا يعمل ويلزم 'ip route'.",
+     "اختيار بوابة في شبكة مختلفة عن VLAN الإدارة.",
+     "توقع الوصول إلى البوابة بينما واجهة VLAN الإدارة مغلقة."
+    ]
+   }
+  }
+ },
+ "vrf-olusturma": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set routing-instances MGMT instance-type virtual-router",
+    "set routing-instances MGMT interface irb.99",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip vrf add name=MGMT interfaces=vlan99"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "VRF adı",
+      "d": "Ayrı bir route tablosu oluşturur (MGMT); adlar iki uçta eşleşmek zorunda değildir ama tutarlı olmalıdır."
+     },
+     {
+      "p": "Arayüz bağlama",
+      "d": "VLAN 99 arayüzünü VRF'e taşır; mevcut IP adresi silinebilir ve yeniden verilmelidir."
+     },
+     {
+      "p": "Route Distinguisher",
+      "d": "Huawei'de zorunludur (100:1); VRF'ler arası ayrımı sağlar."
+     }
+    ],
+    "example": "Yönetim trafiğini üretim verisinden ayırmak için VLAN 99'u MGMT VRF'ine alıyorsunuz. Arayüzü VRF'e bağladıktan sonra IP adresi silindiği için yeniden vermeyi unutursanız switch'e uzaktan erişim kopar.",
+    "mistakes": [
+     "Arayüzü VRF'e bağladıktan sonra IP adresini yeniden vermemek.",
+     "VRF içindeki ping/trace'i VRF adı belirtmeden yapmak (ör. 'ping vrf MGMT ...').",
+     "Varsayılan route'u VRF içinde tanımlamayı unutmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "VRF adı",
+      "d": "Creates a separate routing table (MGMT); names need not match between devices but should be consistent."
+     },
+     {
+      "p": "Arayüz bağlama",
+      "d": "Moves the VLAN 99 interface into the VRF; the existing IP address may be removed and must be reapplied."
+     },
+     {
+      "p": "Route Distinguisher",
+      "d": "Mandatory on Huawei (100:1); distinguishes routes between VRFs."
+     }
+    ],
+    "example": "To separate management traffic from production data you move VLAN 99 into the MGMT VRF. Binding the interface to the VRF removes its IP address, so forgetting to reapply it drops remote access to the switch.",
+    "mistakes": [
+     "Not reapplying the IP address after binding the interface to the VRF.",
+     "Running ping/traceroute without specifying the VRF (e.g. 'ping vrf MGMT ...').",
+     "Forgetting to define the default route inside the VRF."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "VRF adı",
+      "d": "ينشئ جدول توجيه منفصلًا (MGMT)؛ ولا يشترط تطابق الأسماء بين الأجهزة لكن يُفضّل الاتساق."
+     },
+     {
+      "p": "Arayüz bağlama",
+      "d": "ينقل واجهة VLAN 99 إلى الـ VRF؛ وقد يُحذف عنوان IP الحالي ويجب إعادة إدخاله."
+     },
+     {
+      "p": "Route Distinguisher",
+      "d": "إلزامي في Huawei (100:1)؛ ويميّز المسارات بين الـ VRF."
+     }
+    ],
+    "example": "لفصل حركة الإدارة عن بيانات الإنتاج تنقل VLAN 99 إلى VRF باسم MGMT. ربط الواجهة بالـ VRF يحذف عنوان IP، وإذا نسيت إعادته ينقطع الوصول البعيد إلى السويتش.",
+    "mistakes": [
+     "عدم إعادة إدخال عنوان IP بعد ربط الواجهة بالـ VRF.",
+     "تنفيذ ping أو trace دون تحديد الـ VRF (مثل 'ping vrf MGMT ...').",
+     "نسيان تعريف المسار الافتراضي داخل الـ VRF."
+    ]
+   }
+  }
+ },
+ "routed-port": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set interfaces ge-0/0/10 unit 0 family inet address 10.255.0.1/30",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip address add address=10.255.0.1/30 interface=ether10"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Switchport kapatma",
+      "d": "Cisco'da 'no switchport', Huawei'de 'undo portswitch' ile port L3 moda alınır; Aruba CX'te 'routing' kullanılır."
+     },
+     {
+      "p": "IP / maske",
+      "d": "Noktadan noktaya bağlantılar için genelde /30 kullanılır (10.255.0.1/30)."
+     }
+    ],
+    "example": "Core ile dağıtım switch'i arasında VLAN taşımayan, doğrudan IP'li bir uplink kuruyorsunuz. Portu routed yapıp 10.255.0.1/30 verirsiniz; karşı uca .2 verilince OSPF komşuluğu bu bağlantı üzerinden kurulabilir.",
+    "mistakes": [
+     "Önce IP verip sonra 'no switchport' yapmak; bazı platformlarda IP silinir.",
+     "İki uçta farklı subnet kullanmak.",
+     "L3 portun routing özelliği olmayan (yalnızca L2) lisans veya modelde denenmesi."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Switchport kapatma",
+      "d": "'no switchport' on Cisco, 'undo portswitch' on Huawei and 'routing' on Aruba CX move the port to L3 mode."
+     },
+     {
+      "p": "IP / maske",
+      "d": "A /30 is typically used for point-to-point links (10.255.0.1/30)."
+     }
+    ],
+    "example": "You are building an uplink between the core and a distribution switch that carries no VLANs and uses direct IPs. You make the port routed and assign 10.255.0.1/30; with .2 on the far end an OSPF adjacency can form over the link.",
+    "mistakes": [
+     "Setting the IP first and then 'no switchport'; on some platforms the IP is lost.",
+     "Using different subnets on the two ends.",
+     "Trying a routed port on a model or license that only supports L2."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Switchport kapatma",
+      "d": "يُحوَّل المنفذ إلى وضع L3 بالأمر 'no switchport' في Cisco و'undo portswitch' في Huawei و'routing' في Aruba CX."
+     },
+     {
+      "p": "IP / maske",
+      "d": "يُستخدم عادةً /30 للوصلات من نقطة إلى نقطة (10.255.0.1/30)."
+     }
+    ],
+    "example": "تبني وصلة uplink بين النواة وسويتش التوزيع دون VLAN وبعناوين IP مباشرة. تجعل المنفذ routed وتعطيه 10.255.0.1/30؛ وبإعطاء الطرف الآخر .2 يمكن إقامة جوار OSPF عبر الوصلة.",
+    "mistakes": [
+     "إدخال IP أولًا ثم 'no switchport'، ففي بعض المنصات يُحذف العنوان.",
+     "استخدام شبكتين فرعيتين مختلفتين على الطرفين.",
+     "تجربة منفذ routed على طراز أو ترخيص يدعم L2 فقط."
+    ]
+   }
+  }
+ },
+ "dhcp-relay": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set forwarding-options dhcp-relay server-group DHCP 10.0.0.5",
+    "set forwarding-options dhcp-relay group USERS active-server-group DHCP",
+    "set forwarding-options dhcp-relay group USERS interface irb.20",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip dhcp-relay add name=relay20 interface=vlan20 dhcp-server=10.0.0.5 local-address=10.20.0.1 disabled=no"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Sunucu adresi",
+      "d": "İstemcilerin DHCP isteklerinin yönlendirileceği sunucu (10.0.0.5)."
+     },
+     {
+      "p": "İstemci VLAN arayüzü",
+      "d": "Relay, istemcilerin bulunduğu VLAN 20 arayüzünde tanımlanır; sunucu tarafında bu subnet için scope olmalıdır."
+     },
+     {
+      "p": "local-address",
+      "d": "MikroTik'te relay'in sunucuya kaynak olarak kullandığı adrestir; sunucudaki giaddr ile eşleşir."
+     }
+    ],
+    "example": "VLAN 20'deki bilgisayarlar IP alamıyor; DHCP sunucusu 10.0.0.5 başka bir ağda. VLAN 20 arayüzüne relay tanımlarsınız, sunucuda 10.20.0.0/24 scope'unun bulunduğunu ve sunucunun relay adresine geri dönüş route'u olduğunu doğrularsınız.",
+    "mistakes": [
+     "DHCP sunucusunda ilgili subnet için scope tanımlamamak.",
+     "Huawei'de 'dhcp enable' komutunu atlamak.",
+     "Relay'i sunucu tarafındaki VLAN arayüzüne tanımlamak; istemci VLAN'ına yapılmalıdır.",
+     "Sunucudan relay adresine dönüş route'unun olmaması."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Sunucu adresi",
+      "d": "The server to which client DHCP requests are forwarded (10.0.0.5)."
+     },
+     {
+      "p": "İstemci VLAN arayüzü",
+      "d": "The relay is configured on the client VLAN 20 interface; the server needs a scope for that subnet."
+     },
+     {
+      "p": "local-address",
+      "d": "On MikroTik, the source address used toward the server; it matches the giaddr on the server."
+     }
+    ],
+    "example": "PCs in VLAN 20 cannot get an IP; the DHCP server 10.0.0.5 is on another network. You configure a relay on the VLAN 20 interface and verify that the server has a 10.20.0.0/24 scope and a return route to the relay address.",
+    "mistakes": [
+     "Not defining a scope for the subnet on the DHCP server.",
+     "Skipping 'dhcp enable' on Huawei.",
+     "Configuring the relay on the server-side interface instead of the client VLAN.",
+     "Missing a return route from the server to the relay address."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Sunucu adresi",
+      "d": "الخادم الذي تُوجَّه إليه طلبات DHCP للعملاء (10.0.0.5)."
+     },
+     {
+      "p": "İstemci VLAN arayüzü",
+      "d": "يُضبط الـ relay على واجهة VLAN 20 الخاصة بالعملاء، ويجب أن يحتوي الخادم على scope لتلك الشبكة."
+     },
+     {
+      "p": "local-address",
+      "d": "في MikroTik هو العنوان المستخدم كمصدر نحو الخادم، ويقابل giaddr على الخادم."
+     }
+    ],
+    "example": "أجهزة VLAN 20 لا تحصل على عنوان IP لأن خادم DHCP (10.0.0.5) في شبكة أخرى. تضبط relay على واجهة VLAN 20 وتتأكد من وجود scope للشبكة 10.20.0.0/24 على الخادم ومن وجود مسار عودة إلى عنوان الـ relay.",
+    "mistakes": [
+     "عدم تعريف scope للشبكة الفرعية على خادم DHCP.",
+     "تخطي الأمر 'dhcp enable' في Huawei.",
+     "ضبط الـ relay على واجهة جهة الخادم بدل VLAN العملاء.",
+     "عدم وجود مسار عودة من الخادم إلى عنوان الـ relay."
+    ]
+   }
+  }
+ },
+ "prefix-list": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set policy-options policy-statement LAN-FILTER term 1 from route-filter 10.10.0.0/16 upto /24",
+    "set policy-options policy-statement LAN-FILTER term 1 then accept",
+    "set policy-options policy-statement LAN-FILTER then reject",
+    "commit"
+   ]
+  },
+  "mikrotik": null,
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "seq / index",
+      "d": "Kural sırasını belirler; ileride araya kural eklemek için 10'ar atlayın."
+     },
+     {
+      "p": "le / ge",
+      "d": "Prefix uzunluğu aralığını verir; 10.10.0.0/16 le 24, /16 ile /24 arasındaki tüm prefix'leri eşler."
+     },
+     {
+      "p": "Junos karşılığı",
+      "d": "Junos'ta le/ge yerine policy-statement içinde route-filter 'upto' kullanılır."
+     }
+    ],
+    "example": "BGP veya OSPF'ten yalnızca 10.10.0.0/16 içindeki /16-/24 aralığındaki route'ları kabul etmek istiyorsunuz. Prefix-list'i route-map'e bağlarsınız; /32 host route'ları ve dış ağlar filtrelenir.",
+    "mistakes": [
+     "Prefix-list'i tanımlayıp route-map veya komşuya bağlamamak; tek başına etkisizdir.",
+     "Sonda örtülü deny olduğunu unutup gerekli prefix'leri engellemek.",
+     "Huawei'de komutu 'ip prefix-list' sanıp yazmak; doğrusu 'ip ip-prefix'."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "seq / index",
+      "d": "Sets rule order; step by 10 so you can insert rules later."
+     },
+     {
+      "p": "le / ge",
+      "d": "Specifies the prefix-length range; 10.10.0.0/16 le 24 matches all prefixes from /16 to /24."
+     },
+     {
+      "p": "Junos karşılığı",
+      "d": "On Junos a route-filter with 'upto' inside a policy-statement replaces le/ge."
+     }
+    ],
+    "example": "You want to accept only routes between /16 and /24 inside 10.10.0.0/16 from BGP or OSPF. You attach the prefix list to a route-map, which filters out /32 host routes and outside networks.",
+    "mistakes": [
+     "Defining the prefix list but not attaching it to a route-map or neighbor; on its own it has no effect.",
+     "Forgetting the implicit deny at the end and blocking needed prefixes.",
+     "On Huawei, typing 'ip prefix-list'; the correct command is 'ip ip-prefix'."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "seq / index",
+      "d": "يحدد ترتيب القاعدة؛ ويُفضّل القفز بمقدار 10 لإمكان إدراج قواعد لاحقًا."
+     },
+     {
+      "p": "le / ge",
+      "d": "يحدد نطاق طول البادئة؛ والصيغة 10.10.0.0/16 le 24 تطابق كل البادئات من /16 إلى /24."
+     },
+     {
+      "p": "Junos karşılığı",
+      "d": "في Junos يُستخدم route-filter مع 'upto' داخل policy-statement بدل le/ge."
+     }
+    ],
+    "example": "تريد قبول المسارات بين /16 و/24 داخل 10.10.0.0/16 فقط من BGP أو OSPF. تربط prefix-list بـ route-map فتُصفّى مسارات المضيف /32 والشبكات الخارجية.",
+    "mistakes": [
+     "تعريف prefix-list دون ربطها بـ route-map أو جار، فلا يكون لها أي تأثير بمفردها.",
+     "نسيان الرفض الضمني في النهاية فتُحجب بادئات مطلوبة.",
+     "كتابة 'ip prefix-list' في Huawei بينما الصحيح 'ip ip-prefix'."
+    ]
+   }
+  }
+ },
+ "route-sorgu": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show route 10.20.0.5",
+    "show route forwarding-table destination 10.20.0.5"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip route print where 10.20.0.5 in dst-address"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef IP",
+      "d": "Longest-match kuralına göre seçilen route, next-hop ve çıkış arayüzü gösterilir (10.20.0.5)."
+     }
+    ],
+    "example": "10.20.0.5 sunucusuna ulaşılamıyor. Route sorgusunda trafik varsayılan route'a gidiyorsa 10.20.0.0/24 öğrenilmemiştir; beklenmeyen bir next-hop görünüyorsa asimetrik veya yanlış yönlendirme vardır.",
+    "mistakes": [
+     "Tüm tabloya bakıp en uzun prefix eşleşmesini gözden kaçırmak.",
+     "VRF içindeki hedefi varsayılan tabloda sorgulamak.",
+     "Yalnızca ileri yönü kontrol edip dönüş route'unu atlamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Hedef IP",
+      "d": "Shows the route selected by longest-prefix match, its next hop and egress interface (10.20.0.5)."
+     }
+    ],
+    "example": "Server 10.20.0.5 is unreachable. If the route lookup shows traffic going to the default route, 10.20.0.0/24 was not learned; an unexpected next hop indicates wrong or asymmetric routing.",
+    "mistakes": [
+     "Scanning the whole table and missing the longest-prefix match.",
+     "Querying a VRF destination in the default table.",
+     "Checking only the forward direction and skipping the return route."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Hedef IP",
+      "d": "يعرض المسار المختار وفق أطول بادئة مطابقة والقفزة التالية وواجهة الخروج (10.20.0.5)."
+     }
+    ],
+    "example": "يتعذر الوصول إلى الخادم 10.20.0.5. إذا أظهر الاستعلام أن الحركة تذهب إلى المسار الافتراضي فلم تُتعلَّم الشبكة 10.20.0.0/24، وظهور قفزة تالية غير متوقعة يدل على توجيه خاطئ أو غير متماثل.",
+    "mistakes": [
+     "تصفح الجدول كاملًا وإغفال أطول بادئة مطابقة.",
+     "الاستعلام عن وجهة داخل VRF في الجدول الافتراضي.",
+     "فحص الاتجاه الأمامي فقط وتجاهل مسار العودة."
+    ]
+   }
+  }
+ },
+ "ospf-temel": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set routing-options router-id 1.1.1.1",
+    "set protocols ospf area 0.0.0.0 interface irb.10",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/routing ospf instance add name=ospf1 version=2 router-id=1.1.1.1",
+    "/routing ospf area add name=backbone area-id=0.0.0.0 instance=ospf1",
+    "/routing ospf interface-template add area=backbone networks=10.0.0.0/24"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "router-id",
+      "d": "OSPF'in kimliğidir (1.1.1.1); elle verilmezse en yüksek loopback/arayüz IP'sinden seçilir ve değişebilir."
+     },
+     {
+      "p": "area 0",
+      "d": "Backbone alanıdır; tüm diğer alanlar buna bağlanmalıdır."
+     },
+     {
+      "p": "Ağ / arayüz",
+      "d": "Hangi arayüzlerde OSPF'in çalışacağını belirler; Cisco/Huawei wildcard maske, Aruba CX ve Junos arayüz bazlıdır."
+     }
+    ],
+    "example": "İki core switch arasında OSPF kurulacak. Router-id'leri 1.1.1.1 ve 1.1.1.2 olarak elle verir, aradaki 10.0.0.0/24 ağını area 0'a alırsınız; 'show ip ospf neighbor' ile komşunun FULL olduğunu doğrularsınız.",
+    "mistakes": [
+     "Router-id'yi elle vermemek; arayüz değişince kimlik değişip komşuluk sıfırlanabilir.",
+     "Wildcard maske yerine subnet maske yazmak (Cisco/Huawei).",
+     "İki ucta area numarası veya hello/dead timer değerlerini farklı bırakmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "router-id",
+      "d": "OSPF's identity (1.1.1.1); if not set it is derived from the highest loopback/interface IP and may change."
+     },
+     {
+      "p": "area 0",
+      "d": "The backbone area; all other areas must connect to it."
+     },
+     {
+      "p": "Ağ / arayüz",
+      "d": "Selects which interfaces run OSPF; Cisco/Huawei use a wildcard mask, while Aruba CX and Junos are interface based."
+     }
+    ],
+    "example": "OSPF is being set up between two core switches. You set the router IDs manually as 1.1.1.1 and 1.1.1.2, place the 10.0.0.0/24 link in area 0 and confirm the neighbor reaches FULL with 'show ip ospf neighbor'.",
+    "mistakes": [
+     "Not setting the router ID manually; it can change with interfaces and reset adjacencies.",
+     "Writing a subnet mask instead of a wildcard mask (Cisco/Huawei).",
+     "Leaving different area IDs or hello/dead timers on the two ends."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "router-id",
+      "d": "هو هوية OSPF (1.1.1.1)؛ وإن لم يُحدد يُشتق من أعلى عنوان loopback أو واجهة وقد يتغير."
+     },
+     {
+      "p": "area 0",
+      "d": "منطقة العمود الفقري؛ ويجب أن ترتبط بها جميع المناطق الأخرى."
+     },
+     {
+      "p": "Ağ / arayüz",
+      "d": "يحدد الواجهات التي يعمل عليها OSPF؛ تستخدم Cisco وHuawei قناع wildcard بينما Aruba CX وJunos تعتمد على الواجهة."
+     }
+    ],
+    "example": "سيُضبط OSPF بين سويتشي نواة. تحدد معرّفي الراوتر يدويًا 1.1.1.1 و1.1.1.2 وتضع الشبكة 10.0.0.0/24 في area 0 وتتأكد من وصول الجار إلى FULL بالأمر 'show ip ospf neighbor'.",
+    "mistakes": [
+     "عدم تحديد router-id يدويًا فقد يتغير مع الواجهات وتُعاد الجيرة.",
+     "كتابة قناع الشبكة بدل قناع wildcard (Cisco وHuawei).",
+     "ترك رقم area أو مؤقتات hello/dead مختلفة على الطرفين."
+    ]
+   }
+  }
+ },
+ "ospf-komsu": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show ospf neighbor"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/routing ospf neighbor print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Durum (State)",
+      "d": "FULL beklenir; 2WAY broadcast ağlarda DROTHER komşular arasında normaldir."
+     },
+     {
+      "p": "Neighbor ID / adres",
+      "d": "Komşunun router-id ve bağlantı IP'sini gösterir."
+     }
+    ],
+    "example": "Yeni uplink bağlandı ama komşu görünmüyor. Çıktıda komşu INIT'te kalıyorsa hello'lar tek yönlüdür; EXSTART'ta takılıyorsa iki uçta MTU değerlerini karşılaştırırsınız.",
+    "mistakes": [
+     "EXSTART/EXCHANGE'i sunucu sorunu sanıp MTU'yu kontrol etmemek.",
+     "Hiç komşu çıkmayınca yalnızca OSPF yapılandırmasına bakıp L2/L3 bağlantısını test etmemek.",
+     "Authentication veya area tutarsızlığını gözden kaçırmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Durum (State)",
+      "d": "FULL is expected; 2WAY is normal between DROTHER neighbors on broadcast networks."
+     },
+     {
+      "p": "Neighbor ID / adres",
+      "d": "Shows the neighbor's router ID and link IP."
+     }
+    ],
+    "example": "A new uplink is connected but no neighbor appears. If the neighbor stays in INIT, hellos flow in one direction only; if it sticks in EXSTART, you compare the MTU values on both ends.",
+    "mistakes": [
+     "Treating EXSTART/EXCHANGE as a server problem and not checking the MTU.",
+     "Looking only at the OSPF config when no neighbor appears, without testing L2/L3 connectivity.",
+     "Overlooking an authentication or area mismatch."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Durum (State)",
+      "d": "المتوقع FULL؛ وحالة 2WAY طبيعية بين الجيران DROTHER في الشبكات broadcast."
+     },
+     {
+      "p": "Neighbor ID / adres",
+      "d": "يعرض معرّف الراوتر وعنوان IP للوصلة الخاص بالجار."
+     }
+    ],
+    "example": "تم توصيل uplink جديد لكن لا يظهر أي جار. إن بقي الجار في INIT فالـ hello تمر في اتجاه واحد فقط، وإن علق في EXSTART تقارن قيم MTU على الطرفين.",
+    "mistakes": [
+     "اعتبار EXSTART/EXCHANGE مشكلة خادم وعدم فحص MTU.",
+     "فحص إعداد OSPF فقط عند غياب الجيران دون اختبار اتصال L2/L3.",
+     "إغفال عدم تطابق المصادقة أو المنطقة."
+    ]
+   }
+  }
+ },
+ "ospf-pasif-arayuz": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set protocols ospf area 0.0.0.0 interface irb.20 passive",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/routing ospf interface-template add area=backbone interfaces=vlan20 passive"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Pasif arayüz",
+      "d": "Arayüzde hello gönderilmez ve komşuluk kurulmaz, ama bağlı ağ OSPF'e ilan edilmeye devam eder."
+     }
+    ],
+    "example": "VLAN 20 kullanıcı portlarını içeriyor; oraya OSPF hello'ları gitmesin ve kötü niyetli biri sahte router ile komşuluk kurmasın istiyorsunuz. Arayüzü pasif yaparsınız, 10.20.0.0/24 yine de OSPF'e ilan edilir.",
+    "mistakes": [
+     "Gerçek komşu arayüzünü yanlışlıkla pasif yapıp komşuluğu kaybetmek.",
+     "Pasif arayüzün ağını ilan etmediğini sanmak.",
+     "Cisco'da 'passive-interface default' kullanıp uplink'leri açıkça 'no passive-interface' yapmayı unutmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Pasif arayüz",
+      "d": "No hellos are sent and no adjacency forms on the interface, but its connected network is still advertised into OSPF."
+     }
+    ],
+    "example": "VLAN 20 contains user ports; you do not want OSPF hellos going there or a rogue router forming an adjacency. You make the interface passive, and 10.20.0.0/24 is still advertised into OSPF.",
+    "mistakes": [
+     "Accidentally making a real neighbor-facing interface passive and losing the adjacency.",
+     "Believing a passive interface does not advertise its network.",
+     "On Cisco, using 'passive-interface default' and forgetting to re-enable uplinks with 'no passive-interface'."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Pasif arayüz",
+      "d": "لا تُرسل رسائل hello ولا تتشكل جيرة على الواجهة، لكن الشبكة المتصلة تبقى معلنة في OSPF."
+     }
+    ],
+    "example": "تحتوي VLAN 20 على منافذ المستخدمين ولا تريد وصول hello إليها ولا أن يقيم راوتر مزيّف جيرة. تجعل الواجهة passive وتظل الشبكة 10.20.0.0/24 معلنة في OSPF.",
+    "mistakes": [
+     "جعل واجهة الجار الفعلي passive بالخطأ وفقدان الجيرة.",
+     "الاعتقاد أن الواجهة passive لا تعلن شبكتها.",
+     "في Cisco استخدام 'passive-interface default' ونسيان تفعيل وصلات uplink بـ 'no passive-interface'."
+    ]
+   }
+  }
+ },
+ "ospf-maliyet": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set protocols ospf area 0.0.0.0 interface ge-0/0/48.0 metric 10",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/routing ospf interface-template add area=backbone interfaces=ether48 cost=10"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "cost / metric",
+      "d": "Düşük değer tercih edilen yolu belirler; aynı toplam maliyetli yollarda ECMP yük paylaşımı olur."
+     }
+    ],
+    "example": "İki uplink'ten 10G olanın tercih edilmesini istiyorsunuz. 10G arayüze cost 10, yedek 1G arayüze cost 100 verirsiniz; trafik 10G üzerinden gider, o koparsa yedeğe geçer.",
+    "mistakes": [
+     "Referans bant genişliğini bir cihazda değiştirip diğerlerinde bırakmak; maliyetler tutarsızlaşır.",
+     "Cost'u yalnızca bir yönde ayarlamak; dönüş yolu farklı olur (asimetrik).",
+     "Cost vermeyip hız farkını OSPF'in otomatik hesaplamasına bırakmak; 1G ve 10G aynı çıkabilir."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "cost / metric",
+      "d": "A lower value marks the preferred path; equal total cost paths give ECMP load sharing."
+     }
+    ],
+    "example": "You want the 10G of two uplinks to be preferred. You give the 10G interface cost 10 and the backup 1G interface cost 100; traffic uses the 10G link and fails over to the backup when it drops.",
+    "mistakes": [
+     "Changing the reference bandwidth on one device but not the others, making costs inconsistent.",
+     "Setting cost in one direction only, producing an asymmetric return path.",
+     "Leaving it to the automatic calculation, where 1G and 10G can end up with the same cost."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "cost / metric",
+      "d": "القيمة الأقل تحدد المسار المفضل؛ وتتيح المسارات متساوية التكلفة توزيع الحمل ECMP."
+     }
+    ],
+    "example": "تريد تفضيل وصلة 10G من بين وصلتي uplink. تعطي واجهة 10G تكلفة 10 والواجهة الاحتياطية 1G تكلفة 100، فتمر الحركة عبر 10G وتنتقل إلى الاحتياطية عند سقوطها.",
+    "mistakes": [
+     "تغيير عرض النطاق المرجعي على جهاز واحد دون البقية فتتناقض التكاليف.",
+     "ضبط التكلفة في اتجاه واحد فقط فيصبح مسار العودة مختلفًا (غير متماثل).",
+     "ترك الحساب التلقائي فقد تتساوى تكلفة 1G و10G."
+    ]
+   }
+  }
+ },
+ "ospf-kimlik-dogrulama": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set protocols ospf area 0.0.0.0 interface irb.10 authentication md5 1 key \"OspfKey1\"",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/routing ospf interface-template add area=backbone interfaces=vlan10 auth=md5 auth-id=1 auth-key=OspfKey1"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "md5 / key-id",
+      "d": "Kimlik doğrulama türü ve anahtar numarası; iki uçta aynı olmalıdır (ör. key-id 1)."
+     },
+     {
+      "p": "Anahtar",
+      "d": "Paylaşılan gizli anahtardır; farklıysa komşuluk kurulmaz."
+     }
+    ],
+    "example": "Fabrika core'unda yetkisiz bir cihazın OSPF'e katılmasını önlemek için VLAN 10 arayüzlerinde MD5 doğrulama açıyorsunuz. İki uçta aynı key-id ve anahtar verilmezse komşuluk düşer, bu yüzden değişikliği iki uçta bakım penceresinde yaparsınız.",
+    "mistakes": [
+     "Bir uçta etkinleştirip diğerini unutmak; komşuluk düşer.",
+     "Key-id'yi iki uçta farklı vermek.",
+     "Anahtarı yapılandırma yedeğinde düz metin bırakmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "md5 / key-id",
+      "d": "The authentication type and key number; must be the same on both ends (e.g. key-id 1)."
+     },
+     {
+      "p": "Anahtar",
+      "d": "The shared secret; if different, no adjacency forms."
+     }
+    ],
+    "example": "To stop an unauthorized device from joining OSPF in the factory core, you enable MD5 authentication on the VLAN 10 interfaces. If the key-id and key differ on the two ends the adjacency drops, so you change both ends in a maintenance window.",
+    "mistakes": [
+     "Enabling it on one end and forgetting the other; the adjacency drops.",
+     "Using different key IDs on the two ends.",
+     "Leaving the key in plain text in configuration backups."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "md5 / key-id",
+      "d": "نوع المصادقة ورقم المفتاح؛ ويجب أن يتطابقا على الطرفين (مثل key-id 1)."
+     },
+     {
+      "p": "Anahtar",
+      "d": "المفتاح السري المشترك؛ وإن اختلف لا تتشكل الجيرة."
+     }
+    ],
+    "example": "لمنع جهاز غير مخوّل من الانضمام إلى OSPF في نواة المصنع تفعّل مصادقة MD5 على واجهات VLAN 10. إذا اختلف key-id أو المفتاح بين الطرفين تسقط الجيرة، لذا يُنفذ التغيير على الطرفين في نافذة صيانة.",
+    "mistakes": [
+     "تفعيلها على طرف ونسيان الآخر فتسقط الجيرة.",
+     "استخدام key-id مختلف على الطرفين.",
+     "ترك المفتاح كنص واضح في نسخ الإعدادات الاحتياطية."
+    ]
+   }
+  }
+ },
+ "bgp-temel": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set routing-options autonomous-system 65001",
+    "set protocols bgp group EBGP type external",
+    "set protocols bgp group EBGP peer-as 65002",
+    "set protocols bgp group EBGP neighbor 10.0.0.2",
+    "set policy-options policy-statement EXPORT-NET term 1 from route-filter 10.1.0.0/16 exact",
+    "set policy-options policy-statement EXPORT-NET term 1 then accept",
+    "set protocols bgp group EBGP export EXPORT-NET",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip firewall address-list add list=bgp-nets address=10.1.0.0/16",
+    "/routing bgp connection add name=to-peer remote.address=10.0.0.2 remote.as=65002 as=65001 local.role=ebgp output.network=bgp-nets"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "remote-as / peer-as",
+      "d": "Komşunun AS numarası (65002); yanlışsa oturum 'OPEN' aşamasında reddedilir."
+     },
+     {
+      "p": "Komşu IP",
+      "d": "eBGP için genelde doğrudan bağlı arayüz adresi (10.0.0.2) kullanılır."
+     },
+     {
+      "p": "network / export",
+      "d": "İlan edilecek prefix (10.1.0.0/16); prefix yönlendirme tablosunda birebir bulunmalıdır, Junos'ta ayrıca export policy gerekir."
+     }
+    ],
+    "example": "Fabrikanın internet çıkışı için servis sağlayıcıyla eBGP kuruyorsunuz. Yerel AS 65001, komşu 10.0.0.2 (AS 65002); 10.1.0.0/16 ağını ilan edersiniz ve 'show ip bgp summary' ile durumun Established olduğunu görürsünüz.",
+    "mistakes": [
+     "AS numarasını yanlış girmek; oturum Idle/Active'te kalır.",
+     "Network komutundaki prefix yönlendirme tablosunda yokken ilan beklemek.",
+     "Junos'ta export policy yazmadan route'ların ilan edilmesini beklemek.",
+     "Aruba CX'te 'neighbor activate' satırını atlamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "remote-as / peer-as",
+      "d": "The neighbor's AS number (65002); if wrong the session is rejected at OPEN."
+     },
+     {
+      "p": "Komşu IP",
+      "d": "For eBGP the directly connected interface address (10.0.0.2) is normally used."
+     },
+     {
+      "p": "network / export",
+      "d": "The prefix to advertise (10.1.0.0/16); it must exist exactly in the routing table, and Junos additionally needs an export policy."
+     }
+    ],
+    "example": "You are setting up eBGP with the service provider for the factory's internet uplink. Local AS 65001, neighbor 10.0.0.2 (AS 65002); you advertise 10.1.0.0/16 and see the state reach Established in 'show ip bgp summary'.",
+    "mistakes": [
+     "Entering the wrong AS number; the session stays in Idle/Active.",
+     "Expecting an advertisement when the network prefix is not in the routing table.",
+     "On Junos, expecting routes to be advertised without an export policy.",
+     "Skipping the 'neighbor activate' line on Aruba CX."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "remote-as / peer-as",
+      "d": "رقم AS الخاص بالجار (65002)؛ وإن كان خاطئًا يُرفض الجلسة في مرحلة OPEN."
+     },
+     {
+      "p": "Komşu IP",
+      "d": "في eBGP يُستخدم عادةً عنوان الواجهة المتصلة مباشرة (10.0.0.2)."
+     },
+     {
+      "p": "network / export",
+      "d": "البادئة المراد إعلانها (10.1.0.0/16)؛ ويجب أن توجد في جدول التوجيه بالضبط، وفي Junos يلزم أيضًا export policy."
+     }
+    ],
+    "example": "تقيم eBGP مع مزوّد الخدمة لوصلة الإنترنت في المصنع. الـ AS المحلي 65001 والجار 10.0.0.2 (AS 65002)؛ تعلن الشبكة 10.1.0.0/16 وترى الحالة Established في 'show ip bgp summary'.",
+    "mistakes": [
+     "إدخال رقم AS خاطئ فتبقى الجلسة في Idle أو Active.",
+     "توقع الإعلان بينما البادئة غير موجودة في جدول التوجيه.",
+     "في Junos توقع إعلان المسارات دون export policy.",
+     "تخطي سطر 'neighbor activate' في Aruba CX."
+    ]
+   }
+  }
+ },
+ "bgp-ozet": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "State / PfxRcv",
+      "d": "Established olmalıdır; Idle veya Active oturumun kurulamadığını gösterir, sayı ise alınan prefix adedidir."
+     },
+     {
+      "p": "Up/Down süresi",
+      "d": "Oturumun ne kadar süredir ayakta olduğunu gösterir; kısa süre sık kopmaya işaret eder."
+     }
+    ],
+    "example": "Sabah internet yavaşladığında BGP özetine bakarsınız: oturum Established ama bu sabah yeniden kurulduysa Up/Down süresi kısadır ve servis sağlayıcıyla flap yaşanmıştır; PfxRcv sıfırsa sağlayıcı route göndermiyordur.",
+    "mistakes": [
+     "Established gördüğünde sorun yok sanıp alınan prefix sayısına bakmamak.",
+     "Active durumunu 'çalışıyor' diye yorumlamak; aslında bağlanamıyor.",
+     "Aruba CX'te address-family belirtmeden özet aramak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "State / PfxRcv",
+      "d": "Should be Established; Idle or Active means the session cannot form, and the number is the count of received prefixes."
+     },
+     {
+      "p": "Up/Down süresi",
+      "d": "Shows how long the session has been up; a short time indicates frequent flaps."
+     }
+    ],
+    "example": "When the internet slows down in the morning you check the BGP summary: the session is Established but if the Up/Down time is short it re-established this morning and flapped with the provider; if PfxRcv is zero the provider is not sending routes.",
+    "mistakes": [
+     "Seeing Established and assuming all is fine without checking the received prefix count.",
+     "Reading Active as 'working' when it actually means it cannot connect.",
+     "Looking for the summary on Aruba CX without specifying the address family."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "State / PfxRcv",
+      "d": "يجب أن تكون Established؛ وتعني Idle أو Active تعذر إقامة الجلسة، والرقم هو عدد البادئات المستلمة."
+     },
+     {
+      "p": "Up/Down süresi",
+      "d": "يعرض مدة بقاء الجلسة قائمة؛ والمدة القصيرة تدل على انقطاعات متكررة."
+     }
+    ],
+    "example": "عند بطء الإنترنت صباحًا تفحص ملخص BGP: الجلسة Established لكن إن كانت مدة Up/Down قصيرة فقد أُعيد إنشاؤها هذا الصباح وحدث flap مع المزوّد، وإن كان PfxRcv صفرًا فالمزوّد لا يرسل مسارات.",
+    "mistakes": [
+     "اعتبار Established كافيًا دون فحص عدد البادئات المستلمة.",
+     "تفسير حالة Active بأنها 'تعمل' بينما تعني عدم القدرة على الاتصال.",
+     "البحث عن الملخص في Aruba CX دون تحديد address-family."
+    ]
+   }
+  }
+ },
+ "acl-genisletilmis": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set firewall family inet filter BLOCK-SSH term DENY-SSH from protocol tcp",
+    "set firewall family inet filter BLOCK-SSH term DENY-SSH from destination-port 22",
+    "set firewall family inet filter BLOCK-SSH term DENY-SSH then discard",
+    "set firewall family inet filter BLOCK-SSH term ALLOW-REST then accept",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip firewall filter add chain=forward protocol=tcp dst-port=22 action=drop comment=\"BLOCK-SSH\""
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "deny tcp ... eq 22",
+      "d": "TCP 22 (SSH) hedefli trafiği engeller."
+     },
+     {
+      "p": "Sondaki permit",
+      "d": "Cisco'da örtülü deny olduğu için kalan trafiği geçirmek açık permit gerektirir; Huawei'de varsayılan permit'tir."
+     },
+     {
+      "p": "Kural sırası",
+      "d": "ACL yukarıdan aşağı işlenir; ilk eşleşen kural uygulanır."
+     }
+    ],
+    "example": "Kullanıcı VLAN'ından sunuculara SSH erişimini engellemek gerekiyor. Genişletilmiş ACL'de TCP 22'yi deny eder, en sona 'permit ip any any' koyarsınız; aksi halde diğer tüm trafik de düşer.",
+    "mistakes": [
+     "Sona 'permit ip any any' koymayıp tüm trafiği düşürmek (Cisco).",
+     "Genel permit kuralını deny'dan önce yazmak; deny hiç çalışmaz.",
+     "Huawei'de varsayılan permit eylemini unutup 'kalan trafik engellenir' sanmak.",
+     "MikroTik'te yeni kuralı eski bir accept kuralının altında bırakmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "deny tcp ... eq 22",
+      "d": "Blocks traffic destined to TCP 22 (SSH)."
+     },
+     {
+      "p": "Sondaki permit",
+      "d": "Cisco has an implicit deny, so passing the rest needs an explicit permit; Huawei defaults to permit."
+     },
+     {
+      "p": "Kural sırası",
+      "d": "The ACL is processed top to bottom; the first matching rule applies."
+     }
+    ],
+    "example": "SSH from the user VLAN to servers must be blocked. In the extended ACL you deny TCP 22 and put 'permit ip any any' at the end; otherwise all other traffic is dropped too.",
+    "mistakes": [
+     "Omitting the final 'permit ip any any' and dropping all traffic (Cisco).",
+     "Writing a general permit before the deny so the deny never matches.",
+     "Forgetting that Huawei defaults to permit and assuming the rest is blocked.",
+     "On MikroTik, leaving the new rule below an earlier accept rule."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "deny tcp ... eq 22",
+      "d": "يحظر الحركة الموجهة إلى TCP 22 (SSH)."
+     },
+     {
+      "p": "Sondaki permit",
+      "d": "في Cisco يوجد رفض ضمني فيلزم permit صريح لتمرير الباقي؛ أما Huawei فالافتراضي فيها permit."
+     },
+     {
+      "p": "Kural sırası",
+      "d": "تُعالج الـ ACL من الأعلى إلى الأسفل ويُطبق أول قاعدة مطابقة."
+     }
+    ],
+    "example": "يلزم حظر SSH من VLAN المستخدمين إلى الخوادم. في ACL الموسّعة تحظر TCP 22 وتضع 'permit ip any any' في النهاية، وإلا تُسقط كل الحركة الأخرى.",
+    "mistakes": [
+     "عدم وضع 'permit ip any any' في النهاية فتُسقط كل الحركة (Cisco).",
+     "كتابة permit عامة قبل الـ deny فلا تُطبَّق قاعدة deny أبدًا.",
+     "نسيان أن الافتراضي في Huawei هو permit والظن أن الباقي محجوب.",
+     "في MikroTik ترك القاعدة الجديدة أسفل قاعدة accept سابقة."
+    ]
+   }
+  }
+ },
+ "acl-arayuz-uygula": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set interfaces irb unit 20 family inet filter input BLOCK-SSH",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip firewall filter add chain=forward in-interface=vlan20 protocol=tcp dst-port=22 action=drop"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Arayüz",
+      "d": "ACL'nin uygulanacağı VLAN arayüzü (vlan 20)."
+     },
+     {
+      "p": "Yön (in/out)",
+      "d": "in arayüze gelen, out arayüzden çıkan trafiği süzer; yanlış yön kuralı etkisiz bırakır."
+     },
+     {
+      "p": "MikroTik",
+      "d": "Arayüze atanan ACL yoktur; kural chain=forward içinde in-interface ile eşleştirilir."
+     }
+    ],
+    "example": "BLOCK-SSH ACL'sini VLAN 20 arayüzüne 'in' yönünde uygularsınız; önce test VLAN'ında dener, sonra üretimde açarsınız, çünkü yanlış yön veya kural yönetim erişimini de kesebilir.",
+    "mistakes": [
+     "Yönü yanlış seçmek (in yerine out); ACL hiçbir şeyi engellemez.",
+     "ACL'yi doğrudan üretim VLAN'ına uygulamak.",
+     "ACL adını arayüze yazarken harf büyüklüğünü yanlış girmek."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Arayüz",
+      "d": "The VLAN interface where the ACL is applied (vlan 20)."
+     },
+     {
+      "p": "Yön (in/out)",
+      "d": "in filters traffic entering the interface, out filters traffic leaving it; the wrong direction leaves the rule ineffective."
+     },
+     {
+      "p": "MikroTik",
+      "d": "There is no per-interface ACL; the rule is matched with in-interface inside chain=forward."
+     }
+    ],
+    "example": "You apply the BLOCK-SSH ACL to the VLAN 20 interface in the 'in' direction; you test it on a lab VLAN first and then enable it in production, since a wrong direction or rule can also cut management access.",
+    "mistakes": [
+     "Choosing the wrong direction (out instead of in); the ACL blocks nothing.",
+     "Applying the ACL directly to a production VLAN.",
+     "Mistyping the ACL name case when applying it to the interface."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Arayüz",
+      "d": "واجهة VLAN التي تُطبق عليها الـ ACL (vlan 20)."
+     },
+     {
+      "p": "Yön (in/out)",
+      "d": "يُصفّي in الحركة الداخلة إلى الواجهة ويُصفّي out الحركة الخارجة منها؛ والاتجاه الخاطئ يعطّل القاعدة."
+     },
+     {
+      "p": "MikroTik",
+      "d": "لا توجد ACL مرتبطة بالواجهة؛ تُطابَق القاعدة بـ in-interface داخل chain=forward."
+     }
+    ],
+    "example": "تطبّق ACL باسم BLOCK-SSH على واجهة VLAN 20 باتجاه 'in'، وتجربها أولًا على VLAN اختبار ثم تفعّلها في الإنتاج، لأن اتجاهًا أو قاعدة خاطئة قد تقطع الوصول الإداري أيضًا.",
+    "mistakes": [
+     "اختيار الاتجاه الخاطئ (out بدل in) فلا تحجب الـ ACL شيئًا.",
+     "تطبيق الـ ACL مباشرة على VLAN إنتاج.",
+     "كتابة اسم الـ ACL بحالة أحرف خاطئة عند تطبيقها على الواجهة."
+    ]
+   }
+  }
+ },
+ "acl-goruntuleme": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show firewall filter BLOCK-SSH"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/ip firewall filter print stats where chain=forward"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Eşleşme sayacı",
+      "d": "Her kuralın kaç paket yakaladığını gösterir; sıfır olan kural hiç çalışmıyordur."
+     },
+     {
+      "p": "Junos",
+      "d": "Sayaç görmek için kuralda 'then count' tanımlanmış olmalıdır."
+     }
+    ],
+    "example": "Kullanıcılar SSH'a ulaşabiliyor gibi görünüyor. ACL sayaçlarına baktığınızda deny kuralı 0 eşleşme gösteriyorsa ACL ya uygulanmamıştır ya da trafik daha üstteki bir permit'e takılmaktadır.",
+    "mistakes": [
+     "ACL'yi tanımlayıp arayüze uygulamadığını fark etmemek.",
+     "Sayaçları sıfırlamadan eski değerlere bakıp sonuç çıkarmak.",
+     "Junos'ta count eylemi olmadığı için sayaç göremeyip kuralın çalışmadığını sanmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Eşleşme sayacı",
+      "d": "Shows how many packets each rule has matched; a rule at zero is not being hit."
+     },
+     {
+      "p": "Junos",
+      "d": "To see counters the term needs a 'then count' action."
+     }
+    ],
+    "example": "Users still seem able to reach SSH. If the ACL counters show 0 matches on the deny rule, the ACL is either not applied or traffic is hitting an earlier permit.",
+    "mistakes": [
+     "Not noticing the ACL was defined but never applied to an interface.",
+     "Drawing conclusions from old counter values without clearing them.",
+     "On Junos, seeing no counters because there is no count action and assuming the rule is inactive."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Eşleşme sayacı",
+      "d": "يعرض عدد الحزم التي طابقتها كل قاعدة؛ والقاعدة ذات الصفر لا تُستخدم أبدًا."
+     },
+     {
+      "p": "Junos",
+      "d": "لعرض العدّادات يجب أن تحتوي القاعدة على الإجراء 'then count'."
+     }
+    ],
+    "example": "يبدو أن المستخدمين ما زالوا يصلون إلى SSH. إذا أظهرت عدّادات الـ ACL صفر مطابقة لقاعدة deny فإما أن الـ ACL غير مطبقة أو أن الحركة تصطدم بقاعدة permit أسبق.",
+    "mistakes": [
+     "عدم ملاحظة أن الـ ACL معرّفة لكن غير مطبقة على واجهة.",
+     "استخلاص نتائج من قيم عدّادات قديمة دون تصفيرها.",
+     "في Junos عدم رؤية العدّادات لغياب إجراء count والظن أن القاعدة معطلة."
+    ]
+   }
+  }
+ },
+ "port-security": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set switch-options interface ge-0/0/5 interface-mac-limit 2 packet-action drop-and-log",
+    "commit"
+   ]
+  },
+  "mikrotik": null,
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "maximum / max-mac-num",
+      "d": "Portta öğrenilebilecek en fazla MAC sayısı (2)."
+     },
+     {
+      "p": "violation / action",
+      "d": "İhlalde ne olacağını belirler: shutdown portu kapatır, restrict yalnızca paketleri düşürüp kayıt tutar."
+     },
+     {
+      "p": "sticky",
+      "d": "Öğrenilen MAC'leri yapılandırmaya kalıcı olarak yazar."
+     }
+    ],
+    "example": "Operatör portlarına yetkisiz switch veya mini hub takılmasını önlemek için Gi1/0/5'te en fazla 2 MAC'e izin verirsiniz. Üretimde 'restrict' ile başlayıp log'ları izlersiniz; böylece yanlış alarmda port kapanıp üretim durmaz.",
+    "mistakes": [
+     "Sabit IP'li cihaz için maksimumu 1 verip IP telefon + PC senaryosunda portu kapatmak.",
+     "Trunk veya uplink portunda port security açmak.",
+     "Sticky MAC'leri kaydetmeyip yeniden başlatmada kaybetmek.",
+     "Err-disabled portu kurtarma (recovery) ayarı olmadan bırakmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "maximum / max-mac-num",
+      "d": "The maximum number of MAC addresses that can be learned on the port (2)."
+     },
+     {
+      "p": "violation / action",
+      "d": "Defines what happens on a violation: shutdown disables the port, restrict only drops packets and logs."
+     },
+     {
+      "p": "sticky",
+      "d": "Saves learned MAC addresses permanently into the configuration."
+     }
+    ],
+    "example": "To prevent unauthorized switches or mini hubs on operator ports, you allow at most 2 MACs on Gi1/0/5. In production you start with 'restrict' and watch the logs, so a false alarm does not shut the port and stop the line.",
+    "mistakes": [
+     "Setting the maximum to 1 and shutting the port in an IP phone + PC scenario.",
+     "Enabling port security on a trunk or uplink port.",
+     "Not saving sticky MACs and losing them after a reload.",
+     "Leaving err-disabled ports without a recovery setting."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "maximum / max-mac-num",
+      "d": "أقصى عدد من عناوين MAC يمكن تعلمه على المنفذ (2)."
+     },
+     {
+      "p": "violation / action",
+      "d": "يحدد ما يحدث عند المخالفة: shutdown يعطّل المنفذ وrestrict يُسقط الحزم ويسجّل فقط."
+     },
+     {
+      "p": "sticky",
+      "d": "يحفظ عناوين MAC المتعلَّمة بشكل دائم في الإعدادات."
+     }
+    ],
+    "example": "لمنع توصيل سويتشات أو موزعات صغيرة غير مصرح بها على منافذ المشغلين تسمح بحد أقصى 2 MAC على Gi1/0/5. في الإنتاج تبدأ بـ 'restrict' وتراقب السجلات حتى لا يُغلق المنفذ عند إنذار كاذب فيتوقف الخط.",
+    "mistakes": [
+     "ضبط الحد الأقصى على 1 فيُغلق المنفذ في حالة هاتف IP مع حاسوب.",
+     "تفعيل port security على منفذ trunk أو uplink.",
+     "عدم حفظ sticky MAC وفقدانها عند إعادة التشغيل.",
+     "ترك المنافذ في حالة err-disabled دون إعداد استرداد."
+    ]
+   }
+  }
+ },
+ "port-security-durum": {
+  "juniper": {
+   "mode": "Operational mode",
+   "cmds": [
+    "show ethernet-switching table interface ge-0/0/5"
+   ]
+  },
+  "mikrotik": null,
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Violation count",
+      "d": "Kaç ihlal olduğunu gösterir; artıyorsa port sürekli ihlal alıyordur."
+     },
+     {
+      "p": "Last source MAC",
+      "d": "Son ihlali yapan cihazın MAC'i; kimin takıldığını bulmak için kullanılır."
+     },
+     {
+      "p": "Port durumu",
+      "d": "Secure-up, secure-shutdown gibi durumlar portun hâlâ aktif olup olmadığını gösterir."
+     }
+    ],
+    "example": "Bir operatör 'port kapandı' diye arıyor. Port security durumuna bakıp Gi1/0/5'in secure-shutdown olduğunu ve son ihlal MAC'ini görürsünüz; MAC'in kime ait olduğunu belirleyip portu temizleyerek yeniden açarsınız.",
+    "mistakes": [
+     "Portu yalnızca 'no shutdown' ile açıp ihlal nedenini incelememek.",
+     "Son ihlal MAC'ini kayıt altına almadan portu temizlemek.",
+     "Aruba AOS-S'te komutun portu değil tüm anahtarı özetlediğini unutmak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Violation count",
+      "d": "Shows how many violations occurred; if it keeps rising the port is under repeated violation."
+     },
+     {
+      "p": "Last source MAC",
+      "d": "The MAC of the device that caused the last violation; used to find who plugged in."
+     },
+     {
+      "p": "Port durumu",
+      "d": "States such as secure-up or secure-shutdown show whether the port is still active."
+     }
+    ],
+    "example": "An operator calls saying 'the port went down'. Checking port security status you see Gi1/0/5 is secure-shutdown and the last violating MAC; once you identify who owns that MAC you clear the port and bring it back up.",
+    "mistakes": [
+     "Reopening the port with only 'no shutdown' without investigating the cause.",
+     "Clearing the port without recording the last violating MAC.",
+     "Forgetting that on Aruba AOS-S the command summarizes the whole switch rather than one port."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "Violation count",
+      "d": "يعرض عدد المخالفات؛ وإن كان يزداد فالمنفذ يتعرض لمخالفات متكررة."
+     },
+     {
+      "p": "Last source MAC",
+      "d": "عنوان MAC للجهاز المسبب لآخر مخالفة؛ يُستخدم لمعرفة من وصّل الجهاز."
+     },
+     {
+      "p": "Port durumu",
+      "d": "تبيّن حالات مثل secure-up وsecure-shutdown ما إذا كان المنفذ لا يزال نشطًا."
+     }
+    ],
+    "example": "يتصل مشغّل قائلًا إن المنفذ توقف. بفحص حالة port security ترى أن Gi1/0/5 في secure-shutdown وآخر MAC مخالف؛ وبعد معرفة صاحب الـ MAC تنظّف المنفذ وتعيد تشغيله.",
+    "mistakes": [
+     "إعادة فتح المنفذ بـ 'no shutdown' فقط دون فحص السبب.",
+     "تنظيف المنفذ دون تسجيل آخر MAC مخالف.",
+     "نسيان أن الأمر في Aruba AOS-S يلخّص السويتش كله لا منفذًا واحدًا."
+    ]
+   }
+  }
+ },
+ "bpdu-guard": {
+  "juniper": {
+   "mode": "Configuration mode",
+   "cmds": [
+    "set protocols rstp interface ge-0/0/5 edge",
+    "set protocols rstp bpdu-block-on-edge",
+    "commit"
+   ]
+  },
+  "mikrotik": {
+   "mode": "Terminal (RouterOS)",
+   "cmds": [
+    "/interface bridge port set [find interface=ether5] edge=yes bpdu-guard=yes"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "PortFast / edge port",
+      "d": "Kullanıcı portunu doğrudan forwarding durumuna alır, STP bekleme süresini atlar."
+     },
+     {
+      "p": "BPDU Guard",
+      "d": "Edge portta BPDU alınırsa portu kapatır; kullanıcı portuna switch veya döngü bağlanmasına karşı korur."
+     }
+    ],
+    "example": "Atölyedeki masa altı mini switch'e yanlışlıkla iki kablo takıldı ve döngü oluştu. Kullanıcı portlarında PortFast+BPDU Guard açıksa port hemen err-disabled olur ve döngü tüm VLAN'a yayılmaz.",
+    "mistakes": [
+     "PortFast'i uplink veya trunk portuna uygulamak.",
+     "BPDU Guard'ı etkinleştirip err-disabled recovery tanımlamamak; port elle açılana kadar kapalı kalır.",
+     "Huawei'de 'stp bpdu-protection'ı global açmayı unutmak; edged-port tek başına koruma sağlamaz."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "PortFast / edge port",
+      "d": "Puts the user port straight into forwarding and skips the STP wait."
+     },
+     {
+      "p": "BPDU Guard",
+      "d": "Shuts the port if a BPDU arrives on an edge port; protects against a switch or loop on a user port."
+     }
+    ],
+    "example": "Someone plugged two cables into a mini switch under a desk in the workshop and created a loop. With PortFast+BPDU Guard on user ports, the port goes err-disabled immediately and the loop does not spread across the VLAN.",
+    "mistakes": [
+     "Applying PortFast to uplink or trunk ports.",
+     "Enabling BPDU Guard without errdisable recovery; the port stays down until opened manually.",
+     "Forgetting to enable 'stp bpdu-protection' globally on Huawei; edged-port alone gives no protection."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "PortFast / edge port",
+      "d": "ينقل منفذ المستخدم مباشرة إلى حالة forwarding ويتخطى انتظار STP."
+     },
+     {
+      "p": "BPDU Guard",
+      "d": "يغلق المنفذ إذا وصلت BPDU على منفذ edge؛ ويحمي من توصيل سويتش أو حلقة على منفذ مستخدم."
+     }
+    ],
+    "example": "وُصّل كابلان بالخطأ في سويتش صغير تحت مكتب في الورشة فنشأت حلقة. مع PortFast وBPDU Guard على منافذ المستخدمين يدخل المنفذ حالة err-disabled فورًا ولا تنتشر الحلقة في الـ VLAN.",
+    "mistakes": [
+     "تطبيق PortFast على منافذ uplink أو trunk.",
+     "تفعيل BPDU Guard دون errdisable recovery فيبقى المنفذ مغلقًا حتى يُفتح يدويًا.",
+     "نسيان تفعيل 'stp bpdu-protection' عالميًا في Huawei، فلا يوفّر edged-port وحده الحماية."
+    ]
+   }
+  }
+ }
+}

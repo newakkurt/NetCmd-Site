@@ -1,0 +1,25 @@
+{
+ "ui": {
+  "tr": {
+   "det_params": "Parametreler ve çıktı alanları",
+   "det_param": "Parametre / alan",
+   "det_desc": "Açıklama",
+   "det_example": "Örnek senaryo",
+   "det_mistakes": "Sık yapılan hatalar"
+  },
+  "en": {
+   "det_params": "Parameters and output fields",
+   "det_param": "Parameter / field",
+   "det_desc": "Description",
+   "det_example": "Example scenario",
+   "det_mistakes": "Common mistakes"
+  },
+  "ar": {
+   "det_params": "المعاملات وحقول المخرجات",
+   "det_param": "المعامل / الحقل",
+   "det_desc": "الوصف",
+   "det_example": "سيناريو مثال",
+   "det_mistakes": "أخطاء شائعة"
+  }
+ }
+}
