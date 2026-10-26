@@ -59,6 +59,13 @@ VENDORS = {
 CORE_VENDORS = ("cisco", "huawei", "aruba")  # her komutta zorunlu; diğerleri varsa gösterilir
 
 
+def pair_ok(a, b):
+    core = CORE_VENDORS
+    if a in core and b in core:
+        return True
+    return (a in ("cisco", "huawei") and b not in core) or (a not in core and b == "cisco")
+
+
 def vends(it):
     return [v for v in VENDORS if it.get(v)]
 
@@ -237,6 +244,33 @@ if(C.kind==='login'){
       b.disabled=false;
       if(r.error){show(/invalid/i.test(r.error.message||'')?C.t.login_err:(r.error.message||C.t.generic_err),false);return;}
       location.href=C.accountPath;
+    }).catch(function(){b.disabled=false;show(C.t.generic_err,false);});
+  });
+}
+if(C.kind==='forgot'){
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var b=document.getElementById('btn');b.disabled=true;box.hidden=true;
+    sb.auth.resetPasswordForEmail(val('email').trim(),{redirectTo:location.origin+C.resetPath}).then(function(){
+      b.disabled=false;show(C.t.forgot_ok,true);
+    }).catch(function(){b.disabled=false;show(C.t.forgot_ok,true);});
+  });
+}
+if(C.kind==='reset'){
+  var ready=false;
+  function openForm(){ready=true;f.hidden=false;}
+  sb.auth.onAuthStateChange(function(ev){if(ev==='PASSWORD_RECOVERY'||ev==='SIGNED_IN'){openForm();}});
+  sb.auth.getSession().then(function(r){if(r.data&&r.data.session){openForm();}});
+  setTimeout(function(){if(!ready){show(C.t.reset_bad,false);}},2500);
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var pw=val('password');if(pw.length<8){show(C.t.reset_short,false);return;}
+    var b=document.getElementById('btn');b.disabled=true;box.hidden=true;
+    sb.auth.updateUser({password:pw}).then(function(r){
+      b.disabled=false;
+      if(r.error){show(r.error.message||C.t.generic_err,false);return;}
+      show(C.t.reset_ok,true);f.hidden=true;
+      setTimeout(function(){location.href=C.loginPath;},1800);
     }).catch(function(){b.disabled=false;show(C.t.generic_err,false);});
   });
 }
@@ -491,17 +525,20 @@ def page(lang, title, desc, path, body, jsonld=None, noindex=False, head_extra="
         '<meta property="og:type" content="article"><meta property="og:url" content="{canon}">'
         '<meta name="theme-color" content="#050a0f">'
         '<meta http-equiv="Content-Security-Policy" content="{csp}"><meta name="referrer" content="strict-origin-when-cross-origin">'
-        "<script>{headjs}</script><style>{css}</style>{ads}{ld}{head_extra}</head><body>"
+        "<script>{headjs}</script>"
+        '<link rel="stylesheet" href="{base}/assets/site.css?v={today}">'
+        "{ads}{ld}{head_extra}</head><body>"
         '<canvas id="bg-rain" aria-hidden="true"></canvas><canvas id="bg-net" aria-hidden="true"></canvas>'
         "{header}<main>{body}</main>"
-        "<footer>{site} · {footer} {upd}: {today}</footer>"
+        "<footer>{site} · {footer} {upd}: {today}<br>{flinks}</footer>"
         "<script>{nav_js}</script>{script}{bgjs}</body></html>"
     ).format(
         lang=lang, dir=DIRS[lang], title=esc(title), desc=esc(desc), robots=robots,
-        canon=esc(canonical), alts=alts, css=CSS, csp=esc(csp()), headjs=HEAD_JS, ads=ads, ld=ld, head_extra=head_extra,
+        canon=esc(canonical), alts=alts, base=BASE_PATH, csp=esc(csp()), headjs=HEAD_JS, ads=ads, ld=ld, head_extra=head_extra,
         header=header(lang, path), body=body, site=esc(SITE),
         footer=esc(T(lang, "footer")), upd=esc(T(lang, "updated")), today=TODAY,
         nav_js=NAV_SWAP_JS, script=script,
+        flinks='<a href="{}">{}</a> · <a href="{}">{}</a>'.format(lurl(lang, "privacy/"), esc(T(lang, "nav_privacy")), lurl(lang, "terms/"), esc(T(lang, "nav_terms"))),
         bgjs='<script src="{}/assets/ui.js?v={}" data-idx="{}/assets/search-{}.json" defer></script><script src="{}/assets/bg.js?v={}" defer></script><script src="{}/assets/fav.js?v={}" data-url="{}" data-key="{}" data-sb="{}/assets/vendor/supabase.js" defer></script>'.format(
             BASE_PATH, TODAY, BASE_PATH, lang, BASE_PATH, TODAY, BASE_PATH, TODAY, esc(SITECFG.get("supabase_url", "")), esc(SITECFG.get("supabase_key", "")), BASE_PATH),
     )
@@ -535,7 +572,7 @@ def build_command(lang, it, items, paths):
         )
     pair_links = " · ".join(
         '<a href="{}">{} → {}</a>'.format(lurl(lang, "{}-{}/{}/".format(a, b, it["slug"])), VENDORS[a]["name"], VENDORS[b]["name"])
-        for a, b in permutations(vends(it), 2)
+        for a, b in permutations(vends(it), 2) if pair_ok(a, b)
     )
     det = it["details"][lang]
     detail_html = (
@@ -696,6 +733,18 @@ def iban_valid(iban):
     return int("".join(str(int(c, 36)) for c in r)) % 97 == 1
 
 
+def build_legal(lang, paths):
+    legal = load_json("legal.json")
+    em = SITECFG.get("contact_email", "").strip()
+    contact = '<a href="mailto:{0}">{0}</a>'.format(esc(em)) if em else esc(T(lang, "legal_contact_fallback"))
+    for slug in ("privacy", "terms"):
+        d = legal[slug][lang]
+        secs = "".join("<h2>{}</h2><p>{}</p>".format(esc(h), esc(x).replace("{contact}", contact)) for h, x in d["sections"])
+        body = "<h1>{}</h1><p class=\"lead\">{}</p>{}".format(esc(d["title"]), esc(d["lead"]), secs)
+        write("{}/{}/index.html".format(lang, slug), page(lang, d["title"] + " | " + SITE, d["lead"], slug + "/", body))
+        paths.add(slug + "/")
+
+
 def build_support(lang, paths):
     t = lambda k: esc(T(lang, k))
     # 1) Buy Me a Coffee
@@ -758,7 +807,7 @@ def premium_script(lang, tool):
     pt = {k: v for k, v in I18N["ui"][lang].items() if k.startswith("p_")}
     cfg = {
         "url": SITECFG.get("supabase_url", ""), "key": SITECFG.get("supabase_key", ""),
-        "loginPath": lurl(lang, "login/"), "signupPath": lurl(lang, "signup/"), "signupText": T(lang, "nav_signup"),
+        "loginPath": lurl(lang, "login/"), "resetPath": lurl(lang, "reset/"), "signupPath": lurl(lang, "signup/"), "signupText": T(lang, "nav_signup"),
         "premiumPath": lurl(lang, "premium/"),
     }
     payload = json.dumps({"t": pt, "cfg": cfg}, ensure_ascii=False).replace("</", "<\\/")
@@ -815,7 +864,7 @@ def build_premium(lang, paths):
 
 
 def auth_script(lang, kind):
-    keys = ["auth_unavailable", "generic_err", "signup_ok", "login_err"]
+    keys = ["auth_unavailable", "generic_err", "signup_ok", "login_err", "forgot_ok", "reset_ok", "reset_bad", "reset_short"]
     cfg = {
         "url": SITECFG.get("supabase_url", ""), "key": SITECFG.get("supabase_key", ""),
         "kind": kind, "lang": lang,
@@ -846,11 +895,22 @@ def build_auth(lang, paths):
         '<form class="box" id="f"><label for="email">{fe}</label><input id="email" type="email" autocomplete="email" required>'
         '<label for="password">{fp}</label><input id="password" type="password" autocomplete="current-password" required>'
         '<p><button class="btn" id="btn" type="submit">{b}</button></p></form>'
-        '<div id="msg" class="msg" hidden></div><p>{no} <a href="{su}">{ns}</a></p>'
+        '<div id="msg" class="msg" hidden></div><p><a href="{fg}">{fgt}</a></p><p>{no} <a href="{su}">{ns}</a></p>'
     ).format(
+        fg=lurl(lang, "forgot/"), fgt=t("forgot_link"),
         h=t("login_title"), fe=t("f_email"), fp=esc(re.sub(r"\s*\(.*$", "", T(lang, "f_password"))),
         b=t("btn_login"), no=t("no_account"), su=lurl(lang, "signup/"), ns=t("nav_signup"),
     )
+    forgot = (
+        '<h1>{h}</h1><p class="lead">{lead}</p>'
+        '<form class="box" id="f"><label for="email">{fe}</label><input id="email" type="email" autocomplete="email" required>'
+        '<p><button class="btn" id="btn" type="submit">{b}</button></p></form><div id="msg" class="msg" hidden></div>'
+    ).format(h=t("forgot_title"), lead=t("forgot_lead"), fe=t("f_email"), b=t("forgot_btn"))
+    reset = (
+        '<h1>{h}</h1><p class="lead">{lead}</p>'
+        '<form class="box" id="f" hidden><label for="password">{fp}</label><input id="password" type="password" minlength="8" autocomplete="new-password" required>'
+        '<p><button class="btn" id="btn" type="submit">{b}</button></p></form><div id="msg" class="msg" hidden></div>'
+    ).format(h=t("reset_title"), lead=t("reset_lead"), fp=t("reset_pw"), b=t("reset_btn"))
     account = (
         '<h1>{h}</h1><div id="msg" class="msg" hidden></div>'
         '<div class="panel" id="info" hidden><p><strong>{le}:</strong> <span id="acc-email"></span></p>'
@@ -860,6 +920,7 @@ def build_auth(lang, paths):
 
     for kind, body, title_key in (
         ("signup", signup, "signup_title"), ("login", login, "login_title"), ("account", account, "account_title"),
+        ("forgot", forgot, "forgot_title"), ("reset", reset, "reset_title"),
     ):
         path = kind + "/"
         write(
@@ -1001,14 +1062,15 @@ def build_assistant(lang, paths):
     body = (
         '<h1>{h}</h1><p class="lead">{lead}</p>'
         '<div class="as-box"><textarea id="as-in" placeholder="{ph}" aria-label="{ph}"></textarea>'
-        '<p><button class="btn" id="as-go" type="button">{btn}</button> <span class="lead">{ex}:</span> {exs}</p></div>'
+        '<p><button class="btn" id="as-go" type="button">{btn}</button> <button class="btn sec" id="as-ai" type="button">{ai}</button> <span id="as-left" class="tag" hidden></span></p><p><span class="lead">{ex}:</span> {exs}</p></div>'
         '<div id="as-out"></div><div class="note">{disc}</div>'
     ).format(h=esc(T(lang, "as_title")), lead=esc(T(lang, "as_lead")), ph=esc(T(lang, "as_ph")), btn=esc(T(lang, "as_btn")),
-             ex=esc(T(lang, "as_ex")), exs=exs, disc=esc(T(lang, "as_disclaimer")))
+             ex=esc(T(lang, "as_ex")), exs=exs, disc=esc(T(lang, "as_disclaimer")), ai=esc(T(lang, "as_ai_btn")))
     cfg = {"idx": "{}/assets/assistant-{}.json".format(BASE_PATH, lang),
-           "t": {k: T(lang, k) for k in ("as_none", "as_step", "as_values", "as_open")},
-           "v": {v: vlabel(v) for v in VENDORS}}
-    script = '<script id="as-cfg" type="application/json">{}</script><script src="{}/assets/assistant.js?v={}" defer></script>'.format(
+           "t": {k: T(lang, k) for k in ("as_none", "as_step", "as_values", "as_open", "as_ai_login", "as_ai_busy", "as_ai_err", "as_ai_quota", "as_ai_badge", "as_ai_left", "as_ai_refused", "as_ai_note")},
+           "v": {v: vlabel(v) for v in VENDORS}, "url": SITECFG.get("supabase_url", ""), "key": SITECFG.get("supabase_key", ""),
+           "login": lurl(lang, "login/")}
+    script = '<script src="' + BASE_PATH + '/assets/vendor/supabase.js"></script><script id="as-cfg" type="application/json">{}</script><script src="{}/assets/assistant.js?v={}" defer></script>'.format(
         json.dumps(cfg, ensure_ascii=False).replace("</", "<\\/"), BASE_PATH, TODAY)
     write("{}/assistant/index.html".format(lang), page(lang, T(lang, "as_title") + " | " + SITE, T(lang, "as_lead"), "assistant/", body, script=script))
     paths.add("assistant/")
@@ -1086,6 +1148,7 @@ def main():
         shutil.rmtree(OUT)
     OUT.mkdir()
     shutil.copytree(ROOT / "assets", OUT / "assets")
+    (OUT / "assets" / "site.css").write_text(CSS, encoding="utf-8")
     sitemap_paths = set()
     total = 0
     for lang in LANGS:
@@ -1093,11 +1156,14 @@ def main():
         for it in items:
             build_command(lang, it, items, paths)
             for a, b in permutations(vends(it), 2):
+                if not pair_ok(a, b):
+                    continue
                 build_pair(lang, it, a, b, paths)
         cats = build_categories(lang, items, paths)
         build_home(lang, items, cats, paths)
         build_projects(lang, paths)
         build_support(lang, paths)
+        build_legal(lang, paths)
         build_auth(lang, paths)
         build_tools(lang, paths)
         build_premium(lang, paths)
@@ -1107,7 +1173,7 @@ def main():
         build_indexes(lang, items)
         total += len(paths)
         # arama motoru için: auth sayfaları (noindex) sitemap dışında
-        sitemap_paths |= {p for p in paths if p not in ("signup/", "login/", "account/")}
+        sitemap_paths |= {p for p in paths if p not in ("signup/", "login/", "account/", "forgot/", "reset/")}
     write_meta(sitemap_paths)
     log.info("Tamam: %d sayfa (%d dil) -> %s (BASE_URL=%s)", total, len(LANGS), OUT, BASE_URL)
 

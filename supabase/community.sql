@@ -31,3 +31,32 @@ create trigger cc_rate before insert on public.community_commands for each row e
 
 -- Aynı kullanıcı için tek bekleyen premium talebi (spam önleme)
 create unique index if not exists premium_requests_one_pending on public.premium_requests(user_id) where status = 'pending';
+
+-- ===== Premium onay yardımcısı (Telegram bildirimindeki komut) =====
+create or replace function public.approve_premium(p_user uuid, p_days int default 365) returns void
+language plpgsql security definer set search_path = public as $$
+begin
+  update public.profiles set is_premium = true,
+    premium_until = greatest(coalesce(premium_until, now()), now()) + make_interval(days => p_days)
+    where id = p_user;
+  update public.premium_requests set status = 'approved' where user_id = p_user and status = 'pending';
+end $$;
+revoke all on function public.approve_premium(uuid, int) from public, anon, authenticated;
+
+-- ===== AI kotası =====
+create table if not exists public.ai_usage (
+  user_id uuid not null references auth.users(id) on delete cascade,
+  day date not null default current_date,
+  n int not null default 0,
+  primary key (user_id, day)
+);
+alter table public.ai_usage enable row level security;   -- politika yok: yalnızca service role erişir
+create or replace function public.ai_bump(p_user uuid, p_limit int) returns int
+language plpgsql security definer set search_path = public as $$
+declare c int;
+begin
+  insert into public.ai_usage(user_id, day, n) values (p_user, current_date, 0) on conflict do nothing;
+  update public.ai_usage set n = n + 1 where user_id = p_user and day = current_date and n < p_limit returning n into c;
+  return coalesce(c, -1);
+end $$;
+revoke all on function public.ai_bump(uuid, int) from public, anon, authenticated;

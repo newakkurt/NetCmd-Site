@@ -1,0 +1,5105 @@
+[
+ {
+  "slug": "stp-root-bridge-bilgisi",
+  "title": "Root bridge ve root port bilgisini görüntüleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Cisco'da 'show spanning-tree root' VLAN başına root'u listeler; Huawei'de 'display stp' CIST root ve bridge ID'yi birlikte gösterir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show spanning-tree root",
+    "show spanning-tree vlan 10 root"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display stp",
+    "display stp brief"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX Operator",
+   "cmds": [
+    "show spanning-tree",
+    "show spanning-tree root-history"
+   ]
+  }
+ },
+ {
+  "slug": "stp-root-primary-secondary",
+  "title": "Root primary / secondary ile root bridge atama",
+  "cat": "Spanning Tree ve L2",
+  "note": "Cisco ve Huawei'de 'root primary' makrosu öncelik değerini otomatik düşürür; Aruba, Junos ve MikroTik'te önceliği sayısal olarak elle girersiniz.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "spanning-tree vlan 10,20 root primary",
+    "spanning-tree vlan 10,20 root secondary",
+    "spanning-tree vlan 30 priority 4096"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "stp root primary",
+    "stp root secondary",
+    "stp instance 1 root primary"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S / AOS-CX Global config",
+   "cmds": [
+    "spanning-tree priority 1",
+    "spanning-tree priority 2"
+   ]
+  }
+ },
+ {
+  "slug": "stp-portfast-edge-port",
+  "title": "Access portta PortFast / edge port etkinleştirme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Cisco'da 'portfast', Huawei'de 'edged-port', Aruba'da 'admin-edge-port', Junos'ta 'edge' aynı işi yapar: porta bağlanan uç cihaz listening/learning beklemeden forwarding'e geçer.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet1/0/12",
+    "spanning-tree portfast",
+    "spanning-tree portfast trunk"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface GigabitEthernet0/0/12",
+    "stp edged-port enable"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Global config / AOS-CX Interface",
+   "cmds": [
+    "spanning-tree 1/12 admin-edge-port",
+    "spanning-tree port-type admin-edge"
+   ]
+  }
+ },
+ {
+  "slug": "stp-portfast-default-global",
+  "title": "Tüm access portlarda varsayılan edge + BPDU guard",
+  "cat": "Spanning Tree ve L2",
+  "note": "Cisco'da global 'portfast default' sadece access portları etkiler, trunk'lara dokunmaz; Huawei'de 'stp edged-port default' tüm portları edge yapar, uplink'lerde kapatmayı unutmayın.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "spanning-tree portfast default",
+    "spanning-tree portfast bpduguard default",
+    "show spanning-tree summary"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "stp edged-port default",
+    "stp bpdu-protection",
+    "interface GigabitEthernet0/0/24",
+    "undo stp edged-port"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Global config",
+   "cmds": [
+    "spanning-tree 1/1-1/24 admin-edge-port",
+    "spanning-tree 1/1-1/24 bpdu-protection"
+   ]
+  }
+ },
+ {
+  "slug": "stp-bpdu-filter",
+  "title": "BPDU filter ile BPDU gönderimini/alımını durdurma",
+  "cat": "Spanning Tree ve L2",
+  "note": "BPDU filter portta BPDU'yu bastırır; yanlış kullanımda koruma mekanizmasını devre dışı bırakıp döngüye yol açar. Cisco'da global ve port düzeyinde davranış farklıdır.",
+  "cisco": {
+   "mode": "Global / Interface configuration",
+   "cmds": [
+    "spanning-tree portfast bpdufilter default",
+    "interface GigabitEthernet1/0/12",
+    "spanning-tree bpdufilter enable"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view",
+   "cmds": [
+    "stp bpdu-filter default",
+    "interface GigabitEthernet0/0/12",
+    "stp bpdu-filter enable"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Global config / AOS-CX Interface",
+   "cmds": [
+    "spanning-tree 1/12 bpdu-filter",
+    "spanning-tree bpdu-filter"
+   ]
+  }
+ },
+ {
+  "slug": "stp-port-path-cost",
+  "title": "Port path cost değerini ayarlama",
+  "cat": "Spanning Tree ve L2",
+  "note": "Path cost, aynı root'a giden iki yoldan hangisinin seçileceğini belirler. Cisco'da VLAN bazında verilebilir; Huawei ve Aruba'da MSTP instance düzeyi ayrı komutla yapılır.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet1/0/1",
+    "spanning-tree cost 10",
+    "spanning-tree vlan 20 cost 100"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface GigabitEthernet0/0/1",
+    "stp cost 20000",
+    "stp instance 1 cost 20000"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Global config / AOS-CX Interface",
+   "cmds": [
+    "spanning-tree 1/1 path-cost 20000",
+    "spanning-tree cost 20000"
+   ]
+  }
+ },
+ {
+  "slug": "stp-path-cost-method",
+  "title": "Path cost standardını (short/long) seçme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Cisco varsayılanı short, Huawei varsayılanı genelde dot1t; farklı standart kullanan switch'ler aynı hat için farklı maliyet hesaplar ve beklenmeyen root port seçimi yapar.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "spanning-tree pathcost method long",
+    "show spanning-tree summary"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "stp pathcost-standard dot1t",
+    "display stp"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Global config",
+   "cmds": [
+    "spanning-tree legacy-path-cost",
+    "show spanning-tree"
+   ]
+  }
+ },
+ {
+  "slug": "stp-topology-change-izleme",
+  "title": "Topology change (TC) sayacı ve kaynağını izleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Sık TC, MAC tablosunun silinmesine ve ağda flooding'e yol açar. Kaynak portu bulmak için 'last change from' alanına bakılır; edge port olmayan portlar genelde suçludur.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show spanning-tree detail | include ieee|occurr|from|is exec",
+    "show spanning-tree vlan 10 detail"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display stp topology-change",
+    "display stp tc-bpdu statistics"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX Operator",
+   "cmds": [
+    "show spanning-tree detail",
+    "show spanning-tree root-history"
+   ]
+  }
+ },
+ {
+  "slug": "stp-bpdu-guard-recovery",
+  "title": "BPDU guard sonrası otomatik port kurtarma",
+  "cat": "Spanning Tree ve L2",
+  "note": "BPDU guard portu err-disable yapar; otomatik kurtarma süresi tanımlanmazsa port elle açılana kadar kapalı kalır. Süreyi çok kısa tutarsanız döngü tekrar eder.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "errdisable recovery cause bpduguard",
+    "errdisable recovery interval 300",
+    "show errdisable recovery"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "error-down auto-recovery cause bpdu-protection interval 300",
+    "display error-down recovery"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Global config",
+   "cmds": [
+    "spanning-tree bpdu-protection-timeout 300",
+    "show spanning-tree bpdu-protection"
+   ]
+  }
+ },
+ {
+  "slug": "mst-instance-durumu",
+  "title": "MST instance durumunu görüntüleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Cisco'da 'show spanning-tree mst 1' tek instance'ı gösterir; Huawei'de 'display stp instance 1' aynı işi görür. Instance 0 (CIST/IST) her zaman vardır.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show spanning-tree mst",
+    "show spanning-tree mst 1",
+    "show spanning-tree mst 1 detail"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display stp instance 1",
+    "display stp brief"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX Operator",
+   "cmds": [
+    "show spanning-tree instance 1",
+    "show spanning-tree mst 1"
+   ]
+  }
+ },
+ {
+  "slug": "mst-instance-priority",
+  "title": "MST instance için bridge priority ayarlama",
+  "cat": "Spanning Tree ve L2",
+  "note": "Cisco'da 'spanning-tree mst 1 priority', Huawei'de 'stp instance 1 priority' kullanılır; Aruba'da öncelik 4096'lık katsayı olarak girilir (1 = 4096).",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "spanning-tree mst 1 priority 4096",
+    "spanning-tree mst 2 priority 8192",
+    "spanning-tree mst 1 root primary"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "stp instance 1 priority 4096",
+    "stp instance 2 priority 8192"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S / AOS-CX Configuration",
+   "cmds": [
+    "spanning-tree instance 1 priority 1",
+    "spanning-tree instance 2 priority 2"
+   ]
+  }
+ },
+ {
+  "slug": "mst-region-dogrulama",
+  "title": "MST bölge ayarlarını ve digest değerini doğrulama",
+  "cat": "Spanning Tree ve L2",
+  "note": "Region name, revision ve VLAN-instance eşlemesi tüm switch'lerde birebir aynı olmalıdır; Cisco ve Huawei karşılaştırma için digest (hash) gösterir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show spanning-tree mst configuration",
+    "show spanning-tree mst configuration digest"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display stp region-configuration",
+    "display stp region-configuration digest"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX Operator",
+   "cmds": [
+    "show spanning-tree mst-config"
+   ]
+  }
+ },
+ {
+  "slug": "stp-zamanlayicilar",
+  "title": "STP hello, forward-delay ve max-age zamanlayıcılarını ayarlama",
+  "cat": "Spanning Tree ve L2",
+  "note": "Huawei zamanlayıcıları santisaniye cinsinden alır (hello 200 = 2 sn); Cisco ve Aruba saniye kullanır. Değerleri yalnızca root bridge'de değiştirmek yeterlidir.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "spanning-tree vlan 10 hello-time 2",
+    "spanning-tree vlan 10 forward-time 15",
+    "spanning-tree vlan 10 max-age 20"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "stp timer hello 200",
+    "stp timer forward-delay 1500",
+    "stp timer max-age 2000"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S / AOS-CX Configuration",
+   "cmds": [
+    "spanning-tree hello-time 2",
+    "spanning-tree forward-delay 15",
+    "spanning-tree maximum-age 20"
+   ]
+  }
+ },
+ {
+  "slug": "stp-point-to-point-link",
+  "title": "Port link type'ı point-to-point olarak ayarlama",
+  "cat": "Spanning Tree ve L2",
+  "note": "RSTP hızlı geçişi yalnızca point-to-point linklerde çalışır. Cisco ve Huawei full-duplex linkleri otomatik algılar; half-duplex veya medya dönüştürücülerde elle zorlanır.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet1/0/48",
+    "spanning-tree link-type point-to-point",
+    "end",
+    "show spanning-tree interface GigabitEthernet1/0/48 detail"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface GigabitEthernet 0/0/24",
+    "stp point-to-point force-true",
+    "quit",
+    "display stp interface GigabitEthernet 0/0/24"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S / AOS-CX Configuration",
+   "cmds": [
+    "spanning-tree 24 point-to-point-mac force-true",
+    "interface 1/1/24",
+    "spanning-tree link-type point-to-point"
+   ]
+  }
+ },
+ {
+  "slug": "stp-port-priority",
+  "title": "STP port priority ayarlama ve eşit maliyetli linkte seçim",
+  "cat": "Spanning Tree ve L2",
+  "note": "İki link aynı maliyette olduğunda, port ID'nin öncelik kısmı hangi portun forwarding olacağını belirler; varsayılan Cisco 128, Huawei 128.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet1/0/1",
+    "spanning-tree port-priority 64",
+    "spanning-tree vlan 10 port-priority 64",
+    "end",
+    "show spanning-tree interface GigabitEthernet1/0/1"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface GigabitEthernet 0/0/1",
+    "stp instance 0 port priority 64",
+    "quit",
+    "display stp interface GigabitEthernet 0/0/1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S / AOS-CX Configuration",
+   "cmds": [
+    "spanning-tree 1 priority 4",
+    "interface 1/1/1",
+    "spanning-tree port-priority 4"
+   ]
+  }
+ },
+ {
+  "slug": "stp-port-detay-bpdu-sayaclari",
+  "title": "Port bazında STP detayı ve BPDU sayaçlarını görüntüleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "BPDU gönderen/alan sayaçları, portun beklenmedik BPDU alıp almadığını (ör. edge portta) anlamak için kullanılır; Cisco 'detail' ekler.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show spanning-tree interface GigabitEthernet1/0/1 detail",
+    "show spanning-tree detail"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display stp interface GigabitEthernet 0/0/1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX Operator",
+   "cmds": [
+    "show spanning-tree 1 detail",
+    "show spanning-tree detail"
+   ]
+  }
+ },
+ {
+  "slug": "stp-tutarsiz-port-inconsistent",
+  "title": "STP tutarsız (inconsistent) portları listeleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Root guard, loop guard veya PVID/type uyuşmazlığı nedeniyle bloklanan portları gösterir; Cisco'da tek komutla toplu görülür.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show spanning-tree inconsistentports",
+    "show spanning-tree summary"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display stp brief",
+    "display stp interface GigabitEthernet 0/0/1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX Operator",
+   "cmds": [
+    "show spanning-tree",
+    "show spanning-tree inconsistent-ports"
+   ]
+  }
+ },
+ {
+  "slug": "stp-devre-disi-birakma",
+  "title": "STP'yi VLAN, port veya global düzeyde devre dışı bırakma",
+  "cat": "Spanning Tree ve L2",
+  "note": "STP kapatmak yalnızca loop'un fiziksel olarak imkansız olduğu izole segmentlerde düşünülmelidir; Cisco VLAN bazında, Huawei global veya port bazında kapatır.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "no spanning-tree vlan 99",
+    "show spanning-tree vlan 99"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view",
+   "cmds": [
+    "stp disable",
+    "interface GigabitEthernet 0/0/10",
+    "stp disable"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S / AOS-CX Configuration",
+   "cmds": [
+    "no spanning-tree",
+    "show spanning-tree"
+   ]
+  }
+ },
+ {
+  "slug": "pvst-vlan-instance-eslemesi-gorme",
+  "title": "VLAN bazlı STP durumunu ve VLAN-instance eşlemesini görüntüleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Cisco PVST VLAN başına ayrı STP çalıştırır; Huawei ve Aruba MSTP'de VLAN'lar instance'lara eşlenir. Hangi VLAN'ın hangi topolojiyi kullandığını önce eşlemeden öğrenin.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show spanning-tree vlan 10",
+    "show spanning-tree vlan 10 detail",
+    "show spanning-tree vlan 10 bridge"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display stp region-configuration",
+    "display stp instance 1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX Operator",
+   "cmds": [
+    "show spanning-tree mst-config",
+    "show spanning-tree instance 1"
+   ]
+  }
+ },
+ {
+  "slug": "stp-loop-sorun-giderme",
+  "title": "Layer 2 loop şüphesinde STP ve trafik kontrolü",
+  "cat": "Spanning Tree ve L2",
+  "note": "Broadcast storm'da önce hangi portların bloklandığına, CPU yüküne ve port sayaçlarına bakılır; hızlı teşhis için STP'nin beklenmedik topology change üretip üretmediği kontrol edilir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show spanning-tree summary",
+    "show spanning-tree detail | include occurred|from",
+    "show processes cpu sorted",
+    "show interfaces counters"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display stp brief",
+    "display stp tc-bpdu statistics",
+    "display cpu-usage",
+    "display interface brief"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX Operator",
+   "cmds": [
+    "show spanning-tree",
+    "show cpu",
+    "show interfaces"
+   ]
+  }
+ },
+ {
+  "slug": "stp-ozet-sayilar",
+  "title": "STP özetini ve port durum sayılarını görüntüleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Cisco 'show spanning-tree summary' STP modunu, aktif korumaları ve VLAN başına blocking/forwarding port sayısını tek ekranda verir; Huawei 'display stp brief' port listesi döner.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show spanning-tree summary",
+    "show spanning-tree summary totals"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display stp brief",
+    "display stp"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX Operator",
+   "cmds": [
+    "show spanning-tree",
+    "show spanning-tree summary"
+   ]
+  }
+ },
+ {
+  "slug": "stp-blocked-port-bulma",
+  "title": "STP tarafından bloklanan portları bulma",
+  "cat": "Spanning Tree ve L2",
+  "note": "Hangi linkin yedek (blocking/discarding) olduğunu bilmek, kablo çekme ve bakım planı için kritiktir; Cisco'da 'blockedports' doğrudan listeler.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show spanning-tree blockedports",
+    "show spanning-tree vlan 10 | include BLK"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display stp brief | include DISCARDING"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX Operator",
+   "cmds": [
+    "show spanning-tree | include Blocking"
+   ]
+  }
+ },
+ {
+  "slug": "stp-transmit-hold-count",
+  "title": "STP BPDU transmit hold count değerini ayarlama",
+  "cat": "Spanning Tree ve L2",
+  "note": "Hello süresi başına bir portun gönderebileceği maksimum BPDU sayısını sınırlar (varsayılan 6); BPDU fırtınası ve CPU yükünü azaltmak için kullanılır.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "spanning-tree transmit hold-count 6",
+    "show spanning-tree summary"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "stp transmit-limit 6",
+    "display stp"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Configuration",
+   "cmds": [
+    "spanning-tree transmit-hold-count 6",
+    "show spanning-tree"
+   ]
+  }
+ },
+ {
+  "slug": "stp-edge-port-dogrulama",
+  "title": "Portun edge port (PortFast) olarak çalıştığını doğrulama",
+  "cat": "Spanning Tree ve L2",
+  "note": "Yapılandırmanın uygulanması yetmez; portun gerçekten edge olarak çalıştığı (ve BPDU almadığı) çıktıdan doğrulanmalıdır. Cisco 'portfast' çıktısında 'edge' görünür.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show spanning-tree interface GigabitEthernet1/0/5 portfast",
+    "show spanning-tree interface GigabitEthernet1/0/5 detail"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display stp interface GigabitEthernet 0/0/5"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX Operator",
+   "cmds": [
+    "show spanning-tree 5 detail",
+    "show spanning-tree detail"
+   ]
+  }
+ },
+ {
+  "slug": "stp-mac-flapping-loop-izleme",
+  "title": "MAC flapping ile Layer 2 loop kaynağını izleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Aynı MAC adresinin iki porttan sürekli öğrenilmesi tipik loop belirtisidir. Cisco 'mac-move' bildirimi ve Huawei flapping kaydı, hangi portların arasında taşındığını gösterir.",
+  "cisco": {
+   "mode": "Global configuration / Privileged EXEC",
+   "cmds": [
+    "mac address-table notification mac-move",
+    "show mac address-table notification mac-move",
+    "show logging | include MACFLAP"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display mac-address flapping record"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX Operator",
+   "cmds": [
+    "show loop-protect",
+    "show mac-address"
+   ]
+  }
+ },
+ {
+  "slug": "lacp-sistem-onceligi",
+  "title": "LACP sistem önceliğini ayarlama",
+  "cat": "Spanning Tree ve L2",
+  "note": "LACP'de hangi uç kararı verir sorusunun cevabı sistem önceliğidir; düşük değer kazanır. Huawei'de komut 'lacp priority', Cisco ve Aruba CX'te 'lacp system-priority' adını taşır.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "lacp system-priority 100",
+    "end",
+    "show lacp sys-id"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "system-view",
+    "lacp priority 100",
+    "quit",
+    "display eth-trunk 1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX global configuration",
+   "cmds": [
+    "configure terminal",
+    "lacp system-priority 100",
+    "end",
+    "show lacp configuration"
+   ]
+  }
+ },
+ {
+  "slug": "lacp-port-onceligi",
+  "title": "LACP port önceliği ile aktif linkleri seçme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Bundle'da üye sayısı limiti aşınca port önceliği düşük olan linkler aktif kalır. Huawei'de 'max active-linknumber' ile birlikte kullanılmazsa standby link oluşmaz.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface gigabitethernet 1/0/1",
+    "lacp port-priority 100",
+    "end",
+    "show lacp internal"
+   ]
+  },
+  "huawei": {
+   "mode": "Eth-Trunk view / Interface view",
+   "cmds": [
+    "interface eth-trunk 1",
+    "max active-linknumber 2",
+    "quit",
+    "interface gigabitethernet 0/0/1",
+    "lacp priority 100"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX interface configuration",
+   "cmds": [
+    "configure terminal",
+    "interface 1/1/1",
+    "lacp port-priority 100",
+    "end",
+    "show lacp interfaces"
+   ]
+  }
+ },
+ {
+  "slug": "lacp-hizli-timer",
+  "title": "LACP hızlı (fast) zamanlayıcıyı açma",
+  "cat": "Spanning Tree ve L2",
+  "note": "LACPDU aralığını 30 sn'den 1 sn'ye indirerek link arızasını saniyeler içinde yakalar. Her iki uçta da aynı olmalıdır; platformun fast rate desteği ayrıca kontrol edilmelidir.",
+  "cisco": {
+   "mode": "Interface configuration (NX-OS / supported IOS-XE)",
+   "cmds": [
+    "interface ethernet 1/1",
+    "lacp rate fast",
+    "end",
+    "show lacp neighbor"
+   ]
+  },
+  "huawei": {
+   "mode": "Eth-Trunk interface view",
+   "cmds": [
+    "interface eth-trunk 1",
+    "lacp timeout fast",
+    "quit",
+    "display eth-trunk 1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX LAG interface",
+   "cmds": [
+    "configure terminal",
+    "interface lag 1",
+    "lacp rate fast",
+    "end",
+    "show lacp interfaces"
+   ]
+  }
+ },
+ {
+  "slug": "lacp-yuk-dagitimi",
+  "title": "Port-channel yük dağıtım algoritması",
+  "cat": "Spanning Tree ve L2",
+  "note": "Bundle içinde trafiğin hangi alanlara göre hash'lenip linklere dağıtılacağını belirler. Tek sunucu-tek flow trafiği asla birden fazla linke yayılmaz; algoritma bunu değiştirmez.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "port-channel load-balance src-dst-ip",
+    "end",
+    "show etherchannel load-balance"
+   ]
+  },
+  "huawei": {
+   "mode": "Eth-Trunk interface view",
+   "cmds": [
+    "interface eth-trunk 1",
+    "load-balance src-dst-ip",
+    "quit",
+    "display eth-trunk 1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S global configuration",
+   "cmds": [
+    "trunk-load-balance L4",
+    "show trunks"
+   ]
+  }
+ },
+ {
+  "slug": "statik-port-kanali",
+  "title": "Statik (LACP'siz) port-channel oluşturma",
+  "cat": "Spanning Tree ve L2",
+  "note": "Karşı uç LACP desteklemiyorsa bundle'ı 'on' / manual modda kurarsınız. Müzakere olmadığından yanlış kablolama veya tek taraflı yapılandırma loop'a yol açabilir.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface range gigabitethernet 1/0/1-2",
+    "channel-group 5 mode on",
+    "end",
+    "show etherchannel summary"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "interface eth-trunk 5",
+    "mode manual load-balance",
+    "quit",
+    "interface gigabitethernet 0/0/1",
+    "eth-trunk 5",
+    "display eth-trunk 5"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX global configuration",
+   "cmds": [
+    "interface lag 5",
+    "no shutdown",
+    "exit",
+    "interface 1/1/1",
+    "lag 5",
+    "end"
+   ]
+  }
+ },
+ {
+  "slug": "lacp-sayac-ic-durum",
+  "title": "LACP sayaçları ve üye iç durumu",
+  "cat": "Spanning Tree ve L2",
+  "note": "LACPDU gönderim/alım sayaçları, bir üyenin neden bundle'a katılmadığını gösterir. Sayaç artmıyorsa karşı uç LACP konuşmuyordur; AOS-S'te komutlar 'show lacp' ailesindedir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show lacp internal",
+    "show lacp counters",
+    "show lacp 5 counters"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display lacp statistics eth-trunk 1",
+    "display eth-trunk 1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager",
+   "cmds": [
+    "show lacp",
+    "show lacp counters",
+    "show lacp local"
+   ]
+  }
+ },
+ {
+  "slug": "lacp-partner-bilgisi",
+  "title": "LACP partner (karşı uç) bilgisini görme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Karşı cihazın system-id ve port bilgisini gösterir; yanlış switch'e takılmış kabloyu veya farklı partner'a bölünmüş bundle'ı bulur. MLAG'da iki üyenin aynı partner ID'yi görmesi gerekir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show lacp neighbor",
+    "show etherchannel 5 detail",
+    "show lacp sys-id"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display eth-trunk 1",
+    "display lacp statistics eth-trunk 1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator / Manager",
+   "cmds": [
+    "show lacp interfaces",
+    "show lacp interfaces 1/1/1",
+    "show lacp aggregates"
+   ]
+  }
+ },
+ {
+  "slug": "mlag-keepalive-baglantisi",
+  "title": "MLAG/vPC/VSX keepalive bağlantısı kurma",
+  "cat": "Spanning Tree ve L2",
+  "note": "Peer-link kopunca iki eşin 'ben mi yaşıyorum yoksa o mu' sorusunu cevaplayan ayrı bir yoldur. Keepalive'ı peer-link üzerinden değil, ayrı VRF'te ayrı fiziksel linkten kurun.",
+  "cisco": {
+   "mode": "NX-OS global configuration",
+   "cmds": [
+    "feature vpc",
+    "vpc domain 10",
+    "peer-keepalive destination 10.255.0.2 source 10.255.0.1 vrf VPC-KA"
+   ]
+  },
+  "huawei": {
+   "mode": "CloudEngine system view",
+   "cmds": [
+    "dfs-group 1",
+    "source ip 10.255.0.1 peer 10.255.0.2",
+    "priority 150",
+    "quit"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX global configuration",
+   "cmds": [
+    "vrf KA",
+    "interface 1/1/48",
+    "vrf attach KA",
+    "ip address 10.255.0.1/30",
+    "vsx",
+    "keepalive peer 10.255.0.2 source 10.255.0.1 vrf KA"
+   ]
+  }
+ },
+ {
+  "slug": "mlag-peer-link",
+  "title": "MLAG peer-link / ISL yapılandırması",
+  "cat": "Spanning Tree ve L2",
+  "note": "Peer-link, iki MLAG eşi arasındaki veri ve senkronizasyon yoludur. En az iki üyeli LACP bundle olarak kurulur ve VLAN'ların tamamını taşımalıdır.",
+  "cisco": {
+   "mode": "NX-OS interface configuration",
+   "cmds": [
+    "interface port-channel 10",
+    "switchport mode trunk",
+    "vpc peer-link",
+    "interface ethernet 1/47-48",
+    "channel-group 10 mode active"
+   ]
+  },
+  "huawei": {
+   "mode": "CloudEngine system view",
+   "cmds": [
+    "interface eth-trunk 0",
+    "mode lacp-static",
+    "peer-link 1",
+    "quit",
+    "interface 10GE1/0/47",
+    "eth-trunk 0"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX global configuration",
+   "cmds": [
+    "interface lag 256",
+    "no shutdown",
+    "no routing",
+    "lacp mode active",
+    "vsx",
+    "inter-switch-link lag 256"
+   ]
+  }
+ },
+ {
+  "slug": "mlag-durum-goruntuleme",
+  "title": "MLAG / vPC / M-LAG / VSX durumunu görüntüleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Dört vendor'da da eş (peer) durumu, keepalive ve tutarlılık kontrolü ayrı bakılır; peer-link up olsa bile keepalive down ise split-brain riski vardır.",
+  "cisco": {
+   "mode": "NX-OS (vPC) - Privileged EXEC",
+   "cmds": [
+    "show vpc brief",
+    "show vpc peer-keepalive",
+    "show vpc consistency-parameters global",
+    "show vpc role"
+   ]
+  },
+  "huawei": {
+   "mode": "CloudEngine - User view / System view",
+   "cmds": [
+    "display dfs-group 1 m-lag brief",
+    "display dfs-group 1 peer"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX - Privileged / Manager",
+   "cmds": [
+    "show vsx status",
+    "show vsx brief",
+    "show vsx status keepalive"
+   ]
+  }
+ },
+ {
+  "slug": "cdp-komsulari",
+  "title": "CDP komşularını görüntüleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "CDP Cisco'ya özgüdür; Huawei NDP, Juniper ve Aruba CX tarafında CDP yerine LLDP kullanılır. Karma ortamda IP telefon ve Cisco cihazları CDP ile görünür.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show cdp neighbors",
+    "show cdp neighbors detail",
+    "show cdp entry SW-DIST-01"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view (NDP)",
+   "cmds": [
+    "display ndp",
+    "display ndp interface GigabitEthernet0/0/1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S - Manager",
+   "cmds": [
+    "show cdp neighbors",
+    "show cdp neighbors detail 1"
+   ]
+  }
+ },
+ {
+  "slug": "cdp-kapatma",
+  "title": "CDP'yi kapatma (global ve port bazlı)",
+  "cat": "Spanning Tree ve L2",
+  "note": "Kullanıcı portlarında CDP/NDP yayını cihaz modeli ve IP bilgisini sızdırır; uplink ve IP telefon portlarında ise kapatmadan önce etkisini düşünün.",
+  "cisco": {
+   "mode": "Global config / Interface config",
+   "cmds": [
+    "no cdp run",
+    "interface GigabitEthernet1/0/5",
+    "no cdp enable",
+    "show cdp"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view",
+   "cmds": [
+    "undo ndp enable",
+    "interface GigabitEthernet0/0/5",
+    "undo ndp enable",
+    "display ndp"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S - Global config",
+   "cmds": [
+    "no cdp run",
+    "no cdp enable 5",
+    "show cdp"
+   ]
+  }
+ },
+ {
+  "slug": "lldp-zamanlayici",
+  "title": "LLDP gönderim zamanlayıcılarını ayarlama",
+  "cat": "Spanning Tree ve L2",
+  "note": "Varsayılan LLDP aralığı 30 sn, hold çarpanı 4'tür (TTL 120 sn); çok sık gönderim gereksiz yük, çok seyrek gönderim ise IP telefon keşfinde gecikme yaratır.",
+  "cisco": {
+   "mode": "Global config",
+   "cmds": [
+    "lldp timer 30",
+    "lldp holdtime 120",
+    "lldp reinit 2",
+    "show lldp"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "lldp message-transmission interval 30",
+    "lldp message-transmission delay 2",
+    "lldp message-transmission hold-multiplier 4",
+    "display lldp local"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX - Global config (AOS-S: lldp refresh-interval)",
+   "cmds": [
+    "lldp timer 30",
+    "lldp holdtime 4",
+    "lldp reinit 2"
+   ]
+  }
+ },
+ {
+  "slug": "lldp-istatistik",
+  "title": "LLDP istatistiklerini görüntüleme ve sıfırlama",
+  "cat": "Spanning Tree ve L2",
+  "note": "Gönderilen/alınan LLDPDU, hatalı veya atılan çerçeve ve düşen komşu sayaçları, tek yönlü bağlantı ya da yanlış yapılandırılmış komşuyu tespit etmeye yarar.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show lldp traffic",
+    "show lldp interface GigabitEthernet1/0/48",
+    "clear lldp counters"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view / User view",
+   "cmds": [
+    "display lldp statistics",
+    "reset lldp statistics"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX - Manager (AOS-S: show lldp stats)",
+   "cmds": [
+    "show lldp statistics",
+    "clear lldp statistics"
+   ]
+  }
+ },
+ {
+  "slug": "udld-etkinlestirme",
+  "title": "UDLD / DLDP / LFM ile tek yönlü bağlantı tespiti",
+  "cat": "Spanning Tree ve L2",
+  "note": "Fiber çiftinde tek yönün kopması STP loop'u yaratabilir. Cisco UDLD, Huawei DLDP, Aruba AOS-S link-keepalive, Junos ise 802.3ah LFM kullanır; AOS-CX'te karşılığı yoktur.",
+  "cisco": {
+   "mode": "Global config / Interface config",
+   "cmds": [
+    "udld aggressive",
+    "interface TenGigabitEthernet1/0/49",
+    "udld port aggressive",
+    "show udld TenGigabitEthernet1/0/49"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view",
+   "cmds": [
+    "dldp enable",
+    "dldp work-mode enhance",
+    "interface GigabitEthernet0/0/49",
+    "dldp enable",
+    "dldp unidirectional-shutdown auto"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S - Global config (not on AOS-CX)",
+   "cmds": [
+    "link-keepalive ethernet 49-50",
+    "link-keepalive interval 10",
+    "link-keepalive retries 4"
+   ]
+  }
+ },
+ {
+  "slug": "udld-durum",
+  "title": "UDLD / DLDP / LFM durumunu görüntüleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Komşu durumu 'bidirectional' olmalıdır; 'unidirectional', 'undetermined' veya err-disable görülürse fiber/transceiver sorunu aranır. Err-disable sonrası portu yeniden açmak gerekir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show udld",
+    "show udld TenGigabitEthernet1/0/49",
+    "show interfaces status err-disabled",
+    "udld reset"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display dldp",
+    "display dldp GigabitEthernet0/0/49",
+    "dldp reset"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S - Manager",
+   "cmds": [
+    "show link-keepalive",
+    "show link-keepalive statistics"
+   ]
+  }
+ },
+ {
+  "slug": "jumbo-mtu-ayari",
+  "title": "Jumbo frame / MTU ayarlama",
+  "cat": "Spanning Tree ve L2",
+  "note": "Jumbo frame uçtan uca tüm hop'larda aynı olmalıdır. Cisco'da 'system mtu' bazı platformlarda reload ister; Huawei'de L2 için jumboframe, Juniper'da mtu 9216 yaygındır.",
+  "cisco": {
+   "mode": "Global config / Interface config (reload may be needed on older Catalyst)",
+   "cmds": [
+    "system mtu 9198",
+    "interface TenGigabitEthernet1/0/1",
+    "mtu 9198",
+    "show system mtu"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface 10GE1/0/1",
+    "jumboframe enable 9216",
+    "display this"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX - Interface config (AOS-S: jumbo vlan)",
+   "cmds": [
+    "interface 1/1/1",
+    "mtu 9198",
+    "show interface 1/1/1"
+   ]
+  }
+ },
+ {
+  "slug": "mac-aging-suresi",
+  "title": "MAC adres tablosu aging süresini ayarlama",
+  "cat": "Spanning Tree ve L2",
+  "note": "Cisco ve Huawei varsayılanı 300 sn'dir; Aruba AOS-S'te mac-age-time kullanılır. Junos'ta ayar global switch-options altındadır, MikroTik'te bridge başınadır.",
+  "cisco": {
+   "mode": "Global config",
+   "cmds": [
+    "mac address-table aging-time 600",
+    "show mac address-table aging-time"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "mac-address aging-time 600",
+    "display mac-address aging-time"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S - Global config",
+   "cmds": [
+    "mac-age-time 600",
+    "show running-config"
+   ]
+  }
+ },
+ {
+  "slug": "statik-mac-girisi",
+  "title": "Statik MAC adresi girişi ekleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Statik kayıt aging'e uğramaz ve reboot sonrası kalıcıdır. Cisco ve Huawei'de MAC formatı farklıdır (aaaa.bbbb.cccc ve aaaa-bbbb-cccc); Aruba AOS-S'te 'static-mac' kullanılır.",
+  "cisco": {
+   "mode": "Global config",
+   "cmds": [
+    "mac address-table static 0011.2233.4455 vlan 20 interface GigabitEthernet1/0/5",
+    "show mac address-table static"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "mac-address static 0011-2233-4455 GigabitEthernet0/0/5 vlan 20",
+    "display mac-address static"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S - Global config",
+   "cmds": [
+    "static-mac 001122-334455 vlan 20 interface 5",
+    "show mac-address 5"
+   ]
+  }
+ },
+ {
+  "slug": "mac-tablosu-temizleme",
+  "title": "MAC adres tablosunu temizleme",
+  "cat": "Spanning Tree ve L2",
+  "note": "Dinamik kayıtları silmek geçici flood'a yol açar; üretimde tüm tablo yerine VLAN veya port bazlı temizlemek daha güvenlidir. Statik kayıtlar silinmez.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "clear mac address-table dynamic vlan 20",
+    "clear mac address-table dynamic interface GigabitEthernet1/0/5",
+    "show mac address-table dynamic vlan 20"
+   ]
+  },
+  "huawei": {
+   "mode": "User view",
+   "cmds": [
+    "reset mac-address dynamic",
+    "display mac-address dynamic"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX - Privileged",
+   "cmds": [
+    "clear mac-address-table dynamic",
+    "show mac-address-table"
+   ]
+  }
+ },
+ {
+  "slug": "lacp-trunk-l2-yapilandirma",
+  "title": "LACP port-channel üzerinde L2 trunk kurma",
+  "cat": "Spanning Tree ve L2",
+  "note": "VLAN ve trunk ayarı fiziksel porta değil logical arayüze (Port-channel / Eth-Trunk / lag / ae) yapılır; üye portlar önce kanala eklenir, trunk ayarı logical arayüzde kalmalıdır.",
+  "cisco": {
+   "mode": "Interface config",
+   "cmds": [
+    "interface range GigabitEthernet1/0/47-48",
+    "channel-group 1 mode active",
+    "interface Port-channel1",
+    "switchport mode trunk",
+    "switchport trunk allowed vlan 10,20"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "interface Eth-Trunk1",
+    "mode lacp-static",
+    "port link-type trunk",
+    "port trunk allow-pass vlan 10 20",
+    "interface GigabitEthernet0/0/47",
+    "eth-trunk 1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX - Config",
+   "cmds": [
+    "interface lag 1",
+    "lacp mode active",
+    "vlan trunk native 1",
+    "vlan trunk allowed 10,20",
+    "interface 1/1/47",
+    "lag 1"
+   ]
+  }
+ },
+ {
+  "slug": "ethernet-flow-control",
+  "title": "Ethernet flow control (802.3x) ayarı",
+  "cat": "PoE ve Fiziksel Katman",
+  "note": "Flow control PAUSE çerçeveleriyle gönderici yavaşlatır ama tüm trafiği durdurduğu için head-of-line blocking yaratabilir. Cisco Catalyst çoğunlukla yalnızca receive destekler.",
+  "cisco": {
+   "mode": "Interface config",
+   "cmds": [
+    "interface GigabitEthernet1/0/10",
+    "flowcontrol receive on",
+    "end",
+    "show interfaces GigabitEthernet1/0/10 flowcontrol"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface GigabitEthernet0/0/10",
+    "flow-control",
+    "display this"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S - Interface config",
+   "cmds": [
+    "interface 10 flow-control",
+    "show interfaces brief"
+   ]
+  }
+ },
+ {
+  "slug": "interface-hiz-duplex-ayari",
+  "title": "Port hız ve duplex ayarını elle yapma",
+  "cat": "VLAN / Port",
+  "note": "Sabit hız/duplex kullanılırsa iki ucun da aynı şekilde sabitlenmesi gerekir; yalnızca bir uç sabitlenirse diğer uç duplex mismatch ile half-duplex'e düşer. 1G ve üzeri bakır portlarda auto-negotiation zorunludur.",
+  "cisco": {
+   "mode": "Interface config",
+   "cmds": [
+    "interface GigabitEthernet1/0/12",
+    "speed 100",
+    "duplex full",
+    "end",
+    "show interfaces GigabitEthernet1/0/12 status"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface GigabitEthernet0/0/12",
+    "undo negotiation auto",
+    "speed 100",
+    "duplex full",
+    "display interface brief"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S - Interface config",
+   "cmds": [
+    "interface 12 speed-duplex 100-full",
+    "show interfaces brief 12"
+   ]
+  }
+ },
+ {
+  "slug": "interface-hata-sayaclari",
+  "title": "Port hata sayaçları (CRC, input error) inceleme",
+  "cat": "Sorun Giderme",
+  "note": "CRC, runt ve giant sayaçları kablo, SFP veya duplex sorununu gösterir. Sayaçları sıfırlayıp tekrar ölçmeden artışın güncel olup olmadığı anlaşılamaz.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show interfaces GigabitEthernet1/0/12 | include CRC|errors",
+    "show interfaces counters errors",
+    "clear counters GigabitEthernet1/0/12"
+   ]
+  },
+  "huawei": {
+   "mode": "User view",
+   "cmds": [
+    "display interface GigabitEthernet0/0/12",
+    "display interface counters error",
+    "reset counters interface GigabitEthernet0/0/12"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX - Privileged / AOS-S: Manager",
+   "cmds": [
+    "show interface 1/1/12",
+    "show interfaces 12"
+   ]
+  }
+ },
+ {
+  "slug": "interface-trafik-orani-izleme",
+  "title": "Port trafik oranı ve load-interval ayarı",
+  "cat": "Görüntüleme",
+  "note": "Varsayılan 5 dakikalık ortalama ani burst'leri gizler. Cisco'da load-interval 30, Huawei'de set flow-stat interval 30 ile oranlar 30 saniyelik ortalamayla görülür.",
+  "cisco": {
+   "mode": "Interface config / Privileged EXEC",
+   "cmds": [
+    "interface GigabitEthernet1/0/24",
+    "load-interval 30",
+    "end",
+    "show interfaces GigabitEthernet1/0/24 | include rate"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view / User view",
+   "cmds": [
+    "interface GigabitEthernet0/0/24",
+    "set flow-stat interval 30",
+    "display interface GigabitEthernet0/0/24"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX / AOS-S: Manager",
+   "cmds": [
+    "show interface 1/1/24",
+    "show interfaces 24"
+   ]
+  }
+ },
+ {
+  "slug": "dot1x-mab-yedek",
+  "title": "802.1X başarısızsa MAB'a düşme (MAC Authentication Bypass)",
+  "cat": "L2 Güvenlik",
+  "note": "Supplicant'ı olmayan yazıcı, kamera gibi cihazlar MAC adresiyle doğrulanır. Cisco'da order/priority ayrı ayarlanır; Huawei'de mac-authen ayrı bir yöntemdir.",
+  "cisco": {
+   "mode": "Interface config (IOS/IOS-XE)",
+   "cmds": [
+    "interface GigabitEthernet1/0/12",
+    "authentication order dot1x mab",
+    "authentication priority dot1x mab",
+    "authentication port-control auto",
+    "mab",
+    "dot1x pae authenticator"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view (VRP)",
+   "cmds": [
+    "system-view",
+    "mac-authen",
+    "interface GigabitEthernet0/0/12",
+    "mac-authen",
+    "display mac-authen interface GigabitEthernet0/0/12"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S config / AOS-CX config",
+   "cmds": [
+    "aaa port-access mac-based 1/12",
+    "aaa port-access authenticator 1/12",
+    "interface 1/1/12",
+    "aaa authentication port-access mac-auth",
+    "enable"
+   ]
+  }
+ },
+ {
+  "slug": "dot1x-guest-vlan",
+  "title": "802.1X guest / unauth VLAN yapılandırma",
+  "cat": "L2 Güvenlik",
+  "note": "Supplicant yanıt vermeyen veya doğrulaması reddedilen istemciyi kısıtlı bir VLAN'a alır. Cisco'da event komutu, Aruba AOS-S'te unauth-vid, CX'te role kullanılır.",
+  "cisco": {
+   "mode": "Interface config (IOS/IOS-XE)",
+   "cmds": [
+    "interface GigabitEthernet1/0/12",
+    "authentication event no-response action authorize vlan 50",
+    "authentication event fail action authorize vlan 70",
+    "authentication port-control auto",
+    "show authentication sessions interface GigabitEthernet1/0/12"
+   ]
+  },
+  "huawei": {
+   "mode": "Authentication-profile view (VRP)",
+   "cmds": [
+    "authentication-profile name dot1x_p1",
+    "authentication event client-no-response action authorize vlan 50",
+    "authentication event authen-fail action authorize vlan 70",
+    "interface GigabitEthernet0/0/12",
+    "authentication-profile dot1x_p1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S config / AOS-CX config",
+   "cmds": [
+    "aaa port-access authenticator 1/12 unauth-vid 50",
+    "port-access role GUEST-ROLE",
+    "vlan access 50",
+    "aaa authentication port-access preauth-role GUEST-ROLE"
+   ]
+  }
+ },
+ {
+  "slug": "dot1x-critical-vlan",
+  "title": "RADIUS çökünce critical VLAN (server dead) ayarı",
+  "cat": "L2 Güvenlik",
+  "note": "RADIUS erişilemezse portları kapatmak yerine geçici VLAN'a almak üretimi korur. Sunucu geri gelince reinitialize ile yeniden doğrulama tetiklenir.",
+  "cisco": {
+   "mode": "Global + Interface config (IOS/IOS-XE)",
+   "cmds": [
+    "radius-server dead-criteria time 5 tries 3",
+    "interface GigabitEthernet1/0/12",
+    "authentication event server dead action authorize vlan 60",
+    "authentication event server alive action reinitialize",
+    "show authentication sessions interface GigabitEthernet1/0/12"
+   ]
+  },
+  "huawei": {
+   "mode": "Authentication-profile view (VRP)",
+   "cmds": [
+    "authentication-profile name dot1x_p1",
+    "authentication event authen-server-down action authorize vlan 60",
+    "authentication event authen-server-up action re-authen",
+    "interface GigabitEthernet0/0/12",
+    "authentication-profile dot1x_p1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config / AOS-S config",
+   "cmds": [
+    "port-access role CRITICAL-ROLE",
+    "vlan access 60",
+    "aaa authentication port-access critical-role CRITICAL-ROLE",
+    "radius-server dead-time 5"
+   ]
+  }
+ },
+ {
+  "slug": "dot1x-host-mode",
+  "title": "802.1X host mode: single, multi-host, multi-auth",
+  "cat": "L2 Güvenlik",
+  "note": "Portta kaç cihazın nasıl doğrulanacağını belirler. IP telefon arkasındaki PC için Cisco'da multi-domain, Huawei'de port-method mac, Aruba'da client-limit kullanılır.",
+  "cisco": {
+   "mode": "Interface config (IOS/IOS-XE)",
+   "cmds": [
+    "interface GigabitEthernet1/0/12",
+    "authentication host-mode multi-auth",
+    "authentication host-mode multi-domain",
+    "authentication max-reauth-req 2",
+    "show authentication sessions interface GigabitEthernet1/0/12"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view (VRP)",
+   "cmds": [
+    "interface GigabitEthernet0/0/12",
+    "dot1x port-method mac",
+    "dot1x port-method port",
+    "display dot1x interface GigabitEthernet0/0/12"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S config / AOS-CX interface",
+   "cmds": [
+    "aaa port-access authenticator 1/12 client-limit 4",
+    "interface 1/1/12",
+    "aaa authentication port-access client-limit 4",
+    "show port-access clients"
+   ]
+  }
+ },
+ {
+  "slug": "dot1x-reauth-zamanlayici",
+  "title": "802.1X yeniden doğrulama ve timer ayarları",
+  "cat": "L2 Güvenlik",
+  "note": "Periyodik reauth, politika değişikliklerinin (VLAN/ACL) portlara yansımasını sağlar. Çok kısa süre RADIUS'u yorar; sunucu tarafı Session-Timeout ile de belirlenebilir.",
+  "cisco": {
+   "mode": "Interface config (IOS/IOS-XE)",
+   "cmds": [
+    "interface GigabitEthernet1/0/12",
+    "authentication periodic",
+    "authentication timer reauthenticate server",
+    "authentication timer inactivity 600",
+    "dot1x timeout tx-period 5",
+    "authentication timer restart 120"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view / System view (VRP)",
+   "cmds": [
+    "interface GigabitEthernet0/0/12",
+    "dot1x timer reauthenticate-period 3600",
+    "dot1x timer tx-period 30",
+    "dot1x reauthenticate"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S config / AOS-CX interface",
+   "cmds": [
+    "aaa port-access authenticator 1/12 reauth-period 3600",
+    "aaa port-access authenticator 1/12 reauthenticate",
+    "interface 1/1/12",
+    "aaa authentication port-access dot1x authenticator",
+    "reauth-period 3600"
+   ]
+  }
+ },
+ {
+  "slug": "dot1x-oturum-goruntuleme",
+  "title": "802.1X oturumlarını görüntüleme ve temizleme",
+  "cat": "L2 Güvenlik",
+  "note": "Hangi MAC'in hangi yöntemle (dot1x/mab) hangi VLAN'a yetkilendiğini gösterir. Sorun gidermede önce oturum durumuna, sonra RADIUS loglarına bakılır.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show authentication sessions",
+    "show authentication sessions interface GigabitEthernet1/0/12 details",
+    "show dot1x all summary",
+    "clear authentication sessions interface GigabitEthernet1/0/12"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display access-user",
+    "display access-user interface GigabitEthernet0/0/12",
+    "display dot1x interface GigabitEthernet0/0/12",
+    "cut access-user interface GigabitEthernet0/0/12"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager / AOS-CX",
+   "cmds": [
+    "show port-access authenticator",
+    "show port-access authenticator clients",
+    "show port-access clients",
+    "show port-access clients interface 1/1/12 detail"
+   ]
+  }
+ },
+ {
+  "slug": "private-vlan-yapilandirma",
+  "title": "Private VLAN (isolated/community) ve Huawei MUX VLAN",
+  "cat": "L2 Güvenlik",
+  "note": "Aynı subnet'te cihazları birbirinden izole eder. Cisco'da primary/isolated/community, Huawei'de MUX VLAN kullanılır; Aruba AOS-S'te source-port filtre benzer sonucu verir.",
+  "cisco": {
+   "mode": "Global + Interface config (IOS/IOS-XE)",
+   "cmds": [
+    "vlan 101",
+    "private-vlan isolated",
+    "vlan 100",
+    "private-vlan primary",
+    "private-vlan association 101",
+    "interface GigabitEthernet1/0/5 / switchport mode private-vlan host / switchport private-vlan host-association 100 101"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view (VRP)",
+   "cmds": [
+    "vlan batch 100 101 102",
+    "vlan 100",
+    "mux-vlan",
+    "subordinate separate 101",
+    "subordinate group 102",
+    "interface GigabitEthernet0/0/5 / port mux-vlan enable"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S config (PVLAN yok, source-port filtre)",
+   "cmds": [
+    "filter source-port 1/5 drop 1/6-1/10",
+    "show filter source-port 1/5"
+   ]
+  }
+ },
+ {
+  "slug": "port-isolation",
+  "title": "Port isolation / protected port ile L2 izolasyon",
+  "cat": "L2 Güvenlik",
+  "note": "Aynı VLAN'daki portlar arası trafiği keser, uplink'e izin verir. Cisco protected port, Huawei port-isolate, Junos no-local-switching, MikroTik horizon kullanır.",
+  "cisco": {
+   "mode": "Interface config (IOS/IOS-XE)",
+   "cmds": [
+    "interface GigabitEthernet1/0/5",
+    "switchport protected",
+    "show interfaces GigabitEthernet1/0/5 switchport"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view (VRP)",
+   "cmds": [
+    "port-isolate mode l2",
+    "interface GigabitEthernet0/0/5",
+    "port-isolate enable group 1",
+    "display port-isolate group 1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S config (source-port filter)",
+   "cmds": [
+    "filter source-port 1/5 drop 1/6-1/10",
+    "show filter source-port 1/5"
+   ]
+  }
+ },
+ {
+  "slug": "port-security-sticky-mac",
+  "title": "Port security sticky MAC ve MAC limit",
+  "cat": "L2 Güvenlik",
+  "note": "Sticky ile öğrenilen MAC'ler running-config'e yazılır. Cisco'da sticky, Huawei'de sticky-mac, Junos'ta persistent-learning, AOS-S'te learn-mode static kullanılır.",
+  "cisco": {
+   "mode": "Interface config (IOS/IOS-XE)",
+   "cmds": [
+    "interface GigabitEthernet1/0/12",
+    "switchport port-security",
+    "switchport port-security maximum 3",
+    "switchport port-security mac-address sticky",
+    "show port-security address"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view (VRP)",
+   "cmds": [
+    "interface GigabitEthernet0/0/12",
+    "port-security enable",
+    "port-security max-mac-num 3",
+    "port-security mac-address sticky",
+    "display mac-address sticky"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S config (AOS-CX'te farklı)",
+   "cmds": [
+    "port-security 1/12 learn-mode static address-limit 3 action send-alarm",
+    "show port-security 1/12"
+   ]
+  }
+ },
+ {
+  "slug": "errdisable-recovery-yapilandirma",
+  "title": "Errdisable otomatik kurtarma ayarı",
+  "cat": "L2 Güvenlik",
+  "note": "Cisco'da errdisable recovery neden bazlı açılır; Huawei'de error-down auto-recovery, Aruba'da ise koruma özelliğine özel timer kullanılır.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "errdisable recovery cause bpduguard",
+    "errdisable recovery cause psecure-violation",
+    "errdisable recovery interval 300"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "error-down auto-recovery cause bpdu-protection interval 300",
+    "error-down auto-recovery cause storm-control interval 300"
+   ]
+  },
+  "aruba": {
+   "mode": "Global config (AOS-S)",
+   "cmds": [
+    "spanning-tree bpdu-protection-timeout 300",
+    "loop-protect disable-timer 300"
+   ]
+  }
+ },
+ {
+  "slug": "errdisable-durum-goruntuleme",
+  "title": "Errdisable portları ve nedenlerini görüntüleme",
+  "cat": "L2 Güvenlik",
+  "note": "Kapanan portun nedenini ve kurtarma sayacını gösterir; Huawei'de komutlar error-down kavramı üzerinden çalışır.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show interfaces status err-disabled",
+    "show errdisable recovery",
+    "show errdisable detect"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display error-down recovery",
+    "display error-down record"
+   ]
+  },
+  "aruba": {
+   "mode": "Manager (AOS-S)",
+   "cmds": [
+    "show spanning-tree bpdu-protection",
+    "show loop-protect"
+   ]
+  }
+ },
+ {
+  "slug": "port-security-violation-modlari",
+  "title": "Port security ihlal (violation) modları",
+  "cat": "L2 Güvenlik",
+  "note": "Shutdown portu kapatır, restrict log basıp paketi düşürür, protect sessizce düşürür; Aruba ve Junos'ta karşılıkları farklı adlandırılır.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "switchport port-security violation restrict",
+    "switchport port-security violation shutdown",
+    "switchport port-security violation protect"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "port-security enable",
+    "port-security protect-action restrict",
+    "port-security protect-action shutdown"
+   ]
+  },
+  "aruba": {
+   "mode": "Global config (AOS-S)",
+   "cmds": [
+    "port-security 1/5 learn-mode limited-continuous address-limit 2 action send-alarm",
+    "port-security 1/5 action send-disable"
+   ]
+  }
+ },
+ {
+  "slug": "port-security-maksimum-mac-aging",
+  "title": "Port security MAC limiti ve aging süresi",
+  "cat": "L2 Güvenlik",
+  "note": "Port başına izin verilen MAC sayısını ve öğrenilen adreslerin ne zaman silineceğini belirler; sticky ayrı bir konudur.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "switchport port-security maximum 3",
+    "switchport port-security aging time 10",
+    "switchport port-security aging type inactivity"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "port-security max-mac-num 3",
+    "port-security aging-time 10 type inactivity"
+   ]
+  },
+  "aruba": {
+   "mode": "Global config (AOS-S)",
+   "cmds": [
+    "port-security 1/5 learn-mode limited-continuous address-limit 3",
+    "port-security 1/5 mac-address 001122-334455"
+   ]
+  }
+ },
+ {
+  "slug": "dai-rate-limit-arp-hiz-siniri",
+  "title": "DAI ARP rate limit ve doğrulama",
+  "cat": "L2 Güvenlik",
+  "note": "DAI güvenilmeyen portlarda ARP hızını sınırlar; limit aşılırsa Cisco portu err-disable yapar, Huawei ise ARP hız bastırma kullanır.",
+  "cisco": {
+   "mode": "Global / Interface configuration",
+   "cmds": [
+    "ip arp inspection vlan 20",
+    "ip arp inspection validate src-mac dst-mac ip",
+    "ip arp inspection limit rate 50 burst interval 1",
+    "errdisable recovery cause arp-inspection"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view",
+   "cmds": [
+    "arp anti-attack check user-bind enable",
+    "arp speed-limit source-ip maximum 30"
+   ]
+  },
+  "aruba": {
+   "mode": "Global config (AOS-S)",
+   "cmds": [
+    "arp-protect",
+    "arp-protect vlan 20",
+    "arp-protect validate src-mac dst-mac ip"
+   ]
+  }
+ },
+ {
+  "slug": "dai-arp-access-list-statik",
+  "title": "DAI için statik ARP access-list",
+  "cat": "L2 Güvenlik",
+  "note": "DHCP kullanmayan sabit IP'li cihazlar için ARP ACL ile IP-MAC eşleşmesi tanımlanır; yoksa DAI bu cihazların ARP'ini düşürür.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "arp access-list PLC-STATIC",
+    "permit ip host 10.0.20.50 mac host 0011.2233.4455",
+    "ip arp inspection filter PLC-STATIC vlan 20"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "user-bind static ip-address 10.0.20.50 mac-address 0011-2233-4455 interface GigabitEthernet0/0/5 vlan 20",
+    "arp anti-attack check user-bind enable"
+   ]
+  },
+  "aruba": {
+   "mode": "Global config (AOS-S)",
+   "cmds": [
+    "arp-protect vlan 20",
+    "arp-protect trust 24"
+   ]
+  }
+ },
+ {
+  "slug": "dhcp-snooping-option82",
+  "title": "DHCP snooping Option 82 yönetimi",
+  "cat": "L2 Güvenlik",
+  "note": "Switch DHCP isteğine Option 82 ekler; relay'den gelen paketlerde untrusted portta düşme sorunu için allow-untrusted gerekebilir.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ip dhcp snooping information option",
+    "ip dhcp snooping information option format remote-id hostname",
+    "ip dhcp snooping information option allow-untrusted"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "dhcp option82 insert enable",
+    "dhcp option82 rebuild enable"
+   ]
+  },
+  "aruba": {
+   "mode": "Global config (AOS-S)",
+   "cmds": [
+    "dhcp-snooping option 82 remote-id mac untrusted-policy drop"
+   ]
+  }
+ },
+ {
+  "slug": "dhcp-snooping-rate-limit",
+  "title": "DHCP snooping paket hız sınırı",
+  "cat": "L2 Güvenlik",
+  "note": "Portta saniyede kabul edilen DHCP paketini sınırlar; DHCP starvation saldırısını ve bozuk istemcileri durdurur.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "ip dhcp snooping limit rate 15",
+    "errdisable recovery cause dhcp-rate-limit",
+    "show ip dhcp snooping"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view",
+   "cmds": [
+    "dhcp snooping check dhcp-rate enable",
+    "dhcp snooping check dhcp-rate 15"
+   ]
+  },
+  "aruba": {
+   "mode": "Interface (AOS-S)",
+   "cmds": [
+    "interface 5",
+    "rate-limit bcast in percent 5"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-stub-area-yapilandirma",
+  "title": "OSPF stub area yapılandırma",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Stub ayarı area içindeki tüm router'larda aynı olmalı; aksi halde E-bit uyuşmazlığı yüzünden komşuluk kurulmaz. Stub area'da ASBR ve Type 5 LSA bulunamaz.",
+  "cisco": {
+   "mode": "Global configuration (router ospf)",
+   "cmds": [
+    "router ospf 1",
+    "area 1 stub",
+    "do show ip ospf | include Area|stub"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (OSPF area view)",
+   "cmds": [
+    "ospf 1",
+    "area 1",
+    "stub",
+    "display ospf brief"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config-ospf-1 (AOS-S: router ospf, area 1 stub 10)",
+   "cmds": [
+    "router ospf 1",
+    "area 0.0.0.1 stub",
+    "show ip ospf"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-totally-stubby-area",
+  "title": "OSPF totally stubby area (no-summary)",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "no-summary yalnızca ABR'de gereklidir; iç router'larda sadece 'stub' yeterli. Type 3 LSA'lar da filtrelenir, area yalnızca varsayılan rota öğrenir.",
+  "cisco": {
+   "mode": "Global configuration (router ospf) on the ABR",
+   "cmds": [
+    "router ospf 1",
+    "area 1 stub no-summary",
+    "do show ip route ospf"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (OSPF area view) on the ABR",
+   "cmds": [
+    "ospf 1",
+    "area 1",
+    "stub no-summary",
+    "display ospf lsdb summary"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config-ospf-1 (AOS-S: area 1 stub 10 no-summary)",
+   "cmds": [
+    "router ospf 1",
+    "area 0.0.0.1 stub no-summary",
+    "show ip route ospf"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-nssa-area-yapilandirma",
+  "title": "OSPF NSSA area yapılandırma",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "NSSA'da ASBR dış rotaları Type 7 LSA olarak taşır, ABR bunları Type 5'e çevirir. Tüm area router'larında 'nssa' aynı olmalı.",
+  "cisco": {
+   "mode": "Global configuration (router ospf)",
+   "cmds": [
+    "router ospf 1",
+    "area 2 nssa",
+    "do show ip ospf database nssa-external"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (OSPF area view)",
+   "cmds": [
+    "ospf 1",
+    "area 2",
+    "nssa",
+    "display ospf lsdb nssa"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config-ospf-1 (AOS-S: area 2 nssa)",
+   "cmds": [
+    "router ospf 1",
+    "area 0.0.0.2 nssa",
+    "show ip ospf"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-totally-nssa-no-summary",
+  "title": "OSPF totally NSSA (nssa no-summary)",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "ABR'de no-summary verilince Type 3 LSA'lar area'ya girmez ve varsayılan rota Type 3 olarak gönderilir; Type 7 çıkışı çalışmaya devam eder.",
+  "cisco": {
+   "mode": "Global configuration (router ospf) on the ABR",
+   "cmds": [
+    "router ospf 1",
+    "area 2 nssa no-summary",
+    "do show ip ospf database summary"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (OSPF area view) on the ABR",
+   "cmds": [
+    "ospf 1",
+    "area 2",
+    "nssa no-summary",
+    "display ospf lsdb summary"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config-ospf-1 (AOS-S: area 2 nssa no-summary)",
+   "cmds": [
+    "router ospf 1",
+    "area 0.0.0.2 nssa no-summary",
+    "show ip route ospf"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-reference-bandwidth-ayari",
+  "title": "OSPF reference bandwidth ayarlama",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Varsayılan 100 Mbps'te 1G ve 10G arayüzler cost 1 alır. Referansı tüm router'larda aynı değere (ör. 100000 Mbps) çekmek gerekir.",
+  "cisco": {
+   "mode": "Global configuration (router ospf)",
+   "cmds": [
+    "router ospf 1",
+    "auto-cost reference-bandwidth 100000",
+    "do show ip ospf interface brief"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (OSPF view)",
+   "cmds": [
+    "ospf 1",
+    "bandwidth-reference 100000",
+    "display ospf interface"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config-ospf-1 (AOS-S: router ospf)",
+   "cmds": [
+    "router ospf 1",
+    "reference-bandwidth 100000",
+    "show ip ospf interface"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-lsdb-goruntuleme",
+  "title": "OSPF LSDB görüntüleme",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "LSDB area bazında tutulur ve aynı area'daki tüm router'larda aynı olmalıdır. Cisco çıktısı 'Age', 'Seq#' ve 'Checksum' ile LSA tazeliğini gösterir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip ospf database",
+    "show ip ospf database database-summary"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ospf lsdb",
+    "display ospf lsdb brief"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX operator/manager (AOS-S: show ip ospf link-state)",
+   "cmds": [
+    "show ip ospf lsdb"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-lsa-turune-gore-sorgu",
+  "title": "OSPF LSA türüne göre sorgulama",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Type 1 router, 2 network, 3 summary, 4 asbr-summary, 5 external, 7 NSSA external. Tür seçmek, büyük LSDB'de aranan kaydı hızla bulmanızı sağlar.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip ospf database router 1.1.1.1",
+    "show ip ospf database network",
+    "show ip ospf database summary",
+    "show ip ospf database external"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ospf lsdb router",
+    "display ospf lsdb network",
+    "display ospf lsdb summary",
+    "display ospf lsdb ase"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX operator/manager",
+   "cmds": [
+    "show ip ospf lsdb router",
+    "show ip ospf lsdb network",
+    "show ip ospf lsdb summary"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-dr-bdr-priority-ayari",
+  "title": "OSPF DR/BDR priority ayarlama",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "DR seçimi preemptive değildir; priority değişikliği çalışan DR'yi hemen değiştirmez. Priority 0 router'ı seçimden tamamen çıkarır.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet0/0",
+    "ip ospf priority 100",
+    "do show ip ospf neighbor",
+    "do show ip ospf interface GigabitEthernet0/0"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface GigabitEthernet0/0/1",
+    "ospf dr-priority 100",
+    "display ospf peer",
+    "display ospf interface GigabitEthernet0/0/1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX interface (AOS-S: vlan 10 context)",
+   "cmds": [
+    "interface vlan 10",
+    "ip ospf priority 100",
+    "show ip ospf neighbor"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-network-type-point-to-point",
+  "title": "OSPF network type point-to-point yapma",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "İki router'lı Ethernet linkte p2p kullanmak DR seçimini ortadan kaldırır ve komşuluğu hızlandırır. Linkin iki ucu da aynı tipte olmalı.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet0/1",
+    "ip ospf network point-to-point",
+    "do show ip ospf interface GigabitEthernet0/1"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface GigabitEthernet0/0/2",
+    "ospf network-type p2p",
+    "display ospf interface GigabitEthernet0/0/2"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX interface",
+   "cmds": [
+    "interface 1/1/1",
+    "ip ospf network point-to-point",
+    "show ip ospf interface"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-interface-brief-durumu",
+  "title": "OSPF arayüz özeti ve durumu",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Cisco 'show ip ospf interface brief' tek satırda area, cost ve komşu sayısını verir; Huawei'de özet yok, 'display ospf interface' tüm arayüzleri tablo olarak basar.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip ospf interface brief",
+    "show ip ospf interface GigabitEthernet0/1"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ospf interface",
+    "display ospf interface GigabitEthernet0/0/1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX operator/manager (AOS-S: show ip ospf interface)",
+   "cmds": [
+    "show ip ospf interface brief",
+    "show ip ospf interface"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-router-id-ayari",
+  "title": "OSPF router ID ayarlama",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Router ID değişikliği process yeniden başlatılana kadar devreye girmez; Cisco'da 'clear ip ospf process', Huawei'de 'reset ospf 1 process' gerekir ve komşulukları kısa süre düşürür.",
+  "cisco": {
+   "mode": "Global configuration (router ospf)",
+   "cmds": [
+    "router ospf 1",
+    "router-id 1.1.1.1",
+    "do clear ip ospf process",
+    "do show ip ospf | include Router ID"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "ospf 1 router-id 1.1.1.1",
+    "quit",
+    "return",
+    "reset ospf 1 process",
+    "display ospf brief"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config-ospf-1 (AOS-S: ip router-id global)",
+   "cmds": [
+    "router ospf 1",
+    "router-id 1.1.1.1",
+    "show ip ospf"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-default-information-originate",
+  "title": "OSPF'ye default route enjekte etme",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Cisco'da 'always' olmadan default yalnızca yönlendirme tablosunda 0.0.0.0/0 varsa yayılır; Huawei'de karşılığı 'default-route-advertise' komutudur.",
+  "cisco": {
+   "mode": "Global configuration (router ospf)",
+   "cmds": [
+    "router ospf 1",
+    "default-information originate",
+    "default-information originate always metric 10 metric-type 1",
+    "do show ip ospf database external"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (OSPF view)",
+   "cmds": [
+    "ospf 1",
+    "default-route-advertise",
+    "default-route-advertise always cost 10 type 1",
+    "display ospf lsdb ase"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config-ospf-1",
+   "cmds": [
+    "router ospf 1",
+    "default-information originate",
+    "show ip ospf lsdb"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-redistribute-static",
+  "title": "Static route'ları OSPF'ye redistribute etme",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Cisco'da 'subnets' anahtar kelimesi unutulursa yalnızca classful ağlar dağıtılır; Huawei'de 'import-route static' ile aynı iş yapılır.",
+  "cisco": {
+   "mode": "Global configuration (router ospf)",
+   "cmds": [
+    "router ospf 1",
+    "redistribute static subnets metric 100 metric-type 2",
+    "do show ip ospf database external",
+    "do show ip route ospf"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (OSPF view)",
+   "cmds": [
+    "ospf 1",
+    "import-route static cost 100 type 2",
+    "display ospf lsdb ase",
+    "display ip routing-table protocol ospf"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config-ospf-1 (AOS-S: router ospf)",
+   "cmds": [
+    "router ospf 1",
+    "redistribute static",
+    "show ip ospf lsdb"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-abr-area-range-ozetleme",
+  "title": "ABR üzerinde OSPF alanlar arası özetleme",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Özet rota ABR'da area range ile üretilir; Cisco/Huawei'de özet, kapsadığı en az bir alt ağ varken yayılır ve boşalırsa geri çekilir.",
+  "cisco": {
+   "mode": "Global configuration (router ospf) on the ABR",
+   "cmds": [
+    "router ospf 1",
+    "area 1 range 10.1.0.0 255.255.0.0",
+    "do show ip route ospf"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (OSPF area view) on the ABR",
+   "cmds": [
+    "ospf 1",
+    "area 1",
+    "abr-summary 10.1.0.0 255.255.0.0",
+    "display ospf abr-asbr"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config-ospf-1 (AOS-S: area 1 range 10.1.0.0/16 type summary)",
+   "cmds": [
+    "router ospf 1",
+    "area 0.0.0.1 range 10.1.0.0/16",
+    "show ip route ospf"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-virtual-link",
+  "title": "OSPF virtual link yapılandırma",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Virtual link, area 0'a doğrudan bağlanamayan bir alanı ortak bir transit alan üzerinden omurgaya bağlar; transit alan stub olamaz.",
+  "cisco": {
+   "mode": "Global configuration (router ospf) on both ABRs",
+   "cmds": [
+    "router ospf 1",
+    "area 1 virtual-link 2.2.2.2",
+    "do show ip ospf virtual-links"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (OSPF area view) on both ABRs",
+   "cmds": [
+    "ospf 1",
+    "area 1",
+    "vlink-peer 2.2.2.2",
+    "display ospf vlink"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config-ospf-1 (AOS-S: area 1 virtual-link 2.2.2.2)",
+   "cmds": [
+    "router ospf 1",
+    "area 0.0.0.1 virtual-link 2.2.2.2",
+    "show ip ospf neighbors"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-hello-dead-interval-ayari",
+  "title": "OSPF hello ve dead interval ayarlama",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Hello/dead değerleri iki komşuda birebir aynı olmalıdır; Cisco'da hello değişince dead otomatik 4 katı olur, Huawei'de ayrı ayrı verilmesi gerekir.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet0/1",
+    "ip ospf hello-interval 5",
+    "ip ospf dead-interval 20",
+    "do show ip ospf interface GigabitEthernet0/1"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface GigabitEthernet0/0/1",
+    "ospf timer hello 5",
+    "ospf timer dead 20",
+    "display ospf interface GigabitEthernet0/0/1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX interface (AOS-S: vlan 10 context)",
+   "cmds": [
+    "interface 1/1/1",
+    "ip ospf hello-interval 5",
+    "ip ospf dead-interval 20",
+    "show ip ospf interface"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-bfd-etkinlestirme",
+  "title": "OSPF için BFD etkinleştirme",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "BFD, hat kopmasını OSPF dead timer'dan çok daha hızlı (genelde 1 saniye altı) fark eder; iki uçta da BFD açık ve zamanlayıcılar uyumlu olmalıdır.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet0/1",
+    "bfd interval 300 min_rx 300 multiplier 3",
+    "ip ospf bfd",
+    "do show bfd neighbors"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "bfd",
+    "quit",
+    "interface GigabitEthernet0/0/1",
+    "ospf bfd enable",
+    "ospf bfd min-tx-interval 300 min-rx-interval 300 detect-multiplier 3",
+    "display bfd session all"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX interface (platform/version dependent)",
+   "cmds": [
+    "interface 1/1/1",
+    "ip ospf bfd",
+    "show bfd"
+   ]
+  }
+ },
+ {
+  "slug": "rip-v2-temel-yapilandirma",
+  "title": "RIPv2 temel yapılandırma",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "RIP varsayılan olarak otomatik özetleme yapar; ayrık alt ağlarda sorun çıkmaması için Cisco'da 'no auto-summary', Huawei'de 'undo summary' kullanılır.",
+  "cisco": {
+   "mode": "Global configuration (router rip)",
+   "cmds": [
+    "router rip",
+    "version 2",
+    "no auto-summary",
+    "network 10.0.0.0",
+    "do show ip protocols"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (RIP view)",
+   "cmds": [
+    "rip 1",
+    "version 2",
+    "undo summary",
+    "network 10.0.0.0",
+    "display rip 1 interface"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S global / VLAN context (AOS-CX RIP desteği platforma bağlıdır)",
+   "cmds": [
+    "router rip",
+    "vlan 10",
+    "ip rip",
+    "show ip rip"
+   ]
+  }
+ },
+ {
+  "slug": "rip-veritabani-ve-rota-goruntuleme",
+  "title": "RIP rotaları ve veritabanını görüntüleme",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Cisco 'show ip rip database' yalnızca RIP rotalarını gösterir; Huawei'de rota ve arayüz bilgisi 'display rip <process> route' ve 'interface' ile ayrı alınır.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip rip database",
+    "show ip route rip",
+    "show ip protocols"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display rip 1 route",
+    "display rip 1 interface",
+    "display ip routing-table protocol rip"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S Manager (AOS-CX RIP desteği platforma bağlıdır)",
+   "cmds": [
+    "show ip rip",
+    "show ip rip interface",
+    "show ip route rip"
+   ]
+  }
+ },
+ {
+  "slug": "isis-temel-yapilandirma",
+  "title": "IS-IS temel yapılandırma",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "IS-IS IP değil CLNS/NET adresiyle çalışır; NET'in son baytı (NSEL) 00 olmalı ve System ID 6 bayttır. Aruba switch'lerde IS-IS yoktur.",
+  "cisco": {
+   "mode": "Global configuration (IOS-XE, router isis)",
+   "cmds": [
+    "router isis CORE",
+    "net 49.0001.0100.0000.0001.00",
+    "is-type level-2-only",
+    "interface GigabitEthernet0/1",
+    "ip router isis CORE",
+    "do show isis neighbors"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (IS-IS view)",
+   "cmds": [
+    "isis 1",
+    "network-entity 49.0001.0100.0000.0001.00",
+    "is-level level-2",
+    "quit",
+    "interface GigabitEthernet0/0/1",
+    "isis enable 1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX / AOS-S: IS-IS desteklenmez, OSPF alternatifi",
+   "cmds": [
+    "router ospf 1",
+    "show ip ospf neighbor"
+   ]
+  }
+ },
+ {
+  "slug": "isis-komsu-goruntuleme",
+  "title": "IS-IS komşuluklarını görüntüleme",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Cisco 'show isis neighbors' ve Huawei 'display isis peer' State/Type'ı gösterir; Up değilse genelde level uyuşmazlığı, MTU veya kimlik doğrulama sorunu vardır.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show isis neighbors",
+    "show isis neighbors detail",
+    "show clns interface GigabitEthernet0/1"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display isis peer",
+    "display isis peer verbose",
+    "display isis interface"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX / AOS-S: IS-IS desteklenmez, OSPF alternatifi",
+   "cmds": [
+    "show ip ospf neighbor"
+   ]
+  }
+ },
+ {
+  "slug": "isis-lsp-veritabani-goruntuleme",
+  "title": "IS-IS LSP veritabanını görüntüleme",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "IS-IS'te LSDB 'LSP' kayıtlarından oluşur; Cisco 'show isis database' ve Huawei 'display isis lsdb' çıktısında LSP ID'nin sonundaki -00 kaydı parça numarasıdır.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show isis database",
+    "show isis database detail",
+    "show isis hostname"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display isis lsdb",
+    "display isis lsdb verbose",
+    "display isis route"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX / AOS-S: IS-IS desteklenmez, OSPF alternatifi",
+   "cmds": [
+    "show ip ospf lsdb"
+   ]
+  }
+ },
+ {
+  "slug": "isis-metric-style-wide",
+  "title": "IS-IS metric-style wide ayarı",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Varsayılan 'narrow' metrik arayüz başına en çok 63'tür; modern ağlarda ve MPLS-TE için 'wide' (24 bit) kullanılır ve tüm router'larda aynı olmalıdır.",
+  "cisco": {
+   "mode": "Global configuration (router isis)",
+   "cmds": [
+    "router isis CORE",
+    "metric-style wide",
+    "interface GigabitEthernet0/1",
+    "isis metric 100 level-2",
+    "do show isis database detail"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (IS-IS view)",
+   "cmds": [
+    "isis 1",
+    "cost-style wide",
+    "quit",
+    "interface GigabitEthernet0/0/1",
+    "isis cost 100 level-2",
+    "display isis route"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX / AOS-S: IS-IS desteklenmez, OSPF alternatifi",
+   "cmds": [
+    "router ospf 1",
+    "reference-bandwidth 100000",
+    "show ip ospf interface"
+   ]
+  }
+ },
+ {
+  "slug": "ospf-ecmp-maximum-paths",
+  "title": "OSPF ECMP maximum-paths ayarı",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "Aynı maliyetli yollar arasında yük paylaşımı için eşit yol sayısı artırılır; Aruba AOS-S'te ECMP global 'ip load-sharing' ile ayarlanır, OSPF altında değil.",
+  "cisco": {
+   "mode": "Global configuration (router ospf)",
+   "cmds": [
+    "router ospf 1",
+    "maximum-paths 4",
+    "do show ip route 10.20.0.0",
+    "do show ip protocols"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (OSPF view)",
+   "cmds": [
+    "ospf 1",
+    "maximum load-balancing 4",
+    "display ip routing-table 10.20.0.0"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config-ospf-1 (AOS-S: ip load-sharing 4 global)",
+   "cmds": [
+    "router ospf 1",
+    "maximum-paths 4",
+    "show ip route 10.20.0.0"
+   ]
+  }
+ },
+ {
+  "slug": "ibgp-update-source-loopback",
+  "title": "iBGP komşuluğu ve update-source Loopback",
+  "cat": "BGP ve MPLS",
+  "note": "iBGP oturumunu Loopback'ler arasında kurmak, fiziksel link düşse bile alternatif yoldan oturumun ayakta kalmasını sağlar. Huawei'de karşılığı connect-interface'tir.",
+  "cisco": {
+   "mode": "Router configuration (config-router)",
+   "cmds": [
+    "router bgp 65001",
+    "neighbor 10.255.0.2 remote-as 65001",
+    "neighbor 10.255.0.2 update-source Loopback0"
+   ]
+  },
+  "huawei": {
+   "mode": "BGP view (system-view > bgp)",
+   "cmds": [
+    "bgp 65001",
+    "peer 10.255.0.2 as-number 65001",
+    "peer 10.255.0.2 connect-interface LoopBack0"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: BGP config (config-bgp)",
+   "cmds": [
+    "router bgp 65001",
+    "neighbor 10.255.0.2 remote-as 65001",
+    "neighbor 10.255.0.2 update-source loopback 0"
+   ]
+  }
+ },
+ {
+  "slug": "ebgp-multihop-loopback-peering",
+  "title": "eBGP multihop ile Loopback komşuluğu",
+  "cat": "BGP ve MPLS",
+  "note": "eBGP paketleri varsayılan TTL=1 ile gider; komşu doğrudan bağlı değilse multihop şarttır. Junos'ta multihop ttl, MikroTik'te multihop=yes kullanılır.",
+  "cisco": {
+   "mode": "Router configuration (config-router)",
+   "cmds": [
+    "router bgp 65001",
+    "neighbor 10.255.0.2 remote-as 65002",
+    "neighbor 10.255.0.2 ebgp-multihop 3",
+    "neighbor 10.255.0.2 update-source Loopback0"
+   ]
+  },
+  "huawei": {
+   "mode": "BGP view",
+   "cmds": [
+    "bgp 65001",
+    "peer 10.255.0.2 as-number 65002",
+    "peer 10.255.0.2 ebgp-max-hop 3",
+    "peer 10.255.0.2 connect-interface LoopBack0"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: BGP config (config-bgp)",
+   "cmds": [
+    "router bgp 65001",
+    "neighbor 10.255.0.2 remote-as 65002",
+    "neighbor 10.255.0.2 ebgp-multihop 3",
+    "neighbor 10.255.0.2 update-source loopback 0"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-neighbor-detay-durum",
+  "title": "BGP komşu detayı ve oturum durumu",
+  "cat": "BGP ve MPLS",
+  "note": "Oturumun state, son reset sebebi, timer ve capability bilgisini tek yerden verir. Cisco'da '| include' ile çıktıyı daraltmak büyük komşu listelerinde işi hızlandırır.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip bgp neighbors 10.0.0.2",
+    "show ip bgp neighbors 10.0.0.2 | include BGP state|Last reset|Hold time"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display bgp peer 10.0.0.2 verbose",
+    "display bgp peer 10.0.0.2 log-info"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Operator / Manager",
+   "cmds": [
+    "show bgp neighbors 10.0.0.2"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-received-routes-goruntuleme",
+  "title": "Komşudan alınan rotaları görüntüleme",
+  "cat": "BGP ve MPLS",
+  "note": "Politika uygulanmadan önceki ham rotaları görmek için Cisco'da soft-reconfiguration inbound, Huawei'de keep-all-routes, Junos'ta keep all gerekir.",
+  "cisco": {
+   "mode": "Privileged EXEC / Router configuration",
+   "cmds": [
+    "show ip bgp neighbors 10.0.0.2 received-routes",
+    "show ip bgp neighbors 10.0.0.2 routes",
+    "router bgp 65001",
+    "neighbor 10.0.0.2 soft-reconfiguration inbound"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / BGP view",
+   "cmds": [
+    "display bgp routing-table peer 10.0.0.2 received-routes",
+    "display bgp routing-table peer 10.0.0.2 received-routes active",
+    "peer 10.0.0.2 keep-all-routes"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Operator / BGP address-family",
+   "cmds": [
+    "show bgp ipv4 unicast neighbors 10.0.0.2 received-routes",
+    "neighbor 10.0.0.2 soft-reconfiguration inbound"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-advertised-routes-goruntuleme",
+  "title": "Komşuya duyurulan rotaları görüntüleme",
+  "cat": "BGP ve MPLS",
+  "note": "Giden politika uygulandıktan sonra komşuya gerçekte hangi prefix'lerin gittiğini gösterir; peering/transit sözleşmelerinde prefix sızıntısını yakalamak için kullanılır.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip bgp neighbors 10.0.0.2 advertised-routes"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display bgp routing-table peer 10.0.0.2 advertised-routes"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Operator / Manager",
+   "cmds": [
+    "show bgp ipv4 unicast neighbors 10.0.0.2 advertised-routes"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-prefix-list-filtreleme",
+  "title": "BGP komşusuna prefix-list ile rota filtreleme",
+  "cat": "BGP ve MPLS",
+  "note": "Prefix-list ile gelen veya giden rotaları prefix ve uzunluk aralığına göre filtrelersiniz. Huawei'de adı ip ip-prefix, Junos'ta route-filter'dır.",
+  "cisco": {
+   "mode": "Global / Router configuration",
+   "cmds": [
+    "ip prefix-list CUST-IN seq 10 permit 192.168.0.0/16 le 24",
+    "router bgp 65001",
+    "neighbor 10.0.0.2 prefix-list CUST-IN in",
+    "show ip prefix-list CUST-IN"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / BGP view",
+   "cmds": [
+    "ip ip-prefix CUST-IN index 10 permit 192.168.0.0 16 greater-equal 16 less-equal 24",
+    "bgp 65001",
+    "peer 10.0.0.2 ip-prefix CUST-IN import",
+    "display ip ip-prefix CUST-IN"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Global / BGP address-family",
+   "cmds": [
+    "ip prefix-list CUST-IN seq 10 permit 192.168.0.0/16 le 24",
+    "router bgp 65001",
+    "neighbor 10.0.0.2 prefix-list CUST-IN in",
+    "show ip prefix-list CUST-IN"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-route-map-as-path-prepend",
+  "title": "Route-map ile AS-path prepend (giden trafik tercihi)",
+  "cat": "BGP ve MPLS",
+  "note": "Gelen trafiği yedek hata yönlendirmek için duyurulan rotaya kendi AS'nizi tekrar eklersiniz. Huawei'de route-policy ve apply as-path kullanılır.",
+  "cisco": {
+   "mode": "Global / Router configuration",
+   "cmds": [
+    "route-map PREPEND-OUT permit 10",
+    "set as-path prepend 65001 65001 65001",
+    "router bgp 65001",
+    "neighbor 10.0.0.2 route-map PREPEND-OUT out",
+    "show route-map PREPEND-OUT"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / BGP view",
+   "cmds": [
+    "route-policy PREPEND-OUT permit node 10",
+    "apply as-path 65001 65001 65001 additive",
+    "bgp 65001",
+    "peer 10.0.0.2 route-policy PREPEND-OUT export"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Global / BGP address-family",
+   "cmds": [
+    "route-map PREPEND-OUT permit seq 10",
+    "set as-path prepend 65001 65001 65001",
+    "router bgp 65001",
+    "neighbor 10.0.0.2 route-map PREPEND-OUT out"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-as-path-access-list-filtre",
+  "title": "AS-path regex ile BGP rota filtreleme",
+  "cat": "BGP ve MPLS",
+  "note": "AS-path erişim listesi, rotaları geçtikleri AS'lere göre regex ile süzer. '^65002$' yalnızca doğrudan komşunun kendi prefix'lerini eşler.",
+  "cisco": {
+   "mode": "Global / Router configuration",
+   "cmds": [
+    "ip as-path access-list 10 permit ^65002$",
+    "router bgp 65001",
+    "neighbor 10.0.0.2 filter-list 10 in",
+    "show ip bgp regexp ^65002$",
+    "show ip as-path-access-list 10"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / BGP view",
+   "cmds": [
+    "ip as-path-filter 10 permit ^65002$",
+    "bgp 65001",
+    "peer 10.0.0.2 as-path-filter 10 import",
+    "display bgp routing-table regular-expression ^65002$"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Global / BGP address-family",
+   "cmds": [
+    "ip aspath-list FROM-65002 seq 10 permit ^65002$",
+    "route-map ASP-IN permit seq 10",
+    "match aspath-list FROM-65002",
+    "router bgp 65001",
+    "neighbor 10.0.0.2 route-map ASP-IN in"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-local-preference-ayari",
+  "title": "Local-preference ile giden trafik tercihi",
+  "cat": "BGP ve MPLS",
+  "note": "Local-preference AS içinde taşınır ve en yüksek değer kazanır; varsayılan 100'dür. Giden trafik için hangi çıkışın tercih edileceğini belirler.",
+  "cisco": {
+   "mode": "Global / Router configuration",
+   "cmds": [
+    "route-map LP-200 permit 10",
+    "set local-preference 200",
+    "router bgp 65001",
+    "neighbor 10.0.0.2 route-map LP-200 in",
+    "show ip bgp"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / BGP view",
+   "cmds": [
+    "route-policy LP-200 permit node 10",
+    "apply local-preference 200",
+    "bgp 65001",
+    "peer 10.0.0.2 route-policy LP-200 import",
+    "display bgp routing-table"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Global / BGP address-family",
+   "cmds": [
+    "route-map LP-200 permit seq 10",
+    "set local-preference 200",
+    "router bgp 65001",
+    "neighbor 10.0.0.2 route-map LP-200 in",
+    "show bgp ipv4 unicast"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-med-ayari",
+  "title": "MED (metric) değerini komşuya ayarlama",
+  "cat": "BGP ve MPLS",
+  "note": "MED yalnızca komşu AS'e giden yol tercihini etkiler ve aynı komşu AS'ten gelen yollar arasında karşılaştırılır; düşük MED tercih edilir.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "route-map SET-MED permit 10",
+    " set metric 50",
+    "router bgp 65001",
+    " neighbor 203.0.113.2 route-map SET-MED out"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "route-policy SET-MED permit node 10",
+    " apply cost 50",
+    "bgp 65001",
+    " peer 203.0.113.2 route-policy SET-MED export"
+   ]
+  },
+  "aruba": {
+   "mode": "Global configuration (AOS-CX)",
+   "cmds": [
+    "route-map SET-MED permit seq 10",
+    " set metric 50",
+    "router bgp 65001",
+    " address-family ipv4 unicast",
+    "  neighbor 203.0.113.2 route-map SET-MED out"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-weight-ayari",
+  "title": "Weight ile yerel yol tercihi (Cisco)",
+  "cat": "BGP ve MPLS",
+  "note": "Weight Cisco'ya özgüdür, yalnızca yerel yönlendiricide geçerlidir ve komşulara iletilmez; en yüksek değer kazanır. Huawei karşılığı preferred-value'dur.",
+  "cisco": {
+   "mode": "Router configuration (config-router)",
+   "cmds": [
+    "neighbor 203.0.113.2 weight 200",
+    "end",
+    "clear ip bgp 203.0.113.2 soft in"
+   ]
+  },
+  "huawei": {
+   "mode": "BGP view",
+   "cmds": [
+    "peer 203.0.113.2 preferred-value 200",
+    "quit",
+    "refresh bgp 203.0.113.2 import"
+   ]
+  },
+  "aruba": {
+   "mode": "Global configuration (AOS-CX)",
+   "cmds": [
+    "route-map PREFER-ISP1 permit seq 10",
+    " set weight 200",
+    "router bgp 65001",
+    " address-family ipv4 unicast",
+    "  neighbor 203.0.113.2 route-map PREFER-ISP1 in"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-community-gonderme",
+  "title": "BGP community ekleme ve gönderme",
+  "cat": "BGP ve MPLS",
+  "note": "Community'ler komşuya varsayılan olarak gönderilmez (Cisco/Huawei/AOS-CX); send-community veya advertise-community gerekir. Junos varsayılan olarak iletir.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "route-map SET-COMM permit 10",
+    " set community 65001:100 additive",
+    "router bgp 65001",
+    " neighbor 203.0.113.2 send-community both",
+    " neighbor 203.0.113.2 route-map SET-COMM out"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "route-policy SET-COMM permit node 10",
+    " apply community 65001:100 additive",
+    "bgp 65001",
+    " peer 203.0.113.2 route-policy SET-COMM export",
+    " peer 203.0.113.2 advertise-community"
+   ]
+  },
+  "aruba": {
+   "mode": "Global configuration (AOS-CX)",
+   "cmds": [
+    "route-map SET-COMM permit seq 10",
+    " set community 65001:100 additive",
+    "router bgp 65001",
+    " address-family ipv4 unicast",
+    "  neighbor 203.0.113.2 send-community both",
+    "  neighbor 203.0.113.2 route-map SET-COMM out"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-soft-reset-inbound",
+  "title": "BGP soft reset (inbound, route refresh)",
+  "cat": "BGP ve MPLS",
+  "note": "Oturumu düşürmeden gelen politikayı yeniden uygular; route refresh yeteneği iki tarafta da olmalıdır, aksi halde soft-reconfiguration inbound gerekir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "clear ip bgp 203.0.113.2 soft in",
+    "show ip bgp neighbors 203.0.113.2 | include refresh"
+   ]
+  },
+  "huawei": {
+   "mode": "User view",
+   "cmds": [
+    "refresh bgp 203.0.113.2 import",
+    "display bgp peer 203.0.113.2 verbose"
+   ]
+  },
+  "aruba": {
+   "mode": "Privileged EXEC (AOS-CX)",
+   "cmds": [
+    "clear bgp ipv4 unicast 203.0.113.2 soft in"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-soft-reset-outbound",
+  "title": "BGP soft reset (outbound)",
+  "cat": "BGP ve MPLS",
+  "note": "Giden politikayı yeniden uygulayıp prefix'leri komşuya tekrar gönderir; oturum düşmez ve komşuda route refresh gerekmez.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "clear ip bgp 203.0.113.2 soft out",
+    "show ip bgp neighbors 203.0.113.2 advertised-routes"
+   ]
+  },
+  "huawei": {
+   "mode": "User view",
+   "cmds": [
+    "refresh bgp 203.0.113.2 export",
+    "display bgp routing-table peer 203.0.113.2 advertised-routes"
+   ]
+  },
+  "aruba": {
+   "mode": "Privileged EXEC (AOS-CX)",
+   "cmds": [
+    "clear bgp ipv4 unicast 203.0.113.2 soft out"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-komsu-hard-reset",
+  "title": "BGP oturumunu sıfırlama (hard reset)",
+  "cat": "BGP ve MPLS",
+  "note": "Oturum düşer ve yeniden kurulur; üretimde trafiği keser. Soft reset yetmediğinde (ör. AS numarası, update-source, kimlik doğrulama değişikliği) kullanın.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "clear ip bgp 203.0.113.2",
+    "clear ip bgp 203.0.113.2 in prefix-filter",
+    "show ip bgp summary"
+   ]
+  },
+  "huawei": {
+   "mode": "User view",
+   "cmds": [
+    "reset bgp 203.0.113.2",
+    "display bgp peer"
+   ]
+  },
+  "aruba": {
+   "mode": "Privileged EXEC (AOS-CX)",
+   "cmds": [
+    "clear bgp ipv4 unicast 203.0.113.2",
+    "show bgp ipv4 unicast summary"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-route-reflector-client",
+  "title": "Route reflector ve client tanımlama",
+  "cat": "BGP ve MPLS",
+  "note": "iBGP full-mesh gereksinimini kaldırır. Reflector client'tan öğrendiği yolları diğer client ve non-client'lara yansıtır; cluster-id döngüyü önler.",
+  "cisco": {
+   "mode": "Router configuration (config-router)",
+   "cmds": [
+    "bgp cluster-id 10.255.0.1",
+    "neighbor 10.255.0.2 remote-as 65001",
+    "neighbor 10.255.0.2 update-source Loopback0",
+    "address-family ipv4",
+    "neighbor 10.255.0.2 route-reflector-client"
+   ]
+  },
+  "huawei": {
+   "mode": "BGP view",
+   "cmds": [
+    "reflector cluster-id 10.255.0.1",
+    "peer 10.255.0.2 as-number 65001",
+    "peer 10.255.0.2 connect-interface LoopBack0",
+    "ipv4-family unicast",
+    " peer 10.255.0.2 reflect-client"
+   ]
+  },
+  "aruba": {
+   "mode": "BGP address-family (AOS-CX)",
+   "cmds": [
+    "router bgp 65001",
+    " bgp cluster-id 10.255.0.1",
+    " neighbor 10.255.0.2 remote-as 65001",
+    " address-family ipv4 unicast",
+    "  neighbor 10.255.0.2 route-reflector-client"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-peer-group-sablon",
+  "title": "Peer-group ile komşu şablonu",
+  "cat": "BGP ve MPLS",
+  "note": "Aynı politikalı çok sayıda komşuyu tek şablonda toplar; yapılandırmayı kısaltır ve güncelleme üretimini verimli kılar.",
+  "cisco": {
+   "mode": "Router configuration (config-router)",
+   "cmds": [
+    "neighbor IBGP-PEERS peer-group",
+    "neighbor IBGP-PEERS remote-as 65001",
+    "neighbor IBGP-PEERS update-source Loopback0",
+    "neighbor IBGP-PEERS next-hop-self",
+    "neighbor 10.255.0.2 peer-group IBGP-PEERS",
+    "neighbor 10.255.0.3 peer-group IBGP-PEERS"
+   ]
+  },
+  "huawei": {
+   "mode": "BGP view",
+   "cmds": [
+    "group IBGP-PEERS internal",
+    "peer IBGP-PEERS connect-interface LoopBack0",
+    "peer 10.255.0.2 group IBGP-PEERS",
+    "peer 10.255.0.3 group IBGP-PEERS"
+   ]
+  },
+  "aruba": {
+   "mode": "BGP configuration (AOS-CX)",
+   "cmds": [
+    "router bgp 65001",
+    " neighbor IBGP-PEERS peer-group",
+    " neighbor IBGP-PEERS remote-as 65001",
+    " neighbor 10.255.0.2 peer-group IBGP-PEERS",
+    " neighbor 10.255.0.3 peer-group IBGP-PEERS"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-graceful-restart",
+  "title": "BGP graceful restart etkinleştirme",
+  "cat": "BGP ve MPLS",
+  "note": "Control plane yeniden başlarken komşunun yolları stale tutmasını sağlar; forwarding kesilmez. İki tarafın da yeteneği desteklemesi gerekir.",
+  "cisco": {
+   "mode": "Router configuration (config-router)",
+   "cmds": [
+    "bgp graceful-restart",
+    "bgp graceful-restart restart-time 120",
+    "bgp graceful-restart stalepath-time 360",
+    "end",
+    "show ip bgp neighbors 203.0.113.2 | include Graceful"
+   ]
+  },
+  "huawei": {
+   "mode": "BGP view",
+   "cmds": [
+    "graceful-restart",
+    "graceful-restart timer restart 150",
+    "graceful-restart timer wait-for-rib 300",
+    "display bgp peer 203.0.113.2 verbose"
+   ]
+  },
+  "aruba": {
+   "mode": "BGP configuration (AOS-CX)",
+   "cmds": [
+    "router bgp 65001",
+    " bgp graceful-restart restart-time 120",
+    " bgp graceful-restart stalepath-time 360"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-bfd-komsu",
+  "title": "BGP komşusu için BFD (hızlı arıza tespiti)",
+  "cat": "BGP ve MPLS",
+  "note": "BFD, hold-timer'ı (varsayılan 180 sn) beklemeden saniyenin altında link/komşu arızasını BGP'ye bildirir. Her iki uçta da BFD açık olmalıdır.",
+  "cisco": {
+   "mode": "Interface / Router configuration",
+   "cmds": [
+    "interface GigabitEthernet0/0/1",
+    " bfd interval 300 min_rx 300 multiplier 3",
+    "router bgp 65001",
+    " neighbor 203.0.113.2 fall-over bfd",
+    "end",
+    "show bfd neighbors"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "bfd",
+    "bgp 65001",
+    " peer 203.0.113.2 bfd enable",
+    " peer 203.0.113.2 bfd min-tx-interval 300 min-rx-interval 300 detect-multiplier 3",
+    "display bfd session all"
+   ]
+  },
+  "aruba": {
+   "mode": "BGP configuration (AOS-CX)",
+   "cmds": [
+    "router bgp 65001",
+    " neighbor 203.0.113.2 fall-over bfd",
+    "show bfd"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-maximum-prefix",
+  "title": "Komşudan gelen prefix sayısını sınırlama",
+  "cat": "BGP ve MPLS",
+  "note": "maximum-prefix, hatalı bir komşunun full tabloyu sızdırıp router'ı doldurmasını önler. Eşik aşılınca uyarı verir, limit aşılınca oturumu düşürür.",
+  "cisco": {
+   "mode": "Router configuration (config-router)",
+   "cmds": [
+    "neighbor 203.0.113.2 maximum-prefix 1000 80 restart 5",
+    "end",
+    "show ip bgp neighbors 203.0.113.2 | include prefixes"
+   ]
+  },
+  "huawei": {
+   "mode": "BGP-IPv4 unicast view",
+   "cmds": [
+    "peer 203.0.113.2 route-limit 1000 80 idle-timeout 5",
+    "display bgp peer 203.0.113.2 verbose"
+   ]
+  },
+  "aruba": {
+   "mode": "BGP address-family (AOS-CX)",
+   "cmds": [
+    "router bgp 65001",
+    " address-family ipv4 unicast",
+    "  neighbor 203.0.113.2 maximum-prefix 1000 80"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-default-originate",
+  "title": "Komşuya default route gönderme",
+  "cat": "BGP ve MPLS",
+  "note": "Komşuya 0.0.0.0/0 yolunu, yerel tabloda olması gerekmeden (Cisco) gönderir. Branch/müşteri tarafı için en pratik yöntemdir.",
+  "cisco": {
+   "mode": "Router configuration (config-router)",
+   "cmds": [
+    "neighbor 10.1.1.2 default-originate",
+    "neighbor 10.1.1.2 default-originate route-map HAS-UPLINK"
+   ]
+  },
+  "huawei": {
+   "mode": "BGP view",
+   "cmds": [
+    "peer 10.1.1.2 default-route-advertise",
+    "peer 10.1.1.2 default-route-advertise route-policy HAS-UPLINK"
+   ]
+  },
+  "aruba": {
+   "mode": "BGP address-family (AOS-CX)",
+   "cmds": [
+    "router bgp 65001",
+    " address-family ipv4 unicast",
+    "  neighbor 10.1.1.2 default-originate"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-network-ifadesi",
+  "title": "network ile prefix duyurma",
+  "cat": "BGP ve MPLS",
+  "note": "network ifadesi, yönlendirme tablosunda birebir (aynı prefix/mask) bulunan bir yolu BGP'ye alır; tabloda yoksa duyurulmaz.",
+  "cisco": {
+   "mode": "Router configuration (config-router)",
+   "cmds": [
+    "network 192.168.10.0 mask 255.255.255.0",
+    "end",
+    "show ip bgp 192.168.10.0/24"
+   ]
+  },
+  "huawei": {
+   "mode": "BGP-IPv4 unicast view",
+   "cmds": [
+    "network 192.168.10.0 24",
+    "display bgp routing-table 192.168.10.0 24"
+   ]
+  },
+  "aruba": {
+   "mode": "BGP address-family (AOS-CX)",
+   "cmds": [
+    "router bgp 65001",
+    " address-family ipv4 unicast",
+    "  network 192.168.10.0/24"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-aggregate-summary-only",
+  "title": "BGP aggregate-address ile özetleme",
+  "cat": "BGP ve MPLS",
+  "note": "Aggregate, daha spesifik prefix'leri tek bir özet yola indirir; summary-only ile spesifikler komşulara gönderilmez. Aggregate için en az bir spesifik yol tabloda olmalıdır.",
+  "cisco": {
+   "mode": "Router configuration (config-router)",
+   "cmds": [
+    "aggregate-address 10.10.0.0 255.255.0.0 summary-only",
+    "end",
+    "show ip bgp 10.10.0.0/16"
+   ]
+  },
+  "huawei": {
+   "mode": "BGP-IPv4 unicast view",
+   "cmds": [
+    "aggregate 10.10.0.0 16 detail-suppressed",
+    "display bgp routing-table 10.10.0.0 16"
+   ]
+  },
+  "aruba": {
+   "mode": "BGP address-family (AOS-CX)",
+   "cmds": [
+    "router bgp 65001",
+    " address-family ipv4 unicast",
+    "  aggregate-address 10.10.0.0/16 summary-only"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-komsu-sorun-giderme-idle-active",
+  "title": "BGP komşusu Idle/Active durumunda: kontrol listesi",
+  "cat": "BGP ve MPLS",
+  "note": "Active, TCP/179 bağlantısının kurulamadığını gösterir. Önce erişilebilirlik, kaynak adres, ACL, AS numarası ve kimlik doğrulamayı sırayla doğrulayın.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip bgp summary",
+    "show ip bgp neighbors 203.0.113.2",
+    "ping 203.0.113.2 source Loopback0",
+    "show tcp brief | include 179",
+    "debug ip bgp 203.0.113.2 events"
+   ]
+  },
+  "huawei": {
+   "mode": "User view",
+   "cmds": [
+    "display bgp peer",
+    "display bgp peer 203.0.113.2 verbose",
+    "ping -a 10.255.0.1 203.0.113.2",
+    "display bgp error"
+   ]
+  },
+  "aruba": {
+   "mode": "Privileged EXEC (AOS-CX)",
+   "cmds": [
+    "show bgp ipv4 unicast summary",
+    "show bgp ipv4 unicast neighbors 203.0.113.2",
+    "ping 203.0.113.2"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-komsu-shutdown-bakim",
+  "title": "BGP komşusunu bakım için geçici kapatma",
+  "cat": "BGP ve MPLS",
+  "note": "Oturumu yapılandırmayı silmeden yönetimsel olarak kapatır; bakım öncesi trafiği yedek yola almak için güvenli yöntemdir.",
+  "cisco": {
+   "mode": "Router configuration (config-router)",
+   "cmds": [
+    "neighbor 203.0.113.2 description ISP1-PRIMARY",
+    "neighbor 203.0.113.2 shutdown",
+    "end",
+    "show ip bgp summary"
+   ]
+  },
+  "huawei": {
+   "mode": "BGP view",
+   "cmds": [
+    "peer 203.0.113.2 description ISP1-PRIMARY",
+    "peer 203.0.113.2 ignore",
+    "display bgp peer"
+   ]
+  },
+  "aruba": {
+   "mode": "BGP configuration (AOS-CX)",
+   "cmds": [
+    "router bgp 65001",
+    " neighbor 203.0.113.2 description ISP1-PRIMARY",
+    " neighbor 203.0.113.2 shutdown"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-detay-goruntuleme",
+  "title": "VRF listesi ve detayını görüntüleme",
+  "cat": "Routing",
+  "note": "Cisco'da 'show vrf detail' RD, RT ve arayüzleri gösterir; Huawei'de aynı bilgi 'display ip vpn-instance verbose' ile gelir. Junos'ta VRF'ler 'routing instance' adıyla geçer.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show vrf",
+    "show vrf detail RED"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ip vpn-instance",
+    "display ip vpn-instance verbose RED"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator / Manager",
+   "cmds": [
+    "show vrf",
+    "show vrf RED"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-arayuz-atama",
+  "title": "Arayüzü VRF'e bağlama",
+  "cat": "Routing",
+  "note": "Cisco ve Huawei'de arayüz VRF'e bağlanınca mevcut IP adresi silinir; adresi VRF bağlandıktan sonra yeniden girin. Aruba CX'te 'vrf attach' kullanılır.",
+  "cisco": {
+   "mode": "Global config > Interface config",
+   "cmds": [
+    "interface GigabitEthernet0/1",
+    "vrf forwarding RED",
+    "ip address 10.1.1.1 255.255.255.0"
+   ]
+  },
+  "huawei": {
+   "mode": "System view > Interface view",
+   "cmds": [
+    "interface GigabitEthernet0/0/1",
+    "ip binding vpn-instance RED",
+    "ip address 10.1.1.1 24"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config > Interface",
+   "cmds": [
+    "interface 1/1/1",
+    "no shutdown",
+    "vrf attach RED",
+    "ip address 10.1.1.1/24"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-rota-tablosu-goruntuleme",
+  "title": "VRF rota tablosunu görüntüleme",
+  "cat": "Routing",
+  "note": "Global 'show ip route' VRF rotalarını göstermez. Cisco'da 'vrf' anahtar kelimesi, Huawei'de 'vpn-instance', Junos'ta ise 'RED.inet.0' tablo adı gerekir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip route vrf RED",
+    "show ip route vrf RED 10.20.0.0",
+    "show ip route vrf RED summary"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ip routing-table vpn-instance RED",
+    "display ip routing-table vpn-instance RED statistics"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator / Manager",
+   "cmds": [
+    "show ip route vrf RED"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-aware-ping",
+  "title": "VRF içinden ping atma",
+  "cat": "Routing",
+  "note": "VRF arayüzündeki hedefe global ping çalışmaz. Cisco'da 'ping vrf', Huawei'de 'ping -vpn-instance', Aruba CX'te 'vrf' parametresi kullanılır; kaynak adresi belirtmek güvenlidir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "ping vrf RED 10.20.0.1",
+    "ping vrf RED 10.20.0.1 source GigabitEthernet0/1 repeat 10"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "ping -vpn-instance RED 10.20.0.1",
+    "ping -vpn-instance RED -a 10.1.1.1 -c 10 10.20.0.1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator / Manager",
+   "cmds": [
+    "ping 10.20.0.1 vrf RED",
+    "ping 10.20.0.1 vrf RED source 10.1.1.1 repetitions 10"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-aware-traceroute",
+  "title": "VRF içinden traceroute çalıştırma",
+  "cat": "Routing",
+  "note": "Hop hop yolu görmek için traceroute de VRF belirtilerek çalıştırılmalıdır. Huawei'de komut 'tracert' şeklindedir; Cisco'da 'traceroute vrf RED ...'.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "traceroute vrf RED 10.20.0.1"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "tracert -vpn-instance RED 10.20.0.1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator / Manager",
+   "cmds": [
+    "traceroute 10.20.0.1 vrf RED"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-statik-rota",
+  "title": "VRF içinde statik rota tanımlama",
+  "cat": "Routing",
+  "note": "Statik rotayı VRF adıyla girmezseniz global tabloya yazılır ve VRF trafiği etkilenmez. Cisco 'ip route vrf', Huawei 'ip route-static vpn-instance' kullanır.",
+  "cisco": {
+   "mode": "Global config",
+   "cmds": [
+    "ip route vrf RED 0.0.0.0 0.0.0.0 10.1.1.254",
+    "ip route vrf RED 10.20.0.0 255.255.0.0 10.1.1.253"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "ip route-static vpn-instance RED 0.0.0.0 0 10.1.1.254",
+    "ip route-static vpn-instance RED 10.20.0.0 16 10.1.1.253"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config",
+   "cmds": [
+    "ip route 0.0.0.0/0 10.1.1.254 vrf RED",
+    "ip route 10.20.0.0/16 10.1.1.253 vrf RED"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-route-target-leaking",
+  "title": "RD ve route-target ile VRF rota sızdırma",
+  "cat": "BGP ve MPLS",
+  "note": "RD prefix'i benzersiz yapar, route-target ise rotanın hangi VRF'e aktarılacağını belirler. Import/export değerleri eşleşmezse rota sızmaz; çakışan prefix'lere dikkat.",
+  "cisco": {
+   "mode": "Global config",
+   "cmds": [
+    "vrf definition RED",
+    "rd 65000:10",
+    "address-family ipv4",
+    "route-target export 65000:10",
+    "route-target import 65000:20"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "ip vpn-instance RED",
+    "ipv4-family",
+    "route-distinguisher 65000:10",
+    "vpn-target 65000:10 export-extcommunity",
+    "vpn-target 65000:20 import-extcommunity"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config",
+   "cmds": [
+    "vrf RED",
+    "rd 65000:10",
+    "address-family ipv4 unicast",
+    "route-target export 65000:10",
+    "route-target import 65000:20"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-lite-ospf-sureci",
+  "title": "VRF için ayrı OSPF süreci çalıştırma",
+  "cat": "Routing",
+  "note": "VRF-lite'ta her VRF kendi OSPF sürecine sahip olur. Cisco 'router ospf 10 vrf RED', Huawei 'ospf 10 vpn-instance RED' kullanır; process ID'ler VRF'ler arasında benzersiz olmalıdır.",
+  "cisco": {
+   "mode": "Global config",
+   "cmds": [
+    "router ospf 10 vrf RED",
+    "router-id 10.255.0.1",
+    "network 10.1.1.0 0.0.0.255 area 0",
+    "show ip ospf 10 neighbor"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "ospf 10 router-id 10.255.0.1 vpn-instance RED",
+    "area 0",
+    "network 10.1.1.0 0.0.0.255",
+    "display ospf 10 peer"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config",
+   "cmds": [
+    "router ospf 10 vrf RED",
+    "router-id 10.255.0.1",
+    "area 0",
+    "interface 1/1/1",
+    "ip ospf 10 area 0"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-bgp-address-family",
+  "title": "VRF için BGP address-family ve CE komşusu",
+  "cat": "BGP ve MPLS",
+  "note": "VRF'teki eBGP komşusu global BGP bloğuna değil, VRF address-family'sine yazılır. Cisco 'address-family ipv4 vrf RED', Huawei 'ipv4-family vpn-instance RED' kullanır.",
+  "cisco": {
+   "mode": "Global config > Router config",
+   "cmds": [
+    "router bgp 65000",
+    "address-family ipv4 vrf RED",
+    "neighbor 10.1.1.2 remote-as 65100",
+    "neighbor 10.1.1.2 activate",
+    "redistribute connected"
+   ]
+  },
+  "huawei": {
+   "mode": "System view > BGP view",
+   "cmds": [
+    "bgp 65000",
+    "ipv4-family vpn-instance RED",
+    "peer 10.1.1.2 as-number 65100",
+    "import-route direct"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config > BGP",
+   "cmds": [
+    "router bgp 65000",
+    "vrf RED",
+    "neighbor 10.1.1.2 remote-as 65100",
+    "address-family ipv4 unicast",
+    "neighbor 10.1.1.2 activate"
+   ]
+  }
+ },
+ {
+  "slug": "bfd-bgp-komsu",
+  "title": "BGP komşuluğunda BFD ile hızlı arıza tespiti",
+  "cat": "BGP ve MPLS",
+  "note": "BGP varsayılan hold-time (180 sn) yerine BFD ile saniyenin altında link arızası yakalar. Cisco'da zamanlayıcılar arayüzde, Huawei'de peer üzerinde tanımlanır.",
+  "cisco": {
+   "mode": "Interface config > Router config (IOS-XE)",
+   "cmds": [
+    "interface GigabitEthernet0/0/1",
+    "bfd interval 300 min_rx 300 multiplier 3",
+    "router bgp 65000",
+    "neighbor 10.1.1.2 fall-over bfd"
+   ]
+  },
+  "huawei": {
+   "mode": "System view > BGP view",
+   "cmds": [
+    "bfd",
+    "quit",
+    "bgp 65000",
+    "peer 10.1.1.2 bfd enable",
+    "peer 10.1.1.2 bfd min-tx-interval 300 min-rx-interval 300 detect-multiplier 3"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config > BGP",
+   "cmds": [
+    "router bgp 65000",
+    "neighbor 10.1.1.2 remote-as 65100",
+    "neighbor 10.1.1.2 fall-over bfd"
+   ]
+  }
+ },
+ {
+  "slug": "bfd-oturum-durumu",
+  "title": "BFD oturum durumunu görüntüleme",
+  "cat": "Yönlendirme Protokolleri",
+  "note": "BFD oturumlarının Up/Down durumunu, zamanlayıcıları ve hangi protokole bağlı olduğunu gösterir. Cisco 'show bfd neighbors', Huawei 'display bfd session' kullanır.",
+  "cisco": {
+   "mode": "Privileged EXEC (IOS-XE)",
+   "cmds": [
+    "show bfd neighbors",
+    "show bfd neighbors details"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display bfd session all",
+    "display bfd session all verbose"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator / Manager",
+   "cmds": [
+    "show bfd"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-bgp-komsu-durumu",
+  "title": "VRF içindeki BGP komşu durumunu görüntüleme",
+  "cat": "BGP ve MPLS",
+  "note": "Global BGP tablosundan ayrı olarak her VRF'in kendi BGP komşularını sorgular. Cisco 'vpnv4 vrf', Huawei 'vpn-instance' ifadesini kullanır.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show bgp vpnv4 unicast vrf RED summary",
+    "show ip bgp vpnv4 vrf RED neighbors 10.1.1.2"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display bgp vpnv4 vpn-instance RED peer",
+    "display bgp vpnv4 vpn-instance RED routing-table"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator / Manager",
+   "cmds": [
+    "show bgp all-vrf summary"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-ospf-komsu-durumu",
+  "title": "VRF içindeki OSPF komşularını görüntüleme",
+  "cat": "Routing",
+  "note": "VRF-lite veya PE-CE OSPF süreçlerinin komşularını VRF adıyla sorgular. Huawei'de süreç numarası kullanılır; VRF sürece bağlı olduğundan ayrıca belirtilmez.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip ospf 10 neighbor",
+    "show ip ospf 10 interface brief",
+    "show ip ospf neighbor detail"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ospf 10 peer",
+    "display ospf 10 peer brief"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator / Manager",
+   "cmds": [
+    "show ip ospf neighbors vrf RED"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-arp-tablosu",
+  "title": "VRF içindeki ARP tablosunu görüntüleme",
+  "cat": "Routing",
+  "note": "Her VRF'in ARP tablosu ayrıdır; global 'show ip arp' VRF'deki cihazları göstermez. Cisco 'show ip arp vrf', Huawei 'display arp vpn-instance' kullanır.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip arp vrf RED",
+    "show ip arp vrf RED 10.1.1.50"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display arp vpn-instance RED",
+    "display arp vpn-instance RED | include 10.1.1.50"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator / Manager",
+   "cmds": [
+    "show arp vrf RED"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-alt-arayuz-dot1q",
+  "title": "VRF-lite için 802.1Q alt arayüz (subinterface)",
+  "cat": "Routing",
+  "note": "Tek fiziksel linki VLAN etiketli alt arayüzlere bölüp her birini farklı VRF'e bağlar. Huawei'de ek olarak 'dot1q termination' ve 'arp broadcast enable' gerekir.",
+  "cisco": {
+   "mode": "Global config > Subinterface config",
+   "cmds": [
+    "interface GigabitEthernet0/0/1.100",
+    "encapsulation dot1Q 100",
+    "vrf forwarding RED",
+    "ip address 10.1.1.1 255.255.255.0"
+   ]
+  },
+  "huawei": {
+   "mode": "System view > Subinterface view",
+   "cmds": [
+    "interface GigabitEthernet0/0/1.100",
+    "dot1q termination vid 100",
+    "ip binding vpn-instance RED",
+    "ip address 10.1.1.1 24",
+    "arp broadcast enable"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config > Subinterface",
+   "cmds": [
+    "interface 1/1/1.100",
+    "encapsulation dot1q 100",
+    "vrf attach RED",
+    "ip address 10.1.1.1/24"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-syslog-sunucusu",
+  "title": "Syslog sunucusunu yönetim VRF'i üzerinden tanımlama",
+  "cat": "İzleme ve Loglama",
+  "note": "Loglar yönetim VRF'indeki sunucuya gönderilecekse sunucu tanımında VRF belirtilmelidir; aksi halde cihaz global tabloda rota arar ve loglar gitmez.",
+  "cisco": {
+   "mode": "Global config",
+   "cmds": [
+    "logging host 10.0.0.5 vrf MGMT",
+    "logging source-interface Loopback0 vrf MGMT",
+    "logging trap informational"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "info-center enable",
+    "info-center loghost 10.0.0.5 vpn-instance MGMT",
+    "info-center loghost source Vlanif10"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config",
+   "cmds": [
+    "logging 10.0.0.5 vrf mgmt",
+    "logging severity info"
+   ]
+  }
+ },
+ {
+  "slug": "vrf-ntp-sunucusu",
+  "title": "NTP sunucusunu yönetim VRF'i üzerinden tanımlama",
+  "cat": "Ağ Hizmetleri",
+  "note": "NTP sunucusu yönetim VRF'indeyse sunucu komutunda VRF belirtilmelidir. Senkronizasyon durumu da aynı VRF bilgisiyle doğrulanır.",
+  "cisco": {
+   "mode": "Global config / Privileged EXEC",
+   "cmds": [
+    "ntp server vrf MGMT 10.0.0.10",
+    "show ntp status",
+    "show ntp associations"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / User view",
+   "cmds": [
+    "ntp-service unicast-server 10.0.0.10 vpn-instance MGMT",
+    "display ntp-service status",
+    "display ntp-service sessions"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config / Operator",
+   "cmds": [
+    "ntp server 10.0.0.10 vrf mgmt",
+    "show ntp status",
+    "show ntp associations"
+   ]
+  }
+ },
+ {
+  "slug": "vxlan-vtep-yapilandirma",
+  "title": "VXLAN VTEP ve VNI-VLAN eşlemesi yapılandırma",
+  "cat": "VPN ve Tünel",
+  "note": "VXLAN'da VLAN, VNI numarasına eşlenir ve tünel kaynağı olarak loopback kullanılır. NX-OS'ta nve1, Huawei CloudEngine'de bridge-domain, AOS-CX'te interface vxlan 1 kullanılır.",
+  "cisco": {
+   "mode": "NX-OS global config / interface config",
+   "cmds": [
+    "feature nv overlay",
+    "vlan 20",
+    "vn-segment 10020",
+    "interface nve1",
+    "source-interface loopback0",
+    "member vni 10020"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (CloudEngine)",
+   "cmds": [
+    "bridge-domain 20",
+    "vxlan vni 10020",
+    "interface nve 1",
+    "source 10.255.0.1",
+    "vni 10020 head-end peer-list 10.255.0.2"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config",
+   "cmds": [
+    "vlan 20",
+    "interface vxlan 1",
+    "source ip 10.255.0.1",
+    "no shutdown",
+    "vni 10020",
+    "vlan 20"
+   ]
+  }
+ },
+ {
+  "slug": "vxlan-vtep-komsulari-goruntuleme",
+  "title": "VXLAN VTEP komşuları ve VNI durumunu görüntüleme",
+  "cat": "VPN ve Tünel",
+  "note": "Uzak VTEP'lerin görünür olup olmadığını ve VNI'ların Up durumda olup olmadığını gösterir. NX-OS 'show nve', Huawei 'display vxlan tunnel', AOS-CX 'show interface vxlan vteps' kullanır.",
+  "cisco": {
+   "mode": "NX-OS Privileged EXEC",
+   "cmds": [
+    "show nve peers",
+    "show nve vni",
+    "show nve interface nve1 detail"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view (CloudEngine)",
+   "cmds": [
+    "display vxlan tunnel",
+    "display vxlan vni",
+    "display bridge-domain"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator / Manager",
+   "cmds": [
+    "show interface vxlan 1",
+    "show interface vxlan vteps",
+    "show vxlan address-table"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-evpn-overlay-komsu",
+  "title": "BGP EVPN overlay komşuluğu kurma",
+  "cat": "BGP ve MPLS",
+  "note": "EVPN, VXLAN için MAC/IP bilgisini BGP ile taşır. Komşuluk loopback üzerinden kurulur; NX-OS ve AOS-CX'te 'send-community extended' unutulursa route-target'lar iletilmez.",
+  "cisco": {
+   "mode": "NX-OS Router config",
+   "cmds": [
+    "nv overlay evpn",
+    "router bgp 65001",
+    "neighbor 10.255.0.2 remote-as 65001",
+    "update-source loopback0",
+    "address-family l2vpn evpn",
+    "send-community extended"
+   ]
+  },
+  "huawei": {
+   "mode": "System view > BGP view (CloudEngine)",
+   "cmds": [
+    "bgp 65001",
+    "peer 10.255.0.2 as-number 65001",
+    "peer 10.255.0.2 connect-interface LoopBack0",
+    "l2vpn-family evpn",
+    "peer 10.255.0.2 enable"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config > BGP",
+   "cmds": [
+    "router bgp 65001",
+    "neighbor 10.255.0.2 remote-as 65001",
+    "neighbor 10.255.0.2 update-source loopback 0",
+    "address-family l2vpn evpn",
+    "neighbor 10.255.0.2 send-community extended",
+    "neighbor 10.255.0.2 activate"
+   ]
+  }
+ },
+ {
+  "slug": "bgp-evpn-ozet-durum",
+  "title": "BGP EVPN komşu özetini ve rota sayılarını görüntüleme",
+  "cat": "BGP ve MPLS",
+  "note": "EVPN oturumunun Established olup olmadığını ve kaç prefix alındığını gösterir. Huawei'de komut 'display bgp evpn peer', Junos'ta ise evpn rotaları bgp.evpn.0 tablosundadır.",
+  "cisco": {
+   "mode": "NX-OS Privileged EXEC",
+   "cmds": [
+    "show bgp l2vpn evpn summary",
+    "show bgp l2vpn evpn neighbors 10.255.0.2"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view (CloudEngine)",
+   "cmds": [
+    "display bgp evpn peer",
+    "display bgp evpn peer 10.255.0.2 verbose"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator / Manager",
+   "cmds": [
+    "show bgp l2vpn evpn summary",
+    "show bgp l2vpn evpn neighbors"
+   ]
+  }
+ },
+ {
+  "slug": "evpn-vni-rd-rt-ayari",
+  "title": "EVPN için VNI bazında RD ve route-target ayarlama",
+  "cat": "BGP ve MPLS",
+  "note": "Her L2 VNI için route-distinguisher ve route-target tanımlanır; 'auto' değerleri çoğu dağıtımda yeterlidir. Huawei'de bu değerler evpn vpn-instance altında verilir.",
+  "cisco": {
+   "mode": "NX-OS Global config",
+   "cmds": [
+    "evpn",
+    "vni 10020 l2",
+    "rd auto",
+    "route-target import auto",
+    "route-target export auto"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (CloudEngine)",
+   "cmds": [
+    "evpn vpn-instance EVPN20 bd-mode",
+    "route-distinguisher 65001:10020",
+    "vpn-target 65001:10020 export-extcommunity",
+    "vpn-target 65001:10020 import-extcommunity",
+    "bridge-domain 20",
+    "evpn binding vpn-instance EVPN20"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config",
+   "cmds": [
+    "evpn",
+    "vlan 20",
+    "rd auto",
+    "route-target export auto",
+    "route-target import auto"
+   ]
+  }
+ },
+ {
+  "slug": "evpn-mac-ip-rotalari-goruntuleme",
+  "title": "EVPN type-2 MAC/IP rotalarını görüntüleme",
+  "cat": "BGP ve MPLS",
+  "note": "Uzak VTEP'ten öğrenilen MAC/IP rotalarını gösterir. Bir MAC'in hangi VTEP arkasında olduğunu bulmak için kullanılır; Junos'ta 'show evpn database' en pratik çıktıdır.",
+  "cisco": {
+   "mode": "NX-OS Privileged EXEC",
+   "cmds": [
+    "show bgp l2vpn evpn route-type 2",
+    "show l2route evpn mac all",
+    "show l2route evpn mac-ip all"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view (CloudEngine)",
+   "cmds": [
+    "display bgp evpn all routing-table mac-route",
+    "display vxlan peer",
+    "display mac-address"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator / Manager",
+   "cmds": [
+    "show evpn mac-ip",
+    "show bgp l2vpn evpn",
+    "show mac-address-table"
+   ]
+  }
+ },
+ {
+  "slug": "mpls-ldp-yapilandirma",
+  "title": "MPLS ve LDP etkinleştirme",
+  "cat": "BGP ve MPLS",
+  "note": "Uyumlu cihazlarda LDP router-id'si loopback'ten alınır ve MPLS yalnızca core arayüzlerde açılır. Aruba AOS-CX'te MPLS/LDP yoktur; alternatif olarak VRF-lite kullanılır.",
+  "cisco": {
+   "mode": "IOS-XE Global / Interface config",
+   "cmds": [
+    "mpls label protocol ldp",
+    "mpls ldp router-id Loopback0 force",
+    "interface GigabitEthernet0/0/1",
+    "mpls ip"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view (VRP)",
+   "cmds": [
+    "mpls lsr-id 10.255.0.1",
+    "mpls",
+    "mpls ldp",
+    "interface GigabitEthernet0/0/1",
+    "mpls",
+    "mpls ldp"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config (MPLS/LDP desteklenmez; VRF-lite alternatifi)",
+   "cmds": [
+    "vrf CUST_A",
+    "interface 1/1/1",
+    "vrf attach CUST_A",
+    "show vrf"
+   ]
+  }
+ },
+ {
+  "slug": "mpls-ldp-oturum-durumu",
+  "title": "LDP oturumunu, etiket tablosunu ve LSP'leri görüntüleme",
+  "cat": "BGP ve MPLS",
+  "note": "LDP komşuluğunun Operational olduğunu, etiketlerin dağıtıldığını ve LSP'nin kurulduğunu doğrular. Aruba AOS-CX'te MPLS olmadığından karşılık olarak VRF-lite kontrolü verilmiştir.",
+  "cisco": {
+   "mode": "IOS-XE Privileged EXEC",
+   "cmds": [
+    "show mpls ldp neighbor",
+    "show mpls interfaces",
+    "show mpls ldp bindings",
+    "show mpls forwarding-table"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view (VRP)",
+   "cmds": [
+    "display mpls ldp session",
+    "display mpls ldp peer",
+    "display mpls ldp interface",
+    "display mpls lsp"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX Operator (MPLS/LDP desteklenmez; VRF-lite alternatifi)",
+   "cmds": [
+    "show vrf",
+    "show ip route vrf CUST_A"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-adres-atama-arayuz",
+  "title": "Arayüze IPv6 adresi atama",
+  "cat": "IPv6 ve Multicast",
+  "note": "Cisco ve Huawei'de adres /64 ile yazılır; Huawei'de arayüzde önce 'ipv6 enable' gerekir. Aruba AOS-S'te adres VLAN içinde, AOS-CX'te VLAN arayüzünde tanımlanır.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface Vlan10",
+    "ipv6 address 2001:db8:10::1/64",
+    "no shutdown"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view",
+   "cmds": [
+    "system-view",
+    "ipv6",
+    "interface vlanif 10",
+    "ipv6 enable",
+    "ipv6 address 2001:db8:10::1/64"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: VLAN context / AOS-CX: VLAN interface",
+   "cmds": [
+    "vlan 10",
+    "ipv6 address 2001:db8:10::1/64",
+    "interface vlan 10",
+    "ipv6 address 2001:db8:10::1/64"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-unicast-routing-etkinlestirme",
+  "title": "IPv6 yönlendirmeyi global olarak etkinleştirme",
+  "cat": "IPv6 ve Multicast",
+  "note": "Cisco'da 'ipv6 unicast-routing' olmadan cihaz host gibi davranır ve RA göndermez. Huawei'de global 'ipv6' komutu gerekir; Junos'ta IPv6 forwarding varsayılan açıktır.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ipv6 unicast-routing"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "system-view",
+    "ipv6"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Global configuration",
+   "cmds": [
+    "ipv6 unicast-routing"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-arayuz-ozet-goruntuleme",
+  "title": "IPv6 arayüz özetini görüntüleme",
+  "cat": "IPv6 ve Multicast",
+  "note": "Cisco ve Huawei'de 'brief' çıktısı link-local ve global adresleri birlikte listeler. Junos'ta inet6 satırlarını görmek için 'terse' çıktısı filtrelenir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ipv6 interface brief",
+    "show ipv6 interface Vlan10"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ipv6 interface brief",
+    "display ipv6 interface vlanif 10"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Manager / AOS-CX: Operator",
+   "cmds": [
+    "show ipv6",
+    "show ipv6 interface"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-komsu-tablosu-nd-goruntuleme",
+  "title": "IPv6 komşu (ND) tablosunu görüntüleme",
+  "cat": "IPv6 ve Multicast",
+  "note": "ND tablosu IPv4'teki ARP tablosunun karşılığıdır. REACHABLE, STALE, DELAY ve INCOMPLETE durumları komşunun erişilebilirliğini gösterir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ipv6 neighbors",
+    "show ipv6 neighbors Vlan10"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ipv6 neighbors",
+    "display ipv6 neighbors vlan 10"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S / AOS-CX: Manager",
+   "cmds": [
+    "show ipv6 neighbors"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-ra-yapilandirma-slaac-dhcpv6-bayraklari",
+  "title": "Router Advertisement (RA) ve bayrakları ayarlama",
+  "cat": "IPv6 ve Multicast",
+  "note": "RA, SLAAC için prefix ve gateway bilgisini duyurur. M ve O bayrakları istemciye adresin veya diğer ayarların DHCPv6'dan alınacağını söyler.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface Vlan10",
+    "no ipv6 nd ra suppress",
+    "ipv6 nd prefix 2001:db8:10::/64 86400 3600",
+    "ipv6 nd other-config-flag",
+    "ipv6 nd ra interval 200"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface vlanif 10",
+    "undo ipv6 nd ra halt",
+    "ipv6 nd autoconfig other-flag",
+    "ipv6 nd ra router-lifetime 1800"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: VLAN context / AOS-CX: VLAN interface",
+   "cmds": [
+    "interface vlan 10",
+    "ipv6 nd ra other-config-flag",
+    "ipv6 nd ra interval 200"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-statik-rota-ekleme",
+  "title": "IPv6 statik rota ve default rota ekleme",
+  "cat": "IPv6 ve Multicast",
+  "note": "Cisco ve Aruba 'ipv6 route' kullanır, Huawei 'ipv6 route-static' ve prefix uzunluğunu ayrı yazar. Link-local next-hop için çıkış arayüzü de belirtilmelidir.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ipv6 route 2001:db8:20::/64 2001:db8:10::2",
+    "ipv6 route ::/0 2001:db8:10::254"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "ipv6 route-static 2001:db8:20:: 64 2001:db8:10::2",
+    "ipv6 route-static :: 0 2001:db8:10::254"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S / AOS-CX: Global configuration",
+   "cmds": [
+    "ipv6 route 2001:db8:20::/64 2001:db8:10::2",
+    "ipv6 route ::/0 2001:db8:10::254"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-rota-tablosu-goruntuleme",
+  "title": "IPv6 yönlendirme tablosunu görüntüleme",
+  "cat": "IPv6 ve Multicast",
+  "note": "Tabloda connected (C), local (L) ve statik rotalar ayrı kodlarla gelir. IPv6'da her arayüz için ayrıca bir /128 local rota görmek normaldir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ipv6 route",
+    "show ipv6 route static",
+    "show ipv6 route 2001:db8:20::5"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ipv6 routing-table",
+    "display ipv6 routing-table 2001:db8:20::5"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S / AOS-CX: Manager",
+   "cmds": [
+    "show ipv6 route",
+    "show ipv6 route 2001:db8:20::5"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-ping-traceroute",
+  "title": "IPv6 ping ve traceroute ile erişim testi",
+  "cat": "IPv6 ve Multicast",
+  "note": "Platformlar IPv6 için farklı sözdizimi kullanır: Cisco 'ping ipv6', Huawei 'ping ipv6'/'tracert ipv6', Aruba AOS-S 'ping6'/'traceroute6'. Link-local hedefte çıkış arayüzü gerekir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "ping ipv6 2001:db8:20::1",
+    "ping ipv6 2001:db8:20::1 source Vlan10",
+    "traceroute ipv6 2001:db8:20::1"
+   ]
+  },
+  "huawei": {
+   "mode": "User view",
+   "cmds": [
+    "ping ipv6 2001:db8:20::1",
+    "ping ipv6 -a 2001:db8:10::1 2001:db8:20::1",
+    "tracert ipv6 2001:db8:20::1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Manager / AOS-CX: Operator",
+   "cmds": [
+    "ping6 2001:db8:20::1",
+    "traceroute6 2001:db8:20::1"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-slaac-otomatik-adres-alma",
+  "title": "Arayüzde SLAAC ile otomatik IPv6 adresi alma",
+  "cat": "IPv6 ve Multicast",
+  "note": "Router veya L3 switch arayüzü RA'dan prefix alıp EUI-64 ya da gizlilik uzantılı adres üretir; uplink'in ISP'den otomatik adres alması için kullanılır.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet0/0",
+    "ipv6 enable",
+    "ipv6 address autoconfig default"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface gigabitethernet 0/0/1",
+    "ipv6 enable",
+    "ipv6 address auto global"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: VLAN context",
+   "cmds": [
+    "vlan 10",
+    "ipv6 address autoconfig"
+   ]
+  }
+ },
+ {
+  "slug": "ospfv3-temel-yapilandirma",
+  "title": "OSPFv3 ile IPv6 yönlendirme yapılandırma",
+  "cat": "IPv6 ve Multicast",
+  "note": "OSPFv3 arayüz bazında etkinleştirilir (network komutu yoktur) ve IPv4 adresi olmasa bile 32 bit router-id elle verilmelidir.",
+  "cisco": {
+   "mode": "Global / Interface configuration (classic IOS syntax)",
+   "cmds": [
+    "ipv6 router ospf 1",
+    "router-id 1.1.1.1",
+    "exit",
+    "interface Vlan10",
+    "ipv6 ospf 1 area 0"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view",
+   "cmds": [
+    "ospfv3 1",
+    "router-id 1.1.1.1",
+    "quit",
+    "interface vlanif 10",
+    "ospfv3 1 area 0.0.0.0"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Global configuration / AOS-CX: Global configuration",
+   "cmds": [
+    "ipv6 router ospf",
+    "area backbone",
+    "exit",
+    "vlan 10",
+    "ipv6 ospf3 area backbone",
+    "router ospfv3 1",
+    "router-id 1.1.1.1",
+    "area 0.0.0.0",
+    "interface vlan 10",
+    "ipv6 ospfv3 1 area 0.0.0.0"
+   ]
+  }
+ },
+ {
+  "slug": "ospfv3-komsuluk-arayuz-goruntuleme",
+  "title": "OSPFv3 komşuluk ve arayüz durumunu görüntüleme",
+  "cat": "IPv6 ve Multicast",
+  "note": "Komşuluk FULL ya da 2-WAY olmalıdır. OSPFv3 komşuları link-local adresle kurar, bu yüzden çıktıdaki adresler FE80:: ile başlar.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ipv6 ospf neighbor",
+    "show ipv6 ospf interface brief"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ospfv3 peer",
+    "display ospfv3 interface"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Manager / AOS-CX: Operator",
+   "cmds": [
+    "show ipv6 ospf3 neighbor",
+    "show ospfv3 neighbors"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-prefix-list-olusturma",
+  "title": "IPv6 prefix-list tanımlama",
+  "cat": "IPv6 ve Multicast",
+  "note": "Prefix-list, rota filtreleme ve route-map için kullanılır. 'le' ve 'ge' ile prefix uzunluk aralığı belirlenir; Huawei'de karşılığı 'ip ipv6-prefix' komutudur.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ipv6 prefix-list PL-SITE-A seq 5 permit 2001:db8:10::/48 le 64",
+    "ipv6 prefix-list PL-SITE-A seq 100 deny ::/0 le 128"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "ip ipv6-prefix PL-SITE-A index 10 permit 2001:db8:10:: 48 less-equal 64"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S / AOS-CX: Global configuration",
+   "cmds": [
+    "ipv6 prefix-list PL-SITE-A seq 5 permit 2001:db8:10::/48 le 64"
+   ]
+  }
+ },
+ {
+  "slug": "dhcpv6-relay-yapilandirma",
+  "title": "DHCPv6 relay yapılandırma",
+  "cat": "IPv6 ve Multicast",
+  "note": "İstemcilerin bulunduğu VLAN'dan merkezi DHCPv6 sunucusuna istek iletmek için kullanılır. Relay, istemci tarafındaki arayüzde tanımlanır.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface Vlan10",
+    "ipv6 dhcp relay destination 2001:db8:100::10"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface vlanif 10",
+    "ipv6 dhcp select relay",
+    "ipv6 dhcp relay server-address 2001:db8:100::10"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Global / VLAN context",
+   "cmds": [
+    "dhcpv6-relay",
+    "vlan 10",
+    "ipv6 helper-address unicast 2001:db8:100::10"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-acl-olusturma-ve-uygulama",
+  "title": "IPv6 ACL oluşturma ve arayüze uygulama",
+  "cat": "IPv6 ve Multicast",
+  "note": "IPv6 ACL'lerde örtük olarak ND (NS/NA) trafiğine izin verilir ama deny any sonunda dikkatli olunmalıdır. Cisco 'ipv6 traffic-filter', Aruba AOS-CX 'apply access-list ipv6' kullanır.",
+  "cisco": {
+   "mode": "Global / Interface configuration",
+   "cmds": [
+    "ipv6 access-list BLOCK-TELNET6",
+    "deny tcp any any eq 23",
+    "permit ipv6 any any",
+    "exit",
+    "interface Vlan10",
+    "ipv6 traffic-filter BLOCK-TELNET6 in"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view",
+   "cmds": [
+    "acl ipv6 number 3001",
+    "rule 5 deny tcp destination-port eq 23",
+    "rule 10 permit",
+    "quit",
+    "interface vlanif 10",
+    "traffic-filter inbound acl ipv6 3001"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Global / VLAN interface",
+   "cmds": [
+    "access-list ip6 BLOCK-TELNET6",
+    "10 deny tcp any any eq 23",
+    "20 permit any any any",
+    "exit",
+    "interface vlan 10",
+    "apply access-list ipv6 BLOCK-TELNET6 in"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-link-local-adres-statik-atama",
+  "title": "Arayüze sabit link-local adres atama",
+  "cat": "IPv6 ve Multicast",
+  "note": "Otomatik EUI-64 link-local yerine FE80::1 gibi okunabilir sabit adres, donanım değişince next-hop'ların bozulmasını önler.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet1/0/1",
+    "ipv6 address FE80::1 link-local"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface gigabitethernet 0/0/1",
+    "ipv6 address fe80::1 link-local"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: VLAN context / AOS-CX: VLAN interface",
+   "cmds": [
+    "vlan 10",
+    "ipv6 address fe80::1 link-local",
+    "interface vlan 10",
+    "ipv6 address link-local fe80::1/64"
+   ]
+  }
+ },
+ {
+  "slug": "ospfv3-lsdb-goruntuleme",
+  "title": "OSPFv3 LSDB (link-state veritabanı) görüntüleme",
+  "cat": "IPv6 ve Multicast",
+  "note": "LSDB içinde router, network ve intra-area-prefix LSA'ları ayrı tiplerdedir. Rota eksikse LSA'nın veritabanına gelip gelmediği buradan görülür.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ipv6 ospf database",
+    "show ipv6 ospf database prefix"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ospfv3 lsdb"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Operator",
+   "cmds": [
+    "show ospfv3 lsdb"
+   ]
+  }
+ },
+ {
+  "slug": "qos-trust-dscp-port",
+  "title": "Port üzerinde DSCP/CoS trust ayarı",
+  "cat": "QoS ve Trafik",
+  "note": "Catalyst 9000'de QoS varsayılan olarak açık ve DSCP trust edilir; eski 3560/3750'de önce 'mls qos' gerekir, yoksa trust komutu etki etmez.",
+  "cisco": {
+   "mode": "Global config / Interface config (IOS, 3560/3750)",
+   "cmds": [
+    "mls qos",
+    "interface GigabitEthernet1/0/1",
+    "mls qos trust dscp",
+    "show mls qos interface GigabitEthernet1/0/1"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view (S-series)",
+   "cmds": [
+    "interface GigabitEthernet0/0/1",
+    "trust dscp",
+    "quit",
+    "display qos trust interface GigabitEthernet0/0/1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: global/interface config; AOS-S: global config",
+   "cmds": [
+    "qos trust dscp",
+    "interface 1/1/1",
+    "qos trust dscp",
+    "show qos trust"
+   ]
+  }
+ },
+ {
+  "slug": "qos-dscp-cos-map-goruntuleme",
+  "title": "DSCP/CoS eşleme tablolarını görüntüleme",
+  "cat": "QoS ve Trafik",
+  "note": "Switch DSCP değerini iç kuyruk önceliğine bu tablolarla çevirir; varsayılan tabloyu bilmeden marking sorunu ayıklanamaz. Çıktılar platforma göre değişir.",
+  "cisco": {
+   "mode": "Privileged EXEC (3560/3750)",
+   "cmds": [
+    "show mls qos maps dscp-cos",
+    "show mls qos maps cos-dscp",
+    "show mls qos maps dscp-output-q"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display diffserv domain default",
+    "display diffserv domain all"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX / AOS-S: Manager",
+   "cmds": [
+    "show qos dscp-map",
+    "show qos cos-map"
+   ]
+  }
+ },
+ {
+  "slug": "qos-class-map-match-dscp",
+  "title": "DSCP değerine göre trafik sınıflandırma",
+  "cat": "QoS ve Trafik",
+  "note": "MQC mantığı Cisco ve Huawei'de benzerdir: önce sınıf tanımlanır, sonra politikada davranış atanır. Huawei'de eşleşme 'traffic classifier' içinde yapılır.",
+  "cisco": {
+   "mode": "Global config (class-map)",
+   "cmds": [
+    "class-map match-any VOICE",
+    "match dscp ef",
+    "exit",
+    "class-map match-any VIDEO",
+    "match dscp af41 af42"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (traffic classifier)",
+   "cmds": [
+    "traffic classifier VOICE operator or",
+    "if-match dscp ef",
+    "traffic classifier VIDEO operator or",
+    "if-match dscp af41 af42"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: global config (class ip)",
+   "cmds": [
+    "class ip VOICE",
+    "match any any any dscp 46",
+    "show class ip"
+   ]
+  }
+ },
+ {
+  "slug": "qos-class-map-match-acl",
+  "title": "ACL ile trafik sınıflandırma (QoS)",
+  "cat": "QoS ve Trafik",
+  "note": "Marking'i güvenilmeyen kaynaklardan gelen trafiği port/protokol bazında yakalamak için ACL kullanılır. Huawei'de ACL numarası 'if-match acl' ile bağlanır.",
+  "cisco": {
+   "mode": "Global config",
+   "cmds": [
+    "ip access-list extended ACL-SIP",
+    "permit udp any any eq 5060",
+    "permit udp any any range 16384 32767",
+    "exit",
+    "class-map match-any VOIP-ACL",
+    "match access-group name ACL-SIP"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "acl number 3001",
+    "rule 5 permit udp destination-port eq 5060",
+    "rule 10 permit udp destination-port range 16384 32767",
+    "quit",
+    "traffic classifier VOIP-ACL operator or",
+    "if-match acl 3001"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: global config",
+   "cmds": [
+    "access-list ip ACL-SIP",
+    "10 permit udp any any eq 5060",
+    "exit",
+    "class ip VOIP-ACL",
+    "10 match udp any any eq 5060"
+   ]
+  }
+ },
+ {
+  "slug": "qos-policy-map-service-policy",
+  "title": "QoS politikasını arayüze uygulama",
+  "cat": "QoS ve Trafik",
+  "note": "Politika tanımlamak yetmez; service-policy (Cisco) veya traffic-policy (Huawei) ile arayüze ve yöne bağlanmalıdır. Aruba AOS-S ve CX'te politika sözdizimi farklıdır.",
+  "cisco": {
+   "mode": "Global config / Interface config",
+   "cmds": [
+    "policy-map WAN-OUT",
+    "class VOICE",
+    "set dscp ef",
+    "exit",
+    "exit",
+    "interface GigabitEthernet1/0/24",
+    "service-policy output WAN-OUT"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view",
+   "cmds": [
+    "traffic behavior B-VOICE",
+    "remark dscp ef",
+    "quit",
+    "traffic policy WAN-OUT",
+    "classifier VOICE behavior B-VOICE",
+    "quit",
+    "interface GigabitEthernet0/0/24",
+    "traffic-policy WAN-OUT outbound"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: global/interface config",
+   "cmds": [
+    "policy WAN-OUT",
+    "10 class ip VOICE action dscp 46",
+    "exit",
+    "interface 1/1/24",
+    "apply policy WAN-OUT out"
+   ]
+  }
+ },
+ {
+  "slug": "qos-show-policy-map-interface",
+  "title": "Arayüzdeki QoS politikası istatistikleri",
+  "cat": "QoS ve Trafik",
+  "note": "Sınıf bazında eşleşen paket, drop ve kuyruk sayaçlarını gösterir; marking'in gerçekten çalışıp çalışmadığını doğrulamanın en hızlı yoludur.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show policy-map interface GigabitEthernet1/0/24 output",
+    "show policy-map interface GigabitEthernet1/0/24",
+    "show policy-map WAN-OUT"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display traffic policy user-defined WAN-OUT",
+    "display traffic-policy applied-record WAN-OUT",
+    "display traffic policy statistics interface GigabitEthernet0/0/24 outbound"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Manager",
+   "cmds": [
+    "show policy",
+    "show qos trust",
+    "show interface 1/1/24 qos"
+   ]
+  }
+ },
+ {
+  "slug": "qos-priority-queue-llq",
+  "title": "Ses için öncelikli kuyruk (LLQ / strict priority)",
+  "cat": "QoS ve Trafik",
+  "note": "Priority kuyruğu aynı zamanda polis edilir; sınırı aşan ses trafiği tıkanıklıkta düşürülür. Yüzdeyi gereğinden büyük vermek diğer sınıfları aç bırakır.",
+  "cisco": {
+   "mode": "Policy-map class config (IOS-XE)",
+   "cmds": [
+    "policy-map WAN-OUT",
+    "class VOICE",
+    "priority percent 20",
+    "class VIDEO",
+    "bandwidth remaining percent 30",
+    "show policy-map interface GigabitEthernet1/0/24 output"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (traffic behavior) / Interface view",
+   "cmds": [
+    "traffic behavior B-VOICE",
+    "queue ef bandwidth pct 20",
+    "quit",
+    "interface GigabitEthernet0/0/24",
+    "qos queue 6 pq"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: global config",
+   "cmds": [
+    "qos schedule-profile PRIO-PROF",
+    "strict queue 7",
+    "dwrr queue 0 weight 10",
+    "exit",
+    "apply qos schedule-profile PRIO-PROF"
+   ]
+  }
+ },
+ {
+  "slug": "qos-queue-scheduling-wrr-drr",
+  "title": "Kuyruk zamanlama: PQ, WRR ve DRR ayarı",
+  "cat": "QoS ve Trafik",
+  "note": "Huawei S-serisinde zamanlama arayüz bazında seçilir; Cisco 3750'de SRR kullanılır, 9000'de ise policy-map ile yapılır. Aruba CX'te schedule-profile gerekir.",
+  "cisco": {
+   "mode": "Interface config (3750 SRR)",
+   "cmds": [
+    "interface GigabitEthernet1/0/24",
+    "srr-queue bandwidth share 10 10 60 20",
+    "priority-queue out",
+    "show mls qos interface GigabitEthernet1/0/24 queueing"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view (S-series)",
+   "cmds": [
+    "interface GigabitEthernet0/0/24",
+    "qos queue 7 pq",
+    "qos queue 5 wrr weight 30",
+    "qos queue 0 drr weight 10",
+    "display qos queue-profile"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: global config",
+   "cmds": [
+    "qos schedule-profile WRR-PROF",
+    "dwrr queue 0 weight 10",
+    "dwrr queue 4 weight 30",
+    "strict queue 7",
+    "apply qos schedule-profile WRR-PROF",
+    "show qos schedule-profile"
+   ]
+  }
+ },
+ {
+  "slug": "qos-police-cir-bucket",
+  "title": "Policing: CIR ile trafik hız sınırlama",
+  "cat": "QoS ve Trafik",
+  "note": "Policing fazla trafiği düşürür veya yeniden işaretler, kuyruğa almaz. Burst (Bc/CBS) değeri çok küçük verilirse TCP verimi ciddi düşer.",
+  "cisco": {
+   "mode": "Policy-map class config",
+   "cmds": [
+    "policy-map LIMIT-GUEST",
+    "class class-default",
+    "police cir 10000000 bc 312500 conform-action transmit exceed-action drop",
+    "interface GigabitEthernet1/0/10",
+    "service-policy input LIMIT-GUEST"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (traffic behavior)",
+   "cmds": [
+    "traffic behavior B-LIMIT",
+    "car cir 10000 cbs 1875000 pbs 3750000 green pass yellow pass red discard",
+    "quit",
+    "traffic policy LIMIT-GUEST",
+    "classifier default-class behavior B-LIMIT",
+    "interface GigabitEthernet0/0/10",
+    "traffic-policy LIMIT-GUEST inbound"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Interface context",
+   "cmds": [
+    "interface 10",
+    "rate-limit all in kbps 10000",
+    "show rate-limit all"
+   ]
+  }
+ }
+]

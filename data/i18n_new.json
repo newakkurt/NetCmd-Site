@@ -1,0 +1,1714 @@
+{
+ "cats": {
+  "QoS ve Trafik": {
+   "en": "QoS & Traffic",
+   "ar": "جودة الخدمة وحركة المرور"
+  },
+  "Kablosuz (WLAN)": {
+   "en": "Wireless (WLAN)",
+   "ar": "الشبكات اللاسلكية (WLAN)"
+  },
+  "Spanning Tree ve L2": {
+   "en": "STP & Layer 2",
+   "ar": "STP والطبقة الثانية"
+  },
+  "BGP ve MPLS": {
+   "en": "BGP & MPLS",
+   "ar": "BGP وMPLS"
+  },
+  "IPv6 ve Multicast": {
+   "en": "IPv6 & Multicast",
+   "ar": "IPv6 والبث المتعدد"
+  },
+  "AAA ve Kimlik Doğrulama": {
+   "en": "AAA & Authentication",
+   "ar": "AAA والمصادقة"
+  },
+  "İzleme ve Loglama": {
+   "en": "Monitoring & Logging",
+   "ar": "المراقبة والسجلات"
+  },
+  "Ağ Hizmetleri": {
+   "en": "Network Services",
+   "ar": "خدمات الشبكة"
+  },
+  "VPN ve Tünel": {
+   "en": "VPN & Tunnels",
+   "ar": "VPN والأنفاق"
+  },
+  "Yazılım ve Yükseltme": {
+   "en": "Firmware & Upgrade",
+   "ar": "البرمجيات والترقية"
+  },
+  "PoE ve Fiziksel Katman": {
+   "en": "PoE & Physical Layer",
+   "ar": "PoE والطبقة الفيزيائية"
+  },
+  "Otomasyon ve API": {
+   "en": "Automation & API",
+   "ar": "الأتمتة وواجهات API"
+  }
+ },
+ "items": {
+  "stp-root-bridge-bilgisi": {
+   "en": {
+    "title": "Display root bridge and root port information",
+    "note": "On Cisco 'show spanning-tree root' lists the root per VLAN; on Huawei 'display stp' shows the CIST root and local bridge ID together."
+   },
+   "ar": {
+    "title": "عرض معلومات الـ root bridge والـ root port",
+    "note": "في Cisco يسرد الأمر show spanning-tree root الجذر لكل VLAN، بينما يعرض display stp في Huawei جذر CIST ومعرّف الجسر المحلي معًا."
+   }
+  },
+  "stp-root-primary-secondary": {
+   "en": {
+    "title": "Assign root bridge with root primary / secondary",
+    "note": "Cisco and Huawei have a 'root primary' macro that lowers the priority automatically; on Aruba, Junos and MikroTik you set the priority numerically by hand."
+   },
+   "ar": {
+    "title": "تعيين الـ root bridge عبر root primary / secondary",
+    "note": "توفر Cisco وHuawei أمر root primary الذي يخفض الأولوية تلقائيًا، أما في Aruba وJunos وMikroTik فتُدخل قيمة الأولوية رقميًا يدويًا."
+   }
+  },
+  "stp-portfast-edge-port": {
+   "en": {
+    "title": "Enable PortFast / edge port on an access port",
+    "note": "Cisco 'portfast', Huawei 'edged-port', Aruba 'admin-edge-port' and Junos 'edge' do the same: an end device goes straight to forwarding without waiting in listening/learning."
+   },
+   "ar": {
+    "title": "تفعيل PortFast / edge port على منفذ وصول",
+    "note": "تؤدي portfast في Cisco وedged-port في Huawei وadmin-edge-port في Aruba وedge في Junos الوظيفة نفسها: ينتقل جهاز المستخدم مباشرة إلى forwarding دون انتظار listening وlearning."
+   }
+  },
+  "stp-portfast-default-global": {
+   "en": {
+    "title": "Default edge + BPDU guard on all access ports",
+    "note": "On Cisco the global 'portfast default' affects only access ports and leaves trunks alone; on Huawei 'stp edged-port default' makes every port edge, so remember to disable it on uplinks."
+   },
+   "ar": {
+    "title": "تفعيل edge وBPDU guard افتراضيًا على كل منافذ الوصول",
+    "note": "في Cisco يؤثر portfast default العام على منافذ access فقط ولا يمس trunk، أما في Huawei فيجعل stp edged-port default كل المنافذ edge فلا تنسَ تعطيله على الـ uplink."
+   }
+  },
+  "stp-bpdu-filter": {
+   "en": {
+    "title": "Suppress BPDU send/receive with BPDU filter",
+    "note": "BPDU filter suppresses BPDUs on a port; misused, it disables the protection mechanism and causes loops. On Cisco, global and per-port behaviour differ."
+   },
+   "ar": {
+    "title": "إيقاف إرسال/استقبال BPDU عبر BPDU filter",
+    "note": "يمنع BPDU filter الـ BPDU على المنفذ؛ وسوء استخدامه يعطل آلية الحماية ويسبب حلقات. في Cisco يختلف السلوك بين المستوى العام ومستوى المنفذ."
+   }
+  },
+  "stp-port-path-cost": {
+   "en": {
+    "title": "Set the port path cost",
+    "note": "Path cost decides which of two paths to the same root is chosen. On Cisco it can be set per VLAN; on Huawei and Aruba the MSTP instance level uses a separate command."
+   },
+   "ar": {
+    "title": "ضبط تكلفة المسار للمنفذ (path cost)",
+    "note": "تحدد path cost أي مسارين نحو الجذر نفسه سيُختار. في Cisco يمكن ضبطها لكل VLAN، أما في Huawei وAruba فيُضبط مستوى instance في MSTP بأمر منفصل."
+   }
+  },
+  "stp-path-cost-method": {
+   "en": {
+    "title": "Choose the path cost standard (short/long)",
+    "note": "Cisco defaults to short while Huawei usually defaults to dot1t; switches using different standards compute different costs for the same link and pick unexpected root ports."
+   },
+   "ar": {
+    "title": "اختيار معيار path cost (قصير/طويل)",
+    "note": "الافتراضي في Cisco هو short بينما يكون في Huawei غالبًا dot1t؛ والسويتشات ذات المعايير المختلفة تحسب تكلفة مختلفة للرابط نفسه فتختار root port غير متوقع."
+   }
+  },
+  "stp-topology-change-izleme": {
+   "en": {
+    "title": "Monitor the topology change (TC) counter and source",
+    "note": "Frequent TCs flush the MAC table and cause flooding. To find the source port, check the 'last change from' field; non-edge ports are usually the culprits."
+   },
+   "ar": {
+    "title": "مراقبة عدّاد topology change (TC) ومصدره",
+    "note": "تؤدي TC المتكررة إلى مسح جدول MAC وحدوث flooding. للعثور على المنفذ المصدر انظر حقل last change from؛ وغالبًا تكون المنافذ غير الطرفية هي السبب."
+   }
+  },
+  "stp-bpdu-guard-recovery": {
+   "en": {
+    "title": "Automatic port recovery after BPDU guard",
+    "note": "BPDU guard err-disables the port; without a recovery timer the port stays down until opened manually. Too short a timer makes the loop come back."
+   },
+   "ar": {
+    "title": "الاسترجاع التلقائي للمنفذ بعد BPDU guard",
+    "note": "يعطّل BPDU guard المنفذ بحالة err-disable، وبدون مؤقت استرجاع يبقى المنفذ مغلقًا حتى يُفتح يدويًا. وإذا كان المؤقت قصيرًا جدًا تعود الحلقة."
+   }
+  },
+  "mst-instance-durumu": {
+   "en": {
+    "title": "Display MST instance status",
+    "note": "On Cisco 'show spanning-tree mst 1' shows a single instance; on Huawei 'display stp instance 1' does the same. Instance 0 (CIST/IST) always exists."
+   },
+   "ar": {
+    "title": "عرض حالة instance في MSTP",
+    "note": "في Cisco يعرض الأمر show spanning-tree mst 1 instance واحدة، وفي Huawei يؤدي display stp instance 1 الغرض نفسه. الـ instance رقم 0 (CIST/IST) موجودة دائمًا."
+   }
+  },
+  "mst-instance-priority": {
+   "en": {
+    "title": "Set bridge priority for an MST instance",
+    "note": "Cisco uses 'spanning-tree mst 1 priority' and Huawei uses 'stp instance 1 priority'; on Aruba the priority is entered as a multiple of 4096 (1 = 4096)."
+   },
+   "ar": {
+    "title": "ضبط أولوية الجسر لـ MST instance",
+    "note": "يستخدم Cisco الأمر spanning-tree mst 1 priority وHuawei الأمر stp instance 1 priority؛ وفي Aruba تُدخل الأولوية كمضاعف لـ 4096 (القيمة 1 تعني 4096)."
+   }
+  },
+  "mst-region-dogrulama": {
+   "en": {
+    "title": "Verify MST region settings and digest",
+    "note": "Region name, revision and VLAN-to-instance mapping must be identical on all switches; Cisco and Huawei show a digest (hash) to make the comparison easy."
+   },
+   "ar": {
+    "title": "التحقق من إعدادات منطقة MST وقيمة digest",
+    "note": "يجب أن تتطابق region name وrevision وربط VLAN بالـ instance في جميع السويتشات؛ ويعرض Cisco وHuawei قيمة digest (hash) لتسهيل المقارنة."
+   }
+  },
+  "stp-zamanlayicilar": {
+   "en": {
+    "title": "Configure STP hello, forward-delay and max-age timers",
+    "note": "Huawei takes timers in centiseconds (hello 200 = 2 s) while Cisco and Aruba use seconds. Changing the values only on the root bridge is sufficient."
+   },
+   "ar": {
+    "title": "ضبط مؤقتات STP: hello وforward-delay وmax-age",
+    "note": "يأخذ Huawei المؤقتات بالسنتي ثانية (hello 200 تعني ثانيتين) بينما يستخدم Cisco وAruba الثواني. يكفي تغيير القيم على الـ root bridge فقط."
+   }
+  },
+  "stp-point-to-point-link": {
+   "en": {
+    "title": "Set the port link type to point-to-point",
+    "note": "RSTP rapid transition works only on point-to-point links. Cisco and Huawei detect full-duplex links automatically; on half-duplex or media converters it must be forced manually."
+   },
+   "ar": {
+    "title": "ضبط نوع وصلة المنفذ إلى point-to-point",
+    "note": "لا يعمل الانتقال السريع في RSTP إلا على الوصلات من نوع point-to-point. يكتشف Cisco وHuawei الوصلات full-duplex تلقائيًا، وتُفرض يدويًا في حالة half-duplex أو محوّلات الوسائط."
+   }
+  },
+  "stp-port-priority": {
+   "en": {
+    "title": "Configure STP port priority for equal-cost links",
+    "note": "When two links have equal cost, the priority part of the port ID decides which port forwards; the default is 128 on both Cisco and Huawei."
+   },
+   "ar": {
+    "title": "ضبط port priority في STP للوصلات المتساوية التكلفة",
+    "note": "عندما تتساوى تكلفة وصلتين، يحدد جزء الأولوية في معرّف المنفذ أي منفذ سيعمل بالتمرير؛ والقيمة الافتراضية 128 في Cisco وHuawei."
+   }
+  },
+  "stp-port-detay-bpdu-sayaclari": {
+   "en": {
+    "title": "Display per-port STP detail and BPDU counters",
+    "note": "BPDU sent/received counters reveal whether a port receives unexpected BPDUs (for example on an edge port); on Cisco add 'detail'."
+   },
+   "ar": {
+    "title": "عرض تفاصيل STP لكل منفذ وعدّادات BPDU",
+    "note": "تكشف عدّادات BPDU المرسلة والمستلمة ما إذا كان المنفذ يتلقى BPDU غير متوقعة (مثل منفذ edge)؛ وفي Cisco تُضاف كلمة detail."
+   }
+  },
+  "stp-tutarsiz-port-inconsistent": {
+   "en": {
+    "title": "List STP inconsistent ports",
+    "note": "Shows ports blocked by root guard, loop guard or a PVID/type mismatch; on Cisco a single command lists them all."
+   },
+   "ar": {
+    "title": "عرض منافذ STP غير المتسقة (inconsistent)",
+    "note": "يعرض المنافذ المحجوبة بسبب root guard أو loop guard أو عدم تطابق PVID/النوع؛ وفي Cisco يسردها أمر واحد دفعة واحدة."
+   }
+  },
+  "stp-devre-disi-birakma": {
+   "en": {
+    "title": "Disable STP per VLAN, per port or globally",
+    "note": "Disabling STP should only be considered on isolated segments where a loop is physically impossible; Cisco disables it per VLAN, Huawei globally or per port."
+   },
+   "ar": {
+    "title": "تعطيل STP على مستوى VLAN أو منفذ أو بشكل عام",
+    "note": "لا ينبغي تعطيل STP إلا في مقاطع معزولة يستحيل فيها حدوث حلقة فيزيائيًا؛ ويعطّله Cisco لكل VLAN بينما يعطّله Huawei عامًا أو لكل منفذ."
+   }
+  },
+  "pvst-vlan-instance-eslemesi-gorme": {
+   "en": {
+    "title": "Display per-VLAN STP state and the VLAN-to-instance mapping",
+    "note": "Cisco PVST runs a separate STP per VLAN; on Huawei and Aruba MSTP, VLANs are mapped to instances. Learn which topology a VLAN uses from the mapping first."
+   },
+   "ar": {
+    "title": "عرض حالة STP لكل VLAN وربط VLAN بالـ instance",
+    "note": "يشغّل Cisco PVST نسخة STP مستقلة لكل VLAN، بينما تُربط الـ VLAN بالـ instances في MSTP على Huawei وAruba. اعرف الطوبولوجيا التي تستخدمها الـ VLAN من جدول الربط أولًا."
+   }
+  },
+  "stp-loop-sorun-giderme": {
+   "en": {
+    "title": "Check STP and traffic when a Layer 2 loop is suspected",
+    "note": "In a broadcast storm, first check which ports are blocked, CPU load and port counters; for quick diagnosis also see whether STP is generating unexpected topology changes."
+   },
+   "ar": {
+    "title": "فحص STP وحركة المرور عند الاشتباه في حلقة Layer 2",
+    "note": "عند حدوث broadcast storm تُفحص أولًا المنافذ المحجوبة وحمل المعالج وعدّادات المنافذ؛ ولتشخيص سريع يُنظر هل يولّد STP تغييرات topology غير متوقعة."
+   }
+  },
+  "stp-ozet-sayilar": {
+   "en": {
+    "title": "Display the STP summary and port state counts",
+    "note": "Cisco 'show spanning-tree summary' gives the STP mode, enabled protections and blocking/forwarding port counts per VLAN on one screen; Huawei 'display stp brief' returns a port list."
+   },
+   "ar": {
+    "title": "عرض ملخص STP وأعداد حالات المنافذ",
+    "note": "يعطي الأمر show spanning-tree summary في Cisco وضع STP والحمايات المفعّلة وعدد المنافذ في حالتي blocking وforwarding لكل VLAN في شاشة واحدة؛ أما display stp brief في Huawei فيعيد قائمة المنافذ."
+   }
+  },
+  "stp-blocked-port-bulma": {
+   "en": {
+    "title": "Find ports blocked by STP",
+    "note": "Knowing which link is the standby (blocking/discarding) one is critical for cabling and maintenance planning; on Cisco 'blockedports' lists them directly."
+   },
+   "ar": {
+    "title": "إيجاد المنافذ المحجوبة بواسطة STP",
+    "note": "معرفة الوصلة الاحتياطية (blocking/discarding) أمر حاسم لتخطيط التمديدات والصيانة؛ وفي Cisco يسردها الأمر blockedports مباشرة."
+   }
+  },
+  "stp-transmit-hold-count": {
+   "en": {
+    "title": "Configure the STP BPDU transmit hold count",
+    "note": "Limits the maximum number of BPDUs a port can send per hello interval (default 6); used to reduce BPDU storms and CPU load."
+   },
+   "ar": {
+    "title": "ضبط transmit hold count لـ BPDU في STP",
+    "note": "يحدد الحد الأقصى لعدد BPDU التي يمكن للمنفذ إرسالها في كل فترة hello (الافتراضي 6)؛ ويُستخدم لتقليل عواصف BPDU وحمل المعالج."
+   }
+  },
+  "stp-edge-port-dogrulama": {
+   "en": {
+    "title": "Verify that a port operates as an edge port (PortFast)",
+    "note": "Applying the configuration is not enough; confirm from the output that the port really operates as edge (and receives no BPDUs). Cisco output shows 'edge' for portfast."
+   },
+   "ar": {
+    "title": "التحقق من عمل المنفذ كمنفذ edge (PortFast)",
+    "note": "لا يكفي تطبيق الإعداد؛ يجب التأكد من المخرجات أن المنفذ يعمل فعلًا كـ edge ولا يستقبل BPDU. تظهر كلمة edge في مخرجات portfast على Cisco."
+   }
+  },
+  "stp-mac-flapping-loop-izleme": {
+   "en": {
+    "title": "Track a Layer 2 loop source through MAC flapping",
+    "note": "The same MAC address being learned from two ports repeatedly is a typical loop symptom. Cisco 'mac-move' notification and the Huawei flapping record show which ports it moves between."
+   },
+   "ar": {
+    "title": "تتبع مصدر حلقة Layer 2 عبر MAC flapping",
+    "note": "تعلّم العنوان MAC نفسه من منفذين بشكل متكرر عَرَض نموذجي للحلقة. يوضح إشعار mac-move في Cisco وسجل flapping في Huawei بين أي منفذين ينتقل العنوان."
+   }
+  },
+  "lacp-sistem-onceligi": {
+   "en": {
+    "title": "Set the LACP system priority",
+    "note": "The LACP system priority decides which end controls the bundle; the lower value wins. Huawei calls it 'lacp priority', while Cisco and Aruba CX use 'lacp system-priority'."
+   },
+   "ar": {
+    "title": "ضبط أولوية نظام LACP",
+    "note": "تحدد أولوية النظام أي طرف يتحكم في اختيار الروابط النشطة في LACP، وتفوز القيمة الأدنى. في Huawei يسمى الأمر lacp priority، وفي Cisco وAruba CX هو lacp system-priority."
+   }
+  },
+  "lacp-port-onceligi": {
+   "en": {
+    "title": "Choose active links with LACP port priority",
+    "note": "When a bundle has more members than allowed active links, ports with the lower priority value stay active. On Huawei this only matters with 'max active-linknumber' set."
+   },
+   "ar": {
+    "title": "اختيار الروابط النشطة بأولوية منفذ LACP",
+    "note": "عندما يزيد عدد الأعضاء عن الحد المسموح للروابط النشطة تبقى المنافذ ذات القيمة الأدنى فعالة. في Huawei لا يكون لها أثر دون ضبط max active-linknumber."
+   }
+  },
+  "lacp-hizli-timer": {
+   "en": {
+    "title": "Enable the LACP fast rate",
+    "note": "Cuts the LACPDU interval from 30 s to 1 s so failures are detected within seconds. Use it on both ends and check that the platform supports fast rate."
+   },
+   "ar": {
+    "title": "تفعيل المؤقت السريع في LACP",
+    "note": "يخفّض فاصل LACPDU من 30 ثانية إلى ثانية واحدة فيُكتشف العطل خلال ثوانٍ. يجب تفعيله على الطرفين مع التحقق من دعم المنصة."
+   }
+  },
+  "lacp-yuk-dagitimi": {
+   "en": {
+    "title": "Port-channel load-balancing method",
+    "note": "Defines which header fields are hashed to spread traffic over bundle members. A single flow never spreads over several links, whatever the algorithm."
+   },
+   "ar": {
+    "title": "خوارزمية توزيع الحمل في port-channel",
+    "note": "تحدد حقول الترويسة المستخدمة في التجزئة لتوزيع الحركة على روابط الحزمة. التدفق الواحد لا يتوزع على أكثر من رابط مهما كانت الخوارزمية."
+   }
+  },
+  "statik-port-kanali": {
+   "en": {
+    "title": "Create a static (no LACP) port-channel",
+    "note": "Use 'on' / manual mode when the far end cannot speak LACP. With no negotiation, a miscabled or one-sided bundle can create a loop."
+   },
+   "ar": {
+    "title": "إنشاء port-channel ثابت بدون LACP",
+    "note": "استخدم الوضع on أو manual عندما لا يدعم الطرف الآخر LACP. ولغياب التفاوض قد يسبب سوء التوصيل أو الإعداد من طرف واحد حلقة."
+   }
+  },
+  "lacp-sayac-ic-durum": {
+   "en": {
+    "title": "LACP counters and member internal state",
+    "note": "LACPDU sent/received counters show why a member did not join the bundle. If the counters do not increase, the far end is not speaking LACP."
+   },
+   "ar": {
+    "title": "عدادات LACP والحالة الداخلية للأعضاء",
+    "note": "تبيّن عدادات إرسال واستقبال LACPDU سبب عدم انضمام العضو إلى الحزمة. إذا لم تزد العدادات فالطرف الآخر لا يتحدث LACP."
+   }
+  },
+  "lacp-partner-bilgisi": {
+   "en": {
+    "title": "View the LACP partner details",
+    "note": "Shows the far device's system ID and port, exposing a cable plugged into the wrong switch or a bundle split across different partners. In MLAG both links must see the same partner ID."
+   },
+   "ar": {
+    "title": "عرض بيانات الشريك (partner) في LACP",
+    "note": "يعرض معرّف النظام والمنفذ للجهاز المقابل فيكشف كابلًا موصولًا بسويتش خاطئ أو حزمة منقسمة على شريكين مختلفين. في MLAG يجب أن يرى الرابطان معرّف الشريك نفسه."
+   }
+  },
+  "mlag-keepalive-baglantisi": {
+   "en": {
+    "title": "Configure the MLAG/vPC/VSX keepalive link",
+    "note": "A separate path that tells each peer whether the other is alive after the peer link fails. Build it on its own VRF and physical link, never over the peer link."
+   },
+   "ar": {
+    "title": "إعداد رابط keepalive لـ MLAG/vPC/VSX",
+    "note": "مسار منفصل يعلم كل نظير بما إذا كان الآخر حيًا بعد انقطاع peer-link. أنشئه في VRF ورابط فيزيائي مستقلين وليس عبر peer-link."
+   }
+  },
+  "mlag-peer-link": {
+   "en": {
+    "title": "Configure the MLAG peer link / ISL",
+    "note": "The peer link carries data and synchronization between the two MLAG peers. Build it as an LACP bundle of at least two members that carries all VLANs."
+   },
+   "ar": {
+    "title": "إعداد peer-link / ISL في MLAG",
+    "note": "يحمل peer-link البيانات والمزامنة بين نظيري MLAG. يُنشأ كحزمة LACP من عضوين على الأقل ويحمل جميع شبكات VLAN."
+   }
+  },
+  "mlag-durum-goruntuleme": {
+   "en": {
+    "title": "Display MLAG / vPC / M-LAG / VSX status",
+    "note": "On all four vendors, peer state, keepalive and consistency are checked separately; a healthy peer-link with a failed keepalive still risks split-brain."
+   },
+   "ar": {
+    "title": "عرض حالة MLAG / vPC / M-LAG / VSX",
+    "note": "في الموردين الأربعة تُفحص حالة النظير و keepalive والاتساق كلٌّ على حدة؛ فقد يكون peer-link سليمًا بينما keepalive معطّل مما يعرّض لخطر split-brain."
+   }
+  },
+  "cdp-komsulari": {
+   "en": {
+    "title": "Display CDP neighbors",
+    "note": "CDP is Cisco-proprietary; Huawei uses NDP, and Juniper and Aruba CX rely on LLDP instead. In mixed networks, IP phones and Cisco devices show up through CDP."
+   },
+   "ar": {
+    "title": "عرض جيران CDP",
+    "note": "CDP خاص بـ Cisco؛ تستخدم Huawei بروتوكول NDP وتعتمد Juniper و Aruba CX على LLDP بدلًا منه. في البيئات المختلطة تظهر هواتف IP وأجهزة Cisco عبر CDP."
+   }
+  },
+  "cdp-kapatma": {
+   "en": {
+    "title": "Disable CDP (globally or per port)",
+    "note": "CDP/NDP advertisements on user ports leak the device model and IP; on uplinks and IP-phone ports, consider the impact before disabling."
+   },
+   "ar": {
+    "title": "تعطيل CDP (عامًا أو على مستوى المنفذ)",
+    "note": "بث CDP/NDP على منافذ المستخدمين يكشف طراز الجهاز وعنوانه؛ أما على الـ uplink ومنافذ هواتف IP فاحسب الأثر قبل التعطيل."
+   }
+  },
+  "lldp-zamanlayici": {
+   "en": {
+    "title": "Tune LLDP transmit timers",
+    "note": "The default LLDP interval is 30 s with a hold multiplier of 4 (TTL 120 s); sending too often adds load, too rarely delays IP phone discovery."
+   },
+   "ar": {
+    "title": "ضبط مؤقتات إرسال LLDP",
+    "note": "الفاصل الافتراضي لـ LLDP هو 30 ثانية ومعامل الاحتفاظ 4 (أي TTL مقداره 120 ثانية)؛ الإرسال المتكرر يزيد الحمل والمتباعد يؤخر اكتشاف هواتف IP."
+   }
+  },
+  "lldp-istatistik": {
+   "en": {
+    "title": "Display and clear LLDP statistics",
+    "note": "Counters for transmitted/received LLDPDUs, discarded frames and aged-out neighbors help detect one-way links or misconfigured neighbors."
+   },
+   "ar": {
+    "title": "عرض إحصاءات LLDP وتصفيرها",
+    "note": "عدادات LLDPDU المرسلة والمستلمة والإطارات المهملة والجيران المنتهية تساعد في كشف الوصلات أحادية الاتجاه أو الجيران ذوي الإعداد الخاطئ."
+   }
+  },
+  "udld-etkinlestirme": {
+   "en": {
+    "title": "Detect unidirectional links with UDLD / DLDP / LFM",
+    "note": "A broken single direction on a fiber pair can cause STP loops. Cisco uses UDLD, Huawei DLDP, Aruba AOS-S link-keepalive and Junos 802.3ah LFM; AOS-CX has no equivalent."
+   },
+   "ar": {
+    "title": "اكتشاف الوصلات أحادية الاتجاه عبر UDLD / DLDP / LFM",
+    "note": "انقطاع أحد اتجاهي زوج الألياف قد يسبب حلقة STP. تستخدم Cisco بروتوكول UDLD و Huawei بروتوكول DLDP و Aruba AOS-S الأمر link-keepalive و Junos بروتوكول LFM؛ ولا مقابل له في AOS-CX."
+   }
+  },
+  "udld-durum": {
+   "en": {
+    "title": "Display UDLD / DLDP / LFM status",
+    "note": "The neighbor state should be 'bidirectional'; 'unidirectional', 'undetermined' or err-disable points to a fiber or transceiver issue. After an err-disable the port must be restored."
+   },
+   "ar": {
+    "title": "عرض حالة UDLD / DLDP / LFM",
+    "note": "يجب أن تكون حالة الجار bidirectional؛ أما unidirectional أو undetermined أو err-disable فتشير إلى مشكلة في الألياف أو الـ transceiver. وبعد err-disable يلزم إعادة المنفذ إلى العمل."
+   }
+  },
+  "jumbo-mtu-ayari": {
+   "en": {
+    "title": "Configure jumbo frames / MTU",
+    "note": "Jumbo frames must match on every hop end to end. On Cisco, 'system mtu' needs a reload on some platforms; Huawei uses jumboframe for L2, and 9216 is common on Juniper."
+   },
+   "ar": {
+    "title": "ضبط Jumbo frame / MTU",
+    "note": "يجب أن يتطابق jumbo frame في كل قفزة من البداية إلى النهاية. في Cisco قد يتطلب 'system mtu' إعادة تشغيل على بعض المنصات، وتستخدم Huawei الأمر jumboframe للطبقة الثانية، وشائع في Juniper القيمة 9216."
+   }
+  },
+  "mac-aging-suresi": {
+   "en": {
+    "title": "Set the MAC address table aging time",
+    "note": "Cisco and Huawei default to 300 s; Aruba AOS-S uses mac-age-time. On Junos it is a global switch-options setting, on MikroTik it is set per bridge."
+   },
+   "ar": {
+    "title": "ضبط مهلة تقادم جدول عناوين MAC",
+    "note": "القيمة الافتراضية في Cisco وHuawei هي 300 ثانية، ويستخدم Aruba AOS-S الأمر mac-age-time. في Junos الإعداد عام ضمن switch-options، وفي MikroTik يُضبط لكل bridge."
+   }
+  },
+  "statik-mac-girisi": {
+   "en": {
+    "title": "Add a static MAC address entry",
+    "note": "A static entry never ages out and survives a reload once saved. MAC formats differ (Cisco aaaa.bbbb.cccc, Huawei aaaa-bbbb-cccc); Aruba AOS-S uses 'static-mac'."
+   },
+   "ar": {
+    "title": "إضافة سجل MAC ثابت",
+    "note": "السجل الثابت لا يتقادم ويبقى بعد إعادة التشغيل عند حفظ الإعداد. تختلف صيغة MAC (Cisco: aaaa.bbbb.cccc وHuawei: aaaa-bbbb-cccc)، ويستخدم Aruba AOS-S الأمر static-mac."
+   }
+  },
+  "mac-tablosu-temizleme": {
+   "en": {
+    "title": "Clear the MAC address table",
+    "note": "Clearing dynamic entries causes temporary flooding; in production prefer clearing per VLAN or per port instead of the whole table. Static entries are not removed."
+   },
+   "ar": {
+    "title": "مسح جدول عناوين MAC",
+    "note": "يؤدي مسح السجلات الديناميكية إلى flooding مؤقت؛ ففي بيئة الإنتاج يفضَّل المسح لكل VLAN أو منفذ بدل الجدول كاملًا. ولا تُحذف السجلات الثابتة."
+   }
+  },
+  "lacp-trunk-l2-yapilandirma": {
+   "en": {
+    "title": "Configure an L2 trunk over an LACP bundle",
+    "note": "VLAN and trunk settings go on the logical interface (Port-channel / Eth-Trunk / lag / ae), not on member ports; add members to the bundle first and keep the trunk config on the logical interface."
+   },
+   "ar": {
+    "title": "إعداد trunk من الطبقة الثانية فوق حزمة LACP",
+    "note": "تُطبَّق إعدادات VLAN وtrunk على الواجهة المنطقية (Port-channel أو Eth-Trunk أو lag أو ae) لا على المنافذ الأعضاء؛ تُضاف الأعضاء إلى الحزمة أولًا وتبقى إعدادات trunk على الواجهة المنطقية."
+   }
+  },
+  "ethernet-flow-control": {
+   "en": {
+    "title": "Configure Ethernet flow control (802.3x)",
+    "note": "Flow control slows the sender with PAUSE frames but stops all traffic, so it can cause head-of-line blocking. Many Cisco Catalyst models support receive only."
+   },
+   "ar": {
+    "title": "إعداد التحكم في التدفق Ethernet (802.3x)",
+    "note": "يبطئ flow control المرسل عبر إطارات PAUSE لكنه يوقف كل الحركة فقد يسبب head-of-line blocking. وتدعم أغلب سويتشات Cisco Catalyst وضع receive فقط."
+   }
+  },
+  "interface-hiz-duplex-ayari": {
+   "en": {
+    "title": "Manually set port speed and duplex",
+    "note": "If you hard-code speed/duplex, both ends must be hard-coded the same; fixing only one end makes the other fall back to half duplex (mismatch). 1G and faster copper ports require auto-negotiation."
+   },
+   "ar": {
+    "title": "ضبط سرعة المنفذ والـ duplex يدويًا",
+    "note": "عند تثبيت السرعة والـ duplex يجب تثبيتهما بالطريقة نفسها على الطرفين، فتثبيت طرف واحد يجعل الآخر يعود إلى half-duplex (عدم تطابق). ويتطلب النحاس بسرعة 1G فأكثر auto-negotiation."
+   }
+  },
+  "interface-hata-sayaclari": {
+   "en": {
+    "title": "Inspect port error counters (CRC, input errors)",
+    "note": "CRC, runt and giant counters point to cabling, SFP or duplex problems. Without clearing and re-measuring you cannot tell whether the errors are still increasing."
+   },
+   "ar": {
+    "title": "فحص عدّادات أخطاء المنفذ (CRC وأخطاء الإدخال)",
+    "note": "تشير عدّادات CRC وrunt وgiant إلى مشكلة في الكابل أو SFP أو duplex. وبدون تصفير العدّادات وإعادة القياس لا يُعرف هل الأخطاء ما زالت تزداد."
+   }
+  },
+  "interface-trafik-orani-izleme": {
+   "en": {
+    "title": "Port traffic rate and load-interval setting",
+    "note": "The default 5-minute average hides short bursts. On Cisco load-interval 30 and on Huawei set flow-stat interval 30 show rates averaged over 30 seconds."
+   },
+   "ar": {
+    "title": "معدل حركة المنفذ وضبط load-interval",
+    "note": "المتوسط الافتراضي لخمس دقائق يخفي الاندفاعات القصيرة. ويعرض load-interval 30 في Cisco وset flow-stat interval 30 في Huawei المعدلات بمتوسط 30 ثانية."
+   }
+  },
+  "dot1x-mab-yedek": {
+   "en": {
+    "title": "Fall back to MAB when 802.1X fails (MAC Authentication Bypass)",
+    "note": "Devices without a supplicant, such as printers and cameras, are authenticated by MAC address. Cisco sets order and priority separately; Huawei treats mac-authen as its own method."
+   },
+   "ar": {
+    "title": "الرجوع إلى MAB عند فشل 802.1X (تجاوز المصادقة بعنوان MAC)",
+    "note": "الأجهزة التي لا تملك supplicant مثل الطابعات والكاميرات تُصادَق بعنوان MAC. في Cisco يُضبط الترتيب والأولوية بشكل منفصل، وفي Huawei تُعد mac-authen طريقة مستقلة."
+   }
+  },
+  "dot1x-guest-vlan": {
+   "en": {
+    "title": "Configure 802.1X guest / unauthenticated VLAN",
+    "note": "Moves a client that does not answer EAPOL, or is rejected, into a restricted VLAN. Cisco uses authentication event, AOS-S uses unauth-vid, and AOS-CX uses roles."
+   },
+   "ar": {
+    "title": "ضبط guest / unauth VLAN في 802.1X",
+    "note": "ينقل العميل الذي لا يرد على EAPOL أو يُرفض إلى VLAN مقيّدة. يستخدم Cisco الأمر authentication event وAOS-S الأمر unauth-vid وAOS-CX الأدوار roles."
+   }
+  },
+  "dot1x-critical-vlan": {
+   "en": {
+    "title": "Critical VLAN when RADIUS is down (server dead)",
+    "note": "If RADIUS is unreachable, placing ports in a temporary VLAN instead of blocking them protects production. Reinitialize forces re-authentication once the server returns."
+   },
+   "ar": {
+    "title": "ضبط critical VLAN عند تعطل RADIUS (server dead)",
+    "note": "إذا تعذّر الوصول إلى RADIUS فإن نقل المنافذ إلى VLAN مؤقتة بدل حجبها يحمي الإنتاج. يفرض reinitialize إعادة المصادقة عند عودة الخادم."
+   }
+  },
+  "dot1x-host-mode": {
+   "en": {
+    "title": "802.1X host mode: single, multi-host, multi-auth",
+    "note": "Defines how many devices on a port are authenticated and how. For a PC behind an IP phone, use multi-domain on Cisco, port-method mac on Huawei, and client-limit on Aruba."
+   },
+   "ar": {
+    "title": "وضع المضيف في 802.1X: single وmulti-host وmulti-auth",
+    "note": "يحدد عدد الأجهزة المصادَقة على المنفذ وطريقة ذلك. لحاسوب خلف هاتف IP يُستخدم multi-domain في Cisco وport-method mac في Huawei وclient-limit في Aruba."
+   }
+  },
+  "dot1x-reauth-zamanlayici": {
+   "en": {
+    "title": "802.1X re-authentication and timer settings",
+    "note": "Periodic reauth makes policy changes (VLAN/ACL) reach the ports. Very short intervals load RADIUS; the interval can also come from the server via Session-Timeout."
+   },
+   "ar": {
+    "title": "إعادة المصادقة ومؤقتات 802.1X",
+    "note": "تضمن إعادة المصادقة الدورية وصول تغييرات السياسة (VLAN/ACL) إلى المنافذ. الفواصل القصيرة جدًا ترهق RADIUS، ويمكن أن تأتي المدة من الخادم عبر Session-Timeout."
+   }
+  },
+  "dot1x-oturum-goruntuleme": {
+   "en": {
+    "title": "View and clear 802.1X sessions",
+    "note": "Shows which MAC was authorized into which VLAN by which method (dot1x/mab). When troubleshooting, check session state first and RADIUS logs second."
+   },
+   "ar": {
+    "title": "عرض جلسات 802.1X ومسحها",
+    "note": "يوضح أي عنوان MAC رُخّص إلى أي VLAN وبأي طريقة (dot1x/mab). عند استكشاف الأخطاء يُفحص حال الجلسة أولًا ثم سجلات RADIUS."
+   }
+  },
+  "private-vlan-yapilandirma": {
+   "en": {
+    "title": "Private VLAN (isolated/community) and Huawei MUX VLAN",
+    "note": "Isolates devices from each other within the same subnet. Cisco uses primary/isolated/community, Huawei uses MUX VLAN, and Aruba AOS-S source-port filters give a similar result."
+   },
+   "ar": {
+    "title": "Private VLAN (isolated/community) وMUX VLAN في Huawei",
+    "note": "يعزل الأجهزة عن بعضها داخل الشبكة الفرعية نفسها. يستخدم Cisco primary/isolated/community وHuawei يستخدم MUX VLAN، ويعطي فلتر source-port في Aruba AOS-S نتيجة مشابهة."
+   }
+  },
+  "port-isolation": {
+   "en": {
+    "title": "L2 isolation with port isolation / protected port",
+    "note": "Blocks traffic between ports in the same VLAN while allowing the uplink. Cisco uses protected ports, Huawei port-isolate, Junos no-local-switching, and MikroTik horizon."
+   },
+   "ar": {
+    "title": "العزل على L2 باستخدام port isolation / protected port",
+    "note": "يقطع الاتصال بين المنافذ في الـ VLAN نفسها ويسمح بمنفذ uplink. يستخدم Cisco protected port وHuawei port-isolate وJunos no-local-switching وMikroTik horizon."
+   }
+  },
+  "port-security-sticky-mac": {
+   "en": {
+    "title": "Port security sticky MAC and MAC limit",
+    "note": "Sticky stores learned MACs in the running config. Cisco uses sticky, Huawei sticky-mac, Junos persistent-learning, and AOS-S learn-mode static."
+   },
+   "ar": {
+    "title": "Port security بميزة sticky MAC وحد عناوين MAC",
+    "note": "تُحفظ عناوين MAC المتعلَّمة بميزة sticky في running-config. يستخدم Cisco الخيار sticky وHuawei الخيار sticky-mac وJunos الخيار persistent-learning وAOS-S الوضع learn-mode static."
+   }
+  },
+  "errdisable-recovery-yapilandirma": {
+   "en": {
+    "title": "Configure errdisable auto-recovery",
+    "note": "Cisco enables errdisable recovery per cause; Huawei uses error-down auto-recovery, and Aruba uses a timer specific to each protection feature."
+   },
+   "ar": {
+    "title": "ضبط الاسترداد التلقائي لحالة errdisable",
+    "note": "في Cisco يُفعَّل errdisable recovery لكل سبب على حدة، وفي Huawei يُستخدم error-down auto-recovery، وفي Aruba مؤقت خاص بكل ميزة حماية."
+   }
+  },
+  "errdisable-durum-goruntuleme": {
+   "en": {
+    "title": "Show errdisabled ports and their causes",
+    "note": "Shows why a port was shut and its recovery countdown; Huawei commands are based on the error-down concept."
+   },
+   "ar": {
+    "title": "عرض منافذ errdisable وأسبابها",
+    "note": "يعرض سبب إغلاق المنفذ وعدّاد الاسترداد؛ وتعتمد أوامر Huawei على مفهوم error-down."
+   }
+  },
+  "port-security-violation-modlari": {
+   "en": {
+    "title": "Port security violation modes",
+    "note": "Shutdown disables the port, restrict drops and logs, protect drops silently; Aruba and Junos name the equivalents differently."
+   },
+   "ar": {
+    "title": "أوضاع المخالفة في Port security",
+    "note": "shutdown يعطل المنفذ، وrestrict يُسقط الحزم ويسجل، وprotect يُسقط بصمت؛ وتختلف التسميات في Aruba وJunos."
+   }
+  },
+  "port-security-maksimum-mac-aging": {
+   "en": {
+    "title": "Port security MAC limit and aging",
+    "note": "Sets how many MACs a port may learn and when learned addresses expire; sticky learning is a separate topic."
+   },
+   "ar": {
+    "title": "حد MAC ومدة aging في Port security",
+    "note": "يحدد عدد عناوين MAC المسموح بها للمنفذ ومتى تنتهي صلاحية العناوين المتعلمة؛ والتعلم sticky موضوع منفصل."
+   }
+  },
+  "dai-rate-limit-arp-hiz-siniri": {
+   "en": {
+    "title": "DAI ARP rate limit and validation",
+    "note": "DAI limits the ARP rate on untrusted ports; Cisco err-disables the port on excess, while Huawei uses ARP speed limiting."
+   },
+   "ar": {
+    "title": "حد معدل ARP والتحقق في DAI",
+    "note": "يحدّ DAI من معدل ARP على المنافذ غير الموثوقة؛ وعند التجاوز يعطل Cisco المنفذ بينما يستخدم Huawei تحديد سرعة ARP."
+   }
+  },
+  "dai-arp-access-list-statik": {
+   "en": {
+    "title": "Static ARP access-list for DAI",
+    "note": "For static-IP devices that do not use DHCP, an ARP ACL defines the IP-MAC pair; otherwise DAI drops their ARP."
+   },
+   "ar": {
+    "title": "قائمة ARP access-list ثابتة لـ DAI",
+    "note": "للأجهزة ذات IP الثابت التي لا تستخدم DHCP تُعرَّف علاقة IP-MAC عبر ARP ACL، وإلا يُسقط DAI حزم ARP الخاصة بها."
+   }
+  },
+  "dhcp-snooping-option82": {
+   "en": {
+    "title": "DHCP snooping Option 82 handling",
+    "note": "The switch inserts Option 82 into DHCP requests; packets with Option 82 arriving on untrusted ports may need allow-untrusted."
+   },
+   "ar": {
+    "title": "إدارة Option 82 في DHCP snooping",
+    "note": "يضيف السويتش Option 82 إلى طلبات DHCP؛ وقد يلزم allow-untrusted عند وصول حزم تحمله على منفذ غير موثوق."
+   }
+  },
+  "dhcp-snooping-rate-limit": {
+   "en": {
+    "title": "DHCP snooping packet rate limit",
+    "note": "Limits DHCP packets accepted per second on a port, stopping DHCP starvation attacks and misbehaving clients."
+   },
+   "ar": {
+    "title": "حد معدل حزم DHCP snooping",
+    "note": "يحدّ عدد حزم DHCP المقبولة في الثانية على المنفذ لمنع هجمات DHCP starvation والعملاء المعطوبين."
+   }
+  },
+  "ospf-stub-area-yapilandirma": {
+   "en": {
+    "title": "Configure an OSPF stub area",
+    "note": "The stub setting must match on every router in the area, otherwise an E-bit mismatch prevents adjacency. A stub area cannot contain an ASBR or carry Type 5 LSAs."
+   },
+   "ar": {
+    "title": "إعداد منطقة OSPF من نوع stub",
+    "note": "يجب أن يكون إعداد stub متطابقًا على جميع الراوترات في المنطقة، وإلا فلن تتشكل الجوار بسبب عدم تطابق E-bit. ولا يمكن وجود ASBR أو LSA من النوع 5 داخل منطقة stub."
+   }
+  },
+  "ospf-totally-stubby-area": {
+   "en": {
+    "title": "OSPF totally stubby area (no-summary)",
+    "note": "no-summary is only needed on the ABR; internal routers just need 'stub'. Type 3 LSAs are filtered as well, so the area learns only a default route."
+   },
+   "ar": {
+    "title": "منطقة OSPF من نوع totally stubby (no-summary)",
+    "note": "الخيار no-summary مطلوب على ABR فقط، أما الراوترات الداخلية فيكفيها stub. تُحجب أيضًا LSA من النوع 3 فتتعلم المنطقة مسارًا افتراضيًا فقط."
+   }
+  },
+  "ospf-nssa-area-yapilandirma": {
+   "en": {
+    "title": "Configure an OSPF NSSA area",
+    "note": "In an NSSA the ASBR carries external routes as Type 7 LSAs and the ABR translates them to Type 5. 'nssa' must match on all routers in the area."
+   },
+   "ar": {
+    "title": "إعداد منطقة OSPF من نوع NSSA",
+    "note": "في NSSA ينقل ASBR المسارات الخارجية كـ LSA من النوع 7 ويحولها ABR إلى النوع 5. يجب أن يتطابق nssa على جميع راوترات المنطقة."
+   }
+  },
+  "ospf-totally-nssa-no-summary": {
+   "en": {
+    "title": "OSPF totally NSSA (nssa no-summary)",
+    "note": "With no-summary on the ABR, Type 3 LSAs stay out of the area and a default route is sent as Type 3; Type 7 origination keeps working."
+   },
+   "ar": {
+    "title": "منطقة OSPF من نوع totally NSSA (nssa no-summary)",
+    "note": "عند إضافة no-summary على ABR لا تدخل LSA من النوع 3 المنطقة ويُرسل مسار افتراضي كنوع 3، بينما يستمر إنشاء النوع 7 بشكل طبيعي."
+   }
+  },
+  "ospf-reference-bandwidth-ayari": {
+   "en": {
+    "title": "Set the OSPF reference bandwidth",
+    "note": "With the 100 Mbps default, 1G and 10G links both get cost 1. Raise the reference to the same value (e.g. 100000 Mbps) on all routers."
+   },
+   "ar": {
+    "title": "ضبط reference bandwidth في OSPF",
+    "note": "مع القيمة الافتراضية 100 Mbps تحصل وصلات 1G و10G على التكلفة 1. يجب رفع المرجع إلى القيمة نفسها (مثل 100000 Mbps) على جميع الراوترات."
+   }
+  },
+  "ospf-lsdb-goruntuleme": {
+   "en": {
+    "title": "View the OSPF LSDB",
+    "note": "The LSDB is kept per area and must be identical on all routers in the same area. Cisco output shows LSA freshness through Age, Seq# and Checksum."
+   },
+   "ar": {
+    "title": "عرض قاعدة بيانات OSPF LSDB",
+    "note": "تُحفظ LSDB لكل منطقة ويجب أن تكون متطابقة على كل الراوترات في المنطقة نفسها. يعرض Cisco حداثة LSA عبر Age وSeq# وChecksum."
+   }
+  },
+  "ospf-lsa-turune-gore-sorgu": {
+   "en": {
+    "title": "Query OSPF LSAs by type",
+    "note": "Type 1 router, 2 network, 3 summary, 4 asbr-summary, 5 external, 7 NSSA external. Selecting a type finds the record you want quickly in a large LSDB."
+   },
+   "ar": {
+    "title": "استعلام LSA في OSPF حسب النوع",
+    "note": "النوع 1 router و2 network و3 summary و4 asbr-summary و5 external و7 NSSA external. اختيار النوع يساعد على إيجاد السجل المطلوب بسرعة في LSDB كبيرة."
+   }
+  },
+  "ospf-dr-bdr-priority-ayari": {
+   "en": {
+    "title": "Set OSPF DR/BDR priority",
+    "note": "DR election is not preemptive; changing priority does not immediately replace a running DR. Priority 0 removes the router from the election entirely."
+   },
+   "ar": {
+    "title": "ضبط أولوية DR/BDR في OSPF",
+    "note": "انتخاب DR غير استباقي؛ فتغيير الأولوية لا يستبدل DR العامل فورًا. الأولوية 0 تُخرج الراوتر من الانتخاب تمامًا."
+   }
+  },
+  "ospf-network-type-point-to-point": {
+   "en": {
+    "title": "Set the OSPF network type to point-to-point",
+    "note": "Using p2p on a two-router Ethernet link removes the DR election and speeds up adjacency. Both ends of the link must use the same type."
+   },
+   "ar": {
+    "title": "ضبط نوع شبكة OSPF إلى point-to-point",
+    "note": "استخدام p2p على وصلة Ethernet بين راوترين يلغي انتخاب DR ويسرّع تشكّل الجوار. يجب أن يكون النوع نفسه على طرفي الوصلة."
+   }
+  },
+  "ospf-interface-brief-durumu": {
+   "en": {
+    "title": "OSPF interface summary and state",
+    "note": "Cisco 'show ip ospf interface brief' shows area, cost and neighbor count on one line; Huawei has no brief form, 'display ospf interface' prints a table of all interfaces."
+   },
+   "ar": {
+    "title": "ملخص واجهات OSPF وحالتها",
+    "note": "يعرض أمر Cisco ‏'show ip ospf interface brief' المنطقة والتكلفة وعدد الجيران في سطر واحد؛ بينما لا يوجد شكل مختصر في Huawei ويطبع 'display ospf interface' جدولًا بكل الواجهات."
+   }
+  },
+  "ospf-router-id-ayari": {
+   "en": {
+    "title": "Set the OSPF router ID",
+    "note": "A router ID change does not take effect until the process restarts; Cisco needs 'clear ip ospf process' and Huawei 'reset ospf 1 process', which briefly drops adjacencies."
+   },
+   "ar": {
+    "title": "ضبط معرّف الراوتر Router ID في OSPF",
+    "note": "لا يسري تغيير Router ID إلا بعد إعادة تشغيل العملية؛ يتطلب Cisco الأمر 'clear ip ospf process' وHuawei الأمر 'reset ospf 1 process' وهذا يُسقط الجوار لفترة قصيرة."
+   }
+  },
+  "ospf-default-information-originate": {
+   "en": {
+    "title": "Originate a default route into OSPF",
+    "note": "On Cisco, without 'always' the default is advertised only if 0.0.0.0/0 exists in the routing table; Huawei's equivalent is 'default-route-advertise'."
+   },
+   "ar": {
+    "title": "حقن المسار الافتراضي في OSPF",
+    "note": "في Cisco لا يُعلَن المسار الافتراضي دون الكلمة 'always' إلا إذا كان 0.0.0.0/0 موجودًا في جدول التوجيه؛ ومقابله في Huawei الأمر 'default-route-advertise'."
+   }
+  },
+  "ospf-redistribute-static": {
+   "en": {
+    "title": "Redistribute static routes into OSPF",
+    "note": "On Cisco, forgetting the 'subnets' keyword redistributes only classful networks; on Huawei 'import-route static' does the same job."
+   },
+   "ar": {
+    "title": "إعادة توزيع المسارات الثابتة في OSPF",
+    "note": "في Cisco يؤدي نسيان الكلمة 'subnets' إلى إعادة توزيع الشبكات classful فقط؛ وفي Huawei يؤدي الأمر 'import-route static' الغرض نفسه."
+   }
+  },
+  "ospf-abr-area-range-ozetleme": {
+   "en": {
+    "title": "OSPF inter-area summarization on the ABR",
+    "note": "The summary is created on the ABR with area range; on Cisco/Huawei it is advertised while at least one covered subnet exists and withdrawn when none remain."
+   },
+   "ar": {
+    "title": "تلخيص مسارات OSPF بين المناطق على ABR",
+    "note": "يُنشأ الملخّص على ABR بالأمر area range؛ وفي Cisco وHuawei يُعلَن طالما يوجد شبكة فرعية واحدة على الأقل ضمن النطاق ويُسحب عند زوال الشبكات كلها."
+   }
+  },
+  "ospf-virtual-link": {
+   "en": {
+    "title": "Configure an OSPF virtual link",
+    "note": "A virtual link connects an area that has no direct link to area 0 to the backbone through a common transit area; the transit area cannot be a stub."
+   },
+   "ar": {
+    "title": "ضبط virtual link في OSPF",
+    "note": "يربط الـ virtual link منطقة لا تملك وصلة مباشرة بالمنطقة 0 مع الـ backbone عبر منطقة عبور مشتركة؛ ولا يجوز أن تكون منطقة العبور من نوع stub."
+   }
+  },
+  "ospf-hello-dead-interval-ayari": {
+   "en": {
+    "title": "Set OSPF hello and dead intervals",
+    "note": "Hello/dead values must match exactly on both neighbors; on Cisco changing hello auto-sets dead to 4x, while on Huawei both must be set separately."
+   },
+   "ar": {
+    "title": "ضبط فترتي hello وdead في OSPF",
+    "note": "يجب أن تتطابق قيمتا hello وdead تمامًا على الجارين؛ في Cisco يؤدي تغيير hello إلى ضبط dead تلقائيًا إلى 4 أمثاله، بينما في Huawei يجب ضبطهما منفصلتين."
+   }
+  },
+  "ospf-bfd-etkinlestirme": {
+   "en": {
+    "title": "Enable BFD for OSPF",
+    "note": "BFD detects a link failure much faster than the OSPF dead timer (typically under a second); BFD must be enabled on both ends with compatible timers."
+   },
+   "ar": {
+    "title": "تفعيل BFD لبروتوكول OSPF",
+    "note": "يكتشف BFD انقطاع الوصلة أسرع بكثير من مؤقت dead في OSPF (عادة أقل من ثانية)؛ ويجب تفعيله على الطرفين مع مؤقتات متوافقة."
+   }
+  },
+  "rip-v2-temel-yapilandirma": {
+   "en": {
+    "title": "Basic RIPv2 configuration",
+    "note": "RIP auto-summarizes by default; to avoid problems with discontiguous subnets use 'no auto-summary' on Cisco and 'undo summary' on Huawei."
+   },
+   "ar": {
+    "title": "الإعداد الأساسي لـ RIPv2",
+    "note": "يلخّص RIP المسارات تلقائيًا افتراضيًا؛ ولتفادي المشاكل مع الشبكات الفرعية غير المتجاورة يُستخدم 'no auto-summary' في Cisco و'undo summary' في Huawei."
+   }
+  },
+  "rip-veritabani-ve-rota-goruntuleme": {
+   "en": {
+    "title": "Display RIP routes and database",
+    "note": "Cisco 'show ip rip database' shows only RIP routes; on Huawei routes and interface info come separately from 'display rip <process> route' and 'interface'."
+   },
+   "ar": {
+    "title": "عرض مسارات RIP وقاعدة بياناته",
+    "note": "يعرض أمر Cisco ‏'show ip rip database' مسارات RIP فقط؛ وفي Huawei تُؤخذ معلومات المسارات والواجهات منفصلة عبر 'display rip <process> route' و'interface'."
+   }
+  },
+  "isis-temel-yapilandirma": {
+   "en": {
+    "title": "Basic IS-IS configuration",
+    "note": "IS-IS runs on a CLNS/NET address, not an IP; the last byte of the NET (NSEL) must be 00 and the System ID is 6 bytes. Aruba switches do not support IS-IS."
+   },
+   "ar": {
+    "title": "الإعداد الأساسي لـ IS-IS",
+    "note": "يعمل IS-IS بعنوان CLNS/NET وليس بعنوان IP؛ ويجب أن يكون آخر بايت في NET وهو NSEL مساويًا 00 ومعرّف النظام System ID من 6 بايت. ولا تدعم سويتشات Aruba بروتوكول IS-IS."
+   }
+  },
+  "isis-komsu-goruntuleme": {
+   "en": {
+    "title": "Display IS-IS adjacencies",
+    "note": "Cisco 'show isis neighbors' and Huawei 'display isis peer' show State/Type; if not Up it is usually a level mismatch, MTU or authentication issue."
+   },
+   "ar": {
+    "title": "عرض علاقات الجوار في IS-IS",
+    "note": "يعرض Cisco ‏'show isis neighbors' وHuawei ‏'display isis peer' الحالة State والنوع Type؛ وإن لم تكن Up فالسبب غالبًا عدم تطابق المستوى أو MTU أو المصادقة."
+   }
+  },
+  "isis-lsp-veritabani-goruntuleme": {
+   "en": {
+    "title": "Display the IS-IS LSP database",
+    "note": "The IS-IS LSDB consists of LSP entries; in Cisco 'show isis database' and Huawei 'display isis lsdb' the trailing -00 in the LSP ID is the fragment number."
+   },
+   "ar": {
+    "title": "عرض قاعدة بيانات LSP في IS-IS",
+    "note": "تتكوّن قاعدة بيانات IS-IS من سجلات LSP؛ وفي أمر Cisco ‏'show isis database' وأمر Huawei ‏'display isis lsdb' يمثل -00 في نهاية LSP ID رقم الجزء."
+   }
+  },
+  "isis-metric-style-wide": {
+   "en": {
+    "title": "IS-IS metric-style wide",
+    "note": "The default 'narrow' metric allows at most 63 per interface; modern networks and MPLS-TE use 'wide' (24-bit), and it must match on all routers."
+   },
+   "ar": {
+    "title": "ضبط metric-style wide في IS-IS",
+    "note": "المقياس narrow الافتراضي يسمح بحد أقصى 63 لكل واجهة؛ وتستخدم الشبكات الحديثة وMPLS-TE المقياس wide (24 بت) ويجب أن يتطابق على كل الراوترات."
+   }
+  },
+  "ospf-ecmp-maximum-paths": {
+   "en": {
+    "title": "OSPF ECMP maximum-paths",
+    "note": "The number of equal-cost paths is raised for load sharing; on Aruba AOS-S ECMP is set with the global 'ip load-sharing', not under OSPF."
+   },
+   "ar": {
+    "title": "ضبط ECMP maximum-paths في OSPF",
+    "note": "يُرفع عدد المسارات متساوية التكلفة لتقاسم الحمل؛ وفي Aruba AOS-S يُضبط ECMP عبر الأمر العام 'ip load-sharing' وليس تحت OSPF."
+   }
+  },
+  "ibgp-update-source-loopback": {
+   "en": {
+    "title": "iBGP neighbor with update-source Loopback",
+    "note": "Building the iBGP session between Loopbacks keeps it up over an alternate path when a physical link fails. On Huawei the equivalent keyword is connect-interface."
+   },
+   "ar": {
+    "title": "جار iBGP مع update-source على واجهة Loopback",
+    "note": "إنشاء جلسة iBGP بين واجهات Loopback يُبقي الجلسة قائمة عبر مسار بديل عند سقوط رابط فيزيائي. المكافئ في Huawei هو connect-interface."
+   }
+  },
+  "ebgp-multihop-loopback-peering": {
+   "en": {
+    "title": "eBGP multihop with Loopback peering",
+    "note": "eBGP packets are sent with TTL=1 by default, so a neighbor that is not directly connected needs multihop. Junos uses multihop ttl and MikroTik uses multihop=yes."
+   },
+   "ar": {
+    "title": "eBGP multihop مع جيران عبر Loopback",
+    "note": "تُرسل حزم eBGP افتراضيًا بقيمة TTL=1، لذا يلزم multihop إذا لم يكن الجار متصلًا مباشرة. في Junos يُستخدم multihop ttl وفي MikroTik الخيار multihop=yes."
+   }
+  },
+  "bgp-neighbor-detay-durum": {
+   "en": {
+    "title": "BGP neighbor detail and session state",
+    "note": "Shows the session state, last reset reason, timers and capabilities in one place. On Cisco, narrowing the output with '| include' speeds things up when you have many neighbors."
+   },
+   "ar": {
+    "title": "تفاصيل جار BGP وحالة الجلسة",
+    "note": "يعرض حالة الجلسة وسبب آخر إعادة تعيين والمؤقتات والقدرات في مكان واحد. في Cisco يسرّع تضييق المخرجات بـ '| include' العمل عند وجود جيران كثيرين."
+   }
+  },
+  "bgp-received-routes-goruntuleme": {
+   "en": {
+    "title": "Display routes received from a neighbor",
+    "note": "To see raw routes before inbound policy you need soft-reconfiguration inbound on Cisco, keep-all-routes on Huawei and keep all on Junos."
+   },
+   "ar": {
+    "title": "عرض المسارات المستلمة من الجار",
+    "note": "لرؤية المسارات الخام قبل تطبيق سياسة الاستقبال يلزم soft-reconfiguration inbound في Cisco وkeep-all-routes في Huawei وkeep all في Junos."
+   }
+  },
+  "bgp-advertised-routes-goruntuleme": {
+   "en": {
+    "title": "Display routes advertised to a neighbor",
+    "note": "Shows which prefixes are actually sent to the neighbor after outbound policy; useful for catching prefix leaks in peering or transit setups."
+   },
+   "ar": {
+    "title": "عرض المسارات المعلَن عنها للجار",
+    "note": "يبيّن البادئات التي تُرسل فعليًا إلى الجار بعد تطبيق سياسة الإرسال؛ ويفيد في كشف تسريب البادئات في ترتيبات peering أو transit."
+   }
+  },
+  "bgp-prefix-list-filtreleme": {
+   "en": {
+    "title": "Filter BGP routes with a prefix-list",
+    "note": "A prefix-list filters inbound or outbound routes by prefix and length range. It is called ip ip-prefix on Huawei and route-filter on Junos."
+   },
+   "ar": {
+    "title": "تصفية مسارات BGP باستخدام prefix-list",
+    "note": "تتيح prefix-list تصفية المسارات الواردة أو الصادرة حسب البادئة ونطاق الطول. تسمى ip ip-prefix في Huawei وroute-filter في Junos."
+   }
+  },
+  "bgp-route-map-as-path-prepend": {
+   "en": {
+    "title": "AS-path prepend with a route-map (steer inbound traffic)",
+    "note": "To push inbound traffic toward the preferred link you repeat your own AS in the advertised route. Huawei uses route-policy and apply as-path."
+   },
+   "ar": {
+    "title": "AS-path prepend باستخدام route-map لتوجيه الحركة الواردة",
+    "note": "لدفع الحركة الواردة نحو الرابط المفضّل تكرر رقم AS الخاص بك في المسار المعلَن. يستخدم Huawei الأمرين route-policy وapply as-path."
+   }
+  },
+  "bgp-as-path-access-list-filtre": {
+   "en": {
+    "title": "Filter BGP routes with an AS-path regex",
+    "note": "An AS-path access list filters routes by the ASes they traversed using a regex. '^65002$' matches only prefixes originated by the directly connected neighbor."
+   },
+   "ar": {
+    "title": "تصفية مسارات BGP باستخدام regex لـ AS-path",
+    "note": "تصفّي قائمة AS-path المسارات حسب أرقام AS التي مرت بها بواسطة regex. التعبير '^65002$' يطابق فقط بادئات الجار المتصل مباشرة التي أنشأها بنفسه."
+   }
+  },
+  "bgp-local-preference-ayari": {
+   "en": {
+    "title": "Local-preference for outbound path selection",
+    "note": "Local-preference is carried inside the AS and the highest value wins; the default is 100. It decides which exit is preferred for outbound traffic."
+   },
+   "ar": {
+    "title": "local-preference لاختيار المسار الصادر",
+    "note": "تنتقل local-preference داخل الـ AS وتفوز القيمة الأعلى؛ والقيمة الافتراضية 100. وهي تحدد المخرج المفضّل للحركة الصادرة."
+   }
+  },
+  "bgp-med-ayari": {
+   "en": {
+    "title": "Set MED (metric) toward a neighbor",
+    "note": "MED only influences path choice in the neighboring AS and is compared between paths from the same neighbor AS; lower MED wins."
+   },
+   "ar": {
+    "title": "ضبط قيمة MED تجاه الجار",
+    "note": "تؤثر MED على اختيار المسار في الـ AS المجاور فقط وتُقارن بين المسارات القادمة من نفس الـ AS؛ والقيمة الأقل هي المفضلة."
+   }
+  },
+  "bgp-weight-ayari": {
+   "en": {
+    "title": "Prefer paths locally with weight (Cisco)",
+    "note": "Weight is Cisco-specific, local to the router and never advertised; highest wins. The Huawei equivalent is preferred-value."
+   },
+   "ar": {
+    "title": "تفضيل المسار محليًا عبر weight (Cisco)",
+    "note": "weight خاصية Cisco محلية على الموجّه ولا تُعلن للجيران؛ وأعلى قيمة تفوز. المكافئ في Huawei هو preferred-value."
+   }
+  },
+  "bgp-community-gonderme": {
+   "en": {
+    "title": "Tag routes with BGP communities and send them",
+    "note": "Communities are not sent to neighbors by default on Cisco/Huawei/AOS-CX; send-community or advertise-community is required. Junos sends them by default."
+   },
+   "ar": {
+    "title": "وسم المسارات بـ BGP community وإرسالها",
+    "note": "لا تُرسل الـ community إلى الجيران افتراضيًا في Cisco/Huawei/AOS-CX؛ يلزم send-community أو advertise-community. أما Junos فيرسلها افتراضيًا."
+   }
+  },
+  "bgp-soft-reset-inbound": {
+   "en": {
+    "title": "BGP soft reset inbound (route refresh)",
+    "note": "Re-applies the inbound policy without dropping the session; both peers need route refresh capability, otherwise soft-reconfiguration inbound is required."
+   },
+   "ar": {
+    "title": "Soft reset وارد في BGP (route refresh)",
+    "note": "يعيد تطبيق السياسة الواردة دون إسقاط الجلسة؛ يجب أن يدعم الطرفان route refresh وإلا لزم soft-reconfiguration inbound."
+   }
+  },
+  "bgp-soft-reset-outbound": {
+   "en": {
+    "title": "BGP soft reset outbound",
+    "note": "Re-applies the outbound policy and resends prefixes to the neighbor; the session stays up and no route refresh is needed on the peer."
+   },
+   "ar": {
+    "title": "Soft reset صادر في BGP",
+    "note": "يعيد تطبيق السياسة الصادرة ويرسل البادئات مجددًا إلى الجار؛ تبقى الجلسة قائمة ولا حاجة لـ route refresh لدى الجار."
+   }
+  },
+  "bgp-komsu-hard-reset": {
+   "en": {
+    "title": "Reset a BGP session (hard reset)",
+    "note": "The session is torn down and re-established, interrupting production traffic. Use it only when soft reset is not enough (e.g. AS number, update-source or authentication changes)."
+   },
+   "ar": {
+    "title": "إعادة ضبط جلسة BGP (hard reset)",
+    "note": "تُسقَط الجلسة وتُنشأ من جديد مما يقطع حركة الإنتاج. استخدمها فقط عند عدم كفاية soft reset (مثل تغيير رقم AS أو update-source أو المصادقة)."
+   }
+  },
+  "bgp-route-reflector-client": {
+   "en": {
+    "title": "Configure a route reflector and clients",
+    "note": "Removes the iBGP full-mesh requirement. The reflector reflects routes learned from clients to other clients and non-clients; cluster-id prevents loops."
+   },
+   "ar": {
+    "title": "إعداد route reflector والعملاء",
+    "note": "يزيل شرط الـ full-mesh في iBGP. يعكس الـ reflector المسارات المتعلَّمة من العميل إلى بقية العملاء وغير العملاء، ويمنع cluster-id الحلقات."
+   }
+  },
+  "bgp-peer-group-sablon": {
+   "en": {
+    "title": "Neighbor template with peer-group",
+    "note": "Groups many neighbors with identical policy into one template; shortens configuration and makes update generation more efficient."
+   },
+   "ar": {
+    "title": "قالب الجيران باستخدام peer-group",
+    "note": "يجمع عدة جيران بسياسة واحدة في قالب واحد؛ يقلل الإعداد ويحسّن كفاءة توليد التحديثات."
+   }
+  },
+  "bgp-graceful-restart": {
+   "en": {
+    "title": "Enable BGP graceful restart",
+    "note": "Lets the neighbor keep routes as stale while the control plane restarts, so forwarding continues. Both sides must support the capability."
+   },
+   "ar": {
+    "title": "تفعيل graceful restart في BGP",
+    "note": "يتيح للجار إبقاء المسارات قديمة (stale) أثناء إعادة تشغيل مستوى التحكم فيستمر التمرير. يجب أن يدعمه الطرفان."
+   }
+  },
+  "bgp-bfd-komsu": {
+   "en": {
+    "title": "BFD for BGP neighbors (fast failure detection)",
+    "note": "BFD reports link or neighbor failure to BGP in sub-second time instead of waiting for the hold timer (default 180 s). BFD must be enabled on both ends."
+   },
+   "ar": {
+    "title": "BFD لجيران BGP (كشف سريع للأعطال)",
+    "note": "ينبّه BFD بروتوكول BGP بعطل الوصلة أو الجار خلال أقل من ثانية بدل انتظار hold timer (الافتراضي 180 ثانية). يجب تفعيله على الطرفين."
+   }
+  },
+  "bgp-maximum-prefix": {
+   "en": {
+    "title": "Limit prefixes accepted from a neighbor",
+    "note": "maximum-prefix stops a misbehaving neighbor from leaking a full table and exhausting the router. It warns at the threshold and drops the session at the limit."
+   },
+   "ar": {
+    "title": "تحديد عدد البادئات المقبولة من الجار",
+    "note": "يمنع maximum-prefix جارًا خاطئًا من تسريب الجدول الكامل واستنزاف الموجّه؛ ينبّه عند العتبة ويُسقط الجلسة عند الحد."
+   }
+  },
+  "bgp-default-originate": {
+   "en": {
+    "title": "Advertise a default route to a neighbor",
+    "note": "Sends 0.0.0.0/0 to a neighbor without it needing to exist in the local table (on Cisco). The most practical method for branch or customer sites."
+   },
+   "ar": {
+    "title": "إرسال مسار افتراضي إلى الجار",
+    "note": "يرسل المسار 0.0.0.0/0 إلى الجار دون اشتراط وجوده في الجدول المحلي (في Cisco). هو الأسلوب الأنسب للفروع والعملاء."
+   }
+  },
+  "bgp-network-ifadesi": {
+   "en": {
+    "title": "Advertise a prefix with the network statement",
+    "note": "The network statement injects a route into BGP only if the exact prefix/mask exists in the routing table; otherwise nothing is advertised."
+   },
+   "ar": {
+    "title": "الإعلان عن بادئة بأمر network",
+    "note": "يُدخل أمر network المسار إلى BGP فقط إذا كانت البادئة بنفس القناع موجودة تمامًا في جدول التوجيه، وإلا فلا يُعلن."
+   }
+  },
+  "bgp-aggregate-summary-only": {
+   "en": {
+    "title": "Summarize with BGP aggregate-address",
+    "note": "Aggregation collapses specific prefixes into one summary; with summary-only the specifics are suppressed toward neighbors. At least one specific route must exist."
+   },
+   "ar": {
+    "title": "التلخيص باستخدام aggregate-address في BGP",
+    "note": "يجمع التلخيص عدة بادئات تفصيلية في مسار واحد؛ ومع summary-only لا تُرسل التفصيلية إلى الجيران. يجب وجود مسار تفصيلي واحد على الأقل."
+   }
+  },
+  "bgp-komsu-sorun-giderme-idle-active": {
+   "en": {
+    "title": "BGP neighbor stuck in Idle/Active: checklist",
+    "note": "Active means the TCP/179 connection cannot be established. Check reachability, source address, ACLs, AS number and authentication in order."
+   },
+   "ar": {
+    "title": "جار BGP عالق في Idle/Active: قائمة فحص",
+    "note": "تعني Active أن اتصال TCP/179 لا يُقام. افحص بالترتيب الوصول والعنوان المصدر وقوائم ACL ورقم AS والمصادقة."
+   }
+  },
+  "bgp-komsu-shutdown-bakim": {
+   "en": {
+    "title": "Administratively shut down a BGP neighbor for maintenance",
+    "note": "Closes the session without deleting its configuration; a safe way to move traffic to a backup path before maintenance."
+   },
+   "ar": {
+    "title": "إيقاف جار BGP مؤقتًا للصيانة",
+    "note": "يغلق الجلسة إداريًا دون حذف الإعداد؛ طريقة آمنة لنقل الحركة إلى المسار الاحتياطي قبل الصيانة."
+   }
+  },
+  "vrf-detay-goruntuleme": {
+   "en": {
+    "title": "Display VRF list and details",
+    "note": "On Cisco 'show vrf detail' shows RD, RTs and interfaces; Huawei gives the same with 'display ip vpn-instance verbose'. Junos calls VRFs 'routing instances'."
+   },
+   "ar": {
+    "title": "عرض قائمة VRF وتفاصيلها",
+    "note": "في Cisco يعرض الأمر show vrf detail قيم RD وRT والواجهات، وفي Huawei يعطي display ip vpn-instance verbose المعلومات نفسها. وفي Junos تسمى VRF باسم routing instance."
+   }
+  },
+  "vrf-arayuz-atama": {
+   "en": {
+    "title": "Assign an interface to a VRF",
+    "note": "On Cisco and Huawei, binding an interface to a VRF removes its existing IP address; re-enter the address afterwards. Aruba CX uses 'vrf attach'."
+   },
+   "ar": {
+    "title": "ربط واجهة بـ VRF",
+    "note": "في Cisco وHuawei يؤدي ربط الواجهة بـ VRF إلى حذف عنوان IP الحالي، لذا أعد إدخال العنوان بعد الربط. أما Aruba CX فيستخدم الأمر vrf attach."
+   }
+  },
+  "vrf-rota-tablosu-goruntuleme": {
+   "en": {
+    "title": "Display a VRF routing table",
+    "note": "The global 'show ip route' does not show VRF routes. Cisco needs the 'vrf' keyword, Huawei 'vpn-instance', and Junos the 'RED.inet.0' table name."
+   },
+   "ar": {
+    "title": "عرض جدول التوجيه الخاص بـ VRF",
+    "note": "الأمر العام show ip route لا يعرض مسارات VRF. يحتاج Cisco إلى الكلمة vrf، وHuawei إلى vpn-instance، وJunos إلى اسم الجدول RED.inet.0."
+   }
+  },
+  "vrf-aware-ping": {
+   "en": {
+    "title": "Ping from inside a VRF",
+    "note": "A global ping cannot reach hosts in a VRF. Use 'ping vrf' on Cisco, 'ping -vpn-instance' on Huawei and the 'vrf' parameter on Aruba CX; setting the source address is safer."
+   },
+   "ar": {
+    "title": "تنفيذ ping من داخل VRF",
+    "note": "لا يصل ping العام إلى المضيفين داخل VRF. استخدم ping vrf في Cisco وping -vpn-instance في Huawei والمعامل vrf في Aruba CX، ويُفضّل تحديد عنوان المصدر."
+   }
+  },
+  "vrf-aware-traceroute": {
+   "en": {
+    "title": "Run traceroute inside a VRF",
+    "note": "To see the hop-by-hop path, traceroute must also be run with the VRF specified. Huawei uses 'tracert'; Cisco uses 'traceroute vrf RED ...'."
+   },
+   "ar": {
+    "title": "تنفيذ traceroute داخل VRF",
+    "note": "لرؤية المسار قفزة بقفزة يجب تنفيذ traceroute مع تحديد VRF أيضًا. يستخدم Huawei الأمر tracert بينما يستخدم Cisco الأمر traceroute vrf RED."
+   }
+  },
+  "vrf-statik-rota": {
+   "en": {
+    "title": "Configure a static route in a VRF",
+    "note": "A static route entered without the VRF name goes into the global table and VRF traffic is unaffected. Cisco uses 'ip route vrf', Huawei 'ip route-static vpn-instance'."
+   },
+   "ar": {
+    "title": "إعداد مسار ثابت داخل VRF",
+    "note": "إذا أدخلت المسار الثابت دون اسم VRF فسيُكتب في الجدول العام ولن يتأثر مرور VRF. يستخدم Cisco الأمر ip route vrf وHuawei الأمر ip route-static vpn-instance."
+   }
+  },
+  "vrf-route-target-leaking": {
+   "en": {
+    "title": "Leak routes between VRFs with RD and route-target",
+    "note": "The RD makes prefixes unique while the route-target decides which VRFs a route is copied into. Routes do not leak if import/export values do not match; watch for overlapping prefixes."
+   },
+   "ar": {
+    "title": "تسريب المسارات بين VRF باستخدام RD وroute-target",
+    "note": "يجعل RD البادئات فريدة بينما يحدد route-target أي VRF ستُنسَخ إليها المسارات. لا يحدث التسريب إذا لم تتطابق قيم الاستيراد والتصدير، فانتبه للبادئات المتداخلة."
+   }
+  },
+  "vrf-lite-ospf-sureci": {
+   "en": {
+    "title": "Run a separate OSPF process per VRF",
+    "note": "In VRF-lite each VRF gets its own OSPF process. Cisco uses 'router ospf 10 vrf RED', Huawei 'ospf 10 vpn-instance RED'; process IDs must be unique across VRFs."
+   },
+   "ar": {
+    "title": "تشغيل عملية OSPF مستقلة لكل VRF",
+    "note": "في VRF-lite تملك كل VRF عملية OSPF خاصة بها. يستخدم Cisco الأمر router ospf 10 vrf RED وHuawei الأمر ospf 10 vpn-instance RED، ويجب أن تكون معرّفات العمليات فريدة بين VRF."
+   }
+  },
+  "vrf-bgp-address-family": {
+   "en": {
+    "title": "BGP address-family and CE neighbor for a VRF",
+    "note": "An eBGP neighbor in a VRF is configured in the VRF address-family, not the global BGP block. Cisco uses 'address-family ipv4 vrf RED', Huawei 'ipv4-family vpn-instance RED'."
+   },
+   "ar": {
+    "title": "BGP address-family وجار CE داخل VRF",
+    "note": "يُضبط جار eBGP داخل VRF ضمن address-family الخاصة بالـ VRF وليس في كتلة BGP العامة. يستخدم Cisco الأمر address-family ipv4 vrf RED وHuawei الأمر ipv4-family vpn-instance RED."
+   }
+  },
+  "bfd-bgp-komsu": {
+   "en": {
+    "title": "Fast failure detection with BFD on BGP peers",
+    "note": "Instead of waiting for the 180 s BGP hold timer, BFD detects link failure in under a second. Timers are set on the interface in Cisco but per peer in Huawei."
+   },
+   "ar": {
+    "title": "اكتشاف سريع للأعطال باستخدام BFD مع جيران BGP",
+    "note": "يكتشف BFD انقطاع الوصلة خلال أقل من ثانية بدل انتظار مؤقت hold-time في BGP البالغ 180 ثانية. في Cisco تُضبط المؤقتات على الواجهة، وفي Huawei على مستوى peer."
+   }
+  },
+  "bfd-oturum-durumu": {
+   "en": {
+    "title": "Display BFD session status",
+    "note": "Shows the Up/Down state of BFD sessions, their timers and the client protocol using them. Cisco uses 'show bfd neighbors', Huawei uses 'display bfd session'."
+   },
+   "ar": {
+    "title": "عرض حالة جلسات BFD",
+    "note": "يعرض حالة Up/Down لجلسات BFD ومؤقتاتها والبروتوكول المرتبط بها. يستخدم Cisco الأمر 'show bfd neighbors' بينما يستخدم Huawei الأمر 'display bfd session'."
+   }
+  },
+  "vrf-bgp-komsu-durumu": {
+   "en": {
+    "title": "Display BGP neighbor state inside a VRF",
+    "note": "Queries the BGP neighbors of each VRF separately from the global BGP table. Cisco uses 'vpnv4 vrf' while Huawei uses the 'vpn-instance' keyword."
+   },
+   "ar": {
+    "title": "عرض حالة جيران BGP داخل VRF",
+    "note": "يستعلم عن جيران BGP الخاصين بكل VRF بشكل منفصل عن جدول BGP العام. يستخدم Cisco العبارة 'vpnv4 vrf' بينما يستخدم Huawei الكلمة 'vpn-instance'."
+   }
+  },
+  "vrf-ospf-komsu-durumu": {
+   "en": {
+    "title": "Display OSPF neighbors inside a VRF",
+    "note": "Queries neighbors of VRF-lite or PE-CE OSPF processes by VRF. Huawei uses the process ID, since the VRF is bound to the process and not given separately."
+   },
+   "ar": {
+    "title": "عرض جيران OSPF داخل VRF",
+    "note": "يستعلم عن جيران عمليات OSPF الخاصة بـ VRF-lite أو PE-CE باسم الـ VRF. يستخدم Huawei رقم العملية لأن الـ VRF مرتبط بالعملية ولا يُذكر منفصلًا."
+   }
+  },
+  "vrf-arp-tablosu": {
+   "en": {
+    "title": "Display the ARP table inside a VRF",
+    "note": "Each VRF has its own ARP table; plain 'show ip arp' does not list hosts in a VRF. Cisco uses 'show ip arp vrf' and Huawei uses 'display arp vpn-instance'."
+   },
+   "ar": {
+    "title": "عرض جدول ARP داخل VRF",
+    "note": "لكل VRF جدول ARP مستقل، ولا يعرض الأمر العادي 'show ip arp' الأجهزة الموجودة داخل VRF. يستخدم Cisco الأمر 'show ip arp vrf' ويستخدم Huawei الأمر 'display arp vpn-instance'."
+   }
+  },
+  "vrf-alt-arayuz-dot1q": {
+   "en": {
+    "title": "802.1Q subinterface for VRF-lite",
+    "note": "Splits one physical link into VLAN-tagged subinterfaces and binds each to a different VRF. Huawei additionally needs 'dot1q termination' and 'arp broadcast enable'."
+   },
+   "ar": {
+    "title": "واجهة فرعية 802.1Q لـ VRF-lite",
+    "note": "تقسّم وصلة فيزيائية واحدة إلى واجهات فرعية موسومة بـ VLAN وتربط كل واحدة بـ VRF مختلف. يحتاج Huawei إضافة إلى ذلك إلى 'dot1q termination' و'arp broadcast enable'."
+   }
+  },
+  "vrf-syslog-sunucusu": {
+   "en": {
+    "title": "Define a syslog server through the management VRF",
+    "note": "If logs go to a server in the management VRF, the VRF must be named in the server definition; otherwise the device looks up the route in the global table and logs are lost."
+   },
+   "ar": {
+    "title": "تعريف خادم syslog عبر VRF الإدارة",
+    "note": "إذا كانت السجلات تُرسل إلى خادم داخل VRF الإدارة فيجب ذكر الـ VRF في تعريف الخادم؛ وإلا يبحث الجهاز عن المسار في الجدول العام وتضيع السجلات."
+   }
+  },
+  "vrf-ntp-sunucusu": {
+   "en": {
+    "title": "Define an NTP server through the management VRF",
+    "note": "If the NTP server is reachable only through the management VRF, the VRF must be named in the server command. Synchronization is then verified with the same VRF context."
+   },
+   "ar": {
+    "title": "تعريف خادم NTP عبر VRF الإدارة",
+    "note": "إذا كان خادم NTP متاحًا فقط عبر VRF الإدارة فيجب ذكر الـ VRF في أمر الخادم، ثم يُتحقق من المزامنة بالسياق نفسه."
+   }
+  },
+  "vxlan-vtep-yapilandirma": {
+   "en": {
+    "title": "Configure a VXLAN VTEP and VNI-to-VLAN mapping",
+    "note": "VXLAN maps a VLAN to a VNI and uses a loopback as the tunnel source. NX-OS uses nve1, Huawei CloudEngine uses a bridge-domain, and AOS-CX uses interface vxlan 1."
+   },
+   "ar": {
+    "title": "إعداد VTEP في VXLAN وربط VNI بشبكة VLAN",
+    "note": "يربط VXLAN كل VLAN برقم VNI ويستخدم واجهة loopback كمصدر للنفق. تستخدم NX-OS الواجهة nve1، وHuawei CloudEngine تستخدم bridge-domain، وAOS-CX تستخدم interface vxlan 1."
+   }
+  },
+  "vxlan-vtep-komsulari-goruntuleme": {
+   "en": {
+    "title": "Display VXLAN VTEP peers and VNI status",
+    "note": "Shows whether remote VTEPs are discovered and whether VNIs are Up. NX-OS uses 'show nve', Huawei uses 'display vxlan tunnel', and AOS-CX uses 'show interface vxlan vteps'."
+   },
+   "ar": {
+    "title": "عرض جيران VTEP وحالة VNI في VXLAN",
+    "note": "يبيّن ما إذا كانت الـ VTEP البعيدة مكتشفة وما إذا كانت VNI في حالة Up. تستخدم NX-OS الأمر show nve، وHuawei الأمر display vxlan tunnel، وAOS-CX الأمر show interface vxlan vteps."
+   }
+  },
+  "bgp-evpn-overlay-komsu": {
+   "en": {
+    "title": "Establish a BGP EVPN overlay neighbor",
+    "note": "EVPN carries VXLAN MAC/IP information over BGP. The session runs between loopbacks; on NX-OS and AOS-CX, forgetting 'send-community extended' stops route-targets from being sent."
+   },
+   "ar": {
+    "title": "إنشاء جوار BGP EVPN لطبقة overlay",
+    "note": "ينقل EVPN معلومات MAC/IP الخاصة بـ VXLAN عبر BGP. تُقام الجلسة بين واجهات loopback، وفي NX-OS وAOS-CX يؤدي نسيان send-community extended إلى عدم إرسال route-target."
+   }
+  },
+  "bgp-evpn-ozet-durum": {
+   "en": {
+    "title": "Display the BGP EVPN neighbor summary and route counts",
+    "note": "Shows whether the EVPN session is Established and how many prefixes were received. On Huawei the command is 'display bgp evpn peer'; on Junos EVPN routes live in the bgp.evpn.0 table."
+   },
+   "ar": {
+    "title": "عرض ملخص جيران BGP EVPN وأعداد المسارات",
+    "note": "يبيّن ما إذا كانت جلسة EVPN في حالة Established وكم عدد الـ prefix المستلمة. في Huawei الأمر display bgp evpn peer، وفي Junos توجد مسارات EVPN في الجدول bgp.evpn.0."
+   }
+  },
+  "evpn-vni-rd-rt-ayari": {
+   "en": {
+    "title": "Set per-VNI RD and route-targets for EVPN",
+    "note": "Each L2 VNI needs a route-distinguisher and route-targets; 'auto' values are enough for most deployments. On Huawei these are set under an evpn vpn-instance."
+   },
+   "ar": {
+    "title": "ضبط RD وroute-target لكل VNI في EVPN",
+    "note": "يحتاج كل VNI من الطبقة الثانية إلى route-distinguisher وroute-target، وتكفي القيم auto في معظم عمليات النشر. في Huawei تُضبط هذه القيم تحت evpn vpn-instance."
+   }
+  },
+  "evpn-mac-ip-rotalari-goruntuleme": {
+   "en": {
+    "title": "Display EVPN type-2 MAC/IP routes",
+    "note": "Shows MAC/IP routes learned from remote VTEPs. Used to find which VTEP a MAC sits behind; on Junos 'show evpn database' is the most practical output."
+   },
+   "ar": {
+    "title": "عرض مسارات EVPN من النوع 2 (MAC/IP)",
+    "note": "يعرض مسارات MAC/IP المتعلَّمة من الـ VTEP البعيدة. يُستخدم لمعرفة خلف أي VTEP يوجد عنوان MAC معيّن؛ وفي Junos يعد show evpn database أكثر المخرجات عملية."
+   }
+  },
+  "mpls-ldp-yapilandirma": {
+   "en": {
+    "title": "Enable MPLS and LDP",
+    "note": "On supported platforms the LDP router-id comes from a loopback and MPLS is enabled only on core interfaces. Aruba AOS-CX has no MPLS/LDP; VRF-lite is the usual alternative."
+   },
+   "ar": {
+    "title": "تفعيل MPLS وبروتوكول LDP",
+    "note": "في الأجهزة الداعمة يُؤخذ router-id الخاص بـ LDP من loopback ويُفعَّل MPLS على واجهات النواة فقط. لا يدعم Aruba AOS-CX بروتوكولي MPLS وLDP، والبديل المعتاد هو VRF-lite."
+   }
+  },
+  "mpls-ldp-oturum-durumu": {
+   "en": {
+    "title": "Display LDP sessions, label tables and LSPs",
+    "note": "Verifies that the LDP adjacency is Operational, labels are distributed and the LSP is built. Aruba AOS-CX has no MPLS, so a VRF-lite check is given as the counterpart."
+   },
+   "ar": {
+    "title": "عرض جلسات LDP وجداول التسميات وأنفاق LSP",
+    "note": "يتحقق من أن جوار LDP في حالة Operational وأن التسميات موزعة وأن LSP قد بُني. لا يدعم Aruba AOS-CX بروتوكول MPLS، لذا أُعطي فحص VRF-lite كمقابل."
+   }
+  },
+  "ipv6-adres-atama-arayuz": {
+   "en": {
+    "title": "Assign an IPv6 address to an interface",
+    "note": "On Cisco and Huawei the address is written with a /64 prefix length; Huawei needs 'ipv6 enable' on the interface first. Aruba AOS-S sets it under the VLAN, AOS-CX under the VLAN interface."
+   },
+   "ar": {
+    "title": "تعيين عنوان IPv6 لواجهة",
+    "note": "في Cisco وHuawei يُكتب العنوان مع طول البادئة /64، وفي Huawei يلزم تنفيذ 'ipv6 enable' على الواجهة أولًا. وفي Aruba AOS-S يُعيَّن العنوان داخل الـ VLAN، وفي AOS-CX على واجهة الـ VLAN."
+   }
+  },
+  "ipv6-unicast-routing-etkinlestirme": {
+   "en": {
+    "title": "Enable IPv6 routing globally",
+    "note": "On Cisco, without 'ipv6 unicast-routing' the device acts as a host and sends no RAs. Huawei needs the global 'ipv6' command; on Junos IPv6 forwarding is on by default."
+   },
+   "ar": {
+    "title": "تفعيل توجيه IPv6 على مستوى الجهاز",
+    "note": "في Cisco بدون 'ipv6 unicast-routing' يتصرف الجهاز كمضيف ولا يرسل RA. وفي Huawei يلزم الأمر العام 'ipv6'، أما في Junos فإعادة توجيه IPv6 مفعّلة افتراضيًا."
+   }
+  },
+  "ipv6-arayuz-ozet-goruntuleme": {
+   "en": {
+    "title": "Display the IPv6 interface summary",
+    "note": "On Cisco and Huawei the brief output lists link-local and global addresses together. On Junos you filter the terse output to see the inet6 lines."
+   },
+   "ar": {
+    "title": "عرض ملخص واجهات IPv6",
+    "note": "في Cisco وHuawei يعرض ملخص brief عناوين link-local والعناوين العامة معًا. وفي Junos تُرشَّح مخرجات terse لإظهار أسطر inet6."
+   }
+  },
+  "ipv6-komsu-tablosu-nd-goruntuleme": {
+   "en": {
+    "title": "Display the IPv6 neighbor (ND) table",
+    "note": "The ND table is the IPv6 equivalent of the ARP table. The REACHABLE, STALE, DELAY and INCOMPLETE states show whether a neighbor is reachable."
+   },
+   "ar": {
+    "title": "عرض جدول جيران IPv6 (ND)",
+    "note": "جدول ND هو مكافئ جدول ARP في IPv4. وتبيّن حالات REACHABLE وSTALE وDELAY وINCOMPLETE إمكانية الوصول إلى الجار."
+   }
+  },
+  "ipv6-ra-yapilandirma-slaac-dhcpv6-bayraklari": {
+   "en": {
+    "title": "Configure Router Advertisement (RA) and its flags",
+    "note": "RA advertises the prefix and gateway for SLAAC. The M and O flags tell clients to get the address or other settings from DHCPv6."
+   },
+   "ar": {
+    "title": "ضبط Router Advertisement (RA) وأعلامه",
+    "note": "يعلن RA عن البادئة والبوابة لعمل SLAAC. وتخبر أعلام M وO العميل بأن العنوان أو الإعدادات الأخرى تُؤخذ من DHCPv6."
+   }
+  },
+  "ipv6-statik-rota-ekleme": {
+   "en": {
+    "title": "Add an IPv6 static and default route",
+    "note": "Cisco and Aruba use 'ipv6 route'; Huawei uses 'ipv6 route-static' with the prefix length written separately. A link-local next hop also needs the exit interface."
+   },
+   "ar": {
+    "title": "إضافة مسار IPv6 ثابت ومسار افتراضي",
+    "note": "يستخدم Cisco وAruba الأمر 'ipv6 route' بينما يستخدم Huawei الأمر 'ipv6 route-static' مع كتابة طول البادئة منفصلًا. وعند استخدام next-hop من نوع link-local يجب تحديد واجهة الخروج أيضًا."
+   }
+  },
+  "ipv6-rota-tablosu-goruntuleme": {
+   "en": {
+    "title": "Display the IPv6 routing table",
+    "note": "Connected (C), local (L) and static routes appear with separate codes. Seeing an extra /128 local route per interface is normal in IPv6."
+   },
+   "ar": {
+    "title": "عرض جدول توجيه IPv6",
+    "note": "تظهر المسارات connected (C) وlocal (L) والثابتة برموز منفصلة. ومن الطبيعي في IPv6 رؤية مسار local من نوع /128 لكل واجهة."
+   }
+  },
+  "ipv6-ping-traceroute": {
+   "en": {
+    "title": "Test reachability with IPv6 ping and traceroute",
+    "note": "Platforms use different IPv6 syntax: Cisco 'ping ipv6', Huawei 'ping ipv6'/'tracert ipv6', Aruba AOS-S 'ping6'/'traceroute6'. A link-local target needs the exit interface."
+   },
+   "ar": {
+    "title": "اختبار الوصول عبر ping وtraceroute لـ IPv6",
+    "note": "تستخدم المنصات صياغات مختلفة لـ IPv6: Cisco ‏'ping ipv6'، وHuawei ‏'ping ipv6' و'tracert ipv6'، وAruba AOS-S ‏'ping6' و'traceroute6'. والهدف من نوع link-local يحتاج واجهة الخروج."
+   }
+  },
+  "ipv6-slaac-otomatik-adres-alma": {
+   "en": {
+    "title": "Obtain an IPv6 address automatically with SLAAC",
+    "note": "A router or L3 interface learns the prefix from an RA and builds an EUI-64 or privacy-extension address; used for an uplink that takes its address automatically from the ISP."
+   },
+   "ar": {
+    "title": "الحصول على عنوان IPv6 تلقائيًا عبر SLAAC",
+    "note": "تتعلم واجهة الراوتر أو سويتش L3 البادئة من RA وتبني عنوانًا بنمط EUI-64 أو بامتداد الخصوصية؛ ويُستخدم لوصلة تحصل على عنوانها تلقائيًا من مزود الخدمة."
+   }
+  },
+  "ospfv3-temel-yapilandirma": {
+   "en": {
+    "title": "Configure OSPFv3 for IPv6 routing",
+    "note": "OSPFv3 is enabled per interface (there is no network command) and a 32-bit router-id must be set manually even if the device has no IPv4 address."
+   },
+   "ar": {
+    "title": "ضبط OSPFv3 لتوجيه IPv6",
+    "note": "يُفعَّل OSPFv3 على مستوى الواجهة (لا يوجد أمر network) ويجب تحديد router-id من 32 بت يدويًا حتى لو لم يكن للجهاز عنوان IPv4."
+   }
+  },
+  "ospfv3-komsuluk-arayuz-goruntuleme": {
+   "en": {
+    "title": "Display OSPFv3 neighbor and interface status",
+    "note": "The adjacency should be FULL or 2-WAY. OSPFv3 neighbors form over link-local addresses, so addresses in the output start with FE80::."
+   },
+   "ar": {
+    "title": "عرض حالة جيران وواجهات OSPFv3",
+    "note": "يجب أن يكون الجوار FULL أو 2-WAY. ويتشكل الجوار في OSPFv3 عبر عناوين link-local لذلك تبدأ العناوين في المخرجات بـ FE80::."
+   }
+  },
+  "ipv6-prefix-list-olusturma": {
+   "en": {
+    "title": "Define an IPv6 prefix-list",
+    "note": "A prefix-list is used for route filtering and route-maps. 'le' and 'ge' define the prefix-length range; on Huawei the equivalent is the 'ip ipv6-prefix' command."
+   },
+   "ar": {
+    "title": "تعريف IPv6 prefix-list",
+    "note": "تُستخدم prefix-list لتصفية المسارات وفي route-map. ويحدد 'le' و'ge' نطاق طول البادئة؛ ومكافئها في Huawei هو الأمر 'ip ipv6-prefix'."
+   }
+  },
+  "dhcpv6-relay-yapilandirma": {
+   "en": {
+    "title": "Configure a DHCPv6 relay",
+    "note": "Used to forward requests from the client VLAN to a central DHCPv6 server. The relay is configured on the client-facing interface."
+   },
+   "ar": {
+    "title": "ضبط DHCPv6 relay",
+    "note": "يُستخدم لتمرير الطلبات من VLAN العملاء إلى خادم DHCPv6 مركزي. ويُضبط relay على الواجهة المواجهة للعملاء."
+   }
+  },
+  "ipv6-acl-olusturma-ve-uygulama": {
+   "en": {
+    "title": "Create and apply an IPv6 ACL",
+    "note": "IPv6 ACLs implicitly permit ND (NS/NA) traffic on Cisco, but a trailing deny any needs care. Cisco uses 'ipv6 traffic-filter', Aruba AOS-CX uses 'apply access-list ipv6'."
+   },
+   "ar": {
+    "title": "إنشاء IPv6 ACL وتطبيقها على واجهة",
+    "note": "في Cisco تسمح قوائم IPv6 ACL ضمنيًا بحركة ND (NS/NA)، لكن يجب الحذر من deny any في النهاية. يستخدم Cisco الأمر 'ipv6 traffic-filter' ويستخدم Aruba AOS-CX الأمر 'apply access-list ipv6'."
+   }
+  },
+  "ipv6-link-local-adres-statik-atama": {
+   "en": {
+    "title": "Assign a fixed link-local address to an interface",
+    "note": "A readable static address such as FE80::1 instead of the automatic EUI-64 link-local keeps next hops from breaking when hardware is replaced."
+   },
+   "ar": {
+    "title": "تعيين عنوان link-local ثابت لواجهة",
+    "note": "استخدام عنوان ثابت مقروء مثل FE80::1 بدلًا من link-local التلقائي بنمط EUI-64 يمنع تعطل next-hop عند استبدال العتاد."
+   }
+  },
+  "ospfv3-lsdb-goruntuleme": {
+   "en": {
+    "title": "Display the OSPFv3 LSDB (link-state database)",
+    "note": "The LSDB holds router, network and intra-area-prefix LSAs as separate types. When a route is missing, it shows whether the LSA reached the database."
+   },
+   "ar": {
+    "title": "عرض قاعدة بيانات OSPFv3 ‏(LSDB)",
+    "note": "تحتوي LSDB على LSA من أنواع منفصلة مثل router وnetwork وintra-area-prefix. وعند غياب مسار يتبيّن منها ما إذا كان الـ LSA قد وصل إلى القاعدة."
+   }
+  },
+  "qos-trust-dscp-port": {
+   "en": {
+    "title": "Configure DSCP/CoS trust on a port",
+    "note": "On Catalyst 9000 QoS is on by default and DSCP is trusted; on legacy 3560/3750 you must first enter 'mls qos' or the trust command has no effect."
+   },
+   "ar": {
+    "title": "ضبط الثقة بقيم DSCP/CoS على المنفذ",
+    "note": "في Catalyst 9000 تكون خاصية QoS مفعّلة افتراضيًا مع الوثوق بقيم DSCP، أما في 3560/3750 القديمة فيلزم أمر 'mls qos' أولًا وإلا لن يؤثر أمر trust."
+   }
+  },
+  "qos-dscp-cos-map-goruntuleme": {
+   "en": {
+    "title": "Display DSCP/CoS mapping tables",
+    "note": "The switch converts DSCP into internal queue priority using these tables; you cannot debug marking issues without knowing the defaults. Output varies by platform."
+   },
+   "ar": {
+    "title": "عرض جداول ربط DSCP/CoS",
+    "note": "يحوّل السويتش قيمة DSCP إلى أولوية الطابور الداخلية عبر هذه الجداول، ولا يمكن تتبع مشاكل الوسم دون معرفة الجداول الافتراضية. تختلف المخرجات حسب المنصة."
+   }
+  },
+  "qos-class-map-match-dscp": {
+   "en": {
+    "title": "Classify traffic by DSCP value",
+    "note": "The MQC logic is similar on Cisco and Huawei: define a class first, then assign behaviour in a policy. On Huawei the match lives in 'traffic classifier'."
+   },
+   "ar": {
+    "title": "تصنيف الحركة حسب قيمة DSCP",
+    "note": "منطق MQC متشابه في Cisco وHuawei: تُعرَّف الفئة أولًا ثم يُسند السلوك في السياسة. في Huawei يتم المطابقة داخل 'traffic classifier'."
+   }
+  },
+  "qos-class-map-match-acl": {
+   "en": {
+    "title": "Classify traffic with an ACL (QoS)",
+    "note": "An ACL is used to catch traffic from untrusted sources by port or protocol. On Huawei the ACL number is referenced with 'if-match acl'."
+   },
+   "ar": {
+    "title": "تصنيف الحركة بقائمة ACL (QoS)",
+    "note": "تُستخدم ACL لالتقاط حركة المصادر غير الموثوقة حسب المنفذ أو البروتوكول. في Huawei يُربط رقم ACL عبر 'if-match acl'."
+   }
+  },
+  "qos-policy-map-service-policy": {
+   "en": {
+    "title": "Apply a QoS policy to an interface",
+    "note": "Defining a policy is not enough; it must be bound to an interface and direction with service-policy (Cisco) or traffic-policy (Huawei). Aruba AOS-S and CX use different policy syntax."
+   },
+   "ar": {
+    "title": "تطبيق سياسة QoS على واجهة",
+    "note": "تعريف السياسة لا يكفي؛ يجب ربطها بواجهة واتجاه عبر service-policy في Cisco أو traffic-policy في Huawei. تختلف صياغة السياسات في Aruba AOS-S وCX."
+   }
+  },
+  "qos-show-policy-map-interface": {
+   "en": {
+    "title": "QoS policy statistics on an interface",
+    "note": "Shows per-class matched packets, drops and queue counters; the fastest way to verify whether marking and queueing actually work."
+   },
+   "ar": {
+    "title": "إحصاءات سياسة QoS على الواجهة",
+    "note": "يعرض عدد الحزم المطابقة والمسقطة وعدادات الطوابير لكل فئة، وهو أسرع وسيلة للتحقق من عمل الوسم والطوابير فعليًا."
+   }
+  },
+  "qos-priority-queue-llq": {
+   "en": {
+    "title": "Priority queue for voice (LLQ / strict priority)",
+    "note": "The priority queue is also policed; voice above the limit is dropped during congestion. Giving it too large a share starves other classes."
+   },
+   "ar": {
+    "title": "طابور أولوية للصوت (LLQ / strict priority)",
+    "note": "يخضع طابور الأولوية أيضًا للتحديد، فيُسقط الصوت الزائد عن الحد وقت الازدحام. ومنحه نسبة كبيرة جدًا يحرم الفئات الأخرى."
+   }
+  },
+  "qos-queue-scheduling-wrr-drr": {
+   "en": {
+    "title": "Queue scheduling: PQ, WRR and DRR",
+    "note": "On Huawei S-series scheduling is chosen per interface; Cisco 3750 uses SRR while the 9000 uses policy-maps. Aruba CX needs a schedule-profile."
+   },
+   "ar": {
+    "title": "جدولة الطوابير: PQ وWRR وDRR",
+    "note": "في Huawei S-series تُختار الجدولة لكل واجهة؛ ويستخدم Cisco 3750 آلية SRR بينما تعتمد سلسلة 9000 على policy-map. أما Aruba CX فيتطلب schedule-profile."
+   }
+  },
+  "qos-police-cir-bucket": {
+   "en": {
+    "title": "Policing: limit traffic rate with a CIR",
+    "note": "Policing drops or re-marks excess traffic and does not queue it. A burst (Bc/CBS) value that is too small seriously reduces TCP throughput."
+   },
+   "ar": {
+    "title": "Policing: تحديد معدل الحركة بقيمة CIR",
+    "note": "يُسقط الـ policing الحركة الزائدة أو يعيد وسمها ولا يضعها في طابور. وإذا كانت قيمة burst (Bc/CBS) صغيرة جدًا فينخفض أداء TCP كثيرًا."
+   }
+  }
+ }
+}

@@ -1,0 +1,234 @@
+{
+ "privacy": {
+  "tr": {
+   "title": "Gizlilik Politikası ve KVKK Aydınlatma Metni",
+   "lead": "Son güncelleme: 26.10.2026. Bu metin, NetCmd sitesini kullanırken hangi verilerin işlendiğini açıklar.",
+   "sections": [
+    [
+     "Veri sorumlusu",
+     "Site sahibi Şevket Kaynar'dır. İletişim için: {contact}"
+    ],
+    [
+     "Hangi verileri işliyoruz",
+     "Hesap oluşturursanız e-posta adresiniz, görünen adınız ve şifreniz (yalnızca doğrulama altyapısında şifrelenmiş olarak). Premium talebinde yazdığınız ödeme referansı. Topluluk bölümünde gönderdiğiniz komut, başlık ve açıklamalar. Araçlara (lab, config diff, denetim vb.) yapıştırdığınız metinler tarayıcınızda işlenir ve sunucumuza gönderilmez."
+    ],
+    [
+     "Tarayıcı depolaması ve çerezler",
+     "Site, işlevsellik için tarayıcınızın yerel depolamasını kullanır: oturum bilgisi, tema tercihi, favoriler ve plan durumu önbelleği. Takip, profilleme veya analitik çerezi kullanmıyoruz. İleride reklam gösterilirse bu metin güncellenir ve gerekli onay istenir."
+    ],
+    [
+     "İşleme amaçları ve hukuki sebep",
+     "Hesap yönetimi, Premium üyeliğin tanımlanması, topluluk içeriğinin moderasyonu ve güvenliğin sağlanması. Hukuki sebep: sözleşmenin kurulması/ifası, meşru menfaat ve gerektiğinde açık rıza (KVKK m.5)."
+    ],
+    [
+     "Veri işleyenler",
+     "Kimlik doğrulama, veritabanı ve dosya depolama için Supabase; barındırma için Render hizmetlerini kullanıyoruz. Bu sağlayıcılar yurt dışında bulunabilir; verileriniz bu kapsamda yurt dışına aktarılabilir. Verilerinizi satmıyoruz ve üçüncü taraflarla pazarlama amacıyla paylaşmıyoruz."
+    ],
+    [
+     "Saklama süresi",
+     "Hesap verileri hesabınız açık olduğu sürece saklanır. Silme talebinizde hesabınız ve ilişkili kayıtlar silinir."
+    ],
+    [
+     "Haklarınız (KVKK m.11)",
+     "Verilerinizin işlenip işlenmediğini öğrenme, bilgi talep etme, düzeltme, silme, işlemeye itiraz etme ve zarar halinde tazminat isteme haklarına sahipsiniz. Başvurular için yukarıdaki iletişim bilgisini kullanabilirsiniz."
+    ],
+    [
+     "Güvenlik",
+     "Tüm bağlantılar HTTPS üzerindendir; veritabanında satır düzeyinde yetkilendirme (RLS) uygulanır. Yine de hiçbir sistem tamamen risksizdir; güçlü ve benzersiz bir şifre kullanmanızı öneririz."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Privacy Policy",
+   "lead": "Last updated: 2026-10-26. This page explains what data is processed when you use NetCmd.",
+   "sections": [
+    [
+     "Controller",
+     "The site owner is Şevket Kaynar. Contact: {contact}"
+    ],
+    [
+     "Data we process",
+     "If you create an account: your email address, display name and password (stored only in encrypted form by the authentication service). The payment reference you enter in a Premium request. Commands, titles and descriptions you submit in the Community section. Text you paste into the tools (lab, config diff, audit, etc.) is processed in your browser and is not sent to our servers."
+    ],
+    [
+     "Browser storage and cookies",
+     "The site uses your browser's local storage for functionality: session data, theme preference, favorites and a cached plan status. We do not use tracking, profiling or analytics cookies. If ads are shown in the future, this page will be updated and consent requested where required."
+    ],
+    [
+     "Purposes and legal basis",
+     "Account management, granting Premium access, moderating community content and keeping the service secure. Legal basis: performance of a contract, legitimate interests and, where needed, consent."
+    ],
+    [
+     "Processors",
+     "We use Supabase for authentication, database and file storage, and Render for hosting. These providers may be located outside your country, so your data may be transferred internationally. We do not sell your data or share it for marketing."
+    ],
+    [
+     "Retention",
+     "Account data is kept while your account is open. On a deletion request, your account and related records are deleted."
+    ],
+    [
+     "Your rights",
+     "Depending on your jurisdiction (including GDPR/KVKK) you may request access, correction, deletion, restriction or objection to processing. Use the contact above."
+    ],
+    [
+     "Security",
+     "All connections use HTTPS and the database enforces row-level security. No system is risk-free, so please use a strong, unique password."
+    ]
+   ]
+  },
+  "ar": {
+   "title": "سياسة الخصوصية",
+   "lead": "آخر تحديث: 26-10-2026. توضح هذه الصفحة البيانات التي تتم معالجتها عند استخدام NetCmd.",
+   "sections": [
+    [
+     "المسؤول عن البيانات",
+     "مالك الموقع هو Şevket Kaynar. للتواصل: {contact}"
+    ],
+    [
+     "البيانات التي نعالجها",
+     "عند إنشاء حساب: بريدك الإلكتروني واسمك المعروض وكلمة المرور (مخزّنة مشفّرة فقط لدى خدمة المصادقة). مرجع الدفع الذي تدخله في طلب بريميوم. الأوامر والعناوين والأوصاف التي ترسلها في قسم المجتمع. النصوص التي تلصقها في الأدوات تُعالج داخل متصفحك ولا تُرسل إلى خوادمنا."
+    ],
+    [
+     "تخزين المتصفح وملفات الارتباط",
+     "يستخدم الموقع التخزين المحلي للمتصفح للوظائف: بيانات الجلسة وتفضيل المظهر والمفضلة وحالة الخطة المخزنة مؤقتًا. لا نستخدم ملفات تتبع أو تحليلات. إذا عُرضت إعلانات مستقبلًا فسيتم تحديث هذه الصفحة وطلب الموافقة عند الحاجة."
+    ],
+    [
+     "الأغراض والأساس القانوني",
+     "إدارة الحسابات ومنح وصول بريميوم ومراجعة محتوى المجتمع وحماية الخدمة. الأساس القانوني: تنفيذ العقد والمصلحة المشروعة وعند الحاجة الموافقة."
+    ],
+    [
+     "مزودو المعالجة",
+     "نستخدم Supabase للمصادقة وقاعدة البيانات وتخزين الملفات، وRender للاستضافة. قد يقع هؤلاء المزودون خارج بلدك، وقد تُنقل بياناتك دوليًا. لا نبيع بياناتك ولا نشاركها لأغراض تسويقية."
+    ],
+    [
+     "مدة الاحتفاظ",
+     "تُحفظ بيانات الحساب ما دام الحساب مفتوحًا. عند طلب الحذف يُحذف حسابك والسجلات المرتبطة به."
+    ],
+    [
+     "حقوقك",
+     "بحسب تشريعك (بما في ذلك GDPR/KVKK) يمكنك طلب الاطلاع والتصحيح والحذف والتقييد أو الاعتراض على المعالجة عبر وسيلة التواصل أعلاه."
+    ],
+    [
+     "الأمان",
+     "جميع الاتصالات عبر HTTPS وقاعدة البيانات تطبق أمان مستوى الصف. لا يوجد نظام خالٍ من المخاطر، لذا استخدم كلمة مرور قوية وفريدة."
+    ]
+   ]
+  }
+ },
+ "terms": {
+  "tr": {
+   "title": "Kullanım Şartları",
+   "lead": "Son güncelleme: 26.10.2026. Siteyi kullanarak aşağıdaki şartları kabul etmiş olursunuz.",
+   "sections": [
+    [
+     "Hizmetin niteliği",
+     "NetCmd, ağ komutları için bir başvuru ve yardımcı araç sitesidir. İçerik bilgilendirme amaçlıdır; komutlar yazılım sürümüne, platforma ve yapılandırmaya göre farklılık gösterebilir."
+    ],
+    [
+     "Sorumluluk reddi",
+     "Komutları ve yapılandırmaları üretim cihazlarında uygulamadan önce kendi test ortamınızda ve resmi üretici dokümantasyonunda doğrulayın. Hizmet “olduğu gibi” sunulur; içeriğin doğruluğu veya kesintisiz çalışması garanti edilmez. Kullanımdan doğabilecek dolaylı veya doğrudan zararlardan sorumlu tutulamayız."
+    ],
+    [
+     "Yapay zekâ ve asistan çıktıları",
+     "Asistan ve (varsa) yapay zekâ destekli yanıtlar hata içerebilir. Çıktıları mutlaka doğrulayın."
+    ],
+    [
+     "Hesaplar",
+     "Doğru bilgi vermeli ve hesabınızın güvenliğinden sorumlu olmalısınız. Kötüye kullanım halinde hesap askıya alınabilir."
+    ],
+    [
+     "Premium",
+     "Premium, ödeme doğrulandıktan sonra hesabınıza manuel olarak tanımlanır. Fiyat ve kapsam değişebilir; iade talepleri iletişim kanalı üzerinden durumuna göre değerlendirilir."
+    ],
+    [
+     "Topluluk içeriği",
+     "Gönderdiğiniz içeriğin size ait olduğunu veya paylaşma hakkınız bulunduğunu, gizli/kurumsal bilgi (şifre, IP planı, müşteri verisi) içermediğini kabul edersiniz. İçerik moderasyondan sonra yayınlanır; reddedilebilir veya kaldırılabilir. Yayınlanan içeriği sitede göstermemiz için bize sınırlı, ücretsiz bir kullanım hakkı vermiş olursunuz."
+    ],
+    [
+     "Fikri haklar",
+     "Cisco, Huawei, Aruba, Juniper, MikroTik ve diğer adlar ilgili sahiplerinin ticari markalarıdır; site bu firmalarla bağlantılı değildir."
+    ],
+    [
+     "Değişiklikler",
+     "Bu şartlar güncellenebilir; güncel sürüm bu sayfada yayınlanır."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Terms of Use",
+   "lead": "Last updated: 2026-10-26. By using the site you accept the terms below.",
+   "sections": [
+    [
+     "Nature of the service",
+     "NetCmd is a reference and utility site for network commands. Content is informational; commands may differ by software version, platform and configuration."
+    ],
+    [
+     "Disclaimer",
+     "Verify commands and configurations in your own lab and the vendor's official documentation before applying them to production devices. The service is provided “as is”, without guarantee of accuracy or uninterrupted operation. We are not liable for direct or indirect damages arising from its use."
+    ],
+    [
+     "AI and assistant output",
+     "The assistant and any AI-assisted answers may contain errors. Always verify the output."
+    ],
+    [
+     "Accounts",
+     "You must provide accurate information and keep your account secure. Accounts may be suspended for abuse."
+    ],
+    [
+     "Premium",
+     "Premium is granted to your account manually after payment is verified. Price and scope may change; refund requests are reviewed case by case through the contact channel."
+    ],
+    [
+     "Community content",
+     "You confirm that content you submit is yours or you have the right to share it, and that it contains no confidential or corporate data (passwords, IP plans, customer data). Content is published after moderation and may be rejected or removed. You grant us a limited, free right to display published content on the site."
+    ],
+    [
+     "Intellectual property",
+     "Cisco, Huawei, Aruba, Juniper, MikroTik and other names are trademarks of their respective owners; this site is not affiliated with them."
+    ],
+    [
+     "Changes",
+     "These terms may be updated; the current version is published on this page."
+    ]
+   ]
+  },
+  "ar": {
+   "title": "شروط الاستخدام",
+   "lead": "آخر تحديث: 26-10-2026. باستخدامك الموقع فإنك توافق على الشروط التالية.",
+   "sections": [
+    [
+     "طبيعة الخدمة",
+     "NetCmd موقع مرجعي وأدوات مساعدة لأوامر الشبكات. المحتوى للتوعية فقط، وقد تختلف الأوامر بحسب إصدار البرنامج والمنصة والإعدادات."
+    ],
+    [
+     "إخلاء المسؤولية",
+     "تحقق من الأوامر والإعدادات في بيئة الاختبار الخاصة بك وفي التوثيق الرسمي للمصنّع قبل تطبيقها على أجهزة الإنتاج. تُقدَّم الخدمة «كما هي» دون ضمان الدقة أو الاستمرارية. لا نتحمل المسؤولية عن أي أضرار مباشرة أو غير مباشرة ناتجة عن الاستخدام."
+    ],
+    [
+     "مخرجات المساعد والذكاء الاصطناعي",
+     "قد تحتوي إجابات المساعد أو الإجابات المدعومة بالذكاء الاصطناعي على أخطاء. تحقق منها دائمًا."
+    ],
+    [
+     "الحسابات",
+     "يجب تقديم معلومات صحيحة والحفاظ على أمان حسابك. قد يُعلَّق الحساب عند إساءة الاستخدام."
+    ],
+    [
+     "بريميوم",
+     "يُفعَّل بريميوم يدويًا على حسابك بعد التحقق من الدفع. قد يتغير السعر والنطاق؛ وتُراجع طلبات الاسترداد حسب كل حالة عبر قناة التواصل."
+    ],
+    [
+     "محتوى المجتمع",
+     "تقرّ بأن المحتوى الذي ترسله يخصك أو لديك حق مشاركته، وأنه لا يحتوي على بيانات سرية أو مؤسسية (كلمات مرور أو خطط IP أو بيانات عملاء). يُنشر المحتوى بعد المراجعة وقد يُرفض أو يُزال. تمنحنا حق عرض المحتوى المنشور على الموقع."
+    ],
+    [
+     "الملكية الفكرية",
+     "Cisco وHuawei وAruba وJuniper وMikroTik وغيرها علامات تجارية لأصحابها، والموقع غير تابع لها."
+    ],
+    [
+     "التعديلات",
+     "قد تُحدَّث هذه الشروط وتُنشر النسخة الحالية في هذه الصفحة."
+    ]
+   ]
+  }
+ }
+}
