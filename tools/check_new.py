@@ -10,7 +10,7 @@ CATS = {"Görüntüleme","Sistem","VLAN / Port","L2 Güvenlik","Routing","Yönet
 AR = re.compile(r"[؀-ۿ]")
 def existing(path, extra_dir):
     s = set()
-    for f in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "commands*.json")):
+    for f in [f for f in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "commands*.json")) if not f.endswith("commands_new.json")]:
         s |= {x["slug"] for x in json.load(open(f, encoding="utf-8"))}
     if extra_dir:
         for f in glob.glob(os.path.join(extra_dir, "*.json")):
@@ -25,7 +25,7 @@ def vend(e, name, req, errs, sl):
         return
     if not isinstance(x, dict) or not isinstance(x.get("mode"), str) or not x["mode"].strip(): errs.append(f"{sl}.{name}.mode"); return
     c = x.get("cmds")
-    if not isinstance(c, list) or not c or len(c) > 6 or not all(isinstance(i, str) and i.strip() and len(i) < 200 for i in c): errs.append(f"{sl}.{name}.cmds (1-6 komut)")
+    if not isinstance(c, list) or not c or len(c) > 8 or not all(isinstance(i, str) and i.strip() and len(i) < 200 for i in c): errs.append(f"{sl}.{name}.cmds (1-8 komut)")
 def main(path, extra_dir=None):
     d = json.load(open(path, encoding="utf-8")); errs = []
     ex = existing(path, extra_dir); seen = set()

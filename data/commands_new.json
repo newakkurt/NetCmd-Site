@@ -4319,474 +4319,1482 @@
   }
  },
  {
-  "slug": "ipv6-adres-atama-arayuz",
-  "title": "Arayüze IPv6 adresi atama",
-  "cat": "IPv6 ve Multicast",
-  "note": "Cisco ve Huawei'de adres /64 ile yazılır; Huawei'de arayüzde önce 'ipv6 enable' gerekir. Aruba AOS-S'te adres VLAN içinde, AOS-CX'te VLAN arayüzünde tanımlanır.",
-  "cisco": {
-   "mode": "Interface configuration",
-   "cmds": [
-    "interface Vlan10",
-    "ipv6 address 2001:db8:10::1/64",
-    "no shutdown"
-   ]
-  },
-  "huawei": {
-   "mode": "System view / Interface view",
-   "cmds": [
-    "system-view",
-    "ipv6",
-    "interface vlanif 10",
-    "ipv6 enable",
-    "ipv6 address 2001:db8:10::1/64"
-   ]
-  },
-  "aruba": {
-   "mode": "AOS-S: VLAN context / AOS-CX: VLAN interface",
-   "cmds": [
-    "vlan 10",
-    "ipv6 address 2001:db8:10::1/64",
-    "interface vlan 10",
-    "ipv6 address 2001:db8:10::1/64"
-   ]
-  }
- },
- {
-  "slug": "ipv6-unicast-routing-etkinlestirme",
-  "title": "IPv6 yönlendirmeyi global olarak etkinleştirme",
-  "cat": "IPv6 ve Multicast",
-  "note": "Cisco'da 'ipv6 unicast-routing' olmadan cihaz host gibi davranır ve RA göndermez. Huawei'de global 'ipv6' komutu gerekir; Junos'ta IPv6 forwarding varsayılan açıktır.",
+  "slug": "floating-static-route-yedek-hat",
+  "title": "Floating static route ile yedek hat tanımlama",
+  "cat": "Routing",
+  "note": "Yedek rotanın administrative distance değeri ana rotadan yüksek olmalı. Huawei'de statik rota varsayılan preference 60'tır, Cisco'da AD 1'dir; yedek değeri buna göre seçin.",
   "cisco": {
    "mode": "Global configuration",
    "cmds": [
-    "ipv6 unicast-routing"
+    "ip route 0.0.0.0 0.0.0.0 203.0.113.1",
+    "ip route 0.0.0.0 0.0.0.0 198.51.100.1 200",
+    "show ip route static"
    ]
   },
   "huawei": {
    "mode": "System view",
    "cmds": [
-    "system-view",
-    "ipv6"
+    "ip route-static 0.0.0.0 0.0.0.0 203.0.113.1",
+    "ip route-static 0.0.0.0 0.0.0.0 198.51.100.1 preference 100",
+    "display ip routing-table protocol static"
    ]
   },
   "aruba": {
-   "mode": "AOS-S: Global configuration",
+   "mode": "AOS-CX config / AOS-S config",
    "cmds": [
-    "ipv6 unicast-routing"
+    "ip route 0.0.0.0/0 203.0.113.1",
+    "ip route 0.0.0.0/0 198.51.100.1 distance 200",
+    "show ip route static"
    ]
   }
  },
  {
-  "slug": "ipv6-arayuz-ozet-goruntuleme",
-  "title": "IPv6 arayüz özetini görüntüleme",
-  "cat": "IPv6 ve Multicast",
-  "note": "Cisco ve Huawei'de 'brief' çıktısı link-local ve global adresleri birlikte listeler. Junos'ta inet6 satırlarını görmek için 'terse' çıktısı filtrelenir.",
-  "cisco": {
-   "mode": "Privileged EXEC",
-   "cmds": [
-    "show ipv6 interface brief",
-    "show ipv6 interface Vlan10"
-   ]
-  },
-  "huawei": {
-   "mode": "User view / System view",
-   "cmds": [
-    "display ipv6 interface brief",
-    "display ipv6 interface vlanif 10"
-   ]
-  },
-  "aruba": {
-   "mode": "AOS-S: Manager / AOS-CX: Operator",
-   "cmds": [
-    "show ipv6",
-    "show ipv6 interface"
-   ]
-  }
- },
- {
-  "slug": "ipv6-komsu-tablosu-nd-goruntuleme",
-  "title": "IPv6 komşu (ND) tablosunu görüntüleme",
-  "cat": "IPv6 ve Multicast",
-  "note": "ND tablosu IPv4'teki ARP tablosunun karşılığıdır. REACHABLE, STALE, DELAY ve INCOMPLETE durumları komşunun erişilebilirliğini gösterir.",
-  "cisco": {
-   "mode": "Privileged EXEC",
-   "cmds": [
-    "show ipv6 neighbors",
-    "show ipv6 neighbors Vlan10"
-   ]
-  },
-  "huawei": {
-   "mode": "User view / System view",
-   "cmds": [
-    "display ipv6 neighbors",
-    "display ipv6 neighbors vlan 10"
-   ]
-  },
-  "aruba": {
-   "mode": "AOS-S / AOS-CX: Manager",
-   "cmds": [
-    "show ipv6 neighbors"
-   ]
-  }
- },
- {
-  "slug": "ipv6-ra-yapilandirma-slaac-dhcpv6-bayraklari",
-  "title": "Router Advertisement (RA) ve bayrakları ayarlama",
-  "cat": "IPv6 ve Multicast",
-  "note": "RA, SLAAC için prefix ve gateway bilgisini duyurur. M ve O bayrakları istemciye adresin veya diğer ayarların DHCPv6'dan alınacağını söyler.",
-  "cisco": {
-   "mode": "Interface configuration",
-   "cmds": [
-    "interface Vlan10",
-    "no ipv6 nd ra suppress",
-    "ipv6 nd prefix 2001:db8:10::/64 86400 3600",
-    "ipv6 nd other-config-flag",
-    "ipv6 nd ra interval 200"
-   ]
-  },
-  "huawei": {
-   "mode": "Interface view",
-   "cmds": [
-    "interface vlanif 10",
-    "undo ipv6 nd ra halt",
-    "ipv6 nd autoconfig other-flag",
-    "ipv6 nd ra router-lifetime 1800"
-   ]
-  },
-  "aruba": {
-   "mode": "AOS-S: VLAN context / AOS-CX: VLAN interface",
-   "cmds": [
-    "interface vlan 10",
-    "ipv6 nd ra other-config-flag",
-    "ipv6 nd ra interval 200"
-   ]
-  }
- },
- {
-  "slug": "ipv6-statik-rota-ekleme",
-  "title": "IPv6 statik rota ve default rota ekleme",
-  "cat": "IPv6 ve Multicast",
-  "note": "Cisco ve Aruba 'ipv6 route' kullanır, Huawei 'ipv6 route-static' ve prefix uzunluğunu ayrı yazar. Link-local next-hop için çıkış arayüzü de belirtilmelidir.",
+  "slug": "varsayilan-rota-default-route",
+  "title": "Varsayılan rota (default route) tanımlama",
+  "cat": "Routing",
+  "note": "Cisco'da 'ip route 0.0.0.0 0.0.0.0', Huawei'de 'ip route-static 0.0.0.0 0' biçimi kullanılır. L3 olmayan L2 switch'te 'ip default-gateway' kullanılır, rota değil.",
   "cisco": {
    "mode": "Global configuration",
    "cmds": [
-    "ipv6 route 2001:db8:20::/64 2001:db8:10::2",
-    "ipv6 route ::/0 2001:db8:10::254"
+    "ip route 0.0.0.0 0.0.0.0 10.0.0.1",
+    "show ip route 0.0.0.0",
+    "show ip route static"
    ]
   },
   "huawei": {
    "mode": "System view",
    "cmds": [
-    "ipv6 route-static 2001:db8:20:: 64 2001:db8:10::2",
-    "ipv6 route-static :: 0 2001:db8:10::254"
+    "ip route-static 0.0.0.0 0 10.0.0.1",
+    "display ip routing-table 0.0.0.0 0"
    ]
   },
   "aruba": {
-   "mode": "AOS-S / AOS-CX: Global configuration",
+   "mode": "AOS-CX config / AOS-S config",
    "cmds": [
-    "ipv6 route 2001:db8:20::/64 2001:db8:10::2",
-    "ipv6 route ::/0 2001:db8:10::254"
+    "ip route 0.0.0.0/0 10.0.0.1",
+    "show ip route"
    ]
   }
  },
  {
-  "slug": "ipv6-rota-tablosu-goruntuleme",
-  "title": "IPv6 yönlendirme tablosunu görüntüleme",
-  "cat": "IPv6 ve Multicast",
-  "note": "Tabloda connected (C), local (L) ve statik rotalar ayrı kodlarla gelir. IPv6'da her arayüz için ayrıca bir /128 local rota görmek normaldir.",
+  "slug": "statik-rota-ecmp-esit-maliyet",
+  "title": "Statik rotalarla ECMP (eşit maliyetli çoklu yol)",
+  "cat": "Routing",
+  "note": "Aynı prefix için aynı AD'ye sahip birden fazla statik rota yazılırsa trafik akış bazlı (hash) dağıtılır. Junos'ta ayrıca load-balance policy'si export edilmelidir.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ip route 10.50.0.0 255.255.0.0 10.0.1.2",
+    "ip route 10.50.0.0 255.255.0.0 10.0.2.2",
+    "show ip route 10.50.0.0"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "ip route-static 10.50.0.0 16 10.0.1.2",
+    "ip route-static 10.50.0.0 16 10.0.2.2",
+    "display ip routing-table 10.50.0.0 16"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config",
+   "cmds": [
+    "ip route 10.50.0.0/16 10.0.1.2",
+    "ip route 10.50.0.0/16 10.0.2.2",
+    "show ip route 10.50.0.0/16"
+   ]
+  }
+ },
+ {
+  "slug": "statik-ozet-rota-null0",
+  "title": "Statik özet rota ve Null0 ile kara delik",
+  "cat": "Routing",
+  "note": "Büyük blok için Null0 rotası yazmak özetleme yapar ve yönlendirme döngüsünü engeller; alt ağlar daha spesifik rotayla yine erişilebilir kalır. Rota dinamik protokole dağıtılabilir.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ip route 10.20.0.0 255.255.0.0 Null0",
+    "show ip route 10.20.0.0 255.255.0.0"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "ip route-static 10.20.0.0 16 NULL0",
+    "display ip routing-table 10.20.0.0 16"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config",
+   "cmds": [
+    "ip route 10.20.0.0/16 nullroute",
+    "show ip route 10.20.0.0/16"
+   ]
+  }
+ },
+ {
+  "slug": "statik-rota-ip-sla-track",
+  "title": "IP SLA / NQA ile izlenen statik rota",
+  "cat": "Routing",
+  "note": "Cisco 'ip sla' + 'track', Huawei 'nqa test-instance' + 'track nqa' kullanır. Probe başarısız olunca statik rota tablodan çıkar ve floating yedek devreye girer. Aruba'da IP SLA yok.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ip sla 10",
+    "icmp-echo 203.0.113.1 source-ip 203.0.113.2",
+    "frequency 5",
+    "ip sla schedule 10 life forever start-time now",
+    "track 10 ip sla 10 reachability",
+    "ip route 0.0.0.0 0.0.0.0 203.0.113.1 track 10"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / NQA view",
+   "cmds": [
+    "nqa test-instance admin wan1",
+    "test-type icmp",
+    "destination-address ipv4 203.0.113.1",
+    "frequency 5",
+    "start now",
+    "ip route-static 0.0.0.0 0 203.0.113.1 track nqa admin wan1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config (IP SLA yok; floating static kullanın)",
+   "cmds": [
+    "ip route 0.0.0.0/0 203.0.113.1",
+    "ip route 0.0.0.0/0 198.51.100.1 distance 200",
+    "show ip route static"
+   ]
+  }
+ },
+ {
+  "slug": "ip-sla-track-durum-goruntuleme",
+  "title": "IP SLA / NQA ve track durumunu görüntüleme",
+  "cat": "Sorun Giderme",
+  "note": "Track nesnesinin up/down durumu ile probe sonuçlarını birlikte kontrol edin. Rota tabloda yoksa önce track durumuna, sonra probe istatistiklerine bakın.",
   "cisco": {
    "mode": "Privileged EXEC",
    "cmds": [
-    "show ipv6 route",
-    "show ipv6 route static",
-    "show ipv6 route 2001:db8:20::5"
+    "show ip sla statistics 10",
+    "show ip sla configuration 10",
+    "show track 10",
+    "show ip route track-table"
    ]
   },
   "huawei": {
    "mode": "User view / System view",
    "cmds": [
-    "display ipv6 routing-table",
-    "display ipv6 routing-table 2001:db8:20::5"
+    "display nqa results test-instance admin wan1",
+    "display nqa history test-instance admin wan1",
+    "display ip routing-table protocol static"
    ]
   },
   "aruba": {
-   "mode": "AOS-S / AOS-CX: Manager",
+   "mode": "Operator / Manager (AOS-CX)",
    "cmds": [
-    "show ipv6 route",
-    "show ipv6 route 2001:db8:20::5"
+    "ping 203.0.113.1 repetitions 5",
+    "show ip route static"
    ]
   }
  },
  {
-  "slug": "ipv6-ping-traceroute",
-  "title": "IPv6 ping ve traceroute ile erişim testi",
-  "cat": "IPv6 ve Multicast",
-  "note": "Platformlar IPv6 için farklı sözdizimi kullanır: Cisco 'ping ipv6', Huawei 'ping ipv6'/'tracert ipv6', Aruba AOS-S 'ping6'/'traceroute6'. Link-local hedefte çıkış arayüzü gerekir.",
+  "slug": "vrrp-oncelik-preempt-yapilandirma",
+  "title": "VRRP grubu, öncelik ve preempt yapılandırma",
+  "cat": "Yedeklilik ve Stack",
+  "note": "Sanal IP'yi iki core switch'te aynı VRID ile tanımlayın; yüksek priority master olur. Huawei'de preempt varsayılan açıktır. Cisco'da VRRP komutları IOS-XE sürümüne göre değişebilir.",
   "cisco": {
-   "mode": "Privileged EXEC",
+   "mode": "Interface configuration (Vlan10)",
    "cmds": [
-    "ping ipv6 2001:db8:20::1",
-    "ping ipv6 2001:db8:20::1 source Vlan10",
-    "traceroute ipv6 2001:db8:20::1"
+    "ip address 10.10.10.2 255.255.255.0",
+    "vrrp 10 ip 10.10.10.1",
+    "vrrp 10 priority 110",
+    "vrrp 10 preempt",
+    "do show vrrp brief"
    ]
   },
   "huawei": {
-   "mode": "User view",
+   "mode": "Interface view (Vlanif10)",
    "cmds": [
-    "ping ipv6 2001:db8:20::1",
-    "ping ipv6 -a 2001:db8:10::1 2001:db8:20::1",
-    "tracert ipv6 2001:db8:20::1"
+    "ip address 10.10.10.2 24",
+    "vrrp vrid 10 virtual-ip 10.10.10.1",
+    "vrrp vrid 10 priority 110",
+    "display vrrp brief"
    ]
   },
   "aruba": {
-   "mode": "AOS-S: Manager / AOS-CX: Operator",
+   "mode": "AOS-CX interface vlan 10",
    "cmds": [
-    "ping6 2001:db8:20::1",
-    "traceroute6 2001:db8:20::1"
+    "ip address 10.10.10.2/24",
+    "vrrp 10 address-family ipv4",
+    "address 10.10.10.1 primary",
+    "priority 110",
+    "show vrrp"
    ]
   }
  },
  {
-  "slug": "ipv6-slaac-otomatik-adres-alma",
-  "title": "Arayüzde SLAAC ile otomatik IPv6 adresi alma",
+  "slug": "vrrp-track-priority-dusurme",
+  "title": "VRRP priority'yi uplink durumuna göre düşürme (track)",
+  "cat": "Yedeklilik ve Stack",
+  "note": "Master'ın uplink'i düşerse VRRP priority'si düşürülerek backup'ın master olması sağlanır. Bunun çalışması için 'decrement/reduced' değeri iki switch arasındaki priority farkından büyük olmalıdır.",
+  "cisco": {
+   "mode": "Global / Interface configuration (Vlan10)",
+   "cmds": [
+    "track 1 interface GigabitEthernet1/0/48 line-protocol",
+    "interface Vlan10",
+    "vrrp 10 track 1 decrement 30",
+    "do show vrrp brief"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view (Vlanif10)",
+   "cmds": [
+    "vrrp vrid 10 track interface GigabitEthernet0/0/48 reduced 30",
+    "display vrrp brief",
+    "display vrrp verbose"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX (track yok; priority elle ayarlanır)",
+   "cmds": [
+    "show vrrp"
+   ]
+  }
+ },
+ {
+  "slug": "hsrp-temel-yapilandirma",
+  "title": "HSRP (Cisco) temel yapılandırması ve VRRP karşılığı",
+  "cat": "Yedeklilik ve Stack",
+  "note": "HSRP Cisco'ya özgüdür; Huawei ve Aruba'da standart karşılığı VRRP'dir. Karma ortamda aynı VLAN'da HSRP ile VRRP birbirine geçiş yapmaz.",
+  "cisco": {
+   "mode": "Interface configuration (Vlan10)",
+   "cmds": [
+    "standby version 2",
+    "standby 10 ip 10.10.10.1",
+    "standby 10 priority 110",
+    "standby 10 preempt",
+    "do show standby brief"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view (Vlanif10) - VRRP karşılığı",
+   "cmds": [
+    "vrrp vrid 10 virtual-ip 10.10.10.1",
+    "vrrp vrid 10 priority 110",
+    "display vrrp brief"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX interface vlan 10 - VRRP karşılığı",
+   "cmds": [
+    "vrrp 10 address-family ipv4",
+    "address 10.10.10.1 primary",
+    "priority 110",
+    "show vrrp"
+   ]
+  }
+ },
+ {
+  "slug": "pbr-kaynak-ip-route-map",
+  "title": "Kaynak IP'ye göre policy-based routing",
+  "cat": "Routing",
+  "note": "Cisco'da route-map + 'ip policy', Huawei S-serisinde traffic-policy + redirect ip-nexthop kullanılır. Next-hop erişilemezse PBR trafiği normal tabloya düşürür; Cisco'da bunu 'set ip next-hop verify-availability' ile kontrol edin.",
+  "cisco": {
+   "mode": "Global configuration / Interface configuration (Vlan10)",
+   "cmds": [
+    "ip access-list standard PBR-SRC",
+    "permit 10.10.10.0 0.0.0.255",
+    "route-map PBR-ISP2 permit 10",
+    "match ip address PBR-SRC",
+    "set ip next-hop 198.51.100.1",
+    "interface Vlan10 ; ip policy route-map PBR-ISP2"
+   ]
+  },
+  "huawei": {
+   "mode": "System view (CloudEngine / S-series)",
+   "cmds": [
+    "acl number 2010 ; rule 5 permit source 10.10.10.0 0.0.0.255",
+    "traffic-classifier PBR-SRC ; if-match acl 2010",
+    "traffic-behavior ISP2 ; redirect ip-nexthop 198.51.100.1",
+    "traffic-policy PBR-POL ; classifier PBR-SRC behavior ISP2",
+    "interface Vlanif10 ; traffic-policy PBR-POL inbound"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config (10.x)",
+   "cmds": [
+    "class ip PBR-SRC ; 10 match any 10.10.10.0/24 any",
+    "pbr-action-list ISP2 ; 10 nexthop 198.51.100.1",
+    "policy PBR-POL ; 10 class ip PBR-SRC action pbr ISP2",
+    "interface vlan 10 ; apply policy PBR-POL routed-in"
+   ]
+  }
+ },
+ {
+  "slug": "pbr-dogrulama-sayac-goruntuleme",
+  "title": "PBR politikasını doğrulama ve sayaçlar",
+  "cat": "Sorun Giderme",
+  "note": "PBR çalışmıyorsa önce politikanın doğru arayüze bağlı olduğunu ve ACL sayaçlarının arttığını kontrol edin. Sayaç artmıyorsa trafik politikaya hiç girmiyordur.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip policy",
+    "show route-map PBR-ISP2",
+    "show access-lists PBR-SRC",
+    "show ip interface Vlan10 | include policy"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display traffic-policy applied-record PBR-POL",
+    "display traffic classifier user-defined PBR-SRC",
+    "display traffic behavior user-defined ISP2",
+    "display traffic policy user-defined PBR-POL"
+   ]
+  },
+  "aruba": {
+   "mode": "Operator / Manager (AOS-CX)",
+   "cmds": [
+    "show policy PBR-POL",
+    "show ip route 0.0.0.0/0"
+   ]
+  }
+ },
+ {
+  "slug": "prefix-list-olusturma",
+  "title": "Prefix-list oluşturma (le/ge ile)",
+  "cat": "Routing",
+  "note": "Prefix-list ACL'den farklı olarak prefix uzunluğunu da eşleştirir. Cisco 'le/ge', Huawei 'less-equal/greater-equal' kullanır. Son satırda örtük deny vardır; gerekmiyorsa permit ekleyin.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ip prefix-list LAN-ONLY seq 5 deny 0.0.0.0/0",
+    "ip prefix-list LAN-ONLY seq 10 permit 10.0.0.0/8 le 24",
+    "ip prefix-list LAN-ONLY seq 20 permit 172.16.0.0/12 le 24"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "ip ip-prefix LAN-ONLY index 5 deny 0.0.0.0 0",
+    "ip ip-prefix LAN-ONLY index 10 permit 10.0.0.0 8 less-equal 24",
+    "ip ip-prefix LAN-ONLY index 20 permit 172.16.0.0 12 less-equal 24"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config / AOS-S config",
+   "cmds": [
+    "ip prefix-list LAN-ONLY seq 5 deny 0.0.0.0/0",
+    "ip prefix-list LAN-ONLY seq 10 permit 10.0.0.0/8 le 24",
+    "ip prefix-list LAN-ONLY seq 20 permit 172.16.0.0/12 le 24"
+   ]
+  }
+ },
+ {
+  "slug": "route-map-filtreli-redistribute",
+  "title": "Route-map ile filtreli redistribute",
+  "cat": "Routing",
+  "note": "Redistribute'u filtresiz bırakmak yanlış ağların OSPF'e sızmasına yol açar. Cisco route-map, Huawei route-policy, Juniper policy-statement kullanır. Metrik/cost bu aşamada da atanabilir.",
+  "cisco": {
+   "mode": "Global configuration / Router configuration",
+   "cmds": [
+    "ip prefix-list STATIC-OUT seq 10 permit 10.50.0.0/16 le 24",
+    "route-map STATIC-TO-OSPF permit 10",
+    "match ip address prefix-list STATIC-OUT",
+    "set metric 100",
+    "router ospf 1",
+    "redistribute static subnets route-map STATIC-TO-OSPF"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / OSPF view",
+   "cmds": [
+    "ip ip-prefix STATIC-OUT index 10 permit 10.50.0.0 16 less-equal 24",
+    "route-policy STATIC-TO-OSPF permit node 10",
+    "if-match ip-prefix STATIC-OUT",
+    "apply cost 100",
+    "ospf 1",
+    "import-route static route-policy STATIC-TO-OSPF"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX config",
+   "cmds": [
+    "ip prefix-list STATIC-OUT seq 10 permit 10.50.0.0/16 le 24",
+    "route-map STATIC-TO-OSPF permit seq 10",
+    "match ip address prefix-list STATIC-OUT",
+    "set metric 100",
+    "router ospf 1",
+    "redistribute static route-map STATIC-TO-OSPF"
+   ]
+  }
+ },
+ {
+  "slug": "prefix-list-route-map-goruntuleme",
+  "title": "Prefix-list ve route-map durumunu görüntüleme",
+  "cat": "Routing",
+  "note": "Cisco'da 'show ip prefix-list NAME 10.50.1.0/24' ile belirli bir prefix'in listeye uyup uymadığını test edebilirsiniz. Huawei'de route-policy çıktısı node sırasını gösterir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip prefix-list STATIC-OUT",
+    "show ip prefix-list detail",
+    "show ip prefix-list STATIC-OUT 10.50.1.0/24",
+    "show route-map STATIC-TO-OSPF"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ip ip-prefix STATIC-OUT",
+    "display route-policy STATIC-TO-OSPF"
+   ]
+  },
+  "aruba": {
+   "mode": "Operator / Manager (AOS-CX)",
+   "cmds": [
+    "show ip prefix-list STATIC-OUT",
+    "show route-map STATIC-TO-OSPF"
+   ]
+  }
+ },
+ {
+  "slug": "vrrp-durum-goruntuleme",
+  "title": "VRRP master/backup durumunu görüntüleme",
+  "cat": "Yedeklilik ve Stack",
+  "note": "Çıktıda önce State (Master/Backup/Init) ve Priority alanına bakın. İki cihaz da Master görünüyorsa VRRP paketleri karşıya ulaşmıyordur; VLAN ve trunk iznini kontrol edin.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show vrrp brief",
+    "show vrrp",
+    "show vrrp interface Vlan10"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display vrrp brief",
+    "display vrrp verbose",
+    "display vrrp statistics"
+   ]
+  },
+  "aruba": {
+   "mode": "Operator / Manager (AOS-CX; statistics AOS-S)",
+   "cmds": [
+    "show vrrp",
+    "show vrrp statistics"
+   ]
+  }
+ },
+ {
+  "slug": "hsrp-komsu-durum-sorun-giderme",
+  "title": "HSRP komşu ve durum sorun giderme",
+  "cat": "Yedeklilik ve Stack",
+  "note": "HSRP Cisco'ya özgüdür; Huawei ve Aruba'da karşılığı VRRP'dir. Active/Standby dışında Init veya Speak durumunda takılı kalma genelde hello paketlerinin karşıya ulaşmadığını gösterir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show standby brief",
+    "show standby neighbors",
+    "show standby Vlan10",
+    "show logging | include HSRP"
+   ]
+  },
+  "huawei": {
+   "mode": "User view (VRRP karşılığı)",
+   "cmds": [
+    "display vrrp brief",
+    "display vrrp verbose"
+   ]
+  },
+  "aruba": {
+   "mode": "Operator / Manager (VRRP karşılığı)",
+   "cmds": [
+    "show vrrp"
+   ]
+  }
+ },
+ {
+  "slug": "svi-dhcp-relay-ip-helper",
+  "title": "SVI üzerinde DHCP relay (ip helper-address)",
+  "cat": "Ağ Hizmetleri",
+  "note": "DHCP sunucusu başka bir subnet'teyse istemci broadcast'i SVI'da relay ile unicast'e çevrilir. Huawei'de önce 'dhcp enable' gerekir; Cisco'da 'ip helper-address' ayrıca UDP 69, 53 gibi portları da iletir.",
+  "cisco": {
+   "mode": "Interface configuration (Vlan30)",
+   "cmds": [
+    "interface Vlan30",
+    "ip address 10.30.0.1 255.255.255.0",
+    "ip helper-address 10.0.0.50",
+    "do show ip interface Vlan30 | include Helper"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / Interface view (Vlanif30)",
+   "cmds": [
+    "dhcp enable",
+    "interface Vlanif30",
+    "ip address 10.30.0.1 24",
+    "dhcp select relay",
+    "dhcp relay server-ip 10.0.0.50"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX interface vlan 30 / AOS-S vlan 30",
+   "cmds": [
+    "interface vlan 30",
+    "ip address 10.30.0.1/24",
+    "ip helper-address 10.0.0.50"
+   ]
+  }
+ },
+ {
+  "slug": "ip-routing-etkinlestirme-l3-switch",
+  "title": "Katman-3 switch'te IP routing'i etkinleştirme",
+  "cat": "Routing",
+  "note": "Cisco ve Aruba AOS-S'te routing 'ip routing' ile açılmalıdır; Huawei S-serisinde ve AOS-CX'te SVI'ya IP verildiğinde routing otomatik çalışır. Açılmazsa SVI'lar arası trafik geçmez.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ip routing",
+    "show running-config | include ip routing",
+    "show ip route"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view (varsayılan açık)",
+   "cmds": [
+    "display ip interface brief",
+    "display ip routing-table"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S config / AOS-CX (varsayılan açık)",
+   "cmds": [
+    "ip routing",
+    "show ip"
+   ]
+  }
+ },
+ {
+  "slug": "svi-down-down-sorun-giderme",
+  "title": "SVI up/down veya down/down sorun giderme",
+  "cat": "Sorun Giderme",
+  "note": "SVI'nın up olması için VLAN'ın cihazda tanımlı olması ve en az bir aktif portunun (access veya trunk) bulunması gerekir. Cisco'da 'autostate' bu davranışı yönetir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip interface brief | include Vlan",
+    "show interfaces Vlan30",
+    "show vlan id 30",
+    "show interfaces trunk"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ip interface brief",
+    "display interface Vlanif 30",
+    "display vlan 30"
+   ]
+  },
+  "aruba": {
+   "mode": "Operator / Manager",
+   "cmds": [
+    "show vlan 30",
+    "show ip interface brief"
+   ]
+  }
+ },
+ {
+  "slug": "routing-tablosu-longer-prefix-sorgu",
+  "title": "Routing tablosunda hedef IP ve longer-prefix sorgusu",
+  "cat": "Routing",
+  "note": "Tek IP sorgusu cihazın o hedef için hangi rotayı seçeceğini (longest match) gösterir. Longer-prefixes ise bir özet ağın altındaki tüm daha spesifik rotaları listeler.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip route 10.50.1.25",
+    "show ip route 10.50.0.0 255.255.0.0 longer-prefixes"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ip routing-table 10.50.1.25",
+    "display ip routing-table 10.50.0.0 16 longer-match"
+   ]
+  },
+  "aruba": {
+   "mode": "Operator / Manager",
+   "cmds": [
+    "show ip route 10.50.1.25"
+   ]
+  }
+ },
+ {
+  "slug": "routing-tablosu-protokole-gore-filtre",
+  "title": "Routing tablosunu protokole göre filtreleme ve özet",
+  "cat": "Routing",
+  "note": "Büyük tabloda tüm çıktıyı taramak yerine protokole göre filtreleyin. Rota sayıları özeti, beklenmedik redistribute veya rota sızıntısını hızlıca ortaya çıkarır.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip route ospf",
+    "show ip route connected",
+    "show ip route static",
+    "show ip route summary",
+    "show ip protocols"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display ip routing-table protocol ospf",
+    "display ip routing-table protocol direct",
+    "display ip routing-table protocol static",
+    "display ip routing-table statistics"
+   ]
+  },
+  "aruba": {
+   "mode": "Operator / Manager",
+   "cmds": [
+    "show ip route ospf",
+    "show ip route connected",
+    "show ip route static"
+   ]
+  }
+ },
+ {
+  "slug": "route-administrative-distance-ayari",
+  "title": "Protokol administrative distance (preference) ayarı",
+  "cat": "Routing",
+  "note": "Aynı prefix'i iki protokol öğrenirse düşük distance (Huawei'de preference) kazanır. Varsayılanlar: OSPF 110 (Huawei 10), statik 1 (Huawei 60). Değiştirmeden önce çift taraflı etkiyi düşünün.",
+  "cisco": {
+   "mode": "Router configuration",
+   "cmds": [
+    "router ospf 1",
+    "distance 115",
+    "do show ip protocols",
+    "do show ip route 10.50.0.0"
+   ]
+  },
+  "huawei": {
+   "mode": "OSPF view",
+   "cmds": [
+    "ospf 1",
+    "preference 115",
+    "display ip routing-table 10.50.0.0 16 verbose"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX router ospf",
+   "cmds": [
+    "router ospf 1",
+    "distance 115",
+    "show ip route 10.50.0.0/16"
+   ]
+  }
+ },
+ {
+  "slug": "traceroute-yol-dogrulama-kaynak-arayuz",
+  "title": "Traceroute ile yol doğrulama (kaynak adres belirterek)",
+  "cat": "Sorun Giderme",
+  "note": "Switch/router'dan traceroute atarken kaynak olarak ilgili SVI'yı belirtin; aksi hâlde çıkış arayüzünün IP'si kullanılır ve dönüş yolu uyuşmazlığı yanıltıcı sonuç verebilir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "traceroute 10.50.1.25 source Vlan10",
+    "traceroute 10.50.1.25 numeric"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "tracert -a 10.10.10.2 10.50.1.25"
+   ]
+  },
+  "aruba": {
+   "mode": "Operator / Manager",
+   "cmds": [
+    "traceroute 10.50.1.25"
+   ]
+  }
+ },
+ {
+  "slug": "vrrp-advertisement-timer-ayari",
+  "title": "VRRP advertisement süresini ayarlama",
+  "cat": "Yedeklilik ve Stack",
+  "note": "Advertisement aralığı kısaldıkça Master kaybı daha çabuk algılanır (Master down ≈ 3 x aralık). Çok kısa değerler CPU'yu yükler ve gereksiz geçiş yaratabilir; iki tarafta aynı olmalıdır.",
+  "cisco": {
+   "mode": "Interface configuration (Vlan10)",
+   "cmds": [
+    "interface Vlan10",
+    "vrrp 10 timers advertise 1",
+    "do show vrrp interface Vlan10"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view (Vlanif10)",
+   "cmds": [
+    "interface Vlanif10",
+    "vrrp vrid 10 timer advertise 1",
+    "display vrrp verbose"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S config (vlan 10 > vrrp vrid 10)",
+   "cmds": [
+    "vlan 10",
+    "vrrp vrid 10",
+    "advertise-interval 1",
+    "show vrrp"
+   ]
+  }
+ },
+ {
+  "slug": "svi-secondary-ip-adresi",
+  "title": "SVI'ya ikincil (secondary) IP adresi ekleme",
+  "cat": "Routing",
+  "note": "Bir VLAN'a ikinci subnet eklemek için kullanılır; geçiş döneminde kullanışlıdır. Tüm cihazlar aynı L2 domain'inde kalır, bu yüzden broadcast domain büyür; kalıcı çözüm olarak önerilmez.",
+  "cisco": {
+   "mode": "Interface configuration (Vlan30)",
+   "cmds": [
+    "interface Vlan30",
+    "ip address 10.30.0.1 255.255.255.0",
+    "ip address 10.30.1.1 255.255.255.0 secondary",
+    "do show ip interface Vlan30"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view (Vlanif30)",
+   "cmds": [
+    "interface Vlanif30",
+    "ip address 10.30.0.1 24",
+    "ip address 10.30.1.1 24 sub",
+    "display ip interface Vlanif30"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX interface vlan 30",
+   "cmds": [
+    "interface vlan 30",
+    "ip address 10.30.0.1/24",
+    "ip address 10.30.1.1/24 secondary",
+    "show ip interface brief"
+   ]
+  }
+ },
+ {
+  "slug": "igmp-snooping-etkinlestirme",
+  "title": "IGMP snooping'i VLAN için etkinleştirme",
   "cat": "IPv6 ve Multicast",
-  "note": "Router veya L3 switch arayüzü RA'dan prefix alıp EUI-64 ya da gizlilik uzantılı adres üretir; uplink'in ISP'den otomatik adres alması için kullanılır.",
+  "note": "Cisco'da IGMP snooping varsayılan açıktır; Huawei'de hem global hem VLAN görünümünde ayrıca açılması gerekir. Querier yoksa grup üyelikleri zamanla düşer.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ip igmp snooping",
+    "ip igmp snooping vlan 20"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / VLAN view",
+   "cmds": [
+    "igmp-snooping enable",
+    "vlan 20",
+    "igmp-snooping enable"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: VLAN context / AOS-CX: VLAN context",
+   "cmds": [
+    "vlan 20 ip igmp",
+    "vlan 20",
+    "ip igmp snooping enable"
+   ]
+  }
+ },
+ {
+  "slug": "igmp-snooping-querier-yapilandirma",
+  "title": "IGMP snooping querier yapılandırma",
+  "cat": "IPv6 ve Multicast",
+  "note": "Multicast router/PIM olmayan L2 VLAN'da sorgu gönderen bir cihaz gerekir; querier'ı seçtiğin switch'te açıp kaynak IP vermek tutarlı üyelik takibi sağlar.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ip igmp snooping querier",
+    "ip igmp snooping querier address 10.0.20.2",
+    "ip igmp snooping vlan 20 querier"
+   ]
+  },
+  "huawei": {
+   "mode": "VLAN view",
+   "cmds": [
+    "vlan 20",
+    "igmp-snooping enable",
+    "igmp-snooping querier enable"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: VLAN context / AOS-CX: VLAN context",
+   "cmds": [
+    "vlan 20 ip igmp querier",
+    "vlan 20",
+    "ip igmp snooping querier"
+   ]
+  }
+ },
+ {
+  "slug": "igmp-snooping-grup-goruntuleme",
+  "title": "IGMP snooping grup üyeliklerini görüntüleme",
+  "cat": "IPv6 ve Multicast",
+  "note": "Hangi multicast grubunun hangi portlara gittiğini gösterir. Huawei'de çıktı VLAN bazında, Junos'ta ise membership tablosu olarak gelir.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip igmp snooping groups vlan 20",
+    "show ip igmp snooping querier vlan 20",
+    "show ip igmp snooping mrouter vlan 20"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display igmp-snooping group vlan 20",
+    "display igmp-snooping router-port vlan 20"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Manager / AOS-CX: Manager",
+   "cmds": [
+    "show ip igmp vlan 20",
+    "show ip igmp snooping groups"
+   ]
+  }
+ },
+ {
+  "slug": "igmp-version-arayuz-ayari",
+  "title": "Arayüzde IGMP sürümünü ayarlama (v2/v3)",
+  "cat": "IPv6 ve Multicast",
+  "note": "Sürüm uyumsuzluğu IGMP join'lerinin sessizce göz ardı edilmesine yol açabilir; SSM için v3 gerekir. Varsayılan sürüm platforma göre değişir.",
   "cisco": {
    "mode": "Interface configuration",
    "cmds": [
-    "interface GigabitEthernet0/0",
-    "ipv6 enable",
-    "ipv6 address autoconfig default"
+    "interface Vlan20",
+    "ip igmp version 3",
+    "end",
+    "show ip igmp interface Vlan20"
    ]
   },
   "huawei": {
    "mode": "Interface view",
    "cmds": [
-    "interface gigabitethernet 0/0/1",
-    "ipv6 enable",
-    "ipv6 address auto global"
+    "interface Vlanif20",
+    "igmp enable",
+    "igmp version 3"
    ]
   },
   "aruba": {
-   "mode": "AOS-S: VLAN context",
+   "mode": "AOS-CX: Interface VLAN context",
    "cmds": [
-    "vlan 10",
-    "ipv6 address autoconfig"
+    "interface vlan 20",
+    "ip igmp enable",
+    "ip igmp version 3"
    ]
   }
  },
  {
-  "slug": "ospfv3-temel-yapilandirma",
-  "title": "OSPFv3 ile IPv6 yönlendirme yapılandırma",
+  "slug": "multicast-routing-etkinlestirme",
+  "title": "Multicast yönlendirmeyi global etkinleştirme",
   "cat": "IPv6 ve Multicast",
-  "note": "OSPFv3 arayüz bazında etkinleştirilir (network komutu yoktur) ve IPv4 adresi olmasa bile 32 bit router-id elle verilmelidir.",
+  "note": "PIM çalışmadan önce multicast yönlendirme açılmalıdır. Cisco'da 'ip multicast-routing', Huawei'de 'multicast routing-enable', Aruba'da router pim bağlamı kullanılır.",
   "cisco": {
-   "mode": "Global / Interface configuration (classic IOS syntax)",
+   "mode": "Global configuration (IOS-XE)",
+   "cmds": [
+    "ip multicast-routing",
+    "end",
+    "show ip multicast"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "multicast routing-enable",
+    "display multicast routing-table"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Global config / AOS-CX: Global config",
+   "cmds": [
+    "ip multicast-routing",
+    "router pim",
+    "enable"
+   ]
+  }
+ },
+ {
+  "slug": "pim-sparse-mode-arayuz",
+  "title": "Arayüzde PIM sparse mode etkinleştirme",
+  "cat": "IPv6 ve Multicast",
+  "note": "PIM, multicast trafiğinin geçeceği her L3 arayüzde (VLAN arayüzü, uplink) ayrı etkinleştirilir. Sparse mode bir RP gerektirir.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface Vlan20",
+    "ip pim sparse-mode",
+    "end",
+    "show ip pim interface"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "pim",
+    "quit",
+    "interface Vlanif20",
+    "pim sm"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Interface context / AOS-S: VLAN context",
+   "cmds": [
+    "interface vlan 20",
+    "ip pim-sparse enable",
+    "vlan 20",
+    "ip pim-sparse"
+   ]
+  }
+ },
+ {
+  "slug": "pim-rp-statik-adres",
+  "title": "PIM statik RP adresi tanımlama",
+  "cat": "IPv6 ve Multicast",
+  "note": "Küçük ve orta ağlarda Auto-RP/BSR yerine statik RP basit ve öngörülebilir olur. RP adresi genelde Loopback'te tutulur ve tüm PIM router'larda aynı olmalıdır.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ip pim rp-address 10.255.0.1",
+    "end",
+    "show ip pim rp mapping"
+   ]
+  },
+  "huawei": {
+   "mode": "PIM view",
+   "cmds": [
+    "system-view",
+    "pim",
+    "static-rp 10.255.0.1"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: PIM context",
+   "cmds": [
+    "router pim",
+    "rp-address 10.255.0.1 224.0.0.0/4"
+   ]
+  }
+ },
+ {
+  "slug": "pim-komsu-goruntuleme",
+  "title": "PIM komşularını görüntüleme",
+  "cat": "IPv6 ve Multicast",
+  "note": "Multicast sorunlarında ilk kontrol PIM komşuluğudur. Komşu yoksa RPF ve join mesajları ilerlemez; DR priority ve uptime bilgisi de buradan okunur.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip pim neighbor",
+    "show ip pim interface"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display pim neighbor",
+    "display pim interface"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Manager / AOS-CX: Manager",
+   "cmds": [
+    "show ip pim neighbor"
+   ]
+  }
+ },
+ {
+  "slug": "multicast-mroute-tablosu-goruntuleme",
+  "title": "Multicast yönlendirme tablosunu (mroute) görüntüleme",
+  "cat": "IPv6 ve Multicast",
+  "note": "(*,G) ve (S,G) girdileri, gelen arayüz (RPF) ve çıkış arayüz listesi buradan okunur. Junos'ta komut 'show multicast route'tur, MikroTik'te karşılığı yok.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ip mroute",
+    "show ip mroute 239.1.1.10",
+    "show ip mroute count"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display multicast routing-table",
+    "display multicast routing-table 239.1.1.10"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Manager / AOS-CX: Manager",
+   "cmds": [
+    "show ip mroute"
+   ]
+  }
+ },
+ {
+  "slug": "igmp-sorgu-araligi-ayari",
+  "title": "IGMP genel sorgu aralığını ayarlama",
+  "cat": "IPv6 ve Multicast",
+  "note": "Querier'ın genel sorgu aralığı üyelik zaman aşımını belirler. Aralık kısaltılırsa üyelik düşüşleri daha hızlı fark edilir, ancak kontrol trafiği artar.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface Vlan20",
+    "ip igmp query-interval 60",
+    "ip igmp query-max-response-time 10"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface Vlanif20",
+    "igmp timer query 60",
+    "igmp max-response-time 10"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Interface VLAN context",
+   "cmds": [
+    "interface vlan 20",
+    "ip igmp query-interval 60",
+    "ip igmp query-max-response-time 10"
+   ]
+  }
+ },
+ {
+  "slug": "pim-dr-priority-ayari",
+  "title": "PIM DR priority değerini ayarlama",
+  "cat": "IPv6 ve Multicast",
+  "note": "Paylaşımlı segmentte DR en yüksek priority'ye sahip router olur; eşitlikte yüksek IP kazanır. Kaynak veya alıcı tarafı DR'ı kontrollü seçmek için priority yükseltilir.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface Vlan20",
+    "ip pim dr-priority 200",
+    "end",
+    "show ip pim interface Vlan20"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface Vlanif20",
+    "pim hello-option dr-priority 200"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Interface VLAN context",
+   "cmds": [
+    "interface vlan 20",
+    "ip pim dr-priority 200"
+   ]
+  }
+ },
+ {
+  "slug": "igmp-statik-grup-uyeligi",
+  "title": "Arayüzde statik IGMP grup üyeliği tanımlama",
+  "cat": "IPv6 ve Multicast",
+  "note": "İstemci join göndermese de arayüzün gruba üye sayılmasını sağlar. Test, IGMP desteklemeyen alıcı veya sorun izole etme için kullanılır; kalıcı bırakılırsa gereksiz trafik oluşturur.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface Vlan20",
+    "ip igmp static-group 239.1.1.10"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface Vlanif20",
+    "igmp static-group 239.1.1.10"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Interface VLAN context",
+   "cmds": [
+    "interface vlan 20",
+    "ip igmp static-group 239.1.1.10"
+   ]
+  }
+ },
+ {
+  "slug": "mld-snooping-etkinlestirme",
+  "title": "MLD snooping etkinleştirme (IPv6 multicast)",
+  "cat": "IPv6 ve Multicast",
+  "note": "IPv6'da multicast üyeliği MLD ile yönetilir ve IPv4'teki IGMP snooping'in karşılığıdır. IPv6 ND de multicast kullandığından kapalı snooping bazı platformlarda yayın taşmasına yol açar.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ipv6 mld snooping",
+    "ipv6 mld snooping vlan 20",
+    "end",
+    "show ipv6 mld snooping vlan 20"
+   ]
+  },
+  "huawei": {
+   "mode": "System view / VLAN view",
+   "cmds": [
+    "mld-snooping enable",
+    "vlan 20",
+    "mld-snooping enable"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: VLAN context",
+   "cmds": [
+    "vlan 20",
+    "ipv6 mld snooping enable"
+   ]
+  }
+ },
+ {
+  "slug": "mld-grup-goruntuleme",
+  "title": "MLD grup üyeliklerini görüntüleme",
+  "cat": "IPv6 ve Multicast",
+  "note": "IPv6 multicast üyeliklerini arayüz bazında gösterir. MLDv1 ve MLDv2 çıktıları farklı olabilir; MLDv2'de kaynak listesi de görünür.",
+  "cisco": {
+   "mode": "Privileged EXEC",
+   "cmds": [
+    "show ipv6 mld groups",
+    "show ipv6 mld interface Vlan20"
+   ]
+  },
+  "huawei": {
+   "mode": "User view / System view",
+   "cmds": [
+    "display mld group",
+    "display mld interface"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Manager / AOS-CX: Manager",
+   "cmds": [
+    "show ipv6 mld groups"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-loopback-adresi-tanimlama",
+  "title": "IPv6 Loopback adresi tanımlama (/128)",
+  "cat": "IPv6 ve Multicast",
+  "note": "Router-ID, RP adresi ve yönetim erişimi için kararlı bir Loopback IPv6 adresi kullanılır. Adres /128 verilir ve arayüz kapanmadığından rota dinamik protokollerde sabit kalır.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "interface Loopback0",
+    "ipv6 address 2001:db8:ffff::1/128"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "interface LoopBack0",
+    "ipv6 enable",
+    "ipv6 address 2001:db8:ffff::1/128"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Global config / AOS-CX: Global config",
+   "cmds": [
+    "interface loopback 0",
+    "ipv6 address 2001:db8:ffff::1/128"
+   ]
+  }
+ },
+ {
+  "slug": "ipv6-yuzen-statik-rota",
+  "title": "IPv6 yedek (floating) statik rota tanımlama",
+  "cat": "IPv6 ve Multicast",
+  "note": "Birincil yol düşünce devreye giren yedek statik rota, yüksek administrative distance ile tanımlanır. Bu sayede normalde dinamik veya birincil rota kullanılır.",
+  "cisco": {
+   "mode": "Global configuration",
+   "cmds": [
+    "ipv6 route ::/0 2001:db8:10::1",
+    "ipv6 route ::/0 2001:db8:20::1 250"
+   ]
+  },
+  "huawei": {
+   "mode": "System view",
+   "cmds": [
+    "ipv6 route-static :: 0 2001:db8:10::1",
+    "ipv6 route-static :: 0 2001:db8:20::1 preference 100"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-S: Global config / AOS-CX: Global config",
+   "cmds": [
+    "ipv6 route ::/0 2001:db8:10::1",
+    "ipv6 route ::/0 2001:db8:20::1 distance 250"
+   ]
+  }
+ },
+ {
+  "slug": "ospfv3-statik-redistribute",
+  "title": "OSPFv3'e statik rota aktarma (redistribute)",
+  "cat": "IPv6 ve Multicast",
+  "note": "Statik IPv6 rotaları OSPFv3 alanına dağıtmak için kullanılır. Junos'ta redistribute yerine export policy gerekir; metric-type ve metric değeri açıkça belirtilmelidir.",
+  "cisco": {
+   "mode": "Router configuration",
    "cmds": [
     "ipv6 router ospf 1",
-    "router-id 1.1.1.1",
-    "exit",
-    "interface Vlan10",
-    "ipv6 ospf 1 area 0"
+    "redistribute static metric 20 metric-type 2"
    ]
   },
   "huawei": {
-   "mode": "System view / Interface view",
+   "mode": "OSPFv3 view",
    "cmds": [
     "ospfv3 1",
-    "router-id 1.1.1.1",
-    "quit",
-    "interface vlanif 10",
-    "ospfv3 1 area 0.0.0.0"
+    "import-route static cost 20 type 2"
    ]
   },
   "aruba": {
-   "mode": "AOS-S: Global configuration / AOS-CX: Global configuration",
+   "mode": "AOS-CX: OSPFv3 context",
    "cmds": [
-    "ipv6 router ospf",
-    "area backbone",
-    "exit",
-    "vlan 10",
-    "ipv6 ospf3 area backbone",
     "router ospfv3 1",
-    "router-id 1.1.1.1",
-    "area 0.0.0.0",
-    "interface vlan 10",
-    "ipv6 ospfv3 1 area 0.0.0.0"
+    "redistribute static"
    ]
   }
  },
  {
-  "slug": "ospfv3-komsuluk-arayuz-goruntuleme",
-  "title": "OSPFv3 komşuluk ve arayüz durumunu görüntüleme",
+  "slug": "ipv6-rota-sorgulama-ozel-prefix",
+  "title": "Belirli bir IPv6 prefix için rota sorgulama",
   "cat": "IPv6 ve Multicast",
-  "note": "Komşuluk FULL ya da 2-WAY olmalıdır. OSPFv3 komşuları link-local adresle kurar, bu yüzden çıktıdaki adresler FE80:: ile başlar.",
+  "note": "Tüm tabloyu listelemek yerine hedef adres veya statik filtre ile tek rotaya bakmak sorun gidermeyi hızlandırır. Longest-prefix-match sonucu hangi rotanın seçildiğini gösterir.",
   "cisco": {
    "mode": "Privileged EXEC",
    "cmds": [
-    "show ipv6 ospf neighbor",
-    "show ipv6 ospf interface brief"
+    "show ipv6 route 2001:db8:100::5",
+    "show ipv6 route static",
+    "show ipv6 route ospf"
    ]
   },
   "huawei": {
    "mode": "User view / System view",
    "cmds": [
-    "display ospfv3 peer",
-    "display ospfv3 interface"
+    "display ipv6 routing-table 2001:db8:100::5 128",
+    "display ipv6 routing-table protocol static"
    ]
   },
   "aruba": {
-   "mode": "AOS-S: Manager / AOS-CX: Operator",
+   "mode": "AOS-S: Manager / AOS-CX: Manager",
    "cmds": [
-    "show ipv6 ospf3 neighbor",
-    "show ospfv3 neighbors"
+    "show ipv6 route static",
+    "show ipv6 route 2001:db8:100::/64"
    ]
   }
  },
  {
-  "slug": "ipv6-prefix-list-olusturma",
-  "title": "IPv6 prefix-list tanımlama",
+  "slug": "ipv6-acl-eslesme-sayaci-goruntuleme",
+  "title": "IPv6 ACL eşleşme sayaçlarını görüntüleme",
   "cat": "IPv6 ve Multicast",
-  "note": "Prefix-list, rota filtreleme ve route-map için kullanılır. 'le' ve 'ge' ile prefix uzunluk aralığı belirlenir; Huawei'de karşılığı 'ip ipv6-prefix' komutudur.",
-  "cisco": {
-   "mode": "Global configuration",
-   "cmds": [
-    "ipv6 prefix-list PL-SITE-A seq 5 permit 2001:db8:10::/48 le 64",
-    "ipv6 prefix-list PL-SITE-A seq 100 deny ::/0 le 128"
-   ]
-  },
-  "huawei": {
-   "mode": "System view",
-   "cmds": [
-    "ip ipv6-prefix PL-SITE-A index 10 permit 2001:db8:10:: 48 less-equal 64"
-   ]
-  },
-  "aruba": {
-   "mode": "AOS-S / AOS-CX: Global configuration",
-   "cmds": [
-    "ipv6 prefix-list PL-SITE-A seq 5 permit 2001:db8:10::/48 le 64"
-   ]
-  }
- },
- {
-  "slug": "dhcpv6-relay-yapilandirma",
-  "title": "DHCPv6 relay yapılandırma",
-  "cat": "IPv6 ve Multicast",
-  "note": "İstemcilerin bulunduğu VLAN'dan merkezi DHCPv6 sunucusuna istek iletmek için kullanılır. Relay, istemci tarafındaki arayüzde tanımlanır.",
-  "cisco": {
-   "mode": "Interface configuration",
-   "cmds": [
-    "interface Vlan10",
-    "ipv6 dhcp relay destination 2001:db8:100::10"
-   ]
-  },
-  "huawei": {
-   "mode": "Interface view",
-   "cmds": [
-    "interface vlanif 10",
-    "ipv6 dhcp select relay",
-    "ipv6 dhcp relay server-address 2001:db8:100::10"
-   ]
-  },
-  "aruba": {
-   "mode": "AOS-S: Global / VLAN context",
-   "cmds": [
-    "dhcpv6-relay",
-    "vlan 10",
-    "ipv6 helper-address unicast 2001:db8:100::10"
-   ]
-  }
- },
- {
-  "slug": "ipv6-acl-olusturma-ve-uygulama",
-  "title": "IPv6 ACL oluşturma ve arayüze uygulama",
-  "cat": "IPv6 ve Multicast",
-  "note": "IPv6 ACL'lerde örtük olarak ND (NS/NA) trafiğine izin verilir ama deny any sonunda dikkatli olunmalıdır. Cisco 'ipv6 traffic-filter', Aruba AOS-CX 'apply access-list ipv6' kullanır.",
-  "cisco": {
-   "mode": "Global / Interface configuration",
-   "cmds": [
-    "ipv6 access-list BLOCK-TELNET6",
-    "deny tcp any any eq 23",
-    "permit ipv6 any any",
-    "exit",
-    "interface Vlan10",
-    "ipv6 traffic-filter BLOCK-TELNET6 in"
-   ]
-  },
-  "huawei": {
-   "mode": "System view / Interface view",
-   "cmds": [
-    "acl ipv6 number 3001",
-    "rule 5 deny tcp destination-port eq 23",
-    "rule 10 permit",
-    "quit",
-    "interface vlanif 10",
-    "traffic-filter inbound acl ipv6 3001"
-   ]
-  },
-  "aruba": {
-   "mode": "AOS-CX: Global / VLAN interface",
-   "cmds": [
-    "access-list ip6 BLOCK-TELNET6",
-    "10 deny tcp any any eq 23",
-    "20 permit any any any",
-    "exit",
-    "interface vlan 10",
-    "apply access-list ipv6 BLOCK-TELNET6 in"
-   ]
-  }
- },
- {
-  "slug": "ipv6-link-local-adres-statik-atama",
-  "title": "Arayüze sabit link-local adres atama",
-  "cat": "IPv6 ve Multicast",
-  "note": "Otomatik EUI-64 link-local yerine FE80::1 gibi okunabilir sabit adres, donanım değişince next-hop'ların bozulmasını önler.",
-  "cisco": {
-   "mode": "Interface configuration",
-   "cmds": [
-    "interface GigabitEthernet1/0/1",
-    "ipv6 address FE80::1 link-local"
-   ]
-  },
-  "huawei": {
-   "mode": "Interface view",
-   "cmds": [
-    "interface gigabitethernet 0/0/1",
-    "ipv6 address fe80::1 link-local"
-   ]
-  },
-  "aruba": {
-   "mode": "AOS-S: VLAN context / AOS-CX: VLAN interface",
-   "cmds": [
-    "vlan 10",
-    "ipv6 address fe80::1 link-local",
-    "interface vlan 10",
-    "ipv6 address link-local fe80::1/64"
-   ]
-  }
- },
- {
-  "slug": "ospfv3-lsdb-goruntuleme",
-  "title": "OSPFv3 LSDB (link-state veritabanı) görüntüleme",
-  "cat": "IPv6 ve Multicast",
-  "note": "LSDB içinde router, network ve intra-area-prefix LSA'ları ayrı tiplerdedir. Rota eksikse LSA'nın veritabanına gelip gelmediği buradan görülür.",
+  "note": "ACL kuralının gerçekten trafik yakalayıp yakalamadığını kural bazında gösterir. Sayaçları sıfırlayıp test trafiği göndermek, kural sırası hatalarını bulmanın en hızlı yoludur.",
   "cisco": {
    "mode": "Privileged EXEC",
    "cmds": [
-    "show ipv6 ospf database",
-    "show ipv6 ospf database prefix"
+    "show ipv6 access-list MGMT-V6",
+    "clear ipv6 access-list MGMT-V6"
    ]
   },
   "huawei": {
    "mode": "User view / System view",
    "cmds": [
-    "display ospfv3 lsdb"
+    "display acl ipv6 name MGMT-V6",
+    "reset acl ipv6 counter name MGMT-V6"
    ]
   },
   "aruba": {
-   "mode": "AOS-CX: Operator",
+   "mode": "AOS-S: Manager / AOS-CX: Manager",
    "cmds": [
-    "show ospfv3 lsdb"
+    "show access-list ipv6 MGMT-V6"
+   ]
+  }
+ },
+ {
+  "slug": "ospfv3-arayuz-cost-maliyet",
+  "title": "OSPFv3 arayüz maliyetini (cost) ayarlama",
+  "cat": "IPv6 ve Multicast",
+  "note": "Cost değeri OSPFv3'te en kısa yol seçimini belirler. Otomatik maliyet bant genişliğinden hesaplanır; yedek yolu tercih edilmez kılmak için arayüzde elle yüksek cost verilir.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet0/1",
+    "ipv6 ospf cost 50",
+    "end",
+    "show ipv6 ospf interface GigabitEthernet0/1"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface GigabitEthernet0/0/1",
+    "ospfv3 cost 50"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Interface context",
+   "cmds": [
+    "interface 1/1/1",
+    "ipv6 ospfv3 cost 50"
+   ]
+  }
+ },
+ {
+  "slug": "ospfv3-hello-dead-zamanlayici",
+  "title": "OSPFv3 hello ve dead zamanlayıcılarını ayarlama",
+  "cat": "IPv6 ve Multicast",
+  "note": "Hello/dead değerleri komşu iki uçta birebir aynı olmalıdır; aksi halde komşuluk kurulmaz. Hızlı yakınsama için düşürülebilir ancak CPU yükü artar.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet0/1",
+    "ipv6 ospf hello-interval 5",
+    "ipv6 ospf dead-interval 20"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface GigabitEthernet0/0/1",
+    "ospfv3 timer hello 5",
+    "ospfv3 timer dead 20"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Interface context",
+   "cmds": [
+    "interface 1/1/1",
+    "ipv6 ospfv3 hello-interval 5",
+    "ipv6 ospfv3 dead-interval 20"
+   ]
+  }
+ },
+ {
+  "slug": "ospfv3-point-to-point-network-tipi",
+  "title": "OSPFv3 arayüz ağ tipini point-to-point yapma",
+  "cat": "IPv6 ve Multicast",
+  "note": "Ethernet üzerindeki iki router arası bağlantıda DR/BDR seçimi gereksizdir. Network tipini point-to-point yapmak seçimi ortadan kaldırır ve komşuluğu hızlandırır.",
+  "cisco": {
+   "mode": "Interface configuration",
+   "cmds": [
+    "interface GigabitEthernet0/1",
+    "ipv6 ospf network point-to-point"
+   ]
+  },
+  "huawei": {
+   "mode": "Interface view",
+   "cmds": [
+    "interface GigabitEthernet0/0/1",
+    "ospfv3 network-type p2p"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: Interface context",
+   "cmds": [
+    "interface 1/1/1",
+    "ipv6 ospfv3 network point-to-point"
+   ]
+  }
+ },
+ {
+  "slug": "ospfv3-default-rota-yayinlama",
+  "title": "OSPFv3'te varsayılan rota yayınlama",
+  "cat": "IPv6 ve Multicast",
+  "note": "Kenar router'ın ::/0 rotasını OSPFv3 alanına duyurması için kullanılır. 'always' anahtarı yukarı bağlantı kopsa da duyuruyu sürdürür; bu bilinçli seçilmelidir.",
+  "cisco": {
+   "mode": "Router configuration",
+   "cmds": [
+    "ipv6 router ospf 1",
+    "default-information originate",
+    "default-information originate always metric 10"
+   ]
+  },
+  "huawei": {
+   "mode": "OSPFv3 view",
+   "cmds": [
+    "ospfv3 1",
+    "default-route-advertise",
+    "default-route-advertise always cost 10"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: OSPFv3 context",
+   "cmds": [
+    "router ospfv3 1",
+    "default-information originate"
+   ]
+  }
+ },
+ {
+  "slug": "ospfv3-abr-prefix-ozetleme",
+  "title": "OSPFv3 ABR'da IPv6 prefix özetleme",
+  "cat": "IPv6 ve Multicast",
+  "note": "ABR'da area range ile alan içi /64'leri tek özet prefix'e indirmek LSDB'yi ve rota tablosunu küçültür. Özetlenen alt rotalardan en az biri aktifken özet duyurulur.",
+  "cisco": {
+   "mode": "Router configuration",
+   "cmds": [
+    "ipv6 router ospf 1",
+    "area 1 range 2001:db8:10::/48"
+   ]
+  },
+  "huawei": {
+   "mode": "OSPFv3 area view",
+   "cmds": [
+    "ospfv3 1",
+    "area 1",
+    "abr-summary 2001:db8:10:: 48"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: OSPFv3 context",
+   "cmds": [
+    "router ospfv3 1",
+    "area 0.0.0.1 range 2001:db8:10::/48"
+   ]
+  }
+ },
+ {
+  "slug": "ospfv3-ecmp-maximum-paths",
+  "title": "OSPFv3 ECMP için maksimum yol sayısını ayarlama",
+  "cat": "IPv6 ve Multicast",
+  "note": "Eşit cost'lu birden fazla yol varsa OSPFv3 bunları yük dengeleme için kullanabilir. Maksimum yol sayısı platforma göre sınırlıdır ve varsayılan değer farklılık gösterir.",
+  "cisco": {
+   "mode": "Router configuration",
+   "cmds": [
+    "ipv6 router ospf 1",
+    "maximum-paths 4"
+   ]
+  },
+  "huawei": {
+   "mode": "OSPFv3 view",
+   "cmds": [
+    "ospfv3 1",
+    "maximum load-balancing 4"
+   ]
+  },
+  "aruba": {
+   "mode": "AOS-CX: OSPFv3 context",
+   "cmds": [
+    "router ospfv3 1",
+    "maximum-paths 4"
    ]
   }
  },

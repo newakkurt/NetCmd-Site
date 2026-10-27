@@ -1460,164 +1460,504 @@
     "note": "يتحقق من أن جوار LDP في حالة Operational وأن التسميات موزعة وأن LSP قد بُني. لا يدعم Aruba AOS-CX بروتوكول MPLS، لذا أُعطي فحص VRF-lite كمقابل."
    }
   },
-  "ipv6-adres-atama-arayuz": {
+  "floating-static-route-yedek-hat": {
    "en": {
-    "title": "Assign an IPv6 address to an interface",
-    "note": "On Cisco and Huawei the address is written with a /64 prefix length; Huawei needs 'ipv6 enable' on the interface first. Aruba AOS-S sets it under the VLAN, AOS-CX under the VLAN interface."
+    "title": "Backup path with a floating static route",
+    "note": "The backup route needs a higher administrative distance than the primary. Huawei static routes default to preference 60 and Cisco to AD 1, so pick the backup value accordingly."
    },
    "ar": {
-    "title": "تعيين عنوان IPv6 لواجهة",
-    "note": "في Cisco وHuawei يُكتب العنوان مع طول البادئة /64، وفي Huawei يلزم تنفيذ 'ipv6 enable' على الواجهة أولًا. وفي Aruba AOS-S يُعيَّن العنوان داخل الـ VLAN، وفي AOS-CX على واجهة الـ VLAN."
+    "title": "مسار احتياطي باستخدام floating static route",
+    "note": "يجب أن تكون قيمة administrative distance للمسار الاحتياطي أعلى من المسار الأساسي. القيمة الافتراضية في Huawei هي preference 60 وفي Cisco هي AD 1، فاختر القيمة الاحتياطية وفقًا لذلك."
    }
   },
-  "ipv6-unicast-routing-etkinlestirme": {
+  "varsayilan-rota-default-route": {
    "en": {
-    "title": "Enable IPv6 routing globally",
-    "note": "On Cisco, without 'ipv6 unicast-routing' the device acts as a host and sends no RAs. Huawei needs the global 'ipv6' command; on Junos IPv6 forwarding is on by default."
+    "title": "Configure a default route",
+    "note": "Use 'ip route 0.0.0.0 0.0.0.0' on Cisco and 'ip route-static 0.0.0.0 0' on Huawei. A pure L2 switch uses 'ip default-gateway' instead of a route."
    },
    "ar": {
-    "title": "تفعيل توجيه IPv6 على مستوى الجهاز",
-    "note": "في Cisco بدون 'ipv6 unicast-routing' يتصرف الجهاز كمضيف ولا يرسل RA. وفي Huawei يلزم الأمر العام 'ipv6'، أما في Junos فإعادة توجيه IPv6 مفعّلة افتراضيًا."
+    "title": "إعداد المسار الافتراضي (default route)",
+    "note": "يُستخدم 'ip route 0.0.0.0 0.0.0.0' في Cisco و 'ip route-static 0.0.0.0 0' في Huawei. أما سويتش L2 فيستخدم 'ip default-gateway' بدلًا من المسار."
    }
   },
-  "ipv6-arayuz-ozet-goruntuleme": {
+  "statik-rota-ecmp-esit-maliyet": {
    "en": {
-    "title": "Display the IPv6 interface summary",
-    "note": "On Cisco and Huawei the brief output lists link-local and global addresses together. On Junos you filter the terse output to see the inet6 lines."
+    "title": "ECMP with static routes (equal-cost multipath)",
+    "note": "Several static routes to the same prefix with the same AD cause flow-based (hash) load sharing. On Junos a load-balance policy must also be exported to the forwarding table."
    },
    "ar": {
-    "title": "عرض ملخص واجهات IPv6",
-    "note": "في Cisco وHuawei يعرض ملخص brief عناوين link-local والعناوين العامة معًا. وفي Junos تُرشَّح مخرجات terse لإظهار أسطر inet6."
+    "title": "ECMP مع المسارات الثابتة (مسارات متعددة متساوية التكلفة)",
+    "note": "عند كتابة عدة مسارات ثابتة لنفس prefix وبنفس AD يُوزَّع الحمل حسب التدفق (hash). في Junos يجب أيضًا تصدير سياسة load-balance إلى جدول التوجيه."
    }
   },
-  "ipv6-komsu-tablosu-nd-goruntuleme": {
+  "statik-ozet-rota-null0": {
    "en": {
-    "title": "Display the IPv6 neighbor (ND) table",
-    "note": "The ND table is the IPv6 equivalent of the ARP table. The REACHABLE, STALE, DELAY and INCOMPLETE states show whether a neighbor is reachable."
+    "title": "Static summary route and Null0 blackhole",
+    "note": "A Null0 route for a larger block summarizes and prevents routing loops; more specific subnets stay reachable via their own routes. The route can then be redistributed into a dynamic protocol."
    },
    "ar": {
-    "title": "عرض جدول جيران IPv6 (ND)",
-    "note": "جدول ND هو مكافئ جدول ARP في IPv4. وتبيّن حالات REACHABLE وSTALE وDELAY وINCOMPLETE إمكانية الوصول إلى الجار."
+    "title": "مسار تلخيص ثابت و Null0 (blackhole)",
+    "note": "كتابة مسار Null0 لكتلة أكبر تؤدي إلى التلخيص وتمنع حلقات التوجيه؛ وتبقى الشبكات الفرعية الأكثر تحديدًا متاحة عبر مساراتها. ويمكن توزيع المسار إلى بروتوكول ديناميكي."
    }
   },
-  "ipv6-ra-yapilandirma-slaac-dhcpv6-bayraklari": {
+  "statik-rota-ip-sla-track": {
    "en": {
-    "title": "Configure Router Advertisement (RA) and its flags",
-    "note": "RA advertises the prefix and gateway for SLAAC. The M and O flags tell clients to get the address or other settings from DHCPv6."
+    "title": "Static route tracked by IP SLA / NQA",
+    "note": "Cisco uses 'ip sla' + 'track', Huawei 'nqa test-instance' + 'track nqa'. When the probe fails, the static route is removed and the floating backup takes over. Aruba has no IP SLA."
    },
    "ar": {
-    "title": "ضبط Router Advertisement (RA) وأعلامه",
-    "note": "يعلن RA عن البادئة والبوابة لعمل SLAAC. وتخبر أعلام M وO العميل بأن العنوان أو الإعدادات الأخرى تُؤخذ من DHCPv6."
+    "title": "مسار ثابت مراقَب بواسطة IP SLA / NQA",
+    "note": "يستخدم Cisco الأمر 'ip sla' مع 'track' و Huawei الأمر 'nqa test-instance' مع 'track nqa'. عند فشل probe يُسحب المسار الثابت ويتولى المسار الاحتياطي العائم. لا يوجد IP SLA في Aruba."
    }
   },
-  "ipv6-statik-rota-ekleme": {
+  "ip-sla-track-durum-goruntuleme": {
    "en": {
-    "title": "Add an IPv6 static and default route",
-    "note": "Cisco and Aruba use 'ipv6 route'; Huawei uses 'ipv6 route-static' with the prefix length written separately. A link-local next hop also needs the exit interface."
+    "title": "Display IP SLA / NQA and track status",
+    "note": "Check the track object's up/down state together with the probe results. If a route is missing from the table, look at the track state first and then at the probe statistics."
    },
    "ar": {
-    "title": "إضافة مسار IPv6 ثابت ومسار افتراضي",
-    "note": "يستخدم Cisco وAruba الأمر 'ipv6 route' بينما يستخدم Huawei الأمر 'ipv6 route-static' مع كتابة طول البادئة منفصلًا. وعند استخدام next-hop من نوع link-local يجب تحديد واجهة الخروج أيضًا."
+    "title": "عرض حالة IP SLA / NQA و track",
+    "note": "افحص حالة كائن track (up/down) مع نتائج probe معًا. إذا كان المسار غائبًا عن الجدول فانظر أولًا إلى حالة track ثم إلى إحصاءات probe."
    }
   },
-  "ipv6-rota-tablosu-goruntuleme": {
+  "vrrp-oncelik-preempt-yapilandirma": {
    "en": {
-    "title": "Display the IPv6 routing table",
-    "note": "Connected (C), local (L) and static routes appear with separate codes. Seeing an extra /128 local route per interface is normal in IPv6."
+    "title": "Configure VRRP group, priority and preempt",
+    "note": "Define the virtual IP with the same VRID on both core switches; the higher priority becomes master. On Huawei preempt is on by default. VRRP syntax on Cisco may vary by IOS-XE release."
    },
    "ar": {
-    "title": "عرض جدول توجيه IPv6",
-    "note": "تظهر المسارات connected (C) وlocal (L) والثابتة برموز منفصلة. ومن الطبيعي في IPv6 رؤية مسار local من نوع /128 لكل واجهة."
+    "title": "إعداد مجموعة VRRP والأولوية و preempt",
+    "note": "عرّف العنوان الافتراضي على سويتشي core بنفس VRID؛ ويصبح الأعلى priority هو master. في Huawei يكون preempt مفعّلًا افتراضيًا. قد تختلف أوامر VRRP في Cisco بحسب إصدار IOS-XE."
    }
   },
-  "ipv6-ping-traceroute": {
+  "vrrp-track-priority-dusurme": {
    "en": {
-    "title": "Test reachability with IPv6 ping and traceroute",
-    "note": "Platforms use different IPv6 syntax: Cisco 'ping ipv6', Huawei 'ping ipv6'/'tracert ipv6', Aruba AOS-S 'ping6'/'traceroute6'. A link-local target needs the exit interface."
+    "title": "Lower VRRP priority on uplink failure (track)",
+    "note": "If the master's uplink fails, its VRRP priority is reduced so the backup takes over. This only works if the decrement/reduced value exceeds the priority gap between the two switches."
    },
    "ar": {
-    "title": "اختبار الوصول عبر ping وtraceroute لـ IPv6",
-    "note": "تستخدم المنصات صياغات مختلفة لـ IPv6: Cisco ‏'ping ipv6'، وHuawei ‏'ping ipv6' و'tracert ipv6'، وAruba AOS-S ‏'ping6' و'traceroute6'. والهدف من نوع link-local يحتاج واجهة الخروج."
+    "title": "خفض أولوية VRRP عند تعطل uplink (track)",
+    "note": "إذا تعطل uplink الخاص بالـ master تُخفَّض أولوية VRRP ليصبح الاحتياطي هو master. ينجح ذلك فقط إذا كانت قيمة decrement/reduced أكبر من فارق الأولوية بين السويتشين."
    }
   },
-  "ipv6-slaac-otomatik-adres-alma": {
+  "hsrp-temel-yapilandirma": {
    "en": {
-    "title": "Obtain an IPv6 address automatically with SLAAC",
-    "note": "A router or L3 interface learns the prefix from an RA and builds an EUI-64 or privacy-extension address; used for an uplink that takes its address automatically from the ISP."
+    "title": "HSRP basics on Cisco and the VRRP equivalent",
+    "note": "HSRP is Cisco-proprietary; on Huawei and Aruba the standard counterpart is VRRP. In a mixed environment HSRP and VRRP do not interoperate in the same VLAN."
    },
    "ar": {
-    "title": "الحصول على عنوان IPv6 تلقائيًا عبر SLAAC",
-    "note": "تتعلم واجهة الراوتر أو سويتش L3 البادئة من RA وتبني عنوانًا بنمط EUI-64 أو بامتداد الخصوصية؛ ويُستخدم لوصلة تحصل على عنوانها تلقائيًا من مزود الخدمة."
+    "title": "أساسيات HSRP في Cisco ومكافئه VRRP",
+    "note": "HSRP بروتوكول خاص بـ Cisco؛ وفي Huawei و Aruba المكافئ القياسي هو VRRP. في بيئة مختلطة لا يتفاعل HSRP مع VRRP في نفس VLAN."
    }
   },
-  "ospfv3-temel-yapilandirma": {
+  "pbr-kaynak-ip-route-map": {
    "en": {
-    "title": "Configure OSPFv3 for IPv6 routing",
-    "note": "OSPFv3 is enabled per interface (there is no network command) and a 32-bit router-id must be set manually even if the device has no IPv4 address."
+    "title": "Policy-based routing by source IP",
+    "note": "Cisco uses a route-map plus 'ip policy'; Huawei S-series uses a traffic-policy with redirect ip-nexthop. If the next hop is unreachable, PBR falls back to the normal routing table; on Cisco use 'set ip next-hop verify-availability'."
    },
    "ar": {
-    "title": "ضبط OSPFv3 لتوجيه IPv6",
-    "note": "يُفعَّل OSPFv3 على مستوى الواجهة (لا يوجد أمر network) ويجب تحديد router-id من 32 بت يدويًا حتى لو لم يكن للجهاز عنوان IPv4."
+    "title": "التوجيه المبني على السياسة حسب عنوان المصدر",
+    "note": "يستخدم Cisco الأمر route-map مع 'ip policy'، بينما يستخدم Huawei سلسلة S خاصية traffic-policy مع redirect ip-nexthop. إذا تعذّر الوصول إلى next-hop يعود PBR إلى جدول التوجيه العادي."
    }
   },
-  "ospfv3-komsuluk-arayuz-goruntuleme": {
+  "pbr-dogrulama-sayac-goruntuleme": {
    "en": {
-    "title": "Display OSPFv3 neighbor and interface status",
-    "note": "The adjacency should be FULL or 2-WAY. OSPFv3 neighbors form over link-local addresses, so addresses in the output start with FE80::."
+    "title": "Verify PBR policy and match counters",
+    "note": "If PBR is not working, first confirm the policy is bound to the right interface and the ACL counters are increasing. If counters stay at zero, traffic never reaches the policy."
    },
    "ar": {
-    "title": "عرض حالة جيران وواجهات OSPFv3",
-    "note": "يجب أن يكون الجوار FULL أو 2-WAY. ويتشكل الجوار في OSPFv3 عبر عناوين link-local لذلك تبدأ العناوين في المخرجات بـ FE80::."
+    "title": "التحقق من سياسة PBR وعدّادات المطابقة",
+    "note": "إذا لم يعمل PBR فتحقق أولًا من ربط السياسة بالواجهة الصحيحة ومن ازدياد عدّادات ACL. وإذا بقيت العدّادات صفرًا فالحركة لا تصل إلى السياسة أصلًا."
    }
   },
-  "ipv6-prefix-list-olusturma": {
+  "prefix-list-olusturma": {
    "en": {
-    "title": "Define an IPv6 prefix-list",
-    "note": "A prefix-list is used for route filtering and route-maps. 'le' and 'ge' define the prefix-length range; on Huawei the equivalent is the 'ip ipv6-prefix' command."
+    "title": "Create a prefix-list (with le/ge)",
+    "note": "Unlike an ACL, a prefix-list also matches the prefix length. Cisco uses 'le/ge', Huawei uses 'less-equal/greater-equal'. There is an implicit deny at the end; add a permit if you need to allow the rest."
    },
    "ar": {
-    "title": "تعريف IPv6 prefix-list",
-    "note": "تُستخدم prefix-list لتصفية المسارات وفي route-map. ويحدد 'le' و'ge' نطاق طول البادئة؛ ومكافئها في Huawei هو الأمر 'ip ipv6-prefix'."
+    "title": "إنشاء prefix-list مع le/ge",
+    "note": "على عكس ACL تطابق prefix-list طول البادئة أيضًا. يستخدم Cisco الكلمتين le/ge ويستخدم Huawei الكلمتين less-equal/greater-equal. وفي النهاية يوجد deny ضمني، فأضف permit إن لزم السماح ببقية المسارات."
    }
   },
-  "dhcpv6-relay-yapilandirma": {
+  "route-map-filtreli-redistribute": {
    "en": {
-    "title": "Configure a DHCPv6 relay",
-    "note": "Used to forward requests from the client VLAN to a central DHCPv6 server. The relay is configured on the client-facing interface."
+    "title": "Filtered redistribution with a route-map",
+    "note": "Leaving redistribution unfiltered lets wrong networks leak into OSPF. Cisco uses a route-map, Huawei a route-policy, Juniper a policy-statement. The metric/cost can also be set at this stage."
    },
    "ar": {
-    "title": "ضبط DHCPv6 relay",
-    "note": "يُستخدم لتمرير الطلبات من VLAN العملاء إلى خادم DHCPv6 مركزي. ويُضبط relay على الواجهة المواجهة للعملاء."
+    "title": "إعادة التوزيع المفلترة باستخدام route-map",
+    "note": "ترك redistribute دون فلترة يسمح بتسرّب شبكات خاطئة إلى OSPF. يستخدم Cisco الأمر route-map ويستخدم Huawei route-policy ويستخدم Juniper policy-statement. ويمكن ضبط المتريك أو cost في هذه المرحلة أيضًا."
    }
   },
-  "ipv6-acl-olusturma-ve-uygulama": {
+  "prefix-list-route-map-goruntuleme": {
    "en": {
-    "title": "Create and apply an IPv6 ACL",
-    "note": "IPv6 ACLs implicitly permit ND (NS/NA) traffic on Cisco, but a trailing deny any needs care. Cisco uses 'ipv6 traffic-filter', Aruba AOS-CX uses 'apply access-list ipv6'."
+    "title": "Display prefix-list and route-map status",
+    "note": "On Cisco, 'show ip prefix-list NAME 10.50.1.0/24' tests whether a specific prefix matches the list. On Huawei, the route-policy output shows the node order."
    },
    "ar": {
-    "title": "إنشاء IPv6 ACL وتطبيقها على واجهة",
-    "note": "في Cisco تسمح قوائم IPv6 ACL ضمنيًا بحركة ND (NS/NA)، لكن يجب الحذر من deny any في النهاية. يستخدم Cisco الأمر 'ipv6 traffic-filter' ويستخدم Aruba AOS-CX الأمر 'apply access-list ipv6'."
+    "title": "عرض حالة prefix-list وroute-map",
+    "note": "في Cisco يتيح الأمر 'show ip prefix-list NAME 10.50.1.0/24' اختبار مطابقة بادئة معينة للقائمة. وفي Huawei يعرض مخرج route-policy ترتيب العقد (node)."
    }
   },
-  "ipv6-link-local-adres-statik-atama": {
+  "vrrp-durum-goruntuleme": {
    "en": {
-    "title": "Assign a fixed link-local address to an interface",
-    "note": "A readable static address such as FE80::1 instead of the automatic EUI-64 link-local keeps next hops from breaking when hardware is replaced."
+    "title": "Display VRRP master/backup state",
+    "note": "In the output, check the State (Master/Backup/Init) and Priority fields first. If both devices show Master, VRRP packets are not reaching the peer; check the VLAN and trunk allowed list."
    },
    "ar": {
-    "title": "تعيين عنوان link-local ثابت لواجهة",
-    "note": "استخدام عنوان ثابت مقروء مثل FE80::1 بدلًا من link-local التلقائي بنمط EUI-64 يمنع تعطل next-hop عند استبدال العتاد."
+    "title": "عرض حالة VRRP (master/backup)",
+    "note": "في المخرجات انظر أولًا إلى حقلي State (Master/Backup/Init) وPriority. وإذا ظهر الجهازان كلاهما Master فهذا يعني أن حزم VRRP لا تصل إلى النظير، فافحص VLAN والسماح على الـ trunk."
    }
   },
-  "ospfv3-lsdb-goruntuleme": {
+  "hsrp-komsu-durum-sorun-giderme": {
    "en": {
-    "title": "Display the OSPFv3 LSDB (link-state database)",
-    "note": "The LSDB holds router, network and intra-area-prefix LSAs as separate types. When a route is missing, it shows whether the LSA reached the database."
+    "title": "Troubleshoot HSRP neighbor and state",
+    "note": "HSRP is Cisco-specific; the equivalent on Huawei and Aruba is VRRP. Staying stuck in Init or Speak instead of Active/Standby usually means hello packets are not reaching the peer."
    },
    "ar": {
-    "title": "عرض قاعدة بيانات OSPFv3 ‏(LSDB)",
-    "note": "تحتوي LSDB على LSA من أنواع منفصلة مثل router وnetwork وintra-area-prefix. وعند غياب مسار يتبيّن منها ما إذا كان الـ LSA قد وصل إلى القاعدة."
+    "title": "استكشاف أخطاء جار HSRP وحالته",
+    "note": "HSRP خاص بـ Cisco، ومقابله في Huawei وAruba هو VRRP. والبقاء عالقًا في حالة Init أو Speak بدل Active/Standby يدل غالبًا على أن حزم hello لا تصل إلى النظير."
+   }
+  },
+  "svi-dhcp-relay-ip-helper": {
+   "en": {
+    "title": "DHCP relay on an SVI (ip helper-address)",
+    "note": "If the DHCP server is on another subnet, the relay on the SVI converts the client broadcast to unicast. Huawei needs 'dhcp enable' first; Cisco 'ip helper-address' also forwards other UDP ports such as 69 and 53."
+   },
+   "ar": {
+    "title": "ترحيل DHCP على SVI (ip helper-address)",
+    "note": "إذا كان خادم DHCP في شبكة فرعية أخرى فإن relay على SVI يحوّل بث العميل إلى unicast. يحتاج Huawei أولًا إلى 'dhcp enable'، كما يعيد الأمر ip helper-address في Cisco توجيه منافذ UDP أخرى مثل 69 و53."
+   }
+  },
+  "ip-routing-etkinlestirme-l3-switch": {
+   "en": {
+    "title": "Enable IP routing on a Layer 3 switch",
+    "note": "On Cisco and Aruba AOS-S, routing must be turned on with 'ip routing'; on Huawei S-series and AOS-CX it works automatically once an SVI has an IP. Without it, inter-SVI traffic is not routed."
+   },
+   "ar": {
+    "title": "تفعيل توجيه IP على سويتش الطبقة الثالثة",
+    "note": "في Cisco وAruba AOS-S يجب تشغيل التوجيه بالأمر 'ip routing'، بينما يعمل تلقائيًا في Huawei سلسلة S وفي AOS-CX بمجرد إعطاء SVI عنوان IP. وبدونه لا تُوجَّه الحركة بين واجهات SVI."
+   }
+  },
+  "svi-down-down-sorun-giderme": {
+   "en": {
+    "title": "Troubleshoot an SVI that is up/down or down/down",
+    "note": "For an SVI to come up, the VLAN must exist on the device and have at least one active port (access or trunk). On Cisco, 'autostate' controls this behavior."
+   },
+   "ar": {
+    "title": "استكشاف أخطاء SVI عند حالة up/down أو down/down",
+    "note": "لكي ترتفع واجهة SVI يجب أن تكون الـ VLAN معرّفة على الجهاز ولها منفذ نشط واحد على الأقل (access أو trunk). وفي Cisco تتحكم خاصية autostate في هذا السلوك."
+   }
+  },
+  "routing-tablosu-longer-prefix-sorgu": {
+   "en": {
+    "title": "Query the routing table for a destination IP and longer prefixes",
+    "note": "A single-IP lookup shows which route the device will choose for that destination (longest match). Longer-prefixes lists all more specific routes under a summary network."
+   },
+   "ar": {
+    "title": "الاستعلام في جدول التوجيه عن عنوان وجهة ومسارات أطول بادئة",
+    "note": "يبيّن الاستعلام عن عنوان IP واحد المسار الذي سيختاره الجهاز لهذه الوجهة (أطول تطابق). أما longer-prefixes فيسرد كل المسارات الأكثر تحديدًا تحت شبكة مجمّعة."
+   }
+  },
+  "routing-tablosu-protokole-gore-filtre": {
+   "en": {
+    "title": "Filter the routing table by protocol and summarize",
+    "note": "In a large table, filter by protocol instead of scanning the whole output. A route-count summary quickly reveals unexpected redistribution or route leaks."
+   },
+   "ar": {
+    "title": "تصفية جدول التوجيه حسب البروتوكول وعرض الملخص",
+    "note": "في الجداول الكبيرة قم بالتصفية حسب البروتوكول بدل مسح المخرجات كاملة. ويكشف ملخص أعداد المسارات بسرعة أي إعادة توزيع غير متوقعة أو تسرّب للمسارات."
+   }
+  },
+  "route-administrative-distance-ayari": {
+   "en": {
+    "title": "Set protocol administrative distance (preference)",
+    "note": "When two protocols learn the same prefix, the lower distance (preference on Huawei) wins. Defaults: OSPF 110 (Huawei 10), static 1 (Huawei 60). Consider the effect on both sides before changing it."
+   },
+   "ar": {
+    "title": "ضبط المسافة الإدارية (preference) للبروتوكول",
+    "note": "عندما يتعلم بروتوكولان البادئة نفسها يفوز الأقل في المسافة (preference في Huawei). القيم الافتراضية: OSPF قيمته 110 (وفي Huawei هي 10)، والثابت 1 (وفي Huawei هو 60). فكّر في الأثر على الطرفين قبل التغيير."
+   }
+  },
+  "traceroute-yol-dogrulama-kaynak-arayuz": {
+   "en": {
+    "title": "Verify the path with traceroute (specifying the source)",
+    "note": "When running traceroute from a switch/router, specify the relevant SVI as the source; otherwise the egress interface IP is used and a return-path mismatch can give misleading results."
+   },
+   "ar": {
+    "title": "التحقق من المسار بـ traceroute مع تحديد عنوان المصدر",
+    "note": "عند تنفيذ traceroute من السويتش أو الراوتر حدّد SVI المعني كمصدر؛ وإلا يُستخدم عنوان واجهة الخروج وقد يعطي اختلاف مسار العودة نتائج مضلّلة."
+   }
+  },
+  "vrrp-advertisement-timer-ayari": {
+   "en": {
+    "title": "Tune the VRRP advertisement interval",
+    "note": "The shorter the advertisement interval, the faster Master loss is detected (Master down is about 3 x interval). Very short values load the CPU and can cause needless failovers; both sides must match."
+   },
+   "ar": {
+    "title": "ضبط فاصل advertisement في VRRP",
+    "note": "كلما قصر فاصل advertisement أسرع اكتشاف فقدان Master (زمن Master down يساوي نحو 3 أضعاف الفاصل). والقيم القصيرة جدًا ترهق المعالج وقد تسبب انتقالات غير لازمة، ويجب أن تتطابق على الطرفين."
+   }
+  },
+  "svi-secondary-ip-adresi": {
+   "en": {
+    "title": "Add a secondary IP address to an SVI",
+    "note": "Used to add a second subnet to a VLAN; useful during migrations. All hosts stay in the same L2 domain so the broadcast domain grows; it is not recommended as a permanent solution."
+   },
+   "ar": {
+    "title": "إضافة عنوان IP ثانوي (secondary) إلى SVI",
+    "note": "يُستخدم لإضافة شبكة فرعية ثانية إلى VLAN، وهو مفيد أثناء الترحيل. تبقى كل الأجهزة في نطاق الطبقة الثانية نفسه فيكبر نطاق البث، ولا يُنصح به كحل دائم."
+   }
+  },
+  "igmp-snooping-etkinlestirme": {
+   "en": {
+    "title": "Enable IGMP snooping for a VLAN",
+    "note": "IGMP snooping is on by default on Cisco; on Huawei it must be enabled both globally and in the VLAN view. Without a querier, group memberships age out."
+   },
+   "ar": {
+    "title": "تفعيل IGMP snooping على VLAN",
+    "note": "في Cisco يكون IGMP snooping مفعّلًا افتراضيًا، أما في Huawei فيجب تفعيله عالميًا وداخل VLAN. وبغياب querier تنتهي عضويات المجموعات تدريجيًا."
+   }
+  },
+  "igmp-snooping-querier-yapilandirma": {
+   "en": {
+    "title": "Configure the IGMP snooping querier",
+    "note": "A pure L2 VLAN without a multicast router needs a device that sends queries; enabling the querier on one switch with a source IP keeps membership tracking consistent."
+   },
+   "ar": {
+    "title": "إعداد IGMP snooping querier",
+    "note": "تحتاج شبكة VLAN من الطبقة الثانية بلا multicast router إلى جهاز يرسل الاستعلامات؛ تفعيل querier على سويتش واحد مع عنوان مصدر يحافظ على تتبع العضويات."
+   }
+  },
+  "igmp-snooping-grup-goruntuleme": {
+   "en": {
+    "title": "Display IGMP snooping group memberships",
+    "note": "Shows which multicast group is forwarded to which ports. Output is per VLAN on Huawei and a membership table on Junos."
+   },
+   "ar": {
+    "title": "عرض عضويات مجموعات IGMP snooping",
+    "note": "يبيّن أي مجموعة multicast تُمرَّر إلى أي منافذ. المخرجات في Huawei لكل VLAN وفي Junos على شكل جدول membership."
+   }
+  },
+  "igmp-version-arayuz-ayari": {
+   "en": {
+    "title": "Set the IGMP version on an interface (v2/v3)",
+    "note": "A version mismatch can make IGMP joins silently ignored; SSM requires v3. The default version varies by platform."
+   },
+   "ar": {
+    "title": "ضبط إصدار IGMP على الواجهة (v2/v3)",
+    "note": "قد يؤدي عدم تطابق الإصدارات إلى تجاهل طلبات IGMP join بصمت؛ ويتطلب SSM الإصدار v3. يختلف الإصدار الافتراضي حسب المنصة."
+   }
+  },
+  "multicast-routing-etkinlestirme": {
+   "en": {
+    "title": "Enable multicast routing globally",
+    "note": "Multicast routing must be enabled before PIM can run. Use 'ip multicast-routing' on Cisco, 'multicast routing-enable' on Huawei and the router pim context on Aruba."
+   },
+   "ar": {
+    "title": "تفعيل توجيه multicast على مستوى الجهاز",
+    "note": "يجب تفعيل توجيه multicast قبل تشغيل PIM. يُستخدم ip multicast-routing في Cisco و multicast routing-enable في Huawei وسياق router pim في Aruba."
+   }
+  },
+  "pim-sparse-mode-arayuz": {
+   "en": {
+    "title": "Enable PIM sparse mode on an interface",
+    "note": "PIM is enabled on each L3 interface the multicast traffic crosses (VLAN interface, uplink). Sparse mode requires an RP."
+   },
+   "ar": {
+    "title": "تفعيل PIM sparse mode على الواجهة",
+    "note": "يُفعَّل PIM على كل واجهة L3 يمر عبرها بث multicast (واجهة VLAN أو uplink). ويتطلب sparse mode وجود RP."
+   }
+  },
+  "pim-rp-statik-adres": {
+   "en": {
+    "title": "Define a static PIM RP address",
+    "note": "In small and medium networks a static RP is simpler and more predictable than Auto-RP/BSR. The RP address usually sits on a Loopback and must be identical on all PIM routers."
+   },
+   "ar": {
+    "title": "تعريف عنوان RP ثابت في PIM",
+    "note": "في الشبكات الصغيرة والمتوسطة يكون RP الثابت أبسط وأكثر قابلية للتنبؤ من Auto-RP/BSR. يوضع عنوان RP عادة على Loopback ويجب أن يتطابق على كل أجهزة PIM."
+   }
+  },
+  "pim-komsu-goruntuleme": {
+   "en": {
+    "title": "Display PIM neighbors",
+    "note": "PIM adjacency is the first thing to check in multicast issues. Without a neighbor, RPF and joins do not progress; DR priority and uptime are also read here."
+   },
+   "ar": {
+    "title": "عرض جيران PIM",
+    "note": "أول فحص في مشاكل multicast هو جيرة PIM. وبدون جار لا تتقدم RPF ورسائل join، كما تُقرأ هنا أولوية DR ومدة التشغيل."
+   }
+  },
+  "multicast-mroute-tablosu-goruntuleme": {
+   "en": {
+    "title": "Display the multicast routing table (mroute)",
+    "note": "(*,G) and (S,G) entries, the incoming (RPF) interface and the outgoing interface list are read here. On Junos the command is 'show multicast route'; MikroTik has no equivalent."
+   },
+   "ar": {
+    "title": "عرض جدول توجيه multicast (mroute)",
+    "note": "تُقرأ هنا مدخلات (*,G) و (S,G) وواجهة الدخول (RPF) وقائمة واجهات الخروج. في Junos الأمر هو show multicast route ولا يوجد مكافئ في MikroTik."
+   }
+  },
+  "igmp-sorgu-araligi-ayari": {
+   "en": {
+    "title": "Tune the IGMP general query interval",
+    "note": "The querier's general query interval defines membership timeout. A shorter interval detects dropped members sooner, at the cost of more control traffic."
+   },
+   "ar": {
+    "title": "ضبط الفاصل الزمني لاستعلام IGMP العام",
+    "note": "يحدد الفاصل الزمني لاستعلامات querier العامة مهلة العضوية. تقصيره يكشف انقطاع الأعضاء أسرع لكنه يزيد حركة التحكم."
+   }
+  },
+  "pim-dr-priority-ayari": {
+   "en": {
+    "title": "Set the PIM DR priority",
+    "note": "On a shared segment the router with the highest priority becomes DR; on a tie the higher IP wins. Raising the priority gives controlled DR selection on the source or receiver side."
+   },
+   "ar": {
+    "title": "ضبط أولوية PIM DR",
+    "note": "على المقطع المشترك يصبح الراوتر ذو الأولوية الأعلى هو DR وعند التساوي يفوز العنوان الأعلى. رفع الأولوية يتيح اختيار DR بشكل مضبوط."
+   }
+  },
+  "igmp-statik-grup-uyeligi": {
+   "en": {
+    "title": "Define a static IGMP group membership on an interface",
+    "note": "Makes an interface a member of a group even if no host sends a join. Used for testing, receivers that do not support IGMP, or isolating faults; left permanently it creates needless traffic."
+   },
+   "ar": {
+    "title": "تعريف عضوية IGMP ثابتة للمجموعة على الواجهة",
+    "note": "تجعل الواجهة عضوًا في المجموعة حتى لو لم يرسل أي جهاز join. تُستخدم للاختبار أو لمستقبلات لا تدعم IGMP أو لعزل الأعطال؛ وبقاؤها دائمًا يولّد حركة غير لازمة."
+   }
+  },
+  "mld-snooping-etkinlestirme": {
+   "en": {
+    "title": "Enable MLD snooping (IPv6 multicast)",
+    "note": "IPv6 multicast membership is managed by MLD, the counterpart of IGMP snooping in IPv4. Because IPv6 ND also uses multicast, disabled snooping can cause flooding on some platforms."
+   },
+   "ar": {
+    "title": "تفعيل MLD snooping (multicast في IPv6)",
+    "note": "تُدار عضوية multicast في IPv6 عبر MLD وهو مكافئ IGMP snooping في IPv4. ولأن ND في IPv6 يستخدم multicast أيضًا فقد يسبب تعطيل snooping فيضانًا على بعض المنصات."
+   }
+  },
+  "mld-grup-goruntuleme": {
+   "en": {
+    "title": "Display MLD group memberships",
+    "note": "Shows IPv6 multicast memberships per interface. MLDv1 and MLDv2 output can differ; MLDv2 also shows the source list."
+   },
+   "ar": {
+    "title": "عرض عضويات مجموعات MLD",
+    "note": "يعرض عضويات multicast في IPv6 لكل واجهة. قد تختلف مخرجات MLDv1 و MLDv2؛ ويعرض MLDv2 أيضًا قائمة المصادر."
+   }
+  },
+  "ipv6-loopback-adresi-tanimlama": {
+   "en": {
+    "title": "Configure an IPv6 loopback address (/128)",
+    "note": "A stable loopback IPv6 address is used for router-ID, RP address and management access. It is given as /128 and, since the interface never goes down, stays constant in routing protocols."
+   },
+   "ar": {
+    "title": "تعريف عنوان IPv6 للواجهة Loopback (/128)",
+    "note": "يُستخدم عنوان IPv6 ثابت على Loopback لـ router-ID وعنوان RP والإدارة. يُعطى بطول /128 ولأن الواجهة لا تسقط يبقى ثابتًا في بروتوكولات التوجيه."
+   }
+  },
+  "ipv6-yuzen-statik-rota": {
+   "en": {
+    "title": "Configure an IPv6 backup (floating) static route",
+    "note": "A backup static route that activates when the primary path fails is defined with a high administrative distance, so normally the dynamic or primary route is used."
+   },
+   "ar": {
+    "title": "إعداد مسار IPv6 ثابت احتياطي (floating)",
+    "note": "يُعرَّف المسار الثابت الاحتياطي الذي يعمل عند سقوط المسار الأساسي بمسافة إدارية مرتفعة، وبذلك يُستخدم المسار الديناميكي أو الأساسي في الوضع الطبيعي."
+   }
+  },
+  "ospfv3-statik-redistribute": {
+   "en": {
+    "title": "Redistribute static routes into OSPFv3",
+    "note": "Used to inject static IPv6 routes into the OSPFv3 domain. Junos needs an export policy instead of redistribute; metric type and metric should be set explicitly."
+   },
+   "ar": {
+    "title": "إعادة توزيع المسارات الثابتة في OSPFv3",
+    "note": "تُستخدم لحقن مسارات IPv6 الثابتة في نطاق OSPFv3. يتطلب Junos سياسة export بدل redistribute، ويُفضل تحديد نوع المقياس وقيمته صراحةً."
+   }
+  },
+  "ipv6-rota-sorgulama-ozel-prefix": {
+   "en": {
+    "title": "Query the route for a specific IPv6 prefix",
+    "note": "Looking up a single route by destination address or static filter instead of listing the whole table speeds up troubleshooting. It shows which route wins by longest-prefix match."
+   },
+   "ar": {
+    "title": "الاستعلام عن مسار لبادئة IPv6 محددة",
+    "note": "النظر في مسار واحد بحسب عنوان الوجهة أو فلتر المسارات الثابتة بدل عرض الجدول كله يسرّع استكشاف الأعطال. ويُظهر المسار الفائز وفق longest-prefix-match."
+   }
+  },
+  "ipv6-acl-eslesme-sayaci-goruntuleme": {
+   "en": {
+    "title": "Display IPv6 ACL match counters",
+    "note": "Shows per rule whether the ACL really matches traffic. Clearing counters and sending test traffic is the fastest way to find rule-order mistakes."
+   },
+   "ar": {
+    "title": "عرض عدادات تطابق IPv6 ACL",
+    "note": "يبيّن لكل قاعدة هل تطابق ACL الحركة فعلًا. تصفير العدادات وإرسال حركة اختبار أسرع طريقة لاكتشاف أخطاء ترتيب القواعد."
+   }
+  },
+  "ospfv3-arayuz-cost-maliyet": {
+   "en": {
+    "title": "Set the OSPFv3 interface cost",
+    "note": "Cost determines shortest-path selection in OSPFv3. The automatic cost is derived from bandwidth; to make a backup path less preferred, a high cost is set manually on the interface."
+   },
+   "ar": {
+    "title": "ضبط تكلفة (cost) واجهة OSPFv3",
+    "note": "تحدد التكلفة اختيار أقصر مسار في OSPFv3. تُحسب التكلفة التلقائية من عرض النطاق؛ ولجعل المسار الاحتياطي أقل تفضيلًا تُضبط تكلفة مرتفعة يدويًا على الواجهة."
+   }
+  },
+  "ospfv3-hello-dead-zamanlayici": {
+   "en": {
+    "title": "Tune OSPFv3 hello and dead timers",
+    "note": "Hello/dead values must be identical on both neighbors; otherwise no adjacency forms. They can be reduced for faster convergence at the cost of more CPU load."
+   },
+   "ar": {
+    "title": "ضبط مؤقتات hello و dead في OSPFv3",
+    "note": "يجب أن تتطابق قيم hello/dead في الجارين تمامًا وإلا لا تتكون الجيرة. يمكن خفضها لتسريع التقارب مع زيادة حمل المعالج."
+   }
+  },
+  "ospfv3-point-to-point-network-tipi": {
+   "en": {
+    "title": "Set the OSPFv3 interface network type to point-to-point",
+    "note": "DR/BDR election is unnecessary on an Ethernet link between two routers. Setting the network type to point-to-point removes the election and speeds up adjacency."
+   },
+   "ar": {
+    "title": "تعيين نوع شبكة واجهة OSPFv3 إلى point-to-point",
+    "note": "انتخاب DR/BDR غير لازم على رابط Ethernet بين راوترين. تعيين النوع point-to-point يلغي الانتخاب ويسرّع تكوين الجيرة."
+   }
+  },
+  "ospfv3-default-rota-yayinlama": {
+   "en": {
+    "title": "Originate a default route in OSPFv3",
+    "note": "Used for an edge router to advertise ::/0 into the OSPFv3 domain. The 'always' keyword keeps advertising even if the uplink is lost; this should be a deliberate choice."
+   },
+   "ar": {
+    "title": "نشر المسار الافتراضي في OSPFv3",
+    "note": "يُستخدم لإعلان راوتر الحافة المسار ::/0 داخل نطاق OSPFv3. الكلمة always تُبقي الإعلان حتى لو انقطع الاتصال الصاعد، ويجب أن يكون ذلك اختيارًا مقصودًا."
+   }
+  },
+  "ospfv3-abr-prefix-ozetleme": {
+   "en": {
+    "title": "Summarize IPv6 prefixes on an OSPFv3 ABR",
+    "note": "Using an area range on the ABR to collapse intra-area /64s into one summary prefix shrinks the LSDB and routing table. The summary is advertised while at least one component route is active."
+   },
+   "ar": {
+    "title": "تلخيص بادئات IPv6 في ABR لـ OSPFv3",
+    "note": "استخدام area range في ABR لضم بادئات /64 داخل المنطقة في بادئة ملخصة واحدة يقلل حجم LSDB وجدول التوجيه. يُعلن الملخص ما دام مسار فرعي واحد على الأقل نشطًا."
+   }
+  },
+  "ospfv3-ecmp-maximum-paths": {
+   "en": {
+    "title": "Set the OSPFv3 ECMP maximum paths",
+    "note": "When several equal-cost paths exist, OSPFv3 can use them for load balancing. The maximum path count is platform-limited and the default differs."
+   },
+   "ar": {
+    "title": "ضبط الحد الأقصى لمسارات ECMP في OSPFv3",
+    "note": "عند وجود عدة مسارات متساوية التكلفة يمكن لـ OSPFv3 استخدامها لموازنة الحمل. الحد الأقصى للمسارات تحدده المنصة وتختلف القيمة الافتراضية."
    }
   },
   "qos-trust-dscp-port": {
