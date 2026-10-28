@@ -66,6 +66,57 @@ def pair_ok(a, b):
     return (a in ("cisco", "huawei") and b not in core) or (a not in core and b == "cisco")
 
 
+def pair_score(it, a, b):
+    """Çeviri sayfasının özgün içerik miktarı (komut karakteri + satır sayısı). Düşükse 'ince içerik' riski."""
+    ca, cb = it[a]["cmds"], it[b]["cmds"]
+    return len(" ; ".join(ca)) + len(" ; ".join(cb)) + 10 * (len(ca) + len(cb))
+
+
+def pair_noindex(it, a, b):
+    """data/seo.json: pair_policy = index | auto | noindex; force_index/force_noindex ('a-b/slug'), noindex_slugs."""
+    key = "{}-{}/{}".format(a, b, it["slug"])
+    if key in SEO.get("force_index", []):
+        return False
+    if key in SEO.get("force_noindex", []) or it["slug"] in SEO.get("noindex_slugs", []):
+        return True
+    pol = SEO.get("pair_policy", "auto")
+    if pol == "index":
+        return False
+    if pol == "noindex":
+        return True
+    same = " ; ".join(it[a]["cmds"]).strip().lower() == " ; ".join(it[b]["cmds"]).strip().lower()
+    return same or pair_score(it, a, b) < int(SEO.get("pair_min_score", 80))
+
+
+def analytics_cfg():
+    """site.json 'analytics': {provider: plausible|umami, domain|website_id, src(optional https URL)} -> (src, script tag)."""
+    a = SITECFG.get("analytics") or {}
+    prov = str(a.get("provider", "")).lower()
+    if prov == "plausible" and a.get("domain"):
+        src = a.get("src") or "https://plausible.io/js/script.js"
+        tag = '<script defer data-domain="{}" src="{}"></script>'.format(esc(a["domain"]), esc(src))
+    elif prov == "umami" and a.get("website_id"):
+        src = a.get("src") or "https://cloud.umami.is/script.js"
+        tag = '<script defer src="{}" data-website-id="{}" data-do-not-track="true"></script>'.format(esc(src), esc(a["website_id"]))
+    else:
+        return "", ""
+    if not src.startswith("https://"):
+        log.warning("analytics.src https olmalı; atlandı")
+        return "", ""
+    return src, tag
+
+
+def analytics_origin():
+    src, _ = analytics_cfg()
+    if not src:
+        return ""
+    u = urlparse(src)
+    return "{}://{}".format(u.scheme, u.netloc)
+
+
+OG_LOCALE = {"tr": "tr_TR", "en": "en_US", "ar": "ar_AR"}
+
+
 def vends(it):
     return [v for v in VENDORS if it.get(v)]
 
@@ -303,6 +354,8 @@ I18N = {}
 SITECFG = {}
 PROJECTS = []
 LAB = []
+SEO = {}
+NOINDEX_PATHS = set()  # sitemap dışı bırakılacak (noindex) yollar, dilden bağımsız
 
 
 def esc(s):
@@ -357,7 +410,7 @@ def load_json(name):
 
 
 def load():
-    global I18N, SITECFG, PROJECTS, LAB
+    global I18N, SITECFG, PROJECTS, LAB, SEO
     items = load_json("commands.json")
     for f in sorted(DATA.glob("commands_*.json")):
         items += load_json(f.name)
@@ -403,6 +456,7 @@ def load():
                     log.error("lab.json çeviri eksik: %s/%s/%s", sc["id"], k, lang)
                     sys.exit(1)
     SITECFG = load_json("site.json")
+    SEO = load_json("seo.json") if (DATA / "seo.json").exists() else {}
     PROJECTS = load_json("projects.json")
 
     base_keys = set(I18N["ui"]["tr"])
@@ -489,9 +543,10 @@ def csp():
     if ADSENSE:
         ads = " https://pagead2.googlesyndication.com https://*.google.com https://*.googlesyndication.com https://*.doubleclick.net https://*.googleadservices.com"
     sup = SITECFG.get("supabase_url", "")
+    an = (" " + analytics_origin()) if analytics_origin() else ""
     return (
-        "default-src 'self'; script-src 'self' 'unsafe-inline' blob:" + ads + "; style-src 'self' 'unsafe-inline'; "
-        "img-src 'self' data: blob:" + (" https:" if ADSENSE else "") + "; font-src 'self' data:; connect-src 'self' " + sup + " " + sup.replace("https://", "wss://") + ads + "; "
+        "default-src 'self'; script-src 'self' 'unsafe-inline' blob:" + ads + an + "; style-src 'self' 'unsafe-inline'; "
+        "img-src 'self' data: blob:" + (" https:" if ADSENSE else "") + "; font-src 'self' data:; connect-src 'self' " + sup + " " + sup.replace("https://", "wss://") + ads + an + "; "
         + ("frame-src" + ads + "; " if ADSENSE else "") + "object-src 'none'; base-uri 'self'; form-action 'self'"
     )
 
@@ -514,7 +569,16 @@ def page(lang, title, desc, path, body, jsonld=None, noindex=False, head_extra="
         else ""
     )
     ld = '<script type="application/ld+json">{}</script>'.format(json.dumps(jsonld, ensure_ascii=False)) if jsonld else ""
-    robots = '<meta name="robots" content="noindex">' if noindex else ""
+    robots = '<meta name="robots" content="noindex,follow">' if noindex else ""
+    ogi = full("assets/og.png")
+    head_extra = (
+        '<meta property="og:site_name" content="{s}"><meta property="og:locale" content="{loc}">'
+        '<meta property="og:image" content="{i}"><meta property="og:image:type" content="image/png">'
+        '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+        '<meta property="og:image:alt" content="{s} — Cisco · Huawei · Aruba">'
+        '<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{t}">'
+        '<meta name="twitter:description" content="{d}"><meta name="twitter:image" content="{i}">'
+    ).format(s=esc(SITE), loc=OG_LOCALE.get(lang, "en_US"), i=esc(ogi), t=esc(title), d=esc(desc)) + analytics_cfg()[1] + head_extra
     return (
         '<!doctype html>\n<html lang="{lang}" dir="{dir}"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1">'
@@ -539,8 +603,8 @@ def page(lang, title, desc, path, body, jsonld=None, noindex=False, head_extra="
         footer=esc(T(lang, "footer")), upd=esc(T(lang, "updated")), today=TODAY,
         nav_js=NAV_SWAP_JS, script=script,
         flinks='<a href="{}">{}</a> · <a href="{}">{}</a>'.format(lurl(lang, "privacy/"), esc(T(lang, "nav_privacy")), lurl(lang, "terms/"), esc(T(lang, "nav_terms"))),
-        bgjs='<script src="{}/assets/ui.js?v={}" data-idx="{}/assets/search-{}.json" defer></script><script src="{}/assets/bg.js?v={}" defer></script><script src="{}/assets/fav.js?v={}" data-url="{}" data-key="{}" data-sb="{}/assets/vendor/supabase.js" defer></script>'.format(
-            BASE_PATH, TODAY, BASE_PATH, lang, BASE_PATH, TODAY, BASE_PATH, TODAY, esc(SITECFG.get("supabase_url", "")), esc(SITECFG.get("supabase_key", "")), BASE_PATH),
+        bgjs='<script src="{}/assets/ui.js?v={}" data-idx="{}/assets/search-{}.json" data-url="{}" data-key="{}" defer></script><script src="{}/assets/bg.js?v={}" defer></script><script src="{}/assets/fav.js?v={}" data-url="{}" data-key="{}" data-sb="{}/assets/vendor/supabase.js" defer></script>'.format(
+            BASE_PATH, TODAY, BASE_PATH, lang, esc(SITECFG.get("supabase_url", "")), esc(SITECFG.get("supabase_key", "")), BASE_PATH, TODAY, BASE_PATH, TODAY, esc(SITECFG.get("supabase_url", "")), esc(SITECFG.get("supabase_key", "")), BASE_PATH),
     )
 
 
@@ -633,7 +697,10 @@ def build_pair(lang, it, a, b, paths):
         bn=B["name"], bos=esc(B["os"]), bm=esc(db["mode"]), bc=code_block(db["cmds"]),
         warn=esc(T(lang, "warn_label")), note=esc(item_note(it, lang)), all=esc(T(lang, "pair_all")),
     )
-    write("{}/{}index.html".format(lang, path), page(lang, title, desc, path, body, tech_ld(title, desc, lang)))
+    thin = pair_noindex(it, a, b)
+    if thin:
+        NOINDEX_PATHS.add(path)
+    write("{}/{}index.html".format(lang, path), page(lang, title, desc, path, body, tech_ld(title, desc, lang), noindex=thin))
     paths.add(path)
 
 
@@ -1173,8 +1240,10 @@ def main():
         build_indexes(lang, items)
         total += len(paths)
         # arama motoru için: auth sayfaları (noindex) sitemap dışında
-        sitemap_paths |= {p for p in paths if p not in ("signup/", "login/", "account/", "forgot/", "reset/")}
+        sitemap_paths |= {p for p in paths if p not in ("signup/", "login/", "account/", "forgot/", "reset/") and p not in NOINDEX_PATHS}
     write_meta(sitemap_paths)
+    log.info("SEO: %d çeviri yolu noindex (x%d dil), sitemap'te %d yol; analytics=%s",
+             len(NOINDEX_PATHS), len(LANGS), len(sitemap_paths), analytics_cfg()[0] or "kapalı")
     log.info("Tamam: %d sayfa (%d dil) -> %s (BASE_URL=%s)", total, len(LANGS), OUT, BASE_URL)
 
 

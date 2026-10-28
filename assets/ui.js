@@ -24,6 +24,25 @@
   var TX = PH[lang] || PH.tr;
   var data = null, ov = null, inp = null, list = null, sel = 0, shown = [], loading = false;
 
+  /* ---- çerezsiz arama kaydı: yalnızca sorgu, dil ve sonuç sayısı (kimlik/IP yok). DNT/GPC'ye saygılı. ---- */
+  var SBURL = me && me.getAttribute('data-url'), SBKEY = me && me.getAttribute('data-key');
+  var logged = {}, logCount = 0, logTimer = null;
+  function noTrack() { return navigator.doNotTrack === '1' || window.doNotTrack === '1' || navigator.globalPrivacyControl === true; }
+  function logSearch(q, hits) {
+    q = q.trim().toLowerCase().replace(/\s+/g, ' ');
+    if (q.length < 3 || q.length > 80 || logged[q] || logCount >= 15 || noTrack() || !SBURL || !SBKEY) return;
+    if (/@|\d{4,}|https?:/.test(q)) return;   // e-posta, uzun sayı (IP/seri no) ve URL kaydetme
+    logged[q] = 1; logCount++;
+    try {
+      fetch(SBURL + '/rest/v1/search_log', { method: 'POST', keepalive: true,
+        headers: { apikey: SBKEY, 'Content-Type': 'application/json', Prefer: 'return=minimal' },
+        body: JSON.stringify({ q: q, lang: lang, hits: hits }) }).catch(function () {});
+    } catch (e) {}
+    try {
+      if (!hits) { if (window.plausible) window.plausible('Search Miss', { props: { q: q } }); if (window.umami) window.umami.track('search-miss', { q: q }); }
+    } catch (e) {}
+  }
+
   function load(cb) {
     if (data) { cb(); return; }
     if (loading || !idxUrl) return;
@@ -66,6 +85,7 @@
       scored.sort(function (a, b) { return b[0] - a[0]; });
       shown = scored.slice(0, 12).map(function (x) { return x[1]; });
     }
+    if (data && words.length) { clearTimeout(logTimer); (function (q, h) { logTimer = setTimeout(function () { logSearch(q, h); }, 1500); })(inp.value, shown.length); }
     list.textContent = '';
     if (!shown.length) { var n = document.createElement('li'); n.style.padding = '10px 16px'; n.textContent = TX[1]; list.appendChild(n); return; }
     shown.forEach(function (d) {

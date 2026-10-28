@@ -1,0 +1,7 @@
+{
+  "pair_policy": "auto",
+  "pair_min_score": 80,
+  "force_index": [],
+  "force_noindex": [],
+  "noindex_slugs": []
+}

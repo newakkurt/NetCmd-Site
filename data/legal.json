@@ -17,6 +17,10 @@
      "Site, işlevsellik için tarayıcınızın yerel depolamasını kullanır: oturum bilgisi, tema tercihi, favoriler ve plan durumu önbelleği. Takip, profilleme veya analitik çerezi kullanmıyoruz. İleride reklam gösterilirse bu metin güncellenir ve gerekli onay istenir."
     ],
     [
+     "Arama istatistikleri ve analitik",
+     "Hızlı aramada yazdığınız sorgu, dil ve sonuç sayısı; hangi içeriği geliştireceğimizi anlamak için kimliksiz olarak kaydedilir (hesabınız, IP adresiniz veya çerez ile eşleştirilmez; e-posta/uzun sayı içeren sorgular kaydedilmez). Tarayıcınızda 'Do Not Track' veya Global Privacy Control açıksa kayıt yapılmaz. Yapılandırılırsa çerezsiz bir sayfa görüntüleme analitiği (Plausible veya Umami) da kullanılabilir; bu araçlar çerez bırakmaz ve sizi siteler arasında takip etmez."
+    ],
+    [
      "İşleme amaçları ve hukuki sebep",
      "Hesap yönetimi, Premium üyeliğin tanımlanması, topluluk içeriğinin moderasyonu ve güvenliğin sağlanması. Hukuki sebep: sözleşmenin kurulması/ifası, meşru menfaat ve gerektiğinde açık rıza (KVKK m.5)."
     ],
@@ -55,6 +59,10 @@
      "The site uses your browser's local storage for functionality: session data, theme preference, favorites and a cached plan status. We do not use tracking, profiling or analytics cookies. If ads are shown in the future, this page will be updated and consent requested where required."
     ],
     [
+     "Search statistics and analytics",
+     "The query you type in quick search, its language and the number of results are stored anonymously to understand which content to improve (not linked to your account, IP address or a cookie; queries containing e-mail addresses or long numbers are not stored). Nothing is recorded if your browser sends Do Not Track or Global Privacy Control. A cookieless page-view analytics tool (Plausible or Umami) may also be used if configured; these tools set no cookies and do not track you across sites."
+    ],
+    [
      "Purposes and legal basis",
      "Account management, granting Premium access, moderating community content and keeping the service secure. Legal basis: performance of a contract, legitimate interests and, where needed, consent."
     ],
@@ -91,6 +99,10 @@
     [
      "تخزين المتصفح وملفات الارتباط",
      "يستخدم الموقع التخزين المحلي للمتصفح للوظائف: بيانات الجلسة وتفضيل المظهر والمفضلة وحالة الخطة المخزنة مؤقتًا. لا نستخدم ملفات تتبع أو تحليلات. إذا عُرضت إعلانات مستقبلًا فسيتم تحديث هذه الصفحة وطلب الموافقة عند الحاجة."
+    ],
+    [
+     "إحصاءات البحث والتحليلات",
+     "يُخزَّن نص البحث السريع الذي تكتبه ولغته وعدد النتائج دون هوية لفهم المحتوى الذي يجب تطويره (دون ربطه بحسابك أو عنوان IP أو ملف ارتباط، ولا تُخزَّن الاستعلامات التي تتضمن بريدًا إلكترونيًا أو أرقامًا طويلة). لا يُسجَّل شيء إذا كان متصفحك يرسل Do Not Track أو Global Privacy Control. وقد تُستخدم أداة تحليلات بلا ملفات ارتباط (Plausible أو Umami) إذا جرى إعدادها؛ فهي لا تضع ملفات ارتباط ولا تتتبعك عبر المواقع."
     ],
     [
      "الأغراض والأساس القانوني",
