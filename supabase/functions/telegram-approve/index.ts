@@ -1,8 +1,6 @@
 // Telegram inline buton (Onayla / Reddet) -> premium talebini onaylar.
 // Kurulum: README-ops.md. Secrets: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, TELEGRAM_WEBHOOK_SECRET
 // (SUPABASE_URL ve SUPABASE_SERVICE_ROLE_KEY Supabase tarafından otomatik verilir.)
-import { createClient } from "jsr:@supabase/supabase-js@2";
-
 const TOKEN = Deno.env.get("TELEGRAM_BOT_TOKEN") ?? "";
 const CHAT = String(Deno.env.get("TELEGRAM_CHAT_ID") ?? "");
 const SECRET = Deno.env.get("TELEGRAM_WEBHOOK_SECRET") ?? "";
@@ -40,12 +38,17 @@ Deno.serve(async (req) => {
   const id = Number(idStr);
   const days = Math.min(Math.max(Number(daysStr ?? 365), 1), 1095);
 
-  const sb = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!, {
-    auth: { persistSession: false },
+  // PostgREST RPC (service role); dış bağımlılık yok
+  const fn = action === "a" ? "approve_premium_request" : "reject_premium_request";
+  const args = action === "a" ? { p_id: id, p_days: days } : { p_id: id };
+  const key = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
+  const rpc = await fetch(`${Deno.env.get("SUPABASE_URL")}/rest/v1/rpc/${fn}`, {
+    method: "POST",
+    headers: { apikey: key, Authorization: `Bearer ${key}`, "content-type": "application/json" },
+    body: JSON.stringify(args),
   });
-  const { data, error } = action === "a"
-    ? await sb.rpc("approve_premium_request", { p_id: id, p_days: days })
-    : await sb.rpc("reject_premium_request", { p_id: id });
+  const data = rpc.ok ? await rpc.json() : null;
+  const error = rpc.ok ? null : { message: `${rpc.status} ${await rpc.text()}` };
 
   if (error) {
     console.error("rpc error", error.message);
