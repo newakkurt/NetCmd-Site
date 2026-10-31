@@ -1,0 +1,2318 @@
+{
+  "cats": {
+    "Arayüzler": {
+      "en": "Interfaces",
+      "ar": "الواجهات"
+    },
+    "Switching ve VLAN": {
+      "en": "Switching and VLAN",
+      "ar": "التحويل وVLAN"
+    },
+    "Yönlendirme": {
+      "en": "Routing",
+      "ar": "التوجيه"
+    },
+    "IPv6": {
+      "en": "IPv6",
+      "ar": "IPv6"
+    },
+    "Güvenlik": {
+      "en": "Security",
+      "ar": "الأمان"
+    },
+    "QoS": {
+      "en": "QoS",
+      "ar": "جودة الخدمة"
+    },
+    "İzleme": {
+      "en": "Monitoring",
+      "ar": "المراقبة"
+    },
+    "Sistem": {
+      "en": "System",
+      "ar": "النظام"
+    }
+  },
+  "items": {
+    "ref-interfaces-1-1": {
+      "en": {
+        "title": "Interface Status: GigabitEthernet1/0/1",
+        "note": "Read-only interface status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة الواجهة: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-1-2": {
+      "en": {
+        "title": "Interface Status: GigabitEthernet1/0/2",
+        "note": "Read-only interface status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة الواجهة: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-1-3": {
+      "en": {
+        "title": "Interface Status: GigabitEthernet1/0/3",
+        "note": "Read-only interface status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة الواجهة: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-1-4": {
+      "en": {
+        "title": "Interface Status: GigabitEthernet1/0/4",
+        "note": "Read-only interface status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة الواجهة: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-1-5": {
+      "en": {
+        "title": "Interface Status: GigabitEthernet1/0/5",
+        "note": "Read-only interface status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة الواجهة: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-1-6": {
+      "en": {
+        "title": "Interface Status: GigabitEthernet1/0/6",
+        "note": "Read-only interface status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة الواجهة: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-1-7": {
+      "en": {
+        "title": "Interface Status: GigabitEthernet1/0/7",
+        "note": "Read-only interface status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة الواجهة: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-1-8": {
+      "en": {
+        "title": "Interface Status: GigabitEthernet1/0/8",
+        "note": "Read-only interface status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة الواجهة: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-1-9": {
+      "en": {
+        "title": "Interface Status: Vlan10",
+        "note": "Read-only interface status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة الواجهة: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-1-10": {
+      "en": {
+        "title": "Interface Status: Vlan20",
+        "note": "Read-only interface status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة الواجهة: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-1-11": {
+      "en": {
+        "title": "Interface Status: Vlan30",
+        "note": "Read-only interface status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة الواجهة: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-1-12": {
+      "en": {
+        "title": "Interface Status: Vlan40",
+        "note": "Read-only interface status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة الواجهة: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-2-1": {
+      "en": {
+        "title": "Interface Errors: GigabitEthernet1/0/1",
+        "note": "Read-only interface errors check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "أخطاء الواجهة: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-2-2": {
+      "en": {
+        "title": "Interface Errors: GigabitEthernet1/0/2",
+        "note": "Read-only interface errors check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "أخطاء الواجهة: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-2-3": {
+      "en": {
+        "title": "Interface Errors: GigabitEthernet1/0/3",
+        "note": "Read-only interface errors check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "أخطاء الواجهة: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-2-4": {
+      "en": {
+        "title": "Interface Errors: GigabitEthernet1/0/4",
+        "note": "Read-only interface errors check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "أخطاء الواجهة: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-2-5": {
+      "en": {
+        "title": "Interface Errors: GigabitEthernet1/0/5",
+        "note": "Read-only interface errors check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "أخطاء الواجهة: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-2-6": {
+      "en": {
+        "title": "Interface Errors: GigabitEthernet1/0/6",
+        "note": "Read-only interface errors check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "أخطاء الواجهة: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-2-7": {
+      "en": {
+        "title": "Interface Errors: GigabitEthernet1/0/7",
+        "note": "Read-only interface errors check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "أخطاء الواجهة: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-2-8": {
+      "en": {
+        "title": "Interface Errors: GigabitEthernet1/0/8",
+        "note": "Read-only interface errors check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "أخطاء الواجهة: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-2-9": {
+      "en": {
+        "title": "Interface Errors: Vlan10",
+        "note": "Read-only interface errors check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "أخطاء الواجهة: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-2-10": {
+      "en": {
+        "title": "Interface Errors: Vlan20",
+        "note": "Read-only interface errors check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "أخطاء الواجهة: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-2-11": {
+      "en": {
+        "title": "Interface Errors: Vlan30",
+        "note": "Read-only interface errors check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "أخطاء الواجهة: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-2-12": {
+      "en": {
+        "title": "Interface Errors: Vlan40",
+        "note": "Read-only interface errors check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "أخطاء الواجهة: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-3-1": {
+      "en": {
+        "title": "Interface Description: GigabitEthernet1/0/1",
+        "note": "Read-only interface description check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "وصف الواجهة: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-3-2": {
+      "en": {
+        "title": "Interface Description: GigabitEthernet1/0/2",
+        "note": "Read-only interface description check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "وصف الواجهة: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-3-3": {
+      "en": {
+        "title": "Interface Description: GigabitEthernet1/0/3",
+        "note": "Read-only interface description check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "وصف الواجهة: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-3-4": {
+      "en": {
+        "title": "Interface Description: GigabitEthernet1/0/4",
+        "note": "Read-only interface description check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "وصف الواجهة: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-3-5": {
+      "en": {
+        "title": "Interface Description: GigabitEthernet1/0/5",
+        "note": "Read-only interface description check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "وصف الواجهة: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-3-6": {
+      "en": {
+        "title": "Interface Description: GigabitEthernet1/0/6",
+        "note": "Read-only interface description check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "وصف الواجهة: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-3-7": {
+      "en": {
+        "title": "Interface Description: GigabitEthernet1/0/7",
+        "note": "Read-only interface description check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "وصف الواجهة: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-3-8": {
+      "en": {
+        "title": "Interface Description: GigabitEthernet1/0/8",
+        "note": "Read-only interface description check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "وصف الواجهة: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-3-9": {
+      "en": {
+        "title": "Interface Description: Vlan10",
+        "note": "Read-only interface description check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "وصف الواجهة: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-3-10": {
+      "en": {
+        "title": "Interface Description: Vlan20",
+        "note": "Read-only interface description check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "وصف الواجهة: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-3-11": {
+      "en": {
+        "title": "Interface Description: Vlan30",
+        "note": "Read-only interface description check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "وصف الواجهة: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-3-12": {
+      "en": {
+        "title": "Interface Description: Vlan40",
+        "note": "Read-only interface description check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "وصف الواجهة: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-4-1": {
+      "en": {
+        "title": "Interface Traffic: GigabitEthernet1/0/1",
+        "note": "Read-only interface traffic check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حركة مرور الواجهة: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-4-2": {
+      "en": {
+        "title": "Interface Traffic: GigabitEthernet1/0/2",
+        "note": "Read-only interface traffic check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حركة مرور الواجهة: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-4-3": {
+      "en": {
+        "title": "Interface Traffic: GigabitEthernet1/0/3",
+        "note": "Read-only interface traffic check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حركة مرور الواجهة: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-4-4": {
+      "en": {
+        "title": "Interface Traffic: GigabitEthernet1/0/4",
+        "note": "Read-only interface traffic check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حركة مرور الواجهة: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-4-5": {
+      "en": {
+        "title": "Interface Traffic: GigabitEthernet1/0/5",
+        "note": "Read-only interface traffic check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حركة مرور الواجهة: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-4-6": {
+      "en": {
+        "title": "Interface Traffic: GigabitEthernet1/0/6",
+        "note": "Read-only interface traffic check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حركة مرور الواجهة: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-4-7": {
+      "en": {
+        "title": "Interface Traffic: GigabitEthernet1/0/7",
+        "note": "Read-only interface traffic check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حركة مرور الواجهة: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-4-8": {
+      "en": {
+        "title": "Interface Traffic: GigabitEthernet1/0/8",
+        "note": "Read-only interface traffic check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حركة مرور الواجهة: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-4-9": {
+      "en": {
+        "title": "Interface Traffic: Vlan10",
+        "note": "Read-only interface traffic check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حركة مرور الواجهة: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-4-10": {
+      "en": {
+        "title": "Interface Traffic: Vlan20",
+        "note": "Read-only interface traffic check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حركة مرور الواجهة: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-4-11": {
+      "en": {
+        "title": "Interface Traffic: Vlan30",
+        "note": "Read-only interface traffic check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حركة مرور الواجهة: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-4-12": {
+      "en": {
+        "title": "Interface Traffic: Vlan40",
+        "note": "Read-only interface traffic check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حركة مرور الواجهة: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-5-1": {
+      "en": {
+        "title": "Optical Diagnostics: GigabitEthernet1/0/1",
+        "note": "Read-only optical diagnostics check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تشخيص بصري: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-5-2": {
+      "en": {
+        "title": "Optical Diagnostics: GigabitEthernet1/0/2",
+        "note": "Read-only optical diagnostics check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تشخيص بصري: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-5-3": {
+      "en": {
+        "title": "Optical Diagnostics: GigabitEthernet1/0/3",
+        "note": "Read-only optical diagnostics check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تشخيص بصري: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-5-4": {
+      "en": {
+        "title": "Optical Diagnostics: GigabitEthernet1/0/4",
+        "note": "Read-only optical diagnostics check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تشخيص بصري: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-5-5": {
+      "en": {
+        "title": "Optical Diagnostics: GigabitEthernet1/0/5",
+        "note": "Read-only optical diagnostics check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تشخيص بصري: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-5-6": {
+      "en": {
+        "title": "Optical Diagnostics: GigabitEthernet1/0/6",
+        "note": "Read-only optical diagnostics check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تشخيص بصري: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-5-7": {
+      "en": {
+        "title": "Optical Diagnostics: GigabitEthernet1/0/7",
+        "note": "Read-only optical diagnostics check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تشخيص بصري: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-5-8": {
+      "en": {
+        "title": "Optical Diagnostics: GigabitEthernet1/0/8",
+        "note": "Read-only optical diagnostics check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تشخيص بصري: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-5-9": {
+      "en": {
+        "title": "Optical Diagnostics: Vlan10",
+        "note": "Read-only optical diagnostics check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تشخيص بصري: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-5-10": {
+      "en": {
+        "title": "Optical Diagnostics: Vlan20",
+        "note": "Read-only optical diagnostics check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تشخيص بصري: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-5-11": {
+      "en": {
+        "title": "Optical Diagnostics: Vlan30",
+        "note": "Read-only optical diagnostics check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تشخيص بصري: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-interfaces-5-12": {
+      "en": {
+        "title": "Optical Diagnostics: Vlan40",
+        "note": "Read-only optical diagnostics check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تشخيص بصري: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-6-1": {
+      "en": {
+        "title": "VLAN MAC Table: GigabitEthernet1/0/1",
+        "note": "Read-only vlan mac table check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جدول MAC لـ VLAN: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-6-2": {
+      "en": {
+        "title": "VLAN MAC Table: GigabitEthernet1/0/2",
+        "note": "Read-only vlan mac table check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جدول MAC لـ VLAN: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-6-3": {
+      "en": {
+        "title": "VLAN MAC Table: GigabitEthernet1/0/3",
+        "note": "Read-only vlan mac table check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جدول MAC لـ VLAN: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-6-4": {
+      "en": {
+        "title": "VLAN MAC Table: GigabitEthernet1/0/4",
+        "note": "Read-only vlan mac table check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جدول MAC لـ VLAN: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-6-5": {
+      "en": {
+        "title": "VLAN MAC Table: GigabitEthernet1/0/5",
+        "note": "Read-only vlan mac table check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جدول MAC لـ VLAN: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-6-6": {
+      "en": {
+        "title": "VLAN MAC Table: GigabitEthernet1/0/6",
+        "note": "Read-only vlan mac table check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جدول MAC لـ VLAN: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-6-7": {
+      "en": {
+        "title": "VLAN MAC Table: GigabitEthernet1/0/7",
+        "note": "Read-only vlan mac table check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جدول MAC لـ VLAN: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-6-8": {
+      "en": {
+        "title": "VLAN MAC Table: GigabitEthernet1/0/8",
+        "note": "Read-only vlan mac table check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جدول MAC لـ VLAN: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-6-9": {
+      "en": {
+        "title": "VLAN MAC Table: Vlan10",
+        "note": "Read-only vlan mac table check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جدول MAC لـ VLAN: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-6-10": {
+      "en": {
+        "title": "VLAN MAC Table: Vlan20",
+        "note": "Read-only vlan mac table check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جدول MAC لـ VLAN: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-6-11": {
+      "en": {
+        "title": "VLAN MAC Table: Vlan30",
+        "note": "Read-only vlan mac table check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جدول MAC لـ VLAN: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-6-12": {
+      "en": {
+        "title": "VLAN MAC Table: Vlan40",
+        "note": "Read-only vlan mac table check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جدول MAC لـ VLAN: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-7-1": {
+      "en": {
+        "title": "VLAN Details: GigabitEthernet1/0/1",
+        "note": "Read-only vlan details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل VLAN: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-7-2": {
+      "en": {
+        "title": "VLAN Details: GigabitEthernet1/0/2",
+        "note": "Read-only vlan details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل VLAN: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-7-3": {
+      "en": {
+        "title": "VLAN Details: GigabitEthernet1/0/3",
+        "note": "Read-only vlan details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل VLAN: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-7-4": {
+      "en": {
+        "title": "VLAN Details: GigabitEthernet1/0/4",
+        "note": "Read-only vlan details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل VLAN: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-7-5": {
+      "en": {
+        "title": "VLAN Details: GigabitEthernet1/0/5",
+        "note": "Read-only vlan details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل VLAN: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-7-6": {
+      "en": {
+        "title": "VLAN Details: GigabitEthernet1/0/6",
+        "note": "Read-only vlan details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل VLAN: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-7-7": {
+      "en": {
+        "title": "VLAN Details: GigabitEthernet1/0/7",
+        "note": "Read-only vlan details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل VLAN: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-7-8": {
+      "en": {
+        "title": "VLAN Details: GigabitEthernet1/0/8",
+        "note": "Read-only vlan details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل VLAN: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-7-9": {
+      "en": {
+        "title": "VLAN Details: Vlan10",
+        "note": "Read-only vlan details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل VLAN: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-7-10": {
+      "en": {
+        "title": "VLAN Details: Vlan20",
+        "note": "Read-only vlan details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل VLAN: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-7-11": {
+      "en": {
+        "title": "VLAN Details: Vlan30",
+        "note": "Read-only vlan details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل VLAN: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-7-12": {
+      "en": {
+        "title": "VLAN Details: Vlan40",
+        "note": "Read-only vlan details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل VLAN: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-8-1": {
+      "en": {
+        "title": "STP Details: GigabitEthernet1/0/1",
+        "note": "Read-only stp details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل STP: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-8-2": {
+      "en": {
+        "title": "STP Details: GigabitEthernet1/0/2",
+        "note": "Read-only stp details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل STP: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-8-3": {
+      "en": {
+        "title": "STP Details: GigabitEthernet1/0/3",
+        "note": "Read-only stp details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل STP: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-8-4": {
+      "en": {
+        "title": "STP Details: GigabitEthernet1/0/4",
+        "note": "Read-only stp details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل STP: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-8-5": {
+      "en": {
+        "title": "STP Details: GigabitEthernet1/0/5",
+        "note": "Read-only stp details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل STP: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-8-6": {
+      "en": {
+        "title": "STP Details: GigabitEthernet1/0/6",
+        "note": "Read-only stp details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل STP: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-8-7": {
+      "en": {
+        "title": "STP Details: GigabitEthernet1/0/7",
+        "note": "Read-only stp details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل STP: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-8-8": {
+      "en": {
+        "title": "STP Details: GigabitEthernet1/0/8",
+        "note": "Read-only stp details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل STP: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-8-9": {
+      "en": {
+        "title": "STP Details: Vlan10",
+        "note": "Read-only stp details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل STP: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-8-10": {
+      "en": {
+        "title": "STP Details: Vlan20",
+        "note": "Read-only stp details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل STP: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-8-11": {
+      "en": {
+        "title": "STP Details: Vlan30",
+        "note": "Read-only stp details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل STP: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-switching-8-12": {
+      "en": {
+        "title": "STP Details: Vlan40",
+        "note": "Read-only stp details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل STP: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-9-1": {
+      "en": {
+        "title": "IPv4 Route Lookup: GigabitEthernet1/0/1",
+        "note": "Read-only ipv4 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv4: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-9-2": {
+      "en": {
+        "title": "IPv4 Route Lookup: GigabitEthernet1/0/2",
+        "note": "Read-only ipv4 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv4: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-9-3": {
+      "en": {
+        "title": "IPv4 Route Lookup: GigabitEthernet1/0/3",
+        "note": "Read-only ipv4 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv4: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-9-4": {
+      "en": {
+        "title": "IPv4 Route Lookup: GigabitEthernet1/0/4",
+        "note": "Read-only ipv4 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv4: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-9-5": {
+      "en": {
+        "title": "IPv4 Route Lookup: GigabitEthernet1/0/5",
+        "note": "Read-only ipv4 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv4: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-9-6": {
+      "en": {
+        "title": "IPv4 Route Lookup: GigabitEthernet1/0/6",
+        "note": "Read-only ipv4 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv4: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-9-7": {
+      "en": {
+        "title": "IPv4 Route Lookup: GigabitEthernet1/0/7",
+        "note": "Read-only ipv4 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv4: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-9-8": {
+      "en": {
+        "title": "IPv4 Route Lookup: GigabitEthernet1/0/8",
+        "note": "Read-only ipv4 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv4: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-9-9": {
+      "en": {
+        "title": "IPv4 Route Lookup: Vlan10",
+        "note": "Read-only ipv4 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv4: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-9-10": {
+      "en": {
+        "title": "IPv4 Route Lookup: Vlan20",
+        "note": "Read-only ipv4 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv4: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-9-11": {
+      "en": {
+        "title": "IPv4 Route Lookup: Vlan30",
+        "note": "Read-only ipv4 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv4: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-9-12": {
+      "en": {
+        "title": "IPv4 Route Lookup: Vlan40",
+        "note": "Read-only ipv4 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv4: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-ipv6-10-1": {
+      "en": {
+        "title": "IPv6 Route Lookup: GigabitEthernet1/0/1",
+        "note": "Read-only ipv6 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv6: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-ipv6-10-2": {
+      "en": {
+        "title": "IPv6 Route Lookup: GigabitEthernet1/0/2",
+        "note": "Read-only ipv6 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv6: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-ipv6-10-3": {
+      "en": {
+        "title": "IPv6 Route Lookup: GigabitEthernet1/0/3",
+        "note": "Read-only ipv6 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv6: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-ipv6-10-4": {
+      "en": {
+        "title": "IPv6 Route Lookup: GigabitEthernet1/0/4",
+        "note": "Read-only ipv6 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv6: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-ipv6-10-5": {
+      "en": {
+        "title": "IPv6 Route Lookup: GigabitEthernet1/0/5",
+        "note": "Read-only ipv6 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv6: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-ipv6-10-6": {
+      "en": {
+        "title": "IPv6 Route Lookup: GigabitEthernet1/0/6",
+        "note": "Read-only ipv6 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv6: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-ipv6-10-7": {
+      "en": {
+        "title": "IPv6 Route Lookup: GigabitEthernet1/0/7",
+        "note": "Read-only ipv6 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv6: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-ipv6-10-8": {
+      "en": {
+        "title": "IPv6 Route Lookup: GigabitEthernet1/0/8",
+        "note": "Read-only ipv6 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv6: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-ipv6-10-9": {
+      "en": {
+        "title": "IPv6 Route Lookup: Vlan10",
+        "note": "Read-only ipv6 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv6: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-ipv6-10-10": {
+      "en": {
+        "title": "IPv6 Route Lookup: Vlan20",
+        "note": "Read-only ipv6 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv6: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-ipv6-10-11": {
+      "en": {
+        "title": "IPv6 Route Lookup: Vlan30",
+        "note": "Read-only ipv6 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv6: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-ipv6-10-12": {
+      "en": {
+        "title": "IPv6 Route Lookup: Vlan40",
+        "note": "Read-only ipv6 route lookup check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "بحث مسار IPv6: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-11-1": {
+      "en": {
+        "title": "ARP Entry: GigabitEthernet1/0/1",
+        "note": "Read-only arp entry check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجل ARP: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-11-2": {
+      "en": {
+        "title": "ARP Entry: GigabitEthernet1/0/2",
+        "note": "Read-only arp entry check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجل ARP: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-11-3": {
+      "en": {
+        "title": "ARP Entry: GigabitEthernet1/0/3",
+        "note": "Read-only arp entry check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجل ARP: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-11-4": {
+      "en": {
+        "title": "ARP Entry: GigabitEthernet1/0/4",
+        "note": "Read-only arp entry check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجل ARP: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-11-5": {
+      "en": {
+        "title": "ARP Entry: GigabitEthernet1/0/5",
+        "note": "Read-only arp entry check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجل ARP: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-11-6": {
+      "en": {
+        "title": "ARP Entry: GigabitEthernet1/0/6",
+        "note": "Read-only arp entry check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجل ARP: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-11-7": {
+      "en": {
+        "title": "ARP Entry: GigabitEthernet1/0/7",
+        "note": "Read-only arp entry check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجل ARP: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-11-8": {
+      "en": {
+        "title": "ARP Entry: GigabitEthernet1/0/8",
+        "note": "Read-only arp entry check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجل ARP: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-11-9": {
+      "en": {
+        "title": "ARP Entry: Vlan10",
+        "note": "Read-only arp entry check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجل ARP: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-11-10": {
+      "en": {
+        "title": "ARP Entry: Vlan20",
+        "note": "Read-only arp entry check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجل ARP: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-11-11": {
+      "en": {
+        "title": "ARP Entry: Vlan30",
+        "note": "Read-only arp entry check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجل ARP: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-11-12": {
+      "en": {
+        "title": "ARP Entry: Vlan40",
+        "note": "Read-only arp entry check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجل ARP: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-12-1": {
+      "en": {
+        "title": "ACL Details: GigabitEthernet1/0/1",
+        "note": "Read-only acl details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل ACL: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-12-2": {
+      "en": {
+        "title": "ACL Details: GigabitEthernet1/0/2",
+        "note": "Read-only acl details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل ACL: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-12-3": {
+      "en": {
+        "title": "ACL Details: GigabitEthernet1/0/3",
+        "note": "Read-only acl details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل ACL: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-12-4": {
+      "en": {
+        "title": "ACL Details: GigabitEthernet1/0/4",
+        "note": "Read-only acl details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل ACL: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-12-5": {
+      "en": {
+        "title": "ACL Details: GigabitEthernet1/0/5",
+        "note": "Read-only acl details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل ACL: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-12-6": {
+      "en": {
+        "title": "ACL Details: GigabitEthernet1/0/6",
+        "note": "Read-only acl details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل ACL: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-12-7": {
+      "en": {
+        "title": "ACL Details: GigabitEthernet1/0/7",
+        "note": "Read-only acl details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل ACL: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-12-8": {
+      "en": {
+        "title": "ACL Details: GigabitEthernet1/0/8",
+        "note": "Read-only acl details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل ACL: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-12-9": {
+      "en": {
+        "title": "ACL Details: Vlan10",
+        "note": "Read-only acl details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل ACL: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-12-10": {
+      "en": {
+        "title": "ACL Details: Vlan20",
+        "note": "Read-only acl details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل ACL: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-12-11": {
+      "en": {
+        "title": "ACL Details: Vlan30",
+        "note": "Read-only acl details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل ACL: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-12-12": {
+      "en": {
+        "title": "ACL Details: Vlan40",
+        "note": "Read-only acl details check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "تفاصيل ACL: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-13-1": {
+      "en": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/1",
+        "note": "Read-only dhcp snooping check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-13-2": {
+      "en": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/2",
+        "note": "Read-only dhcp snooping check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-13-3": {
+      "en": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/3",
+        "note": "Read-only dhcp snooping check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-13-4": {
+      "en": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/4",
+        "note": "Read-only dhcp snooping check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-13-5": {
+      "en": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/5",
+        "note": "Read-only dhcp snooping check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-13-6": {
+      "en": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/6",
+        "note": "Read-only dhcp snooping check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-13-7": {
+      "en": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/7",
+        "note": "Read-only dhcp snooping check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-13-8": {
+      "en": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/8",
+        "note": "Read-only dhcp snooping check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "DHCP Snooping: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-13-9": {
+      "en": {
+        "title": "DHCP Snooping: Vlan10",
+        "note": "Read-only dhcp snooping check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "DHCP Snooping: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-13-10": {
+      "en": {
+        "title": "DHCP Snooping: Vlan20",
+        "note": "Read-only dhcp snooping check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "DHCP Snooping: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-13-11": {
+      "en": {
+        "title": "DHCP Snooping: Vlan30",
+        "note": "Read-only dhcp snooping check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "DHCP Snooping: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-security-13-12": {
+      "en": {
+        "title": "DHCP Snooping: Vlan40",
+        "note": "Read-only dhcp snooping check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "DHCP Snooping: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-qos-14-1": {
+      "en": {
+        "title": "QoS Policy: GigabitEthernet1/0/1",
+        "note": "Read-only qos policy check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سياسة QoS: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-qos-14-2": {
+      "en": {
+        "title": "QoS Policy: GigabitEthernet1/0/2",
+        "note": "Read-only qos policy check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سياسة QoS: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-qos-14-3": {
+      "en": {
+        "title": "QoS Policy: GigabitEthernet1/0/3",
+        "note": "Read-only qos policy check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سياسة QoS: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-qos-14-4": {
+      "en": {
+        "title": "QoS Policy: GigabitEthernet1/0/4",
+        "note": "Read-only qos policy check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سياسة QoS: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-qos-14-5": {
+      "en": {
+        "title": "QoS Policy: GigabitEthernet1/0/5",
+        "note": "Read-only qos policy check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سياسة QoS: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-qos-14-6": {
+      "en": {
+        "title": "QoS Policy: GigabitEthernet1/0/6",
+        "note": "Read-only qos policy check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سياسة QoS: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-qos-14-7": {
+      "en": {
+        "title": "QoS Policy: GigabitEthernet1/0/7",
+        "note": "Read-only qos policy check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سياسة QoS: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-qos-14-8": {
+      "en": {
+        "title": "QoS Policy: GigabitEthernet1/0/8",
+        "note": "Read-only qos policy check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سياسة QoS: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-qos-14-9": {
+      "en": {
+        "title": "QoS Policy: Vlan10",
+        "note": "Read-only qos policy check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سياسة QoS: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-qos-14-10": {
+      "en": {
+        "title": "QoS Policy: Vlan20",
+        "note": "Read-only qos policy check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سياسة QoS: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-qos-14-11": {
+      "en": {
+        "title": "QoS Policy: Vlan30",
+        "note": "Read-only qos policy check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سياسة QoS: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-qos-14-12": {
+      "en": {
+        "title": "QoS Policy: Vlan40",
+        "note": "Read-only qos policy check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سياسة QoS: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-15-1": {
+      "en": {
+        "title": "NTP Status: GigabitEthernet1/0/1",
+        "note": "Read-only ntp status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة NTP: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-15-2": {
+      "en": {
+        "title": "NTP Status: GigabitEthernet1/0/2",
+        "note": "Read-only ntp status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة NTP: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-15-3": {
+      "en": {
+        "title": "NTP Status: GigabitEthernet1/0/3",
+        "note": "Read-only ntp status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة NTP: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-15-4": {
+      "en": {
+        "title": "NTP Status: GigabitEthernet1/0/4",
+        "note": "Read-only ntp status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة NTP: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-15-5": {
+      "en": {
+        "title": "NTP Status: GigabitEthernet1/0/5",
+        "note": "Read-only ntp status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة NTP: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-15-6": {
+      "en": {
+        "title": "NTP Status: GigabitEthernet1/0/6",
+        "note": "Read-only ntp status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة NTP: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-15-7": {
+      "en": {
+        "title": "NTP Status: GigabitEthernet1/0/7",
+        "note": "Read-only ntp status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة NTP: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-15-8": {
+      "en": {
+        "title": "NTP Status: GigabitEthernet1/0/8",
+        "note": "Read-only ntp status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة NTP: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-15-9": {
+      "en": {
+        "title": "NTP Status: Vlan10",
+        "note": "Read-only ntp status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة NTP: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-15-10": {
+      "en": {
+        "title": "NTP Status: Vlan20",
+        "note": "Read-only ntp status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة NTP: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-15-11": {
+      "en": {
+        "title": "NTP Status: Vlan30",
+        "note": "Read-only ntp status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة NTP: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-15-12": {
+      "en": {
+        "title": "NTP Status: Vlan40",
+        "note": "Read-only ntp status check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "حالة NTP: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-16-1": {
+      "en": {
+        "title": "Log Records: GigabitEthernet1/0/1",
+        "note": "Read-only log records check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجلات النظام: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-16-2": {
+      "en": {
+        "title": "Log Records: GigabitEthernet1/0/2",
+        "note": "Read-only log records check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجلات النظام: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-16-3": {
+      "en": {
+        "title": "Log Records: GigabitEthernet1/0/3",
+        "note": "Read-only log records check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجلات النظام: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-16-4": {
+      "en": {
+        "title": "Log Records: GigabitEthernet1/0/4",
+        "note": "Read-only log records check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجلات النظام: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-16-5": {
+      "en": {
+        "title": "Log Records: GigabitEthernet1/0/5",
+        "note": "Read-only log records check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجلات النظام: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-16-6": {
+      "en": {
+        "title": "Log Records: GigabitEthernet1/0/6",
+        "note": "Read-only log records check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجلات النظام: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-16-7": {
+      "en": {
+        "title": "Log Records: GigabitEthernet1/0/7",
+        "note": "Read-only log records check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجلات النظام: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-16-8": {
+      "en": {
+        "title": "Log Records: GigabitEthernet1/0/8",
+        "note": "Read-only log records check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجلات النظام: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-16-9": {
+      "en": {
+        "title": "Log Records: Vlan10",
+        "note": "Read-only log records check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجلات النظام: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-16-10": {
+      "en": {
+        "title": "Log Records: Vlan20",
+        "note": "Read-only log records check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجلات النظام: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-16-11": {
+      "en": {
+        "title": "Log Records: Vlan30",
+        "note": "Read-only log records check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجلات النظام: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-monitoring-16-12": {
+      "en": {
+        "title": "Log Records: Vlan40",
+        "note": "Read-only log records check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "سجلات النظام: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-17-1": {
+      "en": {
+        "title": "CPU Usage: GigabitEthernet1/0/1",
+        "note": "Read-only cpu usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام CPU: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-17-2": {
+      "en": {
+        "title": "CPU Usage: GigabitEthernet1/0/2",
+        "note": "Read-only cpu usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام CPU: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-17-3": {
+      "en": {
+        "title": "CPU Usage: GigabitEthernet1/0/3",
+        "note": "Read-only cpu usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام CPU: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-17-4": {
+      "en": {
+        "title": "CPU Usage: GigabitEthernet1/0/4",
+        "note": "Read-only cpu usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام CPU: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-17-5": {
+      "en": {
+        "title": "CPU Usage: GigabitEthernet1/0/5",
+        "note": "Read-only cpu usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام CPU: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-17-6": {
+      "en": {
+        "title": "CPU Usage: GigabitEthernet1/0/6",
+        "note": "Read-only cpu usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام CPU: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-17-7": {
+      "en": {
+        "title": "CPU Usage: GigabitEthernet1/0/7",
+        "note": "Read-only cpu usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام CPU: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-17-8": {
+      "en": {
+        "title": "CPU Usage: GigabitEthernet1/0/8",
+        "note": "Read-only cpu usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام CPU: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-17-9": {
+      "en": {
+        "title": "CPU Usage: Vlan10",
+        "note": "Read-only cpu usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام CPU: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-17-10": {
+      "en": {
+        "title": "CPU Usage: Vlan20",
+        "note": "Read-only cpu usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام CPU: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-17-11": {
+      "en": {
+        "title": "CPU Usage: Vlan30",
+        "note": "Read-only cpu usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام CPU: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-17-12": {
+      "en": {
+        "title": "CPU Usage: Vlan40",
+        "note": "Read-only cpu usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام CPU: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-18-1": {
+      "en": {
+        "title": "Memory Usage: GigabitEthernet1/0/1",
+        "note": "Read-only memory usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-18-2": {
+      "en": {
+        "title": "Memory Usage: GigabitEthernet1/0/2",
+        "note": "Read-only memory usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-18-3": {
+      "en": {
+        "title": "Memory Usage: GigabitEthernet1/0/3",
+        "note": "Read-only memory usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-18-4": {
+      "en": {
+        "title": "Memory Usage: GigabitEthernet1/0/4",
+        "note": "Read-only memory usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-18-5": {
+      "en": {
+        "title": "Memory Usage: GigabitEthernet1/0/5",
+        "note": "Read-only memory usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-18-6": {
+      "en": {
+        "title": "Memory Usage: GigabitEthernet1/0/6",
+        "note": "Read-only memory usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-18-7": {
+      "en": {
+        "title": "Memory Usage: GigabitEthernet1/0/7",
+        "note": "Read-only memory usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-18-8": {
+      "en": {
+        "title": "Memory Usage: GigabitEthernet1/0/8",
+        "note": "Read-only memory usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-18-9": {
+      "en": {
+        "title": "Memory Usage: Vlan10",
+        "note": "Read-only memory usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-18-10": {
+      "en": {
+        "title": "Memory Usage: Vlan20",
+        "note": "Read-only memory usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-18-11": {
+      "en": {
+        "title": "Memory Usage: Vlan30",
+        "note": "Read-only memory usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-system-18-12": {
+      "en": {
+        "title": "Memory Usage: Vlan40",
+        "note": "Read-only memory usage check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-19-1": {
+      "en": {
+        "title": "BGP Neighbor: GigabitEthernet1/0/1",
+        "note": "Read-only bgp neighbor check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جار BGP: GigabitEthernet1/0/1",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-19-2": {
+      "en": {
+        "title": "BGP Neighbor: GigabitEthernet1/0/2",
+        "note": "Read-only bgp neighbor check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جار BGP: GigabitEthernet1/0/2",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-19-3": {
+      "en": {
+        "title": "BGP Neighbor: GigabitEthernet1/0/3",
+        "note": "Read-only bgp neighbor check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جار BGP: GigabitEthernet1/0/3",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-19-4": {
+      "en": {
+        "title": "BGP Neighbor: GigabitEthernet1/0/4",
+        "note": "Read-only bgp neighbor check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جار BGP: GigabitEthernet1/0/4",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-19-5": {
+      "en": {
+        "title": "BGP Neighbor: GigabitEthernet1/0/5",
+        "note": "Read-only bgp neighbor check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جار BGP: GigabitEthernet1/0/5",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-19-6": {
+      "en": {
+        "title": "BGP Neighbor: GigabitEthernet1/0/6",
+        "note": "Read-only bgp neighbor check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جار BGP: GigabitEthernet1/0/6",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-19-7": {
+      "en": {
+        "title": "BGP Neighbor: GigabitEthernet1/0/7",
+        "note": "Read-only bgp neighbor check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جار BGP: GigabitEthernet1/0/7",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-19-8": {
+      "en": {
+        "title": "BGP Neighbor: GigabitEthernet1/0/8",
+        "note": "Read-only bgp neighbor check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جار BGP: GigabitEthernet1/0/8",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-19-9": {
+      "en": {
+        "title": "BGP Neighbor: Vlan10",
+        "note": "Read-only bgp neighbor check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جار BGP: Vlan10",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-19-10": {
+      "en": {
+        "title": "BGP Neighbor: Vlan20",
+        "note": "Read-only bgp neighbor check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جار BGP: Vlan20",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-19-11": {
+      "en": {
+        "title": "BGP Neighbor: Vlan30",
+        "note": "Read-only bgp neighbor check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جار BGP: Vlan30",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    },
+    "ref-routing-19-12": {
+      "en": {
+        "title": "BGP Neighbor: Vlan40",
+        "note": "Read-only bgp neighbor check. Verify syntax on your device release."
+      },
+      "ar": {
+        "title": "جار BGP: Vlan40",
+        "note": "فحص للقراءة فقط؛ تحقق من صياغة الأمر وفق إصدار الجهاز."
+      }
+    }
+  }
+}
