@@ -1,0 +1,1762 @@
+{
+  "ospf-interface-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "OSPF etkin arayüzlerini ve alan bilgilerini özetler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "OSPF etkin arayüzlerini ve alan bilgilerini özetler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "OSPF etkin arayüzlerini ve alan bilgilerini özetler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "ospf-process-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "OSPF süreç kimliği, router ID ve protokol parametrelerini gösterir."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "OSPF süreç kimliği, router ID ve protokol parametrelerini gösterir."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "OSPF süreç kimliği, router ID ve protokol parametrelerini gösterir."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "bgp-peer-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "BGP komşularının oturum ve yetenek ayrıntılarını inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "BGP komşularının oturum ve yetenek ayrıntılarını inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "BGP komşularının oturum ve yetenek ayrıntılarını inceler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "bgp-prefix-table": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "BGP tarafından öğrenilen IPv4 rotalarını listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "BGP tarafından öğrenilen IPv4 rotalarını listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "BGP tarafından öğrenilen IPv4 rotalarını listeler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "ipv6-interface-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IPv6 adreslerini ve arayüz durumlarını özetler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "IPv6 adreslerini ve arayüz durumlarını özetler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "IPv6 adreslerini ve arayüz durumlarını özetler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "ipv6-neighbor-cache": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IPv6 Neighbor Discovery önbelleğini inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "IPv6 Neighbor Discovery önbelleğini inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "IPv6 Neighbor Discovery önbelleğini inceler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "dhcp-relay-state": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "DHCP relay yapılandırma ve çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "DHCP relay yapılandırma ve çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "DHCP relay yapılandırma ve çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "syslog-target-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Uzak syslog hedeflerini ve log gönderim durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Uzak syslog hedeflerini ve log gönderim durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Uzak syslog hedeflerini ve log gönderim durumunu kontrol eder."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "memory-process-usage": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Bellek kullanımını ve kaynak baskısını izler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Bellek kullanımını ve kaynak baskısını izler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Bellek kullanımını ve kaynak baskısını izler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "flash-directory-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Flash depolama alanındaki dosya ve dizinleri listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Flash depolama alanındaki dosya ve dizinleri listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Flash depolama alanındaki dosya ve dizinleri listeler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "system-clock-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Cihaz saati ve zaman kaynağını kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Cihaz saati ve zaman kaynağını kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Cihaz saati ve zaman kaynağını kontrol eder."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "tacacs-server-state": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "TACACS+ sunucu bağlantı ve işlem durumunu inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "TACACS+ sunucu bağlantı ve işlem durumunu inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "TACACS+ sunucu bağlantı ve işlem durumunu inceler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "snmp-engine-info": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "SNMP engine ID bilgisini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "SNMP engine ID bilgisini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "SNMP engine ID bilgisini kontrol eder."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "qos-policy-counters": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "QoS politika eşleşme ve sayaç bilgilerini inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "QoS politika eşleşme ve sayaç bilgilerini inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "QoS politika eşleşme ve sayaç bilgilerini inceler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "route-policy-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Rota politikalarının eşleşme ve işlem sırasını inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Rota politikalarının eşleşme ve işlem sırasını inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Rota politikalarının eşleşme ve işlem sırasını inceler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "vrf-route-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Belirli VRF içindeki yönlendirme kayıtlarını gösterir."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Belirli VRF içindeki yönlendirme kayıtlarını gösterir."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Belirli VRF içindeki yönlendirme kayıtlarını gösterir."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "bfd-peer-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "BFD oturumlarının ayrıntı ve algılama parametrelerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "BFD oturumlarının ayrıntı ve algılama parametrelerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "BFD oturumlarının ayrıntı ve algılama parametrelerini kontrol eder."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "etherchannel-load-distribution": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Port-channel trafik dağıtım yöntemini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Port-channel trafik dağıtım yöntemini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Port-channel trafik dağıtım yöntemini kontrol eder."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "stp-port-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Port bazında STP rolü, durum ve sayaçları inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Port bazında STP rolü, durum ve sayaçları inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Port bazında STP rolü, durum ve sayaçları inceler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "port-security-addresses": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Port-security tarafından öğrenilen MAC adreslerini listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Port-security tarafından öğrenilen MAC adreslerini listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Port-security tarafından öğrenilen MAC adreslerini listeler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "macsec-session-state": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "MACsec/MKA oturum durumunu kontrol eder; model desteğini doğrulayın."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "MACsec/MKA oturum durumunu kontrol eder; model desteğini doğrulayın."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "MACsec/MKA oturum durumunu kontrol eder; model desteğini doğrulayın."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "ipsec-security-associations": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IPsec SA durumunu, paket sayaçlarını ve şifreleme parametrelerini inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "IPsec SA durumunu, paket sayaçlarını ve şifreleme parametrelerini inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "IPsec SA durumunu, paket sayaçlarını ve şifreleme parametrelerini inceler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "ike-security-associations": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IKE kontrol düzlemi oturumlarının durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "IKE kontrol düzlemi oturumlarının durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "IKE kontrol düzlemi oturumlarının durumunu kontrol eder."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "ssl-vpn-session-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "SSL VPN kullanıcı oturumlarını ve bağlantı durumlarını listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "SSL VPN kullanıcı oturumlarını ve bağlantı durumlarını listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "SSL VPN kullanıcı oturumlarını ve bağlantı durumlarını listeler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "wireless-ap-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Kablosuz AP envanterini ve çalışma durumunu özetler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Kablosuz AP envanterini ve çalışma durumunu özetler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Kablosuz AP envanterini ve çalışma durumunu özetler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "wireless-client-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Kablosuz istemci bağlantılarını ve ilişkilendirme durumlarını listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Kablosuz istemci bağlantılarını ve ilişkilendirme durumlarını listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Kablosuz istemci bağlantılarını ve ilişkilendirme durumlarını listeler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "wireless-channel-utilization": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Radyo kanal kullanımı ve kablosuz kapasite durumunu inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Radyo kanal kullanımı ve kablosuz kapasite durumunu inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Radyo kanal kullanımı ve kablosuz kapasite durumunu inceler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "pim-neighbor-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Multicast yönlendirme için PIM komşuluklarını kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Multicast yönlendirme için PIM komşuluklarını kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Multicast yönlendirme için PIM komşuluklarını kontrol eder."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "igmp-snooping-groups": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "VLAN bazında öğrenilen multicast grup üyeliklerini listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "VLAN bazında öğrenilen multicast grup üyeliklerini listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "VLAN bazında öğrenilen multicast grup üyeliklerini listeler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "multicast-route-entries": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Multicast yönlendirme tablosundaki kaynak/grup kayıtlarını inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Multicast yönlendirme tablosundaki kaynak/grup kayıtlarını inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Multicast yönlendirme tablosundaki kaynak/grup kayıtlarını inceler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "power-supply-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Güç kaynağı modüllerinin durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Güç kaynağı modüllerinin durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Güç kaynağı modüllerinin durumunu kontrol eder."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "fan-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  }
+}
