@@ -8164,774 +8164,6 @@
     }
   },
   {
-    "slug": "scope2-1-9-audit",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/21) (Denetim)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/21"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/21"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/21"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-9-troubleshooting",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/21) (Sorun giderme)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/21"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/21"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/21"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-9-verification",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/21) (Doğrulama)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/21"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/21"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/21"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-9-baseline",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/21) (Referans kontrolü)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/21"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/21"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/21"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-10-audit",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/22) (Denetim)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/22"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/22"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/22"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-10-troubleshooting",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/22) (Sorun giderme)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/22"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/22"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/22"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-10-verification",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/22) (Doğrulama)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/22"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/22"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/22"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-10-baseline",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/22) (Referans kontrolü)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/22"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/22"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/22"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-11-audit",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/23) (Denetim)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/23"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/23"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/23"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-11-troubleshooting",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/23) (Sorun giderme)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/23"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/23"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/23"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-11-verification",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/23) (Doğrulama)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/23"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/23"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/23"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-11-baseline",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/23) (Referans kontrolü)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/23"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/23"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/23"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-12-audit",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/24) (Denetim)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/24"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/24"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/24"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-12-troubleshooting",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/24) (Sorun giderme)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/24"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/24"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/24"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-12-verification",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/24) (Doğrulama)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/24"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/24"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/24"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-1-12-baseline",
-    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/24) (Referans kontrolü)",
-    "cat": "Arayüzler",
-    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface GigabitEthernet1/0/24"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface GigabitEthernet1/0/24"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip GigabitEthernet1/0/24"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-1-audit",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/13) (Denetim)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/13"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/13"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/13"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-1-troubleshooting",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/13) (Sorun giderme)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/13"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/13"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/13"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-1-verification",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/13) (Doğrulama)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/13"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/13"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/13"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-1-baseline",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/13) (Referans kontrolü)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/13"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/13"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/13"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-2-audit",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/14) (Denetim)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/14"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/14"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/14"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-2-troubleshooting",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/14) (Sorun giderme)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/14"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/14"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/14"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-2-verification",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/14) (Doğrulama)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/14"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/14"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/14"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-2-baseline",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/14) (Referans kontrolü)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/14"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/14"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/14"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-3-audit",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/15) (Denetim)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/15"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/15"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/15"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-3-troubleshooting",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/15) (Sorun giderme)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/15"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/15"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/15"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-3-verification",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/15) (Doğrulama)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/15"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/15"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/15"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-3-baseline",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/15) (Referans kontrolü)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/15"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/15"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/15"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-4-audit",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/16) (Denetim)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/16"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/16"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/16"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-4-troubleshooting",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/16) (Sorun giderme)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/16"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/16"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/16"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-4-verification",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/16) (Doğrulama)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/16"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/16"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/16"
-      ]
-    }
-  },
-  {
-    "slug": "scope2-2-4-baseline",
-    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/16) (Referans kontrolü)",
-    "cat": "IPv6",
-    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ipv6 interface GigabitEthernet1/0/16"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipv6 interface GigabitEthernet1/0/16"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ipv6 GigabitEthernet1/0/16"
-      ]
-    }
-  },
-  {
     "slug": "scope2-2-5-audit",
     "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/17) (Denetim)",
     "cat": "IPv6",
@@ -12192,6 +11424,774 @@
       "mode": "Operator / Manager",
       "cmds": [
         "show interface"
+      ]
+    }
+  },
+  {
+    "slug": "ospf-interface-summary",
+    "title": "OSPF arayüz özetini görüntüleme",
+    "cat": "Routing",
+    "note": "OSPF etkin arayüzlerini ve alan bilgilerini özetler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface brief"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface"
+      ]
+    }
+  },
+  {
+    "slug": "ospf-process-detail",
+    "title": "OSPF süreç ayrıntılarını görüntüleme",
+    "cat": "Routing",
+    "note": "OSPF süreç kimliği, router ID ve protokol parametrelerini gösterir. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf"
+      ]
+    }
+  },
+  {
+    "slug": "bgp-peer-detail",
+    "title": "BGP komşu ayrıntılarını görüntüleme",
+    "cat": "Routing",
+    "note": "BGP komşularının oturum ve yetenek ayrıntılarını inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer verbose"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show bgp neighbors"
+      ]
+    }
+  },
+  {
+    "slug": "bgp-prefix-table",
+    "title": "BGP IPv4 rota tablosunu görüntüleme",
+    "cat": "Routing",
+    "note": "BGP tarafından öğrenilen IPv4 rotalarını listeler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp routing-table"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp"
+      ]
+    }
+  },
+  {
+    "slug": "ipv6-interface-summary",
+    "title": "IPv6 arayüz özetini görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "IPv6 adreslerini ve arayüz durumlarını özetler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface brief"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface brief"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 interface brief"
+      ]
+    }
+  },
+  {
+    "slug": "ipv6-neighbor-cache",
+    "title": "IPv6 komşu önbelleğini görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "IPv6 Neighbor Discovery önbelleğini inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 neighbors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 neighbors"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 neighbors"
+      ]
+    }
+  },
+  {
+    "slug": "dhcp-relay-state",
+    "title": "DHCP relay durumunu görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "DHCP relay yapılandırma ve çalışma durumunu kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp relay information"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp relay"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-relay"
+      ]
+    }
+  },
+  {
+    "slug": "syslog-target-status",
+    "title": "Syslog hedeflerini görüntüleme",
+    "cat": "Sistem",
+    "note": "Uzak syslog hedeflerini ve log gönderim durumunu kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display info-center"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging"
+      ]
+    }
+  },
+  {
+    "slug": "memory-process-usage",
+    "title": "Bellek kullanımını görüntüleme",
+    "cat": "Sistem",
+    "note": "Bellek kullanımını ve kaynak baskısını izler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system resource-utilization"
+      ]
+    }
+  },
+  {
+    "slug": "flash-directory-list",
+    "title": "Flash dosya listesini görüntüleme",
+    "cat": "Sistem",
+    "note": "Flash depolama alanındaki dosya ve dizinleri listeler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "dir flash:"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "dir"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "dir"
+      ]
+    }
+  },
+  {
+    "slug": "system-clock-detail",
+    "title": "Sistem saat ayrıntısını görüntüleme",
+    "cat": "Sistem",
+    "note": "Cihaz saati ve zaman kaynağını kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show clock detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display clock"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show time"
+      ]
+    }
+  },
+  {
+    "slug": "tacacs-server-state",
+    "title": "TACACS+ sunucu durumunu görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "TACACS+ sunucu bağlantı ve işlem durumunu inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show tacacs"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display hwtacacs-server"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show tacacs"
+      ]
+    }
+  },
+  {
+    "slug": "snmp-engine-info",
+    "title": "SNMP engine bilgilerini görüntüleme",
+    "cat": "Sistem",
+    "note": "SNMP engine ID bilgisini kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show snmp engineID"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display snmp-agent local-engineid"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show snmp-server engine-id"
+      ]
+    }
+  },
+  {
+    "slug": "qos-policy-counters",
+    "title": "QoS politika sayaçlarını görüntüleme",
+    "cat": "QoS",
+    "note": "QoS politika eşleşme ve sayaç bilgilerini inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy statistics"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos"
+      ]
+    }
+  },
+  {
+    "slug": "route-policy-detail",
+    "title": "Route-map / route-policy bilgilerini görüntüleme",
+    "cat": "Routing",
+    "note": "Rota politikalarının eşleşme ve işlem sırasını inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show route-map"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display route-policy"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show route-map"
+      ]
+    }
+  },
+  {
+    "slug": "vrf-route-detail",
+    "title": "VRF yönlendirme tablosunu görüntüleme",
+    "cat": "Routing",
+    "note": "Belirli VRF içindeki yönlendirme kayıtlarını gösterir. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf <VRF>"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance <VRF>"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf <VRF>"
+      ]
+    }
+  },
+  {
+    "slug": "bfd-peer-detail",
+    "title": "BFD komşu ayrıntılarını görüntüleme",
+    "cat": "Routing",
+    "note": "BFD oturumlarının ayrıntı ve algılama parametrelerini kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show bfd neighbors details"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bfd session all verbose"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show bfd"
+      ]
+    }
+  },
+  {
+    "slug": "etherchannel-load-distribution",
+    "title": "EtherChannel yük dağıtım yöntemini görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "Port-channel trafik dağıtım yöntemini kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show etherchannel load-balance"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display load-balance"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show trunks"
+      ]
+    }
+  },
+  {
+    "slug": "stp-port-detail",
+    "title": "STP port ayrıntılarını görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "Port bazında STP rolü, durum ve sayaçları inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree detail"
+      ]
+    }
+  },
+  {
+    "slug": "port-security-addresses",
+    "title": "Port-security MAC kayıtlarını görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "Port-security tarafından öğrenilen MAC adreslerini listeler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security address"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security mac-address"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security"
+      ]
+    }
+  },
+  {
+    "slug": "macsec-session-state",
+    "title": "MACsec oturum durumunu görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "MACsec/MKA oturum durumunu kontrol eder; model desteğini doğrulayın. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mka sessions"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display macsec status"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show macsec"
+      ]
+    }
+  },
+  {
+    "slug": "ipsec-security-associations",
+    "title": "IPsec güvenlik ilişkilerini görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "IPsec SA durumunu, paket sayaçlarını ve şifreleme parametrelerini inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show crypto ipsec sa"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipsec sa"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show crypto ipsec sa"
+      ]
+    }
+  },
+  {
+    "slug": "ike-security-associations",
+    "title": "IKE güvenlik ilişkilerini görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "IKE kontrol düzlemi oturumlarının durumunu kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show crypto ikev2 sa"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ike sa"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show crypto ikev2 sa"
+      ]
+    }
+  },
+  {
+    "slug": "ssl-vpn-session-list",
+    "title": "SSL VPN oturumlarını görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "SSL VPN kullanıcı oturumlarını ve bağlantı durumlarını listeler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vpn-sessiondb ssl"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ssl vpn session"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vpn-session"
+      ]
+    }
+  },
+  {
+    "slug": "wireless-ap-summary",
+    "title": "Kablosuz erişim noktası özetini görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "Kablosuz AP envanterini ve çalışma durumunu özetler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ap summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ap all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ap"
+      ]
+    }
+  },
+  {
+    "slug": "wireless-client-list",
+    "title": "Kablosuz istemcileri görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "Kablosuz istemci bağlantılarını ve ilişkilendirme durumlarını listeler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show wireless client summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display station all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show clients"
+      ]
+    }
+  },
+  {
+    "slug": "wireless-channel-utilization",
+    "title": "Kablosuz kanal kullanımını görüntüleme",
+    "cat": "Sorun Giderme",
+    "note": "Radyo kanal kullanımı ve kablosuz kapasite durumunu inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ap dot11 5ghz summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display radio all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ap radio"
+      ]
+    }
+  },
+  {
+    "slug": "pim-neighbor-list",
+    "title": "PIM komşularını görüntüleme",
+    "cat": "Routing",
+    "note": "Multicast yönlendirme için PIM komşuluklarını kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor"
+      ]
+    }
+  },
+  {
+    "slug": "igmp-snooping-groups",
+    "title": "IGMP Snooping gruplarını görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "VLAN bazında öğrenilen multicast grup üyeliklerini listeler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping groups"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping group"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp snooping groups"
+      ]
+    }
+  },
+  {
+    "slug": "multicast-route-entries",
+    "title": "Multicast yönlendirme kayıtlarını görüntüleme",
+    "cat": "Routing",
+    "note": "Multicast yönlendirme tablosundaki kaynak/grup kayıtlarını inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip mroute"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display multicast routing-table"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip mroute"
+      ]
+    }
+  },
+  {
+    "slug": "power-supply-status",
+    "title": "Güç kaynağı durumunu görüntüleme",
+    "cat": "Sistem",
+    "note": "Güç kaynağı modüllerinin durumunu kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show environment power"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display power"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system power-supply"
+      ]
+    }
+  },
+  {
+    "slug": "fan-status",
+    "title": "Fan durumunu görüntüleme",
+    "cat": "Sistem",
+    "note": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show environment fan"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display fan"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system fans"
       ]
     }
   }
