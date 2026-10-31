@@ -8233,5 +8233,2905 @@
         ]
       }
     }
+  },
+  "catalog-ospf-komsu-durumu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "OSPF komşuluklarını görüntüleme. Cisco: show ip ospf neighbor | Huawei: display ospf peer | Aruba: show ip ospf neighbors. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "OSPF neighbor status. Cisco: show ip ospf neighbor | Huawei: display ospf peer | Aruba: show ip ospf neighbors. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة جيران OSPF. Cisco: show ip ospf neighbor | Huawei: display ospf peer | Aruba: show ip ospf neighbors. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-ospf-interface-state": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "OSPF arayüz durum özetini görüntüleme. Cisco: show ip ospf interface brief | Huawei: display ospf interface | Aruba: show ip ospf interface. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "OSPF interface state summary. Cisco: show ip ospf interface brief | Huawei: display ospf interface | Aruba: show ip ospf interface. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "ملخص حالة واجهات OSPF. Cisco: show ip ospf interface brief | Huawei: display ospf interface | Aruba: show ip ospf interface. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-bgp-peer-capabilities": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "BGP komşu yeteneklerini görüntüleme. Cisco: show ip bgp neighbors | Huawei: display bgp peer verbose | Aruba: show bgp neighbors. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "BGP neighbor capabilities. Cisco: show ip bgp neighbors | Huawei: display bgp peer verbose | Aruba: show bgp neighbors. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "إمكانات جيران BGP. Cisco: show ip bgp neighbors | Huawei: display bgp peer verbose | Aruba: show bgp neighbors. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-bgp-rotalari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "BGP rotalarını görüntüleme. Cisco: show ip bgp | Huawei: display bgp routing-table | Aruba: show bgp ipv4 unicast. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "BGP routing table. Cisco: show ip bgp | Huawei: display bgp routing-table | Aruba: show bgp ipv4 unicast. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "جدول توجيه BGP. Cisco: show ip bgp | Huawei: display bgp routing-table | Aruba: show bgp ipv4 unicast. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-bfd-oturumlari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "BFD oturumlarını görüntüleme. Cisco: show bfd neighbors | Huawei: display bfd session all | Aruba: show bfd. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "BFD session status. Cisco: show bfd neighbors | Huawei: display bfd session all | Aruba: show bfd. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة جلسات BFD. Cisco: show bfd neighbors | Huawei: display bfd session all | Aruba: show bfd. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-vrf-listesi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "VRF listesini görüntüleme. Cisco: show vrf | Huawei: display ip vpn-instance | Aruba: show vrf. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "VRF list. Cisco: show vrf | Huawei: display ip vpn-instance | Aruba: show vrf. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "قائمة VRF. Cisco: show vrf | Huawei: display ip vpn-instance | Aruba: show vrf. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-ipv6-arayuzleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "IPv6 arayüz özetini görüntüleme. Cisco: show ipv6 interface brief | Huawei: display ipv6 interface brief | Aruba: show ipv6 interface brief. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "IPv6 interface summary. Cisco: show ipv6 interface brief | Huawei: display ipv6 interface brief | Aruba: show ipv6 interface brief. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "ملخص واجهات IPv6. Cisco: show ipv6 interface brief | Huawei: display ipv6 interface brief | Aruba: show ipv6 interface brief. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-ipv6-rotalari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "IPv6 yönlendirme tablosunu görüntüleme. Cisco: show ipv6 route | Huawei: display ipv6 routing-table | Aruba: show ipv6 route. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "IPv6 routing table. Cisco: show ipv6 route | Huawei: display ipv6 routing-table | Aruba: show ipv6 route. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "جدول توجيه IPv6. Cisco: show ipv6 route | Huawei: display ipv6 routing-table | Aruba: show ipv6 route. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-ipv6-komsulari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "IPv6 komşu tablosunu görüntüleme. Cisco: show ipv6 neighbors | Huawei: display ipv6 neighbors | Aruba: show ipv6 neighbors. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "IPv6 neighbor table. Cisco: show ipv6 neighbors | Huawei: display ipv6 neighbors | Aruba: show ipv6 neighbors. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "جدول جيران IPv6. Cisco: show ipv6 neighbors | Huawei: display ipv6 neighbors | Aruba: show ipv6 neighbors. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-lldp-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "LLDP komşu detaylarını görüntüleme. Cisco: show lldp neighbors detail | Huawei: display lldp neighbor | Aruba: show lldp info remote-device detail. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "LLDP neighbor details. Cisco: show lldp neighbors detail | Huawei: display lldp neighbor | Aruba: show lldp info remote-device detail. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "تفاصيل جيران LLDP. Cisco: show lldp neighbors detail | Huawei: display lldp neighbor | Aruba: show lldp info remote-device detail. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-cdp-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "CDP komşu detaylarını görüntüleme. Cisco: show cdp neighbors detail | Huawei: display lldp neighbor | Aruba: show cdp neighbors detail. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "CDP neighbor details. Cisco: show cdp neighbors detail | Huawei: display lldp neighbor | Aruba: show cdp neighbors detail. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "تفاصيل جيران CDP. Cisco: show cdp neighbors detail | Huawei: display lldp neighbor | Aruba: show cdp neighbors detail. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-stp-kok-koprusu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "STP root bridge bilgisini görüntüleme. Cisco: show spanning-tree root | Huawei: display stp | Aruba: show spanning-tree. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "STP root bridge. Cisco: show spanning-tree root | Huawei: display stp | Aruba: show spanning-tree. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "الجسر الجذر لبروتوكول STP. Cisco: show spanning-tree root | Huawei: display stp | Aruba: show spanning-tree. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-stp-arayuz-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "STP arayüz durumlarını görüntüleme. Cisco: show spanning-tree interface | Huawei: display stp interface | Aruba: show spanning-tree. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "STP interface details. Cisco: show spanning-tree interface | Huawei: display stp interface | Aruba: show spanning-tree. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "تفاصيل واجهات STP. Cisco: show spanning-tree interface | Huawei: display stp interface | Aruba: show spanning-tree. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-etherchannel-ozet": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "EtherChannel / Eth-Trunk özetini görüntüleme. Cisco: show etherchannel summary | Huawei: display eth-trunk | Aruba: show lacp aggregates. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "EtherChannel summary. Cisco: show etherchannel summary | Huawei: display eth-trunk | Aruba: show lacp aggregates. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "ملخص EtherChannel. Cisco: show etherchannel summary | Huawei: display eth-trunk | Aruba: show lacp aggregates. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-lacp-komsulari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "LACP komşularını görüntüleme. Cisco: show lacp neighbor | Huawei: display lacp neighbor | Aruba: show lacp neighbor. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "LACP neighbors. Cisco: show lacp neighbor | Huawei: display lacp neighbor | Aruba: show lacp neighbor. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "جيران LACP. Cisco: show lacp neighbor | Huawei: display lacp neighbor | Aruba: show lacp neighbor. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-poe-port-power": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "PoE port güç ayrıntılarını görüntüleme. Cisco: show power inline detail | Huawei: display poe information | Aruba: show power-over-ethernet brief. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "PoE port power. Cisco: show power inline detail | Huawei: display poe information | Aruba: show power-over-ethernet brief. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "طاقة منافذ PoE. Cisco: show power inline detail | Huawei: display poe information | Aruba: show power-over-ethernet brief. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-optik-alici-verici": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Optik modül bilgilerini görüntüleme. Cisco: show interfaces transceiver detail | Huawei: display transceiver interface | Aruba: show interfaces transceiver. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Optical transceiver details. Cisco: show interfaces transceiver detail | Huawei: display transceiver interface | Aruba: show interfaces transceiver. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "تفاصيل وحدات الإرسال والاستقبال الضوئية. Cisco: show interfaces transceiver detail | Huawei: display transceiver interface | Aruba: show interfaces transceiver. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-ortam-sensorleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Sıcaklık ve ortam sensörlerini görüntüleme. Cisco: show environment all | Huawei: display environment | Aruba: show system environment. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Environmental sensor status. Cisco: show environment all | Huawei: display environment | Aruba: show system environment. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة مستشعرات البيئة. Cisco: show environment all | Huawei: display environment | Aruba: show system environment. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-cpu-prosesleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "CPU kullanımını ve süreçleri görüntüleme. Cisco: show processes cpu sorted | Huawei: display process cpu | Aruba: show system resource-utilization. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "CPU process usage. Cisco: show processes cpu sorted | Huawei: display process cpu | Aruba: show system resource-utilization. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "استخدام عمليات CPU. Cisco: show processes cpu sorted | Huawei: display process cpu | Aruba: show system resource-utilization. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-bellek-kullanimi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Bellek kullanımını görüntüleme. Cisco: show processes memory | Huawei: display memory-usage | Aruba: show system resource-utilization. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Memory utilization. Cisco: show processes memory | Huawei: display memory-usage | Aruba: show system resource-utilization. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "استخدام الذاكرة. Cisco: show processes memory | Huawei: display memory-usage | Aruba: show system resource-utilization. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-log-buffer": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Yerel log kayıtlarını görüntüleme. Cisco: show logging | Huawei: display logbuffer | Aruba: show logging -r. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "System log buffer. Cisco: show logging | Huawei: display logbuffer | Aruba: show logging -r. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "سجل النظام. Cisco: show logging | Huawei: display logbuffer | Aruba: show logging -r. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-ntp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "NTP eşitleme durumunu görüntüleme. Cisco: show ntp associations | Huawei: display ntp-service sessions | Aruba: show ntp associations. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "NTP status. Cisco: show ntp associations | Huawei: display ntp-service sessions | Aruba: show ntp associations. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة NTP. Cisco: show ntp associations | Huawei: display ntp-service sessions | Aruba: show ntp associations. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-snmp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "SNMP çalışma durumunu görüntüleme. Cisco: show snmp | Huawei: display snmp-agent sys-info | Aruba: show snmp-server. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "SNMP status. Cisco: show snmp | Huawei: display snmp-agent sys-info | Aruba: show snmp-server. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة SNMP. Cisco: show snmp | Huawei: display snmp-agent sys-info | Aruba: show snmp-server. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-radius-istatistik": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "RADIUS sunucu istatistiklerini görüntüleme. Cisco: show aaa servers | Huawei: display radius-server statistics | Aruba: show radius-server. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "RADIUS statistics. Cisco: show aaa servers | Huawei: display radius-server statistics | Aruba: show radius-server. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "إحصاءات RADIUS. Cisco: show aaa servers | Huawei: display radius-server statistics | Aruba: show radius-server. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-tacacs-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "TACACS sunucu durumunu görüntüleme. Cisco: show tacacs | Huawei: display hwtacacs-server | Aruba: show tacacs-server. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "TACACS server status. Cisco: show tacacs | Huawei: display hwtacacs-server | Aruba: show tacacs-server. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة خوادم TACACS. Cisco: show tacacs | Huawei: display hwtacacs-server | Aruba: show tacacs-server. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-acl-sayaclari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "ACL eşleşme sayaçlarını görüntüleme. Cisco: show access-lists | Huawei: display acl all | Aruba: show access-list. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "ACL counters. Cisco: show access-lists | Huawei: display acl all | Aruba: show access-list. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "عدادات ACL. Cisco: show access-lists | Huawei: display acl all | Aruba: show access-list. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-dhcp-snooping": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "DHCP Snooping bağlama tablosunu görüntüleme. Cisco: show ip dhcp snooping binding | Huawei: display dhcp snooping user-bind all | Aruba: show dhcp-snooping binding. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "DHCP snooping status. Cisco: show ip dhcp snooping binding | Huawei: display dhcp snooping user-bind all | Aruba: show dhcp-snooping binding. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة DHCP Snooping. Cisco: show ip dhcp snooping binding | Huawei: display dhcp snooping user-bind all | Aruba: show dhcp-snooping binding. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-dynamic-arp-inspection": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Dynamic ARP Inspection durumunu görüntüleme. Cisco: show ip arp inspection | Huawei: display arp anti-attack configuration | Aruba: show arp-protect. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Dynamic ARP Inspection status. Cisco: show ip arp inspection | Huawei: display arp anti-attack configuration | Aruba: show arp-protect. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة Dynamic ARP Inspection. Cisco: show ip arp inspection | Huawei: display arp anti-attack configuration | Aruba: show arp-protect. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-port-security-ozet": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Port Security durumunu görüntüleme. Cisco: show port-security | Huawei: display port-security | Aruba: show port-security. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Port-security summary. Cisco: show port-security | Huawei: display port-security | Aruba: show port-security. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "ملخص أمان المنافذ. Cisco: show port-security | Huawei: display port-security | Aruba: show port-security. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-storm-control": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Storm Control yapılandırmasını görüntüleme. Cisco: show storm-control | Huawei: display storm-control | Aruba: show storm-control. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Storm-control status. Cisco: show storm-control | Huawei: display storm-control | Aruba: show storm-control. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة Storm Control. Cisco: show storm-control | Huawei: display storm-control | Aruba: show storm-control. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-errdisable-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Err-disabled arayüzleri görüntüleme. Cisco: show interfaces status err-disabled | Huawei: display interface | Aruba: show interfaces brief. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Err-disabled port status. Cisco: show interfaces status err-disabled | Huawei: display interface | Aruba: show interfaces brief. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة المنافذ المعطلة بسبب الخطأ. Cisco: show interfaces status err-disabled | Huawei: display interface | Aruba: show interfaces brief. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-arayuz-hata-sayaclari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Arayüz hata sayaçlarını görüntüleme. Cisco: show interfaces counters errors | Huawei: display counters error | Aruba: show interfaces counters. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Interface error counters. Cisco: show interfaces counters errors | Huawei: display counters error | Aruba: show interfaces counters. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "عدادات أخطاء الواجهات. Cisco: show interfaces counters errors | Huawei: display counters error | Aruba: show interfaces counters. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-stack-uyeleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Switch stack üyelerini görüntüleme. Cisco: show switch | Huawei: display stack | Aruba: show vsf. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Stack member status. Cisco: show switch | Huawei: display stack | Aruba: show vsf. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة أعضاء المكدس. Cisco: show switch | Huawei: display stack | Aruba: show vsf. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-vsf-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Aruba VSF durumunu görüntüleme. Cisco: show switch | Huawei: display stack | Aruba: show vsf. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "VSF stack status. Cisco: show switch | Huawei: display stack | Aruba: show vsf. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة مكدس VSF. Cisco: show switch | Huawei: display stack | Aruba: show vsf. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-irf-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Huawei IRF durumunu görüntüleme. Cisco: show switch | Huawei: display irf | Aruba: show vsf. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "IRF fabric status. Cisco: show switch | Huawei: display irf | Aruba: show vsf. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة بنية IRF. Cisco: show switch | Huawei: display irf | Aruba: show vsf. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-vrrp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "VRRP durumunu görüntüleme. Cisco: show vrrp | Huawei: display vrrp | Aruba: show vrrp. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "VRRP status. Cisco: show vrrp | Huawei: display vrrp | Aruba: show vrrp. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة VRRP. Cisco: show vrrp | Huawei: display vrrp | Aruba: show vrrp. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-hsrp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "HSRP durumunu görüntüleme. Cisco: show standby brief | Huawei: display vrrp | Aruba: show hsrp. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "HSRP status. Cisco: show standby brief | Huawei: display vrrp | Aruba: show hsrp. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة HSRP. Cisco: show standby brief | Huawei: display vrrp | Aruba: show hsrp. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-track-objeleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Track nesnelerini görüntüleme. Cisco: show track | Huawei: display track all | Aruba: show track. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Tracking object status. Cisco: show track | Huawei: display track all | Aruba: show track. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "حالة كائنات التتبع. Cisco: show track | Huawei: display track all | Aruba: show track. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-route-map-listesi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Route-map yapılandırmasını görüntüleme. Cisco: show route-map | Huawei: display route-policy | Aruba: show route-map. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Route-map list. Cisco: show route-map | Huawei: display route-policy | Aruba: show route-map. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "قائمة Route-map. Cisco: show route-map | Huawei: display route-policy | Aruba: show route-map. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-prefix-listesi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Prefix-list yapılandırmasını görüntüleme. Cisco: show ip prefix-list | Huawei: display ip ip-prefix | Aruba: show ip prefix-list. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Prefix-list entries. Cisco: show ip prefix-list | Huawei: display ip ip-prefix | Aruba: show ip prefix-list. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "إدخالات Prefix-list. Cisco: show ip prefix-list | Huawei: display ip ip-prefix | Aruba: show ip prefix-list. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-pbr-politikalari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Policy Based Routing durumunu görüntüleme. Cisco: show ip policy | Huawei: display policy-based-route | Aruba: show policy-based-routing. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Policy-based routing policies. Cisco: show ip policy | Huawei: display policy-based-route | Aruba: show policy-based-routing. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "سياسات التوجيه القائم على السياسة. Cisco: show ip policy | Huawei: display policy-based-route | Aruba: show policy-based-routing. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-igmp-gruplari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "IGMP multicast gruplarını görüntüleme. Cisco: show ip igmp groups | Huawei: display igmp group | Aruba: show ip igmp groups. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "IGMP groups. Cisco: show ip igmp groups | Huawei: display igmp group | Aruba: show ip igmp groups. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "مجموعات IGMP. Cisco: show ip igmp groups | Huawei: display igmp group | Aruba: show ip igmp groups. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-pim-komsulari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "PIM komşularını görüntüleme. Cisco: show ip pim neighbor | Huawei: display pim neighbor | Aruba: show ip pim neighbor. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "PIM neighbors. Cisco: show ip pim neighbor | Huawei: display pim neighbor | Aruba: show ip pim neighbor. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "جيران PIM. Cisco: show ip pim neighbor | Huawei: display pim neighbor | Aruba: show ip pim neighbor. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-nat-cevirileri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "NAT çeviri tablosunu görüntüleme. Cisco: show ip nat translations | Huawei: display nat session all | Aruba: show nat. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "NAT translations. Cisco: show ip nat translations | Huawei: display nat session all | Aruba: show nat. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "ترجمات NAT. Cisco: show ip nat translations | Huawei: display nat session all | Aruba: show nat. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-mac-hareket-kayitlari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "MAC move kayıtlarını görüntüleme. Cisco: show mac address-table notification mac-move | Huawei: display mac-address flapping record | Aruba: show mac-address-table. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "MAC move events. Cisco: show mac address-table notification mac-move | Huawei: display mac-address flapping record | Aruba: show mac-address-table. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "أحداث انتقال عناوين MAC. Cisco: show mac address-table notification mac-move | Huawei: display mac-address flapping record | Aruba: show mac-address-table. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-dhcp-sunucu-havuzlari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "DHCP sunucu havuzlarını görüntüleme. Cisco: show ip dhcp pool | Huawei: display ip pool | Aruba: show dhcp-server. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "DHCP server pools. Cisco: show ip dhcp pool | Huawei: display ip pool | Aruba: show dhcp-server. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "مجموعات خادم DHCP. Cisco: show ip dhcp pool | Huawei: display ip pool | Aruba: show dhcp-server. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-dhcp-istemci-baglari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "DHCP istemci bağlarını görüntüleme. Cisco: show ip dhcp binding | Huawei: display dhcp server ip-in-use | Aruba: show dhcp-server leases. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "DHCP client bindings. Cisco: show ip dhcp binding | Huawei: display dhcp server ip-in-use | Aruba: show dhcp-server leases. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "ارتباطات عملاء DHCP. Cisco: show ip dhcp binding | Huawei: display dhcp server ip-in-use | Aruba: show dhcp-server leases. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-qos-sinif-eslemeleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "QoS class-map eşleşmelerini görüntüleme. Cisco: show class-map | Huawei: display traffic classifier | Aruba: show qos. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "QoS class maps. Cisco: show class-map | Huawei: display traffic classifier | Aruba: show qos. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "خرائط فئات QoS. Cisco: show class-map | Huawei: display traffic classifier | Aruba: show qos. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-qos-politika-eslesmeleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "QoS policy-map eşleşmelerini görüntüleme. Cisco: show policy-map | Huawei: display traffic policy | Aruba: show qos. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "QoS policy matches. Cisco: show policy-map | Huawei: display traffic policy | Aruba: show qos. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "مطابقات سياسات QoS. Cisco: show policy-map | Huawei: display traffic policy | Aruba: show qos. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
+  },
+  "catalog-port-kanal-yuk-dagilimi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz ve protokol/arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "Port-channel yük dağılımını görüntüleme. Cisco: show etherchannel load-balance | Huawei: display load-balance | Aruba: show lacp aggregates. Çıktıyı olay kayıtları ve değişiklik öncesi referansla karşılaştırın.",
+        "mistakes": [
+          "Komutun model ve sürüm desteğini doğrulamadan çalıştırmak.",
+          "Üreticiler arasında sözdiziminin birebir aynı olduğunu varsaymak.",
+          "Tek seferlik çıktıyı kalıcı durum kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the target Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the correct device and protocol or interface context."
+          }
+        ],
+        "example": "Port-channel load distribution. Cisco: show etherchannel load-balance | Huawei: display load-balance | Aruba: show lacp aggregates. Correlate the result with event logs and a pre-change baseline.",
+        "mistakes": [
+          "Assuming syntax is identical across vendors.",
+          "Running on an unsupported model or release.",
+          "Treating a single snapshot as proof of a persistent condition."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX المستهدف."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز والبروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "توزيع حمل قناة المنافذ. Cisco: show etherchannel load-balance | Huawei: display load-balance | Aruba: show lacp aggregates. قارن النتيجة بسجلات الأحداث وبخط أساس قبل التغيير.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين الشركات المصنعة.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على حالة مستمرة."
+        ]
+      }
+    }
   }
 }
