@@ -1,0 +1,1762 @@
+{
+  "ospf-komsular": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "ospf komsular bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks ospf komsular information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات ospf komsular."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "ospf-lsdb": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "ospf lsdb bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks ospf lsdb information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات ospf lsdb."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "bgp-ozet": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "bgp ozet bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks bgp ozet information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات bgp ozet."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "bgp-advertised": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "bgp advertised bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks bgp advertised information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات bgp advertised."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "vrf-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "vrf list bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks vrf list information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات vrf list."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "ipv6-route": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "ipv6 route bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks ipv6 route information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات ipv6 route."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "bfd-sessions": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "bfd sessions bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks bfd sessions information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات bfd sessions."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "stp-root": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "stp root bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks stp root information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات stp root."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "stp-inconsistent": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "stp inconsistent bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks stp inconsistent information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات stp inconsistent."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "lacp-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "lacp summary bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks lacp summary information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات lacp summary."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "acl-counters": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "acl counters bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks acl counters information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات acl counters."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "dhcp-snoop-stats": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "dhcp snoop stats bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks dhcp snoop stats information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات dhcp snoop stats."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "environment": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "environment bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks environment information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات environment."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "ntp-associations": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "ntp associations bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks ntp associations information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات ntp associations."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "radius-stats": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "radius stats bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks radius stats information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات radius stats."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "snmp-stats": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "snmp stats bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks snmp stats information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات snmp stats."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "lldp-interface": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "lldp interface bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks lldp interface information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات lldp interface."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "cdp-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "cdp detail bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks cdp detail information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات cdp detail."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "tcp-stats": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "tcp stats bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks tcp stats information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات tcp stats."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "ip-protocols": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "ip protocols bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks ip protocols information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات ip protocols."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "cef-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "cef summary bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks cef summary information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات cef summary."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "arp-inspection": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "arp inspection bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks arp inspection information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات arp inspection."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "mac-dynamic": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "mac dynamic bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks mac dynamic information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات mac dynamic."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "mst-region": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "mst region bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks mst region information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات mst region."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "loopback-interfaces": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "loopback interfaces bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks loopback interfaces information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات loopback interfaces."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "vlan-interface-counters": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "vlan interface counters bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks vlan interface counters information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات vlan interface counters."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "bootvar": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "bootvar bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks bootvar information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات bootvar."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "redundancy": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "redundancy bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks redundancy information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات redundancy."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "license-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "license summary bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks license summary information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات license summary."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "platform-inventory": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "platform inventory bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks platform inventory information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات platform inventory."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "transceiver-diagnostics": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "transceiver diagnostics bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks transceiver diagnostics information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات transceiver diagnostics."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "ip-mtu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "ip mtu bilgilerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Komut sözdizimi üreticiye, modele ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Önce komutu salt okunur modda çalıştırın; çıktıyı komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve yazılım sürümü desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks ip mtu information."
+          },
+          {
+            "p": "Platform",
+            "d": "Syntax can vary by vendor, model and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode first and compare the output with peer-device and topology information.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating the command before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يفحص معلومات ip mtu."
+          },
+          {
+            "p": "المنصة",
+            "d": "قد تختلف الصياغة حسب الشركة المصنعة والطراز وإصدار البرنامج."
+          }
+        ],
+        "example": "شغّل الأمر بوضع القراءة فقط أولاً، ثم قارن النتيجة بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  }
+}
