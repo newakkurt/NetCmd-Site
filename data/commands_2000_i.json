@@ -1,7 +1,7 @@
 [
   {
     "slug": "ospf-komsu-durumu",
-    "title": "OSPF neighbor status",
+    "title": "OSPF komşuluklarını görüntüleme",
     "cat": "Routing",
     "note": "OSPF neighbor status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -25,7 +25,7 @@
   },
   {
     "slug": "ospf-interface-state",
-    "title": "OSPF interface summary",
+    "title": "OSPF arayüz durum özetini görüntüleme",
     "cat": "Routing",
     "note": "OSPF interface summary. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -49,7 +49,7 @@
   },
   {
     "slug": "bgp-peer-capabilities",
-    "title": "BGP neighbor capabilities",
+    "title": "BGP komşu yeteneklerini görüntüleme",
     "cat": "Routing",
     "note": "BGP neighbor capabilities. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -73,7 +73,7 @@
   },
   {
     "slug": "bgp-rotalari",
-    "title": "BGP routing table",
+    "title": "BGP rotalarını görüntüleme",
     "cat": "Routing",
     "note": "BGP routing table. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -97,7 +97,7 @@
   },
   {
     "slug": "bfd-oturumlari",
-    "title": "BFD session status",
+    "title": "BFD oturumlarını görüntüleme",
     "cat": "Routing",
     "note": "BFD session status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -121,7 +121,7 @@
   },
   {
     "slug": "vrf-listesi",
-    "title": "VRF list",
+    "title": "VRF listesini görüntüleme",
     "cat": "Routing",
     "note": "VRF list. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -145,7 +145,7 @@
   },
   {
     "slug": "ipv6-arayuzleri",
-    "title": "IPv6 interface summary",
+    "title": "IPv6 arayüz özetini görüntüleme",
     "cat": "Görüntüleme",
     "note": "IPv6 interface summary. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -169,7 +169,7 @@
   },
   {
     "slug": "ipv6-rotalari",
-    "title": "IPv6 routing table",
+    "title": "IPv6 yönlendirme tablosunu görüntüleme",
     "cat": "Routing",
     "note": "IPv6 routing table. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -193,7 +193,7 @@
   },
   {
     "slug": "ipv6-komsulari",
-    "title": "IPv6 neighbor table",
+    "title": "IPv6 komşu tablosunu görüntüleme",
     "cat": "Görüntüleme",
     "note": "IPv6 neighbor table. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -217,7 +217,7 @@
   },
   {
     "slug": "lldp-detay",
-    "title": "LLDP neighbor details",
+    "title": "LLDP komşu detaylarını görüntüleme",
     "cat": "Görüntüleme",
     "note": "LLDP neighbor details. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -241,7 +241,7 @@
   },
   {
     "slug": "cdp-detay",
-    "title": "CDP neighbor details",
+    "title": "CDP komşu detaylarını görüntüleme",
     "cat": "Görüntüleme",
     "note": "CDP neighbor details. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -265,7 +265,7 @@
   },
   {
     "slug": "stp-kok-koprusu",
-    "title": "STP root bridge",
+    "title": "STP root bridge bilgisini görüntüleme",
     "cat": "Sorun Giderme",
     "note": "STP root bridge. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -289,7 +289,7 @@
   },
   {
     "slug": "stp-arayuz-detay",
-    "title": "STP interface states",
+    "title": "STP arayüz durumlarını görüntüleme",
     "cat": "Sorun Giderme",
     "note": "STP interface states. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -313,7 +313,7 @@
   },
   {
     "slug": "etherchannel-ozet",
-    "title": "EtherChannel and Eth-Trunk summary",
+    "title": "EtherChannel / Eth-Trunk özetini görüntüleme",
     "cat": "VLAN / Port",
     "note": "EtherChannel and Eth-Trunk summary. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -337,7 +337,7 @@
   },
   {
     "slug": "lacp-komsulari",
-    "title": "LACP neighbors",
+    "title": "LACP komşularını görüntüleme",
     "cat": "VLAN / Port",
     "note": "LACP neighbors. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -361,7 +361,7 @@
   },
   {
     "slug": "poe-port-power",
-    "title": "PoE port power details",
+    "title": "PoE port güç ayrıntılarını görüntüleme",
     "cat": "Görüntüleme",
     "note": "PoE port power details. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -385,7 +385,7 @@
   },
   {
     "slug": "optik-alici-verici",
-    "title": "Optical transceiver details",
+    "title": "Optik modül bilgilerini görüntüleme",
     "cat": "Görüntüleme",
     "note": "Optical transceiver details. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -409,7 +409,7 @@
   },
   {
     "slug": "ortam-sensorleri",
-    "title": "Environmental sensors",
+    "title": "Sıcaklık ve ortam sensörlerini görüntüleme",
     "cat": "Sistem",
     "note": "Environmental sensors. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -433,7 +433,7 @@
   },
   {
     "slug": "cpu-prosesleri",
-    "title": "CPU processes",
+    "title": "CPU kullanımını ve süreçleri görüntüleme",
     "cat": "Sistem",
     "note": "CPU processes. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -457,7 +457,7 @@
   },
   {
     "slug": "bellek-kullanimi",
-    "title": "Memory utilization",
+    "title": "Bellek kullanımını görüntüleme",
     "cat": "Sistem",
     "note": "Memory utilization. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -481,7 +481,7 @@
   },
   {
     "slug": "log-buffer",
-    "title": "Local log buffer",
+    "title": "Yerel log kayıtlarını görüntüleme",
     "cat": "Sistem",
     "note": "Local log buffer. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -505,7 +505,7 @@
   },
   {
     "slug": "ntp-durum",
-    "title": "NTP synchronization status",
+    "title": "NTP eşitleme durumunu görüntüleme",
     "cat": "Sistem",
     "note": "NTP synchronization status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -529,7 +529,7 @@
   },
   {
     "slug": "snmp-durum",
-    "title": "SNMP operational status",
+    "title": "SNMP çalışma durumunu görüntüleme",
     "cat": "Sistem",
     "note": "SNMP operational status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -553,7 +553,7 @@
   },
   {
     "slug": "radius-istatistik",
-    "title": "RADIUS server statistics",
+    "title": "RADIUS sunucu istatistiklerini görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "RADIUS server statistics. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -577,7 +577,7 @@
   },
   {
     "slug": "tacacs-durum",
-    "title": "TACACS server status",
+    "title": "TACACS sunucu durumunu görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "TACACS server status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -601,7 +601,7 @@
   },
   {
     "slug": "acl-sayaclari",
-    "title": "ACL match counters",
+    "title": "ACL eşleşme sayaçlarını görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "ACL match counters. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -625,7 +625,7 @@
   },
   {
     "slug": "dhcp-snooping",
-    "title": "DHCP snooping bindings",
+    "title": "DHCP Snooping bağlama tablosunu görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "DHCP snooping bindings. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -649,7 +649,7 @@
   },
   {
     "slug": "dynamic-arp-inspection",
-    "title": "Dynamic ARP Inspection status",
+    "title": "Dynamic ARP Inspection durumunu görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "Dynamic ARP Inspection status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -673,7 +673,7 @@
   },
   {
     "slug": "port-security-ozet",
-    "title": "Port security status",
+    "title": "Port Security durumunu görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "Port security status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -697,7 +697,7 @@
   },
   {
     "slug": "storm-control",
-    "title": "Storm control configuration",
+    "title": "Storm Control yapılandırmasını görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "Storm control configuration. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -721,7 +721,7 @@
   },
   {
     "slug": "errdisable-durum",
-    "title": "Err-disabled interfaces",
+    "title": "Err-disabled arayüzleri görüntüleme",
     "cat": "Sorun Giderme",
     "note": "Err-disabled interfaces. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -745,7 +745,7 @@
   },
   {
     "slug": "arayuz-hata-sayaclari",
-    "title": "Interface error counters",
+    "title": "Arayüz hata sayaçlarını görüntüleme",
     "cat": "Sorun Giderme",
     "note": "Interface error counters. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -769,7 +769,7 @@
   },
   {
     "slug": "stack-uyeleri",
-    "title": "Switch stack members",
+    "title": "Switch stack üyelerini görüntüleme",
     "cat": "Sistem",
     "note": "Switch stack members. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -793,7 +793,7 @@
   },
   {
     "slug": "vsf-durum",
-    "title": "Aruba VSF status",
+    "title": "Aruba VSF durumunu görüntüleme",
     "cat": "Sistem",
     "note": "Aruba VSF status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -817,7 +817,7 @@
   },
   {
     "slug": "irf-durum",
-    "title": "Huawei IRF status",
+    "title": "Huawei IRF durumunu görüntüleme",
     "cat": "Sistem",
     "note": "Huawei IRF status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -841,7 +841,7 @@
   },
   {
     "slug": "vrrp-durum",
-    "title": "VRRP status",
+    "title": "VRRP durumunu görüntüleme",
     "cat": "Routing",
     "note": "VRRP status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -865,7 +865,7 @@
   },
   {
     "slug": "hsrp-durum",
-    "title": "HSRP status",
+    "title": "HSRP durumunu görüntüleme",
     "cat": "Routing",
     "note": "HSRP status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -889,7 +889,7 @@
   },
   {
     "slug": "track-objeleri",
-    "title": "Track objects",
+    "title": "Track nesnelerini görüntüleme",
     "cat": "Routing",
     "note": "Track objects. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -913,7 +913,7 @@
   },
   {
     "slug": "route-map-listesi",
-    "title": "Route-map configuration",
+    "title": "Route-map yapılandırmasını görüntüleme",
     "cat": "Routing",
     "note": "Route-map configuration. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -937,7 +937,7 @@
   },
   {
     "slug": "prefix-listesi",
-    "title": "Prefix-list configuration",
+    "title": "Prefix-list yapılandırmasını görüntüleme",
     "cat": "Routing",
     "note": "Prefix-list configuration. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -961,7 +961,7 @@
   },
   {
     "slug": "pbr-politikalari",
-    "title": "Policy-based routing status",
+    "title": "Policy Based Routing durumunu görüntüleme",
     "cat": "Routing",
     "note": "Policy-based routing status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -985,7 +985,7 @@
   },
   {
     "slug": "igmp-gruplari",
-    "title": "IGMP multicast groups",
+    "title": "IGMP multicast gruplarını görüntüleme",
     "cat": "Routing",
     "note": "IGMP multicast groups. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -1009,7 +1009,7 @@
   },
   {
     "slug": "pim-komsulari",
-    "title": "PIM neighbors",
+    "title": "PIM komşularını görüntüleme",
     "cat": "Routing",
     "note": "PIM neighbors. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -1033,7 +1033,7 @@
   },
   {
     "slug": "nat-cevirileri",
-    "title": "NAT translations",
+    "title": "NAT çeviri tablosunu görüntüleme",
     "cat": "Görüntüleme",
     "note": "NAT translations. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -1057,7 +1057,7 @@
   },
   {
     "slug": "mac-hareket-kayitlari",
-    "title": "MAC move records",
+    "title": "MAC move kayıtlarını görüntüleme",
     "cat": "Sorun Giderme",
     "note": "MAC move records. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -1081,7 +1081,7 @@
   },
   {
     "slug": "dhcp-sunucu-havuzlari",
-    "title": "DHCP server pools",
+    "title": "DHCP sunucu havuzlarını görüntüleme",
     "cat": "Görüntüleme",
     "note": "DHCP server pools. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -1105,7 +1105,7 @@
   },
   {
     "slug": "dhcp-istemci-baglari",
-    "title": "DHCP client bindings",
+    "title": "DHCP istemci bağlarını görüntüleme",
     "cat": "Görüntüleme",
     "note": "DHCP client bindings. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -1129,7 +1129,7 @@
   },
   {
     "slug": "qos-sinif-eslemeleri",
-    "title": "QoS class-map matches",
+    "title": "QoS class-map eşleşmelerini görüntüleme",
     "cat": "QoS",
     "note": "QoS class-map matches. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -1153,7 +1153,7 @@
   },
   {
     "slug": "qos-politika-eslesmeleri",
-    "title": "QoS policy-map matches",
+    "title": "QoS policy-map eşleşmelerini görüntüleme",
     "cat": "QoS",
     "note": "QoS policy-map matches. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
@@ -1177,7 +1177,7 @@
   },
   {
     "slug": "port-kanal-yuk-dagilimi",
-    "title": "Port-channel load balancing",
+    "title": "Port-channel yük dağılımını görüntüleme",
     "cat": "VLAN / Port",
     "note": "Port-channel load balancing. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
     "cisco": {
