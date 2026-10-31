@@ -969,6 +969,506 @@
         "title": "عرض Stp Root Bridge",
         "note": "يُستخدم هذا الأمر لفحص Stp Root Bridge. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
       }
+    },
+    "ospf-komsu-durumu": {
+      "en": {
+        "title": "OSPF neighbor status",
+        "note": "Read-only network command for ospf neighbor status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة جيران OSPF",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة جيران OSPF. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ospf-interface-state": {
+      "en": {
+        "title": "OSPF interface state summary",
+        "note": "Read-only network command for ospf interface state summary. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "ملخص حالة واجهات OSPF",
+        "note": "أمر شبكات للقراءة فقط لعرض ملخص حالة واجهات OSPF. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bgp-peer-capabilities": {
+      "en": {
+        "title": "BGP neighbor capabilities",
+        "note": "Read-only network command for bgp neighbor capabilities. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "إمكانات جيران BGP",
+        "note": "أمر شبكات للقراءة فقط لعرض إمكانات جيران BGP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bgp-rotalari": {
+      "en": {
+        "title": "BGP routing table",
+        "note": "Read-only network command for bgp routing table. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "جدول توجيه BGP",
+        "note": "أمر شبكات للقراءة فقط لعرض جدول توجيه BGP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bfd-oturumlari": {
+      "en": {
+        "title": "BFD session status",
+        "note": "Read-only network command for bfd session status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة جلسات BFD",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة جلسات BFD. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "vrf-listesi": {
+      "en": {
+        "title": "VRF list",
+        "note": "Read-only network command for vrf list. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "قائمة VRF",
+        "note": "أمر شبكات للقراءة فقط لعرض قائمة VRF. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ipv6-arayuzleri": {
+      "en": {
+        "title": "IPv6 interface summary",
+        "note": "Read-only network command for ipv6 interface summary. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "ملخص واجهات IPv6",
+        "note": "أمر شبكات للقراءة فقط لعرض ملخص واجهات IPv6. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ipv6-rotalari": {
+      "en": {
+        "title": "IPv6 routing table",
+        "note": "Read-only network command for ipv6 routing table. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "جدول توجيه IPv6",
+        "note": "أمر شبكات للقراءة فقط لعرض جدول توجيه IPv6. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ipv6-komsulari": {
+      "en": {
+        "title": "IPv6 neighbor table",
+        "note": "Read-only network command for ipv6 neighbor table. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "جدول جيران IPv6",
+        "note": "أمر شبكات للقراءة فقط لعرض جدول جيران IPv6. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "lldp-detay": {
+      "en": {
+        "title": "LLDP neighbor details",
+        "note": "Read-only network command for lldp neighbor details. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "تفاصيل جيران LLDP",
+        "note": "أمر شبكات للقراءة فقط لعرض تفاصيل جيران LLDP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "cdp-detay": {
+      "en": {
+        "title": "CDP neighbor details",
+        "note": "Read-only network command for cdp neighbor details. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "تفاصيل جيران CDP",
+        "note": "أمر شبكات للقراءة فقط لعرض تفاصيل جيران CDP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "stp-kok-koprusu": {
+      "en": {
+        "title": "STP root bridge",
+        "note": "Read-only network command for stp root bridge. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "الجسر الجذر لبروتوكول STP",
+        "note": "أمر شبكات للقراءة فقط لعرض الجسر الجذر لبروتوكول STP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "stp-arayuz-detay": {
+      "en": {
+        "title": "STP interface details",
+        "note": "Read-only network command for stp interface details. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهات STP",
+        "note": "أمر شبكات للقراءة فقط لعرض تفاصيل واجهات STP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "etherchannel-ozet": {
+      "en": {
+        "title": "EtherChannel summary",
+        "note": "Read-only network command for etherchannel summary. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "ملخص EtherChannel",
+        "note": "أمر شبكات للقراءة فقط لعرض ملخص EtherChannel. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "lacp-komsulari": {
+      "en": {
+        "title": "LACP neighbors",
+        "note": "Read-only network command for lacp neighbors. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "جيران LACP",
+        "note": "أمر شبكات للقراءة فقط لعرض جيران LACP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "poe-port-power": {
+      "en": {
+        "title": "PoE port power",
+        "note": "Read-only network command for poe port power. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "طاقة منافذ PoE",
+        "note": "أمر شبكات للقراءة فقط لعرض طاقة منافذ PoE. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "optik-alici-verici": {
+      "en": {
+        "title": "Optical transceiver details",
+        "note": "Read-only network command for optical transceiver details. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "تفاصيل وحدات الإرسال والاستقبال الضوئية",
+        "note": "أمر شبكات للقراءة فقط لعرض تفاصيل وحدات الإرسال والاستقبال الضوئية. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ortam-sensorleri": {
+      "en": {
+        "title": "Environmental sensor status",
+        "note": "Read-only network command for environmental sensor status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة مستشعرات البيئة",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة مستشعرات البيئة. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "cpu-prosesleri": {
+      "en": {
+        "title": "CPU process usage",
+        "note": "Read-only network command for cpu process usage. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "استخدام عمليات CPU",
+        "note": "أمر شبكات للقراءة فقط لعرض استخدام عمليات CPU. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bellek-kullanimi": {
+      "en": {
+        "title": "Memory utilization",
+        "note": "Read-only network command for memory utilization. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "استخدام الذاكرة",
+        "note": "أمر شبكات للقراءة فقط لعرض استخدام الذاكرة. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "log-buffer": {
+      "en": {
+        "title": "System log buffer",
+        "note": "Read-only network command for system log buffer. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "سجل النظام",
+        "note": "أمر شبكات للقراءة فقط لعرض سجل النظام. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ntp-durum": {
+      "en": {
+        "title": "NTP status",
+        "note": "Read-only network command for ntp status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة NTP",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة NTP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "snmp-durum": {
+      "en": {
+        "title": "SNMP status",
+        "note": "Read-only network command for snmp status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة SNMP",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة SNMP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "radius-istatistik": {
+      "en": {
+        "title": "RADIUS statistics",
+        "note": "Read-only network command for radius statistics. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "إحصاءات RADIUS",
+        "note": "أمر شبكات للقراءة فقط لعرض إحصاءات RADIUS. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "tacacs-durum": {
+      "en": {
+        "title": "TACACS server status",
+        "note": "Read-only network command for tacacs server status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة خوادم TACACS",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة خوادم TACACS. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "acl-sayaclari": {
+      "en": {
+        "title": "ACL counters",
+        "note": "Read-only network command for acl counters. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "عدادات ACL",
+        "note": "أمر شبكات للقراءة فقط لعرض عدادات ACL. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "dhcp-snooping": {
+      "en": {
+        "title": "DHCP snooping status",
+        "note": "Read-only network command for dhcp snooping status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة DHCP Snooping",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة DHCP Snooping. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "dynamic-arp-inspection": {
+      "en": {
+        "title": "Dynamic ARP Inspection status",
+        "note": "Read-only network command for dynamic arp inspection status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة Dynamic ARP Inspection",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة Dynamic ARP Inspection. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "port-security-ozet": {
+      "en": {
+        "title": "Port-security summary",
+        "note": "Read-only network command for port-security summary. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "ملخص أمان المنافذ",
+        "note": "أمر شبكات للقراءة فقط لعرض ملخص أمان المنافذ. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "storm-control": {
+      "en": {
+        "title": "Storm-control status",
+        "note": "Read-only network command for storm-control status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة Storm Control",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة Storm Control. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "errdisable-durum": {
+      "en": {
+        "title": "Err-disabled port status",
+        "note": "Read-only network command for err-disabled port status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة المنافذ المعطلة بسبب الخطأ",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة المنافذ المعطلة بسبب الخطأ. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "arayuz-hata-sayaclari": {
+      "en": {
+        "title": "Interface error counters",
+        "note": "Read-only network command for interface error counters. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "عدادات أخطاء الواجهات",
+        "note": "أمر شبكات للقراءة فقط لعرض عدادات أخطاء الواجهات. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "stack-uyeleri": {
+      "en": {
+        "title": "Stack member status",
+        "note": "Read-only network command for stack member status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة أعضاء المكدس",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة أعضاء المكدس. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "vsf-durum": {
+      "en": {
+        "title": "VSF stack status",
+        "note": "Read-only network command for vsf stack status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة مكدس VSF",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة مكدس VSF. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "irf-durum": {
+      "en": {
+        "title": "IRF fabric status",
+        "note": "Read-only network command for irf fabric status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة بنية IRF",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة بنية IRF. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "vrrp-durum": {
+      "en": {
+        "title": "VRRP status",
+        "note": "Read-only network command for vrrp status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة VRRP",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة VRRP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "hsrp-durum": {
+      "en": {
+        "title": "HSRP status",
+        "note": "Read-only network command for hsrp status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة HSRP",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة HSRP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "track-objeleri": {
+      "en": {
+        "title": "Tracking object status",
+        "note": "Read-only network command for tracking object status. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "حالة كائنات التتبع",
+        "note": "أمر شبكات للقراءة فقط لعرض حالة كائنات التتبع. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "route-map-listesi": {
+      "en": {
+        "title": "Route-map list",
+        "note": "Read-only network command for route-map list. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "قائمة Route-map",
+        "note": "أمر شبكات للقراءة فقط لعرض قائمة Route-map. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "prefix-listesi": {
+      "en": {
+        "title": "Prefix-list entries",
+        "note": "Read-only network command for prefix-list entries. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "إدخالات Prefix-list",
+        "note": "أمر شبكات للقراءة فقط لعرض إدخالات Prefix-list. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "pbr-politikalari": {
+      "en": {
+        "title": "Policy-based routing policies",
+        "note": "Read-only network command for policy-based routing policies. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "سياسات التوجيه القائم على السياسة",
+        "note": "أمر شبكات للقراءة فقط لعرض سياسات التوجيه القائم على السياسة. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "igmp-gruplari": {
+      "en": {
+        "title": "IGMP groups",
+        "note": "Read-only network command for igmp groups. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP",
+        "note": "أمر شبكات للقراءة فقط لعرض مجموعات IGMP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "pim-komsulari": {
+      "en": {
+        "title": "PIM neighbors",
+        "note": "Read-only network command for pim neighbors. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "جيران PIM",
+        "note": "أمر شبكات للقراءة فقط لعرض جيران PIM. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "nat-cevirileri": {
+      "en": {
+        "title": "NAT translations",
+        "note": "Read-only network command for nat translations. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "ترجمات NAT",
+        "note": "أمر شبكات للقراءة فقط لعرض ترجمات NAT. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "mac-hareket-kayitlari": {
+      "en": {
+        "title": "MAC move events",
+        "note": "Read-only network command for mac move events. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "أحداث انتقال عناوين MAC",
+        "note": "أمر شبكات للقراءة فقط لعرض أحداث انتقال عناوين MAC. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "dhcp-sunucu-havuzlari": {
+      "en": {
+        "title": "DHCP server pools",
+        "note": "Read-only network command for dhcp server pools. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "مجموعات خادم DHCP",
+        "note": "أمر شبكات للقراءة فقط لعرض مجموعات خادم DHCP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "dhcp-istemci-baglari": {
+      "en": {
+        "title": "DHCP client bindings",
+        "note": "Read-only network command for dhcp client bindings. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "ارتباطات عملاء DHCP",
+        "note": "أمر شبكات للقراءة فقط لعرض ارتباطات عملاء DHCP. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "qos-sinif-eslemeleri": {
+      "en": {
+        "title": "QoS class maps",
+        "note": "Read-only network command for qos class maps. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "خرائط فئات QoS",
+        "note": "أمر شبكات للقراءة فقط لعرض خرائط فئات QoS. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "qos-politika-eslesmeleri": {
+      "en": {
+        "title": "QoS policy matches",
+        "note": "Read-only network command for qos policy matches. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "مطابقات سياسات QoS",
+        "note": "أمر شبكات للقراءة فقط لعرض مطابقات سياسات QoS. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "port-kanal-yuk-dagilimi": {
+      "en": {
+        "title": "Port-channel load distribution",
+        "note": "Read-only network command for port-channel load distribution. Verify exact syntax and feature support for the target model and software release."
+      },
+      "ar": {
+        "title": "توزيع حمل قناة المنافذ",
+        "note": "أمر شبكات للقراءة فقط لعرض توزيع حمل قناة المنافذ. تحقق من الصياغة ودعم الميزة للطراز وإصدار البرنامج المستهدف."
+      }
     }
   }
 }
