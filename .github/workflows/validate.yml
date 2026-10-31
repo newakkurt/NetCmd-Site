@@ -39,7 +39,7 @@ jobs:
           test -s dist/ar/index.html
 
       - name: Audit command catalogue for repeated patterns
-        run: python3 scripts/audit_command_catalog.py --file commands_2000_d.json
+        run: python3 scripts/audit_command_catalog.py 
 
       - name: Validate JavaScript syntax
         run: |
