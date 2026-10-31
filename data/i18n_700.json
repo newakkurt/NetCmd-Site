@@ -44,7 +44,7 @@
   "items": {
     "wlan-ap-summary": {
       "en": {
-        "title": "Wireless AP summary",
+        "title": "Wlan Ap Summary",
         "note": "AP adlarını, çalışma durumunu ve yönetim bağlantısını kontrol edin."
       },
       "ar": {
@@ -54,7 +54,7 @@
     },
     "wlan-client-summary": {
       "en": {
-        "title": "Wireless client summary",
+        "title": "Wlan Client Summary",
         "note": "İstemci MAC, SSID, AP ve bağlantı durumunu kontrol edin."
       },
       "ar": {
@@ -64,7 +64,7 @@
     },
     "wlan-ssid-list": {
       "en": {
-        "title": "SSID inventory",
+        "title": "Wlan Ssid List",
         "note": "SSID, WLAN profili ve yayın durumunu doğrulayın."
       },
       "ar": {
@@ -74,7 +74,7 @@
     },
     "wlan-radio-status": {
       "en": {
-        "title": "AP radio status",
+        "title": "Wlan Radio Status",
         "note": "2.4/5 GHz radyo kanalı, güç ve çalışma durumunu inceleyin."
       },
       "ar": {
@@ -84,7 +84,7 @@
     },
     "wlan-client-detail": {
       "en": {
-        "title": "Wireless client details",
+        "title": "Wlan Client Detail",
         "note": "MAC adresi ile istemcinin AP, RSSI ve bağlantı ayrıntılarını kontrol edin."
       },
       "ar": {
@@ -94,7 +94,7 @@
     },
     "vpn-ipsec-sa": {
       "en": {
-        "title": "IPsec security associations",
+        "title": "Vpn Ipsec Sa",
         "note": "IKE/IPsec SA durumunu, SPI ve sayaçları kontrol edin."
       },
       "ar": {
@@ -104,7 +104,7 @@
     },
     "vpn-ike-sa": {
       "en": {
-        "title": "IKE security associations",
+        "title": "Vpn Ike Sa",
         "note": "IKE Phase 1 komşuluklarının aktifliğini ve kimlik bilgilerini kontrol edin."
       },
       "ar": {
@@ -114,7 +114,7 @@
     },
     "vpn-tunnel-summary": {
       "en": {
-        "title": "VPN tunnel summary",
+        "title": "Vpn Tunnel Summary",
         "note": "Tünellerin up/down durumunu ve uzak uç adreslerini inceleyin."
       },
       "ar": {
@@ -124,7 +124,7 @@
     },
     "vpn-ssl-status": {
       "en": {
-        "title": "SSL VPN sessions",
+        "title": "Vpn Ssl Status",
         "note": "Aktif SSL VPN kullanıcılarını ve oturum sürelerini kontrol edin."
       },
       "ar": {
@@ -134,7 +134,7 @@
     },
     "qos-policy-interface": {
       "en": {
-        "title": "QoS policy on interface",
+        "title": "Qos Policy Interface",
         "note": "Giriş/çıkış yönündeki servis politikalarını ve eşleşen sınıfları inceleyin."
       },
       "ar": {
@@ -144,7 +144,7 @@
     },
     "qos-class-map": {
       "en": {
-        "title": "QoS class map",
+        "title": "Qos Class Map",
         "note": "Class-map eşleşme koşullarını ve bağlı policy-map yapılarını kontrol edin."
       },
       "ar": {
@@ -154,7 +154,7 @@
     },
     "qos-policy-map": {
       "en": {
-        "title": "QoS policy map",
+        "title": "Qos Policy Map",
         "note": "Policy-map içindeki policing, shaping ve queue parametrelerini inceleyin."
       },
       "ar": {
@@ -164,7 +164,7 @@
     },
     "multicast-routing-table": {
       "en": {
-        "title": "Multicast routing table",
+        "title": "Multicast Routing Table",
         "note": "Multicast kaynak/grup kayıtlarını ve RPF arayüzlerini inceleyin."
       },
       "ar": {
@@ -174,7 +174,7 @@
     },
     "pim-neighbor-summary": {
       "en": {
-        "title": "PIM neighbor summary",
+        "title": "Pim Neighbor Summary",
         "note": "Multicast yönlendirme komşularının arayüz ve durum bilgilerini kontrol edin."
       },
       "ar": {
@@ -184,7 +184,7 @@
     },
     "igmp-groups": {
       "en": {
-        "title": "IGMP group membership",
+        "title": "Igmp Groups",
         "note": "VLAN ve arayüz bazında üyelik kayıtlarını ve grup adreslerini inceleyin."
       },
       "ar": {
@@ -194,7 +194,7 @@
     },
     "macsec-status": {
       "en": {
-        "title": "MACsec session status",
+        "title": "Macsec Status",
         "note": "MKA oturumlarını ve secure channel durumunu kontrol edin."
       },
       "ar": {
@@ -204,7 +204,7 @@
     },
     "port-security-addresses": {
       "en": {
-        "title": "Port security MAC entries",
+        "title": "Port Security Addresses",
         "note": "Öğrenilen secure MAC adreslerini ve ihlal sayaçlarını kontrol edin."
       },
       "ar": {
@@ -214,7 +214,7 @@
     },
     "storm-control-status": {
       "en": {
-        "title": "Storm control status",
+        "title": "Storm Control Status",
         "note": "Broadcast, multicast ve unknown-unicast eşiklerini ve aksiyonlarını kontrol edin."
       },
       "ar": {
@@ -224,7 +224,7 @@
     },
     "stp-inconsistent-ports": {
       "en": {
-        "title": "STP inconsistent ports",
+        "title": "Stp Inconsistent Ports",
         "note": "Root guard veya BPDU guard nedeniyle bloklanan portları belirleyin."
       },
       "ar": {
@@ -234,7 +234,7 @@
     },
     "stp-root-detail": {
       "en": {
-        "title": "STP root bridge details",
+        "title": "Stp Root Detail",
         "note": "Root bridge ID, root path cost ve root port bilgisini doğrulayın."
       },
       "ar": {
@@ -244,7 +244,7 @@
     },
     "vlan-interface-list": {
       "en": {
-        "title": "VLAN interface inventory",
+        "title": "Vlan Interface List",
         "note": "SVI veya VLANIF arayüzlerini ve IP adreslerini kontrol edin."
       },
       "ar": {
@@ -254,7 +254,7 @@
     },
     "trunk-allowed-vlans": {
       "en": {
-        "title": "Allowed VLANs on trunks",
+        "title": "Trunk Allowed Vlans",
         "note": "Trunk linklerde allowed VLAN listesini ve native/PVID ayarını karşılaştırın."
       },
       "ar": {
@@ -264,7 +264,7 @@
     },
     "switch-stack-status": {
       "en": {
-        "title": "Switch stack members",
+        "title": "Switch Stack Status",
         "note": "Stack üye numarası, rol, durum ve donanım bilgisini kontrol edin."
       },
       "ar": {
@@ -274,7 +274,7 @@
     },
     "redundancy-status": {
       "en": {
-        "title": "Redundancy status",
+        "title": "Redundancy Status",
         "note": "Active/standby rolünü ve failover durumunu doğrulayın."
       },
       "ar": {
@@ -284,7 +284,7 @@
     },
     "fan-status": {
       "en": {
-        "title": "Fan module status",
+        "title": "Fan Status",
         "note": "Fan hızını ve alarm durumunu donanım sağlığı açısından inceleyin."
       },
       "ar": {
@@ -294,7 +294,7 @@
     },
     "power-supply-status": {
       "en": {
-        "title": "Power supply status",
+        "title": "Power Supply Status",
         "note": "PSU modüllerinin varlık, giriş ve alarm durumunu kontrol edin."
       },
       "ar": {
@@ -304,7 +304,7 @@
     },
     "temperature-sensors": {
       "en": {
-        "title": "Temperature sensors",
+        "title": "Temperature Sensors",
         "note": "Sensör sıcaklıklarını eşik ve alarm değerleriyle karşılaştırın."
       },
       "ar": {
@@ -314,7 +314,7 @@
     },
     "config-register": {
       "en": {
-        "title": "Configuration register",
+        "title": "Config Register",
         "note": "Boot davranışını etkileyen config-register değerini bakım öncesi kontrol edin."
       },
       "ar": {
@@ -324,7 +324,7 @@
     },
     "boot-images": {
       "en": {
-        "title": "Boot image inventory",
+        "title": "Boot Images",
         "note": "Aktif ve sonraki açılışta kullanılacak imaj dosyalarını doğrulayın."
       },
       "ar": {
@@ -334,7 +334,7 @@
     },
     "license-status": {
       "en": {
-        "title": "License status",
+        "title": "License Status",
         "note": "Özellik lisanslarının etkinlik ve son kullanma durumunu kontrol edin."
       },
       "ar": {
