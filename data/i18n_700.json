@@ -182,16 +182,6 @@
         "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
       }
     },
-    "igmp-groups": {
-      "en": {
-        "title": "Igmp Groups",
-        "note": "VLAN ve arayüz bazında üyelik kayıtlarını ve grup adreslerini inceleyin."
-      },
-      "ar": {
-        "title": "عضوية مجموعات IGMP",
-        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
-      }
-    },
     "macsec-status": {
       "en": {
         "title": "Macsec Status",
@@ -329,16 +319,6 @@
       },
       "ar": {
         "title": "قائمة صور الإقلاع",
-        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
-      }
-    },
-    "license-status": {
-      "en": {
-        "title": "License Status",
-        "note": "Özellik lisanslarının etkinlik ve son kullanma durumunu kontrol edin."
-      },
-      "ar": {
-        "title": "حالة الترخيص",
         "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
       }
     }
