@@ -107,3 +107,86 @@
     else if (e.key === '/' && !/^(INPUT|TEXTAREA|SELECT)$/.test((document.activeElement || {}).tagName || '')) { e.preventDefault(); open(); }
   });
 })();
+
+
+/* NetCmd UX layer: accessible copy controls and a small local recent-command history.
+   History stores only command slugs/titles in this browser; no network request is made. */
+(function () {
+  'use strict';
+  var lang = (document.documentElement.lang || 'en').slice(0, 2);
+  var words = {
+    tr: {copy:'Kopyala', copied:'Kopyalandı', failed:'Kopyalanamadı', recent:'Son kullanılan komutlar', clear:'Geçmişi temizle', empty:'Henüz komut açmadın.'},
+    en: {copy:'Copy', copied:'Copied', failed:'Copy failed', recent:'Recently viewed commands', clear:'Clear history', empty:'No commands viewed yet.'},
+    ar: {copy:'نسخ', copied:'تم النسخ', failed:'تعذر النسخ', recent:'الأوامر التي شاهدتها مؤخراً', clear:'مسح السجل', empty:'لم تفتح أي أوامر بعد.'}
+  };
+  var tx = words[lang] || words.en;
+  var key = 'netcmd.recent.v1';
+  function read() { try { var v = JSON.parse(localStorage.getItem(key) || '[]'); return Array.isArray(v) ? v.slice(0, 12) : []; } catch (e) { return []; } }
+  function write(v) { try { localStorage.setItem(key, JSON.stringify(v.slice(0, 12))); } catch (e) {} }
+  function slugFrom(url) {
+    var m = /\\/(?:tr|en|ar)\\/cmd\\/([^/]+)\\/?(?:[?#].*)?$/.exec(url || '');
+    return m ? m[1] : '';
+  }
+  function record(slug, title) {
+    if (!slug) return;
+    var a = read().filter(function (x) { return x && x.slug !== slug; });
+    a.unshift({slug: slug, title: String(title || slug).slice(0, 140), at: Date.now()});
+    write(a);
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var slug = slugFrom(a.getAttribute('href'));
+    if (slug) record(slug, a.textContent.trim());
+  });
+
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+    return new Promise(function (resolve, reject) {
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy') ? resolve() : reject(new Error('copy failed')); }
+      catch (err) { reject(err); }
+      ta.remove();
+    });
+  }
+  document.querySelectorAll('main pre').forEach(function (pre) {
+    if (pre.querySelector('.nc-copy')) return;
+    var code = pre.querySelector('code') || pre;
+    var btn = document.createElement('button');
+    btn.type = 'button'; btn.className = 'hbtn nc-copy'; btn.textContent = tx.copy;
+    btn.style.cssText = 'float:inline-end;position:relative;z-index:1;margin:6px 8px 0 0';
+    btn.addEventListener('click', function () {
+      copyText(code.innerText || code.textContent || '').then(function () {
+        btn.textContent = tx.copied; btn.setAttribute('aria-live', 'polite');
+        setTimeout(function () { btn.textContent = tx.copy; }, 1400);
+      }).catch(function () { btn.textContent = tx.failed; setTimeout(function () { btn.textContent = tx.copy; }, 1600); });
+    });
+    pre.insertBefore(btn, pre.firstChild);
+  });
+
+  var main = document.querySelector('main');
+  if (main && /^\\/(tr|en|ar)\\/$/.test(location.pathname)) {
+    var history = read();
+    var section = document.createElement('section');
+    section.className = 'nc-recent';
+    section.style.cssText = 'margin:18px 0;padding:12px 14px;border:1px solid var(--bd);border-radius:10px;background:var(--card)';
+    var heading = document.createElement('div');
+    heading.style.cssText = 'display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between';
+    var h = document.createElement('h2'); h.textContent = tx.recent; h.style.margin = '0';
+    var clear = document.createElement('button'); clear.type = 'button'; clear.className = 'hbtn'; clear.textContent = tx.clear;
+    heading.appendChild(h); heading.appendChild(clear); section.appendChild(heading);
+    var list = document.createElement('ul'); list.className = 'cl';
+    if (!history.length) { var empty = document.createElement('li'); empty.textContent = tx.empty; list.appendChild(empty); }
+    history.forEach(function (item) {
+      if (!item || !item.slug) return;
+      var li = document.createElement('li'), a = document.createElement('a');
+      a.href = '/' + lang + '/cmd/' + encodeURIComponent(item.slug) + '/';
+      a.textContent = item.title || item.slug; li.appendChild(a); list.appendChild(li);
+    });
+    section.appendChild(list);
+    clear.addEventListener('click', function () { write([]); list.textContent = ''; var li = document.createElement('li'); li.textContent = tx.empty; list.appendChild(li); });
+    main.insertBefore(section, main.firstChild);
+  }
+})();
