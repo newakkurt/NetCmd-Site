@@ -42,5 +42,8 @@ jobs:
         run: |
           find assets -type f -name '*.js' -print0 | xargs -0 -r -n1 node --check
 
+      - name: Run network logic tests
+        run: node --test tests/*.test.cjs
+
       - name: Validate generated sitemap XML
         run: python3 -c "import xml.etree.ElementTree as ET; ET.parse('dist/sitemap.xml')"
