@@ -1,4 +1,556 @@
 {
+  "cihaz-envanteri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Komutu çalıştırmadan önce cihazın işletim sistemi ailesini ve sürümünü doğrulayın."
+          }
+        ],
+        "example": "Önce cihazın modelini ve yazılım sürümünü belirleyin. Komutu uygun görünümde çalıştırın; çıktıyı aynı zaman aralığındaki olay ve değişiklik kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin komutlarını aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş performansın kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the device OS family and release before running the command."
+          }
+        ],
+        "example": "Identify the device model and software release first. Run the command in the appropriate view and correlate the output with events and change records from the same time window.",
+        "mistakes": [
+          "Assuming command syntax is identical across OS families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical performance."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من عائلة نظام تشغيل الجهاز وإصداره قبل تنفيذ الأمر."
+          }
+        ],
+        "example": "حدد طراز الجهاز وإصدار البرنامج أولاً. نفّذ الأمر في وضع العرض المناسب، ثم قارن الناتج بالأحداث وسجلات التغيير في الفترة الزمنية نفسها.",
+        "mistakes": [
+          "افتراض تطابق صياغة الأوامر بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الأداء السابق."
+        ]
+      }
+    }
+  },
+  "poe-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Komutu çalıştırmadan önce cihazın işletim sistemi ailesini ve sürümünü doğrulayın."
+          }
+        ],
+        "example": "Önce cihazın modelini ve yazılım sürümünü belirleyin. Komutu uygun görünümde çalıştırın; çıktıyı aynı zaman aralığındaki olay ve değişiklik kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin komutlarını aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş performansın kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the device OS family and release before running the command."
+          }
+        ],
+        "example": "Identify the device model and software release first. Run the command in the appropriate view and correlate the output with events and change records from the same time window.",
+        "mistakes": [
+          "Assuming command syntax is identical across OS families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical performance."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من عائلة نظام تشغيل الجهاز وإصداره قبل تنفيذ الأمر."
+          }
+        ],
+        "example": "حدد طراز الجهاز وإصدار البرنامج أولاً. نفّذ الأمر في وضع العرض المناسب، ثم قارن الناتج بالأحداث وسجلات التغيير في الفترة الزمنية نفسها.",
+        "mistakes": [
+          "افتراض تطابق صياغة الأوامر بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الأداء السابق."
+        ]
+      }
+    }
+  },
+  "lacp-ozeti": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Komutu çalıştırmadan önce cihazın işletim sistemi ailesini ve sürümünü doğrulayın."
+          }
+        ],
+        "example": "Önce cihazın modelini ve yazılım sürümünü belirleyin. Komutu uygun görünümde çalıştırın; çıktıyı aynı zaman aralığındaki olay ve değişiklik kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin komutlarını aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş performansın kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the device OS family and release before running the command."
+          }
+        ],
+        "example": "Identify the device model and software release first. Run the command in the appropriate view and correlate the output with events and change records from the same time window.",
+        "mistakes": [
+          "Assuming command syntax is identical across OS families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical performance."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من عائلة نظام تشغيل الجهاز وإصداره قبل تنفيذ الأمر."
+          }
+        ],
+        "example": "حدد طراز الجهاز وإصدار البرنامج أولاً. نفّذ الأمر في وضع العرض المناسب، ثم قارن الناتج بالأحداث وسجلات التغيير في الفترة الزمنية نفسها.",
+        "mistakes": [
+          "افتراض تطابق صياغة الأوامر بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الأداء السابق."
+        ]
+      }
+    }
+  },
+  "stp-ozeti": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Komutu çalıştırmadan önce cihazın işletim sistemi ailesini ve sürümünü doğrulayın."
+          }
+        ],
+        "example": "Önce cihazın modelini ve yazılım sürümünü belirleyin. Komutu uygun görünümde çalıştırın; çıktıyı aynı zaman aralığındaki olay ve değişiklik kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin komutlarını aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş performansın kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the device OS family and release before running the command."
+          }
+        ],
+        "example": "Identify the device model and software release first. Run the command in the appropriate view and correlate the output with events and change records from the same time window.",
+        "mistakes": [
+          "Assuming command syntax is identical across OS families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical performance."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من عائلة نظام تشغيل الجهاز وإصداره قبل تنفيذ الأمر."
+          }
+        ],
+        "example": "حدد طراز الجهاز وإصدار البرنامج أولاً. نفّذ الأمر في وضع العرض المناسب، ثم قارن الناتج بالأحداث وسجلات التغيير في الفترة الزمنية نفسها.",
+        "mistakes": [
+          "افتراض تطابق صياغة الأوامر بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الأداء السابق."
+        ]
+      }
+    }
+  },
+  "dhcp-snooping-kayitlari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Komutu çalıştırmadan önce cihazın işletim sistemi ailesini ve sürümünü doğrulayın."
+          }
+        ],
+        "example": "Önce cihazın modelini ve yazılım sürümünü belirleyin. Komutu uygun görünümde çalıştırın; çıktıyı aynı zaman aralığındaki olay ve değişiklik kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin komutlarını aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş performansın kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the device OS family and release before running the command."
+          }
+        ],
+        "example": "Identify the device model and software release first. Run the command in the appropriate view and correlate the output with events and change records from the same time window.",
+        "mistakes": [
+          "Assuming command syntax is identical across OS families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical performance."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من عائلة نظام تشغيل الجهاز وإصداره قبل تنفيذ الأمر."
+          }
+        ],
+        "example": "حدد طراز الجهاز وإصدار البرنامج أولاً. نفّذ الأمر في وضع العرض المناسب، ثم قارن الناتج بالأحداث وسجلات التغيير في الفترة الزمنية نفسها.",
+        "mistakes": [
+          "افتراض تطابق صياغة الأوامر بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الأداء السابق."
+        ]
+      }
+    }
+  },
+  "optik-modul-envanteri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Komutu çalıştırmadan önce cihazın işletim sistemi ailesini ve sürümünü doğrulayın."
+          }
+        ],
+        "example": "Önce cihazın modelini ve yazılım sürümünü belirleyin. Komutu uygun görünümde çalıştırın; çıktıyı aynı zaman aralığındaki olay ve değişiklik kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin komutlarını aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş performansın kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the device OS family and release before running the command."
+          }
+        ],
+        "example": "Identify the device model and software release first. Run the command in the appropriate view and correlate the output with events and change records from the same time window.",
+        "mistakes": [
+          "Assuming command syntax is identical across OS families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical performance."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من عائلة نظام تشغيل الجهاز وإصداره قبل تنفيذ الأمر."
+          }
+        ],
+        "example": "حدد طراز الجهاز وإصدار البرنامج أولاً. نفّذ الأمر في وضع العرض المناسب، ثم قارن الناتج بالأحداث وسجلات التغيير في الفترة الزمنية نفسها.",
+        "mistakes": [
+          "افتراض تطابق صياغة الأوامر بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الأداء السابق."
+        ]
+      }
+    }
+  },
+  "vlan-ayrinti": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Komutu çalıştırmadan önce cihazın işletim sistemi ailesini ve sürümünü doğrulayın."
+          }
+        ],
+        "example": "Önce cihazın modelini ve yazılım sürümünü belirleyin. Komutu uygun görünümde çalıştırın; çıktıyı aynı zaman aralığındaki olay ve değişiklik kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin komutlarını aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş performansın kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the device OS family and release before running the command."
+          }
+        ],
+        "example": "Identify the device model and software release first. Run the command in the appropriate view and correlate the output with events and change records from the same time window.",
+        "mistakes": [
+          "Assuming command syntax is identical across OS families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical performance."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من عائلة نظام تشغيل الجهاز وإصداره قبل تنفيذ الأمر."
+          }
+        ],
+        "example": "حدد طراز الجهاز وإصدار البرنامج أولاً. نفّذ الأمر في وضع العرض المناسب، ثم قارن الناتج بالأحداث وسجلات التغيير في الفترة الزمنية نفسها.",
+        "mistakes": [
+          "افتراض تطابق صياغة الأوامر بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الأداء السابق."
+        ]
+      }
+    }
+  },
+  "port-security-ozeti": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Komutu çalıştırmadan önce cihazın işletim sistemi ailesini ve sürümünü doğrulayın."
+          }
+        ],
+        "example": "Önce cihazın modelini ve yazılım sürümünü belirleyin. Komutu uygun görünümde çalıştırın; çıktıyı aynı zaman aralığındaki olay ve değişiklik kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin komutlarını aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş performansın kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the device OS family and release before running the command."
+          }
+        ],
+        "example": "Identify the device model and software release first. Run the command in the appropriate view and correlate the output with events and change records from the same time window.",
+        "mistakes": [
+          "Assuming command syntax is identical across OS families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical performance."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من عائلة نظام تشغيل الجهاز وإصداره قبل تنفيذ الأمر."
+          }
+        ],
+        "example": "حدد طراز الجهاز وإصدار البرنامج أولاً. نفّذ الأمر في وضع العرض المناسب، ثم قارن الناتج بالأحداث وسجلات التغيير في الفترة الزمنية نفسها.",
+        "mistakes": [
+          "افتراض تطابق صياغة الأوامر بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الأداء السابق."
+        ]
+      }
+    }
+  },
+  "log-sistem": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Komutu çalıştırmadan önce cihazın işletim sistemi ailesini ve sürümünü doğrulayın."
+          }
+        ],
+        "example": "Önce cihazın modelini ve yazılım sürümünü belirleyin. Komutu uygun görünümde çalıştırın; çıktıyı aynı zaman aralığındaki olay ve değişiklik kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin komutlarını aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş performansın kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the device OS family and release before running the command."
+          }
+        ],
+        "example": "Identify the device model and software release first. Run the command in the appropriate view and correlate the output with events and change records from the same time window.",
+        "mistakes": [
+          "Assuming command syntax is identical across OS families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical performance."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من عائلة نظام تشغيل الجهاز وإصداره قبل تنفيذ الأمر."
+          }
+        ],
+        "example": "حدد طراز الجهاز وإصدار البرنامج أولاً. نفّذ الأمر في وضع العرض المناسب، ثم قارن الناتج بالأحداث وسجلات التغيير في الفترة الزمنية نفسها.",
+        "mistakes": [
+          "افتراض تطابق صياغة الأوامر بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الأداء السابق."
+        ]
+      }
+    }
+  },
+  "ntp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Komutu çalıştırmadan önce cihazın işletim sistemi ailesini ve sürümünü doğrulayın."
+          }
+        ],
+        "example": "Önce cihazın modelini ve yazılım sürümünü belirleyin. Komutu uygun görünümde çalıştırın; çıktıyı aynı zaman aralığındaki olay ve değişiklik kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin komutlarını aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş performansın kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the device OS family and release before running the command."
+          }
+        ],
+        "example": "Identify the device model and software release first. Run the command in the appropriate view and correlate the output with events and change records from the same time window.",
+        "mistakes": [
+          "Assuming command syntax is identical across OS families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical performance."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من عائلة نظام تشغيل الجهاز وإصداره قبل تنفيذ الأمر."
+          }
+        ],
+        "example": "حدد طراز الجهاز وإصدار البرنامج أولاً. نفّذ الأمر في وضع العرض المناسب، ثم قارن الناتج بالأحداث وسجلات التغيير في الفترة الزمنية نفسها.",
+        "mistakes": [
+          "افتراض تطابق صياغة الأوامر بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الأداء السابق."
+        ]
+      }
+    }
+  },
+  "cpu-kullanimi-ozeti": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Komutu çalıştırmadan önce cihazın işletim sistemi ailesini ve sürümünü doğrulayın."
+          }
+        ],
+        "example": "Önce cihazın modelini ve yazılım sürümünü belirleyin. Komutu uygun görünümde çalıştırın; çıktıyı aynı zaman aralığındaki olay ve değişiklik kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin komutlarını aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş performansın kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the device OS family and release before running the command."
+          }
+        ],
+        "example": "Identify the device model and software release first. Run the command in the appropriate view and correlate the output with events and change records from the same time window.",
+        "mistakes": [
+          "Assuming command syntax is identical across OS families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical performance."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من عائلة نظام تشغيل الجهاز وإصداره قبل تنفيذ الأمر."
+          }
+        ],
+        "example": "حدد طراز الجهاز وإصدار البرنامج أولاً. نفّذ الأمر في وضع العرض المناسب، ثم قارن الناتج بالأحداث وسجلات التغيير في الفترة الزمنية نفسها.",
+        "mistakes": [
+          "افتراض تطابق صياغة الأوامر بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الأداء السابق."
+        ]
+      }
+    }
+  },
+  "bellek-kullanimi-ozeti": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Komutu çalıştırmadan önce cihazın işletim sistemi ailesini ve sürümünü doğrulayın."
+          }
+        ],
+        "example": "Önce cihazın modelini ve yazılım sürümünü belirleyin. Komutu uygun görünümde çalıştırın; çıktıyı aynı zaman aralığındaki olay ve değişiklik kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin komutlarını aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş performansın kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the device OS family and release before running the command."
+          }
+        ],
+        "example": "Identify the device model and software release first. Run the command in the appropriate view and correlate the output with events and change records from the same time window.",
+        "mistakes": [
+          "Assuming command syntax is identical across OS families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical performance."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من عائلة نظام تشغيل الجهاز وإصداره قبل تنفيذ الأمر."
+          }
+        ],
+        "example": "حدد طراز الجهاز وإصدار البرنامج أولاً. نفّذ الأمر في وضع العرض المناسب، ثم قارن الناتج بالأحداث وسجلات التغيير في الفترة الزمنية نفسها.",
+        "mistakes": [
+          "افتراض تطابق صياغة الأوامر بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الأداء السابق."
+        ]
+      }
+    }
+  },
   "ipv6-interface-summary": {
     "details": {
       "tr": {
