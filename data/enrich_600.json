@@ -1217,64 +1217,6 @@
       }
     }
   },
-  "ntp-associations": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "çıktı",
-            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
-          },
-          {
-            "p": "kapsam",
-            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
-          }
-        ],
-        "example": "Seçili NTP kaynağını, stratum değerini ve senkronizasyon durumunu kontrol edin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
-        "mistakes": [
-          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
-          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
-          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "output",
-            "d": "Inspect the relevant status, counter or configuration fields."
-          },
-          {
-            "p": "scope",
-            "d": "Replace example interface, address or neighbor values with those used in your environment."
-          }
-        ],
-        "example": "Seçili NTP kaynağını, stratum değerini ve senkronizasyon durumunu kontrol edin. Compare the result with the peer device and monitoring records.",
-        "mistakes": [
-          "Treating a single snapshot as a persistent condition.",
-          "Ignoring platform and software-version differences.",
-          "Leaving example IP or interface values unchanged."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "المخرجات",
-            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
-          },
-          {
-            "p": "النطاق",
-            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
-          }
-        ],
-        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
-        "mistakes": [
-          "اعتبار لقطة واحدة حالة دائمة.",
-          "تجاهل اختلاف المنصة وإصدار البرنامج.",
-          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
-        ]
-      }
-    }
-  },
   "syslog-servers": {
     "details": {
       "tr": {
