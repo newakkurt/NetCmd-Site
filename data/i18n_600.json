@@ -232,16 +232,6 @@
         "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
       }
     },
-    "ntp-associations": {
-      "en": {
-        "title": "NTP associations",
-        "note": "Seçili NTP kaynağını, stratum değerini ve senkronizasyon durumunu kontrol edin."
-      },
-      "ar": {
-        "title": "ارتباطات NTP",
-        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
-      }
-    },
     "syslog-servers": {
       "en": {
         "title": "Syslog destinations",
