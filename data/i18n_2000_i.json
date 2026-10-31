@@ -719,6 +719,256 @@
         "title": "عرض Netcmd Transceiver Detay",
         "note": "يُستخدم هذا الأمر لفحص Netcmd Transceiver Detay. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
       }
+    },
+    "ospf-komsu-ozeti": {
+      "en": {
+        "title": "Ospf Komsu Ozeti",
+        "note": "Use this command to inspect ospf komsu ozeti. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ospf Komsu Ozeti",
+        "note": "يُستخدم هذا الأمر لفحص Ospf Komsu Ozeti. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ospf-arayuzleri": {
+      "en": {
+        "title": "Ospf Arayuzleri",
+        "note": "Use this command to inspect ospf arayuzleri. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ospf Arayuzleri",
+        "note": "يُستخدم هذا الأمر لفحص Ospf Arayuzleri. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bgp-ozet": {
+      "en": {
+        "title": "Bgp Ozet",
+        "note": "Use this command to inspect bgp ozet. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Bgp Ozet",
+        "note": "يُستخدم هذا الأمر لفحص Bgp Ozet. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bgp-komsu-detay": {
+      "en": {
+        "title": "Bgp Komsu Detay",
+        "note": "Use this command to inspect bgp komsu detay. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Bgp Komsu Detay",
+        "note": "يُستخدم هذا الأمر لفحص Bgp Komsu Detay. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "stp-ozet": {
+      "en": {
+        "title": "Stp Ozet",
+        "note": "Use this command to inspect stp ozet. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Stp Ozet",
+        "note": "يُستخدم هذا الأمر لفحص Stp Ozet. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "stp-port-detay": {
+      "en": {
+        "title": "Stp Port Detay",
+        "note": "Use this command to inspect stp port detay. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Stp Port Detay",
+        "note": "يُستخدم هذا الأمر لفحص Stp Port Detay. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "lldp-komsular": {
+      "en": {
+        "title": "Lldp Komsular",
+        "note": "Use this command to inspect lldp komsular. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Lldp Komsular",
+        "note": "يُستخدم هذا الأمر لفحص Lldp Komsular. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "lacp-ozet": {
+      "en": {
+        "title": "Lacp Ozet",
+        "note": "Use this command to inspect lacp ozet. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Lacp Ozet",
+        "note": "يُستخدم هذا الأمر لفحص Lacp Ozet. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "poe-durum": {
+      "en": {
+        "title": "Poe Durum",
+        "note": "Use this command to inspect poe durum. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Poe Durum",
+        "note": "يُستخدم هذا الأمر لفحص Poe Durum. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "transceiver-detay": {
+      "en": {
+        "title": "Transceiver Detay",
+        "note": "Use this command to inspect transceiver detay. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Transceiver Detay",
+        "note": "يُستخدم هذا الأمر لفحص Transceiver Detay. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "interface-errors": {
+      "en": {
+        "title": "Interface Errors",
+        "note": "Use this command to inspect interface errors. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Interface Errors",
+        "note": "يُستخدم هذا الأمر لفحص Interface Errors. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "cpu-processes": {
+      "en": {
+        "title": "Cpu Processes",
+        "note": "Use this command to inspect cpu processes. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Cpu Processes",
+        "note": "يُستخدم هذا الأمر لفحص Cpu Processes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "memory-usage": {
+      "en": {
+        "title": "Memory Usage",
+        "note": "Use this command to inspect memory usage. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Memory Usage",
+        "note": "يُستخدم هذا الأمر لفحص Memory Usage. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ntp-status": {
+      "en": {
+        "title": "Ntp Status",
+        "note": "Use this command to inspect ntp status. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ntp Status",
+        "note": "يُستخدم هذا الأمر لفحص Ntp Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ntp-associations": {
+      "en": {
+        "title": "Ntp Associations",
+        "note": "Use this command to inspect ntp associations. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ntp Associations",
+        "note": "يُستخدم هذا الأمر لفحص Ntp Associations. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "dhcp-snooping-status": {
+      "en": {
+        "title": "Dhcp Snooping Status",
+        "note": "Use this command to inspect dhcp snooping status. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Dhcp Snooping Status",
+        "note": "يُستخدم هذا الأمر لفحص Dhcp Snooping Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "dhcp-snooping-bindings": {
+      "en": {
+        "title": "Dhcp Snooping Bindings",
+        "note": "Use this command to inspect dhcp snooping bindings. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Dhcp Snooping Bindings",
+        "note": "يُستخدم هذا الأمر لفحص Dhcp Snooping Bindings. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "acl-hitcounts": {
+      "en": {
+        "title": "Acl Hitcounts",
+        "note": "Use this command to inspect acl hitcounts. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Acl Hitcounts",
+        "note": "يُستخدم هذا الأمر لفحص Acl Hitcounts. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ipv6-neighbors": {
+      "en": {
+        "title": "Ipv6 Neighbors",
+        "note": "Use this command to inspect ipv6 neighbors. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ipv6 Neighbors",
+        "note": "يُستخدم هذا الأمر لفحص Ipv6 Neighbors. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "vrf-routing-table": {
+      "en": {
+        "title": "Vrf Routing Table",
+        "note": "Use this command to inspect vrf routing table. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Vrf Routing Table",
+        "note": "يُستخدم هذا الأمر لفحص Vrf Routing Table. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "syslog-server-list": {
+      "en": {
+        "title": "Syslog Server List",
+        "note": "Use this command to inspect syslog server list. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Syslog Server List",
+        "note": "يُستخدم هذا الأمر لفحص Syslog Server List. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "logging-buffer": {
+      "en": {
+        "title": "Logging Buffer",
+        "note": "Use this command to inspect logging buffer. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Logging Buffer",
+        "note": "يُستخدم هذا الأمر لفحص Logging Buffer. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "errdisable-ports": {
+      "en": {
+        "title": "Errdisable Ports",
+        "note": "Use this command to inspect errdisable ports. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Errdisable Ports",
+        "note": "يُستخدم هذا الأمر لفحص Errdisable Ports. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "port-security-status": {
+      "en": {
+        "title": "Port Security Status",
+        "note": "Use this command to inspect port security status. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Port Security Status",
+        "note": "يُستخدم هذا الأمر لفحص Port Security Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "storm-control-status": {
+      "en": {
+        "title": "Storm Control Status",
+        "note": "Use this command to inspect storm control status. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Storm Control Status",
+        "note": "يُستخدم هذا الأمر لفحص Storm Control Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
     }
   }
 }
