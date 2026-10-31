@@ -1,0 +1,55 @@
+{
+  "cats": {},
+  "items": {
+    "vlan-ozeti-goruntuleme": {
+      "en": {
+        "title": "View VLAN summary",
+        "note": "VLAN kimliklerini, adlarını ve port üyeliklerini hızlıca kontrol eder. Çıktı biçimi ve port üyeliği gösterimi platform/yazılım sürümüne göre değişebilir."
+      },
+      "ar": {
+        "title": "عرض ملخص VLAN",
+        "note": "VLAN kimliklerini, adlarını ve port üyeliklerini hızlıca kontrol eder. Çıktı biçimi ve port üyeliği gösterimi platform/yazılım sürümüne göre değişebilir."
+      }
+    },
+    "stp-durumunu-goruntuleme": {
+      "en": {
+        "title": "View Spanning Tree status",
+        "note": "STP kök köprüsünü, port rollerini ve forwarding/blocking durumlarını inceler. Cisco örneği PVST/RPVST veya MST tasarımına göre ek parametrelerle kullanılabilir."
+      },
+      "ar": {
+        "title": "عرض حالة Spanning Tree",
+        "note": "STP kök köprüsünü, port rollerini ve forwarding/blocking durumlarını inceler. Cisco örneği PVST/RPVST veya MST tasarımına göre ek parametrelerle kullanılabilir."
+      }
+    },
+    "acl-kural-ve-sayaclarini-goruntuleme": {
+      "en": {
+        "title": "View ACL rules and counters",
+        "note": "Erişim kontrol listelerini ve eşleşme sayaçlarını inceleyerek trafiğin hangi kurallarla eşleştiğini anlamaya yardımcı olur. Sayaç desteği ve komut seçenekleri sürüme göre değişebilir."
+      },
+      "ar": {
+        "title": "عرض قواعد ACL والعدادات",
+        "note": "Erişim kontrol listelerini ve eşleşme sayaçlarını inceleyerek trafiğin hangi kurallarla eşleştiğini anlamaya yardımcı olur. Sayaç desteği ve komut seçenekleri sürüme göre değişebilir."
+      }
+    },
+    "dhcp-snooping-durumunu-goruntuleme": {
+      "en": {
+        "title": "View DHCP Snooping status",
+        "note": "DHCP Snooping yapılandırmasını ve güvenilir port durumlarını doğrulamaya yardımcı olur. Aruba komutu AOS-CX ailesi içindir; AOS-Switch'te destek ve komutlar farklı olabilir."
+      },
+      "ar": {
+        "title": "عرض حالة DHCP Snooping",
+        "note": "DHCP Snooping yapılandırmasını ve güvenilir port durumlarını doğrulamaya yardımcı olur. Aruba komutu AOS-CX ailesi içindir; AOS-Switch'te destek ve komutlar farklı olabilir."
+      }
+    },
+    "arayuz-hata-sayaclarini-goruntuleme": {
+      "en": {
+        "title": "View interface error counters",
+        "note": "CRC, input/output error ve benzeri fiziksel/iletim katmanı sayaçlarını kontrol eder. Sayaç isimleri ve komut kapsamı donanım ile işletim sistemi sürümüne göre farklılık gösterebilir."
+      },
+      "ar": {
+        "title": "عرض عدادات أخطاء الواجهات",
+        "note": "CRC, input/output error ve benzeri fiziksel/iletim katmanı sayaçlarını kontrol eder. Sayaç isimleri ve komut kapsamı donanım ile işletim sistemi sürümüne göre farklılık gösterebilir."
+      }
+    }
+  }
+}
