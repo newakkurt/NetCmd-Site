@@ -3,6 +3,22 @@
     "Yönlendirme": {
       "en": "Routing",
       "ar": "التوجيه"
+    },
+    "IPv6": {
+      "en": "IPv6",
+      "ar": "IPv6"
+    },
+    "ACL ve Filtreleme": {
+      "en": "ACL and Filtering",
+      "ar": "قوائم التحكم بالوصول والتصفية"
+    },
+    "Yönetim ve Erişim": {
+      "en": "Management and Access",
+      "ar": "الإدارة والوصول"
+    },
+    "Sorun Giderme": {
+      "en": "Troubleshooting",
+      "ar": "استكشاف الأخطاء وإصلاحها"
     }
   },
   "items": {
