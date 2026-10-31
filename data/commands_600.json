@@ -504,30 +504,6 @@
     }
   },
   {
-    "slug": "ntp-associations",
-    "title": "NTP sunucu eşleşmelerini görüntüleme",
-    "cat": "Sistem",
-    "note": "Seçili NTP kaynağını, stratum değerini ve senkronizasyon durumunu kontrol edin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ntp associations"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ntp-service sessions"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ntp associations"
-      ]
-    }
-  },
-  {
     "slug": "syslog-servers",
     "title": "Syslog hedeflerini görüntüleme",
     "cat": "Sistem",
