@@ -350,16 +350,6 @@
         "note": "يُستخدم هذا الأمر لفحص Port Channel Load Balance. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
       }
     },
-    "bgp-advertised-routes": {
-      "en": {
-        "title": "Bgp Advertised Routes",
-        "note": "Use this command to inspect bgp advertised routes. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Bgp Advertised Routes",
-        "note": "يُستخدم هذا الأمر لفحص Bgp Advertised Routes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
     "bgp-received-routes": {
       "en": {
         "title": "Bgp Received Routes",
@@ -390,36 +380,6 @@
         "note": "يُستخدم هذا الأمر لفحص Multicast Routes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
       }
     },
-    "pim-neighbors": {
-      "en": {
-        "title": "Pim Neighbors",
-        "note": "Use this command to inspect pim neighbors. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Pim Neighbors",
-        "note": "يُستخدم هذا الأمر لفحص Pim Neighbors. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
-    "fan-status": {
-      "en": {
-        "title": "Fan Status",
-        "note": "Use this command to inspect fan status. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Fan Status",
-        "note": "يُستخدم هذا الأمر لفحص Fan Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
-    "power-supply-status": {
-      "en": {
-        "title": "Power Supply Status",
-        "note": "Use this command to inspect power supply status. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Power Supply Status",
-        "note": "يُستخدم هذا الأمر لفحص Power Supply Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
     "temperature-status": {
       "en": {
         "title": "Temperature Status",
@@ -448,26 +408,6 @@
       "ar": {
         "title": "عرض Interface Description",
         "note": "يُستخدم هذا الأمر لفحص Interface Description. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
-    "vlan-port-membership": {
-      "en": {
-        "title": "Vlan Port Membership",
-        "note": "Use this command to inspect vlan port membership. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Vlan Port Membership",
-        "note": "يُستخدم هذا الأمر لفحص Vlan Port Membership. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
-    "stp-root-bridge": {
-      "en": {
-        "title": "Stp Root Bridge",
-        "note": "Use this command to inspect stp root bridge. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Stp Root Bridge",
-        "note": "يُستخدم هذا الأمر لفحص Stp Root Bridge. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
       }
     },
     "netcmd-bgp-komsu-detay": {
@@ -740,16 +680,6 @@
         "note": "يُستخدم هذا الأمر لفحص Ospf Arayuzleri. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
       }
     },
-    "bgp-ozet": {
-      "en": {
-        "title": "Bgp Ozet",
-        "note": "Use this command to inspect bgp ozet. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Bgp Ozet",
-        "note": "يُستخدم هذا الأمر لفحص Bgp Ozet. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
     "bgp-komsu-detay": {
       "en": {
         "title": "Bgp Komsu Detay",
@@ -800,16 +730,6 @@
         "note": "يُستخدم هذا الأمر لفحص Lacp Ozet. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
       }
     },
-    "poe-durum": {
-      "en": {
-        "title": "Poe Durum",
-        "note": "Use this command to inspect poe durum. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Poe Durum",
-        "note": "يُستخدم هذا الأمر لفحص Poe Durum. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
     "transceiver-detay": {
       "en": {
         "title": "Transceiver Detay",
@@ -830,16 +750,6 @@
         "note": "يُستخدم هذا الأمر لفحص Interface Errors. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
       }
     },
-    "cpu-processes": {
-      "en": {
-        "title": "Cpu Processes",
-        "note": "Use this command to inspect cpu processes. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Cpu Processes",
-        "note": "يُستخدم هذا الأمر لفحص Cpu Processes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
     "memory-usage": {
       "en": {
         "title": "Memory Usage",
@@ -848,46 +758,6 @@
       "ar": {
         "title": "عرض Memory Usage",
         "note": "يُستخدم هذا الأمر لفحص Memory Usage. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
-    "ntp-status": {
-      "en": {
-        "title": "Ntp Status",
-        "note": "Use this command to inspect ntp status. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Ntp Status",
-        "note": "يُستخدم هذا الأمر لفحص Ntp Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
-    "ntp-associations": {
-      "en": {
-        "title": "Ntp Associations",
-        "note": "Use this command to inspect ntp associations. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Ntp Associations",
-        "note": "يُستخدم هذا الأمر لفحص Ntp Associations. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
-    "dhcp-snooping-status": {
-      "en": {
-        "title": "Dhcp Snooping Status",
-        "note": "Use this command to inspect dhcp snooping status. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Dhcp Snooping Status",
-        "note": "يُستخدم هذا الأمر لفحص Dhcp Snooping Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
-    "dhcp-snooping-bindings": {
-      "en": {
-        "title": "Dhcp Snooping Bindings",
-        "note": "Use this command to inspect dhcp snooping bindings. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Dhcp Snooping Bindings",
-        "note": "يُستخدم هذا الأمر لفحص Dhcp Snooping Bindings. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
       }
     },
     "acl-hitcounts": {
@@ -930,16 +800,6 @@
         "note": "يُستخدم هذا الأمر لفحص Syslog Server List. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
       }
     },
-    "logging-buffer": {
-      "en": {
-        "title": "Logging Buffer",
-        "note": "Use this command to inspect logging buffer. Verify syntax and availability on the target vendor, model, and software release."
-      },
-      "ar": {
-        "title": "عرض Logging Buffer",
-        "note": "يُستخدم هذا الأمر لفحص Logging Buffer. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-      }
-    },
     "errdisable-ports": {
       "en": {
         "title": "Errdisable Ports",
@@ -960,7 +820,87 @@
         "note": "يُستخدم هذا الأمر لفحص Port Security Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
       }
     },
-    "storm-control-status": {
+    "bgp-session-summary-detail": {
+      "en": {
+        "title": "Bgp Ozet",
+        "note": "Use this command to inspect bgp ozet. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Bgp Ozet",
+        "note": "يُستخدم هذا الأمر لفحص Bgp Ozet. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "poe-port-power-state": {
+      "en": {
+        "title": "Poe Durum",
+        "note": "Use this command to inspect poe durum. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Poe Durum",
+        "note": "يُستخدم هذا الأمر لفحص Poe Durum. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "cpu-process-top-consumption": {
+      "en": {
+        "title": "Cpu Processes",
+        "note": "Use this command to inspect cpu processes. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Cpu Processes",
+        "note": "يُستخدم هذا الأمر لفحص Cpu Processes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ntp-clock-sync-state": {
+      "en": {
+        "title": "Ntp Status",
+        "note": "Use this command to inspect ntp status. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ntp Status",
+        "note": "يُستخدم هذا الأمر لفحص Ntp Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ntp-peer-list-detail": {
+      "en": {
+        "title": "Ntp Associations",
+        "note": "Use this command to inspect ntp associations. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ntp Associations",
+        "note": "يُستخدم هذا الأمر لفحص Ntp Associations. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "dhcp-snooping-feature-state": {
+      "en": {
+        "title": "Dhcp Snooping Status",
+        "note": "Use this command to inspect dhcp snooping status. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Dhcp Snooping Status",
+        "note": "يُستخدم هذا الأمر لفحص Dhcp Snooping Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "dhcp-snooping-ip-mac-bindings": {
+      "en": {
+        "title": "Dhcp Snooping Bindings",
+        "note": "Use this command to inspect dhcp snooping bindings. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Dhcp Snooping Bindings",
+        "note": "يُستخدم هذا الأمر لفحص Dhcp Snooping Bindings. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "system-local-log-buffer": {
+      "en": {
+        "title": "Logging Buffer",
+        "note": "Use this command to inspect logging buffer. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Logging Buffer",
+        "note": "يُستخدم هذا الأمر لفحص Logging Buffer. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "storm-control-thresholds": {
       "en": {
         "title": "Storm Control Status",
         "note": "Use this command to inspect storm control status. Verify syntax and availability on the target vendor, model, and software release."
@@ -968,6 +908,66 @@
       "ar": {
         "title": "عرض Storm Control Status",
         "note": "يُستخدم هذا الأمر لفحص Storm Control Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bgp-peer-advertisement-table": {
+      "en": {
+        "title": "Bgp Advertised Routes",
+        "note": "Use this command to inspect bgp advertised routes. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Bgp Advertised Routes",
+        "note": "يُستخدم هذا الأمر لفحص Bgp Advertised Routes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "pim-multicast-peer-list": {
+      "en": {
+        "title": "Pim Neighbors",
+        "note": "Use this command to inspect pim neighbors. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Pim Neighbors",
+        "note": "يُستخدم هذا الأمر لفحص Pim Neighbors. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "chassis-fan-module-state": {
+      "en": {
+        "title": "Fan Status",
+        "note": "Use this command to inspect fan status. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Fan Status",
+        "note": "يُستخدم هذا الأمر لفحص Fan Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "chassis-power-supply-health": {
+      "en": {
+        "title": "Power Supply Status",
+        "note": "Use this command to inspect power supply status. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Power Supply Status",
+        "note": "يُستخدم هذا الأمر لفحص Power Supply Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "switchport-vlan-membership": {
+      "en": {
+        "title": "Vlan Port Membership",
+        "note": "Use this command to inspect vlan port membership. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Vlan Port Membership",
+        "note": "يُستخدم هذا الأمر لفحص Vlan Port Membership. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "spanning-tree-root-bridge-id": {
+      "en": {
+        "title": "Stp Root Bridge",
+        "note": "Use this command to inspect stp root bridge. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Stp Root Bridge",
+        "note": "يُستخدم هذا الأمر لفحص Stp Root Bridge. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
       }
     }
   }
