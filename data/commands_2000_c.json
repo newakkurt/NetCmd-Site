@@ -1,0 +1,136 @@
+[
+  {
+    "slug": "vlan-ozeti-goruntuleme",
+    "title": "VLAN özetini görüntüleme",
+    "cat": "Switching",
+    "note": "VLAN kimliklerini, adlarını ve port üyeliklerini hızlıca kontrol eder. Çıktı biçimi ve port üyeliği gösterimi platform/yazılım sürümüne göre değişebilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan brief"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan",
+        "display vlan summary"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator",
+      "cmds": [
+        "show vlan",
+        "show vlans"
+      ]
+    }
+  },
+  {
+    "slug": "stp-durumunu-goruntuleme",
+    "title": "Spanning Tree durumunu görüntüleme",
+    "cat": "Switching",
+    "note": "STP kök köprüsünü, port rollerini ve forwarding/blocking durumlarını inceler. Cisco örneği PVST/RPVST veya MST tasarımına göre ek parametrelerle kullanılabilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree",
+        "show spanning-tree summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp",
+        "display stp brief"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator",
+      "cmds": [
+        "show spanning-tree",
+        "show spanning-tree detail"
+      ]
+    }
+  },
+  {
+    "slug": "acl-kural-ve-sayaclarini-goruntuleme",
+    "title": "ACL kurallarını ve sayaçlarını görüntüleme",
+    "cat": "Security",
+    "note": "Erişim kontrol listelerini ve eşleşme sayaçlarını inceleyerek trafiğin hangi kurallarla eşleştiğini anlamaya yardımcı olur. Sayaç desteği ve komut seçenekleri sürüme göre değişebilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip access-lists",
+        "show access-lists"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl all",
+        "display acl"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator",
+      "cmds": [
+        "show access-list",
+        "show access-list hitcounts"
+      ]
+    }
+  },
+  {
+    "slug": "dhcp-snooping-durumunu-goruntuleme",
+    "title": "DHCP Snooping durumunu görüntüleme",
+    "cat": "Security",
+    "note": "DHCP Snooping yapılandırmasını ve güvenilir port durumlarını doğrulamaya yardımcı olur. Aruba komutu AOS-CX ailesi içindir; AOS-Switch'te destek ve komutlar farklı olabilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping",
+        "show ip dhcp snooping binding"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping",
+        "display dhcp snooping user-bind all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator (AOS-CX)",
+      "cmds": [
+        "show dhcpv4-snooping",
+        "show dhcpv4-snooping binding"
+      ]
+    }
+  },
+  {
+    "slug": "arayuz-hata-sayaclarini-goruntuleme",
+    "title": "Arayüz hata sayaçlarını görüntüleme",
+    "cat": "Troubleshooting",
+    "note": "CRC, input/output error ve benzeri fiziksel/iletim katmanı sayaçlarını kontrol eder. Sayaç isimleri ve komut kapsamı donanım ile işletim sistemi sürümüne göre farklılık gösterebilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors",
+        "show interfaces"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface",
+        "display counters error"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator",
+      "cmds": [
+        "show interfaces",
+        "show interfaces counters"
+      ]
+    }
+  }
+]
