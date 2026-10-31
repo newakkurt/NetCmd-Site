@@ -1,0 +1,326 @@
+{
+  "cats": {
+    "Kablosuz (WLAN)": {
+      "en": "Wireless LAN",
+      "ar": "الشبكات المحلية اللاسلكية"
+    },
+    "VPN ve Tünel": {
+      "en": "VPN and Tunneling",
+      "ar": "الشبكات الخاصة الافتراضية والأنفاق"
+    },
+    "QoS ve Trafik": {
+      "en": "QoS and Traffic",
+      "ar": "جودة الخدمة وحركة المرور"
+    },
+    "IPv6 ve Multicast": {
+      "en": "IPv6 and Multicast",
+      "ar": "IPv6 والبث المتعدد"
+    },
+    "L2 Güvenlik": {
+      "en": "Layer 2 Security",
+      "ar": "أمان الطبقة الثانية"
+    },
+    "Spanning Tree ve L2": {
+      "en": "Spanning Tree and Layer 2",
+      "ar": "بروتوكول الشجرة الممتدة والطبقة الثانية"
+    },
+    "VLAN / Port": {
+      "en": "VLAN / Ports",
+      "ar": "شبكات VLAN والمنافذ"
+    },
+    "Yedeklilik ve Stack": {
+      "en": "Redundancy and Stacking",
+      "ar": "التكرار وتجميع المحولات"
+    },
+    "PoE ve Fiziksel Katman": {
+      "en": "PoE and Physical Layer",
+      "ar": "الطاقة عبر الإيثرنت والطبقة المادية"
+    },
+    "Yazılım ve Yükseltme": {
+      "en": "Software and Upgrade",
+      "ar": "البرمجيات والترقية"
+    }
+  },
+  "items": {
+    "wlan-ap-summary": {
+      "en": {
+        "title": "Wlan Ap Summary",
+        "note": "AP adlarını, çalışma durumunu ve yönetim bağlantısını kontrol edin."
+      },
+      "ar": {
+        "title": "ملخص نقاط الوصول اللاسلكية",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "wlan-client-summary": {
+      "en": {
+        "title": "Wlan Client Summary",
+        "note": "İstemci MAC, SSID, AP ve bağlantı durumunu kontrol edin."
+      },
+      "ar": {
+        "title": "ملخص العملاء اللاسلكيين",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "wlan-ssid-list": {
+      "en": {
+        "title": "Wlan Ssid List",
+        "note": "SSID, WLAN profili ve yayın durumunu doğrulayın."
+      },
+      "ar": {
+        "title": "قائمة SSID",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "wlan-radio-status": {
+      "en": {
+        "title": "Wlan Radio Status",
+        "note": "2.4/5 GHz radyo kanalı, güç ve çalışma durumunu inceleyin."
+      },
+      "ar": {
+        "title": "حالة راديو نقطة الوصول",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "wlan-client-detail": {
+      "en": {
+        "title": "Wlan Client Detail",
+        "note": "MAC adresi ile istemcinin AP, RSSI ve bağlantı ayrıntılarını kontrol edin."
+      },
+      "ar": {
+        "title": "تفاصيل العميل اللاسلكي",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "vpn-ipsec-sa": {
+      "en": {
+        "title": "Vpn Ipsec Sa",
+        "note": "IKE/IPsec SA durumunu, SPI ve sayaçları kontrol edin."
+      },
+      "ar": {
+        "title": "ارتباطات أمان IPsec",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "vpn-ike-sa": {
+      "en": {
+        "title": "Vpn Ike Sa",
+        "note": "IKE Phase 1 komşuluklarının aktifliğini ve kimlik bilgilerini kontrol edin."
+      },
+      "ar": {
+        "title": "ارتباطات أمان IKE",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "vpn-tunnel-summary": {
+      "en": {
+        "title": "Vpn Tunnel Summary",
+        "note": "Tünellerin up/down durumunu ve uzak uç adreslerini inceleyin."
+      },
+      "ar": {
+        "title": "ملخص أنفاق VPN",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "vpn-ssl-status": {
+      "en": {
+        "title": "Vpn Ssl Status",
+        "note": "Aktif SSL VPN kullanıcılarını ve oturum sürelerini kontrol edin."
+      },
+      "ar": {
+        "title": "جلسات SSL VPN",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "qos-policy-interface": {
+      "en": {
+        "title": "Qos Policy Interface",
+        "note": "Giriş/çıkış yönündeki servis politikalarını ve eşleşen sınıfları inceleyin."
+      },
+      "ar": {
+        "title": "سياسة QoS على الواجهة",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "qos-class-map": {
+      "en": {
+        "title": "Qos Class Map",
+        "note": "Class-map eşleşme koşullarını ve bağlı policy-map yapılarını kontrol edin."
+      },
+      "ar": {
+        "title": "خريطة فئات QoS",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "qos-policy-map": {
+      "en": {
+        "title": "Qos Policy Map",
+        "note": "Policy-map içindeki policing, shaping ve queue parametrelerini inceleyin."
+      },
+      "ar": {
+        "title": "خريطة سياسة QoS",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "multicast-routing-table": {
+      "en": {
+        "title": "Multicast Routing Table",
+        "note": "Multicast kaynak/grup kayıtlarını ve RPF arayüzlerini inceleyin."
+      },
+      "ar": {
+        "title": "جدول توجيه البث المتعدد",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "pim-neighbor-summary": {
+      "en": {
+        "title": "Pim Neighbor Summary",
+        "note": "Multicast yönlendirme komşularının arayüz ve durum bilgilerini kontrol edin."
+      },
+      "ar": {
+        "title": "ملخص جيران PIM",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "macsec-status": {
+      "en": {
+        "title": "Macsec Status",
+        "note": "MKA oturumlarını ve secure channel durumunu kontrol edin."
+      },
+      "ar": {
+        "title": "حالة جلسة MACsec",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "port-security-addresses": {
+      "en": {
+        "title": "Port Security Addresses",
+        "note": "Öğrenilen secure MAC adreslerini ve ihlal sayaçlarını kontrol edin."
+      },
+      "ar": {
+        "title": "عناوين MAC لأمان المنفذ",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "storm-control-status": {
+      "en": {
+        "title": "Storm Control Status",
+        "note": "Broadcast, multicast ve unknown-unicast eşiklerini ve aksiyonlarını kontrol edin."
+      },
+      "ar": {
+        "title": "حالة التحكم بالعواصف",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "stp-inconsistent-ports": {
+      "en": {
+        "title": "Stp Inconsistent Ports",
+        "note": "Root guard veya BPDU guard nedeniyle bloklanan portları belirleyin."
+      },
+      "ar": {
+        "title": "منافذ STP غير المتسقة",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "stp-root-detail": {
+      "en": {
+        "title": "Stp Root Detail",
+        "note": "Root bridge ID, root path cost ve root port bilgisini doğrulayın."
+      },
+      "ar": {
+        "title": "تفاصيل الجسر الجذر لـ STP",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "vlan-interface-list": {
+      "en": {
+        "title": "Vlan Interface List",
+        "note": "SVI veya VLANIF arayüzlerini ve IP adreslerini kontrol edin."
+      },
+      "ar": {
+        "title": "قائمة واجهات VLAN",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "trunk-allowed-vlans": {
+      "en": {
+        "title": "Trunk Allowed Vlans",
+        "note": "Trunk linklerde allowed VLAN listesini ve native/PVID ayarını karşılaştırın."
+      },
+      "ar": {
+        "title": "شبكات VLAN المسموح بها على الوصلات",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "switch-stack-status": {
+      "en": {
+        "title": "Switch Stack Status",
+        "note": "Stack üye numarası, rol, durum ve donanım bilgisini kontrol edin."
+      },
+      "ar": {
+        "title": "أعضاء مكدس المحولات",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "redundancy-status": {
+      "en": {
+        "title": "Redundancy Status",
+        "note": "Active/standby rolünü ve failover durumunu doğrulayın."
+      },
+      "ar": {
+        "title": "حالة التكرار",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "fan-status": {
+      "en": {
+        "title": "Fan Status",
+        "note": "Fan hızını ve alarm durumunu donanım sağlığı açısından inceleyin."
+      },
+      "ar": {
+        "title": "حالة وحدات المروحة",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "power-supply-status": {
+      "en": {
+        "title": "Power Supply Status",
+        "note": "PSU modüllerinin varlık, giriş ve alarm durumunu kontrol edin."
+      },
+      "ar": {
+        "title": "حالة مزود الطاقة",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "temperature-sensors": {
+      "en": {
+        "title": "Temperature Sensors",
+        "note": "Sensör sıcaklıklarını eşik ve alarm değerleriyle karşılaştırın."
+      },
+      "ar": {
+        "title": "مستشعرات درجة الحرارة",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "config-register": {
+      "en": {
+        "title": "Config Register",
+        "note": "Boot davranışını etkileyen config-register değerini bakım öncesi kontrol edin."
+      },
+      "ar": {
+        "title": "سجل الإعداد",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "boot-images": {
+      "en": {
+        "title": "Boot Images",
+        "note": "Aktif ve sonraki açılışta kullanılacak imaj dosyalarını doğrulayın."
+      },
+      "ar": {
+        "title": "قائمة صور الإقلاع",
+        "note": "تحقق من النتيجة وقارنها بالجهاز المقابل ونظام المراقبة."
+      }
+    }
+  }
+}

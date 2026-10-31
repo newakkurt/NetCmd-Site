@@ -1,0 +1,762 @@
+{
+  "cats": {
+    "VPN ve IPsec": {
+      "en": "VPN and IPsec",
+      "ar": "الشبكات الخاصة الافتراضية وIPsec"
+    },
+    "Kablosuz Ağ": {
+      "en": "Wireless",
+      "ar": "الشبكات اللاسلكية"
+    },
+    "QoS ve Trafik": {
+      "en": "QoS and Traffic",
+      "ar": "جودة الخدمة وحركة المرور"
+    },
+    "Multicast": {
+      "en": "Multicast",
+      "ar": "البث المتعدد"
+    },
+    "Güvenlik ve Erişim": {
+      "en": "Security and Access",
+      "ar": "الأمان والوصول"
+    },
+    "İzleme ve Log": {
+      "en": "Monitoring and Logs",
+      "ar": "المراقبة والسجلات"
+    },
+    "Switching ve VLAN": {
+      "en": "Switching and VLAN",
+      "ar": "التحويل وVLAN"
+    },
+    "Arayüz ve Fiziksel Katman": {
+      "en": "Interfaces and Physical Layer",
+      "ar": "الواجهات والطبقة الفيزيائية"
+    },
+    "Sistem ve Bakım": {
+      "en": "System and Maintenance",
+      "ar": "النظام والصيانة"
+    }
+  },
+  "items": {
+    "ipsec-sa-summary": {
+      "en": {
+        "title": "IPsec SA summary",
+        "note": "IPsec SA summary. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "ملخص ارتباطات أمان IPsec",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "ike-sa-summary": {
+      "en": {
+        "title": "IKE SA summary",
+        "note": "IKE SA summary. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "ملخص ارتباطات IKE",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "vpn-session-summary": {
+      "en": {
+        "title": "VPN session summary",
+        "note": "VPN session summary. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "ملخص جلسات VPN",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "ssl-vpn-status": {
+      "en": {
+        "title": "SSL VPN status",
+        "note": "SSL VPN status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة SSL VPN",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "ipsec-peer-detail": {
+      "en": {
+        "title": "IPsec peer details",
+        "note": "IPsec peer details. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "تفاصيل طرف IPsec",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "crypto-engine-status": {
+      "en": {
+        "title": "Crypto engine status",
+        "note": "Crypto engine status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة محرك التشفير",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "vpn-route-check": {
+      "en": {
+        "title": "VPN route check",
+        "note": "VPN route check. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "فحص مسارات VPN",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "tunnel-interface-status": {
+      "en": {
+        "title": "Tunnel interface status",
+        "note": "Tunnel interface status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة واجهة النفق",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "ap-summary": {
+      "en": {
+        "title": "Access point summary",
+        "note": "Access point summary. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "ملخص نقاط الوصول",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "ap-client-list": {
+      "en": {
+        "title": "Wireless client list",
+        "note": "Wireless client list. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "قائمة عملاء الشبكة اللاسلكية",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "wlan-ssid-list": {
+      "en": {
+        "title": "SSID inventory",
+        "note": "SSID inventory. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "قائمة SSID",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "wlan-radio-status": {
+      "en": {
+        "title": "AP radio status",
+        "note": "AP radio status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة راديو نقاط الوصول",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "wlan-channel-utilization": {
+      "en": {
+        "title": "Wireless channel utilization",
+        "note": "Wireless channel utilization. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "استخدام القنوات اللاسلكية",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "wlan-client-detail": {
+      "en": {
+        "title": "Wireless client details",
+        "note": "Wireless client details. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "تفاصيل العميل اللاسلكي",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "wlan-auth-failures": {
+      "en": {
+        "title": "Wireless authentication failures",
+        "note": "Wireless authentication failures. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "إخفاقات مصادقة الشبكة اللاسلكية",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "wlan-rogue-ap": {
+      "en": {
+        "title": "Rogue AP detection",
+        "note": "Rogue AP detection. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "اكتشاف نقاط الوصول غير المصرح بها",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "qos-policy-summary": {
+      "en": {
+        "title": "QoS policy summary",
+        "note": "QoS policy summary. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "ملخص سياسة QoS",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "qos-interface-policy": {
+      "en": {
+        "title": "Interface QoS policy",
+        "note": "Interface QoS policy. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "سياسة QoS للواجهة",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "qos-class-map": {
+      "en": {
+        "title": "QoS class map",
+        "note": "QoS class map. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "خريطة فئات QoS",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "qos-queue-counters": {
+      "en": {
+        "title": "QoS queue counters",
+        "note": "QoS queue counters. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "عدادات طوابير QoS",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "qos-dscp-map": {
+      "en": {
+        "title": "DSCP mapping",
+        "note": "DSCP mapping. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "تعيين DSCP",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "qos-policing-status": {
+      "en": {
+        "title": "QoS policing status",
+        "note": "QoS policing status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة تحديد معدل QoS",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "qos-shaping-status": {
+      "en": {
+        "title": "QoS shaping status",
+        "note": "QoS shaping status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة تشكيل حركة المرور",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "qos-congestion-drops": {
+      "en": {
+        "title": "QoS congestion drops",
+        "note": "QoS congestion drops. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "إسقاطات ازدحام QoS",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "igmp-snooping-vlan": {
+      "en": {
+        "title": "IGMP snooping per VLAN",
+        "note": "IGMP snooping per VLAN. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "IGMP Snooping حسب VLAN",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "igmp-groups": {
+      "en": {
+        "title": "IGMP group membership",
+        "note": "IGMP group membership. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "عضوية مجموعات IGMP",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "pim-neighbors": {
+      "en": {
+        "title": "PIM neighbors",
+        "note": "PIM neighbors. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "جيران PIM",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "pim-interface": {
+      "en": {
+        "title": "PIM interface status",
+        "note": "PIM interface status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة واجهة PIM",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "multicast-route-table": {
+      "en": {
+        "title": "Multicast routing table",
+        "note": "Multicast routing table. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "جدول توجيه البث المتعدد",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "multicast-boundary": {
+      "en": {
+        "title": "Multicast boundary check",
+        "note": "Multicast boundary check. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "فحص حدود البث المتعدد",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "mld-groups": {
+      "en": {
+        "title": "MLD group membership",
+        "note": "MLD group membership. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "عضوية مجموعات MLD",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "multicast-interface-counters": {
+      "en": {
+        "title": "Multicast interface counters",
+        "note": "Multicast interface counters. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "عدادات واجهة البث المتعدد",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "port-security-address": {
+      "en": {
+        "title": "Port-security MAC entries",
+        "note": "Port-security MAC entries. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "سجلات MAC لأمان المنافذ",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "port-security-interface": {
+      "en": {
+        "title": "Port-security interface status",
+        "note": "Port-security interface status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة أمان المنفذ",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "storm-control-status": {
+      "en": {
+        "title": "Storm control status",
+        "note": "Storm control status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة التحكم بالعواصف",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "dynamic-arp-inspection": {
+      "en": {
+        "title": "Dynamic ARP inspection",
+        "note": "Dynamic ARP inspection. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "فحص ARP الديناميكي",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "ip-source-guard": {
+      "en": {
+        "title": "IP source guard status",
+        "note": "IP source guard status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة حارس مصدر IP",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "macsec-session": {
+      "en": {
+        "title": "MACsec sessions",
+        "note": "MACsec sessions. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "جلسات MACsec",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "tacacs-server-status": {
+      "en": {
+        "title": "TACACS server status",
+        "note": "TACACS server status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة خادم TACACS",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "login-history": {
+      "en": {
+        "title": "Administrator login history",
+        "note": "Administrator login history. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "سجل دخول المسؤولين",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "logging-buffer": {
+      "en": {
+        "title": "Local log buffer",
+        "note": "Local log buffer. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "مخزن السجلات المحلي",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "logging-severity": {
+      "en": {
+        "title": "Syslog severity configuration",
+        "note": "Syslog severity configuration. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "إعداد مستوى أهمية Syslog",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "snmp-community-config": {
+      "en": {
+        "title": "SNMP community configuration",
+        "note": "SNMP community configuration. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "إعداد مجتمع SNMP",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "snmp-engine-status": {
+      "en": {
+        "title": "SNMP agent status",
+        "note": "SNMP agent status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة وكيل SNMP",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "interface-flap-history": {
+      "en": {
+        "title": "Interface flap history",
+        "note": "Interface flap history. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "سجل تغير حالة الواجهة",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "environment-sensors": {
+      "en": {
+        "title": "Environmental sensors",
+        "note": "Environmental sensors. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "مستشعرات البيئة",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "power-supply-status": {
+      "en": {
+        "title": "Power supply status",
+        "note": "Power supply status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة مزود الطاقة",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "transceiver-diagnostics": {
+      "en": {
+        "title": "Optical transceiver diagnostics",
+        "note": "Optical transceiver diagnostics. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "تشخيص وحدة الإرسال والاستقبال الضوئية",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "vlan-brief": {
+      "en": {
+        "title": "VLAN summary",
+        "note": "VLAN summary. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "ملخص VLAN",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "vlan-interface-status": {
+      "en": {
+        "title": "VLAN interface status",
+        "note": "VLAN interface status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة واجهة VLAN",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "trunk-allowed-vlans": {
+      "en": {
+        "title": "Allowed VLANs on trunks",
+        "note": "Allowed VLANs on trunks. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "VLAN المسموح بها على وصلات Trunk",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "stp-root-bridge": {
+      "en": {
+        "title": "STP root bridge",
+        "note": "STP root bridge. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "الجسر الجذر لـ STP",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "stp-blocked-ports": {
+      "en": {
+        "title": "STP blocked ports",
+        "note": "STP blocked ports. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "منافذ STP المحظورة",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "stp-interface-detail": {
+      "en": {
+        "title": "STP interface details",
+        "note": "STP interface details. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة STP",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "mac-address-vlan": {
+      "en": {
+        "title": "MAC addresses per VLAN",
+        "note": "MAC addresses per VLAN. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "عناوين MAC حسب VLAN",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "mac-address-port": {
+      "en": {
+        "title": "MAC addresses per port",
+        "note": "MAC addresses per port. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "عناوين MAC حسب المنفذ",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "interface-description-list": {
+      "en": {
+        "title": "Interface descriptions",
+        "note": "Interface descriptions. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "أوصاف الواجهات",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "interface-error-counters": {
+      "en": {
+        "title": "Interface error counters",
+        "note": "Interface error counters. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "عدادات أخطاء الواجهة",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "interface-discard-counters": {
+      "en": {
+        "title": "Interface discard counters",
+        "note": "Interface discard counters. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "عدادات الحزم المستبعدة",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "interface-duplex-speed": {
+      "en": {
+        "title": "Interface speed and duplex",
+        "note": "Interface speed and duplex. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "سرعة الواجهة والازدواجية",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "interface-optical-power": {
+      "en": {
+        "title": "Optical power levels",
+        "note": "Optical power levels. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "مستويات الطاقة الضوئية",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "interface-mtu": {
+      "en": {
+        "title": "Interface MTU",
+        "note": "Interface MTU. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "قيمة MTU للواجهة",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "interface-utilization": {
+      "en": {
+        "title": "Interface utilization",
+        "note": "Interface utilization. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "استخدام الواجهة",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "interface-last-change": {
+      "en": {
+        "title": "Interface last state change",
+        "note": "Interface last state change. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "آخر تغيير لحالة الواجهة",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "clock-status": {
+      "en": {
+        "title": "System clock status",
+        "note": "System clock status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة ساعة النظام",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "uptime-status": {
+      "en": {
+        "title": "Device uptime",
+        "note": "Device uptime. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "مدة تشغيل الجهاز",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "flash-files-list": {
+      "en": {
+        "title": "Flash file inventory",
+        "note": "Flash file inventory. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "قائمة ملفات Flash",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "startup-config-location": {
+      "en": {
+        "title": "Startup configuration",
+        "note": "Startup configuration. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "إعدادات بدء التشغيل",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "config-register": {
+      "en": {
+        "title": "Configuration register",
+        "note": "Configuration register. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "سجل التهيئة",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "license-status": {
+      "en": {
+        "title": "License status",
+        "note": "License status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة الترخيص",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "module-inventory": {
+      "en": {
+        "title": "Hardware module inventory",
+        "note": "Hardware module inventory. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "قائمة وحدات الأجهزة",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    },
+    "fan-status": {
+      "en": {
+        "title": "Fan status",
+        "note": "Fan status. Validate the output against the peer device."
+      },
+      "ar": {
+        "title": "حالة المراوح",
+        "note": "تحقق من النتائج وقارنها بالجهاز المقابل."
+      }
+    }
+  }
+}

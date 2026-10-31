@@ -1,0 +1,1684 @@
+{
+  "bgp-summary-global": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "BGP oturumlarının Established durumunu, ASN bilgisini ve alınan prefix sayılarını hızlıca kontrol edin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "BGP oturumlarının Established durumunu, ASN bilgisini ve alınan prefix sayılarını hızlıca kontrol edin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "bgp-neighbor-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Bir komşunun remote AS, BGP durum geçişleri ve mesaj sayaçlarını inceleyin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Bir komşunun remote AS, BGP durum geçişleri ve mesaj sayaçlarını inceleyin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "bgp-route-table": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "BGP RIB içindeki prefix, next-hop, AS path ve path seçimini inceleyin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "BGP RIB içindeki prefix, next-hop, AS path ve path seçimini inceleyin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "ospf-neighbor-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Komşuların FULL/2-WAY durumunu ve bağlı oldukları arayüzleri doğrulayın. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Komşuların FULL/2-WAY durumunu ve bağlı oldukları arayüzleri doğrulayın. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "ospf-interface-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Area, network type, cost, priority ve timer değerlerini komşu uçla karşılaştırın. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Area, network type, cost, priority ve timer değerlerini komşu uçla karşılaştırın. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "ospf-database-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "LSA türü ve sayısını inceleyerek beklenmeyen topoloji değişikliklerini araştırın. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "LSA türü ve sayısını inceleyerek beklenmeyen topoloji değişikliklerini araştırın. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "route-static-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Yapılandırılmış statik rotaları ve varsayılan yönlendirmeyi kontrol edin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Yapılandırılmış statik rotaları ve varsayılan yönlendirmeyi kontrol edin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "route-protocol-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Routing table içindeki connected, static, OSPF ve BGP kaynaklarını karşılaştırın. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Routing table içindeki connected, static, OSPF ve BGP kaynaklarını karşılaştırın. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "ipv6-route-table": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "IPv6 prefix'lerinin next-hop ve kaynak bilgilerini inceleyin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "IPv6 prefix'lerinin next-hop ve kaynak bilgilerini inceleyin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "ipv6-interface-brief": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Arayüzlerdeki global ve link-local IPv6 adreslerini ve durumlarını kontrol edin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Arayüzlerdeki global ve link-local IPv6 adreslerini ve durumlarını kontrol edin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "ipv6-neighbor-cache": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Neighbor Discovery kayıtlarını ve adres çözümleme durumlarını inceleyin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Neighbor Discovery kayıtlarını ve adres çözümleme durumlarını inceleyin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "acl-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "ACL adlarını ve numaralarını belirleyip ilgili kural setini ayrı inceleyin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "ACL adlarını ve numaralarını belirleyip ilgili kural setini ayrı inceleyin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "acl-interface-attachment": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Giriş ve çıkış yönünde hangi ACL'nin uygulandığını kontrol edin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Giriş ve çıkış yönünde hangi ACL'nin uygulandığını kontrol edin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "dhcp-binding-table": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "IP-MAC eşleşmelerini, lease kayıtlarını ve istemci dağıtımını kontrol edin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "IP-MAC eşleşmelerini, lease kayıtlarını ve istemci dağıtımını kontrol edin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "dhcp-snooping-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Snooping'in VLAN bazında etkinliğini ve güvenilir portları doğrulayın. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Snooping'in VLAN bazında etkinliğini ve güvenilir portları doğrulayın. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "arp-interface-filter": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "ARP tablosunu arayüz bazında daraltarak IP-MAC eşleşmelerini araştırın. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "ARP tablosunu arayüz bazında daraltarak IP-MAC eşleşmelerini araştırın. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "lldp-neighbor-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Komşu cihazın sistem adı, port kimliği ve yeteneklerini doğrulayın. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Komşu cihazın sistem adı, port kimliği ve yeteneklerini doğrulayın. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "cdp-neighbor-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Cisco komşularının platform, yerel/uzak port ve yönetim IP bilgilerini inceleyin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Cisco komşularının platform, yerel/uzak port ve yönetim IP bilgilerini inceleyin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "port-channel-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Üye portların bundle durumunu ve protokol eşleşmesini kontrol edin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Üye portların bundle durumunu ve protokol eşleşmesini kontrol edin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "lacp-neighbor-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "LACP partner bilgisi ve senkronize üyeleri iki uçta karşılaştırın. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "LACP partner bilgisi ve senkronize üyeleri iki uçta karşılaştırın. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "poe-port-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Port başına güç tüketimini ve PoE durumunu inceleyerek güç bütçesi sorunlarını ayırın. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Port başına güç tüketimini ve PoE durumunu inceleyerek güç bütçesi sorunlarını ayırın. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "syslog-servers": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Cihazın log gönderdiği sunucu adreslerini ve kayıt seviyelerini kontrol edin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Cihazın log gönderdiği sunucu adreslerini ve kayıt seviyelerini kontrol edin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "aaa-method-lists": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Kimlik doğrulama ve yetkilendirme yöntemlerinin sırasını gözden geçirin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Kimlik doğrulama ve yetkilendirme yöntemlerinin sırasını gözden geçirin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "radius-server-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "RADIUS sunucu adresi ve erişim ayarlarını kontrol edin; paylaşılan gizli anahtarları çıktıda paylaşmayın. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "RADIUS sunucu adresi ve erişim ayarlarını kontrol edin; paylaşılan gizli anahtarları çıktıda paylaşmayın. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "cpu-processes": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Anlık CPU tüketimini süreç bazında inceleyin; kısa süreli sıçramaları trend verisiyle doğrulayın. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Anlık CPU tüketimini süreç bazında inceleyin; kısa süreli sıçramaları trend verisiyle doğrulayın. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "memory-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Kullanılan ve boş bellek miktarını izleyerek kaynak baskısını değerlendirin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Kullanılan ve boş bellek miktarını izleyerek kaynak baskısını değerlendirin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "boot-version": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Yazılım sürümü, bootloader ve donanım modelini bakım öncesi kaydedin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Yazılım sürümü, bootloader ve donanım modelini bakım öncesi kaydedin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "config-diff-startup": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Kaydedilmemiş değişiklikleri belirlemek için running ve startup yapılandırmalarını karşılaştırın. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Kaydedilmemiş değişiklikleri belirlemek için running ve startup yapılandırmalarını karşılaştırın. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  },
+  "interface-traffic-rate": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "İlgili durum, sayaç veya yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komuttaki örnek arayüz, adres veya komşu değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Input/output bit rate ve packet rate değerlerini kontrol ederek kapasite kullanımını değerlendirin. Sonucu karşı uç cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek bir anlık çıktıyı kalıcı durum olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklılıklarını göz ardı etmek.",
+          "Örnek IP veya arayüz değerini kendi topolojinize uyarlamamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the relevant status, counter or configuration fields."
+          },
+          {
+            "p": "scope",
+            "d": "Replace example interface, address or neighbor values with those used in your environment."
+          }
+        ],
+        "example": "Input/output bit rate ve packet rate değerlerini kontrol ederek kapasite kullanımını değerlendirin. Compare the result with the peer device and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent condition.",
+          "Ignoring platform and software-version differences.",
+          "Leaving example IP or interface values unchanged."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة أو العدادات أو الإعدادات ذات الصلة."
+          },
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو العنوان أو الجار التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "عدم تعديل عناوين IP أو أسماء الواجهات التجريبية."
+        ]
+      }
+    }
+  }
+}

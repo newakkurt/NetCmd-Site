@@ -1,0 +1,2692 @@
+{
+  "cats": {
+    "Arayüzler": {
+      "en": "Interfaces",
+      "ar": "الواجهات"
+    },
+    "IPv6": {
+      "en": "IPv6",
+      "ar": "IPv6"
+    },
+    "Yönlendirme": {
+      "en": "Routing",
+      "ar": "التوجيه"
+    },
+    "QoS": {
+      "en": "QoS",
+      "ar": "جودة الخدمة"
+    },
+    "Multicast": {
+      "en": "Multicast",
+      "ar": "البث المتعدد"
+    },
+    "Switching": {
+      "en": "Switching and VLAN",
+      "ar": "التحويل وVLAN"
+    },
+    "Güvenlik": {
+      "en": "Security",
+      "ar": "الأمان"
+    },
+    "Servisler": {
+      "en": "Network Services",
+      "ar": "خدمات الشبكة"
+    },
+    "İzleme": {
+      "en": "Monitoring",
+      "ar": "المراقبة"
+    }
+  },
+  "items": {
+    "scope2-1-1": {
+      "en": {
+        "title": "IPv4 interface summary (GigabitEthernet1/0/13)",
+        "note": "Read-only check for GigabitEthernet1/0/13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "ملخص واجهة IPv4 (GigabitEthernet1/0/13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-1-2": {
+      "en": {
+        "title": "IPv4 interface summary (GigabitEthernet1/0/14)",
+        "note": "Read-only check for GigabitEthernet1/0/14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "ملخص واجهة IPv4 (GigabitEthernet1/0/14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-1-3": {
+      "en": {
+        "title": "IPv4 interface summary (GigabitEthernet1/0/15)",
+        "note": "Read-only check for GigabitEthernet1/0/15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "ملخص واجهة IPv4 (GigabitEthernet1/0/15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-1-4": {
+      "en": {
+        "title": "IPv4 interface summary (GigabitEthernet1/0/16)",
+        "note": "Read-only check for GigabitEthernet1/0/16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "ملخص واجهة IPv4 (GigabitEthernet1/0/16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-1-5": {
+      "en": {
+        "title": "IPv4 interface summary (GigabitEthernet1/0/17)",
+        "note": "Read-only check for GigabitEthernet1/0/17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "ملخص واجهة IPv4 (GigabitEthernet1/0/17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-1-6": {
+      "en": {
+        "title": "IPv4 interface summary (GigabitEthernet1/0/18)",
+        "note": "Read-only check for GigabitEthernet1/0/18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "ملخص واجهة IPv4 (GigabitEthernet1/0/18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-1-7": {
+      "en": {
+        "title": "IPv4 interface summary (GigabitEthernet1/0/19)",
+        "note": "Read-only check for GigabitEthernet1/0/19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "ملخص واجهة IPv4 (GigabitEthernet1/0/19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-1-8": {
+      "en": {
+        "title": "IPv4 interface summary (GigabitEthernet1/0/20)",
+        "note": "Read-only check for GigabitEthernet1/0/20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "ملخص واجهة IPv4 (GigabitEthernet1/0/20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-1-9": {
+      "en": {
+        "title": "IPv4 interface summary (GigabitEthernet1/0/21)",
+        "note": "Read-only check for GigabitEthernet1/0/21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "ملخص واجهة IPv4 (GigabitEthernet1/0/21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-1-10": {
+      "en": {
+        "title": "IPv4 interface summary (GigabitEthernet1/0/22)",
+        "note": "Read-only check for GigabitEthernet1/0/22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "ملخص واجهة IPv4 (GigabitEthernet1/0/22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-1-11": {
+      "en": {
+        "title": "IPv4 interface summary (GigabitEthernet1/0/23)",
+        "note": "Read-only check for GigabitEthernet1/0/23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "ملخص واجهة IPv4 (GigabitEthernet1/0/23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-1-12": {
+      "en": {
+        "title": "IPv4 interface summary (GigabitEthernet1/0/24)",
+        "note": "Read-only check for GigabitEthernet1/0/24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "ملخص واجهة IPv4 (GigabitEthernet1/0/24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-2-1": {
+      "en": {
+        "title": "IPv6 interface details (GigabitEthernet1/0/13)",
+        "note": "Read-only check for GigabitEthernet1/0/13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة IPv6 (GigabitEthernet1/0/13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-2-2": {
+      "en": {
+        "title": "IPv6 interface details (GigabitEthernet1/0/14)",
+        "note": "Read-only check for GigabitEthernet1/0/14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة IPv6 (GigabitEthernet1/0/14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-2-3": {
+      "en": {
+        "title": "IPv6 interface details (GigabitEthernet1/0/15)",
+        "note": "Read-only check for GigabitEthernet1/0/15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة IPv6 (GigabitEthernet1/0/15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-2-4": {
+      "en": {
+        "title": "IPv6 interface details (GigabitEthernet1/0/16)",
+        "note": "Read-only check for GigabitEthernet1/0/16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة IPv6 (GigabitEthernet1/0/16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-2-5": {
+      "en": {
+        "title": "IPv6 interface details (GigabitEthernet1/0/17)",
+        "note": "Read-only check for GigabitEthernet1/0/17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة IPv6 (GigabitEthernet1/0/17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-2-6": {
+      "en": {
+        "title": "IPv6 interface details (GigabitEthernet1/0/18)",
+        "note": "Read-only check for GigabitEthernet1/0/18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة IPv6 (GigabitEthernet1/0/18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-2-7": {
+      "en": {
+        "title": "IPv6 interface details (GigabitEthernet1/0/19)",
+        "note": "Read-only check for GigabitEthernet1/0/19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة IPv6 (GigabitEthernet1/0/19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-2-8": {
+      "en": {
+        "title": "IPv6 interface details (GigabitEthernet1/0/20)",
+        "note": "Read-only check for GigabitEthernet1/0/20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة IPv6 (GigabitEthernet1/0/20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-2-9": {
+      "en": {
+        "title": "IPv6 interface details (GigabitEthernet1/0/21)",
+        "note": "Read-only check for GigabitEthernet1/0/21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة IPv6 (GigabitEthernet1/0/21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-2-10": {
+      "en": {
+        "title": "IPv6 interface details (GigabitEthernet1/0/22)",
+        "note": "Read-only check for GigabitEthernet1/0/22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة IPv6 (GigabitEthernet1/0/22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-2-11": {
+      "en": {
+        "title": "IPv6 interface details (GigabitEthernet1/0/23)",
+        "note": "Read-only check for GigabitEthernet1/0/23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة IPv6 (GigabitEthernet1/0/23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-2-12": {
+      "en": {
+        "title": "IPv6 interface details (GigabitEthernet1/0/24)",
+        "note": "Read-only check for GigabitEthernet1/0/24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة IPv6 (GigabitEthernet1/0/24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-3-1": {
+      "en": {
+        "title": "OSPF interface details (GigabitEthernet1/0/13)",
+        "note": "Read-only check for GigabitEthernet1/0/13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة OSPF (GigabitEthernet1/0/13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-3-2": {
+      "en": {
+        "title": "OSPF interface details (GigabitEthernet1/0/14)",
+        "note": "Read-only check for GigabitEthernet1/0/14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة OSPF (GigabitEthernet1/0/14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-3-3": {
+      "en": {
+        "title": "OSPF interface details (GigabitEthernet1/0/15)",
+        "note": "Read-only check for GigabitEthernet1/0/15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة OSPF (GigabitEthernet1/0/15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-3-4": {
+      "en": {
+        "title": "OSPF interface details (GigabitEthernet1/0/16)",
+        "note": "Read-only check for GigabitEthernet1/0/16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة OSPF (GigabitEthernet1/0/16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-3-5": {
+      "en": {
+        "title": "OSPF interface details (GigabitEthernet1/0/17)",
+        "note": "Read-only check for GigabitEthernet1/0/17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة OSPF (GigabitEthernet1/0/17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-3-6": {
+      "en": {
+        "title": "OSPF interface details (GigabitEthernet1/0/18)",
+        "note": "Read-only check for GigabitEthernet1/0/18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة OSPF (GigabitEthernet1/0/18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-3-7": {
+      "en": {
+        "title": "OSPF interface details (GigabitEthernet1/0/19)",
+        "note": "Read-only check for GigabitEthernet1/0/19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة OSPF (GigabitEthernet1/0/19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-3-8": {
+      "en": {
+        "title": "OSPF interface details (GigabitEthernet1/0/20)",
+        "note": "Read-only check for GigabitEthernet1/0/20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة OSPF (GigabitEthernet1/0/20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-3-9": {
+      "en": {
+        "title": "OSPF interface details (GigabitEthernet1/0/21)",
+        "note": "Read-only check for GigabitEthernet1/0/21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة OSPF (GigabitEthernet1/0/21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-3-10": {
+      "en": {
+        "title": "OSPF interface details (GigabitEthernet1/0/22)",
+        "note": "Read-only check for GigabitEthernet1/0/22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة OSPF (GigabitEthernet1/0/22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-3-11": {
+      "en": {
+        "title": "OSPF interface details (GigabitEthernet1/0/23)",
+        "note": "Read-only check for GigabitEthernet1/0/23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة OSPF (GigabitEthernet1/0/23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-3-12": {
+      "en": {
+        "title": "OSPF interface details (GigabitEthernet1/0/24)",
+        "note": "Read-only check for GigabitEthernet1/0/24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة OSPF (GigabitEthernet1/0/24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-4-1": {
+      "en": {
+        "title": "QoS interface counters (GigabitEthernet1/0/13)",
+        "note": "Read-only check for GigabitEthernet1/0/13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عدادات QoS للواجهة (GigabitEthernet1/0/13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-4-2": {
+      "en": {
+        "title": "QoS interface counters (GigabitEthernet1/0/14)",
+        "note": "Read-only check for GigabitEthernet1/0/14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عدادات QoS للواجهة (GigabitEthernet1/0/14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-4-3": {
+      "en": {
+        "title": "QoS interface counters (GigabitEthernet1/0/15)",
+        "note": "Read-only check for GigabitEthernet1/0/15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عدادات QoS للواجهة (GigabitEthernet1/0/15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-4-4": {
+      "en": {
+        "title": "QoS interface counters (GigabitEthernet1/0/16)",
+        "note": "Read-only check for GigabitEthernet1/0/16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عدادات QoS للواجهة (GigabitEthernet1/0/16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-4-5": {
+      "en": {
+        "title": "QoS interface counters (GigabitEthernet1/0/17)",
+        "note": "Read-only check for GigabitEthernet1/0/17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عدادات QoS للواجهة (GigabitEthernet1/0/17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-4-6": {
+      "en": {
+        "title": "QoS interface counters (GigabitEthernet1/0/18)",
+        "note": "Read-only check for GigabitEthernet1/0/18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عدادات QoS للواجهة (GigabitEthernet1/0/18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-4-7": {
+      "en": {
+        "title": "QoS interface counters (GigabitEthernet1/0/19)",
+        "note": "Read-only check for GigabitEthernet1/0/19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عدادات QoS للواجهة (GigabitEthernet1/0/19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-4-8": {
+      "en": {
+        "title": "QoS interface counters (GigabitEthernet1/0/20)",
+        "note": "Read-only check for GigabitEthernet1/0/20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عدادات QoS للواجهة (GigabitEthernet1/0/20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-4-9": {
+      "en": {
+        "title": "QoS interface counters (GigabitEthernet1/0/21)",
+        "note": "Read-only check for GigabitEthernet1/0/21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عدادات QoS للواجهة (GigabitEthernet1/0/21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-4-10": {
+      "en": {
+        "title": "QoS interface counters (GigabitEthernet1/0/22)",
+        "note": "Read-only check for GigabitEthernet1/0/22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عدادات QoS للواجهة (GigabitEthernet1/0/22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-4-11": {
+      "en": {
+        "title": "QoS interface counters (GigabitEthernet1/0/23)",
+        "note": "Read-only check for GigabitEthernet1/0/23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عدادات QoS للواجهة (GigabitEthernet1/0/23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-4-12": {
+      "en": {
+        "title": "QoS interface counters (GigabitEthernet1/0/24)",
+        "note": "Read-only check for GigabitEthernet1/0/24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عدادات QoS للواجهة (GigabitEthernet1/0/24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-5-1": {
+      "en": {
+        "title": "PIM interface details (GigabitEthernet1/0/13)",
+        "note": "Read-only check for GigabitEthernet1/0/13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة PIM (GigabitEthernet1/0/13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-5-2": {
+      "en": {
+        "title": "PIM interface details (GigabitEthernet1/0/14)",
+        "note": "Read-only check for GigabitEthernet1/0/14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة PIM (GigabitEthernet1/0/14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-5-3": {
+      "en": {
+        "title": "PIM interface details (GigabitEthernet1/0/15)",
+        "note": "Read-only check for GigabitEthernet1/0/15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة PIM (GigabitEthernet1/0/15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-5-4": {
+      "en": {
+        "title": "PIM interface details (GigabitEthernet1/0/16)",
+        "note": "Read-only check for GigabitEthernet1/0/16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة PIM (GigabitEthernet1/0/16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-5-5": {
+      "en": {
+        "title": "PIM interface details (GigabitEthernet1/0/17)",
+        "note": "Read-only check for GigabitEthernet1/0/17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة PIM (GigabitEthernet1/0/17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-5-6": {
+      "en": {
+        "title": "PIM interface details (GigabitEthernet1/0/18)",
+        "note": "Read-only check for GigabitEthernet1/0/18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة PIM (GigabitEthernet1/0/18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-5-7": {
+      "en": {
+        "title": "PIM interface details (GigabitEthernet1/0/19)",
+        "note": "Read-only check for GigabitEthernet1/0/19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة PIM (GigabitEthernet1/0/19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-5-8": {
+      "en": {
+        "title": "PIM interface details (GigabitEthernet1/0/20)",
+        "note": "Read-only check for GigabitEthernet1/0/20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة PIM (GigabitEthernet1/0/20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-5-9": {
+      "en": {
+        "title": "PIM interface details (GigabitEthernet1/0/21)",
+        "note": "Read-only check for GigabitEthernet1/0/21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة PIM (GigabitEthernet1/0/21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-5-10": {
+      "en": {
+        "title": "PIM interface details (GigabitEthernet1/0/22)",
+        "note": "Read-only check for GigabitEthernet1/0/22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة PIM (GigabitEthernet1/0/22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-5-11": {
+      "en": {
+        "title": "PIM interface details (GigabitEthernet1/0/23)",
+        "note": "Read-only check for GigabitEthernet1/0/23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة PIM (GigabitEthernet1/0/23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-5-12": {
+      "en": {
+        "title": "PIM interface details (GigabitEthernet1/0/24)",
+        "note": "Read-only check for GigabitEthernet1/0/24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة PIM (GigabitEthernet1/0/24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-6-1": {
+      "en": {
+        "title": "LLDP neighbor details (GigabitEthernet1/0/13)",
+        "note": "Read-only check for GigabitEthernet1/0/13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP (GigabitEthernet1/0/13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-6-2": {
+      "en": {
+        "title": "LLDP neighbor details (GigabitEthernet1/0/14)",
+        "note": "Read-only check for GigabitEthernet1/0/14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP (GigabitEthernet1/0/14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-6-3": {
+      "en": {
+        "title": "LLDP neighbor details (GigabitEthernet1/0/15)",
+        "note": "Read-only check for GigabitEthernet1/0/15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP (GigabitEthernet1/0/15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-6-4": {
+      "en": {
+        "title": "LLDP neighbor details (GigabitEthernet1/0/16)",
+        "note": "Read-only check for GigabitEthernet1/0/16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP (GigabitEthernet1/0/16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-6-5": {
+      "en": {
+        "title": "LLDP neighbor details (GigabitEthernet1/0/17)",
+        "note": "Read-only check for GigabitEthernet1/0/17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP (GigabitEthernet1/0/17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-6-6": {
+      "en": {
+        "title": "LLDP neighbor details (GigabitEthernet1/0/18)",
+        "note": "Read-only check for GigabitEthernet1/0/18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP (GigabitEthernet1/0/18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-6-7": {
+      "en": {
+        "title": "LLDP neighbor details (GigabitEthernet1/0/19)",
+        "note": "Read-only check for GigabitEthernet1/0/19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP (GigabitEthernet1/0/19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-6-8": {
+      "en": {
+        "title": "LLDP neighbor details (GigabitEthernet1/0/20)",
+        "note": "Read-only check for GigabitEthernet1/0/20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP (GigabitEthernet1/0/20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-6-9": {
+      "en": {
+        "title": "LLDP neighbor details (GigabitEthernet1/0/21)",
+        "note": "Read-only check for GigabitEthernet1/0/21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP (GigabitEthernet1/0/21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-6-10": {
+      "en": {
+        "title": "LLDP neighbor details (GigabitEthernet1/0/22)",
+        "note": "Read-only check for GigabitEthernet1/0/22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP (GigabitEthernet1/0/22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-6-11": {
+      "en": {
+        "title": "LLDP neighbor details (GigabitEthernet1/0/23)",
+        "note": "Read-only check for GigabitEthernet1/0/23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP (GigabitEthernet1/0/23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-6-12": {
+      "en": {
+        "title": "LLDP neighbor details (GigabitEthernet1/0/24)",
+        "note": "Read-only check for GigabitEthernet1/0/24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP (GigabitEthernet1/0/24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-7-1": {
+      "en": {
+        "title": "CDP neighbor details (GigabitEthernet1/0/13)",
+        "note": "Read-only check for GigabitEthernet1/0/13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP (GigabitEthernet1/0/13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-7-2": {
+      "en": {
+        "title": "CDP neighbor details (GigabitEthernet1/0/14)",
+        "note": "Read-only check for GigabitEthernet1/0/14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP (GigabitEthernet1/0/14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-7-3": {
+      "en": {
+        "title": "CDP neighbor details (GigabitEthernet1/0/15)",
+        "note": "Read-only check for GigabitEthernet1/0/15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP (GigabitEthernet1/0/15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-7-4": {
+      "en": {
+        "title": "CDP neighbor details (GigabitEthernet1/0/16)",
+        "note": "Read-only check for GigabitEthernet1/0/16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP (GigabitEthernet1/0/16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-7-5": {
+      "en": {
+        "title": "CDP neighbor details (GigabitEthernet1/0/17)",
+        "note": "Read-only check for GigabitEthernet1/0/17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP (GigabitEthernet1/0/17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-7-6": {
+      "en": {
+        "title": "CDP neighbor details (GigabitEthernet1/0/18)",
+        "note": "Read-only check for GigabitEthernet1/0/18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP (GigabitEthernet1/0/18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-7-7": {
+      "en": {
+        "title": "CDP neighbor details (GigabitEthernet1/0/19)",
+        "note": "Read-only check for GigabitEthernet1/0/19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP (GigabitEthernet1/0/19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-7-8": {
+      "en": {
+        "title": "CDP neighbor details (GigabitEthernet1/0/20)",
+        "note": "Read-only check for GigabitEthernet1/0/20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP (GigabitEthernet1/0/20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-7-9": {
+      "en": {
+        "title": "CDP neighbor details (GigabitEthernet1/0/21)",
+        "note": "Read-only check for GigabitEthernet1/0/21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP (GigabitEthernet1/0/21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-7-10": {
+      "en": {
+        "title": "CDP neighbor details (GigabitEthernet1/0/22)",
+        "note": "Read-only check for GigabitEthernet1/0/22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP (GigabitEthernet1/0/22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-7-11": {
+      "en": {
+        "title": "CDP neighbor details (GigabitEthernet1/0/23)",
+        "note": "Read-only check for GigabitEthernet1/0/23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP (GigabitEthernet1/0/23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-7-12": {
+      "en": {
+        "title": "CDP neighbor details (GigabitEthernet1/0/24)",
+        "note": "Read-only check for GigabitEthernet1/0/24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP (GigabitEthernet1/0/24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-8-1": {
+      "en": {
+        "title": "Port security interface (GigabitEthernet1/0/13)",
+        "note": "Read-only check for GigabitEthernet1/0/13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "أمان المنفذ للواجهة (GigabitEthernet1/0/13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-8-2": {
+      "en": {
+        "title": "Port security interface (GigabitEthernet1/0/14)",
+        "note": "Read-only check for GigabitEthernet1/0/14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "أمان المنفذ للواجهة (GigabitEthernet1/0/14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-8-3": {
+      "en": {
+        "title": "Port security interface (GigabitEthernet1/0/15)",
+        "note": "Read-only check for GigabitEthernet1/0/15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "أمان المنفذ للواجهة (GigabitEthernet1/0/15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-8-4": {
+      "en": {
+        "title": "Port security interface (GigabitEthernet1/0/16)",
+        "note": "Read-only check for GigabitEthernet1/0/16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "أمان المنفذ للواجهة (GigabitEthernet1/0/16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-8-5": {
+      "en": {
+        "title": "Port security interface (GigabitEthernet1/0/17)",
+        "note": "Read-only check for GigabitEthernet1/0/17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "أمان المنفذ للواجهة (GigabitEthernet1/0/17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-8-6": {
+      "en": {
+        "title": "Port security interface (GigabitEthernet1/0/18)",
+        "note": "Read-only check for GigabitEthernet1/0/18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "أمان المنفذ للواجهة (GigabitEthernet1/0/18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-8-7": {
+      "en": {
+        "title": "Port security interface (GigabitEthernet1/0/19)",
+        "note": "Read-only check for GigabitEthernet1/0/19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "أمان المنفذ للواجهة (GigabitEthernet1/0/19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-8-8": {
+      "en": {
+        "title": "Port security interface (GigabitEthernet1/0/20)",
+        "note": "Read-only check for GigabitEthernet1/0/20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "أمان المنفذ للواجهة (GigabitEthernet1/0/20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-8-9": {
+      "en": {
+        "title": "Port security interface (GigabitEthernet1/0/21)",
+        "note": "Read-only check for GigabitEthernet1/0/21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "أمان المنفذ للواجهة (GigabitEthernet1/0/21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-8-10": {
+      "en": {
+        "title": "Port security interface (GigabitEthernet1/0/22)",
+        "note": "Read-only check for GigabitEthernet1/0/22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "أمان المنفذ للواجهة (GigabitEthernet1/0/22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-8-11": {
+      "en": {
+        "title": "Port security interface (GigabitEthernet1/0/23)",
+        "note": "Read-only check for GigabitEthernet1/0/23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "أمان المنفذ للواجهة (GigabitEthernet1/0/23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-8-12": {
+      "en": {
+        "title": "Port security interface (GigabitEthernet1/0/24)",
+        "note": "Read-only check for GigabitEthernet1/0/24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "أمان المنفذ للواجهة (GigabitEthernet1/0/24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-9-1": {
+      "en": {
+        "title": "Storm control interface (GigabitEthernet1/0/13)",
+        "note": "Read-only check for GigabitEthernet1/0/13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "التحكم بالعواصف للواجهة (GigabitEthernet1/0/13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-9-2": {
+      "en": {
+        "title": "Storm control interface (GigabitEthernet1/0/14)",
+        "note": "Read-only check for GigabitEthernet1/0/14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "التحكم بالعواصف للواجهة (GigabitEthernet1/0/14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-9-3": {
+      "en": {
+        "title": "Storm control interface (GigabitEthernet1/0/15)",
+        "note": "Read-only check for GigabitEthernet1/0/15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "التحكم بالعواصف للواجهة (GigabitEthernet1/0/15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-9-4": {
+      "en": {
+        "title": "Storm control interface (GigabitEthernet1/0/16)",
+        "note": "Read-only check for GigabitEthernet1/0/16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "التحكم بالعواصف للواجهة (GigabitEthernet1/0/16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-9-5": {
+      "en": {
+        "title": "Storm control interface (GigabitEthernet1/0/17)",
+        "note": "Read-only check for GigabitEthernet1/0/17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "التحكم بالعواصف للواجهة (GigabitEthernet1/0/17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-9-6": {
+      "en": {
+        "title": "Storm control interface (GigabitEthernet1/0/18)",
+        "note": "Read-only check for GigabitEthernet1/0/18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "التحكم بالعواصف للواجهة (GigabitEthernet1/0/18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-9-7": {
+      "en": {
+        "title": "Storm control interface (GigabitEthernet1/0/19)",
+        "note": "Read-only check for GigabitEthernet1/0/19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "التحكم بالعواصف للواجهة (GigabitEthernet1/0/19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-9-8": {
+      "en": {
+        "title": "Storm control interface (GigabitEthernet1/0/20)",
+        "note": "Read-only check for GigabitEthernet1/0/20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "التحكم بالعواصف للواجهة (GigabitEthernet1/0/20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-9-9": {
+      "en": {
+        "title": "Storm control interface (GigabitEthernet1/0/21)",
+        "note": "Read-only check for GigabitEthernet1/0/21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "التحكم بالعواصف للواجهة (GigabitEthernet1/0/21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-9-10": {
+      "en": {
+        "title": "Storm control interface (GigabitEthernet1/0/22)",
+        "note": "Read-only check for GigabitEthernet1/0/22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "التحكم بالعواصف للواجهة (GigabitEthernet1/0/22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-9-11": {
+      "en": {
+        "title": "Storm control interface (GigabitEthernet1/0/23)",
+        "note": "Read-only check for GigabitEthernet1/0/23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "التحكم بالعواصف للواجهة (GigabitEthernet1/0/23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-9-12": {
+      "en": {
+        "title": "Storm control interface (GigabitEthernet1/0/24)",
+        "note": "Read-only check for GigabitEthernet1/0/24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "التحكم بالعواصف للواجهة (GigabitEthernet1/0/24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-10-1": {
+      "en": {
+        "title": "Interface statistics (GigabitEthernet1/0/13)",
+        "note": "Read-only check for GigabitEthernet1/0/13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "إحصاءات الواجهة (GigabitEthernet1/0/13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-10-2": {
+      "en": {
+        "title": "Interface statistics (GigabitEthernet1/0/14)",
+        "note": "Read-only check for GigabitEthernet1/0/14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "إحصاءات الواجهة (GigabitEthernet1/0/14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-10-3": {
+      "en": {
+        "title": "Interface statistics (GigabitEthernet1/0/15)",
+        "note": "Read-only check for GigabitEthernet1/0/15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "إحصاءات الواجهة (GigabitEthernet1/0/15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-10-4": {
+      "en": {
+        "title": "Interface statistics (GigabitEthernet1/0/16)",
+        "note": "Read-only check for GigabitEthernet1/0/16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "إحصاءات الواجهة (GigabitEthernet1/0/16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-10-5": {
+      "en": {
+        "title": "Interface statistics (GigabitEthernet1/0/17)",
+        "note": "Read-only check for GigabitEthernet1/0/17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "إحصاءات الواجهة (GigabitEthernet1/0/17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-10-6": {
+      "en": {
+        "title": "Interface statistics (GigabitEthernet1/0/18)",
+        "note": "Read-only check for GigabitEthernet1/0/18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "إحصاءات الواجهة (GigabitEthernet1/0/18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-10-7": {
+      "en": {
+        "title": "Interface statistics (GigabitEthernet1/0/19)",
+        "note": "Read-only check for GigabitEthernet1/0/19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "إحصاءات الواجهة (GigabitEthernet1/0/19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-10-8": {
+      "en": {
+        "title": "Interface statistics (GigabitEthernet1/0/20)",
+        "note": "Read-only check for GigabitEthernet1/0/20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "إحصاءات الواجهة (GigabitEthernet1/0/20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-10-9": {
+      "en": {
+        "title": "Interface statistics (GigabitEthernet1/0/21)",
+        "note": "Read-only check for GigabitEthernet1/0/21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "إحصاءات الواجهة (GigabitEthernet1/0/21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-10-10": {
+      "en": {
+        "title": "Interface statistics (GigabitEthernet1/0/22)",
+        "note": "Read-only check for GigabitEthernet1/0/22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "إحصاءات الواجهة (GigabitEthernet1/0/22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-10-11": {
+      "en": {
+        "title": "Interface statistics (GigabitEthernet1/0/23)",
+        "note": "Read-only check for GigabitEthernet1/0/23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "إحصاءات الواجهة (GigabitEthernet1/0/23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-10-12": {
+      "en": {
+        "title": "Interface statistics (GigabitEthernet1/0/24)",
+        "note": "Read-only check for GigabitEthernet1/0/24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "إحصاءات الواجهة (GigabitEthernet1/0/24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-11-1": {
+      "en": {
+        "title": "MAC addresses in VLAN (130)",
+        "note": "Read-only check for 130. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عناوين MAC في VLAN (130)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-11-2": {
+      "en": {
+        "title": "MAC addresses in VLAN (140)",
+        "note": "Read-only check for 140. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عناوين MAC في VLAN (140)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-11-3": {
+      "en": {
+        "title": "MAC addresses in VLAN (150)",
+        "note": "Read-only check for 150. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عناوين MAC في VLAN (150)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-11-4": {
+      "en": {
+        "title": "MAC addresses in VLAN (160)",
+        "note": "Read-only check for 160. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عناوين MAC في VLAN (160)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-11-5": {
+      "en": {
+        "title": "MAC addresses in VLAN (170)",
+        "note": "Read-only check for 170. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عناوين MAC في VLAN (170)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-11-6": {
+      "en": {
+        "title": "MAC addresses in VLAN (180)",
+        "note": "Read-only check for 180. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عناوين MAC في VLAN (180)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-11-7": {
+      "en": {
+        "title": "MAC addresses in VLAN (190)",
+        "note": "Read-only check for 190. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عناوين MAC في VLAN (190)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-11-8": {
+      "en": {
+        "title": "MAC addresses in VLAN (200)",
+        "note": "Read-only check for 200. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عناوين MAC في VLAN (200)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-11-9": {
+      "en": {
+        "title": "MAC addresses in VLAN (210)",
+        "note": "Read-only check for 210. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عناوين MAC في VLAN (210)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-11-10": {
+      "en": {
+        "title": "MAC addresses in VLAN (220)",
+        "note": "Read-only check for 220. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عناوين MAC في VLAN (220)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-11-11": {
+      "en": {
+        "title": "MAC addresses in VLAN (230)",
+        "note": "Read-only check for 230. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عناوين MAC في VLAN (230)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-11-12": {
+      "en": {
+        "title": "MAC addresses in VLAN (240)",
+        "note": "Read-only check for 240. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "عناوين MAC في VLAN (240)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-12-1": {
+      "en": {
+        "title": "VLAN spanning-tree topology (130)",
+        "note": "Read-only check for 130. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "طوبولوجيا STP لـ VLAN (130)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-12-2": {
+      "en": {
+        "title": "VLAN spanning-tree topology (140)",
+        "note": "Read-only check for 140. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "طوبولوجيا STP لـ VLAN (140)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-12-3": {
+      "en": {
+        "title": "VLAN spanning-tree topology (150)",
+        "note": "Read-only check for 150. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "طوبولوجيا STP لـ VLAN (150)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-12-4": {
+      "en": {
+        "title": "VLAN spanning-tree topology (160)",
+        "note": "Read-only check for 160. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "طوبولوجيا STP لـ VLAN (160)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-12-5": {
+      "en": {
+        "title": "VLAN spanning-tree topology (170)",
+        "note": "Read-only check for 170. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "طوبولوجيا STP لـ VLAN (170)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-12-6": {
+      "en": {
+        "title": "VLAN spanning-tree topology (180)",
+        "note": "Read-only check for 180. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "طوبولوجيا STP لـ VLAN (180)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-12-7": {
+      "en": {
+        "title": "VLAN spanning-tree topology (190)",
+        "note": "Read-only check for 190. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "طوبولوجيا STP لـ VLAN (190)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-12-8": {
+      "en": {
+        "title": "VLAN spanning-tree topology (200)",
+        "note": "Read-only check for 200. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "طوبولوجيا STP لـ VLAN (200)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-12-9": {
+      "en": {
+        "title": "VLAN spanning-tree topology (210)",
+        "note": "Read-only check for 210. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "طوبولوجيا STP لـ VLAN (210)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-12-10": {
+      "en": {
+        "title": "VLAN spanning-tree topology (220)",
+        "note": "Read-only check for 220. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "طوبولوجيا STP لـ VLAN (220)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-12-11": {
+      "en": {
+        "title": "VLAN spanning-tree topology (230)",
+        "note": "Read-only check for 230. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "طوبولوجيا STP لـ VLAN (230)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-12-12": {
+      "en": {
+        "title": "VLAN spanning-tree topology (240)",
+        "note": "Read-only check for 240. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "طوبولوجيا STP لـ VLAN (240)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-13-1": {
+      "en": {
+        "title": "IGMP groups by VLAN (130)",
+        "note": "Read-only check for 130. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP حسب VLAN (130)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-13-2": {
+      "en": {
+        "title": "IGMP groups by VLAN (140)",
+        "note": "Read-only check for 140. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP حسب VLAN (140)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-13-3": {
+      "en": {
+        "title": "IGMP groups by VLAN (150)",
+        "note": "Read-only check for 150. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP حسب VLAN (150)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-13-4": {
+      "en": {
+        "title": "IGMP groups by VLAN (160)",
+        "note": "Read-only check for 160. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP حسب VLAN (160)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-13-5": {
+      "en": {
+        "title": "IGMP groups by VLAN (170)",
+        "note": "Read-only check for 170. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP حسب VLAN (170)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-13-6": {
+      "en": {
+        "title": "IGMP groups by VLAN (180)",
+        "note": "Read-only check for 180. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP حسب VLAN (180)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-13-7": {
+      "en": {
+        "title": "IGMP groups by VLAN (190)",
+        "note": "Read-only check for 190. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP حسب VLAN (190)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-13-8": {
+      "en": {
+        "title": "IGMP groups by VLAN (200)",
+        "note": "Read-only check for 200. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP حسب VLAN (200)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-13-9": {
+      "en": {
+        "title": "IGMP groups by VLAN (210)",
+        "note": "Read-only check for 210. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP حسب VLAN (210)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-13-10": {
+      "en": {
+        "title": "IGMP groups by VLAN (220)",
+        "note": "Read-only check for 220. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP حسب VLAN (220)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-13-11": {
+      "en": {
+        "title": "IGMP groups by VLAN (230)",
+        "note": "Read-only check for 230. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP حسب VLAN (230)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-13-12": {
+      "en": {
+        "title": "IGMP groups by VLAN (240)",
+        "note": "Read-only check for 240. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مجموعات IGMP حسب VLAN (240)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-14-1": {
+      "en": {
+        "title": "VLAN interface details (10)",
+        "note": "Read-only check for 10. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة VLAN (10)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-14-2": {
+      "en": {
+        "title": "VLAN interface details (20)",
+        "note": "Read-only check for 20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة VLAN (20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-14-3": {
+      "en": {
+        "title": "VLAN interface details (30)",
+        "note": "Read-only check for 30. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة VLAN (30)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-14-4": {
+      "en": {
+        "title": "VLAN interface details (40)",
+        "note": "Read-only check for 40. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة VLAN (40)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-14-5": {
+      "en": {
+        "title": "VLAN interface details (50)",
+        "note": "Read-only check for 50. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة VLAN (50)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-14-6": {
+      "en": {
+        "title": "VLAN interface details (60)",
+        "note": "Read-only check for 60. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة VLAN (60)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-14-7": {
+      "en": {
+        "title": "VLAN interface details (70)",
+        "note": "Read-only check for 70. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة VLAN (70)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-14-8": {
+      "en": {
+        "title": "VLAN interface details (80)",
+        "note": "Read-only check for 80. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة VLAN (80)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-14-9": {
+      "en": {
+        "title": "VLAN interface details (90)",
+        "note": "Read-only check for 90. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة VLAN (90)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-14-10": {
+      "en": {
+        "title": "VLAN interface details (100)",
+        "note": "Read-only check for 100. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة VLAN (100)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-14-11": {
+      "en": {
+        "title": "VLAN interface details (110)",
+        "note": "Read-only check for 110. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة VLAN (110)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-14-12": {
+      "en": {
+        "title": "VLAN interface details (120)",
+        "note": "Read-only check for 120. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل واجهة VLAN (120)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-15-1": {
+      "en": {
+        "title": "VRF routing table (CORP)",
+        "note": "Read-only check for CORP. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جدول توجيه VRF (CORP)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-15-2": {
+      "en": {
+        "title": "VRF routing table (VOICE)",
+        "note": "Read-only check for VOICE. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جدول توجيه VRF (VOICE)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-15-3": {
+      "en": {
+        "title": "VRF routing table (GUEST)",
+        "note": "Read-only check for GUEST. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جدول توجيه VRF (GUEST)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-15-4": {
+      "en": {
+        "title": "VRF routing table (IOT)",
+        "note": "Read-only check for IOT. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جدول توجيه VRF (IOT)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-15-5": {
+      "en": {
+        "title": "VRF routing table (DMZ)",
+        "note": "Read-only check for DMZ. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جدول توجيه VRF (DMZ)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-15-6": {
+      "en": {
+        "title": "VRF routing table (MGMT)",
+        "note": "Read-only check for MGMT. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جدول توجيه VRF (MGMT)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-15-7": {
+      "en": {
+        "title": "VRF routing table (VPN1)",
+        "note": "Read-only check for VPN1. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جدول توجيه VRF (VPN1)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-15-8": {
+      "en": {
+        "title": "VRF routing table (VPN2)",
+        "note": "Read-only check for VPN2. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جدول توجيه VRF (VPN2)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-15-9": {
+      "en": {
+        "title": "VRF routing table (VPN3)",
+        "note": "Read-only check for VPN3. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جدول توجيه VRF (VPN3)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-15-10": {
+      "en": {
+        "title": "VRF routing table (VPN4)",
+        "note": "Read-only check for VPN4. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جدول توجيه VRF (VPN4)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-15-11": {
+      "en": {
+        "title": "VRF routing table (VPN5)",
+        "note": "Read-only check for VPN5. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جدول توجيه VRF (VPN5)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-15-12": {
+      "en": {
+        "title": "VRF routing table (VPN6)",
+        "note": "Read-only check for VPN6. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جدول توجيه VRF (VPN6)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-16-1": {
+      "en": {
+        "title": "BGP peer details (192.0.2.13)",
+        "note": "Read-only check for 192.0.2.13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP (192.0.2.13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-16-2": {
+      "en": {
+        "title": "BGP peer details (192.0.2.14)",
+        "note": "Read-only check for 192.0.2.14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP (192.0.2.14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-16-3": {
+      "en": {
+        "title": "BGP peer details (192.0.2.15)",
+        "note": "Read-only check for 192.0.2.15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP (192.0.2.15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-16-4": {
+      "en": {
+        "title": "BGP peer details (192.0.2.16)",
+        "note": "Read-only check for 192.0.2.16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP (192.0.2.16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-16-5": {
+      "en": {
+        "title": "BGP peer details (192.0.2.17)",
+        "note": "Read-only check for 192.0.2.17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP (192.0.2.17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-16-6": {
+      "en": {
+        "title": "BGP peer details (192.0.2.18)",
+        "note": "Read-only check for 192.0.2.18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP (192.0.2.18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-16-7": {
+      "en": {
+        "title": "BGP peer details (192.0.2.19)",
+        "note": "Read-only check for 192.0.2.19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP (192.0.2.19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-16-8": {
+      "en": {
+        "title": "BGP peer details (192.0.2.20)",
+        "note": "Read-only check for 192.0.2.20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP (192.0.2.20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-16-9": {
+      "en": {
+        "title": "BGP peer details (192.0.2.21)",
+        "note": "Read-only check for 192.0.2.21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP (192.0.2.21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-16-10": {
+      "en": {
+        "title": "BGP peer details (192.0.2.22)",
+        "note": "Read-only check for 192.0.2.22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP (192.0.2.22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-16-11": {
+      "en": {
+        "title": "BGP peer details (192.0.2.23)",
+        "note": "Read-only check for 192.0.2.23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP (192.0.2.23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-16-12": {
+      "en": {
+        "title": "BGP peer details (192.0.2.24)",
+        "note": "Read-only check for 192.0.2.24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP (192.0.2.24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-17-1": {
+      "en": {
+        "title": "ARP IP entry (192.0.2.13)",
+        "note": "Read-only check for 192.0.2.13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مدخل ARP لعنوان IP (192.0.2.13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-17-2": {
+      "en": {
+        "title": "ARP IP entry (192.0.2.14)",
+        "note": "Read-only check for 192.0.2.14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مدخل ARP لعنوان IP (192.0.2.14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-17-3": {
+      "en": {
+        "title": "ARP IP entry (192.0.2.15)",
+        "note": "Read-only check for 192.0.2.15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مدخل ARP لعنوان IP (192.0.2.15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-17-4": {
+      "en": {
+        "title": "ARP IP entry (192.0.2.16)",
+        "note": "Read-only check for 192.0.2.16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مدخل ARP لعنوان IP (192.0.2.16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-17-5": {
+      "en": {
+        "title": "ARP IP entry (192.0.2.17)",
+        "note": "Read-only check for 192.0.2.17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مدخل ARP لعنوان IP (192.0.2.17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-17-6": {
+      "en": {
+        "title": "ARP IP entry (192.0.2.18)",
+        "note": "Read-only check for 192.0.2.18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مدخل ARP لعنوان IP (192.0.2.18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-17-7": {
+      "en": {
+        "title": "ARP IP entry (192.0.2.19)",
+        "note": "Read-only check for 192.0.2.19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مدخل ARP لعنوان IP (192.0.2.19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-17-8": {
+      "en": {
+        "title": "ARP IP entry (192.0.2.20)",
+        "note": "Read-only check for 192.0.2.20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مدخل ARP لعنوان IP (192.0.2.20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-17-9": {
+      "en": {
+        "title": "ARP IP entry (192.0.2.21)",
+        "note": "Read-only check for 192.0.2.21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مدخل ARP لعنوان IP (192.0.2.21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-17-10": {
+      "en": {
+        "title": "ARP IP entry (192.0.2.22)",
+        "note": "Read-only check for 192.0.2.22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مدخل ARP لعنوان IP (192.0.2.22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-17-11": {
+      "en": {
+        "title": "ARP IP entry (192.0.2.23)",
+        "note": "Read-only check for 192.0.2.23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مدخل ARP لعنوان IP (192.0.2.23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-17-12": {
+      "en": {
+        "title": "ARP IP entry (192.0.2.24)",
+        "note": "Read-only check for 192.0.2.24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "مدخل ARP لعنوان IP (192.0.2.24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-18-1": {
+      "en": {
+        "title": "NAT IP session (192.0.2.13)",
+        "note": "Read-only check for 192.0.2.13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جلسة NAT لعنوان IP (192.0.2.13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-18-2": {
+      "en": {
+        "title": "NAT IP session (192.0.2.14)",
+        "note": "Read-only check for 192.0.2.14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جلسة NAT لعنوان IP (192.0.2.14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-18-3": {
+      "en": {
+        "title": "NAT IP session (192.0.2.15)",
+        "note": "Read-only check for 192.0.2.15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جلسة NAT لعنوان IP (192.0.2.15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-18-4": {
+      "en": {
+        "title": "NAT IP session (192.0.2.16)",
+        "note": "Read-only check for 192.0.2.16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جلسة NAT لعنوان IP (192.0.2.16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-18-5": {
+      "en": {
+        "title": "NAT IP session (192.0.2.17)",
+        "note": "Read-only check for 192.0.2.17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جلسة NAT لعنوان IP (192.0.2.17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-18-6": {
+      "en": {
+        "title": "NAT IP session (192.0.2.18)",
+        "note": "Read-only check for 192.0.2.18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جلسة NAT لعنوان IP (192.0.2.18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-18-7": {
+      "en": {
+        "title": "NAT IP session (192.0.2.19)",
+        "note": "Read-only check for 192.0.2.19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جلسة NAT لعنوان IP (192.0.2.19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-18-8": {
+      "en": {
+        "title": "NAT IP session (192.0.2.20)",
+        "note": "Read-only check for 192.0.2.20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جلسة NAT لعنوان IP (192.0.2.20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-18-9": {
+      "en": {
+        "title": "NAT IP session (192.0.2.21)",
+        "note": "Read-only check for 192.0.2.21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جلسة NAT لعنوان IP (192.0.2.21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-18-10": {
+      "en": {
+        "title": "NAT IP session (192.0.2.22)",
+        "note": "Read-only check for 192.0.2.22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جلسة NAT لعنوان IP (192.0.2.22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-18-11": {
+      "en": {
+        "title": "NAT IP session (192.0.2.23)",
+        "note": "Read-only check for 192.0.2.23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جلسة NAT لعنوان IP (192.0.2.23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-18-12": {
+      "en": {
+        "title": "NAT IP session (192.0.2.24)",
+        "note": "Read-only check for 192.0.2.24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "جلسة NAT لعنوان IP (192.0.2.24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-19-1": {
+      "en": {
+        "title": "DHCP pool details (POOL13)",
+        "note": "Read-only check for POOL13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل مجموعة DHCP (POOL13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-19-2": {
+      "en": {
+        "title": "DHCP pool details (POOL14)",
+        "note": "Read-only check for POOL14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل مجموعة DHCP (POOL14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-19-3": {
+      "en": {
+        "title": "DHCP pool details (POOL15)",
+        "note": "Read-only check for POOL15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل مجموعة DHCP (POOL15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-19-4": {
+      "en": {
+        "title": "DHCP pool details (POOL16)",
+        "note": "Read-only check for POOL16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل مجموعة DHCP (POOL16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-19-5": {
+      "en": {
+        "title": "DHCP pool details (POOL17)",
+        "note": "Read-only check for POOL17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل مجموعة DHCP (POOL17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-19-6": {
+      "en": {
+        "title": "DHCP pool details (POOL18)",
+        "note": "Read-only check for POOL18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل مجموعة DHCP (POOL18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-19-7": {
+      "en": {
+        "title": "DHCP pool details (POOL19)",
+        "note": "Read-only check for POOL19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل مجموعة DHCP (POOL19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-19-8": {
+      "en": {
+        "title": "DHCP pool details (POOL20)",
+        "note": "Read-only check for POOL20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل مجموعة DHCP (POOL20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-19-9": {
+      "en": {
+        "title": "DHCP pool details (POOL21)",
+        "note": "Read-only check for POOL21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل مجموعة DHCP (POOL21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-19-10": {
+      "en": {
+        "title": "DHCP pool details (POOL22)",
+        "note": "Read-only check for POOL22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل مجموعة DHCP (POOL22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-19-11": {
+      "en": {
+        "title": "DHCP pool details (POOL23)",
+        "note": "Read-only check for POOL23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل مجموعة DHCP (POOL23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-19-12": {
+      "en": {
+        "title": "DHCP pool details (POOL24)",
+        "note": "Read-only check for POOL24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل مجموعة DHCP (POOL24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-20-1": {
+      "en": {
+        "title": "ACL number details (113)",
+        "note": "Read-only check for 113. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل رقم ACL (113)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-20-2": {
+      "en": {
+        "title": "ACL number details (114)",
+        "note": "Read-only check for 114. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل رقم ACL (114)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-20-3": {
+      "en": {
+        "title": "ACL number details (115)",
+        "note": "Read-only check for 115. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل رقم ACL (115)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-20-4": {
+      "en": {
+        "title": "ACL number details (116)",
+        "note": "Read-only check for 116. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل رقم ACL (116)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-20-5": {
+      "en": {
+        "title": "ACL number details (117)",
+        "note": "Read-only check for 117. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل رقم ACL (117)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-20-6": {
+      "en": {
+        "title": "ACL number details (118)",
+        "note": "Read-only check for 118. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل رقم ACL (118)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-20-7": {
+      "en": {
+        "title": "ACL number details (119)",
+        "note": "Read-only check for 119. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل رقم ACL (119)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-20-8": {
+      "en": {
+        "title": "ACL number details (120)",
+        "note": "Read-only check for 120. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل رقم ACL (120)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-20-9": {
+      "en": {
+        "title": "ACL number details (121)",
+        "note": "Read-only check for 121. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل رقم ACL (121)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-20-10": {
+      "en": {
+        "title": "ACL number details (122)",
+        "note": "Read-only check for 122. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل رقم ACL (122)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-20-11": {
+      "en": {
+        "title": "ACL number details (123)",
+        "note": "Read-only check for 123. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل رقم ACL (123)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-20-12": {
+      "en": {
+        "title": "ACL number details (124)",
+        "note": "Read-only check for 124. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل رقم ACL (124)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-21-1": {
+      "en": {
+        "title": "PIM neighbor details (192.0.2.13)",
+        "note": "Read-only check for 192.0.2.13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار PIM (192.0.2.13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-21-2": {
+      "en": {
+        "title": "PIM neighbor details (192.0.2.14)",
+        "note": "Read-only check for 192.0.2.14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار PIM (192.0.2.14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-21-3": {
+      "en": {
+        "title": "PIM neighbor details (192.0.2.15)",
+        "note": "Read-only check for 192.0.2.15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار PIM (192.0.2.15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-21-4": {
+      "en": {
+        "title": "PIM neighbor details (192.0.2.16)",
+        "note": "Read-only check for 192.0.2.16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار PIM (192.0.2.16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-21-5": {
+      "en": {
+        "title": "PIM neighbor details (192.0.2.17)",
+        "note": "Read-only check for 192.0.2.17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار PIM (192.0.2.17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-21-6": {
+      "en": {
+        "title": "PIM neighbor details (192.0.2.18)",
+        "note": "Read-only check for 192.0.2.18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار PIM (192.0.2.18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-21-7": {
+      "en": {
+        "title": "PIM neighbor details (192.0.2.19)",
+        "note": "Read-only check for 192.0.2.19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار PIM (192.0.2.19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-21-8": {
+      "en": {
+        "title": "PIM neighbor details (192.0.2.20)",
+        "note": "Read-only check for 192.0.2.20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار PIM (192.0.2.20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-21-9": {
+      "en": {
+        "title": "PIM neighbor details (192.0.2.21)",
+        "note": "Read-only check for 192.0.2.21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار PIM (192.0.2.21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-21-10": {
+      "en": {
+        "title": "PIM neighbor details (192.0.2.22)",
+        "note": "Read-only check for 192.0.2.22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار PIM (192.0.2.22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-21-11": {
+      "en": {
+        "title": "PIM neighbor details (192.0.2.23)",
+        "note": "Read-only check for 192.0.2.23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار PIM (192.0.2.23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-21-12": {
+      "en": {
+        "title": "PIM neighbor details (192.0.2.24)",
+        "note": "Read-only check for 192.0.2.24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل جار PIM (192.0.2.24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-22-1": {
+      "en": {
+        "title": "NTP peer details (192.0.2.13)",
+        "note": "Read-only check for 192.0.2.13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير NTP (192.0.2.13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-22-2": {
+      "en": {
+        "title": "NTP peer details (192.0.2.14)",
+        "note": "Read-only check for 192.0.2.14. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير NTP (192.0.2.14)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-22-3": {
+      "en": {
+        "title": "NTP peer details (192.0.2.15)",
+        "note": "Read-only check for 192.0.2.15. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير NTP (192.0.2.15)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-22-4": {
+      "en": {
+        "title": "NTP peer details (192.0.2.16)",
+        "note": "Read-only check for 192.0.2.16. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير NTP (192.0.2.16)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-22-5": {
+      "en": {
+        "title": "NTP peer details (192.0.2.17)",
+        "note": "Read-only check for 192.0.2.17. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير NTP (192.0.2.17)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-22-6": {
+      "en": {
+        "title": "NTP peer details (192.0.2.18)",
+        "note": "Read-only check for 192.0.2.18. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير NTP (192.0.2.18)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-22-7": {
+      "en": {
+        "title": "NTP peer details (192.0.2.19)",
+        "note": "Read-only check for 192.0.2.19. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير NTP (192.0.2.19)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-22-8": {
+      "en": {
+        "title": "NTP peer details (192.0.2.20)",
+        "note": "Read-only check for 192.0.2.20. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير NTP (192.0.2.20)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-22-9": {
+      "en": {
+        "title": "NTP peer details (192.0.2.21)",
+        "note": "Read-only check for 192.0.2.21. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير NTP (192.0.2.21)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-22-10": {
+      "en": {
+        "title": "NTP peer details (192.0.2.22)",
+        "note": "Read-only check for 192.0.2.22. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير NTP (192.0.2.22)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-22-11": {
+      "en": {
+        "title": "NTP peer details (192.0.2.23)",
+        "note": "Read-only check for 192.0.2.23. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير NTP (192.0.2.23)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-22-12": {
+      "en": {
+        "title": "NTP peer details (192.0.2.24)",
+        "note": "Read-only check for 192.0.2.24. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير NTP (192.0.2.24)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    },
+    "scope2-23-1": {
+      "en": {
+        "title": "IPv6 BGP peer details (192.0.2.13)",
+        "note": "Read-only check for 192.0.2.13. Confirm syntax on the device release."
+      },
+      "ar": {
+        "title": "تفاصيل نظير BGP لـ IPv6 (192.0.2.13)",
+        "note": "فحص للقراءة فقط؛ تحقق من الصياغة في إصدار الجهاز."
+      }
+    }
+  }
+}

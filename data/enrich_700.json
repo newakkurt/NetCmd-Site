@@ -1,0 +1,1206 @@
+{
+  "wlan-ap-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "AP adlarını, çalışma durumunu ve yönetim bağlantısını kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "AP adlarını, çalışma durumunu ve yönetim bağlantısını kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "wlan-client-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "İstemci MAC, SSID, AP ve bağlantı durumunu kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "İstemci MAC, SSID, AP ve bağlantı durumunu kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "wlan-ssid-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "SSID, WLAN profili ve yayın durumunu doğrulayın. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "SSID, WLAN profili ve yayın durumunu doğrulayın. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "wlan-radio-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "2.4/5 GHz radyo kanalı, güç ve çalışma durumunu inceleyin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "2.4/5 GHz radyo kanalı, güç ve çalışma durumunu inceleyin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "wlan-client-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "MAC adresi ile istemcinin AP, RSSI ve bağlantı ayrıntılarını kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "MAC adresi ile istemcinin AP, RSSI ve bağlantı ayrıntılarını kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "vpn-ipsec-sa": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "IKE/IPsec SA durumunu, SPI ve sayaçları kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "IKE/IPsec SA durumunu, SPI ve sayaçları kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "vpn-ike-sa": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "IKE Phase 1 komşuluklarının aktifliğini ve kimlik bilgilerini kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "IKE Phase 1 komşuluklarının aktifliğini ve kimlik bilgilerini kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "vpn-tunnel-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Tünellerin up/down durumunu ve uzak uç adreslerini inceleyin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Tünellerin up/down durumunu ve uzak uç adreslerini inceleyin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "vpn-ssl-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Aktif SSL VPN kullanıcılarını ve oturum sürelerini kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Aktif SSL VPN kullanıcılarını ve oturum sürelerini kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "qos-policy-interface": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Giriş/çıkış yönündeki servis politikalarını ve eşleşen sınıfları inceleyin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Giriş/çıkış yönündeki servis politikalarını ve eşleşen sınıfları inceleyin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "qos-class-map": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Class-map eşleşme koşullarını ve bağlı policy-map yapılarını kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Class-map eşleşme koşullarını ve bağlı policy-map yapılarını kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "qos-policy-map": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Policy-map içindeki policing, shaping ve queue parametrelerini inceleyin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Policy-map içindeki policing, shaping ve queue parametrelerini inceleyin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "multicast-routing-table": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Multicast kaynak/grup kayıtlarını ve RPF arayüzlerini inceleyin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Multicast kaynak/grup kayıtlarını ve RPF arayüzlerini inceleyin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "pim-neighbor-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Multicast yönlendirme komşularının arayüz ve durum bilgilerini kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Multicast yönlendirme komşularının arayüz ve durum bilgilerini kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "macsec-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "MKA oturumlarını ve secure channel durumunu kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "MKA oturumlarını ve secure channel durumunu kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "port-security-addresses": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Öğrenilen secure MAC adreslerini ve ihlal sayaçlarını kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Öğrenilen secure MAC adreslerini ve ihlal sayaçlarını kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "storm-control-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Broadcast, multicast ve unknown-unicast eşiklerini ve aksiyonlarını kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Broadcast, multicast ve unknown-unicast eşiklerini ve aksiyonlarını kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "stp-inconsistent-ports": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Root guard veya BPDU guard nedeniyle bloklanan portları belirleyin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Root guard veya BPDU guard nedeniyle bloklanan portları belirleyin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "stp-root-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Root bridge ID, root path cost ve root port bilgisini doğrulayın. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Root bridge ID, root path cost ve root port bilgisini doğrulayın. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "vlan-interface-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "SVI veya VLANIF arayüzlerini ve IP adreslerini kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "SVI veya VLANIF arayüzlerini ve IP adreslerini kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "trunk-allowed-vlans": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Trunk linklerde allowed VLAN listesini ve native/PVID ayarını karşılaştırın. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Trunk linklerde allowed VLAN listesini ve native/PVID ayarını karşılaştırın. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "switch-stack-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Stack üye numarası, rol, durum ve donanım bilgisini kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Stack üye numarası, rol, durum ve donanım bilgisini kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "redundancy-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Active/standby rolünü ve failover durumunu doğrulayın. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Active/standby rolünü ve failover durumunu doğrulayın. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "fan-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Fan hızını ve alarm durumunu donanım sağlığı açısından inceleyin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Fan hızını ve alarm durumunu donanım sağlığı açısından inceleyin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "power-supply-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "PSU modüllerinin varlık, giriş ve alarm durumunu kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "PSU modüllerinin varlık, giriş ve alarm durumunu kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "temperature-sensors": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Sensör sıcaklıklarını eşik ve alarm değerleriyle karşılaştırın. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Sensör sıcaklıklarını eşik ve alarm değerleriyle karşılaştırın. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "config-register": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Boot davranışını etkileyen config-register değerini bakım öncesi kontrol edin. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Boot davranışını etkileyen config-register değerini bakım öncesi kontrol edin. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  },
+  "boot-images": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, MAC veya IP değerini kendi cihazınıza göre değiştirin."
+          }
+        ],
+        "example": "Aktif ve sonraki açılışta kullanılacak imaj dosyalarını doğrulayın. Sonucu karşı uç ve merkezi izleme kayıtlarıyla doğrulayın.",
+        "mistakes": [
+          "Tek bir çıktıyı kalıcı durum kabul etmek.",
+          "Farklı işletim sistemi sürümlerinde komut sözdiziminin değişebileceğini unutmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example interface, MAC or IP with the value used in your environment."
+          }
+        ],
+        "example": "Aktif ve sonraki açılışta kullanılacak imaj dosyalarını doğrulayın. Verify the result against the peer device and central monitoring.",
+        "mistakes": [
+          "Treating a single snapshot as a persistent state.",
+          "Ignoring CLI syntax differences between software releases."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو MAC أو IP التجريبية بالقيم المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالجهاز المقابل ونظام المراقبة المركزي.",
+        "mistakes": [
+          "اعتبار لقطة واحدة حالة دائمة.",
+          "تجاهل اختلاف صياغة الأوامر بين إصدارات النظام."
+        ]
+      }
+    }
+  }
+}

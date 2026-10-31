@@ -1,0 +1,674 @@
+[
+  {
+    "slug": "wlan-ap-summary",
+    "title": "Kablosuz erişim noktalarının özetini görüntüleme",
+    "cat": "Kablosuz (WLAN)",
+    "note": "AP adlarını, çalışma durumunu ve yönetim bağlantısını kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ap summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ap all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ap database"
+      ]
+    }
+  },
+  {
+    "slug": "wlan-client-summary",
+    "title": "Kablosuz istemci özetini görüntüleme",
+    "cat": "Kablosuz (WLAN)",
+    "note": "İstemci MAC, SSID, AP ve bağlantı durumunu kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show wireless client summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display station all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show wireless clients"
+      ]
+    }
+  },
+  {
+    "slug": "wlan-ssid-list",
+    "title": "Yayınlanan SSID listesini görüntüleme",
+    "cat": "Kablosuz (WLAN)",
+    "note": "SSID, WLAN profili ve yayın durumunu doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show wlan summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display wlan"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show wlan"
+      ]
+    }
+  },
+  {
+    "slug": "wlan-radio-status",
+    "title": "AP radyo durumunu görüntüleme",
+    "cat": "Kablosuz (WLAN)",
+    "note": "2.4/5 GHz radyo kanalı, güç ve çalışma durumunu inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ap dot11 5ghz summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display radio all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ap radio"
+      ]
+    }
+  },
+  {
+    "slug": "wlan-client-detail",
+    "title": "Belirli kablosuz istemciyi inceleme",
+    "cat": "Kablosuz (WLAN)",
+    "note": "MAC adresi ile istemcinin AP, RSSI ve bağlantı ayrıntılarını kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show wireless client mac-address aaaa.bbbb.cccc detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display station mac-address aaaa-bbbb-cccc"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show wireless clients detail"
+      ]
+    }
+  },
+  {
+    "slug": "vpn-ipsec-sa",
+    "title": "IPsec güvenlik ilişkilerini görüntüleme",
+    "cat": "VPN ve Tünel",
+    "note": "IKE/IPsec SA durumunu, SPI ve sayaçları kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show crypto ipsec sa"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipsec sa"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show crypto ipsec sa"
+      ]
+    }
+  },
+  {
+    "slug": "vpn-ike-sa",
+    "title": "IKE güvenlik ilişkilerini görüntüleme",
+    "cat": "VPN ve Tünel",
+    "note": "IKE Phase 1 komşuluklarının aktifliğini ve kimlik bilgilerini kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show crypto isakmp sa"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ike sa"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show crypto isakmp sa"
+      ]
+    }
+  },
+  {
+    "slug": "vpn-tunnel-summary",
+    "title": "VPN tünel özetini görüntüleme",
+    "cat": "VPN ve Tünel",
+    "note": "Tünellerin up/down durumunu ve uzak uç adreslerini inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show crypto session"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipsec tunnel"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vpn ipsec"
+      ]
+    }
+  },
+  {
+    "slug": "vpn-ssl-status",
+    "title": "SSL VPN oturumlarını görüntüleme",
+    "cat": "VPN ve Tünel",
+    "note": "Aktif SSL VPN kullanıcılarını ve oturum sürelerini kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vpn-sessiondb ssl"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ssl vpn session"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vpn ssl"
+      ]
+    }
+  },
+  {
+    "slug": "qos-policy-interface",
+    "title": "Arayüz QoS politika uygulamasını görüntüleme",
+    "cat": "QoS ve Trafik",
+    "note": "Giriş/çıkış yönündeki servis politikalarını ve eşleşen sınıfları inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos"
+      ]
+    }
+  },
+  {
+    "slug": "qos-class-map",
+    "title": "QoS sınıf eşleşmelerini görüntüleme",
+    "cat": "QoS ve Trafik",
+    "note": "Class-map eşleşme koşullarını ve bağlı policy-map yapılarını kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show class-map"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic classifier"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos"
+      ]
+    }
+  },
+  {
+    "slug": "qos-policy-map",
+    "title": "QoS politika tanımlarını görüntüleme",
+    "cat": "QoS ve Trafik",
+    "note": "Policy-map içindeki policing, shaping ve queue parametrelerini inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic policy"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos"
+      ]
+    }
+  },
+  {
+    "slug": "multicast-routing-table",
+    "title": "Multicast yönlendirme tablosunu görüntüleme",
+    "cat": "IPv6 ve Multicast",
+    "note": "Multicast kaynak/grup kayıtlarını ve RPF arayüzlerini inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip mroute"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display multicast routing-table"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip mroute"
+      ]
+    }
+  },
+  {
+    "slug": "pim-neighbor-summary",
+    "title": "PIM komşuluklarını görüntüleme",
+    "cat": "IPv6 ve Multicast",
+    "note": "Multicast yönlendirme komşularının arayüz ve durum bilgilerini kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor"
+      ]
+    }
+  },
+  {
+    "slug": "macsec-status",
+    "title": "MACsec bağlantı güvenliğini görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "MKA oturumlarını ve secure channel durumunu kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mka sessions"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display macsec connection"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show macsec"
+      ]
+    }
+  },
+  {
+    "slug": "port-security-addresses",
+    "title": "Port-security MAC kayıtlarını görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "Öğrenilen secure MAC adreslerini ve ihlal sayaçlarını kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security address"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security"
+      ]
+    }
+  },
+  {
+    "slug": "storm-control-status",
+    "title": "Storm-control eşiklerini görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "Broadcast, multicast ve unknown-unicast eşiklerini ve aksiyonlarını kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm control"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show fault-finder"
+      ]
+    }
+  },
+  {
+    "slug": "stp-inconsistent-ports",
+    "title": "STP tutarsız portları görüntüleme",
+    "cat": "Spanning Tree ve L2",
+    "note": "Root guard veya BPDU guard nedeniyle bloklanan portları belirleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree inconsistentports"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp abnormal-port"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree"
+      ]
+    }
+  },
+  {
+    "slug": "stp-root-detail",
+    "title": "STP root bridge ayrıntılarını görüntüleme",
+    "cat": "Spanning Tree ve L2",
+    "note": "Root bridge ID, root path cost ve root port bilgisini doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree root"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree"
+      ]
+    }
+  },
+  {
+    "slug": "vlan-interface-list",
+    "title": "VLAN arayüzlerini görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "SVI veya VLANIF arayüzlerini ve IP adreslerini kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface brief"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface brief"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip"
+      ]
+    }
+  },
+  {
+    "slug": "trunk-allowed-vlans",
+    "title": "Trunk portlarda izinli VLAN listesini görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "Trunk linklerde allowed VLAN listesini ve native/PVID ayarını karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces trunk"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port vlan"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans ports"
+      ]
+    }
+  },
+  {
+    "slug": "switch-stack-status",
+    "title": "Switch stack üyelerini görüntüleme",
+    "cat": "Yedeklilik ve Stack",
+    "note": "Stack üye numarası, rol, durum ve donanım bilgisini kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show switch"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stack"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show stacking"
+      ]
+    }
+  },
+  {
+    "slug": "redundancy-status",
+    "title": "Supervisor yedeklilik durumunu görüntüleme",
+    "cat": "Yedeklilik ve Stack",
+    "note": "Active/standby rolünü ve failover durumunu doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show redundancy"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display device"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show redundancy"
+      ]
+    }
+  },
+  {
+    "slug": "fan-status",
+    "title": "Fan modüllerinin durumunu görüntüleme",
+    "cat": "PoE ve Fiziksel Katman",
+    "note": "Fan hızını ve alarm durumunu donanım sağlığı açısından inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show environment fan"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display fan"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system fans"
+      ]
+    }
+  },
+  {
+    "slug": "power-supply-status",
+    "title": "Güç kaynağı durumunu görüntüleme",
+    "cat": "PoE ve Fiziksel Katman",
+    "note": "PSU modüllerinin varlık, giriş ve alarm durumunu kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show environment power"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display power"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system power-supply"
+      ]
+    }
+  },
+  {
+    "slug": "temperature-sensors",
+    "title": "Cihaz sıcaklık sensörlerini görüntüleme",
+    "cat": "PoE ve Fiziksel Katman",
+    "note": "Sensör sıcaklıklarını eşik ve alarm değerleriyle karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show environment temperature"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display temperature"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system temperature"
+      ]
+    }
+  },
+  {
+    "slug": "config-register",
+    "title": "Cisco config-register değerini görüntüleme",
+    "cat": "Yazılım ve Yükseltme",
+    "note": "Boot davranışını etkileyen config-register değerini bakım öncesi kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show version | include register"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display version"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show version"
+      ]
+    }
+  },
+  {
+    "slug": "boot-images",
+    "title": "Boot image ve yazılım paketlerini görüntüleme",
+    "cat": "Yazılım ve Yükseltme",
+    "note": "Aktif ve sonraki açılışta kullanılacak imaj dosyalarını doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show boot"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display startup"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show flash"
+      ]
+    }
+  }
+]

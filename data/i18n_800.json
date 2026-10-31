@@ -1,0 +1,245 @@
+{
+  "cats": {},
+  "items": {
+    "snmp-engine-status": {
+      "en": {
+        "title": "Snmp Engine Status",
+        "note": "SNMP sürüm ve motor bilgilerini izleme altyapısıyla karşılaştırın."
+      },
+      "ar": {
+        "title": "Snmp Engine Status",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "snmp-trap-config": {
+      "en": {
+        "title": "Snmp Trap Config",
+        "note": "Trap alıcılarının adres ve bildirim yapılandırmasını doğrulayın."
+      },
+      "ar": {
+        "title": "Snmp Trap Config",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "logging-source-interface": {
+      "en": {
+        "title": "Logging Source Interface",
+        "note": "Syslog paketlerinin hangi kaynak IP ile gönderildiğini doğrulayın."
+      },
+      "ar": {
+        "title": "Logging Source Interface",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "dhcp-relay-status": {
+      "en": {
+        "title": "Dhcp Relay Status",
+        "note": "VLAN arayüzlerinde tanımlı DHCP sunucu hedeflerini kontrol edin."
+      },
+      "ar": {
+        "title": "Dhcp Relay Status",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "dns-client-config": {
+      "en": {
+        "title": "Dns Client Config",
+        "note": "Cihazın kullandığı DNS sunucularını ve domain arama ayarlarını kontrol edin."
+      },
+      "ar": {
+        "title": "Dns Client Config",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "dns-cache": {
+      "en": {
+        "title": "Dns Cache",
+        "note": "Cihazın DNS çözümleme önbelleğini ve kayıt sürelerini inceleyin."
+      },
+      "ar": {
+        "title": "Dns Cache",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "tacacs-server-config": {
+      "en": {
+        "title": "Tacacs Server Config",
+        "note": "TACACS sunucu adresi ve bağlantı parametrelerini doğrulayın; anahtarları paylaşmayın."
+      },
+      "ar": {
+        "title": "Tacacs Server Config",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "aaa-sessions": {
+      "en": {
+        "title": "Aaa Sessions",
+        "note": "Cihaz üzerinde açık yönetim oturumlarını ve kullanıcıları inceleyin."
+      },
+      "ar": {
+        "title": "Aaa Sessions",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "ssh-server-status": {
+      "en": {
+        "title": "Ssh Server Status",
+        "note": "SSH servisinin etkinliğini ve dinleme ayarlarını doğrulayın."
+      },
+      "ar": {
+        "title": "Ssh Server Status",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "http-server-status": {
+      "en": {
+        "title": "Http Server Status",
+        "note": "HTTP/HTTPS yönetim servislerinin açık olup olmadığını kontrol edin."
+      },
+      "ar": {
+        "title": "Http Server Status",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "clock-detail": {
+      "en": {
+        "title": "Clock Detail",
+        "note": "Saat dilimi ve sistem saatini NTP kaynaklarıyla karşılaştırın."
+      },
+      "ar": {
+        "title": "Clock Detail",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "uptime-detail": {
+      "en": {
+        "title": "Uptime Detail",
+        "note": "Son yeniden başlatma zamanını ve uptime bilgisini bakım kayıtlarıyla karşılaştırın."
+      },
+      "ar": {
+        "title": "Uptime Detail",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "interface-description-search": {
+      "en": {
+        "title": "Interface Description Search",
+        "note": "Port açıklamalarını envanter ve kablolama kayıtlarıyla karşılaştırın."
+      },
+      "ar": {
+        "title": "Interface Description Search",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "interface-error-counters": {
+      "en": {
+        "title": "Interface Error Counters",
+        "note": "CRC, input error, discard ve output error sayaçlarını inceleyin."
+      },
+      "ar": {
+        "title": "Interface Error Counters",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "interface-flap-log": {
+      "en": {
+        "title": "Interface Flap Log",
+        "note": "Up/down geçişlerinin zamanını sistem loglarıyla ilişkilendirin."
+      },
+      "ar": {
+        "title": "Interface Flap Log",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "transceiver-detail": {
+      "en": {
+        "title": "Transceiver Detail",
+        "note": "Optik modül tipi, dalga boyu ve DOM değerlerini kontrol edin."
+      },
+      "ar": {
+        "title": "Transceiver Detail",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "transceiver-diagnostics": {
+      "en": {
+        "title": "Transceiver Diagnostics",
+        "note": "Tx/Rx güç, sıcaklık ve voltaj değerlerini modül eşikleriyle karşılaştırın."
+      },
+      "ar": {
+        "title": "Transceiver Diagnostics",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "mac-address-count": {
+      "en": {
+        "title": "Mac Address Count",
+        "note": "Öğrenilen MAC sayısını kapasite ve VLAN dağılımıyla karşılaştırın."
+      },
+      "ar": {
+        "title": "Mac Address Count",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "mac-move-log": {
+      "en": {
+        "title": "Mac Move Log",
+        "note": "Aynı MAC'in portlar arasında taşınmasını loop veya kablolama sorunu açısından araştırın."
+      },
+      "ar": {
+        "title": "Mac Move Log",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "stp-topology-changes": {
+      "en": {
+        "title": "Stp Topology Changes",
+        "note": "Topoloji değişim sayısı ve son değişim arayüzünü inceleyin."
+      },
+      "ar": {
+        "title": "Stp Topology Changes",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "bgp-prefix-count": {
+      "en": {
+        "title": "Bgp Prefix Count",
+        "note": "Komşu başına alınan ve gönderilen prefix sayılarını politika değişiklikleriyle karşılaştırın."
+      },
+      "ar": {
+        "title": "Bgp Prefix Count",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "ospf-route-summary": {
+      "en": {
+        "title": "Ospf Route Summary",
+        "note": "OSPF kaynaklı rotaları metric ve next-hop değerleriyle doğrulayın."
+      },
+      "ar": {
+        "title": "Ospf Route Summary",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "static-route-detail": {
+      "en": {
+        "title": "Static Route Detail",
+        "note": "Hedef prefix için next-hop, distance ve aktiflik durumunu kontrol edin."
+      },
+      "ar": {
+        "title": "Static Route Detail",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    },
+    "ipv6-nd-table": {
+      "en": {
+        "title": "Ipv6 Nd Table",
+        "note": "IPv6 komşu durumlarını ve link-layer eşleşmelerini inceleyin."
+      },
+      "ar": {
+        "title": "Ipv6 Nd Table",
+        "note": "تحقق من النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة."
+      }
+    }
+  }
+}

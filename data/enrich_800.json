@@ -1,0 +1,1034 @@
+{
+  "snmp-engine-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "SNMP sürüm ve motor bilgilerini izleme altyapısıyla karşılaştırın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "SNMP sürüm ve motor bilgilerini izleme altyapısıyla karşılaştırın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "snmp-trap-config": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Trap alıcılarının adres ve bildirim yapılandırmasını doğrulayın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Trap alıcılarının adres ve bildirim yapılandırmasını doğrulayın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "logging-source-interface": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Syslog paketlerinin hangi kaynak IP ile gönderildiğini doğrulayın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Syslog paketlerinin hangi kaynak IP ile gönderildiğini doğrulayın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "dhcp-relay-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "VLAN arayüzlerinde tanımlı DHCP sunucu hedeflerini kontrol edin. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "VLAN arayüzlerinde tanımlı DHCP sunucu hedeflerini kontrol edin. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "dns-client-config": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Cihazın kullandığı DNS sunucularını ve domain arama ayarlarını kontrol edin. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Cihazın kullandığı DNS sunucularını ve domain arama ayarlarını kontrol edin. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "dns-cache": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Cihazın DNS çözümleme önbelleğini ve kayıt sürelerini inceleyin. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Cihazın DNS çözümleme önbelleğini ve kayıt sürelerini inceleyin. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "tacacs-server-config": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "TACACS sunucu adresi ve bağlantı parametrelerini doğrulayın; anahtarları paylaşmayın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "TACACS sunucu adresi ve bağlantı parametrelerini doğrulayın; anahtarları paylaşmayın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "aaa-sessions": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Cihaz üzerinde açık yönetim oturumlarını ve kullanıcıları inceleyin. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Cihaz üzerinde açık yönetim oturumlarını ve kullanıcıları inceleyin. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "ssh-server-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "SSH servisinin etkinliğini ve dinleme ayarlarını doğrulayın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "SSH servisinin etkinliğini ve dinleme ayarlarını doğrulayın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "http-server-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "HTTP/HTTPS yönetim servislerinin açık olup olmadığını kontrol edin. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "HTTP/HTTPS yönetim servislerinin açık olup olmadığını kontrol edin. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "clock-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Saat dilimi ve sistem saatini NTP kaynaklarıyla karşılaştırın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Saat dilimi ve sistem saatini NTP kaynaklarıyla karşılaştırın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "uptime-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Son yeniden başlatma zamanını ve uptime bilgisini bakım kayıtlarıyla karşılaştırın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Son yeniden başlatma zamanını ve uptime bilgisini bakım kayıtlarıyla karşılaştırın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "interface-description-search": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Port açıklamalarını envanter ve kablolama kayıtlarıyla karşılaştırın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Port açıklamalarını envanter ve kablolama kayıtlarıyla karşılaştırın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "interface-error-counters": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "CRC, input error, discard ve output error sayaçlarını inceleyin. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "CRC, input error, discard ve output error sayaçlarını inceleyin. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "interface-flap-log": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Up/down geçişlerinin zamanını sistem loglarıyla ilişkilendirin. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Up/down geçişlerinin zamanını sistem loglarıyla ilişkilendirin. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "transceiver-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Optik modül tipi, dalga boyu ve DOM değerlerini kontrol edin. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Optik modül tipi, dalga boyu ve DOM değerlerini kontrol edin. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "transceiver-diagnostics": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Tx/Rx güç, sıcaklık ve voltaj değerlerini modül eşikleriyle karşılaştırın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Tx/Rx güç, sıcaklık ve voltaj değerlerini modül eşikleriyle karşılaştırın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "mac-address-count": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Öğrenilen MAC sayısını kapasite ve VLAN dağılımıyla karşılaştırın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Öğrenilen MAC sayısını kapasite ve VLAN dağılımıyla karşılaştırın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "mac-move-log": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Aynı MAC'in portlar arasında taşınmasını loop veya kablolama sorunu açısından araştırın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Aynı MAC'in portlar arasında taşınmasını loop veya kablolama sorunu açısından araştırın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "stp-topology-changes": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Topoloji değişim sayısı ve son değişim arayüzünü inceleyin. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Topoloji değişim sayısı ve son değişim arayüzünü inceleyin. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "bgp-prefix-count": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Komşu başına alınan ve gönderilen prefix sayılarını politika değişiklikleriyle karşılaştırın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Komşu başına alınan ve gönderilen prefix sayılarını politika değişiklikleriyle karşılaştırın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "ospf-route-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "OSPF kaynaklı rotaları metric ve next-hop değerleriyle doğrulayın. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "OSPF kaynaklı rotaları metric ve next-hop değerleriyle doğrulayın. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "static-route-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "Hedef prefix için next-hop, distance ve aktiflik durumunu kontrol edin. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "Hedef prefix için next-hop, distance ve aktiflik durumunu kontrol edin. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  },
+  "ipv6-nd-table": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek adres veya arayüz değerini kendi ortamınıza göre değiştirin."
+          }
+        ],
+        "example": "IPv6 komşu durumlarını ve link-layer eşleşmelerini inceleyin. Sonucu komşu cihaz ve izleme kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı uzun dönemli trend olarak yorumlamak.",
+          "Üretici ve yazılım sürümü farklılıklarını göz ardı etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace the example address or interface with the value used in your environment."
+          }
+        ],
+        "example": "IPv6 komşu durumlarını ve link-layer eşleşmelerini inceleyin. Compare the result with peer devices and monitoring records.",
+        "mistakes": [
+          "Treating a single snapshot as a long-term trend.",
+          "Ignoring vendor and software-version differences."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل العنوان أو الواجهة التجريبية بالقيمة المستخدمة في بيئتك."
+          }
+        ],
+        "example": "افحص النتيجة وقارنها بالأجهزة المجاورة وسجلات المراقبة.",
+        "mistakes": [
+          "اعتبار لقطة واحدة اتجاهاً طويل الأمد.",
+          "تجاهل اختلافات الشركة المصنعة وإصدار البرنامج."
+        ]
+      }
+    }
+  }
+}
