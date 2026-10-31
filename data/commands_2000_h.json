@@ -24,30 +24,6 @@
     }
   },
   {
-    "slug": "arp-tablosu-troubleshooting",
-    "title": "ARP tablosunu görüntüleme (Sorun giderme)",
-    "cat": "Görüntüleme",
-    "note": "Sadece L3 arayüzü olan cihazlarda anlamlı çıktı verir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip arp"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display arp"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show arp"
-      ]
-    }
-  },
-  {
     "slug": "arp-tablosu-verification",
     "title": "ARP tablosunu görüntüleme (Doğrulama)",
     "cat": "Görüntüleme",
@@ -100,30 +76,6 @@
     "title": "Routing tablosunu görüntüleme (Denetim)",
     "cat": "Routing",
     "note": "Huawei'de tablo adı 'routing-table'dır; 'route' değil. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip route"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip routing-table"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip route"
-      ]
-    }
-  },
-  {
-    "slug": "routing-tablosu-troubleshooting",
-    "title": "Routing tablosunu görüntüleme (Sorun giderme)",
-    "cat": "Routing",
-    "note": "Huawei'de tablo adı 'routing-table'dır; 'route' değil. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
     "cisco": {
       "mode": "Privileged EXEC",
       "cmds": [
@@ -216,30 +168,6 @@
     }
   },
   {
-    "slug": "versiyon-bilgisi-troubleshooting",
-    "title": "Yazılım versiyonu ve uptime (Sorun giderme)",
-    "cat": "Sistem",
-    "note": "Çıktıda uptime, model ve image bilgisi yer alır; envanter otomasyonunda ilk bakılan komuttur. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show version"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display version"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show version"
-      ]
-    }
-  },
-  {
     "slug": "versiyon-bilgisi-verification",
     "title": "Yazılım versiyonu ve uptime (Doğrulama)",
     "cat": "Sistem",
@@ -292,30 +220,6 @@
     "title": "Arayüz durum özeti (Denetim)",
     "cat": "Görüntüleme",
     "note": "Cisco çıktısı VLAN, duplex ve hız kolonlarını da verir; Huawei 'brief' çıktısı PHY/Protocol durumunu gösterir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show interfaces status"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display interface brief"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show interface brief"
-      ]
-    }
-  },
-  {
-    "slug": "arayuz-durumu-troubleshooting",
-    "title": "Arayüz durum özeti (Sorun giderme)",
-    "cat": "Görüntüleme",
-    "note": "Cisco çıktısı VLAN, duplex ve hız kolonlarını da verir; Huawei 'brief' çıktısı PHY/Protocol durumunu gösterir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
     "cisco": {
       "mode": "Privileged EXEC",
       "cmds": [
@@ -411,33 +315,6 @@
     }
   },
   {
-    "slug": "vlan-olusturma-troubleshooting",
-    "title": "VLAN oluşturma (Sorun giderme)",
-    "cat": "VLAN / Port",
-    "note": "Huawei'de birden fazla VLAN için 'vlan batch 10 20 30' kullanılabilir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Global configuration",
-      "cmds": [
-        "vlan 10",
-        "name USERS"
-      ]
-    },
-    "huawei": {
-      "mode": "System view",
-      "cmds": [
-        "vlan 10",
-        "description USERS"
-      ]
-    },
-    "aruba": {
-      "mode": "Global configuration",
-      "cmds": [
-        "vlan 10",
-        "name USERS"
-      ]
-    }
-  },
-  {
     "slug": "vlan-olusturma-verification",
     "title": "VLAN oluşturma (Doğrulama)",
     "cat": "VLAN / Port",
@@ -496,36 +373,6 @@
     "title": "Access port yapılandırma (Denetim)",
     "cat": "VLAN / Port",
     "note": "Huawei'de arayüz adları GigabitEthernet0/0/1 biçimindedir; AOS-CX'te 1/1/1 (member/slot/port). Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Interface configuration",
-      "cmds": [
-        "interface GigabitEthernet1/0/1",
-        "switchport mode access",
-        "switchport access vlan 10"
-      ]
-    },
-    "huawei": {
-      "mode": "Interface view",
-      "cmds": [
-        "interface GigabitEthernet0/0/1",
-        "port link-type access",
-        "port default vlan 10"
-      ]
-    },
-    "aruba": {
-      "mode": "Interface configuration",
-      "cmds": [
-        "interface 1/1/1",
-        "no routing",
-        "vlan access 10"
-      ]
-    }
-  },
-  {
-    "slug": "access-port-troubleshooting",
-    "title": "Access port yapılandırma (Sorun giderme)",
-    "cat": "VLAN / Port",
-    "note": "Huawei'de arayüz adları GigabitEthernet0/0/1 biçimindedir; AOS-CX'te 1/1/1 (member/slot/port). Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
     "cisco": {
       "mode": "Interface configuration",
       "cmds": [
@@ -643,37 +490,6 @@
     }
   },
   {
-    "slug": "trunk-port-troubleshooting",
-    "title": "Trunk port yapılandırma (Sorun giderme)",
-    "cat": "VLAN / Port",
-    "note": "Huawei'de allow-pass listesi boşlukla ayrılır (virgül değil). Cisco'da bazı platformlarda önce 'switchport trunk encapsulation dot1q' gerekir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Interface configuration",
-      "cmds": [
-        "interface GigabitEthernet1/0/48",
-        "switchport mode trunk",
-        "switchport trunk allowed vlan 10,20"
-      ]
-    },
-    "huawei": {
-      "mode": "Interface view",
-      "cmds": [
-        "interface GigabitEthernet0/0/48",
-        "port link-type trunk",
-        "port trunk allow-pass vlan 10 20"
-      ]
-    },
-    "aruba": {
-      "mode": "Interface configuration",
-      "cmds": [
-        "interface 1/1/48",
-        "no routing",
-        "vlan trunk native 1",
-        "vlan trunk allowed 10,20"
-      ]
-    }
-  },
-  {
     "slug": "trunk-port-verification",
     "title": "Trunk port yapılandırma (Doğrulama)",
     "cat": "VLAN / Port",
@@ -740,42 +556,6 @@
     "title": "DHCP Snooping etkinleştirme (Denetim)",
     "cat": "L2 Güvenlik",
     "note": "Uplink / DHCP sunucu yönündeki portlar trusted olmalıdır; aksi halde meşru DHCP cevapları düşer. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Global + Interface",
-      "cmds": [
-        "ip dhcp snooping",
-        "ip dhcp snooping vlan 10",
-        "interface GigabitEthernet1/0/48",
-        "ip dhcp snooping trust"
-      ]
-    },
-    "huawei": {
-      "mode": "System view + Interface",
-      "cmds": [
-        "dhcp enable",
-        "dhcp snooping enable",
-        "vlan 10",
-        "dhcp snooping enable",
-        "interface GigabitEthernet0/0/48",
-        "dhcp snooping trusted"
-      ]
-    },
-    "aruba": {
-      "mode": "Global + Interface",
-      "cmds": [
-        "dhcpv4-snooping",
-        "vlan 10",
-        "dhcpv4-snooping",
-        "interface 1/1/48",
-        "dhcpv4-snooping trust"
-      ]
-    }
-  },
-  {
-    "slug": "dhcp-snooping-troubleshooting",
-    "title": "DHCP Snooping etkinleştirme (Sorun giderme)",
-    "cat": "L2 Güvenlik",
-    "note": "Uplink / DHCP sunucu yönündeki portlar trusted olmalıdır; aksi halde meşru DHCP cevapları düşer. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
     "cisco": {
       "mode": "Global + Interface",
       "cmds": [
@@ -904,30 +684,6 @@
     }
   },
   {
-    "slug": "dhcp-snooping-binding-troubleshooting",
-    "title": "DHCP Snooping binding tablosu (Sorun giderme)",
-    "cat": "L2 Güvenlik",
-    "note": "IPSG ve DAI bu tabloya dayanır; tablo boşsa bu özellikler tüm trafiği engelleyebilir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip dhcp snooping binding"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display dhcp snooping user-bind all"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show dhcpv4-snooping binding"
-      ]
-    }
-  },
-  {
     "slug": "dhcp-snooping-binding-verification",
     "title": "DHCP Snooping binding tablosu (Doğrulama)",
     "cat": "L2 Güvenlik",
@@ -980,33 +736,6 @@
     "title": "IP Source Guard (IPSG) (Denetim)",
     "cat": "L2 Güvenlik",
     "note": "Önce DHCP Snooping çalışıyor olmalıdır. Aruba komutu yazılım sürümüne göre değişebilir; önce lab'da doğrulayın. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Interface configuration",
-      "cmds": [
-        "interface GigabitEthernet1/0/1",
-        "ip verify source"
-      ]
-    },
-    "huawei": {
-      "mode": "Interface view",
-      "cmds": [
-        "interface GigabitEthernet0/0/1",
-        "ip source check user-bind enable"
-      ]
-    },
-    "aruba": {
-      "mode": "Interface configuration",
-      "cmds": [
-        "interface 1/1/1",
-        "ip source-lockdown"
-      ]
-    }
-  },
-  {
-    "slug": "ip-source-guard-troubleshooting",
-    "title": "IP Source Guard (IPSG) (Sorun giderme)",
-    "cat": "L2 Güvenlik",
-    "note": "Önce DHCP Snooping çalışıyor olmalıdır. Aruba komutu yazılım sürümüne göre değişebilir; önce lab'da doğrulayın. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
     "cisco": {
       "mode": "Interface configuration",
       "cmds": [
@@ -1112,34 +841,6 @@
     }
   },
   {
-    "slug": "dynamic-arp-inspection-troubleshooting",
-    "title": "Dynamic ARP Inspection (DAI) (Sorun giderme)",
-    "cat": "L2 Güvenlik",
-    "note": "Trusted uplink portlarında ARP inspection devre dışı bırakılmalıdır. Aruba komutu sürüme göre doğrulanmalıdır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Global + Interface",
-      "cmds": [
-        "ip arp inspection vlan 10",
-        "interface GigabitEthernet1/0/48",
-        "ip arp inspection trust"
-      ]
-    },
-    "huawei": {
-      "mode": "Interface view",
-      "cmds": [
-        "interface GigabitEthernet0/0/1",
-        "arp anti-attack check user-bind enable"
-      ]
-    },
-    "aruba": {
-      "mode": "VLAN context",
-      "cmds": [
-        "vlan 10",
-        "arp inspection"
-      ]
-    }
-  },
-  {
     "slug": "dynamic-arp-inspection-verification",
     "title": "Dynamic ARP Inspection (DAI) (Doğrulama)",
     "cat": "L2 Güvenlik",
@@ -1200,30 +901,6 @@
     "title": "Spanning Tree modunu ayarlama (Denetim)",
     "cat": "VLAN / Port",
     "note": "Karışık vendor ortamlarında Cisco Rapid-PVST+ ile Huawei RSTP/MSTP arasında uyumluluk için root ve BPDU davranışı ayrıca test edilmelidir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Global configuration",
-      "cmds": [
-        "spanning-tree mode rapid-pvst"
-      ]
-    },
-    "huawei": {
-      "mode": "System view",
-      "cmds": [
-        "stp mode rstp"
-      ]
-    },
-    "aruba": {
-      "mode": "Global configuration",
-      "cmds": [
-        "spanning-tree mode rpvst"
-      ]
-    }
-  },
-  {
-    "slug": "stp-modu-troubleshooting",
-    "title": "Spanning Tree modunu ayarlama (Sorun giderme)",
-    "cat": "VLAN / Port",
-    "note": "Karışık vendor ortamlarında Cisco Rapid-PVST+ ile Huawei RSTP/MSTP arasında uyumluluk için root ve BPDU davranışı ayrıca test edilmelidir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
     "cisco": {
       "mode": "Global configuration",
       "cmds": [
@@ -1316,30 +993,6 @@
     }
   },
   {
-    "slug": "stp-durumu-troubleshooting",
-    "title": "Spanning Tree durumunu görüntüleme (Sorun giderme)",
-    "cat": "Görüntüleme",
-    "note": "Root bridge ve port rollerini (root/designated/alternate) kontrol etmek için kullanılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show spanning-tree"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display stp brief"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show spanning-tree"
-      ]
-    }
-  },
-  {
     "slug": "stp-durumu-verification",
     "title": "Spanning Tree durumunu görüntüleme (Doğrulama)",
     "cat": "Görüntüleme",
@@ -1392,36 +1045,6 @@
     "title": "LACP port kanalı (LAG) (Denetim)",
     "cat": "VLAN / Port",
     "note": "Huawei'de Eth-Trunk önce oluşturulur, üyeler arayüz altında eklenir veya trunkport ile toplu verilir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Interface configuration",
-      "cmds": [
-        "interface range GigabitEthernet1/0/47-48",
-        "channel-group 1 mode active"
-      ]
-    },
-    "huawei": {
-      "mode": "System view",
-      "cmds": [
-        "interface Eth-Trunk 1",
-        "mode lacp-static",
-        "trunkport GigabitEthernet 0/0/47 to 0/0/48"
-      ]
-    },
-    "aruba": {
-      "mode": "Global + Interface",
-      "cmds": [
-        "interface lag 1",
-        "lacp mode active",
-        "interface 1/1/47",
-        "lag 1"
-      ]
-    }
-  },
-  {
-    "slug": "lacp-port-kanali-troubleshooting",
-    "title": "LACP port kanalı (LAG) (Sorun giderme)",
-    "cat": "VLAN / Port",
-    "note": "Huawei'de Eth-Trunk önce oluşturulur, üyeler arayüz altında eklenir veya trunkport ile toplu verilir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
     "cisco": {
       "mode": "Interface configuration",
       "cmds": [
@@ -1532,30 +1155,6 @@
     }
   },
   {
-    "slug": "ntp-sunucusu-troubleshooting",
-    "title": "NTP sunucusu tanımlama (Sorun giderme)",
-    "cat": "Sistem",
-    "note": "Log korelasyonu ve sertifika doğrulaması için tüm cihazlarda aynı NTP kaynağı kullanılmalıdır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Global configuration",
-      "cmds": [
-        "ntp server 10.0.0.1"
-      ]
-    },
-    "huawei": {
-      "mode": "System view",
-      "cmds": [
-        "ntp-service unicast-server 10.0.0.1"
-      ]
-    },
-    "aruba": {
-      "mode": "Global configuration",
-      "cmds": [
-        "ntp server 10.0.0.1"
-      ]
-    }
-  },
-  {
     "slug": "ntp-sunucusu-verification",
     "title": "NTP sunucusu tanımlama (Doğrulama)",
     "cat": "Sistem",
@@ -1608,30 +1207,6 @@
     "title": "Log kayıtlarını görüntüleme (Denetim)",
     "cat": "Sistem",
     "note": "Huawei'de log tamponu 'logbuffer' olarak adlandırılır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show logging"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display logbuffer"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show logging"
-      ]
-    }
-  },
-  {
-    "slug": "log-goruntuleme-troubleshooting",
-    "title": "Log kayıtlarını görüntüleme (Sorun giderme)",
-    "cat": "Sistem",
-    "note": "Huawei'de log tamponu 'logbuffer' olarak adlandırılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
     "cisco": {
       "mode": "Privileged EXEC",
       "cmds": [
@@ -1724,30 +1299,6 @@
     }
   },
   {
-    "slug": "lldp-komsulari-troubleshooting",
-    "title": "LLDP komşularını görüntüleme (Sorun giderme)",
-    "cat": "Görüntüleme",
-    "note": "Topoloji keşfi ve patch panel doğrulaması için en pratik komutlardan biridir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show lldp neighbors"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display lldp neighbor brief"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show lldp neighbor-info"
-      ]
-    }
-  },
-  {
     "slug": "lldp-komsulari-verification",
     "title": "LLDP komşularını görüntüleme (Doğrulama)",
     "cat": "Görüntüleme",
@@ -1820,30 +1371,6 @@
     }
   },
   {
-    "slug": "arayuz-detay-troubleshooting",
-    "title": "Arayüz detayı ve hata sayaçları (Sorun giderme)",
-    "cat": "Görüntüleme",
-    "note": "CRC, input error ve drop sayaçları fiziksel katman sorunlarının ilk göstergesidir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show interfaces GigabitEthernet1/0/1"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display interface GigabitEthernet 0/0/1"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show interface 1/1/1"
-      ]
-    }
-  },
-  {
     "slug": "arayuz-detay-verification",
     "title": "Arayüz detayı ve hata sayaçları (Doğrulama)",
     "cat": "Görüntüleme",
@@ -1896,33 +1423,6 @@
     "title": "Arayüzü kapatma / açma (Denetim)",
     "cat": "VLAN / Port",
     "note": "Huawei'de negasyon 'no' değil 'undo' ile yapılır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Interface configuration",
-      "cmds": [
-        "shutdown",
-        "no shutdown"
-      ]
-    },
-    "huawei": {
-      "mode": "Interface view",
-      "cmds": [
-        "shutdown",
-        "undo shutdown"
-      ]
-    },
-    "aruba": {
-      "mode": "Interface configuration",
-      "cmds": [
-        "shutdown",
-        "no shutdown"
-      ]
-    }
-  },
-  {
-    "slug": "arayuz-kapatma-acma-troubleshooting",
-    "title": "Arayüzü kapatma / açma (Sorun giderme)",
-    "cat": "VLAN / Port",
-    "note": "Huawei'de negasyon 'no' değil 'undo' ile yapılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
     "cisco": {
       "mode": "Interface configuration",
       "cmds": [
@@ -2027,33 +1527,6 @@
     }
   },
   {
-    "slug": "vlan-svi-troubleshooting",
-    "title": "VLAN arayüzü (SVI) oluşturma (Sorun giderme)",
-    "cat": "Routing",
-    "note": "Huawei'de arayüz adı Vlanif10 biçimindedir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Global configuration",
-      "cmds": [
-        "interface vlan 10",
-        "ip address 10.10.10.1 255.255.255.0"
-      ]
-    },
-    "huawei": {
-      "mode": "System view",
-      "cmds": [
-        "interface Vlanif10",
-        "ip address 10.10.10.1 255.255.255.0"
-      ]
-    },
-    "aruba": {
-      "mode": "Global configuration",
-      "cmds": [
-        "interface vlan 10",
-        "ip address 10.10.10.1/24"
-      ]
-    }
-  },
-  {
     "slug": "vlan-svi-verification",
     "title": "VLAN arayüzü (SVI) oluşturma (Doğrulama)",
     "cat": "Routing",
@@ -2112,30 +1585,6 @@
     "title": "Statik default route ekleme (Denetim)",
     "cat": "Routing",
     "note": "Huawei'de komut 'ip route-static'tir; Aruba AOS-CX CIDR gösterimi kullanır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Global configuration",
-      "cmds": [
-        "ip route 0.0.0.0 0.0.0.0 10.0.0.1"
-      ]
-    },
-    "huawei": {
-      "mode": "System view",
-      "cmds": [
-        "ip route-static 0.0.0.0 0.0.0.0 10.0.0.1"
-      ]
-    },
-    "aruba": {
-      "mode": "Global configuration",
-      "cmds": [
-        "ip route 0.0.0.0/0 10.0.0.1"
-      ]
-    }
-  },
-  {
-    "slug": "statik-route-troubleshooting",
-    "title": "Statik default route ekleme (Sorun giderme)",
-    "cat": "Routing",
-    "note": "Huawei'de komut 'ip route-static'tir; Aruba AOS-CX CIDR gösterimi kullanır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
     "cisco": {
       "mode": "Global configuration",
       "cmds": [
@@ -2228,30 +1677,6 @@
     }
   },
   {
-    "slug": "cpu-kullanimi-troubleshooting",
-    "title": "CPU kullanımını görüntüleme (Sorun giderme)",
-    "cat": "Sistem",
-    "note": "Anlık yük ile birlikte son 1/5 dakika ortalamasına bakmak geçici spike'ları ayırt etmeyi sağlar. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show processes cpu sorted"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display cpu-usage"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show system resource-utilization"
-      ]
-    }
-  },
-  {
     "slug": "cpu-kullanimi-verification",
     "title": "CPU kullanımını görüntüleme (Doğrulama)",
     "cat": "Sistem",
@@ -2304,30 +1729,6 @@
     "title": "SFP / transceiver bilgisi ve DOM (Denetim)",
     "cat": "Görüntüleme",
     "note": "Rx/Tx güç seviyeleri (dBm) fiber hat sorunlarını teşhis etmek için kullanılır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show interfaces transceiver detail"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display transceiver interface GigabitEthernet 0/0/1 verbose"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show interface transceiver"
-      ]
-    }
-  },
-  {
-    "slug": "transceiver-bilgisi-troubleshooting",
-    "title": "SFP / transceiver bilgisi ve DOM (Sorun giderme)",
-    "cat": "Görüntüleme",
-    "note": "Rx/Tx güç seviyeleri (dBm) fiber hat sorunlarını teşhis etmek için kullanılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
     "cisco": {
       "mode": "Privileged EXEC",
       "cmds": [
@@ -2420,30 +1821,6 @@
     }
   },
   {
-    "slug": "ipsec-sa-summary-troubleshooting",
-    "title": "IPsec güvenlik birliklerini özetleme (Sorun giderme)",
-    "cat": "VPN ve IPsec",
-    "note": "IPsec güvenlik birliklerini özetleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show crypto ipsec sa"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipsec sa"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show crypto ipsec sa"
-      ]
-    }
-  },
-  {
     "slug": "ipsec-sa-summary-verification",
     "title": "IPsec güvenlik birliklerini özetleme (Doğrulama)",
     "cat": "VPN ve IPsec",
@@ -2496,30 +1873,6 @@
     "title": "IKE güvenlik birliklerini görüntüleme (Denetim)",
     "cat": "VPN ve IPsec",
     "note": "IKE güvenlik birliklerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show crypto isakmp sa"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ike sa"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show crypto isakmp sa"
-      ]
-    }
-  },
-  {
-    "slug": "ike-sa-summary-troubleshooting",
-    "title": "IKE güvenlik birliklerini görüntüleme (Sorun giderme)",
-    "cat": "VPN ve IPsec",
-    "note": "IKE güvenlik birliklerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
     "cisco": {
       "mode": "Privileged EXEC",
       "cmds": [
@@ -12184,6 +11537,606 @@
       "mode": "Operator / Manager",
       "cmds": [
         "show spanning-tree"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-bgp-komsu-detay",
+    "title": "BGP komşu ayrıntılarını görüntüleme",
+    "cat": "Routing",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer verbose"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-routing-protokolleri",
+    "title": "Etkin yönlendirme protokollerini görüntüleme",
+    "cat": "Routing",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip protocols"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-protocol"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip protocols"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-stp-detay",
+    "title": "Spanning Tree ayrıntılarını görüntüleme",
+    "cat": "Switching ve VLAN",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-stp-root",
+    "title": "Spanning Tree root köprüsünü görüntüleme",
+    "cat": "Switching ve VLAN",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree root"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp brief"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree root"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-etherchannel-ozeti",
+    "title": "EtherChannel / Eth-Trunk durumunu görüntüleme",
+    "cat": "Switching ve VLAN",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show etherchannel summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display eth-trunk"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show trunks"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-arayuz-hata-sayaclari",
+    "title": "Arayüz hata sayaçlarını görüntüleme",
+    "cat": "Arayüz ve Fiziksel Katman",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces counters"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-poe-durum",
+    "title": "PoE güç durumunu görüntüleme",
+    "cat": "Arayüz ve Fiziksel Katman",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show power inline"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display poe power"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show power-over-ethernet brief"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-cihaz-envanteri",
+    "title": "Cihaz donanım envanterini görüntüleme",
+    "cat": "Sistem ve Bakım",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show inventory"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display device"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-ortam-sensorleri",
+    "title": "Sıcaklık ve ortam sensörlerini görüntüleme",
+    "cat": "Sistem ve Bakım",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show environment all"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display environment"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system temperature"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-aktif-kullanicilar",
+    "title": "Cihaza bağlı yönetim kullanıcılarını görüntüleme",
+    "cat": "Güvenlik ve Erişim",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show users"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display users"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show users"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-lldp-komsu-detay",
+    "title": "LLDP komşu ayrıntılarını görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor verbose"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device detail"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-igmp-gruplari",
+    "title": "IGMP multicast gruplarını görüntüleme",
+    "cat": "Multicast",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp groups"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp group"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-yedeklilik-durumu",
+    "title": "Kontrol düzlemi yedeklilik durumunu görüntüleme",
+    "cat": "Sistem ve Bakım",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show redundancy"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display switchover state"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show redundancy"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-stack-durumu",
+    "title": "Switch stack durumunu görüntüleme",
+    "cat": "Switching ve VLAN",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show switch"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stack"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vsf"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-udld-komsulari",
+    "title": "UDLD komşularını görüntüleme",
+    "cat": "Arayüz ve Fiziksel Katman",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show udld neighbors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display udld neighbor"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show udld"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-lacp-komsulari",
+    "title": "LACP komşu bilgilerini görüntüleme",
+    "cat": "Switching ve VLAN",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lacp neighbor"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lacp neighbor"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lacp"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-radius-statistics",
+    "title": "RADIUS sayaçlarını görüntüleme",
+    "cat": "Güvenlik ve Erişim",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show radius statistics"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display radius-server statistics"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show radius-server statistics"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-tacacs-servers",
+    "title": "TACACS sunucu durumunu görüntüleme",
+    "cat": "Güvenlik ve Erişim",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show tacacs"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display tacacs-server"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show tacacs-server"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-vrf-ozeti",
+    "title": "VRF bilgilerini görüntüleme",
+    "cat": "Routing",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vrf"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip vpn-instance"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip vrf"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-mpls-ldp-komsulari",
+    "title": "MPLS LDP komşularını görüntüleme",
+    "cat": "Routing",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mpls ldp neighbor"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mpls ldp peer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mpls ldp neighbor"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-mpls-forwarding",
+    "title": "MPLS forwarding tablosunu görüntüleme",
+    "cat": "Routing",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mpls forwarding-table"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mpls forwarding-table"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mpls forwarding-table"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-ip-sla-statistics",
+    "title": "IP SLA ölçüm sonuçlarını görüntüleme",
+    "cat": "İzleme ve Log",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip sla statistics"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nqa results"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show monitor"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-cpu-kullanim",
+    "title": "CPU kullanımını görüntüleme",
+    "cat": "Sistem ve Bakım",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu sorted"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-memory-kullanim",
+    "title": "Bellek kullanımını görüntüleme",
+    "cat": "Sistem ve Bakım",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory"
+      ]
+    }
+  },
+  {
+    "slug": "netcmd-transceiver-detay",
+    "title": "Optik modül ayrıntılarını görüntüleme",
+    "cat": "Arayüz ve Fiziksel Katman",
+    "note": "Salt okunur teşhis komutudur. Çıktıyı ilgili protokol, komşuluk ve olay kayıtlarıyla birlikte değerlendirin. Üretici, cihaz ailesi ve yazılım sürümüne göre sözdizimi veya destek değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver"
       ]
     }
   }
