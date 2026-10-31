@@ -1,0 +1,2752 @@
+{
+  "catalog-ospf-komsu-durumu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "OSPF neighbor status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect ospf komsu durumu. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect ospf komsu durumu. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Ospf Komsu Durumu. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Ospf Komsu Durumu. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-ospf-interface-state": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "OSPF interface summary. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect ospf interface state. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect ospf interface state. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Ospf Interface State. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Ospf Interface State. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-bgp-peer-capabilities": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "BGP neighbor capabilities. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect bgp peer capabilities. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect bgp peer capabilities. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Bgp Peer Capabilities. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Bgp Peer Capabilities. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-bgp-rotalari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "BGP routing table. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect bgp rotalari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect bgp rotalari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Bgp Rotalari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Bgp Rotalari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-bfd-oturumlari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "BFD session status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect bfd oturumlari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect bfd oturumlari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Bfd Oturumlari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Bfd Oturumlari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-vrf-listesi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "VRF list. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect vrf listesi. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect vrf listesi. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Vrf Listesi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Vrf Listesi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-ipv6-arayuzleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IPv6 interface summary. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect ipv6 arayuzleri. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect ipv6 arayuzleri. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Ipv6 Arayuzleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Ipv6 Arayuzleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-ipv6-rotalari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IPv6 routing table. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect ipv6 rotalari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect ipv6 rotalari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Ipv6 Rotalari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Ipv6 Rotalari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-ipv6-komsulari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IPv6 neighbor table. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect ipv6 komsulari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect ipv6 komsulari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Ipv6 Komsulari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Ipv6 Komsulari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-lldp-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "LLDP neighbor details. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect lldp detay. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect lldp detay. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Lldp Detay. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Lldp Detay. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-cdp-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "CDP neighbor details. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect cdp detay. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect cdp detay. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Cdp Detay. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Cdp Detay. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-stp-kok-koprusu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "STP root bridge. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect stp kok koprusu. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect stp kok koprusu. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Stp Kok Koprusu. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Stp Kok Koprusu. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-stp-arayuz-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "STP interface states. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect stp arayuz detay. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect stp arayuz detay. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Stp Arayuz Detay. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Stp Arayuz Detay. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-etherchannel-ozet": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "EtherChannel and Eth-Trunk summary. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect etherchannel ozet. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect etherchannel ozet. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Etherchannel Ozet. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Etherchannel Ozet. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-lacp-komsulari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "LACP neighbors. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect lacp komsulari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect lacp komsulari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Lacp Komsulari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Lacp Komsulari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-poe-port-power": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "PoE port power details. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect poe port power. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect poe port power. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Poe Port Power. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Poe Port Power. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-optik-alici-verici": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Optical transceiver details. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect optik alici verici. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect optik alici verici. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Optik Alici Verici. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Optik Alici Verici. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-ortam-sensorleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Environmental sensors. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect ortam sensorleri. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect ortam sensorleri. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Ortam Sensorleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Ortam Sensorleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-cpu-prosesleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "CPU processes. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect cpu prosesleri. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect cpu prosesleri. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Cpu Prosesleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Cpu Prosesleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-bellek-kullanimi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Memory utilization. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect bellek kullanimi. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect bellek kullanimi. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Bellek Kullanimi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Bellek Kullanimi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-log-buffer": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Local log buffer. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect log buffer. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect log buffer. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Log Buffer. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Log Buffer. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-ntp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "NTP synchronization status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect ntp durum. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect ntp durum. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Ntp Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Ntp Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-snmp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "SNMP operational status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect snmp durum. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect snmp durum. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Snmp Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Snmp Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-radius-istatistik": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "RADIUS server statistics. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect radius istatistik. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect radius istatistik. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Radius Istatistik. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Radius Istatistik. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-tacacs-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "TACACS server status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect tacacs durum. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect tacacs durum. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Tacacs Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Tacacs Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-acl-sayaclari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "ACL match counters. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect acl sayaclari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect acl sayaclari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Acl Sayaclari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Acl Sayaclari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-dhcp-snooping": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "DHCP snooping bindings. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect dhcp snooping. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect dhcp snooping. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Dhcp Snooping. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Dhcp Snooping. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-dynamic-arp-inspection": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Dynamic ARP Inspection status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect dynamic arp inspection. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect dynamic arp inspection. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Dynamic Arp Inspection. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Dynamic Arp Inspection. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-port-security-ozet": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Port security status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect port security ozet. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect port security ozet. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Port Security Ozet. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Port Security Ozet. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-storm-control": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Storm control configuration. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect storm control. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect storm control. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Storm Control. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Storm Control. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-errdisable-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Err-disabled interfaces. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect errdisable durum. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect errdisable durum. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Errdisable Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Errdisable Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-arayuz-hata-sayaclari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Interface error counters. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect arayuz hata sayaclari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect arayuz hata sayaclari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Arayuz Hata Sayaclari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Arayuz Hata Sayaclari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-stack-uyeleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Switch stack members. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect stack uyeleri. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect stack uyeleri. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Stack Uyeleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Stack Uyeleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-vsf-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Aruba VSF status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect vsf durum. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect vsf durum. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Vsf Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Vsf Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-irf-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Huawei IRF status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect irf durum. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect irf durum. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Irf Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Irf Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-vrrp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "VRRP status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect vrrp durum. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect vrrp durum. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Vrrp Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Vrrp Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-hsrp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "HSRP status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect hsrp durum. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect hsrp durum. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Hsrp Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Hsrp Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-track-objeleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Track objects. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect track objeleri. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect track objeleri. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Track Objeleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Track Objeleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-route-map-listesi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Route-map configuration. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect route map listesi. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect route map listesi. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Route Map Listesi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Route Map Listesi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-prefix-listesi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Prefix-list configuration. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect prefix listesi. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect prefix listesi. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Prefix Listesi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Prefix Listesi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-pbr-politikalari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Policy-based routing status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect pbr politikalari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect pbr politikalari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Pbr Politikalari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Pbr Politikalari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-igmp-gruplari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IGMP multicast groups. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect igmp gruplari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect igmp gruplari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Igmp Gruplari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Igmp Gruplari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-pim-komsulari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "PIM neighbors. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect pim komsulari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect pim komsulari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Pim Komsulari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Pim Komsulari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-nat-cevirileri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "NAT translations. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect nat cevirileri. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect nat cevirileri. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Nat Cevirileri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Nat Cevirileri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-mac-hareket-kayitlari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "MAC move records. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect mac hareket kayitlari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect mac hareket kayitlari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Mac Hareket Kayitlari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Mac Hareket Kayitlari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-dhcp-sunucu-havuzlari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "DHCP server pools. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect dhcp sunucu havuzlari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect dhcp sunucu havuzlari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Dhcp Sunucu Havuzlari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Dhcp Sunucu Havuzlari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-dhcp-istemci-baglari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "DHCP client bindings. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect dhcp istemci baglari. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect dhcp istemci baglari. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Dhcp Istemci Baglari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Dhcp Istemci Baglari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-qos-sinif-eslemeleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "QoS class-map matches. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect qos sinif eslemeleri. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect qos sinif eslemeleri. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Qos Sinif Eslemeleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Qos Sinif Eslemeleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-qos-politika-eslesmeleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "QoS policy-map matches. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect qos politika eslesmeleri. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect qos politika eslesmeleri. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Qos Politika Eslesmeleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Qos Politika Eslesmeleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "catalog-port-kanal-yuk-dagilimi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Port-channel load balancing. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın."
+          },
+          {
+            "p": "Sürüm",
+            "d": "Komut sözdizimini cihaz modeli ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı ağ topolojisiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek bir çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect port kanal yuk dagilimi. Check the command syntax and support for the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target platform and release."
+          }
+        ],
+        "example": "Use this command to inspect port kanal yuk dagilimi. Check the command syntax and support for the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Port Kanal Yuk Dagilimi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للمنصة وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Port Kanal Yuk Dagilimi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  }
+}
