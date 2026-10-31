@@ -10,46 +10,6 @@
         "note": "يفحص عدادات CRC وأخطاء الإدخال والإخراج والإسقاط للمساعدة في التمييز بين مشاكل الطبقة الفيزيائية ومشاكل الحركة."
       }
     },
-    "interface-utilization": {
-      "en": {
-        "title": "Display interface traffic utilization",
-        "note": "Compare ingress and egress rates with interface capacity. Assess bursts over time rather than from a single sample."
-      },
-      "ar": {
-        "title": "عرض استخدام حركة الواجهات",
-        "note": "قارن معدلات الدخول والخروج بسعة الواجهة. قيّم الارتفاعات عبر الزمن بدلاً من الاعتماد على عينة واحدة."
-      }
-    },
-    "transceiver-diagnostics": {
-      "en": {
-        "title": "Display optical transceiver DOM diagnostics",
-        "note": "Checks temperature, voltage and TX/RX optical power on supported SFP/SFP+ modules. DOM support depends on the module and platform."
-      },
-      "ar": {
-        "title": "عرض تشخيص DOM للوحدات الضوئية",
-        "note": "يفحص درجة الحرارة والجهد والطاقة الضوئية TX/RX في وحدات SFP/SFP+ المدعومة. يعتمد دعم DOM على الوحدة والمنصة."
-      }
-    },
-    "lldp-neighbor-detail": {
-      "en": {
-        "title": "Display detailed LLDP neighbors",
-        "note": "Reviews neighbor device name, port ID, capabilities and management address to help validate physical topology."
-      },
-      "ar": {
-        "title": "عرض جيران LLDP بالتفصيل",
-        "note": "يراجع اسم الجهاز المجاور ومعرف المنفذ والقدرات وعنوان الإدارة للمساعدة في التحقق من البنية الفيزيائية."
-      }
-    },
-    "cdp-neighbor-detail": {
-      "en": {
-        "title": "Display detailed CDP neighbors",
-        "note": "Displays Cisco Discovery Protocol neighbor and port details. CDP appears only on supported devices and enabled interfaces."
-      },
-      "ar": {
-        "title": "عرض جيران CDP بالتفصيل",
-        "note": "يعرض تفاصيل جيران CDP ومنافذهم. يظهر CDP فقط على الأجهزة المدعومة والواجهات المفعّلة."
-      }
-    },
     "mac-address-table-dynamic": {
       "en": {
         "title": "Display dynamic MAC address table",
@@ -70,16 +30,6 @@
         "note": "يراجع مطابقة IPv4 مع MAC والواجهات المرتبطة لاستكشاف مشاكل حل الجيران في الطبقة الثالثة."
       }
     },
-    "dhcp-snooping-status": {
-      "en": {
-        "title": "Display DHCP Snooping status",
-        "note": "Checks DHCP Snooping enablement, VLAN scope and trusted-port approach. The binding table can be inspected separately."
-      },
-      "ar": {
-        "title": "عرض حالة DHCP Snooping",
-        "note": "يتحقق من تفعيل DHCP Snooping ونطاق VLAN ومفهوم المنافذ الموثوقة. يمكن فحص جدول الارتباطات بأمر منفصل."
-      }
-    },
     "dhcp-snooping-bindings": {
       "en": {
         "title": "Display DHCP Snooping bindings",
@@ -90,16 +40,6 @@
         "note": "يفحص ارتباطات IP-MAC-VLAN-port المتعلمة. قد يتطلب غياب الإدخالات فحص DHCP للعميل ونطاق VLAN."
       }
     },
-    "port-security-addresses": {
-      "en": {
-        "title": "Display Port Security MAC entries",
-        "note": "Checks secure MAC addresses learned by port security and their associated ports. Syntax and output vary by platform."
-      },
-      "ar": {
-        "title": "عرض عناوين MAC الخاصة بأمان المنافذ",
-        "note": "يفحص عناوين MAC الآمنة التي تعلمها Port Security والمنافذ المرتبطة بها. تختلف الصياغة والمخرجات حسب المنصة."
-      }
-    },
     "stp-interface-role": {
       "en": {
         "title": "Display STP interface role and state",
@@ -108,16 +48,6 @@
       "ar": {
         "title": "عرض دور وحالة واجهة STP",
         "note": "يفحص أدوار منافذ STP مثل root وdesignated وalternate وحالات forwarding/blocking."
-      }
-    },
-    "stp-root-bridge": {
-      "en": {
-        "title": "Display STP root bridge information",
-        "note": "Checks root bridge ID, root port and path cost to validate the Layer 2 topology."
-      },
-      "ar": {
-        "title": "عرض معلومات جسر STP الجذر",
-        "note": "يتحقق من معرف الجسر الجذر ومنفذ الجذر وتكلفة المسار للتحقق من بنية الطبقة الثانية."
       }
     },
     "lacp-interfaces": {
@@ -150,16 +80,6 @@
         "note": "يفحص عضوية VLAN لمنافذ access وtrunk. تحقق بشكل منفصل من native/PVID وقوائم VLAN المسموح بها."
       }
     },
-    "trunk-allowed-vlans": {
-      "en": {
-        "title": "Display allowed VLANs on trunks",
-        "note": "Checks VLANs permitted across a trunk. Compare both ends for allowed VLAN and native/PVID consistency."
-      },
-      "ar": {
-        "title": "عرض VLAN المسموح بها على وصلات trunk",
-        "note": "يفحص شبكات VLAN المسموح بمرورها عبر trunk. قارن الطرفين للتحقق من تطابق القائمة وnative/PVID."
-      }
-    },
     "interface-description-audit": {
       "en": {
         "title": "Audit interface descriptions",
@@ -180,16 +100,6 @@
         "note": "يفحص إمكانية الوصول إلى خوادم NTP وstratum وoffset وحالة الاختيار. مزامنة الساعة مهمة لمقارنة السجلات."
       }
     },
-    "logging-buffer": {
-      "en": {
-        "title": "Display local logging buffer",
-        "note": "Displays event records retained in the device's local memory buffer. Buffer size and severity depend on configuration."
-      },
-      "ar": {
-        "title": "عرض مخزن السجلات المحلي",
-        "note": "يعرض سجلات الأحداث المحتفظ بها في مخزن الذاكرة المحلي للجهاز. يعتمد حجم المخزن ومستوى الخطورة على الإعدادات."
-      }
-    },
     "environment-health": {
       "en": {
         "title": "Display hardware environmental health",
@@ -198,6 +108,96 @@
       "ar": {
         "title": "عرض الحالة البيئية للأجهزة",
         "note": "يفحص حساسات المراوح والحرارة ومزودات الطاقة لمراقبة إنذارات الأجهزة والحدود."
+      }
+    },
+    "interface-traffic-rate-check": {
+      "en": {
+        "title": "Display interface traffic utilization",
+        "note": "Compare ingress and egress rates with interface capacity. Assess bursts over time rather than from a single sample."
+      },
+      "ar": {
+        "title": "عرض استخدام حركة الواجهات",
+        "note": "قارن معدلات الدخول والخروج بسعة الواجهة. قيّم الارتفاعات عبر الزمن بدلاً من الاعتماد على عينة واحدة."
+      }
+    },
+    "optical-dom-dom-diagnostics": {
+      "en": {
+        "title": "Display optical transceiver DOM diagnostics",
+        "note": "Checks temperature, voltage and TX/RX optical power on supported SFP/SFP+ modules. DOM support depends on the module and platform."
+      },
+      "ar": {
+        "title": "عرض تشخيص DOM للوحدات الضوئية",
+        "note": "يفحص درجة الحرارة والجهد والطاقة الضوئية TX/RX في وحدات SFP/SFP+ المدعومة. يعتمد دعم DOM على الوحدة والمنصة."
+      }
+    },
+    "lldp-remote-device-detail": {
+      "en": {
+        "title": "Display detailed LLDP neighbors",
+        "note": "Reviews neighbor device name, port ID, capabilities and management address to help validate physical topology."
+      },
+      "ar": {
+        "title": "عرض جيران LLDP بالتفصيل",
+        "note": "يراجع اسم الجهاز المجاور ومعرف المنفذ والقدرات وعنوان الإدارة للمساعدة في التحقق من البنية الفيزيائية."
+      }
+    },
+    "cdp-remote-device-detail": {
+      "en": {
+        "title": "Display detailed CDP neighbors",
+        "note": "Displays Cisco Discovery Protocol neighbor and port details. CDP appears only on supported devices and enabled interfaces."
+      },
+      "ar": {
+        "title": "عرض جيران CDP بالتفصيل",
+        "note": "يعرض تفاصيل جيران CDP ومنافذهم. يظهر CDP فقط على الأجهزة المدعومة والواجهات المفعّلة."
+      }
+    },
+    "dhcp-snooping-global-status": {
+      "en": {
+        "title": "Display DHCP Snooping status",
+        "note": "Checks DHCP Snooping enablement, VLAN scope and trusted-port approach. The binding table can be inspected separately."
+      },
+      "ar": {
+        "title": "عرض حالة DHCP Snooping",
+        "note": "يتحقق من تفعيل DHCP Snooping ونطاق VLAN ومفهوم المنافذ الموثوقة. يمكن فحص جدول الارتباطات بأمر منفصل."
+      }
+    },
+    "port-security-secure-mac-list": {
+      "en": {
+        "title": "Display Port Security MAC entries",
+        "note": "Checks secure MAC addresses learned by port security and their associated ports. Syntax and output vary by platform."
+      },
+      "ar": {
+        "title": "عرض عناوين MAC الخاصة بأمان المنافذ",
+        "note": "يفحص عناوين MAC الآمنة التي تعلمها Port Security والمنافذ المرتبطة بها. تختلف الصياغة والمخرجات حسب المنصة."
+      }
+    },
+    "stp-root-bridge-summary": {
+      "en": {
+        "title": "Display STP root bridge information",
+        "note": "Checks root bridge ID, root port and path cost to validate the Layer 2 topology."
+      },
+      "ar": {
+        "title": "عرض معلومات جسر STP الجذر",
+        "note": "يتحقق من معرف الجسر الجذر ومنفذ الجذر وتكلفة المسار للتحقق من بنية الطبقة الثانية."
+      }
+    },
+    "trunk-vlan-allow-list": {
+      "en": {
+        "title": "Display allowed VLANs on trunks",
+        "note": "Checks VLANs permitted across a trunk. Compare both ends for allowed VLAN and native/PVID consistency."
+      },
+      "ar": {
+        "title": "عرض VLAN المسموح بها على وصلات trunk",
+        "note": "يفحص شبكات VLAN المسموح بمرورها عبر trunk. قارن الطرفين للتحقق من تطابق القائمة وnative/PVID."
+      }
+    },
+    "local-event-log-buffer": {
+      "en": {
+        "title": "Display local logging buffer",
+        "note": "Displays event records retained in the device's local memory buffer. Buffer size and severity depend on configuration."
+      },
+      "ar": {
+        "title": "عرض مخزن السجلات المحلي",
+        "note": "يعرض سجلات الأحداث المحتفظ بها في مخزن الذاكرة المحلي للجهاز. يعتمد حجم المخزن ومستوى الخطورة على الإعدادات."
       }
     }
   }
