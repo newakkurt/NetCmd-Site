@@ -219,116 +219,6 @@
       }
     }
   },
-  "ipv6-interface-summary": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "IPv6 adreslerini ve arayüz durumlarını özetler."
-          },
-          {
-            "p": "Platform",
-            "d": "Üretici, model ve sürüm desteğini doğrulayın."
-          }
-        ],
-        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
-        "mistakes": [
-          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
-          "Çıktıyı tek başına kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "IPv6 adreslerini ve arayüz durumlarını özetler."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm vendor, model and release support."
-          }
-        ],
-        "example": "Compare the read-only command output with peer-device and topology information.",
-        "mistakes": [
-          "Automating before checking release support.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "IPv6 adreslerini ve arayüz durumlarını özetler."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
-          }
-        ],
-        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
-        "mistakes": [
-          "الأتمتة قبل التحقق من دعم الإصدار.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
-        ]
-      }
-    }
-  },
-  "ipv6-neighbor-cache": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "IPv6 Neighbor Discovery önbelleğini inceler."
-          },
-          {
-            "p": "Platform",
-            "d": "Üretici, model ve sürüm desteğini doğrulayın."
-          }
-        ],
-        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
-        "mistakes": [
-          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
-          "Çıktıyı tek başına kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "IPv6 Neighbor Discovery önbelleğini inceler."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm vendor, model and release support."
-          }
-        ],
-        "example": "Compare the read-only command output with peer-device and topology information.",
-        "mistakes": [
-          "Automating before checking release support.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "IPv6 Neighbor Discovery önbelleğini inceler."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
-          }
-        ],
-        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
-        "mistakes": [
-          "الأتمتة قبل التحقق من دعم الإصدار.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
-        ]
-      }
-    }
-  },
   "dhcp-relay-state": {
     "details": {
       "tr": {
@@ -1044,61 +934,6 @@
       }
     }
   },
-  "port-security-addresses": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "Port-security tarafından öğrenilen MAC adreslerini listeler."
-          },
-          {
-            "p": "Platform",
-            "d": "Üretici, model ve sürüm desteğini doğrulayın."
-          }
-        ],
-        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
-        "mistakes": [
-          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
-          "Çıktıyı tek başına kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Port-security tarafından öğrenilen MAC adreslerini listeler."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm vendor, model and release support."
-          }
-        ],
-        "example": "Compare the read-only command output with peer-device and topology information.",
-        "mistakes": [
-          "Automating before checking release support.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "Port-security tarafından öğrenilen MAC adreslerini listeler."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
-          }
-        ],
-        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
-        "mistakes": [
-          "الأتمتة قبل التحقق من دعم الإصدار.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
-        ]
-      }
-    }
-  },
   "macsec-session-state": {
     "details": {
       "tr": {
@@ -1649,13 +1484,13 @@
       }
     }
   },
-  "power-supply-status": {
+  "ipv6-address-interface-status": {
     "details": {
       "tr": {
         "params": [
           {
             "p": "Amaç",
-            "d": "Güç kaynağı modüllerinin durumunu kontrol eder."
+            "d": "IPv6 adreslerini ve arayüz durumlarını özetler."
           },
           {
             "p": "Platform",
@@ -1672,7 +1507,7 @@
         "params": [
           {
             "p": "Purpose",
-            "d": "Güç kaynağı modüllerinin durumunu kontrol eder."
+            "d": "IPv6 adreslerini ve arayüz durumlarını özetler."
           },
           {
             "p": "Platform",
@@ -1689,7 +1524,7 @@
         "params": [
           {
             "p": "الغرض",
-            "d": "Güç kaynağı modüllerinin durumunu kontrol eder."
+            "d": "IPv6 adreslerini ve arayüz durumlarını özetler."
           },
           {
             "p": "المنصة",
@@ -1704,7 +1539,117 @@
       }
     }
   },
-  "fan-status": {
+  "ipv6-nd-neighbor-cache": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IPv6 Neighbor Discovery önbelleğini inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "IPv6 Neighbor Discovery önbelleğini inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "IPv6 Neighbor Discovery önbelleğini inceler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "port-security-learned-mac-table": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Port-security tarafından öğrenilen MAC adreslerini listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Port-security tarafından öğrenilen MAC adreslerini listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Port-security tarafından öğrenilen MAC adreslerini listeler."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "chassis-fan-module-status": {
     "details": {
       "tr": {
         "params": [
@@ -1745,6 +1690,61 @@
           {
             "p": "الغرض",
             "d": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الشركة المصنعة والطراز والإصدار."
+          }
+        ],
+        "example": "قارن مخرجات الأمر للقراءة فقط بمعلومات الجهاز المقابل والطوبولوجيا.",
+        "mistakes": [
+          "الأتمتة قبل التحقق من دعم الإصدار.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على العطل."
+        ]
+      }
+    }
+  },
+  "chassis-power-module-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Güç kaynağı modüllerinin durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Üretici, model ve sürüm desteğini doğrulayın."
+          }
+        ],
+        "example": "Salt okunur komut çıktısını komşu cihaz ve topoloji bilgileriyle karşılaştırın.",
+        "mistakes": [
+          "Sürüm desteğini kontrol etmeden otomasyona eklemek.",
+          "Çıktıyı tek başına kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Güç kaynağı modüllerinin durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm vendor, model and release support."
+          }
+        ],
+        "example": "Compare the read-only command output with peer-device and topology information.",
+        "mistakes": [
+          "Automating before checking release support.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "Güç kaynağı modüllerinin durumunu kontrol eder."
           },
           {
             "p": "المنصة",
