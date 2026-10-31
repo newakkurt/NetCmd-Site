@@ -1,0 +1,210 @@
+{
+  "ospf-komsu-durumu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komşu router ID, arayüz ve FULL/2-WAY gibi komşuluk durumlarını inceleyin."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komşu görünmüyorsa iki uçta area, hello/dead timer, MTU, authentication ve network type değerlerini karşılaştırın."
+          }
+        ],
+        "example": "Komutu çalıştırın ve sonucu beklenen topoloji/servis tasarımıyla karşılaştırın.",
+        "mistakes": [
+          "Arayüzün up olması OSPF komşuluğunun kurulduğu anlamına gelmez."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Review neighbor router IDs, interfaces and states such as FULL or 2-WAY."
+          },
+          {
+            "p": "checks",
+            "d": "If a neighbor is missing, compare area, hello/dead timers, MTU, authentication and network type on both ends."
+          }
+        ],
+        "example": "Run the command and compare the result with the expected topology and service design.",
+        "mistakes": [
+          "An interface being up does not mean the OSPF adjacency is established."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "راجع معرّفات الموجّهات والواجهات وحالات الجوار مثل FULL و2-WAY."
+          },
+          {
+            "p": "الفحوصات",
+            "d": "إذا كان الجار مفقوداً، فقارن المنطقة ومؤقتات hello/dead وMTU والمصادقة ونوع الشبكة على الطرفين."
+          }
+        ],
+        "example": "نفّذ الأمر وقارن النتيجة مع تصميم الشبكة والخدمة المتوقع.",
+        "mistakes": [
+          "حالة الواجهة up لا تعني أن تجاور OSPF قد اكتمل."
+        ]
+      }
+    }
+  },
+  "bgp-komsu-ozeti": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "ASN ve komşu IP adresini beklenen tasarımla karşılaştırın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Idle veya Active durumunda TCP/179 erişimini, neighbor tanımını, ASN ve update-source ayarlarını kontrol edin."
+          }
+        ],
+        "example": "Komutu çalıştırın ve sonucu beklenen topoloji/servis tasarımıyla karşılaştırın.",
+        "mistakes": [
+          "Prefix sayısının sıfır olması oturumun kurulu olmadığı anlamına gelmeyebilir; politika ve filtreleri de inceleyin."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Compare the peer IP and ASN with the intended design."
+          },
+          {
+            "p": "checks",
+            "d": "For Idle or Active states, check TCP/179 reachability, neighbor configuration, ASN and update-source settings."
+          }
+        ],
+        "example": "Run the command and compare the result with the expected topology and service design.",
+        "mistakes": [
+          "A zero prefix count does not always mean the session is down; inspect policies and filters too."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "قارن عنوان الجار وASN مع التصميم المتوقع."
+          },
+          {
+            "p": "الفحوصات",
+            "d": "في حالتي Idle أو Active، تحقق من الوصول إلى TCP/179 وإعداد الجار وASN وإعداد update-source."
+          }
+        ],
+        "example": "نفّذ الأمر وقارن النتيجة مع تصميم الشبكة والخدمة المتوقع.",
+        "mistakes": [
+          "عدد بادئات يساوي صفراً لا يعني دائماً أن الجلسة متوقفة؛ افحص السياسات والمرشحات أيضاً."
+        ]
+      }
+    }
+  },
+  "poe-port-durumu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Port başına güç tüketimini ve güç verme durumunu kontrol edin."
+          },
+          {
+            "p": "kontrol",
+            "d": "Telefon veya access point enerji almıyorsa PoE bütçesini, kabloyu, port yapılandırmasını ve cihazın güç sınıfını inceleyin."
+          }
+        ],
+        "example": "Komutu çalıştırın ve sonucu beklenen topoloji/servis tasarımıyla karşılaştırın.",
+        "mistakes": [
+          "Toplam PoE bütçesi doluyken yalnızca portu yeniden başlatmak kalıcı çözüm değildir."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Check power delivery state and consumption per port."
+          },
+          {
+            "p": "checks",
+            "d": "If a phone or access point receives no power, inspect the PoE budget, cable, port configuration and device power class."
+          }
+        ],
+        "example": "Run the command and compare the result with the expected topology and service design.",
+        "mistakes": [
+          "Restarting a port is not a lasting fix when the total PoE budget is exhausted."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "تحقق من حالة التغذية واستهلاك الطاقة لكل منفذ."
+          },
+          {
+            "p": "الفحوصات",
+            "d": "إذا لم يحصل الهاتف أو نقطة الوصول على الطاقة، فتحقق من ميزانية PoE والكابل وإعداد المنفذ وفئة طاقة الجهاز."
+          }
+        ],
+        "example": "نفّذ الأمر وقارن النتيجة مع تصميم الشبكة والخدمة المتوقع.",
+        "mistakes": [
+          "إعادة تشغيل المنفذ ليست حلاً دائماً عند نفاد ميزانية PoE الإجمالية."
+        ]
+      }
+    }
+  },
+  "ntp-esitleme-durumu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Senkronizasyon durumu, seçili saat kaynağı ve eş uzaklığına bakın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Saat eşitlenmiyorsa NTP sunucusuna IP erişimini, UDP/123 izinlerini ve cihaz saatini kontrol edin."
+          }
+        ],
+        "example": "Komutu çalıştırın ve sonucu beklenen topoloji/servis tasarımıyla karşılaştırın.",
+        "mistakes": [
+          "Saat dilimini NTP senkronizasyonuyla karıştırmayın; NTP UTC zamanı eşitler."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Check synchronization state, selected time source and peer association."
+          },
+          {
+            "p": "checks",
+            "d": "If the clock is not synchronized, verify IP reachability to the NTP server, UDP/123 permissions and device time."
+          }
+        ],
+        "example": "Run the command and compare the result with the expected topology and service design.",
+        "mistakes": [
+          "Do not confuse the time zone with NTP synchronization; NTP synchronizes UTC time."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "تحقق من حالة المزامنة ومصدر الوقت المحدد وارتباط النظير."
+          },
+          {
+            "p": "الفحوصات",
+            "d": "إذا لم تتم المزامنة، فتحقق من الوصول إلى خادم NTP والسماح بـ UDP/123 ووقت الجهاز."
+          }
+        ],
+        "example": "نفّذ الأمر وقارن النتيجة مع تصميم الشبكة والخدمة المتوقع.",
+        "mistakes": [
+          "لا تخلط بين المنطقة الزمنية ومزامنة NTP؛ إذ يقوم NTP بمزامنة توقيت UTC."
+        ]
+      }
+    }
+  }
+}
