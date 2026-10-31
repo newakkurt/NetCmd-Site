@@ -288,6 +288,8 @@
     var L = [];
     L.push('#!/usr/bin/env python3');
     L.push('"""Salt okunur kontroller (NetCmd tarafından üretildi). Yapılandırmayı DEĞİŞTİRMEZ."""');
+    L.push('# İlk çalıştırmadan önce cihaz anahtar parmak izini güvenilir kanaldan doğrula.');
+    L.push('# Doğrulanmış anahtarı ~/.ssh/known_hosts dosyasına ekle; ssh-keyscan çıktısını doğrulamadan güvenme.');
     L.push('import logging');
     L.push('import os');
     L.push('import sys');
