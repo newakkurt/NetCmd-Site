@@ -1,0 +1,1452 @@
+{
+  "netcmd-bgp-komsu-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "BGP komşu ayrıntılarını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the bgp komşu ayrıntılarını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-routing-protokolleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "Etkin yönlendirme protokollerini görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the etkin yönlendirme protokollerini görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-stp-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "Spanning Tree ayrıntılarını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the spanning tree ayrıntılarını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-stp-root": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "Spanning Tree root köprüsünü görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the spanning tree root köprüsünü görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-etherchannel-ozeti": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "EtherChannel / Eth-Trunk durumunu görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the etherchannel / eth-trunk durumunu görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-arayuz-hata-sayaclari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "Arayüz hata sayaçlarını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the arayüz hata sayaçlarını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-poe-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "PoE güç durumunu görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the poe güç durumunu görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-cihaz-envanteri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "Cihaz donanım envanterini görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the cihaz donanım envanterini görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-ortam-sensorleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "Sıcaklık ve ortam sensörlerini görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the sıcaklık ve ortam sensörlerini görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-aktif-kullanicilar": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "Cihaza bağlı yönetim kullanıcılarını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the cihaza bağlı yönetim kullanıcılarını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-lldp-komsu-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "LLDP komşu ayrıntılarını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the lldp komşu ayrıntılarını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-igmp-gruplari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "IGMP multicast gruplarını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the igmp multicast gruplarını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-yedeklilik-durumu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "Kontrol düzlemi yedeklilik durumunu görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the kontrol düzlemi yedeklilik durumunu görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-stack-durumu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "Switch stack durumunu görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the switch stack durumunu görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-udld-komsulari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "UDLD komşularını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the udld komşularını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-lacp-komsulari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "LACP komşu bilgilerini görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the lacp komşu bilgilerini görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-radius-statistics": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "RADIUS sayaçlarını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the radius sayaçlarını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-tacacs-servers": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "TACACS sunucu durumunu görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the tacacs sunucu durumunu görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-vrf-ozeti": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "VRF bilgilerini görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the vrf bilgilerini görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-mpls-ldp-komsulari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "MPLS LDP komşularını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the mpls ldp komşularını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-mpls-forwarding": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "MPLS forwarding tablosunu görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the mpls forwarding tablosunu görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-ip-sla-statistics": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "IP SLA ölçüm sonuçlarını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the ip sla ölçüm sonuçlarını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-cpu-kullanim": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "CPU kullanımını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the cpu kullanımını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-memory-kullanim": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "Bellek kullanımını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the bellek kullanımını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "netcmd-transceiver-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutu doğru cihazda ve ilgili arayüz/protokol bağlamında çalıştırın."
+          }
+        ],
+        "example": "Optik modül ayrıntılarını görüntüleme çıktısını değişiklik öncesi ve sonrası karşılaştırarak komşuluk, durum veya sayaç değişimini izleyin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutu desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command on the correct device and relevant interface or protocol context."
+          }
+        ],
+        "example": "Use the optik modül ayrıntılarını görüntüleme output to compare state or counters before and after a change.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر على الجهاز الصحيح وفي سياق الواجهة أو البروتوكول المناسب."
+          }
+        ],
+        "example": "استخدم مخرجات الأمر لمقارنة الحالة أو العدادات قبل التغيير وبعده.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل المختلفة.",
+          "تشغيل الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  }
+}
