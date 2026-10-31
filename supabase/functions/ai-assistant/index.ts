@@ -37,10 +37,12 @@ Deno.serve(async (req) => {
   const { data: u } = await userClient.auth.getUser();
   if (!u?.user) return J({ error: "auth" }, 401, h);
 
-  const contentLength = Number(req.headers.get("content-length") ?? "0");
-  if (contentLength > 8192) return J({ error: "too_large" }, 413, h);
+  // Enforce the limit on actual bytes; Content-Length may be absent on streamed requests.
+  let raw: string;
+  try { raw = await req.text(); } catch { return J({ error: "json" }, 400, h); }
+  if (new TextEncoder().encode(raw).byteLength > 8192) return J({ error: "too_large" }, 413, h);
   let body: any;
-  try { body = await req.json(); } catch { return J({ error: "json" }, 400, h); }
+  try { body = JSON.parse(raw); } catch { return J({ error: "json" }, 400, h); }
   const query = clip(body?.query, 500).trim();
   if (query.length < 3) return J({ error: "short" }, 400, h);
 
