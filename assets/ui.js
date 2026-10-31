@@ -166,6 +166,9 @@
     pre.insertBefore(btn, pre.firstChild);
   });
 
+  var currentSlug = slugFrom(location.pathname);
+  if (currentSlug) { var currentTitle = (document.querySelector('main h1') || {}).textContent || currentSlug; record(currentSlug, currentTitle.trim()); }
+
   var main = document.querySelector('main');
   if (main && /^\\/(tr|en|ar)\\/$/.test(location.pathname)) {
     var history = read();
