@@ -30,26 +30,6 @@
         "note": "يفحص معرفات موجّهات OSPF والمناطق وحالات المجاورة. في الحالات غير FULL قارن الإعدادات على الطرفين."
       }
     },
-    "ospf-interface-detail": {
-      "en": {
-        "title": "Display OSPF interface details",
-        "note": "Checks area, cost, network type and timer information for OSPF-enabled interfaces. Verify matching parameters on both ends when troubleshooting adjacency."
-      },
-      "ar": {
-        "title": "عرض تفاصيل واجهة OSPF",
-        "note": "يفحص المنطقة والتكلفة ونوع الشبكة والمؤقتات للواجهات التي تشغّل OSPF. تحقق من تطابق الإعدادات على الطرفين."
-      }
-    },
-    "ospf-database-summary": {
-      "en": {
-        "title": "Display OSPF link-state database summary",
-        "note": "Inspects LSA types and counts in the Link State Database to review OSPF topology information."
-      },
-      "ar": {
-        "title": "عرض ملخص قاعدة بيانات OSPF",
-        "note": "يفحص أنواع LSA وأعدادها في قاعدة بيانات Link State لمراجعة معلومات طوبولوجيا OSPF."
-      }
-    },
     "routing-table-protocol": {
       "en": {
         "title": "Display routing table by protocol",
@@ -130,16 +110,6 @@
         "note": "يفحص الوقت المنقضي منذ آخر إعادة تشغيل. قارن مدة التشغيل مع أحداث reload والطاقة."
       }
     },
-    "memory-summary": {
-      "en": {
-        "title": "Display memory usage summary",
-        "note": "Checks used and free memory. Review sudden changes together with process memory and device logs."
-      },
-      "ar": {
-        "title": "عرض ملخص استخدام الذاكرة",
-        "note": "يفحص الذاكرة المستخدمة والمتاحة. راجع التغييرات المفاجئة مع ذاكرة العمليات وسجلات الجهاز."
-      }
-    },
     "flash-filesystem": {
       "en": {
         "title": "Display flash filesystem contents",
@@ -170,16 +140,6 @@
         "note": "يساعد في العثور على قسم واجهة أو VLAN أو بروتوكول في الإعداد الجاري. تختلف صياغة التصفية حسب المنصة."
       }
     },
-    "interface-flap-log": {
-      "en": {
-        "title": "Display interface link-flap logs",
-        "note": "Inspects link up/down events to identify timing and recurrence of physical connectivity interruptions."
-      },
-      "ar": {
-        "title": "عرض سجلات تغير حالة الواجهة",
-        "note": "يفحص أحداث link up/down لتحديد توقيت وتكرار انقطاعات الاتصال الفيزيائي."
-      }
-    },
     "ping-source-interface": {
       "en": {
         "title": "Run ping from a specified source interface",
@@ -198,6 +158,46 @@
       "ar": {
         "title": "تنفيذ traceroute من مصدر محدد",
         "note": "يفحص مسار الطبقة الثالثة إلى الوجهة باستخدام عنوان مصدر محدد. قد تؤثر تصفية ICMP في الأجهزة الوسيطة على النتيجة."
+      }
+    },
+    "ospf-interface-parameters": {
+      "en": {
+        "title": "Display OSPF interface details",
+        "note": "Checks area, cost, network type and timer information for OSPF-enabled interfaces. Verify matching parameters on both ends when troubleshooting adjacency."
+      },
+      "ar": {
+        "title": "عرض تفاصيل واجهة OSPF",
+        "note": "يفحص المنطقة والتكلفة ونوع الشبكة والمؤقتات للواجهات التي تشغّل OSPF. تحقق من تطابق الإعدادات على الطرفين."
+      }
+    },
+    "ospf-lsdb-count-summary": {
+      "en": {
+        "title": "Display OSPF link-state database summary",
+        "note": "Inspects LSA types and counts in the Link State Database to review OSPF topology information."
+      },
+      "ar": {
+        "title": "عرض ملخص قاعدة بيانات OSPF",
+        "note": "يفحص أنواع LSA وأعدادها في قاعدة بيانات Link State لمراجعة معلومات طوبولوجيا OSPF."
+      }
+    },
+    "system-memory-usage-brief": {
+      "en": {
+        "title": "Display memory usage summary",
+        "note": "Checks used and free memory. Review sudden changes together with process memory and device logs."
+      },
+      "ar": {
+        "title": "عرض ملخص استخدام الذاكرة",
+        "note": "يفحص الذاكرة المستخدمة والمتاحة. راجع التغييرات المفاجئة مع ذاكرة العمليات وسجلات الجهاز."
+      }
+    },
+    "interface-link-flap-events": {
+      "en": {
+        "title": "Display interface link-flap logs",
+        "note": "Inspects link up/down events to identify timing and recurrence of physical connectivity interruptions."
+      },
+      "ar": {
+        "title": "عرض سجلات تغير حالة الواجهة",
+        "note": "يفحص أحداث link up/down لتحديد توقيت وتكرار انقطاعات الاتصال الفيزيائي."
       }
     }
   }
