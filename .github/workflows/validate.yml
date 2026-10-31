@@ -38,6 +38,9 @@ jobs:
           test -s dist/en/index.html
           test -s dist/ar/index.html
 
+      - name: Audit command catalogue for repeated patterns
+        run: python3 scripts/audit_command_catalog.py --file commands_2000_d.json
+
       - name: Validate JavaScript syntax
         run: |
           find assets -type f -name '*.js' -print0 | xargs -0 -r -n1 node --check
