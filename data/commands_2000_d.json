@@ -286,5 +286,245 @@
         "show sntp"
       ]
     }
+  },
+  {
+    "slug": "ipv6-interface-summary",
+    "title": "IPv6 arayüz özetini görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "IPv6 arayüzlerinin adreslerini ve çalışma durumunu kontrol eder. IPv6 etkin olmayan veya adres atanmamış arayüzler çıktıda farklı görünebilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface brief"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface brief"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator (AOS-CX)",
+      "cmds": [
+        "show ipv6 interface brief"
+      ]
+    }
+  },
+  {
+    "slug": "ipv6-routing-table",
+    "title": "IPv6 yönlendirme tablosunu görüntüleme",
+    "cat": "Routing",
+    "note": "IPv6 hedefleri için seçilmiş rotaları, next-hop ve çıkış arayüzlerini inceler. Protokol filtreleri platforma göre değişebilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator (AOS-CX)",
+      "cmds": [
+        "show ipv6 route"
+      ]
+    }
+  },
+  {
+    "slug": "ipv6-neighbor-table",
+    "title": "IPv6 komşu (ND) tablosunu görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "Neighbor Discovery tablosundaki IPv6-MAC eşleşmelerini ve komşu durumlarını kontrol eder. Dinamik kayıtlar zaman aşımıyla silinebilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 neighbors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 neighbors"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator (AOS-CX)",
+      "cmds": [
+        "show ipv6 neighbors"
+      ]
+    }
+  },
+  {
+    "slug": "ipv6-ospf-neighbors",
+    "title": "OSPFv3 komşularını görüntüleme",
+    "cat": "Routing",
+    "note": "OSPFv3 komşuluklarını ve durumlarını kontrol eder. Süreç, alan ve arayüz parametreleri topolojiye göre filtrelenebilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 ospf neighbor"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospfv3 peer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator (AOS-CX)",
+      "cmds": [
+        "show ipv6 ospf neighbors"
+      ]
+    }
+  },
+  {
+    "slug": "bgp-ipv6-summary",
+    "title": "BGP IPv6 komşu özetini görüntüleme",
+    "cat": "Routing",
+    "note": "IPv6 unicast address-family için BGP oturum durumunu ve prefix sayılarını kontrol eder. Komut kapsamı yazılım sürümüne göre değişebilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show bgp ipv6 unicast summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp ipv6 peer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator (AOS-CX)",
+      "cmds": [
+        "show bgp ipv6 unicast summary"
+      ]
+    }
+  },
+  {
+    "slug": "vrf-list",
+    "title": "VRF örneklerini listeleme",
+    "cat": "Routing",
+    "note": "Cihazda tanımlı VRF/ VPN instance örneklerini görüntüler. Vendor terminolojisi farklı olsa da amaç yönlendirme tablolarını mantıksal olarak ayırmaktır.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vrf"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip vpn-instance"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator (AOS-CX)",
+      "cmds": [
+        "show vrf"
+      ]
+    }
+  },
+  {
+    "slug": "vrf-interface-membership",
+    "title": "Arayüzlerin VRF üyeliğini görüntüleme",
+    "cat": "Routing",
+    "note": "Arayüzlerin hangi VRF veya VPN instance altında çalıştığını doğrular. Yönetim ve üretim trafiğinin yanlış tabloya bağlanmadığını kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip vrf interfaces"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip vpn-instance interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator (AOS-CX)",
+      "cmds": [
+        "show vrf"
+      ]
+    }
+  },
+  {
+    "slug": "qos-policy-statistics",
+    "title": "QoS politika sayaçlarını görüntüleme",
+    "cat": "Sistem",
+    "note": "QoS policy-map eşleşmelerini, paket sayaçlarını ve drop değerlerini incelemeye yardımcı olur. Aruba örneği AOS-CX içindir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic policy statistics"
+      ]
+    },
+    "aruba": {
+      "mode": "Manager (AOS-CX)",
+      "cmds": [
+        "show policy statistics"
+      ]
+    }
+  },
+  {
+    "slug": "acl-hit-counters",
+    "title": "ACL eşleşme sayaçlarını görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "ACL kurallarının hit sayaçlarını inceleyerek trafiğin hangi kurallara eşleştiğini anlamaya yardımcı olur. Sayaç desteği ve komut sözdizimi sürüme göre değişebilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip access-lists"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl all"
+      ]
+    },
+    "aruba": {
+      "mode": "Manager (AOS-CX)",
+      "cmds": [
+        "show access-list hitcounts"
+      ]
+    }
+  },
+  {
+    "slug": "ipv6-prefix-list",
+    "title": "IPv6 prefix-list yapılandırmasını görüntüleme",
+    "cat": "Routing",
+    "note": "IPv6 prefix-list kurallarını inceleyerek routing policy filtrelerini doğrular. Komut çıktısını ilgili BGP/OSPF politika bağlamıyla birlikte değerlendirin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 prefix-list"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip ipv6-prefix"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator (AOS-CX)",
+      "cmds": [
+        "show ipv6 prefix-list"
+      ]
+    }
   }
 ]
