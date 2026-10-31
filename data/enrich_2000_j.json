@@ -1758,5 +1758,2755 @@
         ]
       }
     }
+  },
+  "catalog-ospf-komsu-durumu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "OSPF komşuluklarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks ospf komşuluklarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-ospf-interface-state": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "OSPF arayüz durum özetini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks ospf arayüz durum özetini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-bgp-peer-capabilities": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "BGP komşu yeteneklerini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks bgp komşu yeteneklerini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-bgp-rotalari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "BGP rotalarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks bgp rotalarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-bfd-oturumlari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "BFD oturumlarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks bfd oturumlarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-vrf-listesi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "VRF listesini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks vrf listesini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-ipv6-arayuzleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IPv6 arayüz özetini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks ipv6 arayüz özetini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-ipv6-rotalari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IPv6 yönlendirme tablosunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks ipv6 yönlendirme tablosunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-ipv6-komsulari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IPv6 komşu tablosunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks ipv6 komşu tablosunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-lldp-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "LLDP komşu detaylarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks lldp komşu detaylarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-cdp-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "CDP komşu detaylarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks cdp komşu detaylarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-stp-kok-koprusu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "STP root bridge bilgisini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks stp root bridge bilgisini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-stp-arayuz-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "STP arayüz durumlarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks stp arayüz durumlarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-etherchannel-ozet": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "EtherChannel / Eth-Trunk özetini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks etherchannel / eth-trunk özetini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-lacp-komsulari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "LACP komşularını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks lacp komşularını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-poe-port-power": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "PoE port güç ayrıntılarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks poe port güç ayrıntılarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-optik-alici-verici": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Optik modül bilgilerini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks optik modül bilgilerini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-ortam-sensorleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Sıcaklık ve ortam sensörlerini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks sıcaklık ve ortam sensörlerini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-cpu-prosesleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "CPU kullanımını ve süreçleri görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks cpu kullanımını ve süreçleri görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-bellek-kullanimi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Bellek kullanımını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks bellek kullanımını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-log-buffer": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Yerel log kayıtlarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks yerel log kayıtlarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-ntp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "NTP eşitleme durumunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks ntp eşitleme durumunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-snmp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "SNMP çalışma durumunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks snmp çalışma durumunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-radius-istatistik": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "RADIUS sunucu istatistiklerini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks radius sunucu istatistiklerini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-tacacs-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "TACACS sunucu durumunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks tacacs sunucu durumunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-acl-sayaclari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "ACL eşleşme sayaçlarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks acl eşleşme sayaçlarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-dhcp-snooping": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "DHCP Snooping bağlama tablosunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks dhcp snooping bağlama tablosunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-dynamic-arp-inspection": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Dynamic ARP Inspection durumunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks dynamic arp inspection durumunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-port-security-ozet": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Port Security durumunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks port security durumunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-storm-control": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Storm Control yapılandırmasını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks storm control yapılandırmasını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-errdisable-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Err-disabled arayüzleri görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks err-disabled arayüzleri görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-arayuz-hata-sayaclari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Arayüz hata sayaçlarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks arayüz hata sayaçlarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-stack-uyeleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Switch stack üyelerini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks switch stack üyelerini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-vsf-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Aruba VSF durumunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks aruba vsf durumunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-irf-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Huawei IRF durumunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks huawei irf durumunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-vrrp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "VRRP durumunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks vrrp durumunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-hsrp-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "HSRP durumunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks hsrp durumunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-track-objeleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Track nesnelerini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks track nesnelerini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-route-map-listesi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Route-map yapılandırmasını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks route-map yapılandırmasını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-prefix-listesi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Prefix-list yapılandırmasını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks prefix-list yapılandırmasını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-pbr-politikalari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Policy Based Routing durumunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks policy based routing durumunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-igmp-gruplari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IGMP multicast gruplarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks igmp multicast gruplarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-pim-komsulari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "PIM komşularını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks pim komşularını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-nat-cevirileri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "NAT çeviri tablosunu görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks nat çeviri tablosunu görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-mac-hareket-kayitlari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "MAC move kayıtlarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks mac move kayıtlarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-dhcp-sunucu-havuzlari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "DHCP sunucu havuzlarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks dhcp sunucu havuzlarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-dhcp-istemci-baglari": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "DHCP istemci bağlarını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks dhcp istemci bağlarını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-qos-sinif-eslemeleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "QoS class-map eşleşmelerini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks qos class-map eşleşmelerini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-qos-politika-eslesmeleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "QoS policy-map eşleşmelerini görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks qos policy-map eşleşmelerini görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
+  },
+  "catalog-port-kanal-yuk-dagilimi": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Port-channel yük dağılımını görüntüleme. İlgili protokol veya özelliğin çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Uyumluluk",
+            "d": "Komut sözdizimi cihaz ailesi ve yazılım sürümüne göre değişebilir."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın; çıktıyı karşı uç, topoloji ve olay kayıtlarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı üreticilerin çıktı biçimlerini aynı kabul etmek.",
+          "Model ve sürüm desteğini doğrulamadan komutu otomasyona almak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Checks port-channel yük dağılımını görüntüleme on the device."
+          },
+          {
+            "p": "Compatibility",
+            "d": "Syntax varies by platform family and software release."
+          }
+        ],
+        "example": "Run the command in read-only mode and compare its output with peer devices, topology and event logs.",
+        "mistakes": [
+          "Assuming output formats are identical across vendors.",
+          "Automating before checking model and release support."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يتحقق من حالة البروتوكول أو الميزة على الجهاز."
+          },
+          {
+            "p": "التوافق",
+            "d": "تختلف الصياغة حسب عائلة الجهاز وإصدار البرنامج."
+          }
+        ],
+        "example": "نفّذ الأمر بوضع القراءة فقط، ثم قارن النتيجة بالأجهزة المقابلة والطوبولوجيا وسجلات الأحداث.",
+        "mistakes": [
+          "افتراض تطابق تنسيقات المخرجات بين الشركات المصنعة.",
+          "أتمتة الأمر قبل التحقق من دعم الطراز والإصدار."
+        ]
+      }
+    }
   }
 }
