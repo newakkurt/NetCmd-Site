@@ -1,0 +1,482 @@
+[
+  {
+    "slug": "bgp-neighbor-summary",
+    "title": "BGP komşu özetini görüntüleme",
+    "cat": "Yönlendirme Protokolleri",
+    "note": "BGP peer durumunu, ASN bilgisini ve alınan/gönderilen prefix sayılarını inceler. Komşu durumunu address-family ve politika bilgileriyle birlikte değerlendirin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show bgp summary"
+      ]
+    }
+  },
+  {
+    "slug": "bgp-advertised-routes",
+    "title": "BGP ile ilan edilen rotaları görüntüleme",
+    "cat": "Yönlendirme Protokolleri",
+    "note": "Bir BGP komşusuna ilan edilen prefixleri kontrol eder. Outbound route-policy veya route-map filtreleri beklenen rotaları etkileyebilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp routing-table peer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show bgp ipv4 unicast neighbors"
+      ]
+    }
+  },
+  {
+    "slug": "ospf-neighbor-summary",
+    "title": "OSPF komşu özetini görüntüleme",
+    "cat": "Yönlendirme Protokolleri",
+    "note": "OSPF komşularının router ID, alan ve adjacency durumlarını inceler. FULL dışındaki durumlarda iki uçtaki parametreleri karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf neighbor"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf peer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf neighbors"
+      ]
+    }
+  },
+  {
+    "slug": "ospf-interface-detail",
+    "title": "OSPF arayüz ayrıntılarını görüntüleme",
+    "cat": "Yönlendirme Protokolleri",
+    "note": "OSPF etkin arayüzlerin area, cost, network type ve timer bilgilerini kontrol eder. Komşuluk sorunlarında iki uçta eşleşmeyi doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface"
+      ]
+    }
+  },
+  {
+    "slug": "ospf-database-summary",
+    "title": "OSPF LSDB özetini görüntüleme",
+    "cat": "Yönlendirme Protokolleri",
+    "note": "Link State Database içindeki LSA türü ve sayılarını inceleyerek OSPF topoloji bilgisinin dağılımını kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf database"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf lsdb"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf database"
+      ]
+    }
+  },
+  {
+    "slug": "routing-table-protocol",
+    "title": "Yönlendirme tablosunu protokole göre görüntüleme",
+    "cat": "Routing",
+    "note": "Rota kaynağını ve seçilmiş next-hop bilgisini inceleyin. Birden fazla protokol aynı prefixi duyuruyorsa administrative distance/preference etkisini değerlendirin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route"
+      ]
+    }
+  },
+  {
+    "slug": "static-route-list",
+    "title": "Statik rotaları görüntüleme",
+    "cat": "Routing",
+    "note": "Yapılandırılmış statik rotaları ve next-hop değerlerini kontrol eder. Recursive next-hop çözümlemesini ve VRF kapsamını ayrıca doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show running-config | include ^ip route"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display current-configuration | include ip route"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route static"
+      ]
+    }
+  },
+  {
+    "slug": "route-map-list",
+    "title": "Route-map yapılandırmasını görüntüleme",
+    "cat": "Routing",
+    "note": "Route-map sequence, match ve set koşullarını inceler. Politikanın doğru BGP neighbor veya redistribution noktasına bağlandığını doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show route-map"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display route-policy"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show route-map"
+      ]
+    }
+  },
+  {
+    "slug": "prefix-list-ipv4",
+    "title": "IPv4 prefix-list yapılandırmasını görüntüleme",
+    "cat": "Routing",
+    "note": "IPv4 prefix-list kurallarını ve ge/le sınırlarını inceler. Sıra ve permit/deny mantığını ilgili routing policy ile birlikte kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip prefix-list"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip ip-prefix"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip prefix-list"
+      ]
+    }
+  },
+  {
+    "slug": "hsrp-brief",
+    "title": "HSRP yedeklilik durumunu görüntüleme",
+    "cat": "Yedeklilik ve Stack",
+    "note": "HSRP gruplarının Active/Standby durumlarını, sanal IP ve öncelik bilgilerini kontrol eder. Grup ve VLAN eşleşmesini doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show standby brief"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vrrp"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vrrp"
+      ]
+    }
+  },
+  {
+    "slug": "vrrp-brief",
+    "title": "VRRP yedeklilik durumunu görüntüleme",
+    "cat": "Yedeklilik ve Stack",
+    "note": "VRRP master/backup durumlarını ve sanal router bilgilerini inceler. Öncelik, advertisement timer ve preempt ayarlarını karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vrrp brief"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vrrp"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vrrp"
+      ]
+    }
+  },
+  {
+    "slug": "stack-member-status",
+    "title": "Switch stack üye durumunu görüntüleme",
+    "cat": "Yedeklilik ve Stack",
+    "note": "Stack üyelerinin rol, durum ve donanım bilgilerini kontrol eder. Stack ring/port sağlığını ayrıca inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show switch"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stack"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show stacking"
+      ]
+    }
+  },
+  {
+    "slug": "device-uptime",
+    "title": "Cihaz çalışma süresini görüntüleme",
+    "cat": "Sistem",
+    "note": "Son yeniden başlatmadan bu yana geçen süreyi kontrol eder. Uptime değerini reload ve güç olaylarıyla karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show version"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display version"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system"
+      ]
+    }
+  },
+  {
+    "slug": "memory-summary",
+    "title": "Bellek kullanım özetini görüntüleme",
+    "cat": "Sistem",
+    "note": "Kullanılan ve boş bellek miktarını kontrol eder. Ani değişimleri süreç belleği ve cihaz loglarıyla birlikte değerlendirin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system resource-utilization"
+      ]
+    }
+  },
+  {
+    "slug": "flash-filesystem",
+    "title": "Flash dosya sistemini görüntüleme",
+    "cat": "Sistem",
+    "note": "Flash depolama alanını ve dosya sistemindeki dosyaları kontrol eder. Yedekleme veya yükseltme öncesi boş alanı doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "dir flash:"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "dir"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show flash"
+      ]
+    }
+  },
+  {
+    "slug": "startup-config-check",
+    "title": "Başlangıç yapılandırmasını görüntüleme",
+    "cat": "Yönetim ve Erişim",
+    "note": "Cihazın açılışta yükleyeceği yapılandırmayı inceleyerek kaydedilmiş ayarları doğrular. Hassas bilgileri paylaşmadan önce maskeleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show startup-config"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display saved-configuration"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show config"
+      ]
+    }
+  },
+  {
+    "slug": "running-config-section",
+    "title": "Çalışan yapılandırmada bölüm arama",
+    "cat": "Yönetim ve Erişim",
+    "note": "Çalışan yapılandırmada belirli bir arayüz, VLAN veya protokol bölümünü bulmaya yardımcı olur. Filtre sözdizimi platforma göre değişir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show running-config | section interface"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display current-configuration | section interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show running-config"
+      ]
+    }
+  },
+  {
+    "slug": "interface-flap-log",
+    "title": "Arayüz link değişim loglarını görüntüleme",
+    "cat": "Sorun Giderme",
+    "note": "Link up/down olaylarını inceleyerek fiziksel bağlantı kesintilerinin zamanını ve tekrar sıklığını belirlemeye yardımcı olur.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging | include changed state"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging -r"
+      ]
+    }
+  },
+  {
+    "slug": "ping-source-interface",
+    "title": "Kaynak arayüz belirterek ping testi",
+    "cat": "Sorun Giderme",
+    "note": "Belirli bir kaynak IP veya arayüzden erişilebilirliği test eder. Test sonucu routing, ACL ve dönüş yolunu birlikte değerlendirmeyi gerektirir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "ping <destination> source <source-interface>"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "ping -a <source-ip> <destination>"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "ping <destination> source <source-ip>"
+      ]
+    }
+  },
+  {
+    "slug": "traceroute-source",
+    "title": "Kaynak belirterek traceroute testi",
+    "cat": "Sorun Giderme",
+    "note": "Belirli bir kaynak IP ile hedefe giden L3 yolu inceler. Ara cihazların ICMP yanıtlarını filtrelemesi sonucu etkileyebilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "traceroute <destination> source <source-ip>"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "tracert -a <source-ip> <destination>"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "traceroute <destination> source <source-ip>"
+      ]
+    }
+  }
+]
