@@ -24,7 +24,7 @@
     }
   },
   {
-    "slug": "cpu-kullanimi",
+    "slug": "cpu-kullanimi-ozeti",
     "title": "CPU kullanımını görüntüleme",
     "cat": "Sistem",
     "note": "Anlık ve geçmiş CPU yükünü inceleyin; yüksek değerleri süreç listesi ve olay zamanıyla karşılaştırın.",
@@ -48,7 +48,7 @@
     }
   },
   {
-    "slug": "bellek-kullanimi",
+    "slug": "bellek-kullanimi-ozeti",
     "title": "Bellek kullanımını görüntüleme",
     "cat": "Sistem",
     "note": "Bellek tüketimini izleyin. Üretici ve yazılım sürümüne göre gösterilen alanlar farklı olabilir.",
