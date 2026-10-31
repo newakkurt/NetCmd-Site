@@ -40,26 +40,6 @@
         "note": "BGP tarafından öğrenilen IPv4 rotalarını listeler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
       }
     },
-    "ipv6-interface-summary": {
-      "en": {
-        "title": "View IPv6 interface summary",
-        "note": "IPv6 adreslerini ve arayüz durumlarını özetler. Verify syntax on the target model and software release."
-      },
-      "ar": {
-        "title": "عرض ملخص واجهات IPv6",
-        "note": "IPv6 adreslerini ve arayüz durumlarını özetler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
-      }
-    },
-    "ipv6-neighbor-cache": {
-      "en": {
-        "title": "View IPv6 neighbor cache",
-        "note": "IPv6 Neighbor Discovery önbelleğini inceler. Verify syntax on the target model and software release."
-      },
-      "ar": {
-        "title": "عرض ذاكرة جيران IPv6",
-        "note": "IPv6 Neighbor Discovery önbelleğini inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
-      }
-    },
     "dhcp-relay-state": {
       "en": {
         "title": "View DHCP relay status",
@@ -190,16 +170,6 @@
         "note": "Port bazında STP rolü, durum ve sayaçları inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
       }
     },
-    "port-security-addresses": {
-      "en": {
-        "title": "View port-security MAC addresses",
-        "note": "Port-security tarafından öğrenilen MAC adreslerini listeler. Verify syntax on the target model and software release."
-      },
-      "ar": {
-        "title": "عرض عناوين MAC الخاصة بأمان المنفذ",
-        "note": "Port-security tarafından öğrenilen MAC adreslerini listeler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
-      }
-    },
     "macsec-session-state": {
       "en": {
         "title": "View MACsec session status",
@@ -300,17 +270,37 @@
         "note": "Multicast yönlendirme tablosundaki kaynak/grup kayıtlarını inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
       }
     },
-    "power-supply-status": {
+    "ipv6-address-interface-status": {
       "en": {
-        "title": "View power supply status",
-        "note": "Güç kaynağı modüllerinin durumunu kontrol eder. Verify syntax on the target model and software release."
+        "title": "View IPv6 interface summary",
+        "note": "IPv6 adreslerini ve arayüz durumlarını özetler. Verify syntax on the target model and software release."
       },
       "ar": {
-        "title": "عرض حالة مزود الطاقة",
-        "note": "Güç kaynağı modüllerinin durumunu kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+        "title": "عرض ملخص واجهات IPv6",
+        "note": "IPv6 adreslerini ve arayüz durumlarını özetler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
       }
     },
-    "fan-status": {
+    "ipv6-nd-neighbor-cache": {
+      "en": {
+        "title": "View IPv6 neighbor cache",
+        "note": "IPv6 Neighbor Discovery önbelleğini inceler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض ذاكرة جيران IPv6",
+        "note": "IPv6 Neighbor Discovery önbelleğini inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "port-security-learned-mac-table": {
+      "en": {
+        "title": "View port-security MAC addresses",
+        "note": "Port-security tarafından öğrenilen MAC adreslerini listeler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض عناوين MAC الخاصة بأمان المنفذ",
+        "note": "Port-security tarafından öğrenilen MAC adreslerini listeler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "chassis-fan-module-status": {
       "en": {
         "title": "View fan status",
         "note": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder. Verify syntax on the target model and software release."
@@ -318,6 +308,16 @@
       "ar": {
         "title": "عرض حالة المراوح",
         "note": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "chassis-power-module-status": {
+      "en": {
+        "title": "View power supply status",
+        "note": "Güç kaynağı modüllerinin durumunu kontrol eder. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض حالة مزود الطاقة",
+        "note": "Güç kaynağı modüllerinin durumunu kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
       }
     }
   }
