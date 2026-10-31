@@ -11716,82 +11716,466 @@
     }
   },
   {
-    "slug": "snmp-engine-info",
-    "title": "SNMP engine bilgilerini görüntüleme",
-    "cat": "Sistem",
-    "note": "SNMP engine ID bilgisini kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show snmp engineID"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display snmp-agent local-engineid"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show snmp-server engine-id"
-      ]
-    }
-  },
-  {
-    "slug": "qos-policy-counters",
-    "title": "QoS politika sayaçlarını görüntüleme",
-    "cat": "QoS",
-    "note": "QoS politika eşleşme ve sayaç bilgilerini inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show policy-map"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display traffic-policy statistics"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show qos"
-      ]
-    }
-  },
-  {
-    "slug": "route-policy-detail",
-    "title": "Route-map / route-policy bilgilerini görüntüleme",
+    "slug": "ospf-komsu-ozeti",
+    "title": "OSPF komşuluk özetini görüntüleme",
     "cat": "Routing",
-    "note": "Rota politikalarının eşleşme ve işlem sırasını inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "note": "OSPF komşularının durumunu ve komşuluk sayısını kontrol eder.",
     "cisco": {
       "mode": "Privileged EXEC",
       "cmds": [
-        "show route-map"
+        "show ip ospf neighbor"
       ]
     },
     "huawei": {
       "mode": "User view",
       "cmds": [
-        "display route-policy"
+        "display ospf peer"
       ]
     },
     "aruba": {
       "mode": "Operator / Manager",
       "cmds": [
-        "show route-map"
+        "show ip ospf neighbors"
       ]
     }
   },
   {
-    "slug": "vrf-route-detail",
+    "slug": "ospf-arayuzleri",
+    "title": "OSPF arayüz bilgilerini görüntüleme",
+    "cat": "Routing",
+    "note": "OSPF etkin arayüzleri ve alan bilgilerini kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface"
+      ]
+    }
+  },
+  {
+    "slug": "bgp-ozet",
+    "title": "BGP oturum özetini görüntüleme",
+    "cat": "Routing",
+    "note": "BGP komşularının oturum durumunu ve prefix sayaçlarını kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp summary"
+      ]
+    }
+  },
+  {
+    "slug": "bgp-komsu-detay",
+    "title": "BGP komşu detayını görüntüleme",
+    "cat": "Routing",
+    "note": "Belirtilen BGP komşusu için oturum parametrelerini gösterir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors <IP>"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer <IP> verbose"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors <IP>"
+      ]
+    }
+  },
+  {
+    "slug": "stp-ozet",
+    "title": "Spanning Tree özetini görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "STP kök köprü ve topoloji durumunu kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree"
+      ]
+    }
+  },
+  {
+    "slug": "stp-port-detay",
+    "title": "Spanning Tree port detayını görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "Portun STP rolünü, durumunu ve maliyetini incelemeye yarar.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree interface <PORT> detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp interface <PORT>"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree <PORT>"
+      ]
+    }
+  },
+  {
+    "slug": "lldp-komsular",
+    "title": "LLDP komşularını görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "Doğrudan bağlı cihazların port ve sistem bilgilerini listeler.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor brief"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device"
+      ]
+    }
+  },
+  {
+    "slug": "lacp-ozet",
+    "title": "LACP bağlantı gruplarını görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "Link aggregation üyelerinin eşleşmesini ve durumunu kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show etherchannel summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display eth-trunk"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lacp"
+      ]
+    }
+  },
+  {
+    "slug": "poe-durum",
+    "title": "PoE port güç durumunu görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "PoE portlarının güç tüketimini ve besleme durumunu gösterir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show power inline"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display poe power"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show power-over-ethernet"
+      ]
+    }
+  },
+  {
+    "slug": "transceiver-detay",
+    "title": "Optik modül tanı bilgilerini görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "SFP/QSFP modül sıcaklık, voltaj ve optik güç değerlerini inceler.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver interface <PORT> verbose"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver"
+      ]
+    }
+  },
+  {
+    "slug": "interface-errors",
+    "title": "Arayüz hata sayaçlarını görüntüleme",
+    "cat": "Sorun Giderme",
+    "note": "CRC, input error ve drop sayaçlarını kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface <PORT>"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces <PORT>"
+      ]
+    }
+  },
+  {
+    "slug": "cpu-processes",
+    "title": "CPU kullanımını süreç bazında görüntüleme",
+    "cat": "Sistem",
+    "note": "CPU tüketen süreçleri tespit etmeye yardımcı olur.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu sorted"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display process cpu-usage"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu"
+      ]
+    }
+  },
+  {
+    "slug": "memory-usage",
+    "title": "Bellek kullanımını görüntüleme",
+    "cat": "Sistem",
+    "note": "Cihazın bellek kullanımını ve boş alanını kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system memory"
+      ]
+    }
+  },
+  {
+    "slug": "ntp-status",
+    "title": "NTP eşitleme durumunu görüntüleme",
+    "cat": "Sistem",
+    "note": "Saat sunucusu eşitleme ve senkronizasyon durumunu gösterir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp status"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service status"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp status"
+      ]
+    }
+  },
+  {
+    "slug": "ntp-associations",
+    "title": "NTP sunucu eşleşmelerini görüntüleme",
+    "cat": "Sistem",
+    "note": "NTP peer/server seçim ve erişim durumunu listeler.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations"
+      ]
+    }
+  },
+  {
+    "slug": "dhcp-snooping-status",
+    "title": "DHCP Snooping durumunu görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "DHCP Snooping etkinliğini ve VLAN kapsamını kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping"
+      ]
+    }
+  },
+  {
+    "slug": "dhcp-snooping-bindings",
+    "title": "DHCP Snooping binding tablosunu görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "IP, MAC, VLAN ve port eşleşmelerini listeler.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping binding"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping user-bind all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping binding"
+      ]
+    }
+  },
+  {
+    "slug": "acl-hitcounts",
+    "title": "ACL eşleşme sayaçlarını görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "ACL kurallarının trafik eşleşme sayaçlarını incelemeye yarar.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list"
+      ]
+    }
+  },
+  {
+    "slug": "ipv6-neighbors",
+    "title": "IPv6 komşu tablosunu görüntüleme",
+    "cat": "Routing",
+    "note": "IPv6 Neighbor Discovery kayıtlarını listeler.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 neighbors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 neighbors"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 neighbors"
+      ]
+    }
+  },
+  {
+    "slug": "vrf-routing-table",
     "title": "VRF yönlendirme tablosunu görüntüleme",
     "cat": "Routing",
-    "note": "Belirli VRF içindeki yönlendirme kayıtlarını gösterir. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
+    "note": "Belirtilen VRF için ayrı yönlendirme tablosunu gösterir.",
     "cisco": {
       "mode": "Privileged EXEC",
       "cmds": [
@@ -11808,390 +12192,6 @@
       "mode": "Operator / Manager",
       "cmds": [
         "show ip route vrf <VRF>"
-      ]
-    }
-  },
-  {
-    "slug": "bfd-peer-detail",
-    "title": "BFD komşu ayrıntılarını görüntüleme",
-    "cat": "Routing",
-    "note": "BFD oturumlarının ayrıntı ve algılama parametrelerini kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show bfd neighbors details"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display bfd session all verbose"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show bfd"
-      ]
-    }
-  },
-  {
-    "slug": "etherchannel-load-distribution",
-    "title": "EtherChannel yük dağıtım yöntemini görüntüleme",
-    "cat": "VLAN / Port",
-    "note": "Port-channel trafik dağıtım yöntemini kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show etherchannel load-balance"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display load-balance"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show trunks"
-      ]
-    }
-  },
-  {
-    "slug": "stp-port-detail",
-    "title": "STP port ayrıntılarını görüntüleme",
-    "cat": "VLAN / Port",
-    "note": "Port bazında STP rolü, durum ve sayaçları inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show spanning-tree detail"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display stp interface"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show spanning-tree detail"
-      ]
-    }
-  },
-  {
-    "slug": "port-security-learned-mac-table",
-    "title": "Port-security MAC kayıtlarını görüntüleme",
-    "cat": "L2 Güvenlik",
-    "note": "Port-security tarafından öğrenilen MAC adreslerini listeler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show port-security address"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display port-security mac-address"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show port-security"
-      ]
-    }
-  },
-  {
-    "slug": "macsec-session-state",
-    "title": "MACsec oturum durumunu görüntüleme",
-    "cat": "L2 Güvenlik",
-    "note": "MACsec/MKA oturum durumunu kontrol eder; model desteğini doğrulayın. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show mka sessions"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display macsec status"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show macsec"
-      ]
-    }
-  },
-  {
-    "slug": "ipsec-security-associations",
-    "title": "IPsec güvenlik ilişkilerini görüntüleme",
-    "cat": "L2 Güvenlik",
-    "note": "IPsec SA durumunu, paket sayaçlarını ve şifreleme parametrelerini inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show crypto ipsec sa"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ipsec sa"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show crypto ipsec sa"
-      ]
-    }
-  },
-  {
-    "slug": "ike-security-associations",
-    "title": "IKE güvenlik ilişkilerini görüntüleme",
-    "cat": "L2 Güvenlik",
-    "note": "IKE kontrol düzlemi oturumlarının durumunu kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show crypto ikev2 sa"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ike sa"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show crypto ikev2 sa"
-      ]
-    }
-  },
-  {
-    "slug": "ssl-vpn-session-list",
-    "title": "SSL VPN oturumlarını görüntüleme",
-    "cat": "L2 Güvenlik",
-    "note": "SSL VPN kullanıcı oturumlarını ve bağlantı durumlarını listeler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show vpn-sessiondb ssl"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ssl vpn session"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show vpn-session"
-      ]
-    }
-  },
-  {
-    "slug": "wireless-ap-summary",
-    "title": "Kablosuz erişim noktası özetini görüntüleme",
-    "cat": "Görüntüleme",
-    "note": "Kablosuz AP envanterini ve çalışma durumunu özetler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ap summary"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ap all"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ap"
-      ]
-    }
-  },
-  {
-    "slug": "wireless-client-list",
-    "title": "Kablosuz istemcileri görüntüleme",
-    "cat": "Görüntüleme",
-    "note": "Kablosuz istemci bağlantılarını ve ilişkilendirme durumlarını listeler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show wireless client summary"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display station all"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show clients"
-      ]
-    }
-  },
-  {
-    "slug": "wireless-channel-utilization",
-    "title": "Kablosuz kanal kullanımını görüntüleme",
-    "cat": "Sorun Giderme",
-    "note": "Radyo kanal kullanımı ve kablosuz kapasite durumunu inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ap dot11 5ghz summary"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display radio all"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ap radio"
-      ]
-    }
-  },
-  {
-    "slug": "pim-neighbor-list",
-    "title": "PIM komşularını görüntüleme",
-    "cat": "Routing",
-    "note": "Multicast yönlendirme için PIM komşuluklarını kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip pim neighbor"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display pim neighbor"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip pim neighbor"
-      ]
-    }
-  },
-  {
-    "slug": "igmp-snooping-groups",
-    "title": "IGMP Snooping gruplarını görüntüleme",
-    "cat": "Görüntüleme",
-    "note": "VLAN bazında öğrenilen multicast grup üyeliklerini listeler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip igmp snooping groups"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display igmp-snooping group"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip igmp snooping groups"
-      ]
-    }
-  },
-  {
-    "slug": "multicast-route-entries",
-    "title": "Multicast yönlendirme kayıtlarını görüntüleme",
-    "cat": "Routing",
-    "note": "Multicast yönlendirme tablosundaki kaynak/grup kayıtlarını inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip mroute"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display multicast routing-table"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip mroute"
-      ]
-    }
-  },
-  {
-    "slug": "chassis-power-module-status",
-    "title": "Güç kaynağı durumunu görüntüleme",
-    "cat": "Sistem",
-    "note": "Güç kaynağı modüllerinin durumunu kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show environment power"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display power"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show system power-supply"
-      ]
-    }
-  },
-  {
-    "slug": "chassis-fan-module-status",
-    "title": "Fan durumunu görüntüleme",
-    "cat": "Sistem",
-    "note": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show environment fan"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display fan"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show system fans"
       ]
     }
   }
