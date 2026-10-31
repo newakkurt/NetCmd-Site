@@ -124,7 +124,7 @@
   function read() { try { var v = JSON.parse(localStorage.getItem(key) || '[]'); return Array.isArray(v) ? v.slice(0, 12) : []; } catch (e) { return []; } }
   function write(v) { try { localStorage.setItem(key, JSON.stringify(v.slice(0, 12))); } catch (e) {} }
   function slugFrom(url) {
-    var m = /\\/(?:tr|en|ar)\\/cmd\\/([^/]+)\\/?(?:[?#].*)?$/.exec(url || '');
+    var m = /\/(?:tr|en|ar)\/cmd\/([^/]+)\/?(?:[?#].*)?$/.exec(url || '');
     return m ? m[1] : '';
   }
   function record(slug, title) {
@@ -170,7 +170,7 @@
   if (currentSlug) { var currentTitle = (document.querySelector('main h1') || {}).textContent || currentSlug; record(currentSlug, currentTitle.trim()); }
 
   var main = document.querySelector('main');
-  if (main && /^\\/(tr|en|ar)\\/$/.test(location.pathname)) {
+  if (main && /^\/(tr|en|ar)\/$/.test(location.pathname)) {
     var history = read();
     var section = document.createElement('section');
     section.className = 'nc-recent';
