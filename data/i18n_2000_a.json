@@ -1,0 +1,15 @@
+{
+  "cats": {},
+  "items": {
+    "lldp-komsu-ozeti": {
+      "en": {
+        "title": "View LLDP neighbors",
+        "note": "The LLDP table shows directly connected device names, ports and advertised capabilities. The Aruba command targets AOS-S; syntax may differ on AOS-CX."
+      },
+      "ar": {
+        "title": "عرض جيران LLDP",
+        "note": "يعرض جدول LLDP أسماء الأجهزة المتصلة مباشرة ومنافذها وقدراتها المعلنة. أمر Aruba مخصص لـ AOS-S وقد تختلف الصياغة في AOS-CX."
+      }
+    }
+  }
+}
