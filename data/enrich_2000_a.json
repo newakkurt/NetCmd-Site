@@ -1,0 +1,60 @@
+{
+  "lldp-komsu-ozeti": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "komşu",
+            "d": "Çıktıda yerel port, uzak sistem adı ve uzak port alanlarını eşleştirin."
+          },
+          {
+            "p": "platform",
+            "d": "Aruba örneği AOS-S içindir; AOS-CX ve diğer sürümlerde komut sözdizimini doğrulayın."
+          }
+        ],
+        "example": "LLDP komşu tablosunu görüntüleyin. Beklenen komşu görünmüyorsa iki uçta LLDP'nin etkinliğini, fiziksel bağlantıyı ve aradaki L2 cihazları kontrol edin.",
+        "mistakes": [
+          "LLDP'nin her cihazda etkin olduğunu varsaymak.",
+          "Yerel port ile uzak port bilgisini karıştırmak.",
+          "AOS-S komutunu AOS-CX üzerinde denemek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "neighbor",
+            "d": "Match the local port, remote system name and remote port fields."
+          },
+          {
+            "p": "platform",
+            "d": "The Aruba example targets AOS-S; verify syntax for AOS-CX and other releases."
+          }
+        ],
+        "example": "Display the LLDP neighbor table. If an expected neighbor is missing, check LLDP status on both ends, the physical link and intermediate Layer 2 devices.",
+        "mistakes": [
+          "Assuming LLDP is enabled on every device.",
+          "Mixing up local and remote port fields.",
+          "Using the AOS-S command on AOS-CX."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الجار",
+            "d": "طابق المنفذ المحلي واسم النظام البعيد والمنفذ البعيد."
+          },
+          {
+            "p": "المنصة",
+            "d": "مثال Aruba مخصص لـ AOS-S؛ تحقق من الصياغة في AOS-CX والإصدارات الأخرى."
+          }
+        ],
+        "example": "اعرض جدول جيران LLDP. إذا لم يظهر جار متوقع، فتحقق من تفعيل LLDP على الطرفين ومن حالة الاتصال والأجهزة الوسيطة في الطبقة الثانية.",
+        "mistakes": [
+          "افتراض أن LLDP مفعل على جميع الأجهزة.",
+          "الخلط بين المنفذ المحلي والمنفذ البعيد.",
+          "استخدام أمر AOS-S على AOS-CX."
+        ]
+      }
+    }
+  }
+}
