@@ -11,26 +11,6 @@
         "note": "استخدم الأمر لجمع الطراز والرقم التسلسلي ومكونات الأجهزة. تختلف حقول الإخراج حسب المنصة."
       }
     },
-    "cpu-kullanimi": {
-      "en": {
-        "title": "View CPU utilization",
-        "note": "Inspect current and historical CPU load. Correlate high values with the process list and event timeline."
-      },
-      "ar": {
-        "title": "عرض استخدام المعالج",
-        "note": "افحص حمل المعالج الحالي والسابق، وقارن القيم المرتفعة بقائمة العمليات ووقت الحدث."
-      }
-    },
-    "bellek-kullanimi": {
-      "en": {
-        "title": "View memory utilization",
-        "note": "Monitor memory consumption. Displayed fields vary by vendor and software release."
-      },
-      "ar": {
-        "title": "عرض استخدام الذاكرة",
-        "note": "راقب استهلاك الذاكرة. تختلف الحقول المعروضة حسب الشركة المصنعة وإصدار البرنامج."
-      }
-    },
     "poe-durum": {
       "en": {
         "title": "View PoE power status",
@@ -119,6 +99,26 @@
       "ar": {
         "title": "عرض حالة مزامنة NTP",
         "note": "تحقق من مصدر الوقت وحالة المزامنة. الوقت الدقيق مهم لربط السجلات."
+      }
+    },
+    "cpu-kullanimi-ozeti": {
+      "en": {
+        "title": "View CPU utilization",
+        "note": "Inspect current and historical CPU load. Correlate high values with the process list and event timeline."
+      },
+      "ar": {
+        "title": "عرض استخدام المعالج",
+        "note": "افحص حمل المعالج الحالي والسابق، وقارن القيم المرتفعة بقائمة العمليات ووقت الحدث."
+      }
+    },
+    "bellek-kullanimi-ozeti": {
+      "en": {
+        "title": "View memory utilization",
+        "note": "Monitor memory consumption. Displayed fields vary by vendor and software release."
+      },
+      "ar": {
+        "title": "عرض استخدام الذاكرة",
+        "note": "راقب استهلاك الذاكرة. تختلف الحقول المعروضة حسب الشركة المصنعة وإصدار البرنامج."
       }
     }
   }
