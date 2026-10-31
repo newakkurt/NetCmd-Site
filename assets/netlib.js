@@ -325,6 +325,9 @@
     L.push('        "host": host,');
     L.push('        "username": USER,');
     L.push('        "password": PASSWORD,');
+    L.push('        # Güvenlik: known_hosts içindeki anahtar eşleşmezse bağlantıyı reddet.');
+    L.push('        "ssh_strict": True,');
+    L.push('        "system_host_keys": True,');
     L.push('        "conn_timeout": 20,');
     L.push('    }');
     L.push('    chunks = []');
@@ -384,7 +387,7 @@
       inv.push('    ansible_connection: arubanetworks.aoscx.aoscx');
       inv.push('    ansible_network_os: arubanetworks.aoscx.aoscx');
       inv.push('    ansible_httpapi_use_ssl: true');
-      inv.push('    ansible_httpapi_validate_certs: false   # üretimde sertifikayı doğrula');
+      inv.push('    ansible_httpapi_validate_certs: true');
     } else {
       inv.push('    ansible_connection: ansible.netcommon.network_cli');
       inv.push('    ansible_network_os: ' + p.ansibleOs);
