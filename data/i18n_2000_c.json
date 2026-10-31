@@ -1,54 +1,67 @@
 {
-  "cats": {},
+  "cats": {
+    "Switching": {
+      "en": "Switching",
+      "ar": "التبديل"
+    },
+    "Security": {
+      "en": "Security",
+      "ar": "الأمان"
+    },
+    "Troubleshooting": {
+      "en": "Troubleshooting",
+      "ar": "استكشاف الأخطاء وإصلاحها"
+    }
+  },
   "items": {
     "vlan-ozeti-goruntuleme": {
       "en": {
         "title": "View VLAN summary",
-        "note": "VLAN kimliklerini, adlarını ve port üyeliklerini hızlıca kontrol eder. Çıktı biçimi ve port üyeliği gösterimi platform/yazılım sürümüne göre değişebilir."
+        "note": "Quickly review VLAN IDs, names and port membership. Output and membership details vary by platform and software version."
       },
       "ar": {
         "title": "عرض ملخص VLAN",
-        "note": "VLAN kimliklerini, adlarını ve port üyeliklerini hızlıca kontrol eder. Çıktı biçimi ve port üyeliği gösterimi platform/yazılım sürümüne göre değişebilir."
+        "note": "راجع بسرعة معرّفات VLAN وأسماءها وعضوية المنافذ. تختلف تفاصيل العرض والعضوية حسب المنصة وإصدار البرنامج."
       }
     },
     "stp-durumunu-goruntuleme": {
       "en": {
         "title": "View Spanning Tree status",
-        "note": "STP kök köprüsünü, port rollerini ve forwarding/blocking durumlarını inceler. Cisco örneği PVST/RPVST veya MST tasarımına göre ek parametrelerle kullanılabilir."
+        "note": "Inspect the STP root bridge, port roles and forwarding/blocking states. Cisco options depend on the PVST/RPVST or MST design."
       },
       "ar": {
         "title": "عرض حالة Spanning Tree",
-        "note": "STP kök köprüsünü, port rollerini ve forwarding/blocking durumlarını inceler. Cisco örneği PVST/RPVST veya MST tasarımına göre ek parametrelerle kullanılabilir."
+        "note": "افحص الجسر الجذر لـ STP وأدوار المنافذ وحالات forwarding وblocking. تعتمد خيارات Cisco على تصميم PVST/RPVST أو MST."
       }
     },
     "acl-kural-ve-sayaclarini-goruntuleme": {
       "en": {
         "title": "View ACL rules and counters",
-        "note": "Erişim kontrol listelerini ve eşleşme sayaçlarını inceleyerek trafiğin hangi kurallarla eşleştiğini anlamaya yardımcı olur. Sayaç desteği ve komut seçenekleri sürüme göre değişebilir."
+        "note": "Inspect access control lists and available match counters. Counter support and command options vary by software release."
       },
       "ar": {
         "title": "عرض قواعد ACL والعدادات",
-        "note": "Erişim kontrol listelerini ve eşleşme sayaçlarını inceleyerek trafiğin hangi kurallarla eşleştiğini anlamaya yardımcı olur. Sayaç desteği ve komut seçenekleri sürüme göre değişebilir."
+        "note": "افحص قوائم التحكم بالوصول وعدادات المطابقة المتاحة. يختلف دعم العدادات وخيارات الأوامر حسب إصدار البرنامج."
       }
     },
     "dhcp-snooping-durumunu-goruntuleme": {
       "en": {
         "title": "View DHCP Snooping status",
-        "note": "DHCP Snooping yapılandırmasını ve güvenilir port durumlarını doğrulamaya yardımcı olur. Aruba komutu AOS-CX ailesi içindir; AOS-Switch'te destek ve komutlar farklı olabilir."
+        "note": "Review DHCP Snooping configuration and trusted-port state. The Aruba example is for AOS-CX; AOS-Switch support and syntax may differ."
       },
       "ar": {
         "title": "عرض حالة DHCP Snooping",
-        "note": "DHCP Snooping yapılandırmasını ve güvenilir port durumlarını doğrulamaya yardımcı olur. Aruba komutu AOS-CX ailesi içindir; AOS-Switch'te destek ve komutlar farklı olabilir."
+        "note": "راجع إعداد DHCP Snooping وحالة المنافذ الموثوقة. مثال Aruba مخصص لـ AOS-CX وقد يختلف الدعم والتركيب في AOS-Switch."
       }
     },
     "arayuz-hata-sayaclarini-goruntuleme": {
       "en": {
         "title": "View interface error counters",
-        "note": "CRC, input/output error ve benzeri fiziksel/iletim katmanı sayaçlarını kontrol eder. Sayaç isimleri ve komut kapsamı donanım ile işletim sistemi sürümüne göre farklılık gösterebilir."
+        "note": "Inspect CRC, input/output error and related link counters. Counter names and command scope vary by hardware and software version."
       },
       "ar": {
         "title": "عرض عدادات أخطاء الواجهات",
-        "note": "CRC, input/output error ve benzeri fiziksel/iletim katmanı sayaçlarını kontrol eder. Sayaç isimleri ve komut kapsamı donanım ile işletim sistemi sürümüne göre farklılık gösterebilir."
+        "note": "افحص عدادات CRC وأخطاء الإدخال والإخراج ومؤشرات الارتباط ذات الصلة. تختلف أسماء العدادات ونطاق الأوامر حسب العتاد وإصدار البرنامج."
       }
     }
   }
