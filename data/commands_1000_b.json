@@ -1,0 +1,6362 @@
+[
+  {
+    "slug": "scope2-1-1",
+    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/13)",
+    "cat": "Arayüzler",
+    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface GigabitEthernet1/0/13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface GigabitEthernet1/0/13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip GigabitEthernet1/0/13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-1-2",
+    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/14)",
+    "cat": "Arayüzler",
+    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface GigabitEthernet1/0/14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface GigabitEthernet1/0/14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip GigabitEthernet1/0/14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-1-3",
+    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/15)",
+    "cat": "Arayüzler",
+    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface GigabitEthernet1/0/15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface GigabitEthernet1/0/15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip GigabitEthernet1/0/15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-1-4",
+    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/16)",
+    "cat": "Arayüzler",
+    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface GigabitEthernet1/0/16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface GigabitEthernet1/0/16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip GigabitEthernet1/0/16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-1-5",
+    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/17)",
+    "cat": "Arayüzler",
+    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface GigabitEthernet1/0/17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface GigabitEthernet1/0/17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip GigabitEthernet1/0/17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-1-6",
+    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/18)",
+    "cat": "Arayüzler",
+    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface GigabitEthernet1/0/18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface GigabitEthernet1/0/18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip GigabitEthernet1/0/18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-1-7",
+    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/19)",
+    "cat": "Arayüzler",
+    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface GigabitEthernet1/0/19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface GigabitEthernet1/0/19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip GigabitEthernet1/0/19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-1-8",
+    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/20)",
+    "cat": "Arayüzler",
+    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface GigabitEthernet1/0/20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface GigabitEthernet1/0/20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip GigabitEthernet1/0/20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-1-9",
+    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/21)",
+    "cat": "Arayüzler",
+    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface GigabitEthernet1/0/21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface GigabitEthernet1/0/21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip GigabitEthernet1/0/21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-1-10",
+    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/22)",
+    "cat": "Arayüzler",
+    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface GigabitEthernet1/0/22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface GigabitEthernet1/0/22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip GigabitEthernet1/0/22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-1-11",
+    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/23)",
+    "cat": "Arayüzler",
+    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface GigabitEthernet1/0/23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface GigabitEthernet1/0/23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip GigabitEthernet1/0/23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-1-12",
+    "title": "IPv4 arayüz özeti (GigabitEthernet1/0/24)",
+    "cat": "Arayüzler",
+    "note": "IPv4 arayüz özeti (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip interface GigabitEthernet1/0/24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip interface GigabitEthernet1/0/24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip GigabitEthernet1/0/24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-2-1",
+    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/13)",
+    "cat": "IPv6",
+    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface GigabitEthernet1/0/13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface GigabitEthernet1/0/13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 GigabitEthernet1/0/13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-2-2",
+    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/14)",
+    "cat": "IPv6",
+    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface GigabitEthernet1/0/14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface GigabitEthernet1/0/14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 GigabitEthernet1/0/14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-2-3",
+    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/15)",
+    "cat": "IPv6",
+    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface GigabitEthernet1/0/15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface GigabitEthernet1/0/15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 GigabitEthernet1/0/15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-2-4",
+    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/16)",
+    "cat": "IPv6",
+    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface GigabitEthernet1/0/16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface GigabitEthernet1/0/16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 GigabitEthernet1/0/16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-2-5",
+    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/17)",
+    "cat": "IPv6",
+    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface GigabitEthernet1/0/17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface GigabitEthernet1/0/17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 GigabitEthernet1/0/17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-2-6",
+    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/18)",
+    "cat": "IPv6",
+    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface GigabitEthernet1/0/18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface GigabitEthernet1/0/18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 GigabitEthernet1/0/18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-2-7",
+    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/19)",
+    "cat": "IPv6",
+    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface GigabitEthernet1/0/19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface GigabitEthernet1/0/19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 GigabitEthernet1/0/19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-2-8",
+    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/20)",
+    "cat": "IPv6",
+    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface GigabitEthernet1/0/20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface GigabitEthernet1/0/20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 GigabitEthernet1/0/20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-2-9",
+    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/21)",
+    "cat": "IPv6",
+    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface GigabitEthernet1/0/21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface GigabitEthernet1/0/21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 GigabitEthernet1/0/21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-2-10",
+    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/22)",
+    "cat": "IPv6",
+    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface GigabitEthernet1/0/22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface GigabitEthernet1/0/22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 GigabitEthernet1/0/22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-2-11",
+    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/23)",
+    "cat": "IPv6",
+    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface GigabitEthernet1/0/23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface GigabitEthernet1/0/23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 GigabitEthernet1/0/23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-2-12",
+    "title": "IPv6 arayüz bilgisi (GigabitEthernet1/0/24)",
+    "cat": "IPv6",
+    "note": "IPv6 arayüz bilgisi (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface GigabitEthernet1/0/24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface GigabitEthernet1/0/24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 GigabitEthernet1/0/24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-3-1",
+    "title": "OSPF arayüz bilgisi (GigabitEthernet1/0/13)",
+    "cat": "Yönlendirme",
+    "note": "OSPF arayüz bilgisi (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface GigabitEthernet1/0/13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-3-2",
+    "title": "OSPF arayüz bilgisi (GigabitEthernet1/0/14)",
+    "cat": "Yönlendirme",
+    "note": "OSPF arayüz bilgisi (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface GigabitEthernet1/0/14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-3-3",
+    "title": "OSPF arayüz bilgisi (GigabitEthernet1/0/15)",
+    "cat": "Yönlendirme",
+    "note": "OSPF arayüz bilgisi (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface GigabitEthernet1/0/15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-3-4",
+    "title": "OSPF arayüz bilgisi (GigabitEthernet1/0/16)",
+    "cat": "Yönlendirme",
+    "note": "OSPF arayüz bilgisi (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface GigabitEthernet1/0/16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-3-5",
+    "title": "OSPF arayüz bilgisi (GigabitEthernet1/0/17)",
+    "cat": "Yönlendirme",
+    "note": "OSPF arayüz bilgisi (GigabitEthernet1/0/17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface GigabitEthernet1/0/17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-3-6",
+    "title": "OSPF arayüz bilgisi (GigabitEthernet1/0/18)",
+    "cat": "Yönlendirme",
+    "note": "OSPF arayüz bilgisi (GigabitEthernet1/0/18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface GigabitEthernet1/0/18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-3-7",
+    "title": "OSPF arayüz bilgisi (GigabitEthernet1/0/19)",
+    "cat": "Yönlendirme",
+    "note": "OSPF arayüz bilgisi (GigabitEthernet1/0/19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface GigabitEthernet1/0/19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-3-8",
+    "title": "OSPF arayüz bilgisi (GigabitEthernet1/0/20)",
+    "cat": "Yönlendirme",
+    "note": "OSPF arayüz bilgisi (GigabitEthernet1/0/20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface GigabitEthernet1/0/20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-3-9",
+    "title": "OSPF arayüz bilgisi (GigabitEthernet1/0/21)",
+    "cat": "Yönlendirme",
+    "note": "OSPF arayüz bilgisi (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface GigabitEthernet1/0/21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-3-10",
+    "title": "OSPF arayüz bilgisi (GigabitEthernet1/0/22)",
+    "cat": "Yönlendirme",
+    "note": "OSPF arayüz bilgisi (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface GigabitEthernet1/0/22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-3-11",
+    "title": "OSPF arayüz bilgisi (GigabitEthernet1/0/23)",
+    "cat": "Yönlendirme",
+    "note": "OSPF arayüz bilgisi (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface GigabitEthernet1/0/23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-3-12",
+    "title": "OSPF arayüz bilgisi (GigabitEthernet1/0/24)",
+    "cat": "Yönlendirme",
+    "note": "OSPF arayüz bilgisi (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface GigabitEthernet1/0/24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface GigabitEthernet1/0/24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-4-1",
+    "title": "QoS arayüz sayaçları (GigabitEthernet1/0/13)",
+    "cat": "QoS",
+    "note": "QoS arayüz sayaçları (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-4-2",
+    "title": "QoS arayüz sayaçları (GigabitEthernet1/0/14)",
+    "cat": "QoS",
+    "note": "QoS arayüz sayaçları (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-4-3",
+    "title": "QoS arayüz sayaçları (GigabitEthernet1/0/15)",
+    "cat": "QoS",
+    "note": "QoS arayüz sayaçları (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-4-4",
+    "title": "QoS arayüz sayaçları (GigabitEthernet1/0/16)",
+    "cat": "QoS",
+    "note": "QoS arayüz sayaçları (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-4-5",
+    "title": "QoS arayüz sayaçları (GigabitEthernet1/0/17)",
+    "cat": "QoS",
+    "note": "QoS arayüz sayaçları (GigabitEthernet1/0/17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-4-6",
+    "title": "QoS arayüz sayaçları (GigabitEthernet1/0/18)",
+    "cat": "QoS",
+    "note": "QoS arayüz sayaçları (GigabitEthernet1/0/18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-4-7",
+    "title": "QoS arayüz sayaçları (GigabitEthernet1/0/19)",
+    "cat": "QoS",
+    "note": "QoS arayüz sayaçları (GigabitEthernet1/0/19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-4-8",
+    "title": "QoS arayüz sayaçları (GigabitEthernet1/0/20)",
+    "cat": "QoS",
+    "note": "QoS arayüz sayaçları (GigabitEthernet1/0/20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-4-9",
+    "title": "QoS arayüz sayaçları (GigabitEthernet1/0/21)",
+    "cat": "QoS",
+    "note": "QoS arayüz sayaçları (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-4-10",
+    "title": "QoS arayüz sayaçları (GigabitEthernet1/0/22)",
+    "cat": "QoS",
+    "note": "QoS arayüz sayaçları (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-4-11",
+    "title": "QoS arayüz sayaçları (GigabitEthernet1/0/23)",
+    "cat": "QoS",
+    "note": "QoS arayüz sayaçları (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-4-12",
+    "title": "QoS arayüz sayaçları (GigabitEthernet1/0/24)",
+    "cat": "QoS",
+    "note": "QoS arayüz sayaçları (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-5-1",
+    "title": "PIM arayüz bilgisi (GigabitEthernet1/0/13)",
+    "cat": "Multicast",
+    "note": "PIM arayüz bilgisi (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim interface GigabitEthernet1/0/13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim interface GigabitEthernet1/0/13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim GigabitEthernet1/0/13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-5-2",
+    "title": "PIM arayüz bilgisi (GigabitEthernet1/0/14)",
+    "cat": "Multicast",
+    "note": "PIM arayüz bilgisi (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim interface GigabitEthernet1/0/14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim interface GigabitEthernet1/0/14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim GigabitEthernet1/0/14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-5-3",
+    "title": "PIM arayüz bilgisi (GigabitEthernet1/0/15)",
+    "cat": "Multicast",
+    "note": "PIM arayüz bilgisi (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim interface GigabitEthernet1/0/15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim interface GigabitEthernet1/0/15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim GigabitEthernet1/0/15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-5-4",
+    "title": "PIM arayüz bilgisi (GigabitEthernet1/0/16)",
+    "cat": "Multicast",
+    "note": "PIM arayüz bilgisi (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim interface GigabitEthernet1/0/16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim interface GigabitEthernet1/0/16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim GigabitEthernet1/0/16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-5-5",
+    "title": "PIM arayüz bilgisi (GigabitEthernet1/0/17)",
+    "cat": "Multicast",
+    "note": "PIM arayüz bilgisi (GigabitEthernet1/0/17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim interface GigabitEthernet1/0/17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim interface GigabitEthernet1/0/17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim GigabitEthernet1/0/17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-5-6",
+    "title": "PIM arayüz bilgisi (GigabitEthernet1/0/18)",
+    "cat": "Multicast",
+    "note": "PIM arayüz bilgisi (GigabitEthernet1/0/18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim interface GigabitEthernet1/0/18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim interface GigabitEthernet1/0/18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim GigabitEthernet1/0/18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-5-7",
+    "title": "PIM arayüz bilgisi (GigabitEthernet1/0/19)",
+    "cat": "Multicast",
+    "note": "PIM arayüz bilgisi (GigabitEthernet1/0/19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim interface GigabitEthernet1/0/19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim interface GigabitEthernet1/0/19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim GigabitEthernet1/0/19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-5-8",
+    "title": "PIM arayüz bilgisi (GigabitEthernet1/0/20)",
+    "cat": "Multicast",
+    "note": "PIM arayüz bilgisi (GigabitEthernet1/0/20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim interface GigabitEthernet1/0/20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim interface GigabitEthernet1/0/20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim GigabitEthernet1/0/20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-5-9",
+    "title": "PIM arayüz bilgisi (GigabitEthernet1/0/21)",
+    "cat": "Multicast",
+    "note": "PIM arayüz bilgisi (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim interface GigabitEthernet1/0/21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim interface GigabitEthernet1/0/21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim GigabitEthernet1/0/21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-5-10",
+    "title": "PIM arayüz bilgisi (GigabitEthernet1/0/22)",
+    "cat": "Multicast",
+    "note": "PIM arayüz bilgisi (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim interface GigabitEthernet1/0/22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim interface GigabitEthernet1/0/22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim GigabitEthernet1/0/22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-5-11",
+    "title": "PIM arayüz bilgisi (GigabitEthernet1/0/23)",
+    "cat": "Multicast",
+    "note": "PIM arayüz bilgisi (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim interface GigabitEthernet1/0/23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim interface GigabitEthernet1/0/23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim GigabitEthernet1/0/23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-5-12",
+    "title": "PIM arayüz bilgisi (GigabitEthernet1/0/24)",
+    "cat": "Multicast",
+    "note": "PIM arayüz bilgisi (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim interface GigabitEthernet1/0/24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim interface GigabitEthernet1/0/24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim GigabitEthernet1/0/24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-6-1",
+    "title": "LLDP komşu bilgisi (GigabitEthernet1/0/13)",
+    "cat": "Switching",
+    "note": "LLDP komşu bilgisi (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors interface GigabitEthernet1/0/13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device GigabitEthernet1/0/13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-6-2",
+    "title": "LLDP komşu bilgisi (GigabitEthernet1/0/14)",
+    "cat": "Switching",
+    "note": "LLDP komşu bilgisi (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors interface GigabitEthernet1/0/14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device GigabitEthernet1/0/14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-6-3",
+    "title": "LLDP komşu bilgisi (GigabitEthernet1/0/15)",
+    "cat": "Switching",
+    "note": "LLDP komşu bilgisi (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors interface GigabitEthernet1/0/15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device GigabitEthernet1/0/15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-6-4",
+    "title": "LLDP komşu bilgisi (GigabitEthernet1/0/16)",
+    "cat": "Switching",
+    "note": "LLDP komşu bilgisi (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors interface GigabitEthernet1/0/16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device GigabitEthernet1/0/16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-6-5",
+    "title": "LLDP komşu bilgisi (GigabitEthernet1/0/17)",
+    "cat": "Switching",
+    "note": "LLDP komşu bilgisi (GigabitEthernet1/0/17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors interface GigabitEthernet1/0/17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device GigabitEthernet1/0/17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-6-6",
+    "title": "LLDP komşu bilgisi (GigabitEthernet1/0/18)",
+    "cat": "Switching",
+    "note": "LLDP komşu bilgisi (GigabitEthernet1/0/18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors interface GigabitEthernet1/0/18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device GigabitEthernet1/0/18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-6-7",
+    "title": "LLDP komşu bilgisi (GigabitEthernet1/0/19)",
+    "cat": "Switching",
+    "note": "LLDP komşu bilgisi (GigabitEthernet1/0/19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors interface GigabitEthernet1/0/19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device GigabitEthernet1/0/19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-6-8",
+    "title": "LLDP komşu bilgisi (GigabitEthernet1/0/20)",
+    "cat": "Switching",
+    "note": "LLDP komşu bilgisi (GigabitEthernet1/0/20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors interface GigabitEthernet1/0/20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device GigabitEthernet1/0/20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-6-9",
+    "title": "LLDP komşu bilgisi (GigabitEthernet1/0/21)",
+    "cat": "Switching",
+    "note": "LLDP komşu bilgisi (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors interface GigabitEthernet1/0/21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device GigabitEthernet1/0/21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-6-10",
+    "title": "LLDP komşu bilgisi (GigabitEthernet1/0/22)",
+    "cat": "Switching",
+    "note": "LLDP komşu bilgisi (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors interface GigabitEthernet1/0/22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device GigabitEthernet1/0/22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-6-11",
+    "title": "LLDP komşu bilgisi (GigabitEthernet1/0/23)",
+    "cat": "Switching",
+    "note": "LLDP komşu bilgisi (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors interface GigabitEthernet1/0/23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device GigabitEthernet1/0/23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-6-12",
+    "title": "LLDP komşu bilgisi (GigabitEthernet1/0/24)",
+    "cat": "Switching",
+    "note": "LLDP komşu bilgisi (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors interface GigabitEthernet1/0/24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device GigabitEthernet1/0/24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-7-1",
+    "title": "CDP komşu bilgisi (GigabitEthernet1/0/13)",
+    "cat": "Switching",
+    "note": "CDP komşu bilgisi (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-7-2",
+    "title": "CDP komşu bilgisi (GigabitEthernet1/0/14)",
+    "cat": "Switching",
+    "note": "CDP komşu bilgisi (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-7-3",
+    "title": "CDP komşu bilgisi (GigabitEthernet1/0/15)",
+    "cat": "Switching",
+    "note": "CDP komşu bilgisi (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-7-4",
+    "title": "CDP komşu bilgisi (GigabitEthernet1/0/16)",
+    "cat": "Switching",
+    "note": "CDP komşu bilgisi (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-7-5",
+    "title": "CDP komşu bilgisi (GigabitEthernet1/0/17)",
+    "cat": "Switching",
+    "note": "CDP komşu bilgisi (GigabitEthernet1/0/17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-7-6",
+    "title": "CDP komşu bilgisi (GigabitEthernet1/0/18)",
+    "cat": "Switching",
+    "note": "CDP komşu bilgisi (GigabitEthernet1/0/18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-7-7",
+    "title": "CDP komşu bilgisi (GigabitEthernet1/0/19)",
+    "cat": "Switching",
+    "note": "CDP komşu bilgisi (GigabitEthernet1/0/19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-7-8",
+    "title": "CDP komşu bilgisi (GigabitEthernet1/0/20)",
+    "cat": "Switching",
+    "note": "CDP komşu bilgisi (GigabitEthernet1/0/20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-7-9",
+    "title": "CDP komşu bilgisi (GigabitEthernet1/0/21)",
+    "cat": "Switching",
+    "note": "CDP komşu bilgisi (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-7-10",
+    "title": "CDP komşu bilgisi (GigabitEthernet1/0/22)",
+    "cat": "Switching",
+    "note": "CDP komşu bilgisi (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-7-11",
+    "title": "CDP komşu bilgisi (GigabitEthernet1/0/23)",
+    "cat": "Switching",
+    "note": "CDP komşu bilgisi (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-7-12",
+    "title": "CDP komşu bilgisi (GigabitEthernet1/0/24)",
+    "cat": "Switching",
+    "note": "CDP komşu bilgisi (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor interface GigabitEthernet1/0/24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors GigabitEthernet1/0/24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-8-1",
+    "title": "Port-security arayüzü (GigabitEthernet1/0/13)",
+    "cat": "Güvenlik",
+    "note": "Port-security arayüzü (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security interface GigabitEthernet1/0/13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security interface GigabitEthernet1/0/13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security GigabitEthernet1/0/13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-8-2",
+    "title": "Port-security arayüzü (GigabitEthernet1/0/14)",
+    "cat": "Güvenlik",
+    "note": "Port-security arayüzü (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security interface GigabitEthernet1/0/14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security interface GigabitEthernet1/0/14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security GigabitEthernet1/0/14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-8-3",
+    "title": "Port-security arayüzü (GigabitEthernet1/0/15)",
+    "cat": "Güvenlik",
+    "note": "Port-security arayüzü (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security interface GigabitEthernet1/0/15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security interface GigabitEthernet1/0/15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security GigabitEthernet1/0/15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-8-4",
+    "title": "Port-security arayüzü (GigabitEthernet1/0/16)",
+    "cat": "Güvenlik",
+    "note": "Port-security arayüzü (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security interface GigabitEthernet1/0/16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security interface GigabitEthernet1/0/16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security GigabitEthernet1/0/16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-8-5",
+    "title": "Port-security arayüzü (GigabitEthernet1/0/17)",
+    "cat": "Güvenlik",
+    "note": "Port-security arayüzü (GigabitEthernet1/0/17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security interface GigabitEthernet1/0/17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security interface GigabitEthernet1/0/17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security GigabitEthernet1/0/17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-8-6",
+    "title": "Port-security arayüzü (GigabitEthernet1/0/18)",
+    "cat": "Güvenlik",
+    "note": "Port-security arayüzü (GigabitEthernet1/0/18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security interface GigabitEthernet1/0/18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security interface GigabitEthernet1/0/18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security GigabitEthernet1/0/18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-8-7",
+    "title": "Port-security arayüzü (GigabitEthernet1/0/19)",
+    "cat": "Güvenlik",
+    "note": "Port-security arayüzü (GigabitEthernet1/0/19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security interface GigabitEthernet1/0/19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security interface GigabitEthernet1/0/19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security GigabitEthernet1/0/19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-8-8",
+    "title": "Port-security arayüzü (GigabitEthernet1/0/20)",
+    "cat": "Güvenlik",
+    "note": "Port-security arayüzü (GigabitEthernet1/0/20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security interface GigabitEthernet1/0/20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security interface GigabitEthernet1/0/20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security GigabitEthernet1/0/20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-8-9",
+    "title": "Port-security arayüzü (GigabitEthernet1/0/21)",
+    "cat": "Güvenlik",
+    "note": "Port-security arayüzü (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security interface GigabitEthernet1/0/21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security interface GigabitEthernet1/0/21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security GigabitEthernet1/0/21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-8-10",
+    "title": "Port-security arayüzü (GigabitEthernet1/0/22)",
+    "cat": "Güvenlik",
+    "note": "Port-security arayüzü (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security interface GigabitEthernet1/0/22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security interface GigabitEthernet1/0/22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security GigabitEthernet1/0/22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-8-11",
+    "title": "Port-security arayüzü (GigabitEthernet1/0/23)",
+    "cat": "Güvenlik",
+    "note": "Port-security arayüzü (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security interface GigabitEthernet1/0/23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security interface GigabitEthernet1/0/23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security GigabitEthernet1/0/23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-8-12",
+    "title": "Port-security arayüzü (GigabitEthernet1/0/24)",
+    "cat": "Güvenlik",
+    "note": "Port-security arayüzü (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security interface GigabitEthernet1/0/24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security interface GigabitEthernet1/0/24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security GigabitEthernet1/0/24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-9-1",
+    "title": "Storm-control arayüzü (GigabitEthernet1/0/13)",
+    "cat": "Güvenlik",
+    "note": "Storm-control arayüzü (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control interface GigabitEthernet1/0/13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control GigabitEthernet1/0/13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control GigabitEthernet1/0/13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-9-2",
+    "title": "Storm-control arayüzü (GigabitEthernet1/0/14)",
+    "cat": "Güvenlik",
+    "note": "Storm-control arayüzü (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control interface GigabitEthernet1/0/14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control GigabitEthernet1/0/14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control GigabitEthernet1/0/14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-9-3",
+    "title": "Storm-control arayüzü (GigabitEthernet1/0/15)",
+    "cat": "Güvenlik",
+    "note": "Storm-control arayüzü (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control interface GigabitEthernet1/0/15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control GigabitEthernet1/0/15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control GigabitEthernet1/0/15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-9-4",
+    "title": "Storm-control arayüzü (GigabitEthernet1/0/16)",
+    "cat": "Güvenlik",
+    "note": "Storm-control arayüzü (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control interface GigabitEthernet1/0/16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control GigabitEthernet1/0/16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control GigabitEthernet1/0/16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-9-5",
+    "title": "Storm-control arayüzü (GigabitEthernet1/0/17)",
+    "cat": "Güvenlik",
+    "note": "Storm-control arayüzü (GigabitEthernet1/0/17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control interface GigabitEthernet1/0/17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control GigabitEthernet1/0/17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control GigabitEthernet1/0/17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-9-6",
+    "title": "Storm-control arayüzü (GigabitEthernet1/0/18)",
+    "cat": "Güvenlik",
+    "note": "Storm-control arayüzü (GigabitEthernet1/0/18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control interface GigabitEthernet1/0/18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control GigabitEthernet1/0/18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control GigabitEthernet1/0/18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-9-7",
+    "title": "Storm-control arayüzü (GigabitEthernet1/0/19)",
+    "cat": "Güvenlik",
+    "note": "Storm-control arayüzü (GigabitEthernet1/0/19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control interface GigabitEthernet1/0/19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control GigabitEthernet1/0/19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control GigabitEthernet1/0/19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-9-8",
+    "title": "Storm-control arayüzü (GigabitEthernet1/0/20)",
+    "cat": "Güvenlik",
+    "note": "Storm-control arayüzü (GigabitEthernet1/0/20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control interface GigabitEthernet1/0/20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control GigabitEthernet1/0/20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control GigabitEthernet1/0/20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-9-9",
+    "title": "Storm-control arayüzü (GigabitEthernet1/0/21)",
+    "cat": "Güvenlik",
+    "note": "Storm-control arayüzü (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control interface GigabitEthernet1/0/21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control GigabitEthernet1/0/21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control GigabitEthernet1/0/21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-9-10",
+    "title": "Storm-control arayüzü (GigabitEthernet1/0/22)",
+    "cat": "Güvenlik",
+    "note": "Storm-control arayüzü (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control interface GigabitEthernet1/0/22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control GigabitEthernet1/0/22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control GigabitEthernet1/0/22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-9-11",
+    "title": "Storm-control arayüzü (GigabitEthernet1/0/23)",
+    "cat": "Güvenlik",
+    "note": "Storm-control arayüzü (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control interface GigabitEthernet1/0/23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control GigabitEthernet1/0/23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control GigabitEthernet1/0/23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-9-12",
+    "title": "Storm-control arayüzü (GigabitEthernet1/0/24)",
+    "cat": "Güvenlik",
+    "note": "Storm-control arayüzü (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control interface GigabitEthernet1/0/24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control GigabitEthernet1/0/24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control GigabitEthernet1/0/24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-10-1",
+    "title": "Arayüz istatistikleri (GigabitEthernet1/0/13)",
+    "cat": "Arayüzler",
+    "note": "Arayüz istatistikleri (GigabitEthernet1/0/13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-10-2",
+    "title": "Arayüz istatistikleri (GigabitEthernet1/0/14)",
+    "cat": "Arayüzler",
+    "note": "Arayüz istatistikleri (GigabitEthernet1/0/14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-10-3",
+    "title": "Arayüz istatistikleri (GigabitEthernet1/0/15)",
+    "cat": "Arayüzler",
+    "note": "Arayüz istatistikleri (GigabitEthernet1/0/15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-10-4",
+    "title": "Arayüz istatistikleri (GigabitEthernet1/0/16)",
+    "cat": "Arayüzler",
+    "note": "Arayüz istatistikleri (GigabitEthernet1/0/16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-10-5",
+    "title": "Arayüz istatistikleri (GigabitEthernet1/0/17)",
+    "cat": "Arayüzler",
+    "note": "Arayüz istatistikleri (GigabitEthernet1/0/17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-10-6",
+    "title": "Arayüz istatistikleri (GigabitEthernet1/0/18)",
+    "cat": "Arayüzler",
+    "note": "Arayüz istatistikleri (GigabitEthernet1/0/18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-10-7",
+    "title": "Arayüz istatistikleri (GigabitEthernet1/0/19)",
+    "cat": "Arayüzler",
+    "note": "Arayüz istatistikleri (GigabitEthernet1/0/19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-10-8",
+    "title": "Arayüz istatistikleri (GigabitEthernet1/0/20)",
+    "cat": "Arayüzler",
+    "note": "Arayüz istatistikleri (GigabitEthernet1/0/20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-10-9",
+    "title": "Arayüz istatistikleri (GigabitEthernet1/0/21)",
+    "cat": "Arayüzler",
+    "note": "Arayüz istatistikleri (GigabitEthernet1/0/21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-10-10",
+    "title": "Arayüz istatistikleri (GigabitEthernet1/0/22)",
+    "cat": "Arayüzler",
+    "note": "Arayüz istatistikleri (GigabitEthernet1/0/22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-10-11",
+    "title": "Arayüz istatistikleri (GigabitEthernet1/0/23)",
+    "cat": "Arayüzler",
+    "note": "Arayüz istatistikleri (GigabitEthernet1/0/23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-10-12",
+    "title": "Arayüz istatistikleri (GigabitEthernet1/0/24)",
+    "cat": "Arayüzler",
+    "note": "Arayüz istatistikleri (GigabitEthernet1/0/24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-11-1",
+    "title": "VLAN MAC adresleri (130)",
+    "cat": "Switching",
+    "note": "VLAN MAC adresleri (130). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 130"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 130"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 130"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-11-2",
+    "title": "VLAN MAC adresleri (140)",
+    "cat": "Switching",
+    "note": "VLAN MAC adresleri (140). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 140"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 140"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 140"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-11-3",
+    "title": "VLAN MAC adresleri (150)",
+    "cat": "Switching",
+    "note": "VLAN MAC adresleri (150). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 150"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 150"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 150"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-11-4",
+    "title": "VLAN MAC adresleri (160)",
+    "cat": "Switching",
+    "note": "VLAN MAC adresleri (160). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 160"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 160"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 160"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-11-5",
+    "title": "VLAN MAC adresleri (170)",
+    "cat": "Switching",
+    "note": "VLAN MAC adresleri (170). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 170"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 170"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 170"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-11-6",
+    "title": "VLAN MAC adresleri (180)",
+    "cat": "Switching",
+    "note": "VLAN MAC adresleri (180). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 180"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 180"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 180"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-11-7",
+    "title": "VLAN MAC adresleri (190)",
+    "cat": "Switching",
+    "note": "VLAN MAC adresleri (190). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 190"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 190"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 190"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-11-8",
+    "title": "VLAN MAC adresleri (200)",
+    "cat": "Switching",
+    "note": "VLAN MAC adresleri (200). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 200"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 200"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 200"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-11-9",
+    "title": "VLAN MAC adresleri (210)",
+    "cat": "Switching",
+    "note": "VLAN MAC adresleri (210). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 210"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 210"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 210"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-11-10",
+    "title": "VLAN MAC adresleri (220)",
+    "cat": "Switching",
+    "note": "VLAN MAC adresleri (220). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 220"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 220"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 220"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-11-11",
+    "title": "VLAN MAC adresleri (230)",
+    "cat": "Switching",
+    "note": "VLAN MAC adresleri (230). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 230"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 230"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 230"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-11-12",
+    "title": "VLAN MAC adresleri (240)",
+    "cat": "Switching",
+    "note": "VLAN MAC adresleri (240). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 240"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 240"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 240"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-12-1",
+    "title": "VLAN STP topolojisi (130)",
+    "cat": "Switching",
+    "note": "VLAN STP topolojisi (130). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 130"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 130"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 130"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-12-2",
+    "title": "VLAN STP topolojisi (140)",
+    "cat": "Switching",
+    "note": "VLAN STP topolojisi (140). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 140"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 140"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 140"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-12-3",
+    "title": "VLAN STP topolojisi (150)",
+    "cat": "Switching",
+    "note": "VLAN STP topolojisi (150). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 150"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 150"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 150"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-12-4",
+    "title": "VLAN STP topolojisi (160)",
+    "cat": "Switching",
+    "note": "VLAN STP topolojisi (160). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 160"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 160"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 160"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-12-5",
+    "title": "VLAN STP topolojisi (170)",
+    "cat": "Switching",
+    "note": "VLAN STP topolojisi (170). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 170"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 170"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 170"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-12-6",
+    "title": "VLAN STP topolojisi (180)",
+    "cat": "Switching",
+    "note": "VLAN STP topolojisi (180). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 180"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 180"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 180"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-12-7",
+    "title": "VLAN STP topolojisi (190)",
+    "cat": "Switching",
+    "note": "VLAN STP topolojisi (190). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 190"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 190"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 190"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-12-8",
+    "title": "VLAN STP topolojisi (200)",
+    "cat": "Switching",
+    "note": "VLAN STP topolojisi (200). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 200"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 200"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 200"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-12-9",
+    "title": "VLAN STP topolojisi (210)",
+    "cat": "Switching",
+    "note": "VLAN STP topolojisi (210). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 210"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 210"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 210"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-12-10",
+    "title": "VLAN STP topolojisi (220)",
+    "cat": "Switching",
+    "note": "VLAN STP topolojisi (220). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 220"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 220"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 220"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-12-11",
+    "title": "VLAN STP topolojisi (230)",
+    "cat": "Switching",
+    "note": "VLAN STP topolojisi (230). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 230"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 230"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 230"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-12-12",
+    "title": "VLAN STP topolojisi (240)",
+    "cat": "Switching",
+    "note": "VLAN STP topolojisi (240). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 240"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 240"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 240"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-13-1",
+    "title": "VLAN IGMP grupları (130)",
+    "cat": "Multicast",
+    "note": "VLAN IGMP grupları (130). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping vlan 130"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping vlan 130"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp 130"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-13-2",
+    "title": "VLAN IGMP grupları (140)",
+    "cat": "Multicast",
+    "note": "VLAN IGMP grupları (140). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping vlan 140"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping vlan 140"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp 140"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-13-3",
+    "title": "VLAN IGMP grupları (150)",
+    "cat": "Multicast",
+    "note": "VLAN IGMP grupları (150). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping vlan 150"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping vlan 150"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp 150"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-13-4",
+    "title": "VLAN IGMP grupları (160)",
+    "cat": "Multicast",
+    "note": "VLAN IGMP grupları (160). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping vlan 160"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping vlan 160"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp 160"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-13-5",
+    "title": "VLAN IGMP grupları (170)",
+    "cat": "Multicast",
+    "note": "VLAN IGMP grupları (170). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping vlan 170"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping vlan 170"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp 170"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-13-6",
+    "title": "VLAN IGMP grupları (180)",
+    "cat": "Multicast",
+    "note": "VLAN IGMP grupları (180). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping vlan 180"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping vlan 180"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp 180"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-13-7",
+    "title": "VLAN IGMP grupları (190)",
+    "cat": "Multicast",
+    "note": "VLAN IGMP grupları (190). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping vlan 190"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping vlan 190"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp 190"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-13-8",
+    "title": "VLAN IGMP grupları (200)",
+    "cat": "Multicast",
+    "note": "VLAN IGMP grupları (200). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping vlan 200"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping vlan 200"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp 200"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-13-9",
+    "title": "VLAN IGMP grupları (210)",
+    "cat": "Multicast",
+    "note": "VLAN IGMP grupları (210). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping vlan 210"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping vlan 210"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp 210"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-13-10",
+    "title": "VLAN IGMP grupları (220)",
+    "cat": "Multicast",
+    "note": "VLAN IGMP grupları (220). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping vlan 220"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping vlan 220"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp 220"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-13-11",
+    "title": "VLAN IGMP grupları (230)",
+    "cat": "Multicast",
+    "note": "VLAN IGMP grupları (230). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping vlan 230"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping vlan 230"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp 230"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-13-12",
+    "title": "VLAN IGMP grupları (240)",
+    "cat": "Multicast",
+    "note": "VLAN IGMP grupları (240). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp snooping vlan 240"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp-snooping vlan 240"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp 240"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-14-1",
+    "title": "VLAN arayüzü (10)",
+    "cat": "Switching",
+    "note": "VLAN arayüzü (10). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces vlan 10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlanif 10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip 10"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-14-2",
+    "title": "VLAN arayüzü (20)",
+    "cat": "Switching",
+    "note": "VLAN arayüzü (20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces vlan 20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlanif 20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip 20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-14-3",
+    "title": "VLAN arayüzü (30)",
+    "cat": "Switching",
+    "note": "VLAN arayüzü (30). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces vlan 30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlanif 30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip 30"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-14-4",
+    "title": "VLAN arayüzü (40)",
+    "cat": "Switching",
+    "note": "VLAN arayüzü (40). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces vlan 40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlanif 40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip 40"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-14-5",
+    "title": "VLAN arayüzü (50)",
+    "cat": "Switching",
+    "note": "VLAN arayüzü (50). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces vlan 50"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlanif 50"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip 50"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-14-6",
+    "title": "VLAN arayüzü (60)",
+    "cat": "Switching",
+    "note": "VLAN arayüzü (60). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces vlan 60"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlanif 60"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip 60"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-14-7",
+    "title": "VLAN arayüzü (70)",
+    "cat": "Switching",
+    "note": "VLAN arayüzü (70). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces vlan 70"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlanif 70"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip 70"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-14-8",
+    "title": "VLAN arayüzü (80)",
+    "cat": "Switching",
+    "note": "VLAN arayüzü (80). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces vlan 80"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlanif 80"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip 80"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-14-9",
+    "title": "VLAN arayüzü (90)",
+    "cat": "Switching",
+    "note": "VLAN arayüzü (90). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces vlan 90"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlanif 90"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip 90"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-14-10",
+    "title": "VLAN arayüzü (100)",
+    "cat": "Switching",
+    "note": "VLAN arayüzü (100). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces vlan 100"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlanif 100"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip 100"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-14-11",
+    "title": "VLAN arayüzü (110)",
+    "cat": "Switching",
+    "note": "VLAN arayüzü (110). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces vlan 110"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlanif 110"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip 110"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-14-12",
+    "title": "VLAN arayüzü (120)",
+    "cat": "Switching",
+    "note": "VLAN arayüzü (120). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces vlan 120"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlanif 120"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip 120"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-15-1",
+    "title": "VRF yönlendirme tablosu (CORP)",
+    "cat": "Yönlendirme",
+    "note": "VRF yönlendirme tablosu (CORP). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf CORP"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance CORP"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf CORP"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-15-2",
+    "title": "VRF yönlendirme tablosu (VOICE)",
+    "cat": "Yönlendirme",
+    "note": "VRF yönlendirme tablosu (VOICE). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf VOICE"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance VOICE"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf VOICE"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-15-3",
+    "title": "VRF yönlendirme tablosu (GUEST)",
+    "cat": "Yönlendirme",
+    "note": "VRF yönlendirme tablosu (GUEST). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf GUEST"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance GUEST"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf GUEST"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-15-4",
+    "title": "VRF yönlendirme tablosu (IOT)",
+    "cat": "Yönlendirme",
+    "note": "VRF yönlendirme tablosu (IOT). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf IOT"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance IOT"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf IOT"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-15-5",
+    "title": "VRF yönlendirme tablosu (DMZ)",
+    "cat": "Yönlendirme",
+    "note": "VRF yönlendirme tablosu (DMZ). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf DMZ"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance DMZ"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf DMZ"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-15-6",
+    "title": "VRF yönlendirme tablosu (MGMT)",
+    "cat": "Yönlendirme",
+    "note": "VRF yönlendirme tablosu (MGMT). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf MGMT"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance MGMT"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf MGMT"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-15-7",
+    "title": "VRF yönlendirme tablosu (VPN1)",
+    "cat": "Yönlendirme",
+    "note": "VRF yönlendirme tablosu (VPN1). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf VPN1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance VPN1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf VPN1"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-15-8",
+    "title": "VRF yönlendirme tablosu (VPN2)",
+    "cat": "Yönlendirme",
+    "note": "VRF yönlendirme tablosu (VPN2). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf VPN2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance VPN2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf VPN2"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-15-9",
+    "title": "VRF yönlendirme tablosu (VPN3)",
+    "cat": "Yönlendirme",
+    "note": "VRF yönlendirme tablosu (VPN3). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf VPN3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance VPN3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf VPN3"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-15-10",
+    "title": "VRF yönlendirme tablosu (VPN4)",
+    "cat": "Yönlendirme",
+    "note": "VRF yönlendirme tablosu (VPN4). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf VPN4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance VPN4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf VPN4"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-15-11",
+    "title": "VRF yönlendirme tablosu (VPN5)",
+    "cat": "Yönlendirme",
+    "note": "VRF yönlendirme tablosu (VPN5). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf VPN5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance VPN5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf VPN5"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-15-12",
+    "title": "VRF yönlendirme tablosu (VPN6)",
+    "cat": "Yönlendirme",
+    "note": "VRF yönlendirme tablosu (VPN6). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route vrf VPN6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table vpn-instance VPN6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route vrf VPN6"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-16-1",
+    "title": "BGP komşu ayrıntısı (192.0.2.13)",
+    "cat": "Yönlendirme",
+    "note": "BGP komşu ayrıntısı (192.0.2.13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 192.0.2.13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-16-2",
+    "title": "BGP komşu ayrıntısı (192.0.2.14)",
+    "cat": "Yönlendirme",
+    "note": "BGP komşu ayrıntısı (192.0.2.14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 192.0.2.14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-16-3",
+    "title": "BGP komşu ayrıntısı (192.0.2.15)",
+    "cat": "Yönlendirme",
+    "note": "BGP komşu ayrıntısı (192.0.2.15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 192.0.2.15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-16-4",
+    "title": "BGP komşu ayrıntısı (192.0.2.16)",
+    "cat": "Yönlendirme",
+    "note": "BGP komşu ayrıntısı (192.0.2.16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 192.0.2.16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-16-5",
+    "title": "BGP komşu ayrıntısı (192.0.2.17)",
+    "cat": "Yönlendirme",
+    "note": "BGP komşu ayrıntısı (192.0.2.17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 192.0.2.17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-16-6",
+    "title": "BGP komşu ayrıntısı (192.0.2.18)",
+    "cat": "Yönlendirme",
+    "note": "BGP komşu ayrıntısı (192.0.2.18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 192.0.2.18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-16-7",
+    "title": "BGP komşu ayrıntısı (192.0.2.19)",
+    "cat": "Yönlendirme",
+    "note": "BGP komşu ayrıntısı (192.0.2.19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 192.0.2.19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-16-8",
+    "title": "BGP komşu ayrıntısı (192.0.2.20)",
+    "cat": "Yönlendirme",
+    "note": "BGP komşu ayrıntısı (192.0.2.20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 192.0.2.20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-16-9",
+    "title": "BGP komşu ayrıntısı (192.0.2.21)",
+    "cat": "Yönlendirme",
+    "note": "BGP komşu ayrıntısı (192.0.2.21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 192.0.2.21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-16-10",
+    "title": "BGP komşu ayrıntısı (192.0.2.22)",
+    "cat": "Yönlendirme",
+    "note": "BGP komşu ayrıntısı (192.0.2.22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 192.0.2.22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-16-11",
+    "title": "BGP komşu ayrıntısı (192.0.2.23)",
+    "cat": "Yönlendirme",
+    "note": "BGP komşu ayrıntısı (192.0.2.23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 192.0.2.23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-16-12",
+    "title": "BGP komşu ayrıntısı (192.0.2.24)",
+    "cat": "Yönlendirme",
+    "note": "BGP komşu ayrıntısı (192.0.2.24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 192.0.2.24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors 192.0.2.24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-17-1",
+    "title": "ARP IP kaydı (192.0.2.13)",
+    "cat": "Yönlendirme",
+    "note": "ARP IP kaydı (192.0.2.13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 192.0.2.13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 192.0.2.13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 192.0.2.13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-17-2",
+    "title": "ARP IP kaydı (192.0.2.14)",
+    "cat": "Yönlendirme",
+    "note": "ARP IP kaydı (192.0.2.14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 192.0.2.14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 192.0.2.14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 192.0.2.14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-17-3",
+    "title": "ARP IP kaydı (192.0.2.15)",
+    "cat": "Yönlendirme",
+    "note": "ARP IP kaydı (192.0.2.15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 192.0.2.15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 192.0.2.15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 192.0.2.15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-17-4",
+    "title": "ARP IP kaydı (192.0.2.16)",
+    "cat": "Yönlendirme",
+    "note": "ARP IP kaydı (192.0.2.16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 192.0.2.16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 192.0.2.16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 192.0.2.16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-17-5",
+    "title": "ARP IP kaydı (192.0.2.17)",
+    "cat": "Yönlendirme",
+    "note": "ARP IP kaydı (192.0.2.17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 192.0.2.17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 192.0.2.17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 192.0.2.17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-17-6",
+    "title": "ARP IP kaydı (192.0.2.18)",
+    "cat": "Yönlendirme",
+    "note": "ARP IP kaydı (192.0.2.18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 192.0.2.18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 192.0.2.18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 192.0.2.18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-17-7",
+    "title": "ARP IP kaydı (192.0.2.19)",
+    "cat": "Yönlendirme",
+    "note": "ARP IP kaydı (192.0.2.19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 192.0.2.19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 192.0.2.19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 192.0.2.19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-17-8",
+    "title": "ARP IP kaydı (192.0.2.20)",
+    "cat": "Yönlendirme",
+    "note": "ARP IP kaydı (192.0.2.20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 192.0.2.20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 192.0.2.20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 192.0.2.20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-17-9",
+    "title": "ARP IP kaydı (192.0.2.21)",
+    "cat": "Yönlendirme",
+    "note": "ARP IP kaydı (192.0.2.21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 192.0.2.21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 192.0.2.21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 192.0.2.21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-17-10",
+    "title": "ARP IP kaydı (192.0.2.22)",
+    "cat": "Yönlendirme",
+    "note": "ARP IP kaydı (192.0.2.22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 192.0.2.22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 192.0.2.22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 192.0.2.22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-17-11",
+    "title": "ARP IP kaydı (192.0.2.23)",
+    "cat": "Yönlendirme",
+    "note": "ARP IP kaydı (192.0.2.23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 192.0.2.23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 192.0.2.23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 192.0.2.23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-17-12",
+    "title": "ARP IP kaydı (192.0.2.24)",
+    "cat": "Yönlendirme",
+    "note": "ARP IP kaydı (192.0.2.24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 192.0.2.24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 192.0.2.24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 192.0.2.24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-18-1",
+    "title": "NAT IP oturumu (192.0.2.13)",
+    "cat": "Servisler",
+    "note": "NAT IP oturumu (192.0.2.13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations 192.0.2.13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session 192.0.2.13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat 192.0.2.13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-18-2",
+    "title": "NAT IP oturumu (192.0.2.14)",
+    "cat": "Servisler",
+    "note": "NAT IP oturumu (192.0.2.14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations 192.0.2.14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session 192.0.2.14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat 192.0.2.14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-18-3",
+    "title": "NAT IP oturumu (192.0.2.15)",
+    "cat": "Servisler",
+    "note": "NAT IP oturumu (192.0.2.15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations 192.0.2.15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session 192.0.2.15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat 192.0.2.15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-18-4",
+    "title": "NAT IP oturumu (192.0.2.16)",
+    "cat": "Servisler",
+    "note": "NAT IP oturumu (192.0.2.16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations 192.0.2.16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session 192.0.2.16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat 192.0.2.16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-18-5",
+    "title": "NAT IP oturumu (192.0.2.17)",
+    "cat": "Servisler",
+    "note": "NAT IP oturumu (192.0.2.17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations 192.0.2.17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session 192.0.2.17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat 192.0.2.17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-18-6",
+    "title": "NAT IP oturumu (192.0.2.18)",
+    "cat": "Servisler",
+    "note": "NAT IP oturumu (192.0.2.18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations 192.0.2.18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session 192.0.2.18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat 192.0.2.18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-18-7",
+    "title": "NAT IP oturumu (192.0.2.19)",
+    "cat": "Servisler",
+    "note": "NAT IP oturumu (192.0.2.19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations 192.0.2.19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session 192.0.2.19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat 192.0.2.19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-18-8",
+    "title": "NAT IP oturumu (192.0.2.20)",
+    "cat": "Servisler",
+    "note": "NAT IP oturumu (192.0.2.20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations 192.0.2.20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session 192.0.2.20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat 192.0.2.20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-18-9",
+    "title": "NAT IP oturumu (192.0.2.21)",
+    "cat": "Servisler",
+    "note": "NAT IP oturumu (192.0.2.21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations 192.0.2.21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session 192.0.2.21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat 192.0.2.21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-18-10",
+    "title": "NAT IP oturumu (192.0.2.22)",
+    "cat": "Servisler",
+    "note": "NAT IP oturumu (192.0.2.22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations 192.0.2.22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session 192.0.2.22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat 192.0.2.22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-18-11",
+    "title": "NAT IP oturumu (192.0.2.23)",
+    "cat": "Servisler",
+    "note": "NAT IP oturumu (192.0.2.23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations 192.0.2.23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session 192.0.2.23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat 192.0.2.23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-18-12",
+    "title": "NAT IP oturumu (192.0.2.24)",
+    "cat": "Servisler",
+    "note": "NAT IP oturumu (192.0.2.24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations 192.0.2.24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session 192.0.2.24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat 192.0.2.24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-19-1",
+    "title": "DHCP havuz bilgisi (POOL13)",
+    "cat": "Servisler",
+    "note": "DHCP havuz bilgisi (POOL13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool POOL13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool POOL13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server POOL13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-19-2",
+    "title": "DHCP havuz bilgisi (POOL14)",
+    "cat": "Servisler",
+    "note": "DHCP havuz bilgisi (POOL14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool POOL14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool POOL14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server POOL14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-19-3",
+    "title": "DHCP havuz bilgisi (POOL15)",
+    "cat": "Servisler",
+    "note": "DHCP havuz bilgisi (POOL15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool POOL15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool POOL15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server POOL15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-19-4",
+    "title": "DHCP havuz bilgisi (POOL16)",
+    "cat": "Servisler",
+    "note": "DHCP havuz bilgisi (POOL16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool POOL16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool POOL16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server POOL16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-19-5",
+    "title": "DHCP havuz bilgisi (POOL17)",
+    "cat": "Servisler",
+    "note": "DHCP havuz bilgisi (POOL17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool POOL17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool POOL17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server POOL17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-19-6",
+    "title": "DHCP havuz bilgisi (POOL18)",
+    "cat": "Servisler",
+    "note": "DHCP havuz bilgisi (POOL18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool POOL18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool POOL18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server POOL18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-19-7",
+    "title": "DHCP havuz bilgisi (POOL19)",
+    "cat": "Servisler",
+    "note": "DHCP havuz bilgisi (POOL19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool POOL19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool POOL19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server POOL19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-19-8",
+    "title": "DHCP havuz bilgisi (POOL20)",
+    "cat": "Servisler",
+    "note": "DHCP havuz bilgisi (POOL20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool POOL20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool POOL20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server POOL20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-19-9",
+    "title": "DHCP havuz bilgisi (POOL21)",
+    "cat": "Servisler",
+    "note": "DHCP havuz bilgisi (POOL21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool POOL21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool POOL21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server POOL21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-19-10",
+    "title": "DHCP havuz bilgisi (POOL22)",
+    "cat": "Servisler",
+    "note": "DHCP havuz bilgisi (POOL22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool POOL22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool POOL22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server POOL22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-19-11",
+    "title": "DHCP havuz bilgisi (POOL23)",
+    "cat": "Servisler",
+    "note": "DHCP havuz bilgisi (POOL23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool POOL23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool POOL23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server POOL23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-19-12",
+    "title": "DHCP havuz bilgisi (POOL24)",
+    "cat": "Servisler",
+    "note": "DHCP havuz bilgisi (POOL24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool POOL24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool POOL24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server POOL24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-20-1",
+    "title": "ACL numarası ayrıntısı (113)",
+    "cat": "Güvenlik",
+    "note": "ACL numarası ayrıntısı (113). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 113"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 113"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 113"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-20-2",
+    "title": "ACL numarası ayrıntısı (114)",
+    "cat": "Güvenlik",
+    "note": "ACL numarası ayrıntısı (114). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 114"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 114"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 114"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-20-3",
+    "title": "ACL numarası ayrıntısı (115)",
+    "cat": "Güvenlik",
+    "note": "ACL numarası ayrıntısı (115). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 115"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 115"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 115"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-20-4",
+    "title": "ACL numarası ayrıntısı (116)",
+    "cat": "Güvenlik",
+    "note": "ACL numarası ayrıntısı (116). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 116"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 116"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 116"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-20-5",
+    "title": "ACL numarası ayrıntısı (117)",
+    "cat": "Güvenlik",
+    "note": "ACL numarası ayrıntısı (117). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 117"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 117"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 117"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-20-6",
+    "title": "ACL numarası ayrıntısı (118)",
+    "cat": "Güvenlik",
+    "note": "ACL numarası ayrıntısı (118). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 118"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 118"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 118"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-20-7",
+    "title": "ACL numarası ayrıntısı (119)",
+    "cat": "Güvenlik",
+    "note": "ACL numarası ayrıntısı (119). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 119"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 119"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 119"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-20-8",
+    "title": "ACL numarası ayrıntısı (120)",
+    "cat": "Güvenlik",
+    "note": "ACL numarası ayrıntısı (120). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 120"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 120"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 120"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-20-9",
+    "title": "ACL numarası ayrıntısı (121)",
+    "cat": "Güvenlik",
+    "note": "ACL numarası ayrıntısı (121). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 121"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 121"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 121"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-20-10",
+    "title": "ACL numarası ayrıntısı (122)",
+    "cat": "Güvenlik",
+    "note": "ACL numarası ayrıntısı (122). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 122"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 122"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 122"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-20-11",
+    "title": "ACL numarası ayrıntısı (123)",
+    "cat": "Güvenlik",
+    "note": "ACL numarası ayrıntısı (123). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 123"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 123"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 123"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-20-12",
+    "title": "ACL numarası ayrıntısı (124)",
+    "cat": "Güvenlik",
+    "note": "ACL numarası ayrıntısı (124). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 124"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 124"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 124"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-21-1",
+    "title": "PIM komşu ayrıntısı (192.0.2.13)",
+    "cat": "Multicast",
+    "note": "PIM komşu ayrıntısı (192.0.2.13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor 192.0.2.13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-21-2",
+    "title": "PIM komşu ayrıntısı (192.0.2.14)",
+    "cat": "Multicast",
+    "note": "PIM komşu ayrıntısı (192.0.2.14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor 192.0.2.14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-21-3",
+    "title": "PIM komşu ayrıntısı (192.0.2.15)",
+    "cat": "Multicast",
+    "note": "PIM komşu ayrıntısı (192.0.2.15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor 192.0.2.15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-21-4",
+    "title": "PIM komşu ayrıntısı (192.0.2.16)",
+    "cat": "Multicast",
+    "note": "PIM komşu ayrıntısı (192.0.2.16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor 192.0.2.16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-21-5",
+    "title": "PIM komşu ayrıntısı (192.0.2.17)",
+    "cat": "Multicast",
+    "note": "PIM komşu ayrıntısı (192.0.2.17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor 192.0.2.17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-21-6",
+    "title": "PIM komşu ayrıntısı (192.0.2.18)",
+    "cat": "Multicast",
+    "note": "PIM komşu ayrıntısı (192.0.2.18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor 192.0.2.18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-21-7",
+    "title": "PIM komşu ayrıntısı (192.0.2.19)",
+    "cat": "Multicast",
+    "note": "PIM komşu ayrıntısı (192.0.2.19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor 192.0.2.19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-21-8",
+    "title": "PIM komşu ayrıntısı (192.0.2.20)",
+    "cat": "Multicast",
+    "note": "PIM komşu ayrıntısı (192.0.2.20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor 192.0.2.20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-21-9",
+    "title": "PIM komşu ayrıntısı (192.0.2.21)",
+    "cat": "Multicast",
+    "note": "PIM komşu ayrıntısı (192.0.2.21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor 192.0.2.21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-21-10",
+    "title": "PIM komşu ayrıntısı (192.0.2.22)",
+    "cat": "Multicast",
+    "note": "PIM komşu ayrıntısı (192.0.2.22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor 192.0.2.22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-21-11",
+    "title": "PIM komşu ayrıntısı (192.0.2.23)",
+    "cat": "Multicast",
+    "note": "PIM komşu ayrıntısı (192.0.2.23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor 192.0.2.23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-21-12",
+    "title": "PIM komşu ayrıntısı (192.0.2.24)",
+    "cat": "Multicast",
+    "note": "PIM komşu ayrıntısı (192.0.2.24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor 192.0.2.24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor 192.0.2.24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-22-1",
+    "title": "NTP eş bilgisi (192.0.2.13)",
+    "cat": "İzleme",
+    "note": "NTP eş bilgisi (192.0.2.13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations 192.0.2.13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions 192.0.2.13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations 192.0.2.13"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-22-2",
+    "title": "NTP eş bilgisi (192.0.2.14)",
+    "cat": "İzleme",
+    "note": "NTP eş bilgisi (192.0.2.14). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations 192.0.2.14"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions 192.0.2.14"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations 192.0.2.14"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-22-3",
+    "title": "NTP eş bilgisi (192.0.2.15)",
+    "cat": "İzleme",
+    "note": "NTP eş bilgisi (192.0.2.15). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations 192.0.2.15"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions 192.0.2.15"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations 192.0.2.15"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-22-4",
+    "title": "NTP eş bilgisi (192.0.2.16)",
+    "cat": "İzleme",
+    "note": "NTP eş bilgisi (192.0.2.16). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations 192.0.2.16"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions 192.0.2.16"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations 192.0.2.16"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-22-5",
+    "title": "NTP eş bilgisi (192.0.2.17)",
+    "cat": "İzleme",
+    "note": "NTP eş bilgisi (192.0.2.17). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations 192.0.2.17"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions 192.0.2.17"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations 192.0.2.17"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-22-6",
+    "title": "NTP eş bilgisi (192.0.2.18)",
+    "cat": "İzleme",
+    "note": "NTP eş bilgisi (192.0.2.18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations 192.0.2.18"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions 192.0.2.18"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations 192.0.2.18"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-22-7",
+    "title": "NTP eş bilgisi (192.0.2.19)",
+    "cat": "İzleme",
+    "note": "NTP eş bilgisi (192.0.2.19). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations 192.0.2.19"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions 192.0.2.19"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations 192.0.2.19"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-22-8",
+    "title": "NTP eş bilgisi (192.0.2.20)",
+    "cat": "İzleme",
+    "note": "NTP eş bilgisi (192.0.2.20). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations 192.0.2.20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions 192.0.2.20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations 192.0.2.20"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-22-9",
+    "title": "NTP eş bilgisi (192.0.2.21)",
+    "cat": "İzleme",
+    "note": "NTP eş bilgisi (192.0.2.21). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations 192.0.2.21"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions 192.0.2.21"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations 192.0.2.21"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-22-10",
+    "title": "NTP eş bilgisi (192.0.2.22)",
+    "cat": "İzleme",
+    "note": "NTP eş bilgisi (192.0.2.22). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations 192.0.2.22"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions 192.0.2.22"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations 192.0.2.22"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-22-11",
+    "title": "NTP eş bilgisi (192.0.2.23)",
+    "cat": "İzleme",
+    "note": "NTP eş bilgisi (192.0.2.23). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations 192.0.2.23"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions 192.0.2.23"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations 192.0.2.23"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-22-12",
+    "title": "NTP eş bilgisi (192.0.2.24)",
+    "cat": "İzleme",
+    "note": "NTP eş bilgisi (192.0.2.24). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations 192.0.2.24"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions 192.0.2.24"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations 192.0.2.24"
+      ]
+    }
+  },
+  {
+    "slug": "scope2-23-1",
+    "title": "BGP IPv6 komşusu (192.0.2.13)",
+    "cat": "IPv6",
+    "note": "BGP IPv6 komşusu (192.0.2.13). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show bgp ipv6 unicast neighbors 192.0.2.13"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp ipv6 peer 192.0.2.13"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show bgp ipv6 neighbors 192.0.2.13"
+      ]
+    }
+  }
+]
