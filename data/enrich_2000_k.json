@@ -1506,5 +1506,2267 @@
         ]
       }
     }
+  },
+  "ospf-arayuzleri": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "bgp-ozet": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "bgp-komsu-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "stp-ozet": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "stp-port-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "lldp-komsular": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "lacp-ozet": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "poe-durum": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "transceiver-detay": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "interface-errors": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "cpu-processes": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "memory-usage": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "ntp-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "ntp-associations": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "dhcp-snooping-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "dhcp-snooping-bindings": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "acl-hitcounts": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "ipv6-neighbors": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "vrf-routing-table": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "syslog-server-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "logging-buffer": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "errdisable-ports": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "port-security-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "storm-control-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "mac-move-events": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "arp-inspection-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "port-channel-load-balance": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "bgp-advertised-routes": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "bgp-received-routes": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "bfd-neighbor-session-state": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "multicast-routes": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "pim-neighbors": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "fan-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "power-supply-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "temperature-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "stack-members": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "interface-description": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "vlan-port-membership": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
+  },
+  "stp-root-bridge": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya Aruba AOS-S/AOS-CX sürümünü doğrulayın."
+          },
+          {
+            "p": "scope",
+            "d": "Komutu ilgili cihaz, protokol veya arayüz bağlamında çalıştırın."
+          }
+        ],
+        "example": "İlgili komut çıktısını değişiklik öncesi/sonrası karşılaştırın ve eş zamanlı loglarla ilişkilendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Desteklenmeyen model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP, or Aruba AOS-S/AOS-CX release."
+          },
+          {
+            "p": "scope",
+            "d": "Run the command in the relevant device, protocol, or interface context."
+          }
+        ],
+        "example": "Compare the command output before and after a change and correlate it with timestamped logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو Aruba AOS-S/AOS-CX."
+          },
+          {
+            "p": "النطاق",
+            "d": "نفّذ الأمر ضمن سياق الجهاز أو البروتوكول أو الواجهة المناسب."
+          }
+        ],
+        "example": "قارن المخرجات قبل التغيير وبعده واربطها بسجلات الأحداث ذات الطابع الزمني.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "التشغيل على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة التاريخية."
+        ]
+      }
+    }
   }
 }
