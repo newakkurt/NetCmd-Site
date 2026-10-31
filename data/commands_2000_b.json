@@ -1,0 +1,108 @@
+[
+  {
+    "slug": "ospf-komsu-durumu",
+    "title": "OSPF komşu durumunu görüntüleme",
+    "cat": "Yönlendirme Protokolleri",
+    "note": "Komşuluk durumunu ve komşu router ID bilgisini kontrol eder. Cisco ve Huawei örnekleri OSPF süreç/alan tasarımına göre ek filtrelerle daraltılabilir; Aruba komutu AOS-CX içindir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf neighbor",
+        "show ip ospf neighbor detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf peer",
+        "display ospf peer verbose"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator (AOS-CX)",
+      "cmds": [
+        "show ip ospf neighbors",
+        "show ip ospf"
+      ]
+    }
+  },
+  {
+    "slug": "bgp-komsu-ozeti",
+    "title": "BGP komşu özetini görüntüleme",
+    "cat": "Yönlendirme Protokolleri",
+    "note": "BGP oturum durumunu, ASN ve alınan prefix sayılarını kontrol eder. Aruba örneği AOS-CX içindir; AOS-Switch modellerinde BGP desteği ve komutlar farklı olabilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer",
+        "display bgp peer verbose"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator (AOS-CX)",
+      "cmds": [
+        "show bgp ipv4 unicast summary"
+      ]
+    }
+  },
+  {
+    "slug": "poe-port-durumu",
+    "title": "PoE port ve güç durumunu görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "PoE beslemesi, port başına güç tüketimi ve güç kaynağı bütçesini kontrol eder. Komutlar model ve yazılım ailesine göre değişebilir; Aruba örneği AOS-S içindir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show power inline",
+        "show power inline detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display poe information",
+        "display poe power"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator (AOS-S)",
+      "cmds": [
+        "show power-over-ethernet",
+        "show power-over-ethernet brief"
+      ]
+    }
+  },
+  {
+    "slug": "ntp-esitleme-durumu",
+    "title": "NTP eşitleme durumunu kontrol etme",
+    "cat": "Sistem",
+    "note": "Cihazın NTP sunucusuyla senkronize olup olmadığını ve saat kaynağını kontrol eder. Senkronizasyon yoksa erişim, ACL, UDP/123 ve saat dilimini inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp status",
+        "show ntp associations"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service status",
+        "display ntp-service sessions"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp status",
+        "show ntp associations"
+      ]
+    }
+  }
+]

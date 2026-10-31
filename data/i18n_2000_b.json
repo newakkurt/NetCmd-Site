@@ -1,0 +1,45 @@
+{
+  "cats": {},
+  "items": {
+    "ospf-komsu-durumu": {
+      "en": {
+        "title": "View OSPF neighbor state",
+        "note": "Komşuluk durumunu ve komşu router ID bilgisini kontrol eder. Cisco ve Huawei örnekleri OSPF süreç/alan tasarımına göre ek filtrelerle daraltılabilir; Aruba komutu AOS-CX içindir."
+      },
+      "ar": {
+        "title": "عرض حالة جيران OSPF",
+        "note": "Komşuluk durumunu ve komşu router ID bilgisini kontrol eder. Cisco ve Huawei örnekleri OSPF süreç/alan tasarımına göre ek filtrelerle daraltılabilir; Aruba komutu AOS-CX içindir."
+      }
+    },
+    "bgp-komsu-ozeti": {
+      "en": {
+        "title": "View BGP neighbor summary",
+        "note": "BGP oturum durumunu, ASN ve alınan prefix sayılarını kontrol eder. Aruba örneği AOS-CX içindir; AOS-Switch modellerinde BGP desteği ve komutlar farklı olabilir."
+      },
+      "ar": {
+        "title": "عرض ملخص جيران BGP",
+        "note": "BGP oturum durumunu, ASN ve alınan prefix sayılarını kontrol eder. Aruba örneği AOS-CX içindir; AOS-Switch modellerinde BGP desteği ve komutlar farklı olabilir."
+      }
+    },
+    "poe-port-durumu": {
+      "en": {
+        "title": "View PoE port and power status",
+        "note": "PoE beslemesi, port başına güç tüketimi ve güç kaynağı bütçesini kontrol eder. Komutlar model ve yazılım ailesine göre değişebilir; Aruba örneği AOS-S içindir."
+      },
+      "ar": {
+        "title": "عرض حالة منافذ وطاقة PoE",
+        "note": "PoE beslemesi, port başına güç tüketimi ve güç kaynağı bütçesini kontrol eder. Komutlar model ve yazılım ailesine göre değişebilir; Aruba örneği AOS-S içindir."
+      }
+    },
+    "ntp-esitleme-durumu": {
+      "en": {
+        "title": "Check NTP synchronization status",
+        "note": "Cihazın NTP sunucusuyla senkronize olup olmadığını ve saat kaynağını kontrol eder. Senkronizasyon yoksa erişim, ACL, UDP/123 ve saat dilimini inceleyin."
+      },
+      "ar": {
+        "title": "التحقق من حالة مزامنة NTP",
+        "note": "Cihazın NTP sunucusuyla senkronize olup olmadığını ve saat kaynağını kontrol eder. Senkronizasyon yoksa erişim, ACL, UDP/123 ve saat dilimini inceleyin."
+      }
+    }
+  }
+}
