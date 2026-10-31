@@ -1,0 +1,204 @@
+{
+  "items": {
+    "bgp-neighbor-summary": {
+      "en": {
+        "title": "Display BGP neighbor summary",
+        "note": "Inspects BGP peer state, ASN and received/sent prefix counts. Evaluate neighbor state together with address-family and policy information."
+      },
+      "ar": {
+        "title": "عرض ملخص جيران BGP",
+        "note": "يفحص حالة نظير BGP ورقم ASN وعدد البادئات المستلمة والمرسلة. قيّم الحالة مع معلومات address-family والسياسات."
+      }
+    },
+    "bgp-advertised-routes": {
+      "en": {
+        "title": "Display routes advertised to BGP peers",
+        "note": "Checks prefixes advertised to a BGP neighbor. Outbound route-policy or route-map filters can affect expected routes."
+      },
+      "ar": {
+        "title": "عرض المسارات المعلنة إلى جيران BGP",
+        "note": "يفحص البادئات المعلنة إلى نظير BGP. قد تؤثر سياسات التوجيه الصادرة أو route-map على المسارات المتوقعة."
+      }
+    },
+    "ospf-neighbor-summary": {
+      "en": {
+        "title": "Display OSPF neighbor summary",
+        "note": "Inspects OSPF neighbor router IDs, areas and adjacency states. For states other than FULL, compare parameters on both ends."
+      },
+      "ar": {
+        "title": "عرض ملخص جيران OSPF",
+        "note": "يفحص معرفات موجّهات OSPF والمناطق وحالات المجاورة. في الحالات غير FULL قارن الإعدادات على الطرفين."
+      }
+    },
+    "ospf-interface-detail": {
+      "en": {
+        "title": "Display OSPF interface details",
+        "note": "Checks area, cost, network type and timer information for OSPF-enabled interfaces. Verify matching parameters on both ends when troubleshooting adjacency."
+      },
+      "ar": {
+        "title": "عرض تفاصيل واجهة OSPF",
+        "note": "يفحص المنطقة والتكلفة ونوع الشبكة والمؤقتات للواجهات التي تشغّل OSPF. تحقق من تطابق الإعدادات على الطرفين."
+      }
+    },
+    "ospf-database-summary": {
+      "en": {
+        "title": "Display OSPF link-state database summary",
+        "note": "Inspects LSA types and counts in the Link State Database to review OSPF topology information."
+      },
+      "ar": {
+        "title": "عرض ملخص قاعدة بيانات OSPF",
+        "note": "يفحص أنواع LSA وأعدادها في قاعدة بيانات Link State لمراجعة معلومات طوبولوجيا OSPF."
+      }
+    },
+    "routing-table-protocol": {
+      "en": {
+        "title": "Display routing table by protocol",
+        "note": "Reviews route source and selected next-hop. If multiple protocols advertise a prefix, consider administrative distance/preference."
+      },
+      "ar": {
+        "title": "عرض جدول التوجيه حسب البروتوكول",
+        "note": "يراجع مصدر المسار والقفزة التالية المختارة. إذا أعلنت بروتوكولات متعددة عن بادئة، فضع administrative distance/preference في الاعتبار."
+      }
+    },
+    "static-route-list": {
+      "en": {
+        "title": "Display configured static routes",
+        "note": "Checks configured static routes and next hops. Verify recursive next-hop resolution and VRF scope separately."
+      },
+      "ar": {
+        "title": "عرض المسارات الثابتة المعرّفة",
+        "note": "يفحص المسارات الثابتة والقفزات التالية المعرّفة. تحقق بشكل منفصل من حل next-hop ونطاق VRF."
+      }
+    },
+    "route-map-list": {
+      "en": {
+        "title": "Display route-map configuration",
+        "note": "Inspects route-map sequence, match and set conditions. Verify that the policy is attached to the intended BGP neighbor or redistribution point."
+      },
+      "ar": {
+        "title": "عرض إعدادات route-map",
+        "note": "يفحص تسلسل route-map وشروط match وset. تحقق من ربط السياسة بنظير BGP أو نقطة إعادة التوزيع المطلوبة."
+      }
+    },
+    "prefix-list-ipv4": {
+      "en": {
+        "title": "Display IPv4 prefix-list configuration",
+        "note": "Inspects IPv4 prefix-list rules and ge/le bounds. Review sequence and permit/deny logic with the related routing policy."
+      },
+      "ar": {
+        "title": "عرض إعدادات IPv4 prefix-list",
+        "note": "يفحص قواعد IPv4 prefix-list وحدود ge/le. راجع التسلسل ومنطق permit/deny مع سياسة التوجيه المرتبطة."
+      }
+    },
+    "hsrp-brief": {
+      "en": {
+        "title": "Display HSRP redundancy status",
+        "note": "Checks HSRP group Active/Standby state, virtual IP and priority. Verify group and VLAN mapping."
+      },
+      "ar": {
+        "title": "عرض حالة التكرار HSRP",
+        "note": "يفحص حالة Active/Standby لمجموعات HSRP وعنوان IP الافتراضي والأولوية. تحقق من ربط المجموعة مع VLAN."
+      }
+    },
+    "vrrp-brief": {
+      "en": {
+        "title": "Display VRRP redundancy status",
+        "note": "Inspects VRRP master/backup state and virtual router information. Compare priority, advertisement timer and preempt settings."
+      },
+      "ar": {
+        "title": "عرض حالة التكرار VRRP",
+        "note": "يفحص حالة master/backup في VRRP ومعلومات الموجّه الافتراضي. قارن الأولوية ومؤقت الإعلان وإعداد preempt."
+      }
+    },
+    "stack-member-status": {
+      "en": {
+        "title": "Display switch stack member status",
+        "note": "Checks stack member roles, states and hardware details. Inspect stack ring/port health separately."
+      },
+      "ar": {
+        "title": "عرض حالة أعضاء مكدس المحولات",
+        "note": "يفحص أدوار وحالات أعضاء stack وتفاصيل الأجهزة. افحص صحة منافذ وحلقة stack بشكل منفصل."
+      }
+    },
+    "device-uptime": {
+      "en": {
+        "title": "Display device uptime",
+        "note": "Checks elapsed time since the last reboot. Correlate uptime with reload and power events."
+      },
+      "ar": {
+        "title": "عرض مدة تشغيل الجهاز",
+        "note": "يفحص الوقت المنقضي منذ آخر إعادة تشغيل. قارن مدة التشغيل مع أحداث reload والطاقة."
+      }
+    },
+    "memory-summary": {
+      "en": {
+        "title": "Display memory usage summary",
+        "note": "Checks used and free memory. Review sudden changes together with process memory and device logs."
+      },
+      "ar": {
+        "title": "عرض ملخص استخدام الذاكرة",
+        "note": "يفحص الذاكرة المستخدمة والمتاحة. راجع التغييرات المفاجئة مع ذاكرة العمليات وسجلات الجهاز."
+      }
+    },
+    "flash-filesystem": {
+      "en": {
+        "title": "Display flash filesystem contents",
+        "note": "Checks flash storage and filesystem contents. Verify free space before backups or upgrades."
+      },
+      "ar": {
+        "title": "عرض محتويات نظام ملفات flash",
+        "note": "يفحص مساحة تخزين flash ومحتويات نظام الملفات. تحقق من المساحة المتاحة قبل النسخ الاحتياطي أو الترقية."
+      }
+    },
+    "startup-config-check": {
+      "en": {
+        "title": "Display startup configuration",
+        "note": "Inspects the configuration loaded at startup. Mask sensitive information before sharing output."
+      },
+      "ar": {
+        "title": "عرض إعداد بدء التشغيل",
+        "note": "يفحص الإعداد الذي سيتم تحميله عند بدء التشغيل. أخفِ المعلومات الحساسة قبل مشاركة المخرجات."
+      }
+    },
+    "running-config-section": {
+      "en": {
+        "title": "Search a section of the running configuration",
+        "note": "Helps locate a specific interface, VLAN or protocol section in the running configuration. Filter syntax varies by platform."
+      },
+      "ar": {
+        "title": "البحث عن قسم في الإعداد الجاري",
+        "note": "يساعد في العثور على قسم واجهة أو VLAN أو بروتوكول في الإعداد الجاري. تختلف صياغة التصفية حسب المنصة."
+      }
+    },
+    "interface-flap-log": {
+      "en": {
+        "title": "Display interface link-flap logs",
+        "note": "Inspects link up/down events to identify timing and recurrence of physical connectivity interruptions."
+      },
+      "ar": {
+        "title": "عرض سجلات تغير حالة الواجهة",
+        "note": "يفحص أحداث link up/down لتحديد توقيت وتكرار انقطاعات الاتصال الفيزيائي."
+      }
+    },
+    "ping-source-interface": {
+      "en": {
+        "title": "Run ping from a specified source interface",
+        "note": "Tests reachability using a specified source IP or interface. Interpret results together with routing, ACL and return path."
+      },
+      "ar": {
+        "title": "تنفيذ ping من واجهة مصدر محددة",
+        "note": "يختبر إمكانية الوصول باستخدام عنوان IP أو واجهة مصدر محددة. قيّم النتيجة مع التوجيه وACL ومسار العودة."
+      }
+    },
+    "traceroute-source": {
+      "en": {
+        "title": "Run traceroute from a specified source",
+        "note": "Inspects the Layer 3 path to a destination using a specified source IP. Intermediate devices filtering ICMP may affect results."
+      },
+      "ar": {
+        "title": "تنفيذ traceroute من مصدر محدد",
+        "note": "يفحص مسار الطبقة الثالثة إلى الوجهة باستخدام عنوان مصدر محدد. قد تؤثر تصفية ICMP في الأجهزة الوسيطة على النتيجة."
+      }
+    }
+  }
+}
