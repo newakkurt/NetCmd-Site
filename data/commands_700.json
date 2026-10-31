@@ -336,30 +336,6 @@
     }
   },
   {
-    "slug": "igmp-groups",
-    "title": "IGMP multicast grup üyelerini görüntüleme",
-    "cat": "IPv6 ve Multicast",
-    "note": "VLAN ve arayüz bazında üyelik kayıtlarını ve grup adreslerini inceleyin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip igmp groups"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display igmp group"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip igmp"
-      ]
-    }
-  },
-  {
     "slug": "macsec-status",
     "title": "MACsec bağlantı güvenliğini görüntüleme",
     "cat": "L2 Güvenlik",
@@ -692,30 +668,6 @@
       "mode": "Operator / Manager",
       "cmds": [
         "show flash"
-      ]
-    }
-  },
-  {
-    "slug": "license-status",
-    "title": "Lisans durumunu görüntüleme",
-    "cat": "Yazılım ve Yükseltme",
-    "note": "Özellik lisanslarının etkinlik ve son kullanma durumunu kontrol edin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show license summary"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display license"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show license"
       ]
     }
   }
