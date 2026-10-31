@@ -1,0 +1,324 @@
+{
+  "items": {
+    "ospf-interface-summary": {
+      "en": {
+        "title": "View OSPF interface summary",
+        "note": "OSPF etkin arayüzlerini ve alan bilgilerini özetler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض ملخص واجهات OSPF",
+        "note": "OSPF etkin arayüzlerini ve alan bilgilerini özetler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ospf-process-detail": {
+      "en": {
+        "title": "View OSPF process details",
+        "note": "OSPF süreç kimliği, router ID ve protokol parametrelerini gösterir. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض تفاصيل عملية OSPF",
+        "note": "OSPF süreç kimliği, router ID ve protokol parametrelerini gösterir. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bgp-peer-detail": {
+      "en": {
+        "title": "View BGP peer details",
+        "note": "BGP komşularının oturum ve yetenek ayrıntılarını inceler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض تفاصيل نظراء BGP",
+        "note": "BGP komşularının oturum ve yetenek ayrıntılarını inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bgp-prefix-table": {
+      "en": {
+        "title": "View BGP IPv4 route table",
+        "note": "BGP tarafından öğrenilen IPv4 rotalarını listeler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض جدول مسارات IPv4 في BGP",
+        "note": "BGP tarafından öğrenilen IPv4 rotalarını listeler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ipv6-interface-summary": {
+      "en": {
+        "title": "View IPv6 interface summary",
+        "note": "IPv6 adreslerini ve arayüz durumlarını özetler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض ملخص واجهات IPv6",
+        "note": "IPv6 adreslerini ve arayüz durumlarını özetler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ipv6-neighbor-cache": {
+      "en": {
+        "title": "View IPv6 neighbor cache",
+        "note": "IPv6 Neighbor Discovery önbelleğini inceler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض ذاكرة جيران IPv6",
+        "note": "IPv6 Neighbor Discovery önbelleğini inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "dhcp-relay-state": {
+      "en": {
+        "title": "View DHCP relay status",
+        "note": "DHCP relay yapılandırma ve çalışma durumunu kontrol eder. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض حالة DHCP Relay",
+        "note": "DHCP relay yapılandırma ve çalışma durumunu kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "syslog-target-status": {
+      "en": {
+        "title": "View syslog targets",
+        "note": "Uzak syslog hedeflerini ve log gönderim durumunu kontrol eder. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض وجهات Syslog",
+        "note": "Uzak syslog hedeflerini ve log gönderim durumunu kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "memory-process-usage": {
+      "en": {
+        "title": "View memory utilization",
+        "note": "Bellek kullanımını ve kaynak baskısını izler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض استخدام الذاكرة",
+        "note": "Bellek kullanımını ve kaynak baskısını izler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "flash-directory-list": {
+      "en": {
+        "title": "View flash directory",
+        "note": "Flash depolama alanındaki dosya ve dizinleri listeler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض محتويات ذاكرة Flash",
+        "note": "Flash depolama alanındaki dosya ve dizinleri listeler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "system-clock-detail": {
+      "en": {
+        "title": "View system clock details",
+        "note": "Cihaz saati ve zaman kaynağını kontrol eder. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض تفاصيل ساعة النظام",
+        "note": "Cihaz saati ve zaman kaynağını kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "tacacs-server-state": {
+      "en": {
+        "title": "View TACACS+ server status",
+        "note": "TACACS+ sunucu bağlantı ve işlem durumunu inceler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض حالة خادم TACACS+",
+        "note": "TACACS+ sunucu bağlantı ve işlem durumunu inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "snmp-engine-info": {
+      "en": {
+        "title": "View SNMP engine information",
+        "note": "SNMP engine ID bilgisini kontrol eder. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض معلومات محرك SNMP",
+        "note": "SNMP engine ID bilgisini kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "qos-policy-counters": {
+      "en": {
+        "title": "View QoS policy counters",
+        "note": "QoS politika eşleşme ve sayaç bilgilerini inceler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض عدادات سياسة QoS",
+        "note": "QoS politika eşleşme ve sayaç bilgilerini inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "route-policy-detail": {
+      "en": {
+        "title": "View route policy details",
+        "note": "Rota politikalarının eşleşme ve işlem sırasını inceler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض تفاصيل سياسة التوجيه",
+        "note": "Rota politikalarının eşleşme ve işlem sırasını inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "vrf-route-detail": {
+      "en": {
+        "title": "View VRF routing table",
+        "note": "Belirli VRF içindeki yönlendirme kayıtlarını gösterir. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض جدول توجيه VRF",
+        "note": "Belirli VRF içindeki yönlendirme kayıtlarını gösterir. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bfd-peer-detail": {
+      "en": {
+        "title": "View BFD peer details",
+        "note": "BFD oturumlarının ayrıntı ve algılama parametrelerini kontrol eder. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض تفاصيل نظراء BFD",
+        "note": "BFD oturumlarının ayrıntı ve algılama parametrelerini kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "etherchannel-load-distribution": {
+      "en": {
+        "title": "View EtherChannel load distribution",
+        "note": "Port-channel trafik dağıtım yöntemini kontrol eder. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض توزيع حمل EtherChannel",
+        "note": "Port-channel trafik dağıtım yöntemini kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "stp-port-detail": {
+      "en": {
+        "title": "View spanning-tree port details",
+        "note": "Port bazında STP rolü, durum ve sayaçları inceler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض تفاصيل منافذ Spanning Tree",
+        "note": "Port bazında STP rolü, durum ve sayaçları inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "port-security-addresses": {
+      "en": {
+        "title": "View port-security MAC addresses",
+        "note": "Port-security tarafından öğrenilen MAC adreslerini listeler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض عناوين MAC الخاصة بأمان المنفذ",
+        "note": "Port-security tarafından öğrenilen MAC adreslerini listeler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "macsec-session-state": {
+      "en": {
+        "title": "View MACsec session status",
+        "note": "MACsec/MKA oturum durumunu kontrol eder; model desteğini doğrulayın. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض حالة جلسات MACsec",
+        "note": "MACsec/MKA oturum durumunu kontrol eder; model desteğini doğrulayın. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ipsec-security-associations": {
+      "en": {
+        "title": "View IPsec security associations",
+        "note": "IPsec SA durumunu, paket sayaçlarını ve şifreleme parametrelerini inceler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض ارتباطات أمان IPsec",
+        "note": "IPsec SA durumunu, paket sayaçlarını ve şifreleme parametrelerini inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ike-security-associations": {
+      "en": {
+        "title": "View IKE security associations",
+        "note": "IKE kontrol düzlemi oturumlarının durumunu kontrol eder. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض ارتباطات أمان IKE",
+        "note": "IKE kontrol düzlemi oturumlarının durumunu kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ssl-vpn-session-list": {
+      "en": {
+        "title": "View SSL VPN sessions",
+        "note": "SSL VPN kullanıcı oturumlarını ve bağlantı durumlarını listeler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض جلسات SSL VPN",
+        "note": "SSL VPN kullanıcı oturumlarını ve bağlantı durumlarını listeler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "wireless-ap-summary": {
+      "en": {
+        "title": "View wireless AP summary",
+        "note": "Kablosuz AP envanterini ve çalışma durumunu özetler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض ملخص نقاط الوصول اللاسلكية",
+        "note": "Kablosuz AP envanterini ve çalışma durumunu özetler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "wireless-client-list": {
+      "en": {
+        "title": "View wireless clients",
+        "note": "Kablosuz istemci bağlantılarını ve ilişkilendirme durumlarını listeler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض العملاء اللاسلكيين",
+        "note": "Kablosuz istemci bağlantılarını ve ilişkilendirme durumlarını listeler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "wireless-channel-utilization": {
+      "en": {
+        "title": "View wireless channel utilization",
+        "note": "Radyo kanal kullanımı ve kablosuz kapasite durumunu inceler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض استخدام القنوات اللاسلكية",
+        "note": "Radyo kanal kullanımı ve kablosuz kapasite durumunu inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "pim-neighbor-list": {
+      "en": {
+        "title": "View PIM neighbors",
+        "note": "Multicast yönlendirme için PIM komşuluklarını kontrol eder. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض جيران PIM",
+        "note": "Multicast yönlendirme için PIM komşuluklarını kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "igmp-snooping-groups": {
+      "en": {
+        "title": "View IGMP Snooping groups",
+        "note": "VLAN bazında öğrenilen multicast grup üyeliklerini listeler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض مجموعات IGMP Snooping",
+        "note": "VLAN bazında öğrenilen multicast grup üyeliklerini listeler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "multicast-route-entries": {
+      "en": {
+        "title": "View multicast route entries",
+        "note": "Multicast yönlendirme tablosundaki kaynak/grup kayıtlarını inceler. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض إدخالات توجيه البث المتعدد",
+        "note": "Multicast yönlendirme tablosundaki kaynak/grup kayıtlarını inceler. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "power-supply-status": {
+      "en": {
+        "title": "View power supply status",
+        "note": "Güç kaynağı modüllerinin durumunu kontrol eder. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض حالة مزود الطاقة",
+        "note": "Güç kaynağı modüllerinin durumunu kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "fan-status": {
+      "en": {
+        "title": "View fan status",
+        "note": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder. Verify syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض حالة المراوح",
+        "note": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
+      }
+    }
+  }
+}
