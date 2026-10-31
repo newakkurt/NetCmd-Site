@@ -1924,61 +1924,6 @@
       }
     }
   },
-  "bgp-advertised-routes": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "Belirtilen komşuya gönderilen BGP prefix listesini inceler."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect bgp advertised routes. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect bgp advertised routes. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Bgp Advertised Routes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Bgp Advertised Routes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
   "bgp-received-routes": {
     "details": {
       "tr": {
@@ -2144,171 +2089,6 @@
       }
     }
   },
-  "pim-neighbors": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "Multicast yönlendirme için PIM komşuluklarını kontrol eder."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect pim neighbors. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect pim neighbors. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Pim Neighbors. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Pim Neighbors. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
-  "fan-status": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect fan status. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect fan status. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Fan Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Fan Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
-  "power-supply-status": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "PSU modüllerinin varlık ve çalışma durumunu kontrol eder."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect power supply status. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect power supply status. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Power Supply Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Power Supply Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
   "temperature-status": {
     "details": {
       "tr": {
@@ -2467,116 +2247,6 @@
           }
         ],
         "example": "يُستخدم هذا الأمر لفحص Interface Description. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
-  "vlan-port-membership": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "Access ve trunk portların VLAN üyeliklerini kontrol eder."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect vlan port membership. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect vlan port membership. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Vlan Port Membership. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Vlan Port Membership. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
-  "stp-root-bridge": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "Root bridge kimliğini ve root port yolunu doğrular."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect stp root bridge. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect stp root bridge. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Stp Root Bridge. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Stp Root Bridge. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
         "mistakes": [
           "تنفيذ الأمر في وضع CLI غير صحيح.",
           "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
@@ -4069,61 +3739,6 @@
       }
     }
   },
-  "bgp-ozet": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "BGP komşularının oturum durumunu ve prefix sayaçlarını kontrol eder."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect bgp ozet. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect bgp ozet. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Bgp Ozet. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Bgp Ozet. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
   "bgp-komsu-detay": {
     "details": {
       "tr": {
@@ -4399,61 +4014,6 @@
       }
     }
   },
-  "poe-durum": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "PoE portlarının güç tüketimini ve besleme durumunu gösterir."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect poe durum. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect poe durum. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Poe Durum. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Poe Durum. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
   "transceiver-detay": {
     "details": {
       "tr": {
@@ -4564,61 +4124,6 @@
       }
     }
   },
-  "cpu-processes": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "CPU tüketen süreçleri tespit etmeye yardımcı olur."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect cpu processes. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect cpu processes. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Cpu Processes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Cpu Processes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
   "memory-usage": {
     "details": {
       "tr": {
@@ -4667,226 +4172,6 @@
           }
         ],
         "example": "يُستخدم هذا الأمر لفحص Memory Usage. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
-  "ntp-status": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "Saat sunucusu eşitleme ve senkronizasyon durumunu gösterir."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect ntp status. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect ntp status. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Ntp Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Ntp Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
-  "ntp-associations": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "NTP peer/server seçim ve erişim durumunu listeler."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect ntp associations. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect ntp associations. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Ntp Associations. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Ntp Associations. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
-  "dhcp-snooping-status": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "DHCP Snooping etkinliğini ve VLAN kapsamını kontrol eder."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect dhcp snooping status. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect dhcp snooping status. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Dhcp Snooping Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Dhcp Snooping Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
-  "dhcp-snooping-bindings": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "IP, MAC, VLAN ve port eşleşmelerini listeler."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect dhcp snooping bindings. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect dhcp snooping bindings. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Dhcp Snooping Bindings. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Dhcp Snooping Bindings. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
         "mistakes": [
           "تنفيذ الأمر في وضع CLI غير صحيح.",
           "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
@@ -5114,61 +4399,6 @@
       }
     }
   },
-  "logging-buffer": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "Amaç",
-            "d": "Cihazın belleğinde tutulan sistem mesajlarını inceler."
-          },
-          {
-            "p": "Platform",
-            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
-          }
-        ],
-        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
-        "mistakes": [
-          "Yanlış CLI görünümünde çalıştırmak.",
-          "Tek çıktıyı kesin arıza kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "Purpose",
-            "d": "Use this command to inspect logging buffer. Verify syntax and availability on the target vendor, model, and software release."
-          },
-          {
-            "p": "Platform",
-            "d": "Confirm command support for the target model and software release."
-          }
-        ],
-        "example": "Use this command to inspect logging buffer. Verify syntax and availability on the target vendor, model, and software release.",
-        "mistakes": [
-          "Running the command in the wrong CLI mode.",
-          "Treating one output as definitive proof of a fault."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "الغرض",
-            "d": "يُستخدم هذا الأمر لفحص Logging Buffer. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
-          },
-          {
-            "p": "المنصة",
-            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
-          }
-        ],
-        "example": "يُستخدم هذا الأمر لفحص Logging Buffer. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
-        "mistakes": [
-          "تنفيذ الأمر في وضع CLI غير صحيح.",
-          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
-        ]
-      }
-    }
-  },
   "errdisable-ports": {
     "details": {
       "tr": {
@@ -5279,7 +4509,447 @@
       }
     }
   },
-  "storm-control-status": {
+  "bgp-session-summary-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "BGP komşularının oturum durumunu ve prefix sayaçlarını kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect bgp ozet. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect bgp ozet. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Bgp Ozet. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Bgp Ozet. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "poe-port-power-state": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "PoE portlarının güç tüketimini ve besleme durumunu gösterir."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect poe durum. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect poe durum. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Poe Durum. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Poe Durum. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "cpu-process-top-consumption": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "CPU tüketen süreçleri tespit etmeye yardımcı olur."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect cpu processes. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect cpu processes. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Cpu Processes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Cpu Processes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "ntp-clock-sync-state": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Saat sunucusu eşitleme ve senkronizasyon durumunu gösterir."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect ntp status. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect ntp status. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Ntp Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Ntp Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "ntp-peer-list-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "NTP peer/server seçim ve erişim durumunu listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect ntp associations. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect ntp associations. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Ntp Associations. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Ntp Associations. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "dhcp-snooping-feature-state": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "DHCP Snooping etkinliğini ve VLAN kapsamını kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect dhcp snooping status. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect dhcp snooping status. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Dhcp Snooping Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Dhcp Snooping Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "dhcp-snooping-ip-mac-bindings": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "IP, MAC, VLAN ve port eşleşmelerini listeler."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect dhcp snooping bindings. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect dhcp snooping bindings. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Dhcp Snooping Bindings. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Dhcp Snooping Bindings. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "system-local-log-buffer": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Cihazın belleğinde tutulan sistem mesajlarını inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect logging buffer. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect logging buffer. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Logging Buffer. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Logging Buffer. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "storm-control-thresholds": {
     "details": {
       "tr": {
         "params": [
@@ -5327,6 +4997,336 @@
           }
         ],
         "example": "يُستخدم هذا الأمر لفحص Storm Control Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "bgp-peer-advertisement-table": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Belirtilen komşuya gönderilen BGP prefix listesini inceler."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect bgp advertised routes. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect bgp advertised routes. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Bgp Advertised Routes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Bgp Advertised Routes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "pim-multicast-peer-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Multicast yönlendirme için PIM komşuluklarını kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect pim neighbors. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect pim neighbors. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Pim Neighbors. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Pim Neighbors. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "chassis-fan-module-state": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect fan status. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect fan status. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Fan Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Fan Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "chassis-power-supply-health": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "PSU modüllerinin varlık ve çalışma durumunu kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect power supply status. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect power supply status. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Power Supply Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Power Supply Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "switchport-vlan-membership": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Access ve trunk portların VLAN üyeliklerini kontrol eder."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect vlan port membership. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect vlan port membership. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Vlan Port Membership. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Vlan Port Membership. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
+        "mistakes": [
+          "تنفيذ الأمر في وضع CLI غير صحيح.",
+          "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
+        ]
+      }
+    }
+  },
+  "spanning-tree-root-bridge-id": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "Amaç",
+            "d": "Root bridge kimliğini ve root port yolunu doğrular."
+          },
+          {
+            "p": "Platform",
+            "d": "Sözdizimini üretici, model ve yazılım sürümünde doğrulayın."
+          }
+        ],
+        "example": "Komutu salt okunur modda çalıştırın ve çıktıyı topolojiyle karşılaştırın.",
+        "mistakes": [
+          "Yanlış CLI görünümünde çalıştırmak.",
+          "Tek çıktıyı kesin arıza kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "Purpose",
+            "d": "Use this command to inspect stp root bridge. Verify syntax and availability on the target vendor, model, and software release."
+          },
+          {
+            "p": "Platform",
+            "d": "Confirm command support for the target model and software release."
+          }
+        ],
+        "example": "Use this command to inspect stp root bridge. Verify syntax and availability on the target vendor, model, and software release.",
+        "mistakes": [
+          "Running the command in the wrong CLI mode.",
+          "Treating one output as definitive proof of a fault."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الغرض",
+            "d": "يُستخدم هذا الأمر لفحص Stp Root Bridge. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+          },
+          {
+            "p": "المنصة",
+            "d": "تحقق من دعم الأمر للطراز وإصدار البرنامج المستهدف."
+          }
+        ],
+        "example": "يُستخدم هذا الأمر لفحص Stp Root Bridge. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف.",
         "mistakes": [
           "تنفيذ الأمر في وضع CLI غير صحيح.",
           "اعتبار نتيجة واحدة دليلاً قاطعاً على وجود عطل."
