@@ -1,0 +1,4972 @@
+{
+  "if-errors": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show interfaces extensive"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface print stats"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Arayüz hata sayaçlarını inceleyerek CRC, input error ve drop artışını fiziksel katman sorunlarından ayırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Arayüz hata sayaçlarını inceleyerek CRC, input error ve drop artışını fiziksel katman sorunlarından ayırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "if-transceiver": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show interfaces diagnostics optics"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface ethernet monitor sfp1 once"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Optik modülün sıcaklık, Tx/Rx güç ve alarm değerlerini kontrol edin; eşik değerleri modüle göre değişir. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Optik modülün sıcaklık, Tx/Rx güç ve alarm değerlerini kontrol edin; eşik değerleri modüle göre değişir. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "if-description": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show interfaces descriptions"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface print detail"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Port açıklamalarını envanter ve kablolama kayıtlarıyla karşılaştırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Port açıklamalarını envanter ve kablolama kayıtlarıyla karşılaştırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "if-flap-log": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show log messages | match link"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/log print where message~\"link\""
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Link up/down olaylarını zaman damgasıyla inceleyip kablo, SFP veya karşı uç kaynaklı kesintileri ayırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Link up/down olaylarını zaman damgasıyla inceleyip kablo, SFP veya karşı uç kaynaklı kesintileri ayırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "if-mtu": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show interfaces extensive"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface print detail"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "MTU uyuşmazlıkları parçalanma veya paket kaybı oluşturabilir; iki uçtaki L2/L3 MTU değerlerini karşılaştırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "MTU uyuşmazlıkları parçalanma veya paket kaybı oluşturabilir; iki uçtaki L2/L3 MTU değerlerini karşılaştırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "if-queue": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show interfaces queue"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/queue tree print stats"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Kuyruk drop ve discard sayaçları tıkanıklık veya QoS sınıflandırma sorunlarını gösterebilir. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Kuyruk drop ve discard sayaçları tıkanıklık veya QoS sınıflandırma sorunlarını gösterebilir. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "vlan-members": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show vlans vlan-id 20"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface bridge vlan print where vlan-ids=20"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Belirli VLAN'a hangi access ve trunk portlarının dahil olduğunu doğrulayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Belirli VLAN'a hangi access ve trunk portlarının dahil olduğunu doğrulayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "vlan-interfaces": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show interfaces terse | match vlan"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface vlan print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "SVI veya VLANIF arayüzlerinin IP ve protokol durumunu kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "SVI veya VLANIF arayüzlerinin IP ve protokol durumunu kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "trunk-detail": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show ethernet-switching interfaces"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface bridge port print detail"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Trunk üzerinde taşınan VLAN listesini iki uçta karşılaştırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Trunk üzerinde taşınan VLAN listesini iki uçta karşılaştırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "stp-blocked": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show spanning-tree interface"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface bridge port print detail"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Forwarding olmayan portların STP rol ve durumunu kontrol edin; bloklanma döngü önleme amacıyla normal olabilir. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Forwarding olmayan portların STP rol ve durumunu kontrol edin; bloklanma döngü önleme amacıyla normal olabilir. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "stp-root": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show spanning-tree bridge"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface bridge monitor bridge1 once"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Tüm switchlerde root bridge ID değerini karşılaştırarak beklenmeyen root seçimini tespit edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Tüm switchlerde root bridge ID değerini karşılaştırarak beklenmeyen root seçimini tespit edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "stp-tcn": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show spanning-tree statistics"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface bridge monitor bridge1 once"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Sık topology change olayları MAC tablosunun yenilenmesine ve geçici flooding'e neden olabilir. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Sık topology change olayları MAC tablosunun yenilenmesine ve geçici flooding'e neden olabilir. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "lacp-neighbor": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show lacp interfaces extensive"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface bonding monitor bond1 once"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "LACP actor/partner durumunu ve bundle'a katılan fiziksel portları karşılaştırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "LACP actor/partner durumunu ve bundle'a katılan fiziksel portları karşılaştırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "lldp-detail": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show lldp neighbors detail"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip neighbor print detail"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Komşu cihaz adı, port ID ve sistem açıklamasını kablolama envanteriyle eşleştirin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Komşu cihaz adı, port ID ve sistem açıklamasını kablolama envanteriyle eşleştirin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "mac-dynamic": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show ethernet-switching table"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface bridge host print where dynamic"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Dinamik öğrenilen MAC kayıtlarını görüntüleyerek cihazın hangi portta öğrenildiğini bulun. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Dinamik öğrenilen MAC kayıtlarını görüntüleyerek cihazın hangi portta öğrenildiğini bulun. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "mac-move": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show log messages | match MAC"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/log print where message~\"host\""
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Aynı MAC'in portlar arasında sık hareket etmesi loop, kablo veya çift bağlantı belirtisi olabilir. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Aynı MAC'in portlar arasında sık hareket etmesi loop, kablo veya çift bağlantı belirtisi olabilir. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "arp-static": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show arp no-resolve"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip arp print where dynamic=no"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Statik ARP kayıtlarını envanter ve IP planıyla karşılaştırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Statik ARP kayıtlarını envanter ve IP planıyla karşılaştırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "route-static": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show route protocol static"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip route print where static"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Statik rotaların next-hop ve administrative distance değerlerini inceleyin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Statik rotaların next-hop ve administrative distance değerlerini inceleyin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "route-default": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show route 0.0.0.0/0"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip route print where dst-address=0.0.0.0/0"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Default route'un varlığını, next-hop erişilebilirliğini ve aktiflik durumunu doğrulayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Default route'un varlığını, next-hop erişilebilirliğini ve aktiflik durumunu doğrulayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "ospf-neighbor": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show ospf neighbor"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/routing ospf neighbor print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Komşuluk FULL değilse area, timer, MTU, authentication ve network type değerlerini karşılaştırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Komşuluk FULL değilse area, timer, MTU, authentication ve network type değerlerini karşılaştırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "ospf-interface": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show ospf interface"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/routing ospf interface print detail"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Hello/dead timer, area, cost ve network type değerlerini inceleyin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Hello/dead timer, area, cost ve network type değerlerini inceleyin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "ospf-database": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show ospf database summary"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/routing ospf lsa print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Link-state database içindeki LSA türleri ve yaşlarını karşılaştırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Link-state database içindeki LSA türleri ve yaşlarını karşılaştırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "bgp-summary": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show bgp summary"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/routing bgp session print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "BGP peer state, prefix sayısı ve uptime bilgilerini kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "BGP peer state, prefix sayısı ve uptime bilgilerini kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "bgp-routes": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show route protocol bgp"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/routing bgp route print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "BGP RIB içindeki prefix, next-hop, local preference ve AS path bilgilerini inceleyin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "BGP RIB içindeki prefix, next-hop, local preference ve AS path bilgilerini inceleyin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "bgp-advertised": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show route advertising-protocol bgp 192.0.2.2"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/routing bgp advertisements print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Komşuya gönderilen prefixleri outbound policy ve prefix-list ile birlikte doğrulayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Komşuya gönderilen prefixleri outbound policy ve prefix-list ile birlikte doğrulayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "bgp-received": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show route receive-protocol bgp 192.0.2.2"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/routing bgp session print detail"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Alınan rotaları import policy sonrası kabul edilen rotalarla karıştırmayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Alınan rotaları import policy sonrası kabul edilen rotalarla karıştırmayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "ipv6-route": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show route table inet6.0"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ipv6 route print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "IPv6 prefix ve next-hop kayıtlarının beklenen çıkış arayüzünü kullandığını doğrulayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "IPv6 prefix ve next-hop kayıtlarının beklenen çıkış arayüzünü kullandığını doğrulayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "ipv6-neighbor": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show ipv6 neighbors"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ipv6 neighbor print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Neighbor Discovery kayıtlarını inceleyerek IPv6 adres-MAC eşleşmesini kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Neighbor Discovery kayıtlarını inceleyerek IPv6 adres-MAC eşleşmesini kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "acl-list": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show firewall"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip firewall filter print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "ACL sırasını, eşleşme sayaçlarını ve implicit deny davranışını birlikte değerlendirin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "ACL sırasını, eşleşme sayaçlarını ve implicit deny davranışını birlikte değerlendirin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "acl-counters": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show firewall filter"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip firewall filter print stats"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Hit counter değerleri kuralın trafikle eşleşip eşleşmediğini gösterir; sayaç sıfırlama davranışı platforma göre değişir. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Hit counter değerleri kuralın trafikle eşleşip eşleşmediğini gösterir; sayaç sıfırlama davranışı platforma göre değişir. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "nat-translations": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show security nat source rule all"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip firewall connection print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "İç/dış adres ve port eşleşmelerini inceleyerek NAT dönüşümünü doğrulayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "İç/dış adres ve port eşleşmelerini inceleyerek NAT dönüşümünü doğrulayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "cpu-process": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show system processes extensive"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/system resource print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "CPU yüksekse en çok kaynak tüketen süreçleri ve artış zamanını birlikte inceleyin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "CPU yüksekse en çok kaynak tüketen süreçleri ve artış zamanını birlikte inceleyin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "memory-detail": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show system memory"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/system resource print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Kullanılan ve boş bellek değerlerini trend ile değerlendirin; tek anlık ölçüm yeterli değildir. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Kullanılan ve boş bellek değerlerini trend ile değerlendirin; tek anlık ölçüm yeterli değildir. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "environment": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show chassis environment"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/system health print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Fan, PSU ve sıcaklık alarmlarını cihaz modelinin üretici eşikleriyle karşılaştırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Fan, PSU ve sıcaklık alarmlarını cihaz modelinin üretici eşikleriyle karşılaştırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "logging-buffer": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show log messages"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/log print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Sistem olaylarını zaman damgası, seviye ve kaynak alanlarıyla filtreleyin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Sistem olaylarını zaman damgası, seviye ve kaynak alanlarıyla filtreleyin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "ntp-status": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show ntp associations"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/system ntp client print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Saat senkronizasyonu log korelasyonu, sertifika ve AAA süreçleri için kritiktir. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Saat senkronizasyonu log korelasyonu, sertifika ve AAA süreçleri için kritiktir. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "snmp-status": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show snmp statistics"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/snmp print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "SNMP sürümünü ve erişim kapsamını kontrol edin; v1/v2c community değerlerini açıkta paylaşmayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "SNMP sürümünü ve erişim kapsamını kontrol edin; v1/v2c community değerlerini açıkta paylaşmayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "poe-status": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show poe controller"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface ethernet poe print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Port başına güç tüketimini ve toplam PoE bütçesini kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Port başına güç tüketimini ve toplam PoE bütçesini kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "stack-status": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show virtual-chassis status"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/system resource print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Stack üyelerinin rol, durum ve yazılım sürümlerinin uyumunu doğrulayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Stack üyelerinin rol, durum ve yazılım sürümlerinin uyumunu doğrulayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "ssh-status": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show system services"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip ssh print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "SSH sürümü, portu ve yönetim erişim politikasını kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "SSH sürümü, portu ve yönetim erişim politikasını kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "radius-status": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show access profile"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/radius print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Sunucu adresi, port, timeout ve kaynak arayüz bilgilerini doğrulayın; shared secret değerini loglamayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Sunucu adresi, port, timeout ve kaynak arayüz bilgilerini doğrulayın; shared secret değerini loglamayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "dot1x-sessions": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show dot1x interface"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface dot1x server print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "İstemcinin authenticated/unauthorized durumunu, VLAN atamasını ve RADIUS sonucunu inceleyin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "İstemcinin authenticated/unauthorized durumunu, VLAN atamasını ve RADIUS sonucunu inceleyin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "storm-status": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show ethernet-switching-options storm-control"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface bridge port print detail"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Broadcast, multicast ve unknown-unicast eşiklerini port rolüne göre inceleyin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Broadcast, multicast ve unknown-unicast eşiklerini port rolüne göre inceleyin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "qos-policy": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show class-of-service interface"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/queue tree print stats"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "QoS politikasının doğru arayüz ve yönde uygulandığını doğrulayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "QoS politikasının doğru arayüz ve yönde uygulandığını doğrulayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "qos-counters": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show class-of-service scheduler-map"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/queue tree print stats"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Sınıf bazında paket, byte ve drop sayaçlarını karşılaştırarak sınıflandırma sorunlarını bulun. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Sınıf bazında paket, byte ve drop sayaçlarını karşılaştırarak sınıflandırma sorunlarını bulun. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "igmp-groups": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show igmp group"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/routing igmp-proxy interface print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Multicast alıcılarının beklenen VLAN ve arayüzlerde üyelik oluşturduğunu doğrulayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Multicast alıcılarının beklenen VLAN ve arayüzlerde üyelik oluşturduğunu doğrulayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "pim-neighbor": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show pim neighbors"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/routing pim neighbor print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "PIM komşuluğunun beklenen L3 arayüzlerinde kurulduğunu kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "PIM komşuluğunun beklenen L3 arayüzlerinde kurulduğunu kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "ipsec-sa": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show security ipsec security-associations"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip ipsec installed-sa print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "IKE oturumu ile IPsec SA durumunu ayrı değerlendirin; paket sayaçlarının artmasını kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "IKE oturumu ile IPsec SA durumunu ayrı değerlendirin; paket sayaçlarının artmasını kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "vpn-ike": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show security ike security-associations"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip ipsec active-peers print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "IKE phase 1 durumunu, kimlik doğrulama ve proposal uyuşmasını kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "IKE phase 1 durumunu, kimlik doğrulama ve proposal uyuşmasını kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "certificates": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show security pki local-certificate"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/certificate print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Sertifika zinciri, geçerlilik tarihi ve kullanım amacını kontrol edin; özel anahtarı dışa aktarmayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Sertifika zinciri, geçerlilik tarihi ve kullanım amacını kontrol edin; özel anahtarı dışa aktarmayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "users-active": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show system users"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/user active print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Aktif CLI oturumlarını ve kaynak IP adreslerini denetim kayıtlarıyla karşılaştırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Aktif CLI oturumlarını ve kaynak IP adreslerini denetim kayıtlarıyla karşılaştırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "config-startup": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show system configuration"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/export"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Çalışan yapılandırma ile kayıtlı yapılandırmanın farklı olabileceğini unutmayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Çalışan yapılandırma ile kayıtlı yapılandırmanın farklı olabileceğini unutmayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "config-compare": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show system rollback compare 0 1"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/export"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Değişiklikleri kaydetmeden önce farkları inceleyin; platformların karşılaştırma komutları farklılık gösterir. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Değişiklikleri kaydetmeden önce farkları inceleyin; platformların karşılaştırma komutları farklılık gösterir. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "license-status": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show system license"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/system license print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Lisans durumunu ve özellik yetkilerini cihaz modeli ve yazılım sürümüyle birlikte doğrulayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Lisans durumunu ve özellik yetkilerini cihaz modeli ve yazılım sürümüyle birlikte doğrulayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "firmware-version": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show system storage"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/system package print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Aktif ve sonraki açılışta kullanılacak imajı bakım öncesinde doğrulayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Aktif ve sonraki açılışta kullanılacak imajı bakım öncesinde doğrulayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "flash-files": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show interfaces extensive"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/file print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Depolama alanı ve eski imaj dosyalarını inceleyin; silme işlemi öncesinde aktif imajı doğrulayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Depolama alanı ve eski imaj dosyalarını inceleyin; silme işlemi öncesinde aktif imajı doğrulayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "lldp-local": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show lldp local-information"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/system identity print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Cihazın LLDP ile ilan ettiği sistem adı, açıklama ve yetenek bilgilerini kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Cihazın LLDP ile ilan ettiği sistem adı, açıklama ve yetenek bilgilerini kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "interface-counters": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show interfaces extensive"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface print stats"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Giriş/çıkış paket ve byte sayaçlarını örnek aralıklarla karşılaştırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Giriş/çıkış paket ve byte sayaçlarını örnek aralıklarla karşılaştırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "interface-speed": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show interfaces media"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface ethernet monitor ether1 once"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Speed/duplex uyuşmazlığı ve beklenmeyen autonegotiation durumlarını kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Speed/duplex uyuşmazlığı ve beklenmeyen autonegotiation durumlarını kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "vlan-summary": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show vlans"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface bridge vlan print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "VLAN ID, ad ve aktif port özetini envanterle karşılaştırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "VLAN ID, ad ve aktif port özetini envanterle karşılaştırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "mac-table-count": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show ethernet-switching table summary"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface bridge host print count-only"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "MAC tablosu kapasitesi ve öğrenilen kayıt sayısını izleyin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "MAC tablosu kapasitesi ve öğrenilen kayıt sayısını izleyin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "arp-count": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show arp summary"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip arp print count-only"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "ARP kayıt sayısındaki ani artışları subnet büyüklüğü ve cihaz rolüyle karşılaştırın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "ARP kayıt sayısındaki ani artışları subnet büyüklüğü ve cihaz rolüyle karşılaştırın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "bgp-community": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show route community 65000:100"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/routing bgp route print where bgp-communities~\"65000:100\""
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Community tabanlı rota sınıflandırmasını policy ve route çıktısıyla doğrulayın. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Community tabanlı rota sınıflandırmasını policy ve route çıktısıyla doğrulayın. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "ospf-route": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show route protocol ospf"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip route print where ospf"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "OSPF kaynaklı rotaların next-hop ve metric değerlerini inceleyin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "OSPF kaynaklı rotaların next-hop ve metric değerlerini inceleyin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "ipv6-interface": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show interfaces terse family inet6"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ipv6 address print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Global, link-local ve durum bilgilerini arayüz bazında kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Global, link-local ve durum bilgilerini arayüz bazında kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "firewall-sessions": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show security flow session summary"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/ip firewall connection print count-only"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Aktif oturum sayısını ve kaynak-hedef dağılımını kapasite takibi için inceleyin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Aktif oturum sayısını ve kaynak-hedef dağılımını kapasite takibi için inceleyin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "ntp-associations": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show ntp associations"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/system ntp client servers print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Seçili NTP peer, reachability ve offset değerlerini kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Seçili NTP peer, reachability ve offset değerlerini kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "snmp-traps": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show configuration snmp"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/snmp print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Trap hedef adresi ve sürümünü NMS envanteriyle eşleştirin; community/credential bilgisini gizli tutun. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Trap hedef adresi ve sürümünü NMS envanteriyle eşleştirin; community/credential bilgisini gizli tutun. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "poe-budget": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show poe controller"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/interface ethernet poe print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Toplam güç bütçesi ile anlık tüketimi karşılaştırarak yeni AP/telefon kapasitesini değerlendirin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Toplam güç bütçesi ile anlık tüketimi karşılaştırarak yeni AP/telefon kapasitesini değerlendirin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "stack-ports": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show virtual-chassis vc-port"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/system resource print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Stack ring veya chain bağlantı durumunu ve port hatalarını kontrol edin. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Stack ring veya chain bağlantı durumunu ve port hatalarını kontrol edin. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  },
+  "aaa-methods": {
+    "juniper": {
+      "mode": "Operational mode",
+      "cmds": [
+        "show configuration system authentication-order"
+      ]
+    },
+    "mikrotik": {
+      "mode": "RouterOS terminal",
+      "cmds": [
+        "/user aaa print"
+      ]
+    },
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Komutun döndürdüğü durum, sayaç ve yapılandırma alanlarını inceleyin."
+          },
+          {
+            "p": "filtre",
+            "d": "Gerektiğinde arayüz, VLAN, adres veya komşu değerine göre kapsamı daraltın."
+          }
+        ],
+        "example": "Kimlik doğrulama sırasını ve yerel fallback davranışını kontrol edin; uzaktan erişim değişikliklerinde konsol erişimini koruyun. Çıktıyı karşı uç ve izleme sistemi verileriyle karşılaştırın.",
+        "mistakes": [
+          "Tek seferlik çıktıyı trend olarak yorumlamak.",
+          "Platform ve yazılım sürümü farklarını göz ardı etmek.",
+          "Sayaçları zaman aralığı olmadan karşılaştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect the status, counter and configuration fields returned by the command."
+          },
+          {
+            "p": "filter",
+            "d": "Narrow the scope by interface, VLAN, address or neighbor when needed."
+          }
+        ],
+        "example": "Kimlik doğrulama sırasını ve yerel fallback davranışını kontrol edin; uzaktan erişim değişikliklerinde konsol erişimini koruyun. Compare the output with the peer device and monitoring data.",
+        "mistakes": [
+          "Treating a single snapshot as a trend.",
+          "Ignoring platform and software-version differences.",
+          "Comparing counters without a time interval."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص حقول الحالة والعدادات والإعدادات التي يعرضها الأمر."
+          },
+          {
+            "p": "عامل التصفية",
+            "d": "ضيّق النطاق حسب الواجهة أو VLAN أو العنوان أو الجار عند الحاجة."
+          }
+        ],
+        "example": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة.",
+        "mistakes": [
+          "اعتبار قراءة واحدة اتجاهًا زمنيًا.",
+          "تجاهل اختلاف المنصة وإصدار البرنامج.",
+          "مقارنة العدادات دون تحديد فترة زمنية."
+        ]
+      }
+    }
+  }
+}
