@@ -1,493 +1,5 @@
 [
   {
-    "slug": "vlan-listeleme-audit",
-    "title": "VLAN listesini görüntüleme (Denetim)",
-    "cat": "Görüntüleme",
-    "note": "Huawei VRP'de display komutları system-view içinde de çalışır; Cisco'daki 'do' öneki gerekmez. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show vlan brief"
-      ]
-    },
-    "huawei": {
-      "mode": "User view / System view",
-      "cmds": [
-        "display vlan"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show vlan"
-      ]
-    }
-  },
-  {
-    "slug": "vlan-listeleme-troubleshooting",
-    "title": "VLAN listesini görüntüleme (Sorun giderme)",
-    "cat": "Görüntüleme",
-    "note": "Huawei VRP'de display komutları system-view içinde de çalışır; Cisco'daki 'do' öneki gerekmez. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show vlan brief"
-      ]
-    },
-    "huawei": {
-      "mode": "User view / System view",
-      "cmds": [
-        "display vlan"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show vlan"
-      ]
-    }
-  },
-  {
-    "slug": "vlan-listeleme-verification",
-    "title": "VLAN listesini görüntüleme (Doğrulama)",
-    "cat": "Görüntüleme",
-    "note": "Huawei VRP'de display komutları system-view içinde de çalışır; Cisco'daki 'do' öneki gerekmez. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show vlan brief"
-      ]
-    },
-    "huawei": {
-      "mode": "User view / System view",
-      "cmds": [
-        "display vlan"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show vlan"
-      ]
-    }
-  },
-  {
-    "slug": "vlan-listeleme-baseline",
-    "title": "VLAN listesini görüntüleme (Referans kontrolü)",
-    "cat": "Görüntüleme",
-    "note": "Huawei VRP'de display komutları system-view içinde de çalışır; Cisco'daki 'do' öneki gerekmez. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show vlan brief"
-      ]
-    },
-    "huawei": {
-      "mode": "User view / System view",
-      "cmds": [
-        "display vlan"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show vlan"
-      ]
-    }
-  },
-  {
-    "slug": "arayuz-ip-ozeti-audit",
-    "title": "Arayüz IP özeti (Denetim)",
-    "cat": "Görüntüleme",
-    "note": "Üç platformda da çıktı arayüz adı, IP ve durum (up/down) kolonlarını içerir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface brief"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface brief"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip interface brief"
-      ]
-    }
-  },
-  {
-    "slug": "arayuz-ip-ozeti-troubleshooting",
-    "title": "Arayüz IP özeti (Sorun giderme)",
-    "cat": "Görüntüleme",
-    "note": "Üç platformda da çıktı arayüz adı, IP ve durum (up/down) kolonlarını içerir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface brief"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface brief"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip interface brief"
-      ]
-    }
-  },
-  {
-    "slug": "arayuz-ip-ozeti-verification",
-    "title": "Arayüz IP özeti (Doğrulama)",
-    "cat": "Görüntüleme",
-    "note": "Üç platformda da çıktı arayüz adı, IP ve durum (up/down) kolonlarını içerir. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface brief"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface brief"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip interface brief"
-      ]
-    }
-  },
-  {
-    "slug": "arayuz-ip-ozeti-baseline",
-    "title": "Arayüz IP özeti (Referans kontrolü)",
-    "cat": "Görüntüleme",
-    "note": "Üç platformda da çıktı arayüz adı, IP ve durum (up/down) kolonlarını içerir. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip interface brief"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip interface brief"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip interface brief"
-      ]
-    }
-  },
-  {
-    "slug": "calisan-konfigurasyon-audit",
-    "title": "Çalışan konfigürasyonu görüntüleme (Denetim)",
-    "cat": "Görüntüleme",
-    "note": "Huawei'de kayıtlı konfigürasyon için 'display saved-configuration' kullanılır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show running-config"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display current-configuration"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show running-config"
-      ]
-    }
-  },
-  {
-    "slug": "calisan-konfigurasyon-troubleshooting",
-    "title": "Çalışan konfigürasyonu görüntüleme (Sorun giderme)",
-    "cat": "Görüntüleme",
-    "note": "Huawei'de kayıtlı konfigürasyon için 'display saved-configuration' kullanılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show running-config"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display current-configuration"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show running-config"
-      ]
-    }
-  },
-  {
-    "slug": "calisan-konfigurasyon-verification",
-    "title": "Çalışan konfigürasyonu görüntüleme (Doğrulama)",
-    "cat": "Görüntüleme",
-    "note": "Huawei'de kayıtlı konfigürasyon için 'display saved-configuration' kullanılır. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show running-config"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display current-configuration"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show running-config"
-      ]
-    }
-  },
-  {
-    "slug": "calisan-konfigurasyon-baseline",
-    "title": "Çalışan konfigürasyonu görüntüleme (Referans kontrolü)",
-    "cat": "Görüntüleme",
-    "note": "Huawei'de kayıtlı konfigürasyon için 'display saved-configuration' kullanılır. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show running-config"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display current-configuration"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show running-config"
-      ]
-    }
-  },
-  {
-    "slug": "konfigurasyon-kaydetme-audit",
-    "title": "Konfigürasyonu kaydetme (Denetim)",
-    "cat": "Sistem",
-    "note": "Huawei'de 'save' onay (Y/N) ister; otomasyonda (Netmiko) bu prompt ayrıca ele alınmalıdır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "write memory",
-        "! veya",
-        "copy running-config startup-config"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "save"
-      ]
-    },
-    "aruba": {
-      "mode": "Manager",
-      "cmds": [
-        "write memory"
-      ]
-    }
-  },
-  {
-    "slug": "konfigurasyon-kaydetme-troubleshooting",
-    "title": "Konfigürasyonu kaydetme (Sorun giderme)",
-    "cat": "Sistem",
-    "note": "Huawei'de 'save' onay (Y/N) ister; otomasyonda (Netmiko) bu prompt ayrıca ele alınmalıdır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "write memory",
-        "! veya",
-        "copy running-config startup-config"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "save"
-      ]
-    },
-    "aruba": {
-      "mode": "Manager",
-      "cmds": [
-        "write memory"
-      ]
-    }
-  },
-  {
-    "slug": "konfigurasyon-kaydetme-verification",
-    "title": "Konfigürasyonu kaydetme (Doğrulama)",
-    "cat": "Sistem",
-    "note": "Huawei'de 'save' onay (Y/N) ister; otomasyonda (Netmiko) bu prompt ayrıca ele alınmalıdır. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "write memory",
-        "! veya",
-        "copy running-config startup-config"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "save"
-      ]
-    },
-    "aruba": {
-      "mode": "Manager",
-      "cmds": [
-        "write memory"
-      ]
-    }
-  },
-  {
-    "slug": "konfigurasyon-kaydetme-baseline",
-    "title": "Konfigürasyonu kaydetme (Referans kontrolü)",
-    "cat": "Sistem",
-    "note": "Huawei'de 'save' onay (Y/N) ister; otomasyonda (Netmiko) bu prompt ayrıca ele alınmalıdır. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "write memory",
-        "! veya",
-        "copy running-config startup-config"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "save"
-      ]
-    },
-    "aruba": {
-      "mode": "Manager",
-      "cmds": [
-        "write memory"
-      ]
-    }
-  },
-  {
-    "slug": "mac-adres-tablosu-audit",
-    "title": "MAC adres tablosunu görüntüleme (Denetim)",
-    "cat": "Görüntüleme",
-    "note": "Belirli bir MAC için Cisco'da 'address <mac>', Huawei'de 'display mac-address <mac>' kullanılır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show mac address-table"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display mac-address"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show mac-address-table"
-      ]
-    }
-  },
-  {
-    "slug": "mac-adres-tablosu-troubleshooting",
-    "title": "MAC adres tablosunu görüntüleme (Sorun giderme)",
-    "cat": "Görüntüleme",
-    "note": "Belirli bir MAC için Cisco'da 'address <mac>', Huawei'de 'display mac-address <mac>' kullanılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show mac address-table"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display mac-address"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show mac-address-table"
-      ]
-    }
-  },
-  {
-    "slug": "mac-adres-tablosu-verification",
-    "title": "MAC adres tablosunu görüntüleme (Doğrulama)",
-    "cat": "Görüntüleme",
-    "note": "Belirli bir MAC için Cisco'da 'address <mac>', Huawei'de 'display mac-address <mac>' kullanılır. Değişiklik öncesi/sonrası durumu doğrulamak için kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show mac address-table"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display mac-address"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show mac-address-table"
-      ]
-    }
-  },
-  {
-    "slug": "mac-adres-tablosu-baseline",
-    "title": "MAC adres tablosunu görüntüleme (Referans kontrolü)",
-    "cat": "Görüntüleme",
-    "note": "Belirli bir MAC için Cisco'da 'address <mac>', Huawei'de 'display mac-address <mac>' kullanılır. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show mac address-table"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display mac-address"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show mac-address-table"
-      ]
-    }
-  },
-  {
     "slug": "arp-tablosu-audit",
     "title": "ARP tablosunu görüntüleme (Denetim)",
     "cat": "Görüntüleme",
@@ -12192,6 +11704,486 @@
       "mode": "Operator / Manager",
       "cmds": [
         "show ip route vrf <VRF>"
+      ]
+    }
+  },
+  {
+    "slug": "syslog-server-list",
+    "title": "Syslog sunucularını görüntüleme",
+    "cat": "Sistem",
+    "note": "Uzak log hedeflerini ve yapılandırılmış seviyeleri kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display info-center"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging"
+      ]
+    }
+  },
+  {
+    "slug": "logging-buffer",
+    "title": "Yerel log tamponunu görüntüleme",
+    "cat": "Sistem",
+    "note": "Cihazın belleğinde tutulan sistem mesajlarını inceler.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging -r"
+      ]
+    }
+  },
+  {
+    "slug": "errdisable-ports",
+    "title": "Err-disabled portları görüntüleme",
+    "cat": "Sorun Giderme",
+    "note": "Güvenlik veya hata nedeniyle devre dışı kalan portları bulur.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces status err-disabled"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface brief"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief"
+      ]
+    }
+  },
+  {
+    "slug": "port-security-status",
+    "title": "Port security durumunu görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "Port güvenlik yapılandırmasını ve ihlal durumunu kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security"
+      ]
+    }
+  },
+  {
+    "slug": "storm-control-status",
+    "title": "Storm control yapılandırmasını görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "Broadcast, multicast ve unknown-unicast trafik sınırlarını kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control"
+      ]
+    }
+  },
+  {
+    "slug": "mac-move-events",
+    "title": "MAC adres hareket kayıtlarını görüntüleme",
+    "cat": "Sorun Giderme",
+    "note": "MAC adresinin portlar arasında taşınmasına ilişkin kayıtları inceler.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table notification mac-move"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address flapping record"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address"
+      ]
+    }
+  },
+  {
+    "slug": "arp-inspection-status",
+    "title": "Dynamic ARP Inspection durumunu görüntüleme",
+    "cat": "L2 Güvenlik",
+    "note": "DAI etkinliğini ve VLAN kapsamını kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp inspection"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp anti-attack"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp-protect"
+      ]
+    }
+  },
+  {
+    "slug": "port-channel-load-balance",
+    "title": "EtherChannel yük dağıtım algoritmasını görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "Port-channel trafik dağıtımında kullanılan hash yöntemini gösterir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show etherchannel load-balance"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display load-balance profile"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show trunks"
+      ]
+    }
+  },
+  {
+    "slug": "bgp-advertised-routes",
+    "title": "BGP komşusuna ilan edilen rotaları görüntüleme",
+    "cat": "Routing",
+    "note": "Belirtilen komşuya gönderilen BGP prefix listesini inceler.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors <IP> advertised-routes"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp routing-table peer <IP> advertised-routes"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors <IP> advertised-routes"
+      ]
+    }
+  },
+  {
+    "slug": "bgp-received-routes",
+    "title": "BGP komşusundan alınan rotaları görüntüleme",
+    "cat": "Routing",
+    "note": "Komşudan alınan BGP rotalarını ve politika etkisini incelemeye yarar.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors <IP> received-routes"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp routing-table peer <IP> received-routes"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp neighbors <IP> received-routes"
+      ]
+    }
+  },
+  {
+    "slug": "bfd-neighbor-session-state",
+    "title": "BFD komşu oturumlarını görüntüleme",
+    "cat": "Routing",
+    "note": "Hızlı arıza algılama oturumlarının durumunu listeler.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show bfd neighbors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bfd session all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show bfd"
+      ]
+    }
+  },
+  {
+    "slug": "multicast-routes",
+    "title": "IPv4 multicast yönlendirme tablosunu görüntüleme",
+    "cat": "Routing",
+    "note": "Multicast dağıtım ağacını ve ilgili upstream bilgilerini gösterir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip mroute"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display multicast routing-table"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip mroute"
+      ]
+    }
+  },
+  {
+    "slug": "pim-neighbors",
+    "title": "PIM komşularını görüntüleme",
+    "cat": "Routing",
+    "note": "Multicast yönlendirme için PIM komşuluklarını kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor"
+      ]
+    }
+  },
+  {
+    "slug": "fan-status",
+    "title": "Fan modüllerinin durumunu görüntüleme",
+    "cat": "Sistem",
+    "note": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show environment fan"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display fan"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system fans"
+      ]
+    }
+  },
+  {
+    "slug": "power-supply-status",
+    "title": "Güç kaynağı durumunu görüntüleme",
+    "cat": "Sistem",
+    "note": "PSU modüllerinin varlık ve çalışma durumunu kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show environment power"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display power"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system power-supply"
+      ]
+    }
+  },
+  {
+    "slug": "temperature-status",
+    "title": "Cihaz sıcaklık sensörlerini görüntüleme",
+    "cat": "Sistem",
+    "note": "Sıcaklık sensörlerini ve eşik/alarm değerlerini inceler.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show environment temperature"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display temperature"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system temperature"
+      ]
+    }
+  },
+  {
+    "slug": "stack-members",
+    "title": "Switch stack üyelerini görüntüleme",
+    "cat": "Sistem",
+    "note": "Stack üyelerinin rol, numara ve durum bilgilerini listeler.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show switch"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stack"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show stacking"
+      ]
+    }
+  },
+  {
+    "slug": "interface-description",
+    "title": "Arayüz açıklamalarını görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "Port açıklamalarını envanter ve kablolama kayıtlarıyla karşılaştırır.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief"
+      ]
+    }
+  },
+  {
+    "slug": "vlan-port-membership",
+    "title": "VLAN port üyeliklerini görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "Access ve trunk portların VLAN üyeliklerini kontrol eder.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces switchport"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port vlan"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlan ports"
+      ]
+    }
+  },
+  {
+    "slug": "stp-root-bridge",
+    "title": "STP root bridge bilgisini görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "Root bridge kimliğini ve root port yolunu doğrular.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree root"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree"
       ]
     }
   }
