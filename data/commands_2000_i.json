@@ -1,0 +1,1202 @@
+[
+  {
+    "slug": "ospf-komsu-durumu",
+    "title": "OSPF neighbor status",
+    "cat": "Routing",
+    "note": "OSPF neighbor status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf neighbor"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf peer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf neighbors"
+      ]
+    }
+  },
+  {
+    "slug": "ospf-interface-state",
+    "title": "OSPF interface summary",
+    "cat": "Routing",
+    "note": "OSPF interface summary. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ospf interface brief"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ospf interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ospf interface"
+      ]
+    }
+  },
+  {
+    "slug": "bgp-peer-capabilities",
+    "title": "BGP neighbor capabilities",
+    "cat": "Routing",
+    "note": "BGP neighbor capabilities. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer verbose"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show bgp neighbors"
+      ]
+    }
+  },
+  {
+    "slug": "bgp-rotalari",
+    "title": "BGP routing table",
+    "cat": "Routing",
+    "note": "BGP routing table. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp routing-table"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show bgp ipv4 unicast"
+      ]
+    }
+  },
+  {
+    "slug": "bfd-oturumlari",
+    "title": "BFD session status",
+    "cat": "Routing",
+    "note": "BFD session status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show bfd neighbors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bfd session all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show bfd"
+      ]
+    }
+  },
+  {
+    "slug": "vrf-listesi",
+    "title": "VRF list",
+    "cat": "Routing",
+    "note": "VRF list. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vrf"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip vpn-instance"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vrf"
+      ]
+    }
+  },
+  {
+    "slug": "ipv6-arayuzleri",
+    "title": "IPv6 interface summary",
+    "cat": "Görüntüleme",
+    "note": "IPv6 interface summary. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 interface brief"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 interface brief"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 interface brief"
+      ]
+    }
+  },
+  {
+    "slug": "ipv6-rotalari",
+    "title": "IPv6 routing table",
+    "cat": "Routing",
+    "note": "IPv6 routing table. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route"
+      ]
+    }
+  },
+  {
+    "slug": "ipv6-komsulari",
+    "title": "IPv6 neighbor table",
+    "cat": "Görüntüleme",
+    "note": "IPv6 neighbor table. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 neighbors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 neighbors"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 neighbors"
+      ]
+    }
+  },
+  {
+    "slug": "lldp-detay",
+    "title": "LLDP neighbor details",
+    "cat": "Görüntüleme",
+    "note": "LLDP neighbor details. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lldp info remote-device detail"
+      ]
+    }
+  },
+  {
+    "slug": "cdp-detay",
+    "title": "CDP neighbor details",
+    "cat": "Görüntüleme",
+    "note": "CDP neighbor details. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show cdp neighbors detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cdp neighbors detail"
+      ]
+    }
+  },
+  {
+    "slug": "stp-kok-koprusu",
+    "title": "STP root bridge",
+    "cat": "Sorun Giderme",
+    "note": "STP root bridge. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree root"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree"
+      ]
+    }
+  },
+  {
+    "slug": "stp-arayuz-detay",
+    "title": "STP interface states",
+    "cat": "Sorun Giderme",
+    "note": "STP interface states. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree interface"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree"
+      ]
+    }
+  },
+  {
+    "slug": "etherchannel-ozet",
+    "title": "EtherChannel and Eth-Trunk summary",
+    "cat": "VLAN / Port",
+    "note": "EtherChannel and Eth-Trunk summary. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show etherchannel summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display eth-trunk"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lacp aggregates"
+      ]
+    }
+  },
+  {
+    "slug": "lacp-komsulari",
+    "title": "LACP neighbors",
+    "cat": "VLAN / Port",
+    "note": "LACP neighbors. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lacp neighbor"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lacp neighbor"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lacp neighbor"
+      ]
+    }
+  },
+  {
+    "slug": "poe-port-power",
+    "title": "PoE port power details",
+    "cat": "Görüntüleme",
+    "note": "PoE port power details. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show power inline detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display poe information"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show power-over-ethernet brief"
+      ]
+    }
+  },
+  {
+    "slug": "optik-alici-verici",
+    "title": "Optical transceiver details",
+    "cat": "Görüntüleme",
+    "note": "Optical transceiver details. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver"
+      ]
+    }
+  },
+  {
+    "slug": "ortam-sensorleri",
+    "title": "Environmental sensors",
+    "cat": "Sistem",
+    "note": "Environmental sensors. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show environment all"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display environment"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system environment"
+      ]
+    }
+  },
+  {
+    "slug": "cpu-prosesleri",
+    "title": "CPU processes",
+    "cat": "Sistem",
+    "note": "CPU processes. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu sorted"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display process cpu"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system resource-utilization"
+      ]
+    }
+  },
+  {
+    "slug": "bellek-kullanimi",
+    "title": "Memory utilization",
+    "cat": "Sistem",
+    "note": "Memory utilization. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system resource-utilization"
+      ]
+    }
+  },
+  {
+    "slug": "log-buffer",
+    "title": "Local log buffer",
+    "cat": "Sistem",
+    "note": "Local log buffer. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging -r"
+      ]
+    }
+  },
+  {
+    "slug": "ntp-durum",
+    "title": "NTP synchronization status",
+    "cat": "Sistem",
+    "note": "NTP synchronization status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations"
+      ]
+    }
+  },
+  {
+    "slug": "snmp-durum",
+    "title": "SNMP operational status",
+    "cat": "Sistem",
+    "note": "SNMP operational status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show snmp"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display snmp-agent sys-info"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show snmp-server"
+      ]
+    }
+  },
+  {
+    "slug": "radius-istatistik",
+    "title": "RADIUS server statistics",
+    "cat": "L2 Güvenlik",
+    "note": "RADIUS server statistics. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show aaa servers"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display radius-server statistics"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show radius-server"
+      ]
+    }
+  },
+  {
+    "slug": "tacacs-durum",
+    "title": "TACACS server status",
+    "cat": "L2 Güvenlik",
+    "note": "TACACS server status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show tacacs"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display hwtacacs-server"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show tacacs-server"
+      ]
+    }
+  },
+  {
+    "slug": "acl-sayaclari",
+    "title": "ACL match counters",
+    "cat": "L2 Güvenlik",
+    "note": "ACL match counters. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list"
+      ]
+    }
+  },
+  {
+    "slug": "dhcp-snooping",
+    "title": "DHCP snooping bindings",
+    "cat": "L2 Güvenlik",
+    "note": "DHCP snooping bindings. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping binding"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping user-bind all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping binding"
+      ]
+    }
+  },
+  {
+    "slug": "dynamic-arp-inspection",
+    "title": "Dynamic ARP Inspection status",
+    "cat": "L2 Güvenlik",
+    "note": "Dynamic ARP Inspection status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp inspection"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp anti-attack configuration"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp-protect"
+      ]
+    }
+  },
+  {
+    "slug": "port-security-ozet",
+    "title": "Port security status",
+    "cat": "L2 Güvenlik",
+    "note": "Port security status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show port-security"
+      ]
+    }
+  },
+  {
+    "slug": "storm-control",
+    "title": "Storm control configuration",
+    "cat": "L2 Güvenlik",
+    "note": "Storm control configuration. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show storm-control"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display storm-control"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show storm-control"
+      ]
+    }
+  },
+  {
+    "slug": "errdisable-durum",
+    "title": "Err-disabled interfaces",
+    "cat": "Sorun Giderme",
+    "note": "Err-disabled interfaces. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces status err-disabled"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief"
+      ]
+    }
+  },
+  {
+    "slug": "arayuz-hata-sayaclari",
+    "title": "Interface error counters",
+    "cat": "Sorun Giderme",
+    "note": "Interface error counters. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display counters error"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces counters"
+      ]
+    }
+  },
+  {
+    "slug": "stack-uyeleri",
+    "title": "Switch stack members",
+    "cat": "Sistem",
+    "note": "Switch stack members. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show switch"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stack"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vsf"
+      ]
+    }
+  },
+  {
+    "slug": "vsf-durum",
+    "title": "Aruba VSF status",
+    "cat": "Sistem",
+    "note": "Aruba VSF status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show switch"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stack"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vsf"
+      ]
+    }
+  },
+  {
+    "slug": "irf-durum",
+    "title": "Huawei IRF status",
+    "cat": "Sistem",
+    "note": "Huawei IRF status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show switch"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display irf"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vsf"
+      ]
+    }
+  },
+  {
+    "slug": "vrrp-durum",
+    "title": "VRRP status",
+    "cat": "Routing",
+    "note": "VRRP status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vrrp"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vrrp"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vrrp"
+      ]
+    }
+  },
+  {
+    "slug": "hsrp-durum",
+    "title": "HSRP status",
+    "cat": "Routing",
+    "note": "HSRP status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show standby brief"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vrrp"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show hsrp"
+      ]
+    }
+  },
+  {
+    "slug": "track-objeleri",
+    "title": "Track objects",
+    "cat": "Routing",
+    "note": "Track objects. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show track"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display track all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show track"
+      ]
+    }
+  },
+  {
+    "slug": "route-map-listesi",
+    "title": "Route-map configuration",
+    "cat": "Routing",
+    "note": "Route-map configuration. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show route-map"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display route-policy"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show route-map"
+      ]
+    }
+  },
+  {
+    "slug": "prefix-listesi",
+    "title": "Prefix-list configuration",
+    "cat": "Routing",
+    "note": "Prefix-list configuration. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip prefix-list"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip ip-prefix"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip prefix-list"
+      ]
+    }
+  },
+  {
+    "slug": "pbr-politikalari",
+    "title": "Policy-based routing status",
+    "cat": "Routing",
+    "note": "Policy-based routing status. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip policy"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display policy-based-route"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show policy-based-routing"
+      ]
+    }
+  },
+  {
+    "slug": "igmp-gruplari",
+    "title": "IGMP multicast groups",
+    "cat": "Routing",
+    "note": "IGMP multicast groups. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip igmp groups"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display igmp group"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip igmp groups"
+      ]
+    }
+  },
+  {
+    "slug": "pim-komsulari",
+    "title": "PIM neighbors",
+    "cat": "Routing",
+    "note": "PIM neighbors. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip pim neighbor"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display pim neighbor"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip pim neighbor"
+      ]
+    }
+  },
+  {
+    "slug": "nat-cevirileri",
+    "title": "NAT translations",
+    "cat": "Görüntüleme",
+    "note": "NAT translations. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip nat translations"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display nat session all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show nat"
+      ]
+    }
+  },
+  {
+    "slug": "mac-hareket-kayitlari",
+    "title": "MAC move records",
+    "cat": "Sorun Giderme",
+    "note": "MAC move records. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table notification mac-move"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address flapping record"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address-table"
+      ]
+    }
+  },
+  {
+    "slug": "dhcp-sunucu-havuzlari",
+    "title": "DHCP server pools",
+    "cat": "Görüntüleme",
+    "note": "DHCP server pools. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp pool"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip pool"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server"
+      ]
+    }
+  },
+  {
+    "slug": "dhcp-istemci-baglari",
+    "title": "DHCP client bindings",
+    "cat": "Görüntüleme",
+    "note": "DHCP client bindings. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp binding"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp server ip-in-use"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-server leases"
+      ]
+    }
+  },
+  {
+    "slug": "qos-sinif-eslemeleri",
+    "title": "QoS class-map matches",
+    "cat": "QoS",
+    "note": "QoS class-map matches. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show class-map"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic classifier"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos"
+      ]
+    }
+  },
+  {
+    "slug": "qos-politika-eslesmeleri",
+    "title": "QoS policy-map matches",
+    "cat": "QoS",
+    "note": "QoS policy-map matches. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic policy"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos"
+      ]
+    }
+  },
+  {
+    "slug": "port-kanal-yuk-dagilimi",
+    "title": "Port-channel load balancing",
+    "cat": "VLAN / Port",
+    "note": "Port-channel load balancing. Salt okunur kontrol komutudur. Komutun kullanılabilirliği ve parametreleri üretici ailesine ve yazılım sürümüne göre değişebilir; hedef cihazda doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show etherchannel load-balance"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display load-balance"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show lacp aggregates"
+      ]
+    }
+  }
+]
