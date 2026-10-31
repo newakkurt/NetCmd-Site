@@ -1,0 +1,4178 @@
+{
+  "ipsec-sa-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "IPsec güvenlik birliklerini özetleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "IPsec SA summary. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "ملخص ارتباطات أمان IPsec. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "ike-sa-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "IKE güvenlik birliklerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "IKE SA summary. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "ملخص ارتباطات IKE. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "vpn-session-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "VPN oturumlarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "VPN session summary. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "ملخص جلسات VPN. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "ssl-vpn-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "SSL VPN durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "SSL VPN status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة SSL VPN. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "ipsec-peer-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "IPsec eş uç ayrıntılarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "IPsec peer details. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "تفاصيل طرف IPsec. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "crypto-engine-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Kripto motoru durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Crypto engine status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة محرك التشفير. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "vpn-route-check": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "VPN rotalarını kontrol etme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "VPN route check. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "فحص مسارات VPN. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "tunnel-interface-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Tünel arayüzlerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Tunnel interface status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة واجهة النفق. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "ap-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Access point özetini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Access point summary. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "ملخص نقاط الوصول. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "ap-client-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "AP istemcilerini listeleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Wireless client list. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "قائمة عملاء الشبكة اللاسلكية. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "wlan-ssid-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "SSID yapılandırmalarını listeleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "SSID inventory. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "قائمة SSID. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "wlan-radio-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "AP radyo durumlarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "AP radio status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة راديو نقاط الوصول. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "wlan-channel-utilization": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Kablosuz kanal kullanımını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Wireless channel utilization. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "استخدام القنوات اللاسلكية. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "wlan-client-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Kablosuz istemci ayrıntılarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Wireless client details. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "تفاصيل العميل اللاسلكي. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "wlan-auth-failures": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Kablosuz kimlik doğrulama hatalarını inceleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Wireless authentication failures. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "إخفاقات مصادقة الشبكة اللاسلكية. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "wlan-rogue-ap": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Rogue AP tespit kayıtlarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Rogue AP detection. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "اكتشاف نقاط الوصول غير المصرح بها. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "qos-policy-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "QoS politika özetini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "QoS policy summary. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "ملخص سياسة QoS. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "qos-interface-policy": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Arayüz QoS politikasını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Interface QoS policy. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "سياسة QoS للواجهة. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "qos-class-map": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "QoS sınıflarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "QoS class map. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "خريطة فئات QoS. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "qos-queue-counters": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Kuyruk sayaçlarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "QoS queue counters. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "عدادات طوابير QoS. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "qos-dscp-map": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "DSCP eşlemesini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "DSCP mapping. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "تعيين DSCP. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "qos-policing-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Policing durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "QoS policing status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة تحديد معدل QoS. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "qos-shaping-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Shaping durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "QoS shaping status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة تشكيل حركة المرور. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "qos-congestion-drops": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Tıkanıklık kaynaklı paket düşümlerini inceleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "QoS congestion drops. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "إسقاطات ازدحام QoS. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "igmp-snooping-vlan": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "VLAN IGMP snooping durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "IGMP snooping per VLAN. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "IGMP Snooping حسب VLAN. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "igmp-groups": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "IGMP grup üyeliklerini listeleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "IGMP group membership. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "عضوية مجموعات IGMP. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "pim-neighbors": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "PIM komşularını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "PIM neighbors. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "جيران PIM. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "pim-interface": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "PIM arayüz durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "PIM interface status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة واجهة PIM. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "multicast-route-table": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Multicast yönlendirme tablosunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Multicast routing table. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "جدول توجيه البث المتعدد. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "multicast-boundary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Multicast sınırlarını kontrol etme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Multicast boundary check. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "فحص حدود البث المتعدد. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "mld-groups": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "IPv6 MLD grup üyeliklerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "MLD group membership. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "عضوية مجموعات MLD. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "multicast-interface-counters": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Multicast arayüz sayaçlarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Multicast interface counters. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "عدادات واجهة البث المتعدد. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "port-security-address": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Port-security MAC kayıtlarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Port-security MAC entries. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "سجلات MAC لأمان المنافذ. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "port-security-interface": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Port-security arayüz durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Port-security interface status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة أمان المنفذ. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "storm-control-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Storm-control yapılandırmasını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Storm control status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة التحكم بالعواصف. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "dynamic-arp-inspection": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Dynamic ARP Inspection durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Dynamic ARP inspection. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "فحص ARP الديناميكي. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "ip-source-guard": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "IP Source Guard durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "IP source guard status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة حارس مصدر IP. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "macsec-session": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "MACsec oturumlarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "MACsec sessions. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "جلسات MACsec. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "tacacs-server-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "TACACS sunucu durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "TACACS server status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة خادم TACACS. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "login-history": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Yönetici oturum geçmişini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Administrator login history. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "سجل دخول المسؤولين. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "logging-buffer": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Yerel log tamponunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Local log buffer. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "مخزن السجلات المحلي. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "logging-severity": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Syslog önem seviyesini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Syslog severity configuration. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "إعداد مستوى أهمية Syslog. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "snmp-community-config": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "SNMP community yapılandırmasını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "SNMP community configuration. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "إعداد مجتمع SNMP. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "snmp-engine-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "SNMP agent durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "SNMP agent status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة وكيل SNMP. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "interface-flap-history": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Arayüz durum değişimlerini loglardan inceleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Interface flap history. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "سجل تغير حالة الواجهة. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "environment-sensors": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Sıcaklık ve fan sensörlerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Environmental sensors. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "مستشعرات البيئة. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "power-supply-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Güç kaynağı durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Power supply status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة مزود الطاقة. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "transceiver-diagnostics": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Optik modül DOM değerlerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Optical transceiver diagnostics. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "تشخيص وحدة الإرسال والاستقبال الضوئية. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "vlan-brief": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "VLAN listesini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "VLAN summary. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "ملخص VLAN. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "vlan-interface-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "SVI / VLAN arayüzlerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "VLAN interface status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة واجهة VLAN. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "trunk-allowed-vlans": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Trunk üzerinde izinli VLAN listesini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Allowed VLANs on trunks. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "VLAN المسموح بها على وصلات Trunk. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "stp-root-bridge": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "STP root bridge bilgisini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "STP root bridge. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "الجسر الجذر لـ STP. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "stp-blocked-ports": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "STP tarafından bloklanan portları listeleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "STP blocked ports. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "منافذ STP المحظورة. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "stp-interface-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "STP arayüz ayrıntılarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "STP interface details. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "تفاصيل واجهة STP. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "mac-address-vlan": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "VLAN içindeki MAC adreslerini listeleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "MAC addresses per VLAN. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "عناوين MAC حسب VLAN. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "mac-address-port": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Port üzerindeki MAC adreslerini listeleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "MAC addresses per port. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "عناوين MAC حسب المنفذ. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "interface-description-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Arayüz açıklamalarını listeleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Interface descriptions. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "أوصاف الواجهات. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "interface-error-counters": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Arayüz hata sayaçlarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Interface error counters. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "عدادات أخطاء الواجهة. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "interface-discard-counters": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Arayüz discard sayaçlarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Interface discard counters. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "عدادات الحزم المستبعدة. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "interface-duplex-speed": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Arayüz hız ve duplex bilgisini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Interface speed and duplex. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "سرعة الواجهة والازدواجية. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "interface-optical-power": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Optik alıcı/verici güç seviyelerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Optical power levels. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "مستويات الطاقة الضوئية. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "interface-mtu": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Arayüz MTU değerlerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Interface MTU. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "قيمة MTU للواجهة. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "interface-utilization": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Arayüz kullanım oranlarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Interface utilization. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "استخدام الواجهة. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "interface-last-change": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Arayüzün son durum değişim zamanını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Interface last state change. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "آخر تغيير لحالة الواجهة. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "clock-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Cihaz saatini ve saat dilimini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "System clock status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة ساعة النظام. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "uptime-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Cihaz çalışma süresini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Device uptime. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "مدة تشغيل الجهاز. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "flash-files-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Flash dosyalarını listeleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Flash file inventory. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "قائمة ملفات Flash. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "startup-config-location": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Başlangıç yapılandırma dosyasını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Startup configuration. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "إعدادات بدء التشغيل. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "config-register": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Config-register değerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Configuration register. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "سجل التهيئة. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "license-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Lisans durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "License status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة الترخيص. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "module-inventory": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Donanım modül envanterini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Hardware module inventory. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "قائمة وحدات الأجهزة. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  },
+  "fan-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kapsam",
+            "d": "Örnek arayüz, VLAN veya adresi kendi ağınıza göre değiştirin."
+          },
+          {
+            "p": "çıktı",
+            "d": "Durum, sayaç ve komşu bilgilerini kontrol edin."
+          }
+        ],
+        "example": "Fan durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Karşı cihazdaki değerlerle karşılaştırın.",
+        "mistakes": [
+          "Örnek değerleri değiştirmeden kullanmak.",
+          "Yazılım sürümü farklarını göz ardı etmek.",
+          "Tek çıktıyla kök neden kararı vermek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "scope",
+            "d": "Replace example interface, VLAN or address with values from your network."
+          },
+          {
+            "p": "output",
+            "d": "Check status, counters and peer information."
+          }
+        ],
+        "example": "Fan status. Compare with the peer device and version-specific documentation.",
+        "mistakes": [
+          "Using example values unchanged.",
+          "Ignoring CLI differences between releases.",
+          "Deciding root cause from one snapshot."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "النطاق",
+            "d": "استبدل قيم الواجهة أو VLAN أو العنوان التجريبية بقيم شبكتك."
+          },
+          {
+            "p": "المخرجات",
+            "d": "تحقق من الحالة والعدادات ومعلومات الطرف المقابل."
+          }
+        ],
+        "example": "حالة المراوح. قارن النتائج بالجهاز المقابل ووثائق إصدار البرنامج.",
+        "mistakes": [
+          "استخدام القيم التجريبية دون تعديل.",
+          "تجاهل اختلاف أوامر CLI بين الإصدارات.",
+          "تحديد السبب اعتماداً على لقطة واحدة."
+        ]
+      }
+    }
+  }
+}
