@@ -1,5 +1,293 @@
 [
   {
+    "slug": "cihaz-envanteri",
+    "title": "Cihaz envanterini görüntüleme",
+    "cat": "Sistem",
+    "note": "Model, seri numarası ve donanım bileşenlerini envantere almak için kullanılır. Çıktı alanları platforma göre değişir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show inventory"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display device"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager (AOS-S)",
+      "cmds": [
+        "show system"
+      ]
+    }
+  },
+  {
+    "slug": "cpu-kullanimi-ozeti",
+    "title": "CPU kullanımını görüntüleme",
+    "cat": "Sistem",
+    "note": "Anlık ve geçmiş CPU yükünü inceleyin; yüksek değerleri süreç listesi ve olay zamanıyla karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu sorted"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager (AOS-S)",
+      "cmds": [
+        "show system"
+      ]
+    }
+  },
+  {
+    "slug": "bellek-kullanimi-ozeti",
+    "title": "Bellek kullanımını görüntüleme",
+    "cat": "Sistem",
+    "note": "Bellek tüketimini izleyin. Üretici ve yazılım sürümüne göre gösterilen alanlar farklı olabilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show memory statistics"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager (AOS-S)",
+      "cmds": [
+        "show system"
+      ]
+    }
+  },
+  {
+    "slug": "poe-durum",
+    "title": "PoE güç durumunu görüntüleme",
+    "cat": "Arayüzler",
+    "note": "PoE destekli modellerde güç bütçesini, port başına tüketimi ve güç durumunu kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show power inline"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display poe power"
+      ]
+    },
+    "aruba": {
+      "mode": "Manager (AOS-S; PoE destekli modeller)",
+      "cmds": [
+        "show power-over-ethernet"
+      ]
+    }
+  },
+  {
+    "slug": "lacp-ozeti",
+    "title": "LACP / link aggregation özetini görüntüleme",
+    "cat": "Switching",
+    "note": "Port-channel veya Eth-Trunk üyelerinin seçili ve çalışan durumda olup olmadığını kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show etherchannel summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display eth-trunk"
+      ]
+    },
+    "aruba": {
+      "mode": "Manager (AOS-S; trunk yapılandırmasına göre)",
+      "cmds": [
+        "show trunks"
+      ]
+    }
+  },
+  {
+    "slug": "stp-ozeti",
+    "title": "Spanning Tree genel durumunu görüntüleme",
+    "cat": "Switching",
+    "note": "Kök köprüyü, aktif instance bilgilerini ve STP durumunu inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager (AOS-S)",
+      "cmds": [
+        "show spanning-tree"
+      ]
+    }
+  },
+  {
+    "slug": "dhcp-snooping-kayitlari",
+    "title": "DHCP Snooping bağlama kayıtlarını görüntüleme",
+    "cat": "Güvenlik",
+    "note": "Yalnızca DHCP Snooping etkin ve desteklenen platformlarda IP-MAC-VLAN-port bağlarını inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping binding"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping user-bind all"
+      ]
+    },
+    "aruba": {
+      "mode": "Manager (AOS-S; sürüme göre doğrulayın)",
+      "cmds": [
+        "show dhcp-snooping binding"
+      ]
+    }
+  },
+  {
+    "slug": "optik-modul-envanteri",
+    "title": "Optik modül bilgilerini görüntüleme",
+    "cat": "Arayüzler",
+    "note": "Takılı transceiver modüllerinin tipini ve desteklenen optik tanılama alanlarını kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Manager (AOS-S; model ve sürüme bağlı)",
+      "cmds": [
+        "show tech transceivers"
+      ]
+    }
+  },
+  {
+    "slug": "vlan-ayrinti",
+    "title": "Belirli VLAN ayrıntılarını görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "Belirli VLAN'ın üyelerini ve durumunu inceleyin. VLAN numarasını kendi ortamınıza göre değiştirin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id 10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan 10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager (AOS-S)",
+      "cmds": [
+        "show vlan 10"
+      ]
+    }
+  },
+  {
+    "slug": "port-security-ozeti",
+    "title": "Port Security durumunu görüntüleme",
+    "cat": "Güvenlik",
+    "note": "Port Security etkin arayüzleri, ihlal sayaçlarını ve öğrenilen MAC sınırlarını kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show port-security"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display port-security"
+      ]
+    },
+    "aruba": {
+      "mode": "Manager (AOS-S; desteklenen modeller)",
+      "cmds": [
+        "show port-security"
+      ]
+    }
+  },
+  {
+    "slug": "log-sistem",
+    "title": "Sistem loglarını görüntüleme",
+    "cat": "Sistem",
+    "note": "Olay kayıtlarını zaman damgası ve kaynak bilgisiyle inceleyin; olay anını uptime ve değişiklik kayıtlarıyla eşleştirin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager (AOS-S)",
+      "cmds": [
+        "show logging -r"
+      ]
+    }
+  },
+  {
+    "slug": "ntp-durum",
+    "title": "NTP eşitleme durumunu görüntüleme",
+    "cat": "Sistem",
+    "note": "Saat eşitleme kaynağını ve senkronizasyon durumunu kontrol edin; log korelasyonu için önemlidir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service status"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager (AOS-S)",
+      "cmds": [
+        "show sntp"
+      ]
+    }
+  },
+  {
     "slug": "ipv6-interface-summary",
     "title": "IPv6 arayüz özetini görüntüleme",
     "cat": "Görüntüleme",
