@@ -1448,5 +1448,63 @@
         ]
       }
     }
+  },
+  "ospf-komsu-ozeti": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "process-id",
+            "d": "OSPF süreç numarasını veya VRF bağlamını cihaz tasarımına göre belirleyin."
+          },
+          {
+            "p": "neighbor-state",
+            "d": "Komşuluğun FULL durumuna ulaşıp ulaşmadığını ve dead timer değerini kontrol edin."
+          }
+        ],
+        "example": "Cisco: show ip ospf neighbor; Huawei: display ospf peer. Neighbor ID, State, Interface ve Dead Time alanlarını inceleyin.",
+        "mistakes": [
+          "INIT veya EXSTART durumunu FULL kabul etmek.",
+          "MTU, area ID, authentication ve timer uyuşmazlıklarını kontrol etmemek.",
+          "Tek seferlik çıktıyla komşuluğun kararlı olduğunu varsaymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "process-id",
+            "d": "Identify the OSPF process or VRF context used by the design."
+          },
+          {
+            "p": "neighbor-state",
+            "d": "Check whether the adjacency reaches FULL and inspect the dead timer."
+          }
+        ],
+        "example": "Inspect Neighbor ID, State, Interface and Dead Time in the Cisco or Huawei neighbor output.",
+        "mistakes": [
+          "Treating INIT or EXSTART as FULL.",
+          "Ignoring MTU, area ID, authentication or timer mismatches.",
+          "Assuming one snapshot proves a stable adjacency."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "معرّف العملية",
+            "d": "حدد عملية OSPF أو سياق VRF المستخدم في التصميم."
+          },
+          {
+            "p": "حالة الجار",
+            "d": "تحقق من وصول الجوار إلى حالة FULL وافحص مؤقت انتهاء الصلاحية."
+          }
+        ],
+        "example": "افحص معرّف الجار والحالة والواجهة والوقت المتبقي في مخرجات Cisco أو Huawei.",
+        "mistakes": [
+          "اعتبار حالتي INIT أو EXSTART حالة FULL.",
+          "تجاهل اختلاف MTU أو Area ID أو المصادقة أو المؤقتات.",
+          "افتراض استقرار الجوار اعتماداً على قراءة واحدة."
+        ]
+      }
+    }
   }
 }
