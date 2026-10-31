@@ -1,0 +1,715 @@
+{
+  "cats": {},
+  "items": {
+    "if-errors": {
+      "en": {
+        "title": "Arayüz hata sayaçlarını inspection",
+        "note": "Arayüz hata sayaçlarını inceleyerek CRC, input error ve drop artışını fiziksel katman sorunlarından ayırın."
+      },
+      "ar": {
+        "title": "عرض Arayüz hata sayaçlarını inceleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "if-transceiver": {
+      "en": {
+        "title": "Optik modül tanılama değerlerini displaying",
+        "note": "Optik modülün sıcaklık, Tx/Rx güç ve alarm değerlerini kontrol edin; eşik değerleri modüle göre değişir."
+      },
+      "ar": {
+        "title": "عرض Optik modül tanılama değerlerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "if-description": {
+      "en": {
+        "title": "Arayüz açıklamalarını listeleme",
+        "note": "Port açıklamalarını envanter ve kablolama kayıtlarıyla karşılaştırın."
+      },
+      "ar": {
+        "title": "عرض Arayüz açıklamalarını listeleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "if-flap-log": {
+      "en": {
+        "title": "Arayüz link flap kayıtlarını arama",
+        "note": "Link up/down olaylarını zaman damgasıyla inceleyip kablo, SFP veya karşı uç kaynaklı kesintileri ayırın."
+      },
+      "ar": {
+        "title": "عرض Arayüz link flap kayıtlarını arama",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "if-mtu": {
+      "en": {
+        "title": "Arayüz MTU değerini checking",
+        "note": "MTU uyuşmazlıkları parçalanma veya paket kaybı oluşturabilir; iki uçtaki L2/L3 MTU değerlerini karşılaştırın."
+      },
+      "ar": {
+        "title": "عرض Arayüz MTU değerini kontrol etme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "if-queue": {
+      "en": {
+        "title": "Arayüz kuyruk istatistiklerini displaying",
+        "note": "Kuyruk drop ve discard sayaçları tıkanıklık veya QoS sınıflandırma sorunlarını gösterebilir."
+      },
+      "ar": {
+        "title": "عرض Arayüz kuyruk istatistiklerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "vlan-members": {
+      "en": {
+        "title": "VLAN port üyeliğini displaying",
+        "note": "Belirli VLAN'a hangi access ve trunk portlarının dahil olduğunu doğrulayın."
+      },
+      "ar": {
+        "title": "عرض VLAN port üyeliğini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "vlan-interfaces": {
+      "en": {
+        "title": "VLAN L3 arayüzlerini listeleme",
+        "note": "SVI veya VLANIF arayüzlerinin IP ve protokol durumunu kontrol edin."
+      },
+      "ar": {
+        "title": "عرض VLAN L3 arayüzlerini listeleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "trunk-detail": {
+      "en": {
+        "title": "Trunk port ayrıntılarını displaying",
+        "note": "Trunk üzerinde taşınan VLAN listesini iki uçta karşılaştırın."
+      },
+      "ar": {
+        "title": "عرض Trunk port ayrıntılarını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "stp-blocked": {
+      "en": {
+        "title": "STP tarafından bloklanan portları bulma",
+        "note": "Forwarding olmayan portların STP rol ve durumunu kontrol edin; bloklanma döngü önleme amacıyla normal olabilir."
+      },
+      "ar": {
+        "title": "عرض STP tarafından bloklanan portları bulma",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "stp-root": {
+      "en": {
+        "title": "STP root bridge bilgisini displaying",
+        "note": "Tüm switchlerde root bridge ID değerini karşılaştırarak beklenmeyen root seçimini tespit edin."
+      },
+      "ar": {
+        "title": "عرض STP root bridge bilgisini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "stp-tcn": {
+      "en": {
+        "title": "STP topology change kayıtlarını inspection",
+        "note": "Sık topology change olayları MAC tablosunun yenilenmesine ve geçici flooding'e neden olabilir."
+      },
+      "ar": {
+        "title": "عرض STP topology change kayıtlarını inceleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "lacp-neighbor": {
+      "en": {
+        "title": "LACP komşu ve üye port bilgilerini displaying",
+        "note": "LACP actor/partner durumunu ve bundle'a katılan fiziksel portları karşılaştırın."
+      },
+      "ar": {
+        "title": "عرض LACP komşu ve üye port bilgilerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "lldp-detail": {
+      "en": {
+        "title": "LLDP komşu ayrıntılarını displaying",
+        "note": "Komşu cihaz adı, port ID ve sistem açıklamasını kablolama envanteriyle eşleştirin."
+      },
+      "ar": {
+        "title": "عرض LLDP komşu ayrıntılarını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "mac-dynamic": {
+      "en": {
+        "title": "Dinamik MAC adreslerini filtreleme",
+        "note": "Dinamik öğrenilen MAC kayıtlarını görüntüleyerek cihazın hangi portta öğrenildiğini bulun."
+      },
+      "ar": {
+        "title": "عرض Dinamik MAC adreslerini filtreleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "mac-move": {
+      "en": {
+        "title": "MAC adres hareketlerini loglardan izleme",
+        "note": "Aynı MAC'in portlar arasında sık hareket etmesi loop, kablo veya çift bağlantı belirtisi olabilir."
+      },
+      "ar": {
+        "title": "عرض MAC adres hareketlerini loglardan izleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "arp-static": {
+      "en": {
+        "title": "Statik ARP kayıtlarını displaying",
+        "note": "Statik ARP kayıtlarını envanter ve IP planıyla karşılaştırın."
+      },
+      "ar": {
+        "title": "عرض Statik ARP kayıtlarını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "route-static": {
+      "en": {
+        "title": "Statik rotaları filtreleme",
+        "note": "Statik rotaların next-hop ve administrative distance değerlerini inceleyin."
+      },
+      "ar": {
+        "title": "عرض Statik rotaları filtreleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "route-default": {
+      "en": {
+        "title": "Varsayılan rotayı displaying",
+        "note": "Default route'un varlığını, next-hop erişilebilirliğini ve aktiflik durumunu doğrulayın."
+      },
+      "ar": {
+        "title": "عرض Varsayılan rotayı görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "ospf-neighbor": {
+      "en": {
+        "title": "OSPF komşuluk durumunu displaying",
+        "note": "Komşuluk FULL değilse area, timer, MTU, authentication ve network type değerlerini karşılaştırın."
+      },
+      "ar": {
+        "title": "عرض OSPF komşuluk durumunu görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "ospf-interface": {
+      "en": {
+        "title": "OSPF arayüz parametrelerini displaying",
+        "note": "Hello/dead timer, area, cost ve network type değerlerini inceleyin."
+      },
+      "ar": {
+        "title": "عرض OSPF arayüz parametrelerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "ospf-database": {
+      "en": {
+        "title": "OSPF LSDB özetini displaying",
+        "note": "Link-state database içindeki LSA türleri ve yaşlarını karşılaştırın."
+      },
+      "ar": {
+        "title": "عرض OSPF LSDB özetini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "bgp-summary": {
+      "en": {
+        "title": "BGP komşu özetini displaying",
+        "note": "BGP peer state, prefix sayısı ve uptime bilgilerini kontrol edin."
+      },
+      "ar": {
+        "title": "عرض BGP komşu özetini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "bgp-routes": {
+      "en": {
+        "title": "BGP rotalarını displaying",
+        "note": "BGP RIB içindeki prefix, next-hop, local preference ve AS path bilgilerini inceleyin."
+      },
+      "ar": {
+        "title": "عرض BGP rotalarını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "bgp-advertised": {
+      "en": {
+        "title": "BGP komşusuna ilan edilen rotaları displaying",
+        "note": "Komşuya gönderilen prefixleri outbound policy ve prefix-list ile birlikte doğrulayın."
+      },
+      "ar": {
+        "title": "عرض BGP komşusuna ilan edilen rotaları görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "bgp-received": {
+      "en": {
+        "title": "BGP komşusundan alınan rotaları displaying",
+        "note": "Alınan rotaları import policy sonrası kabul edilen rotalarla karıştırmayın."
+      },
+      "ar": {
+        "title": "عرض BGP komşusundan alınan rotaları görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "ipv6-route": {
+      "en": {
+        "title": "IPv6 yönlendirme tablosunu displaying",
+        "note": "IPv6 prefix ve next-hop kayıtlarının beklenen çıkış arayüzünü kullandığını doğrulayın."
+      },
+      "ar": {
+        "title": "عرض IPv6 yönlendirme tablosunu görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "ipv6-neighbor": {
+      "en": {
+        "title": "IPv6 komşu tablosunu displaying",
+        "note": "Neighbor Discovery kayıtlarını inceleyerek IPv6 adres-MAC eşleşmesini kontrol edin."
+      },
+      "ar": {
+        "title": "عرض IPv6 komşu tablosunu görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "acl-list": {
+      "en": {
+        "title": "ACL kurallarını displaying",
+        "note": "ACL sırasını, eşleşme sayaçlarını ve implicit deny davranışını birlikte değerlendirin."
+      },
+      "ar": {
+        "title": "عرض ACL kurallarını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "acl-counters": {
+      "en": {
+        "title": "ACL eşleşme sayaçlarını inspection",
+        "note": "Hit counter değerleri kuralın trafikle eşleşip eşleşmediğini gösterir; sayaç sıfırlama davranışı platforma göre değişir."
+      },
+      "ar": {
+        "title": "عرض ACL eşleşme sayaçlarını inceleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "nat-translations": {
+      "en": {
+        "title": "NAT çeviri tablosunu displaying",
+        "note": "İç/dış adres ve port eşleşmelerini inceleyerek NAT dönüşümünü doğrulayın."
+      },
+      "ar": {
+        "title": "عرض NAT çeviri tablosunu görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "cpu-process": {
+      "en": {
+        "title": "CPU tüketen süreçleri listeleme",
+        "note": "CPU yüksekse en çok kaynak tüketen süreçleri ve artış zamanını birlikte inceleyin."
+      },
+      "ar": {
+        "title": "عرض CPU tüketen süreçleri listeleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "memory-detail": {
+      "en": {
+        "title": "Bellek kullanım ayrıntılarını displaying",
+        "note": "Kullanılan ve boş bellek değerlerini trend ile değerlendirin; tek anlık ölçüm yeterli değildir."
+      },
+      "ar": {
+        "title": "عرض Bellek kullanım ayrıntılarını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "environment": {
+      "en": {
+        "title": "Fan, güç ve sıcaklık durumunu checking",
+        "note": "Fan, PSU ve sıcaklık alarmlarını cihaz modelinin üretici eşikleriyle karşılaştırın."
+      },
+      "ar": {
+        "title": "عرض Fan, güç ve sıcaklık durumunu kontrol etme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "logging-buffer": {
+      "en": {
+        "title": "Log tamponunu displaying",
+        "note": "Sistem olaylarını zaman damgası, seviye ve kaynak alanlarıyla filtreleyin."
+      },
+      "ar": {
+        "title": "عرض Log tamponunu görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "ntp-status": {
+      "en": {
+        "title": "NTP eşitleme durumunu checking",
+        "note": "Saat senkronizasyonu log korelasyonu, sertifika ve AAA süreçleri için kritiktir."
+      },
+      "ar": {
+        "title": "عرض NTP eşitleme durumunu kontrol etme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "snmp-status": {
+      "en": {
+        "title": "SNMP servis ve istatistiklerini displaying",
+        "note": "SNMP sürümünü ve erişim kapsamını kontrol edin; v1/v2c community değerlerini açıkta paylaşmayın."
+      },
+      "ar": {
+        "title": "عرض SNMP servis ve istatistiklerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "poe-status": {
+      "en": {
+        "title": "PoE port güç durumunu displaying",
+        "note": "Port başına güç tüketimini ve toplam PoE bütçesini kontrol edin."
+      },
+      "ar": {
+        "title": "عرض PoE port güç durumunu görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "stack-status": {
+      "en": {
+        "title": "Switch stack üyelerini displaying",
+        "note": "Stack üyelerinin rol, durum ve yazılım sürümlerinin uyumunu doğrulayın."
+      },
+      "ar": {
+        "title": "عرض Switch stack üyelerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "ssh-status": {
+      "en": {
+        "title": "SSH sunucu ayarlarını displaying",
+        "note": "SSH sürümü, portu ve yönetim erişim politikasını kontrol edin."
+      },
+      "ar": {
+        "title": "عرض SSH sunucu ayarlarını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "radius-status": {
+      "en": {
+        "title": "RADIUS sunucu yapılandırmasını displaying",
+        "note": "Sunucu adresi, port, timeout ve kaynak arayüz bilgilerini doğrulayın; shared secret değerini loglamayın."
+      },
+      "ar": {
+        "title": "عرض RADIUS sunucu yapılandırmasını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "dot1x-sessions": {
+      "en": {
+        "title": "802.1X istemci oturumlarını displaying",
+        "note": "İstemcinin authenticated/unauthorized durumunu, VLAN atamasını ve RADIUS sonucunu inceleyin."
+      },
+      "ar": {
+        "title": "عرض 802.1X istemci oturumlarını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "storm-status": {
+      "en": {
+        "title": "Storm-control yapılandırmasını displaying",
+        "note": "Broadcast, multicast ve unknown-unicast eşiklerini port rolüne göre inceleyin."
+      },
+      "ar": {
+        "title": "عرض Storm-control yapılandırmasını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "qos-policy": {
+      "en": {
+        "title": "Arayüze uygulanmış QoS politikasını displaying",
+        "note": "QoS politikasının doğru arayüz ve yönde uygulandığını doğrulayın."
+      },
+      "ar": {
+        "title": "عرض Arayüze uygulanmış QoS politikasını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "qos-counters": {
+      "en": {
+        "title": "QoS sınıf sayaçlarını displaying",
+        "note": "Sınıf bazında paket, byte ve drop sayaçlarını karşılaştırarak sınıflandırma sorunlarını bulun."
+      },
+      "ar": {
+        "title": "عرض QoS sınıf sayaçlarını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "igmp-groups": {
+      "en": {
+        "title": "IGMP multicast grup üyelerini displaying",
+        "note": "Multicast alıcılarının beklenen VLAN ve arayüzlerde üyelik oluşturduğunu doğrulayın."
+      },
+      "ar": {
+        "title": "عرض IGMP multicast grup üyelerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "pim-neighbor": {
+      "en": {
+        "title": "PIM komşularını displaying",
+        "note": "PIM komşuluğunun beklenen L3 arayüzlerinde kurulduğunu kontrol edin."
+      },
+      "ar": {
+        "title": "عرض PIM komşularını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "ipsec-sa": {
+      "en": {
+        "title": "IPsec güvenlik ilişkilerini displaying",
+        "note": "IKE oturumu ile IPsec SA durumunu ayrı değerlendirin; paket sayaçlarının artmasını kontrol edin."
+      },
+      "ar": {
+        "title": "عرض IPsec güvenlik ilişkilerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "vpn-ike": {
+      "en": {
+        "title": "IKE güvenlik ilişkilerini displaying",
+        "note": "IKE phase 1 durumunu, kimlik doğrulama ve proposal uyuşmasını kontrol edin."
+      },
+      "ar": {
+        "title": "عرض IKE güvenlik ilişkilerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "certificates": {
+      "en": {
+        "title": "PKI sertifikalarını displaying",
+        "note": "Sertifika zinciri, geçerlilik tarihi ve kullanım amacını kontrol edin; özel anahtarı dışa aktarmayın."
+      },
+      "ar": {
+        "title": "عرض PKI sertifikalarını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "users-active": {
+      "en": {
+        "title": "Aktif yönetim kullanıcılarını displaying",
+        "note": "Aktif CLI oturumlarını ve kaynak IP adreslerini denetim kayıtlarıyla karşılaştırın."
+      },
+      "ar": {
+        "title": "عرض Aktif yönetim kullanıcılarını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "config-startup": {
+      "en": {
+        "title": "Başlangıç yapılandırmasını displaying",
+        "note": "Çalışan yapılandırma ile kayıtlı yapılandırmanın farklı olabileceğini unutmayın."
+      },
+      "ar": {
+        "title": "عرض Başlangıç yapılandırmasını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "config-compare": {
+      "en": {
+        "title": "Çalışan ve kayıtlı yapılandırmayı karşılaştırma",
+        "note": "Değişiklikleri kaydetmeden önce farkları inceleyin; platformların karşılaştırma komutları farklılık gösterir."
+      },
+      "ar": {
+        "title": "عرض Çalışan ve kayıtlı yapılandırmayı karşılaştırma",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "license-status": {
+      "en": {
+        "title": "Lisans ve özellik durumunu displaying",
+        "note": "Lisans durumunu ve özellik yetkilerini cihaz modeli ve yazılım sürümüyle birlikte doğrulayın."
+      },
+      "ar": {
+        "title": "عرض Lisans ve özellik durumunu görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "firmware-version": {
+      "en": {
+        "title": "Yazılım imajı ve boot değişkenlerini displaying",
+        "note": "Aktif ve sonraki açılışta kullanılacak imajı bakım öncesinde doğrulayın."
+      },
+      "ar": {
+        "title": "عرض Yazılım imajı ve boot değişkenlerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "flash-files": {
+      "en": {
+        "title": "Flash dosya sistemini listeleme",
+        "note": "Depolama alanı ve eski imaj dosyalarını inceleyin; silme işlemi öncesinde aktif imajı doğrulayın."
+      },
+      "ar": {
+        "title": "عرض Flash dosya sistemini listeleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "lldp-local": {
+      "en": {
+        "title": "Yerel LLDP sistem bilgisini displaying",
+        "note": "Cihazın LLDP ile ilan ettiği sistem adı, açıklama ve yetenek bilgilerini kontrol edin."
+      },
+      "ar": {
+        "title": "عرض Yerel LLDP sistem bilgisini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "interface-counters": {
+      "en": {
+        "title": "Arayüz paket sayaçlarını displaying",
+        "note": "Giriş/çıkış paket ve byte sayaçlarını örnek aralıklarla karşılaştırın."
+      },
+      "ar": {
+        "title": "عرض Arayüz paket sayaçlarını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "interface-speed": {
+      "en": {
+        "title": "Arayüz hız ve duplex bilgisini displaying",
+        "note": "Speed/duplex uyuşmazlığı ve beklenmeyen autonegotiation durumlarını kontrol edin."
+      },
+      "ar": {
+        "title": "عرض Arayüz hız ve duplex bilgisini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "vlan-summary": {
+      "en": {
+        "title": "VLAN özet tablosunu displaying",
+        "note": "VLAN ID, ad ve aktif port özetini envanterle karşılaştırın."
+      },
+      "ar": {
+        "title": "عرض VLAN özet tablosunu görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "mac-table-count": {
+      "en": {
+        "title": "MAC tablosundaki kayıt sayısını displaying",
+        "note": "MAC tablosu kapasitesi ve öğrenilen kayıt sayısını izleyin."
+      },
+      "ar": {
+        "title": "عرض MAC tablosundaki kayıt sayısını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "arp-count": {
+      "en": {
+        "title": "ARP tablosu kayıt sayısını displaying",
+        "note": "ARP kayıt sayısındaki ani artışları subnet büyüklüğü ve cihaz rolüyle karşılaştırın."
+      },
+      "ar": {
+        "title": "عرض ARP tablosu kayıt sayısını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "bgp-community": {
+      "en": {
+        "title": "BGP community değerlerini filtreleme",
+        "note": "Community tabanlı rota sınıflandırmasını policy ve route çıktısıyla doğrulayın."
+      },
+      "ar": {
+        "title": "عرض BGP community değerlerini filtreleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "ospf-route": {
+      "en": {
+        "title": "OSPF üzerinden öğrenilen rotaları filtreleme",
+        "note": "OSPF kaynaklı rotaların next-hop ve metric değerlerini inceleyin."
+      },
+      "ar": {
+        "title": "عرض OSPF üzerinden öğrenilen rotaları filtreleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "ipv6-interface": {
+      "en": {
+        "title": "IPv6 arayüz adreslerini displaying",
+        "note": "Global, link-local ve durum bilgilerini arayüz bazında kontrol edin."
+      },
+      "ar": {
+        "title": "عرض IPv6 arayüz adreslerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "firewall-sessions": {
+      "en": {
+        "title": "Güvenlik duvarı oturum özetini displaying",
+        "note": "Aktif oturum sayısını ve kaynak-hedef dağılımını kapasite takibi için inceleyin."
+      },
+      "ar": {
+        "title": "عرض Güvenlik duvarı oturum özetini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "ntp-associations": {
+      "en": {
+        "title": "NTP eş sunucularını displaying",
+        "note": "Seçili NTP peer, reachability ve offset değerlerini kontrol edin."
+      },
+      "ar": {
+        "title": "عرض NTP eş sunucularını görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "snmp-traps": {
+      "en": {
+        "title": "SNMP trap hedeflerini displaying",
+        "note": "Trap hedef adresi ve sürümünü NMS envanteriyle eşleştirin; community/credential bilgisini gizli tutun."
+      },
+      "ar": {
+        "title": "عرض SNMP trap hedeflerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "poe-budget": {
+      "en": {
+        "title": "Toplam PoE güç bütçesini displaying",
+        "note": "Toplam güç bütçesi ile anlık tüketimi karşılaştırarak yeni AP/telefon kapasitesini değerlendirin."
+      },
+      "ar": {
+        "title": "عرض Toplam PoE güç bütçesini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "stack-ports": {
+      "en": {
+        "title": "Stack port bağlantı durumunu displaying",
+        "note": "Stack ring veya chain bağlantı durumunu ve port hatalarını kontrol edin."
+      },
+      "ar": {
+        "title": "عرض Stack port bağlantı durumunu görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    },
+    "aaa-methods": {
+      "en": {
+        "title": "AAA kimlik doğrulama yöntemlerini displaying",
+        "note": "Kimlik doğrulama sırasını ve yerel fallback davranışını kontrol edin; uzaktan erişim değişikliklerinde konsol erişimini koruyun."
+      },
+      "ar": {
+        "title": "عرض AAA kimlik doğrulama yöntemlerini görüntüleme",
+        "note": "افحص هذه المعلومات وقارن النتائج مع الجهاز المقابل ونظام المراقبة."
+      }
+    }
+  }
+}
