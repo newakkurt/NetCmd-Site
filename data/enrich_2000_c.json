@@ -1,0 +1,262 @@
+{
+  "vlan-ozeti-goruntuleme": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "VLAN ID, isim ve port üyeliklerini kontrol edin."
+          },
+          {
+            "p": "inceleme",
+            "d": "Bir uç cihaz erişemiyorsa portun doğru access VLAN'da olduğunu ve trunk izinli VLAN listesini doğrulayın."
+          }
+        ],
+        "example": "Komutu çalıştırın; ilgili VLAN, port veya sayaç değerlerini yapılandırma ve beklenen ağ davranışıyla karşılaştırın.",
+        "mistakes": [
+          "VLAN'ın tabloda bulunması, ilgili trunk üzerinden taşındığını tek başına kanıtlamaz."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Check VLAN IDs, names and port membership."
+          },
+          {
+            "p": "inspection",
+            "d": "If an endpoint is unreachable, verify the access VLAN and the allowed VLAN list on trunks."
+          }
+        ],
+        "example": "Run the command and compare the relevant VLAN, port or counter values with the intended configuration and network behavior.",
+        "mistakes": [
+          "A VLAN appearing in the table does not by itself prove it is carried across a trunk."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "تحقق من معرّفات VLAN وأسمائها وعضوية المنافذ."
+          },
+          {
+            "p": "الفحص",
+            "d": "إذا تعذر وصول جهاز طرفي، فتحقق من VLAN الخاصة بالمنفذ وقائمة VLAN المسموح بها على وصلات trunk."
+          }
+        ],
+        "example": "نفّذ الأمر وقارن قيم VLAN أو المنفذ أو العدادات مع الإعدادات والسلوك المتوقع للشبكة.",
+        "mistakes": [
+          "ظهور VLAN في الجدول لا يثبت وحده أنها تمر عبر وصلة trunk."
+        ]
+      }
+    }
+  },
+  "stp-durumunu-goruntuleme": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Root bridge, root port, designated port ve port state bilgilerini inceleyin."
+          },
+          {
+            "p": "inceleme",
+            "d": "Beklenmeyen blocking durumunda root bridge seçimini, VLAN/MST eşleşmesini ve fiziksel döngü ihtimalini kontrol edin."
+          }
+        ],
+        "example": "Komutu çalıştırın; ilgili VLAN, port veya sayaç değerlerini yapılandırma ve beklenen ağ davranışıyla karşılaştırın.",
+        "mistakes": [
+          "PortFast/edge ayarlarını switch-switch bağlantılarında gelişigüzel kullanmayın."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect root bridge, root ports, designated ports and port states."
+          },
+          {
+            "p": "inspection",
+            "d": "For unexpected blocking, check root bridge selection, VLAN/MST mapping and possible physical loops."
+          }
+        ],
+        "example": "Run the command and compare the relevant VLAN, port or counter values with the intended configuration and network behavior.",
+        "mistakes": [
+          "Do not apply PortFast/edge settings indiscriminately to switch-to-switch links."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص الجسر الجذر ومنافذ الجذر والمنافذ المحددة وحالات المنافذ."
+          },
+          {
+            "p": "الفحص",
+            "d": "عند وجود blocking غير متوقع، تحقق من اختيار الجسر الجذر وربط VLAN/MST واحتمال وجود حلقة فعلية."
+          }
+        ],
+        "example": "نفّذ الأمر وقارن قيم VLAN أو المنفذ أو العدادات مع الإعدادات والسلوك المتوقع للشبكة.",
+        "mistakes": [
+          "لا تستخدم إعدادات PortFast/edge عشوائياً على وصلات switch-to-switch."
+        ]
+      }
+    }
+  },
+  "acl-kural-ve-sayaclarini-goruntuleme": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "ACL sıra numarası, eşleşme koşulları ve varsa hit counter değerlerini inceleyin."
+          },
+          {
+            "p": "inceleme",
+            "d": "Beklenmeyen izin/engelleme durumunda ACL'nin uygulandığı arayüzü ve giriş/çıkış yönünü doğrulayın."
+          }
+        ],
+        "example": "Komutu çalıştırın; ilgili VLAN, port veya sayaç değerlerini yapılandırma ve beklenen ağ davranışıyla karşılaştırın.",
+        "mistakes": [
+          "Kural sırası önemlidir; sayaçların sıfır olması her platformda trafiğin hiç gelmediğini kesin göstermez."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Review ACL sequence numbers, match conditions and available hit counters."
+          },
+          {
+            "p": "inspection",
+            "d": "For unexpected permit/deny behavior, verify the interface and inbound/outbound direction where the ACL is applied."
+          }
+        ],
+        "example": "Run the command and compare the relevant VLAN, port or counter values with the intended configuration and network behavior.",
+        "mistakes": [
+          "Rule order matters; zero counters do not always prove that no traffic reached the device."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "راجع أرقام تسلسل ACL وشروط المطابقة وعدادات التطابق المتاحة."
+          },
+          {
+            "p": "الفحص",
+            "d": "عند حدوث سماح أو حظر غير متوقع، تحقق من الواجهة واتجاه inbound أو outbound الذي طُبقت عليه ACL."
+          }
+        ],
+        "example": "نفّذ الأمر وقارن قيم VLAN أو المنفذ أو العدادات مع الإعدادات والسلوك المتوقع للشبكة.",
+        "mistakes": [
+          "ترتيب القواعد مهم؛ والعدادات الصفرية لا تثبت دائماً أن الحركة لم تصل إلى الجهاز."
+        ]
+      }
+    }
+  },
+  "dhcp-snooping-durumunu-goruntuleme": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "Snooping'in etkin olduğu VLAN'ları ve trusted port durumunu kontrol edin."
+          },
+          {
+            "p": "inceleme",
+            "d": "İstemciler DHCP adresi alamıyorsa uplink'in trusted ayarını, VLAN kapsamını ve binding tablosunu inceleyin."
+          }
+        ],
+        "example": "Komutu çalıştırın; ilgili VLAN, port veya sayaç değerlerini yapılandırma ve beklenen ağ davranışıyla karşılaştırın.",
+        "mistakes": [
+          "Yanlış trusted port seçimi DHCP güvenliğini zayıflatabilir; yalnızca gerçek DHCP sunucu/uplink yönünü güvenilir yapın."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Check VLANs where snooping is enabled and the trusted-port state."
+          },
+          {
+            "p": "inspection",
+            "d": "If clients cannot obtain DHCP addresses, inspect the trusted uplink, VLAN scope and binding table."
+          }
+        ],
+        "example": "Run the command and compare the relevant VLAN, port or counter values with the intended configuration and network behavior.",
+        "mistakes": [
+          "An incorrectly trusted port weakens DHCP protection; trust only the actual DHCP server/uplink direction."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "تحقق من شبكات VLAN التي فُعّل فيها snooping وحالة المنافذ الموثوقة."
+          },
+          {
+            "p": "الفحص",
+            "d": "إذا لم تحصل الأجهزة على عناوين DHCP، افحص وصلة uplink الموثوقة ونطاق VLAN وجدول binding."
+          }
+        ],
+        "example": "نفّذ الأمر وقارن قيم VLAN أو المنفذ أو العدادات مع الإعدادات والسلوك المتوقع للشبكة.",
+        "mistakes": [
+          "اختيار منفذ موثوق بشكل خاطئ يضعف حماية DHCP؛ ثق فقط باتجاه خادم DHCP أو وصلة uplink الفعلية."
+        ]
+      }
+    }
+  },
+  "arayuz-hata-sayaclarini-goruntuleme": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "çıktı",
+            "d": "CRC, input error, output error ve drop sayaçlarını inceleyin."
+          },
+          {
+            "p": "inceleme",
+            "d": "CRC artıyorsa kablo, optik modül, fiber temizliği, hız/duplex ve karşı uç sayaçlarını karşılaştırın."
+          }
+        ],
+        "example": "Komutu çalıştırın; ilgili VLAN, port veya sayaç değerlerini yapılandırma ve beklenen ağ davranışıyla karşılaştırın.",
+        "mistakes": [
+          "Sayaçları temizlemeden önce mevcut değerleri ve zaman aralığını raporlayın."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "output",
+            "d": "Inspect CRC, input error, output error and drop counters."
+          },
+          {
+            "p": "inspection",
+            "d": "If CRC errors increase, compare the cable, optics, fiber cleanliness, speed/duplex and counters on the far end."
+          }
+        ],
+        "example": "Run the command and compare the relevant VLAN, port or counter values with the intended configuration and network behavior.",
+        "mistakes": [
+          "Record current values and the observation interval before clearing counters."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المخرجات",
+            "d": "افحص عدادات CRC وأخطاء الإدخال والإخراج وحالات الإسقاط."
+          },
+          {
+            "p": "الفحص",
+            "d": "إذا زادت أخطاء CRC، فقارن الكابل والوحدات الضوئية ونظافة الألياف والسرعة/الازدواجية والعدادات في الطرف الآخر."
+          }
+        ],
+        "example": "نفّذ الأمر وقارن قيم VLAN أو المنفذ أو العدادات مع الإعدادات والسلوك المتوقع للشبكة.",
+        "mistakes": [
+          "سجّل القيم الحالية والفترة الزمنية قبل تصفير العدادات."
+        ]
+      }
+    }
+  }
+}
