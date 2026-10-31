@@ -1,0 +1,104 @@
+{
+  "items": {
+    "ipv6-interface-summary": {
+      "en": {
+        "title": "Display IPv6 interface summary",
+        "note": "Checks IPv6 addresses and operational state across interfaces. Output may differ on interfaces without IPv6 enabled or assigned addresses."
+      },
+      "ar": {
+        "title": "عرض ملخص واجهات IPv6",
+        "note": "يفحص عناوين IPv6 وحالة التشغيل عبر الواجهات. قد تختلف المخرجات للواجهات التي لم يتم تفعيل IPv6 عليها أو لم تُعيّن لها عناوين."
+      }
+    },
+    "ipv6-routing-table": {
+      "en": {
+        "title": "Display IPv6 routing table",
+        "note": "Inspects selected routes for IPv6 destinations, including next hops and egress interfaces. Protocol filters vary by platform."
+      },
+      "ar": {
+        "title": "عرض جدول توجيه IPv6",
+        "note": "يفحص المسارات المختارة لوجهات IPv6، بما في ذلك القفزة التالية وواجهة الخروج. تختلف مرشحات البروتوكول حسب المنصة."
+      }
+    },
+    "ipv6-neighbor-table": {
+      "en": {
+        "title": "Display IPv6 neighbor discovery table",
+        "note": "Checks IPv6-to-MAC mappings and neighbor states in the Neighbor Discovery table. Dynamic entries may age out."
+      },
+      "ar": {
+        "title": "عرض جدول جيران IPv6",
+        "note": "يفحص مطابقة عناوين IPv6 مع عناوين MAC وحالات الجيران في جدول Neighbor Discovery. قد تنتهي صلاحية الإدخالات الديناميكية."
+      }
+    },
+    "ipv6-ospf-neighbors": {
+      "en": {
+        "title": "Display OSPFv3 neighbors",
+        "note": "Checks OSPFv3 adjacencies and states. Process, area and interface filters depend on the topology."
+      },
+      "ar": {
+        "title": "عرض جيران OSPFv3",
+        "note": "يفحص مجاورات OSPFv3 وحالاتها. تعتمد مرشحات العملية والمنطقة والواجهة على تصميم الشبكة."
+      }
+    },
+    "bgp-ipv6-summary": {
+      "en": {
+        "title": "Display BGP IPv6 neighbor summary",
+        "note": "Checks BGP session state and prefix counts for the IPv6 unicast address family. Syntax may vary by software release."
+      },
+      "ar": {
+        "title": "عرض ملخص جيران BGP IPv6",
+        "note": "يفحص حالة جلسة BGP وعدد البادئات لعائلة عناوين IPv6 unicast. قد تختلف الصياغة حسب إصدار البرنامج."
+      }
+    },
+    "vrf-list": {
+      "en": {
+        "title": "List VRF instances",
+        "note": "Lists configured VRF/VPN instances. Vendor terminology differs, but the purpose is to separate routing tables logically."
+      },
+      "ar": {
+        "title": "عرض مثيلات VRF",
+        "note": "يسرد مثيلات VRF/VPN المعرّفة. تختلف المصطلحات بين الشركات، لكن الهدف هو فصل جداول التوجيه منطقياً."
+      }
+    },
+    "vrf-interface-membership": {
+      "en": {
+        "title": "Display interface VRF membership",
+        "note": "Verifies which VRF or VPN instance each interface uses. Check that management and production traffic use the intended table."
+      },
+      "ar": {
+        "title": "عرض عضوية الواجهات في VRF",
+        "note": "يتحقق من مثيل VRF أو VPN الذي تستخدمه كل واجهة. تأكد من استخدام حركة الإدارة والإنتاج للجدول المطلوب."
+      }
+    },
+    "qos-policy-statistics": {
+      "en": {
+        "title": "Display QoS policy statistics",
+        "note": "Inspects QoS policy matches, packet counters and drops. The Aruba example targets AOS-CX."
+      },
+      "ar": {
+        "title": "عرض إحصاءات سياسة QoS",
+        "note": "يفحص مطابقات سياسة QoS وعدادات الحزم والإسقاط. مثال Aruba مخصص لـ AOS-CX."
+      }
+    },
+    "acl-hit-counters": {
+      "en": {
+        "title": "Display ACL hit counters",
+        "note": "Inspects ACL hit counters to understand which rules match traffic. Counter support and syntax vary by release."
+      },
+      "ar": {
+        "title": "عرض عدادات مطابقة ACL",
+        "note": "يفحص عدادات مطابقة ACL لفهم القواعد التي تطابق الحركة. يختلف دعم العدادات والصياغة حسب الإصدار."
+      }
+    },
+    "ipv6-prefix-list": {
+      "en": {
+        "title": "Display IPv6 prefix-list configuration",
+        "note": "Inspects IPv6 prefix-list rules used by routing policies. Review the output together with the relevant BGP/OSPF policy attachment."
+      },
+      "ar": {
+        "title": "عرض إعدادات IPv6 prefix-list",
+        "note": "يفحص قواعد IPv6 prefix-list المستخدمة في سياسات التوجيه. راجع المخرجات مع إعدادات ربط سياسة BGP/OSPF ذات الصلة."
+      }
+    }
+  }
+}
