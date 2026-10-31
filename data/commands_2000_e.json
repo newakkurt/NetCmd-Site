@@ -24,7 +24,7 @@
     }
   },
   {
-    "slug": "interface-utilization",
+    "slug": "interface-traffic-rate-check",
     "title": "Arayüz trafik kullanımını görüntüleme",
     "cat": "Görüntüleme",
     "note": "Arayüzlerin giriş ve çıkış trafik hızlarını kapasiteyle karşılaştırın. Kısa süreli sıçramaları tek örnek yerine zaman içindeki ölçümlerle değerlendirin.",
@@ -48,7 +48,7 @@
     }
   },
   {
-    "slug": "transceiver-diagnostics",
+    "slug": "optical-dom-dom-diagnostics",
     "title": "Optik modül DOM değerlerini görüntüleme",
     "cat": "Görüntüleme",
     "note": "Desteklenen SFP/SFP+ modüllerde sıcaklık, voltaj, TX ve RX optik güç değerlerini kontrol eder. DOM desteği modül ve platforma bağlıdır.",
@@ -72,7 +72,7 @@
     }
   },
   {
-    "slug": "lldp-neighbor-detail",
+    "slug": "lldp-remote-device-detail",
     "title": "LLDP komşu ayrıntılarını görüntüleme",
     "cat": "Görüntüleme",
     "note": "Komşu cihaz adı, port ID, yetenek ve yönetim adresini inceleyerek fiziksel topolojiyi doğrulamaya yardımcı olur.",
@@ -96,7 +96,7 @@
     }
   },
   {
-    "slug": "cdp-neighbor-detail",
+    "slug": "cdp-remote-device-detail",
     "title": "CDP komşu ayrıntılarını görüntüleme",
     "cat": "Görüntüleme",
     "note": "Cisco Discovery Protocol komşularının cihaz ve port bilgilerini gösterir. CDP yalnızca desteklenen cihazlarda ve etkin arayüzlerde görünür.",
@@ -168,7 +168,7 @@
     }
   },
   {
-    "slug": "dhcp-snooping-status",
+    "slug": "dhcp-snooping-global-status",
     "title": "DHCP Snooping durumunu görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "DHCP Snooping etkinliğini, VLAN kapsamını ve güvenilir port yaklaşımını kontrol eder. Binding tablosu ayrı komutla incelenebilir.",
@@ -216,7 +216,7 @@
     }
   },
   {
-    "slug": "port-security-addresses",
+    "slug": "port-security-secure-mac-list",
     "title": "Port Security MAC kayıtlarını görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "Port-security tarafından öğrenilen güvenli MAC adreslerini ve ilgili portları kontrol eder. Komut ve kayıt biçimi platforma göre değişir.",
@@ -264,7 +264,7 @@
     }
   },
   {
-    "slug": "stp-root-bridge",
+    "slug": "stp-root-bridge-summary",
     "title": "STP root bridge bilgisini görüntüleme",
     "cat": "Yedeklilik ve Stack",
     "note": "Root bridge ID, root port ve path cost değerlerini kontrol ederek Layer 2 topolojisinin beklenen kök etrafında kurulduğunu doğrular.",
@@ -360,7 +360,7 @@
     }
   },
   {
-    "slug": "trunk-allowed-vlans",
+    "slug": "trunk-vlan-allow-list",
     "title": "Trunk izin verilen VLAN listesini görüntüleme",
     "cat": "VLAN / Port",
     "note": "Trunk bağlantısında taşınmasına izin verilen VLAN'ları kontrol eder. Her iki uçta VLAN listesi ve native/PVID eşleşmesi karşılaştırılmalıdır.",
@@ -432,7 +432,7 @@
     }
   },
   {
-    "slug": "logging-buffer",
+    "slug": "local-event-log-buffer",
     "title": "Yerel log tamponunu görüntüleme",
     "cat": "Sistem",
     "note": "Cihazın bellekte tuttuğu olay kayıtlarını gösterir. Tampon boyutu ve kayıt seviyesi cihaz yapılandırmasına bağlıdır.",
