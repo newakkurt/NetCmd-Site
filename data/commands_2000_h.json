@@ -10629,7 +10629,7 @@
     }
   },
   {
-    "slug": "bgp-ozet",
+    "slug": "bgp-session-summary-detail",
     "title": "BGP oturum özetini görüntüleme",
     "cat": "Routing",
     "note": "BGP komşularının oturum durumunu ve prefix sayaçlarını kontrol eder.",
@@ -10773,7 +10773,7 @@
     }
   },
   {
-    "slug": "poe-durum",
+    "slug": "poe-port-power-state",
     "title": "PoE port güç durumunu görüntüleme",
     "cat": "Görüntüleme",
     "note": "PoE portlarının güç tüketimini ve besleme durumunu gösterir.",
@@ -10845,7 +10845,7 @@
     }
   },
   {
-    "slug": "cpu-processes",
+    "slug": "cpu-process-top-consumption",
     "title": "CPU kullanımını süreç bazında görüntüleme",
     "cat": "Sistem",
     "note": "CPU tüketen süreçleri tespit etmeye yardımcı olur.",
@@ -10893,7 +10893,7 @@
     }
   },
   {
-    "slug": "ntp-status",
+    "slug": "ntp-clock-sync-state",
     "title": "NTP eşitleme durumunu görüntüleme",
     "cat": "Sistem",
     "note": "Saat sunucusu eşitleme ve senkronizasyon durumunu gösterir.",
@@ -10917,7 +10917,7 @@
     }
   },
   {
-    "slug": "ntp-associations",
+    "slug": "ntp-peer-list-detail",
     "title": "NTP sunucu eşleşmelerini görüntüleme",
     "cat": "Sistem",
     "note": "NTP peer/server seçim ve erişim durumunu listeler.",
@@ -10941,7 +10941,7 @@
     }
   },
   {
-    "slug": "dhcp-snooping-status",
+    "slug": "dhcp-snooping-feature-state",
     "title": "DHCP Snooping durumunu görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "DHCP Snooping etkinliğini ve VLAN kapsamını kontrol eder.",
@@ -10965,7 +10965,7 @@
     }
   },
   {
-    "slug": "dhcp-snooping-bindings",
+    "slug": "dhcp-snooping-ip-mac-bindings",
     "title": "DHCP Snooping binding tablosunu görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "IP, MAC, VLAN ve port eşleşmelerini listeler.",
@@ -11085,7 +11085,7 @@
     }
   },
   {
-    "slug": "logging-buffer",
+    "slug": "system-local-log-buffer",
     "title": "Yerel log tamponunu görüntüleme",
     "cat": "Sistem",
     "note": "Cihazın belleğinde tutulan sistem mesajlarını inceler.",
@@ -11157,7 +11157,7 @@
     }
   },
   {
-    "slug": "storm-control-status",
+    "slug": "storm-control-thresholds",
     "title": "Storm control yapılandırmasını görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "Broadcast, multicast ve unknown-unicast trafik sınırlarını kontrol eder.",
@@ -11253,7 +11253,7 @@
     }
   },
   {
-    "slug": "bgp-advertised-routes",
+    "slug": "bgp-peer-advertisement-table",
     "title": "BGP komşusuna ilan edilen rotaları görüntüleme",
     "cat": "Routing",
     "note": "Belirtilen komşuya gönderilen BGP prefix listesini inceler.",
@@ -11349,7 +11349,7 @@
     }
   },
   {
-    "slug": "pim-neighbors",
+    "slug": "pim-multicast-peer-list",
     "title": "PIM komşularını görüntüleme",
     "cat": "Routing",
     "note": "Multicast yönlendirme için PIM komşuluklarını kontrol eder.",
@@ -11373,7 +11373,7 @@
     }
   },
   {
-    "slug": "fan-status",
+    "slug": "chassis-fan-module-state",
     "title": "Fan modüllerinin durumunu görüntüleme",
     "cat": "Sistem",
     "note": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder.",
@@ -11397,7 +11397,7 @@
     }
   },
   {
-    "slug": "power-supply-status",
+    "slug": "chassis-power-supply-health",
     "title": "Güç kaynağı durumunu görüntüleme",
     "cat": "Sistem",
     "note": "PSU modüllerinin varlık ve çalışma durumunu kontrol eder.",
@@ -11493,7 +11493,7 @@
     }
   },
   {
-    "slug": "vlan-port-membership",
+    "slug": "switchport-vlan-membership",
     "title": "VLAN port üyeliklerini görüntüleme",
     "cat": "VLAN / Port",
     "note": "Access ve trunk portların VLAN üyeliklerini kontrol eder.",
@@ -11517,7 +11517,7 @@
     }
   },
   {
-    "slug": "stp-root-bridge",
+    "slug": "spanning-tree-root-bridge-id",
     "title": "STP root bridge bilgisini görüntüleme",
     "cat": "VLAN / Port",
     "note": "Root bridge kimliğini ve root port yolunu doğrular.",
