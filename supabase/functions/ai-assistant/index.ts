@@ -12,8 +12,7 @@ If the request is not about network device CLI, set {"steps":[],"refused":true}.
 function cors(origin: string | null) {
   // Fail closed in production: do not reflect arbitrary Origin or emit wildcard CORS.
   const allowed = Deno.env.get("ALLOWED_ORIGIN") ?? "https://netcmd-site.onrender.com";
-  const localDev = /^http:\/\/localhost(?::\d+)?$/.test(origin ?? "");
-  const ok = origin === allowed || localDev;
+  const ok = origin === allowed;
   return {
     "access-control-allow-origin": ok && origin ? origin : allowed,
     "access-control-allow-headers": "authorization, apikey, content-type, x-client-info",
@@ -45,6 +44,9 @@ Deno.serve(async (req) => {
   const query = clip(body?.query, 500).trim();
   if (query.length < 3) return J({ error: "short" }, 400, h);
 
+  const key = Deno.env.get("GROQ_API_KEY");
+  if (!key) return J({ error: "unconfigured" }, 503, h);
+
   const admin = createClient(url, svc);
   const { data: prof } = await admin.from("profiles").select("is_premium,premium_until").eq("id", u.user.id).maybeSingle();
   const premium = !!prof?.is_premium && (!prof?.premium_until || new Date(prof.premium_until) > new Date());
@@ -53,8 +55,6 @@ Deno.serve(async (req) => {
   if (qerr) return J({ error: "quota_rpc" }, 500, h);
   if (n === -1) return J({ error: "quota", limit }, 429, h);
 
-  const key = Deno.env.get("GROQ_API_KEY");
-  if (!key) return J({ error: "unconfigured" }, 503, h);
   const resp = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",
     headers: { "content-type": "application/json", authorization: `Bearer ${key}` },
