@@ -210,16 +210,6 @@
         "note": "Sadece L3 arayüzü olan cihazlarda anlamlı çıktı verir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "arp-tablosu-troubleshooting": {
-      "en": {
-        "title": "ARP tablosunu görüntüleme (troubleshooting)",
-        "note": "Sadece L3 arayüzü olan cihazlarda anlamlı çıktı verir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "ARP tablosunu görüntüleme (استكشاف الأخطاء)",
-        "note": "Sadece L3 arayüzü olan cihazlarda anlamlı çıktı verir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "arp-tablosu-verification": {
       "en": {
         "title": "ARP tablosunu görüntüleme (verification)",
@@ -248,16 +238,6 @@
       "ar": {
         "title": "Routing tablosunu görüntüleme (تدقيق)",
         "note": "Huawei'de tablo adı 'routing-table'dır; 'route' değil. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
-    "routing-tablosu-troubleshooting": {
-      "en": {
-        "title": "Routing tablosunu görüntüleme (troubleshooting)",
-        "note": "Huawei'de tablo adı 'routing-table'dır; 'route' değil. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "Routing tablosunu görüntüleme (استكشاف الأخطاء)",
-        "note": "Huawei'de tablo adı 'routing-table'dır; 'route' değil. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
     "routing-tablosu-verification": {
@@ -290,16 +270,6 @@
         "note": "Çıktıda uptime, model ve image bilgisi yer alır; envanter otomasyonunda ilk bakılan komuttur. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "versiyon-bilgisi-troubleshooting": {
-      "en": {
-        "title": "Yazılım versiyonu ve uptime (troubleshooting)",
-        "note": "Çıktıda uptime, model ve image bilgisi yer alır; envanter otomasyonunda ilk bakılan komuttur. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "Yazılım versiyonu ve uptime (استكشاف الأخطاء)",
-        "note": "Çıktıda uptime, model ve image bilgisi yer alır; envanter otomasyonunda ilk bakılan komuttur. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "versiyon-bilgisi-verification": {
       "en": {
         "title": "Yazılım versiyonu ve uptime (verification)",
@@ -328,16 +298,6 @@
       "ar": {
         "title": "Arayüz durum özeti (تدقيق)",
         "note": "Cisco çıktısı VLAN, duplex ve hız kolonlarını da verir; Huawei 'brief' çıktısı PHY/Protocol durumunu gösterir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
-    "arayuz-durumu-troubleshooting": {
-      "en": {
-        "title": "Arayüz durum özeti (troubleshooting)",
-        "note": "Cisco çıktısı VLAN, duplex ve hız kolonlarını da verir; Huawei 'brief' çıktısı PHY/Protocol durumunu gösterir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "Arayüz durum özeti (استكشاف الأخطاء)",
-        "note": "Cisco çıktısı VLAN, duplex ve hız kolonlarını da verir; Huawei 'brief' çıktısı PHY/Protocol durumunu gösterir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
     "arayuz-durumu-verification": {
@@ -370,16 +330,6 @@
         "note": "Huawei'de birden fazla VLAN için 'vlan batch 10 20 30' kullanılabilir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "vlan-olusturma-troubleshooting": {
-      "en": {
-        "title": "VLAN oluşturma (troubleshooting)",
-        "note": "Huawei'de birden fazla VLAN için 'vlan batch 10 20 30' kullanılabilir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "VLAN oluşturma (استكشاف الأخطاء)",
-        "note": "Huawei'de birden fazla VLAN için 'vlan batch 10 20 30' kullanılabilir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "vlan-olusturma-verification": {
       "en": {
         "title": "VLAN oluşturma (verification)",
@@ -408,16 +358,6 @@
       "ar": {
         "title": "Access port yapılandırma (تدقيق)",
         "note": "Huawei'de arayüz adları GigabitEthernet0/0/1 biçimindedir; AOS-CX'te 1/1/1 (member/slot/port). Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
-    "access-port-troubleshooting": {
-      "en": {
-        "title": "Access port yapılandırma (troubleshooting)",
-        "note": "Huawei'de arayüz adları GigabitEthernet0/0/1 biçimindedir; AOS-CX'te 1/1/1 (member/slot/port). Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "Access port yapılandırma (استكشاف الأخطاء)",
-        "note": "Huawei'de arayüz adları GigabitEthernet0/0/1 biçimindedir; AOS-CX'te 1/1/1 (member/slot/port). Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
     "access-port-verification": {
@@ -450,16 +390,6 @@
         "note": "Huawei'de allow-pass listesi boşlukla ayrılır (virgül değil). Cisco'da bazı platformlarda önce 'switchport trunk encapsulation dot1q' gerekir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "trunk-port-troubleshooting": {
-      "en": {
-        "title": "Trunk port yapılandırma (troubleshooting)",
-        "note": "Huawei'de allow-pass listesi boşlukla ayrılır (virgül değil). Cisco'da bazı platformlarda önce 'switchport trunk encapsulation dot1q' gerekir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "Trunk port yapılandırma (استكشاف الأخطاء)",
-        "note": "Huawei'de allow-pass listesi boşlukla ayrılır (virgül değil). Cisco'da bazı platformlarda önce 'switchport trunk encapsulation dot1q' gerekir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "trunk-port-verification": {
       "en": {
         "title": "Trunk port yapılandırma (verification)",
@@ -488,16 +418,6 @@
       "ar": {
         "title": "DHCP Snooping etkinleştirme (تدقيق)",
         "note": "Uplink / DHCP sunucu yönündeki portlar trusted olmalıdır; aksi halde meşru DHCP cevapları düşer. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
-    "dhcp-snooping-troubleshooting": {
-      "en": {
-        "title": "DHCP Snooping etkinleştirme (troubleshooting)",
-        "note": "Uplink / DHCP sunucu yönündeki portlar trusted olmalıdır; aksi halde meşru DHCP cevapları düşer. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "DHCP Snooping etkinleştirme (استكشاف الأخطاء)",
-        "note": "Uplink / DHCP sunucu yönündeki portlar trusted olmalıdır; aksi halde meşru DHCP cevapları düşer. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
     "dhcp-snooping-verification": {
@@ -530,16 +450,6 @@
         "note": "IPSG ve DAI bu tabloya dayanır; tablo boşsa bu özellikler tüm trafiği engelleyebilir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "dhcp-snooping-binding-troubleshooting": {
-      "en": {
-        "title": "DHCP Snooping binding tablosu (troubleshooting)",
-        "note": "IPSG ve DAI bu tabloya dayanır; tablo boşsa bu özellikler tüm trafiği engelleyebilir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "DHCP Snooping binding tablosu (استكشاف الأخطاء)",
-        "note": "IPSG ve DAI bu tabloya dayanır; tablo boşsa bu özellikler tüm trafiği engelleyebilir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "dhcp-snooping-binding-verification": {
       "en": {
         "title": "DHCP Snooping binding tablosu (verification)",
@@ -568,16 +478,6 @@
       "ar": {
         "title": "IP Source Guard (IPSG) (تدقيق)",
         "note": "Önce DHCP Snooping çalışıyor olmalıdır. Aruba komutu yazılım sürümüne göre değişebilir; önce lab'da doğrulayın. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
-    "ip-source-guard-troubleshooting": {
-      "en": {
-        "title": "IP Source Guard (IPSG) (troubleshooting)",
-        "note": "Önce DHCP Snooping çalışıyor olmalıdır. Aruba komutu yazılım sürümüne göre değişebilir; önce lab'da doğrulayın. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "IP Source Guard (IPSG) (استكشاف الأخطاء)",
-        "note": "Önce DHCP Snooping çalışıyor olmalıdır. Aruba komutu yazılım sürümüne göre değişebilir; önce lab'da doğrulayın. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
     "ip-source-guard-verification": {
@@ -610,16 +510,6 @@
         "note": "Trusted uplink portlarında ARP inspection devre dışı bırakılmalıdır. Aruba komutu sürüme göre doğrulanmalıdır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "dynamic-arp-inspection-troubleshooting": {
-      "en": {
-        "title": "Dynamic ARP Inspection (DAI) (troubleshooting)",
-        "note": "Trusted uplink portlarında ARP inspection devre dışı bırakılmalıdır. Aruba komutu sürüme göre doğrulanmalıdır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "Dynamic ARP Inspection (DAI) (استكشاف الأخطاء)",
-        "note": "Trusted uplink portlarında ARP inspection devre dışı bırakılmalıdır. Aruba komutu sürüme göre doğrulanmalıdır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "dynamic-arp-inspection-verification": {
       "en": {
         "title": "Dynamic ARP Inspection (DAI) (verification)",
@@ -648,16 +538,6 @@
       "ar": {
         "title": "Spanning Tree modunu ayarlama (تدقيق)",
         "note": "Karışık vendor ortamlarında Cisco Rapid-PVST+ ile Huawei RSTP/MSTP arasında uyumluluk için root ve BPDU davranışı ayrıca test edilmelidir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
-    "stp-modu-troubleshooting": {
-      "en": {
-        "title": "Spanning Tree modunu ayarlama (troubleshooting)",
-        "note": "Karışık vendor ortamlarında Cisco Rapid-PVST+ ile Huawei RSTP/MSTP arasında uyumluluk için root ve BPDU davranışı ayrıca test edilmelidir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "Spanning Tree modunu ayarlama (استكشاف الأخطاء)",
-        "note": "Karışık vendor ortamlarında Cisco Rapid-PVST+ ile Huawei RSTP/MSTP arasında uyumluluk için root ve BPDU davranışı ayrıca test edilmelidir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
     "stp-modu-verification": {
@@ -690,16 +570,6 @@
         "note": "Root bridge ve port rollerini (root/designated/alternate) kontrol etmek için kullanılır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "stp-durumu-troubleshooting": {
-      "en": {
-        "title": "Spanning Tree durumunu görüntüleme (troubleshooting)",
-        "note": "Root bridge ve port rollerini (root/designated/alternate) kontrol etmek için kullanılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "Spanning Tree durumunu görüntüleme (استكشاف الأخطاء)",
-        "note": "Root bridge ve port rollerini (root/designated/alternate) kontrol etmek için kullanılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "stp-durumu-verification": {
       "en": {
         "title": "Spanning Tree durumunu görüntüleme (verification)",
@@ -728,16 +598,6 @@
       "ar": {
         "title": "LACP port kanalı (LAG) (تدقيق)",
         "note": "Huawei'de Eth-Trunk önce oluşturulur, üyeler arayüz altında eklenir veya trunkport ile toplu verilir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
-    "lacp-port-kanali-troubleshooting": {
-      "en": {
-        "title": "LACP port kanalı (LAG) (troubleshooting)",
-        "note": "Huawei'de Eth-Trunk önce oluşturulur, üyeler arayüz altında eklenir veya trunkport ile toplu verilir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "LACP port kanalı (LAG) (استكشاف الأخطاء)",
-        "note": "Huawei'de Eth-Trunk önce oluşturulur, üyeler arayüz altında eklenir veya trunkport ile toplu verilir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
     "lacp-port-kanali-verification": {
@@ -770,16 +630,6 @@
         "note": "Log korelasyonu ve sertifika doğrulaması için tüm cihazlarda aynı NTP kaynağı kullanılmalıdır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "ntp-sunucusu-troubleshooting": {
-      "en": {
-        "title": "NTP sunucusu tanımlama (troubleshooting)",
-        "note": "Log korelasyonu ve sertifika doğrulaması için tüm cihazlarda aynı NTP kaynağı kullanılmalıdır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "NTP sunucusu tanımlama (استكشاف الأخطاء)",
-        "note": "Log korelasyonu ve sertifika doğrulaması için tüm cihazlarda aynı NTP kaynağı kullanılmalıdır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "ntp-sunucusu-verification": {
       "en": {
         "title": "NTP sunucusu tanımlama (verification)",
@@ -808,16 +658,6 @@
       "ar": {
         "title": "Log kayıtlarını görüntüleme (تدقيق)",
         "note": "Huawei'de log tamponu 'logbuffer' olarak adlandırılır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
-    "log-goruntuleme-troubleshooting": {
-      "en": {
-        "title": "Log kayıtlarını görüntüleme (troubleshooting)",
-        "note": "Huawei'de log tamponu 'logbuffer' olarak adlandırılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "Log kayıtlarını görüntüleme (استكشاف الأخطاء)",
-        "note": "Huawei'de log tamponu 'logbuffer' olarak adlandırılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
     "log-goruntuleme-verification": {
@@ -850,16 +690,6 @@
         "note": "Topoloji keşfi ve patch panel doğrulaması için en pratik komutlardan biridir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "lldp-komsulari-troubleshooting": {
-      "en": {
-        "title": "LLDP komşularını görüntüleme (troubleshooting)",
-        "note": "Topoloji keşfi ve patch panel doğrulaması için en pratik komutlardan biridir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "LLDP komşularını görüntüleme (استكشاف الأخطاء)",
-        "note": "Topoloji keşfi ve patch panel doğrulaması için en pratik komutlardan biridir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "lldp-komsulari-verification": {
       "en": {
         "title": "LLDP komşularını görüntüleme (verification)",
@@ -888,16 +718,6 @@
       "ar": {
         "title": "Arayüz detayı ve hata sayaçları (تدقيق)",
         "note": "CRC, input error ve drop sayaçları fiziksel katman sorunlarının ilk göstergesidir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
-    "arayuz-detay-troubleshooting": {
-      "en": {
-        "title": "Arayüz detayı ve hata sayaçları (troubleshooting)",
-        "note": "CRC, input error ve drop sayaçları fiziksel katman sorunlarının ilk göstergesidir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "Arayüz detayı ve hata sayaçları (استكشاف الأخطاء)",
-        "note": "CRC, input error ve drop sayaçları fiziksel katman sorunlarının ilk göstergesidir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
     "arayuz-detay-verification": {
@@ -930,16 +750,6 @@
         "note": "Huawei'de negasyon 'no' değil 'undo' ile yapılır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "arayuz-kapatma-acma-troubleshooting": {
-      "en": {
-        "title": "Arayüzü kapatma / açma (troubleshooting)",
-        "note": "Huawei'de negasyon 'no' değil 'undo' ile yapılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "Arayüzü kapatma / açma (استكشاف الأخطاء)",
-        "note": "Huawei'de negasyon 'no' değil 'undo' ile yapılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "arayuz-kapatma-acma-verification": {
       "en": {
         "title": "Arayüzü kapatma / açma (verification)",
@@ -968,16 +778,6 @@
       "ar": {
         "title": "VLAN arayüzü (SVI) oluşturma (تدقيق)",
         "note": "Huawei'de arayüz adı Vlanif10 biçimindedir. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
-    "vlan-svi-troubleshooting": {
-      "en": {
-        "title": "VLAN arayüzü (SVI) oluşturma (troubleshooting)",
-        "note": "Huawei'de arayüz adı Vlanif10 biçimindedir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "VLAN arayüzü (SVI) oluşturma (استكشاف الأخطاء)",
-        "note": "Huawei'de arayüz adı Vlanif10 biçimindedir. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
     "vlan-svi-verification": {
@@ -1010,16 +810,6 @@
         "note": "Huawei'de komut 'ip route-static'tir; Aruba AOS-CX CIDR gösterimi kullanır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "statik-route-troubleshooting": {
-      "en": {
-        "title": "Statik default route ekleme (troubleshooting)",
-        "note": "Huawei'de komut 'ip route-static'tir; Aruba AOS-CX CIDR gösterimi kullanır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "Statik default route ekleme (استكشاف الأخطاء)",
-        "note": "Huawei'de komut 'ip route-static'tir; Aruba AOS-CX CIDR gösterimi kullanır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "statik-route-verification": {
       "en": {
         "title": "Statik default route ekleme (verification)",
@@ -1048,16 +838,6 @@
       "ar": {
         "title": "CPU kullanımını görüntüleme (تدقيق)",
         "note": "Anlık yük ile birlikte son 1/5 dakika ortalamasına bakmak geçici spike'ları ayırt etmeyi sağlar. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
-    "cpu-kullanimi-troubleshooting": {
-      "en": {
-        "title": "CPU kullanımını görüntüleme (troubleshooting)",
-        "note": "Anlık yük ile birlikte son 1/5 dakika ortalamasına bakmak geçici spike'ları ayırt etmeyi sağlar. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "CPU kullanımını görüntüleme (استكشاف الأخطاء)",
-        "note": "Anlık yük ile birlikte son 1/5 dakika ortalamasına bakmak geçici spike'ları ayırt etmeyi sağlar. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
     "cpu-kullanimi-verification": {
@@ -1090,16 +870,6 @@
         "note": "Rx/Tx güç seviyeleri (dBm) fiber hat sorunlarını teşhis etmek için kullanılır. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "transceiver-bilgisi-troubleshooting": {
-      "en": {
-        "title": "SFP / transceiver bilgisi ve DOM (troubleshooting)",
-        "note": "Rx/Tx güç seviyeleri (dBm) fiber hat sorunlarını teşhis etmek için kullanılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "SFP / transceiver bilgisi ve DOM (استكشاف الأخطاء)",
-        "note": "Rx/Tx güç seviyeleri (dBm) fiber hat sorunlarını teşhis etmek için kullanılır. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "transceiver-bilgisi-verification": {
       "en": {
         "title": "SFP / transceiver bilgisi ve DOM (verification)",
@@ -1130,16 +900,6 @@
         "note": "IPsec güvenlik birliklerini özetleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
-    "ipsec-sa-summary-troubleshooting": {
-      "en": {
-        "title": "IPsec güvenlik birliklerini özetleme (troubleshooting)",
-        "note": "IPsec güvenlik birliklerini özetleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "IPsec güvenlik birliklerini özetleme (استكشاف الأخطاء)",
-        "note": "IPsec güvenlik birliklerini özetleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
     "ipsec-sa-summary-verification": {
       "en": {
         "title": "IPsec güvenlik birliklerini özetleme (verification)",
@@ -1168,16 +928,6 @@
       "ar": {
         "title": "IKE güvenlik birliklerini görüntüleme (تدقيق)",
         "note": "IKE güvenlik birliklerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Envanter ve uyumluluk denetiminde kullanılır. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
-      }
-    },
-    "ike-sa-summary-troubleshooting": {
-      "en": {
-        "title": "IKE güvenlik birliklerini görüntüleme (troubleshooting)",
-        "note": "IKE güvenlik birliklerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. Verify syntax for the target platform and software release."
-      },
-      "ar": {
-        "title": "IKE güvenlik birliklerini görüntüleme (استكشاف الأخطاء)",
-        "note": "IKE güvenlik birliklerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin. Arıza analizinde ilgili çıktıyı diğer bulgularla birlikte değerlendirin. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
       }
     },
     "ike-sa-summary-verification": {
@@ -4998,6 +4748,256 @@
       "ar": {
         "title": "QoS arayüz sayaçları (GigabitEthernet1/0/18) (خط أساس)",
         "note": "QoS arayüz sayaçları (GigabitEthernet1/0/18). Salt okunur kontrol örneğidir. Hedef değeri kendi topolojinize göre uyarlayın ve komut desteğini sürümünüzde doğrulayın. Düzenli karşılaştırma için referans çıktı oluşturur. Komutların üretici ve sürüm uyumluluğunu cihaz üzerinde doğrulayın. تحقق من الصياغة حسب المنصة وإصدار البرنامج."
+      }
+    },
+    "netcmd-bgp-komsu-detay": {
+      "en": {
+        "title": "BGP komşu ayrıntılarını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "BGP komşu ayrıntılarını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-routing-protokolleri": {
+      "en": {
+        "title": "Etkin yönlendirme protokollerini görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Etkin yönlendirme protokollerini görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-stp-detay": {
+      "en": {
+        "title": "Spanning Tree ayrıntılarını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Spanning Tree ayrıntılarını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-stp-root": {
+      "en": {
+        "title": "Spanning Tree root köprüsünü görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Spanning Tree root köprüsünü görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-etherchannel-ozeti": {
+      "en": {
+        "title": "EtherChannel / Eth-Trunk durumunu görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "EtherChannel / Eth-Trunk durumunu görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-arayuz-hata-sayaclari": {
+      "en": {
+        "title": "Arayüz hata sayaçlarını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Arayüz hata sayaçlarını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-poe-durum": {
+      "en": {
+        "title": "PoE güç durumunu görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "PoE güç durumunu görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-cihaz-envanteri": {
+      "en": {
+        "title": "Cihaz donanım envanterini görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Cihaz donanım envanterini görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-ortam-sensorleri": {
+      "en": {
+        "title": "Sıcaklık ve ortam sensörlerini görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Sıcaklık ve ortam sensörlerini görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-aktif-kullanicilar": {
+      "en": {
+        "title": "Cihaza bağlı yönetim kullanıcılarını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Cihaza bağlı yönetim kullanıcılarını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-lldp-komsu-detay": {
+      "en": {
+        "title": "LLDP komşu ayrıntılarını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "LLDP komşu ayrıntılarını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-igmp-gruplari": {
+      "en": {
+        "title": "IGMP multicast gruplarını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "IGMP multicast gruplarını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-yedeklilik-durumu": {
+      "en": {
+        "title": "Kontrol düzlemi yedeklilik durumunu görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Kontrol düzlemi yedeklilik durumunu görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-stack-durumu": {
+      "en": {
+        "title": "Switch stack durumunu görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Switch stack durumunu görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-udld-komsulari": {
+      "en": {
+        "title": "UDLD komşularını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "UDLD komşularını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-lacp-komsulari": {
+      "en": {
+        "title": "LACP komşu bilgilerini görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "LACP komşu bilgilerini görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-radius-statistics": {
+      "en": {
+        "title": "RADIUS sayaçlarını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "RADIUS sayaçlarını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-tacacs-servers": {
+      "en": {
+        "title": "TACACS sunucu durumunu görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "TACACS sunucu durumunu görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-vrf-ozeti": {
+      "en": {
+        "title": "VRF bilgilerini görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "VRF bilgilerini görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-mpls-ldp-komsulari": {
+      "en": {
+        "title": "MPLS LDP komşularını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "MPLS LDP komşularını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-mpls-forwarding": {
+      "en": {
+        "title": "MPLS forwarding tablosunu görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "MPLS forwarding tablosunu görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-ip-sla-statistics": {
+      "en": {
+        "title": "IP SLA ölçüm sonuçlarını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "IP SLA ölçüm sonuçlarını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-cpu-kullanim": {
+      "en": {
+        "title": "CPU kullanımını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "CPU kullanımını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-memory-kullanim": {
+      "en": {
+        "title": "Bellek kullanımını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Bellek kullanımını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
+      }
+    },
+    "netcmd-transceiver-detay": {
+      "en": {
+        "title": "Optik modül ayrıntılarını görüntüleme",
+        "note": "Read-only diagnostic command. Syntax and feature support vary by platform and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Optik modül ayrıntılarını görüntüleme",
+        "note": "أمر تشخيصي للقراءة فقط. قد تختلف الصياغة ودعم الميزة حسب المنصة وإصدار البرنامج؛ تحقق من الجهاز المستهدف."
       }
     }
   }
