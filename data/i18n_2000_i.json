@@ -319,6 +319,406 @@
         "title": "عرض جدول توجيه IPv6",
         "note": "يعرض مسارات IPv6 ومعلومات القفزة التالية المختارة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
       }
+    },
+    "mac-move-events": {
+      "en": {
+        "title": "Mac Move Events",
+        "note": "Use this command to inspect mac move events. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Mac Move Events",
+        "note": "يُستخدم هذا الأمر لفحص Mac Move Events. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "arp-inspection-status": {
+      "en": {
+        "title": "Arp Inspection Status",
+        "note": "Use this command to inspect arp inspection status. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Arp Inspection Status",
+        "note": "يُستخدم هذا الأمر لفحص Arp Inspection Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "port-channel-load-balance": {
+      "en": {
+        "title": "Port Channel Load Balance",
+        "note": "Use this command to inspect port channel load balance. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Port Channel Load Balance",
+        "note": "يُستخدم هذا الأمر لفحص Port Channel Load Balance. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bgp-advertised-routes": {
+      "en": {
+        "title": "Bgp Advertised Routes",
+        "note": "Use this command to inspect bgp advertised routes. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Bgp Advertised Routes",
+        "note": "يُستخدم هذا الأمر لفحص Bgp Advertised Routes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bgp-received-routes": {
+      "en": {
+        "title": "Bgp Received Routes",
+        "note": "Use this command to inspect bgp received routes. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Bgp Received Routes",
+        "note": "يُستخدم هذا الأمر لفحص Bgp Received Routes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bfd-neighbor-session-state": {
+      "en": {
+        "title": "Bfd Neighbor Session State",
+        "note": "Use this command to inspect bfd neighbor session state. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Bfd Neighbor Session State",
+        "note": "يُستخدم هذا الأمر لفحص Bfd Neighbor Session State. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "multicast-routes": {
+      "en": {
+        "title": "Multicast Routes",
+        "note": "Use this command to inspect multicast routes. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Multicast Routes",
+        "note": "يُستخدم هذا الأمر لفحص Multicast Routes. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "pim-neighbors": {
+      "en": {
+        "title": "Pim Neighbors",
+        "note": "Use this command to inspect pim neighbors. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Pim Neighbors",
+        "note": "يُستخدم هذا الأمر لفحص Pim Neighbors. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "fan-status": {
+      "en": {
+        "title": "Fan Status",
+        "note": "Use this command to inspect fan status. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Fan Status",
+        "note": "يُستخدم هذا الأمر لفحص Fan Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "power-supply-status": {
+      "en": {
+        "title": "Power Supply Status",
+        "note": "Use this command to inspect power supply status. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Power Supply Status",
+        "note": "يُستخدم هذا الأمر لفحص Power Supply Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "temperature-status": {
+      "en": {
+        "title": "Temperature Status",
+        "note": "Use this command to inspect temperature status. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Temperature Status",
+        "note": "يُستخدم هذا الأمر لفحص Temperature Status. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "stack-members": {
+      "en": {
+        "title": "Stack Members",
+        "note": "Use this command to inspect stack members. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Stack Members",
+        "note": "يُستخدم هذا الأمر لفحص Stack Members. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "interface-description": {
+      "en": {
+        "title": "Interface Description",
+        "note": "Use this command to inspect interface description. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Interface Description",
+        "note": "يُستخدم هذا الأمر لفحص Interface Description. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "vlan-port-membership": {
+      "en": {
+        "title": "Vlan Port Membership",
+        "note": "Use this command to inspect vlan port membership. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Vlan Port Membership",
+        "note": "يُستخدم هذا الأمر لفحص Vlan Port Membership. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "stp-root-bridge": {
+      "en": {
+        "title": "Stp Root Bridge",
+        "note": "Use this command to inspect stp root bridge. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Stp Root Bridge",
+        "note": "يُستخدم هذا الأمر لفحص Stp Root Bridge. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-bgp-komsu-detay": {
+      "en": {
+        "title": "Netcmd Bgp Komsu Detay",
+        "note": "Use this command to inspect netcmd bgp komsu detay. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Bgp Komsu Detay",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Bgp Komsu Detay. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-routing-protokolleri": {
+      "en": {
+        "title": "Netcmd Routing Protokolleri",
+        "note": "Use this command to inspect netcmd routing protokolleri. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Routing Protokolleri",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Routing Protokolleri. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-stp-detay": {
+      "en": {
+        "title": "Netcmd Stp Detay",
+        "note": "Use this command to inspect netcmd stp detay. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Stp Detay",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Stp Detay. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-stp-root": {
+      "en": {
+        "title": "Netcmd Stp Root",
+        "note": "Use this command to inspect netcmd stp root. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Stp Root",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Stp Root. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-etherchannel-ozeti": {
+      "en": {
+        "title": "Netcmd Etherchannel Ozeti",
+        "note": "Use this command to inspect netcmd etherchannel ozeti. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Etherchannel Ozeti",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Etherchannel Ozeti. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-arayuz-hata-sayaclari": {
+      "en": {
+        "title": "Netcmd Arayuz Hata Sayaclari",
+        "note": "Use this command to inspect netcmd arayuz hata sayaclari. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Arayuz Hata Sayaclari",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Arayuz Hata Sayaclari. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-poe-durum": {
+      "en": {
+        "title": "Netcmd Poe Durum",
+        "note": "Use this command to inspect netcmd poe durum. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Poe Durum",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Poe Durum. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-cihaz-envanteri": {
+      "en": {
+        "title": "Netcmd Cihaz Envanteri",
+        "note": "Use this command to inspect netcmd cihaz envanteri. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Cihaz Envanteri",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Cihaz Envanteri. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-ortam-sensorleri": {
+      "en": {
+        "title": "Netcmd Ortam Sensorleri",
+        "note": "Use this command to inspect netcmd ortam sensorleri. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Ortam Sensorleri",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Ortam Sensorleri. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-aktif-kullanicilar": {
+      "en": {
+        "title": "Netcmd Aktif Kullanicilar",
+        "note": "Use this command to inspect netcmd aktif kullanicilar. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Aktif Kullanicilar",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Aktif Kullanicilar. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-lldp-komsu-detay": {
+      "en": {
+        "title": "Netcmd Lldp Komsu Detay",
+        "note": "Use this command to inspect netcmd lldp komsu detay. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Lldp Komsu Detay",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Lldp Komsu Detay. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-igmp-gruplari": {
+      "en": {
+        "title": "Netcmd Igmp Gruplari",
+        "note": "Use this command to inspect netcmd igmp gruplari. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Igmp Gruplari",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Igmp Gruplari. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-yedeklilik-durumu": {
+      "en": {
+        "title": "Netcmd Yedeklilik Durumu",
+        "note": "Use this command to inspect netcmd yedeklilik durumu. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Yedeklilik Durumu",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Yedeklilik Durumu. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-stack-durumu": {
+      "en": {
+        "title": "Netcmd Stack Durumu",
+        "note": "Use this command to inspect netcmd stack durumu. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Stack Durumu",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Stack Durumu. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-udld-komsulari": {
+      "en": {
+        "title": "Netcmd Udld Komsulari",
+        "note": "Use this command to inspect netcmd udld komsulari. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Udld Komsulari",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Udld Komsulari. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-lacp-komsulari": {
+      "en": {
+        "title": "Netcmd Lacp Komsulari",
+        "note": "Use this command to inspect netcmd lacp komsulari. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Lacp Komsulari",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Lacp Komsulari. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-radius-statistics": {
+      "en": {
+        "title": "Netcmd Radius Statistics",
+        "note": "Use this command to inspect netcmd radius statistics. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Radius Statistics",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Radius Statistics. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-tacacs-servers": {
+      "en": {
+        "title": "Netcmd Tacacs Servers",
+        "note": "Use this command to inspect netcmd tacacs servers. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Tacacs Servers",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Tacacs Servers. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-vrf-ozeti": {
+      "en": {
+        "title": "Netcmd Vrf Ozeti",
+        "note": "Use this command to inspect netcmd vrf ozeti. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Vrf Ozeti",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Vrf Ozeti. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-mpls-ldp-komsulari": {
+      "en": {
+        "title": "Netcmd Mpls Ldp Komsulari",
+        "note": "Use this command to inspect netcmd mpls ldp komsulari. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Mpls Ldp Komsulari",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Mpls Ldp Komsulari. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-mpls-forwarding": {
+      "en": {
+        "title": "Netcmd Mpls Forwarding",
+        "note": "Use this command to inspect netcmd mpls forwarding. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Mpls Forwarding",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Mpls Forwarding. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-ip-sla-statistics": {
+      "en": {
+        "title": "Netcmd Ip Sla Statistics",
+        "note": "Use this command to inspect netcmd ip sla statistics. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Ip Sla Statistics",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Ip Sla Statistics. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-cpu-kullanim": {
+      "en": {
+        "title": "Netcmd Cpu Kullanim",
+        "note": "Use this command to inspect netcmd cpu kullanim. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Cpu Kullanim",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Cpu Kullanim. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-memory-kullanim": {
+      "en": {
+        "title": "Netcmd Memory Kullanim",
+        "note": "Use this command to inspect netcmd memory kullanim. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Memory Kullanim",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Memory Kullanim. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "netcmd-transceiver-detay": {
+      "en": {
+        "title": "Netcmd Transceiver Detay",
+        "note": "Use this command to inspect netcmd transceiver detay. Verify syntax and availability on the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Netcmd Transceiver Detay",
+        "note": "يُستخدم هذا الأمر لفحص Netcmd Transceiver Detay. تحقق من الصياغة وتوفر الأمر على الشركة المصنعة والطراز وإصدار البرنامج المستهدف."
+      }
     }
   }
 }
