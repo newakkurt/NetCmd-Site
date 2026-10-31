@@ -11524,7 +11524,7 @@
     }
   },
   {
-    "slug": "ipv6-interface-summary",
+    "slug": "ipv6-address-interface-status",
     "title": "IPv6 arayüz özetini görüntüleme",
     "cat": "Görüntüleme",
     "note": "IPv6 adreslerini ve arayüz durumlarını özetler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
@@ -11548,7 +11548,7 @@
     }
   },
   {
-    "slug": "ipv6-neighbor-cache",
+    "slug": "ipv6-nd-neighbor-cache",
     "title": "IPv6 komşu önbelleğini görüntüleme",
     "cat": "Görüntüleme",
     "note": "IPv6 Neighbor Discovery önbelleğini inceler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
@@ -11884,7 +11884,7 @@
     }
   },
   {
-    "slug": "port-security-addresses",
+    "slug": "port-security-learned-mac-table",
     "title": "Port-security MAC kayıtlarını görüntüleme",
     "cat": "L2 Güvenlik",
     "note": "Port-security tarafından öğrenilen MAC adreslerini listeler. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
@@ -12148,7 +12148,7 @@
     }
   },
   {
-    "slug": "power-supply-status",
+    "slug": "chassis-power-module-status",
     "title": "Güç kaynağı durumunu görüntüleme",
     "cat": "Sistem",
     "note": "Güç kaynağı modüllerinin durumunu kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
@@ -12172,7 +12172,7 @@
     }
   },
   {
-    "slug": "fan-status",
+    "slug": "chassis-fan-module-status",
     "title": "Fan durumunu görüntüleme",
     "cat": "Sistem",
     "note": "Fan modüllerinin çalışma ve alarm durumunu kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
