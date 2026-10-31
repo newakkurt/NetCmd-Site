@@ -240,54 +240,6 @@
     }
   },
   {
-    "slug": "wlan-ssid-list",
-    "title": "SSID yapılandırmalarını listeleme",
-    "cat": "Kablosuz Ağ",
-    "note": "SSID yapılandırmalarını listeleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show wlan summary"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display wlan"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show wlan"
-      ]
-    }
-  },
-  {
-    "slug": "wlan-radio-status",
-    "title": "AP radyo durumlarını görüntüleme",
-    "cat": "Kablosuz Ağ",
-    "note": "AP radyo durumlarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ap dot11 5ghz summary"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display radio all"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ap radio"
-      ]
-    }
-  },
-  {
     "slug": "wlan-channel-utilization",
     "title": "Kablosuz kanal kullanımını görüntüleme",
     "cat": "Kablosuz Ağ",
@@ -308,30 +260,6 @@
       "mode": "Operator / Manager",
       "cmds": [
         "show ap radio statistics"
-      ]
-    }
-  },
-  {
-    "slug": "wlan-client-detail",
-    "title": "Kablosuz istemci ayrıntılarını görüntüleme",
-    "cat": "Kablosuz Ağ",
-    "note": "Kablosuz istemci ayrıntılarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show wireless client mac-address aaaa.bbbb.cccc detail"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display station mac-address aaaa-bbbb-cccc"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show wireless clients detail"
       ]
     }
   },
@@ -428,30 +356,6 @@
       "mode": "Operator / Manager",
       "cmds": [
         "show qos interface"
-      ]
-    }
-  },
-  {
-    "slug": "qos-class-map",
-    "title": "QoS sınıflarını görüntüleme",
-    "cat": "QoS ve Trafik",
-    "note": "QoS sınıflarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show class-map"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display traffic classifier"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show qos"
       ]
     }
   },
@@ -596,30 +500,6 @@
       "mode": "Operator / Manager",
       "cmds": [
         "show ip igmp"
-      ]
-    }
-  },
-  {
-    "slug": "igmp-groups",
-    "title": "IGMP grup üyeliklerini listeleme",
-    "cat": "Multicast",
-    "note": "IGMP grup üyeliklerini listeleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip igmp groups"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display igmp group"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show ip igmp groups"
       ]
     }
   },
@@ -816,78 +696,6 @@
     }
   },
   {
-    "slug": "storm-control-status",
-    "title": "Storm-control yapılandırmasını görüntüleme",
-    "cat": "Güvenlik ve Erişim",
-    "note": "Storm-control yapılandırmasını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show storm-control"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display storm-control"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show storm-control"
-      ]
-    }
-  },
-  {
-    "slug": "dynamic-arp-inspection",
-    "title": "Dynamic ARP Inspection durumunu görüntüleme",
-    "cat": "Güvenlik ve Erişim",
-    "note": "Dynamic ARP Inspection durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip arp inspection"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display arp anti-attack"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show arp-protect"
-      ]
-    }
-  },
-  {
-    "slug": "ip-source-guard",
-    "title": "IP Source Guard durumunu görüntüleme",
-    "cat": "Güvenlik ve Erişim",
-    "note": "IP Source Guard durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show ip verify source"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display ip source check user-bind"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show dhcp-snooping binding"
-      ]
-    }
-  },
-  {
     "slug": "macsec-session",
     "title": "MACsec oturumlarını görüntüleme",
     "cat": "Güvenlik ve Erişim",
@@ -960,30 +768,6 @@
     }
   },
   {
-    "slug": "logging-buffer",
-    "title": "Yerel log tamponunu görüntüleme",
-    "cat": "İzleme ve Log",
-    "note": "Yerel log tamponunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show logging"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display logbuffer"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show logging -r"
-      ]
-    }
-  },
-  {
     "slug": "logging-severity",
     "title": "Syslog önem seviyesini görüntüleme",
     "cat": "İzleme ve Log",
@@ -1022,30 +806,6 @@
       "mode": "User view",
       "cmds": [
         "display snmp-agent community"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show snmp-server"
-      ]
-    }
-  },
-  {
-    "slug": "snmp-engine-status",
-    "title": "SNMP agent durumunu görüntüleme",
-    "cat": "İzleme ve Log",
-    "note": "SNMP agent durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show snmp"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display snmp-agent sys-info"
       ]
     },
     "aruba": {
@@ -1104,54 +864,6 @@
     }
   },
   {
-    "slug": "power-supply-status",
-    "title": "Güç kaynağı durumunu görüntüleme",
-    "cat": "İzleme ve Log",
-    "note": "Güç kaynağı durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show environment power"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display power"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show system power-supply"
-      ]
-    }
-  },
-  {
-    "slug": "transceiver-diagnostics",
-    "title": "Optik modül DOM değerlerini görüntüleme",
-    "cat": "İzleme ve Log",
-    "note": "Optik modül DOM değerlerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show interfaces transceiver detail"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display transceiver diagnosis interface"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show interfaces transceiver"
-      ]
-    }
-  },
-  {
     "slug": "vlan-brief",
     "title": "VLAN listesini görüntüleme",
     "cat": "Switching ve VLAN",
@@ -1196,30 +908,6 @@
       "mode": "Operator / Manager",
       "cmds": [
         "show ip"
-      ]
-    }
-  },
-  {
-    "slug": "trunk-allowed-vlans",
-    "title": "Trunk üzerinde izinli VLAN listesini görüntüleme",
-    "cat": "Switching ve VLAN",
-    "note": "Trunk üzerinde izinli VLAN listesini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show interfaces trunk"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display port vlan"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show vlans ports"
       ]
     }
   },
@@ -1364,30 +1052,6 @@
       "mode": "Operator / Manager",
       "cmds": [
         "show interfaces brief"
-      ]
-    }
-  },
-  {
-    "slug": "interface-error-counters",
-    "title": "Arayüz hata sayaçlarını görüntüleme",
-    "cat": "Arayüz ve Fiziksel Katman",
-    "note": "Arayüz hata sayaçlarını görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show interfaces counters errors"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display interface counters errors"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show interfaces"
       ]
     }
   },
@@ -1632,54 +1296,6 @@
     }
   },
   {
-    "slug": "config-register",
-    "title": "Config-register değerini görüntüleme",
-    "cat": "Sistem ve Bakım",
-    "note": "Config-register değerini görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show version | include register"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display version"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show version"
-      ]
-    }
-  },
-  {
-    "slug": "license-status",
-    "title": "Lisans durumunu görüntüleme",
-    "cat": "Sistem ve Bakım",
-    "note": "Lisans durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show license summary"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display license"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show license"
-      ]
-    }
-  },
-  {
     "slug": "module-inventory",
     "title": "Donanım modül envanterini görüntüleme",
     "cat": "Sistem ve Bakım",
@@ -1700,30 +1316,6 @@
       "mode": "Operator / Manager",
       "cmds": [
         "show modules"
-      ]
-    }
-  },
-  {
-    "slug": "fan-status",
-    "title": "Fan durumunu görüntüleme",
-    "cat": "Sistem ve Bakım",
-    "note": "Fan durumunu görüntüleme. Çıktıyı cihaz modeli, yazılım sürümü ve karşı uç bilgileriyle birlikte değerlendirin.",
-    "cisco": {
-      "mode": "Privileged EXEC",
-      "cmds": [
-        "show environment fan"
-      ]
-    },
-    "huawei": {
-      "mode": "User view",
-      "cmds": [
-        "display fan"
-      ]
-    },
-    "aruba": {
-      "mode": "Operator / Manager",
-      "cmds": [
-        "show system fans"
       ]
     }
   }
