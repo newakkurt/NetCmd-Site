@@ -1,0 +1,29 @@
+[
+  {
+    "slug": "lldp-komsu-ozeti",
+    "title": "LLDP komşularını görüntüleme",
+    "cat": "Görüntüleme",
+    "note": "LLDP komşu özeti, doğrudan bağlı cihazın sistem adı, portu ve ilan ettiği yetenekleri gösterir. Aruba komutu AOS-S içindir; AOS-CX sürümlerinde komut farklı olabilir.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show lldp neighbors",
+        "show lldp neighbors detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display lldp neighbor brief",
+        "display lldp neighbor"
+      ]
+    },
+    "aruba": {
+      "mode": "Manager (AOS-S)",
+      "cmds": [
+        "show lldp info remote-device",
+        "show lldp info remote-device detail"
+      ]
+    }
+  }
+]
