@@ -1,0 +1,1162 @@
+{
+  "bgp-neighbor-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "BGP peer durumunu, ASN bilgisini ve alınan/gönderilen prefix sayılarını inceler. Komşu durumunu address-family ve politika bilgileriyle birlikte değerlendirin.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Inspects BGP peer state, ASN and received/sent prefix counts. Evaluate neighbor state together with address-family and policy information.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص حالة نظير BGP ورقم ASN وعدد البادئات المستلمة والمرسلة. قيّم الحالة مع معلومات address-family والسياسات.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "bgp-advertised-routes": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Bir BGP komşusuna ilan edilen prefixleri kontrol eder. Outbound route-policy veya route-map filtreleri beklenen rotaları etkileyebilir.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Checks prefixes advertised to a BGP neighbor. Outbound route-policy or route-map filters can affect expected routes.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص البادئات المعلنة إلى نظير BGP. قد تؤثر سياسات التوجيه الصادرة أو route-map على المسارات المتوقعة.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "ospf-neighbor-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "OSPF komşularının router ID, alan ve adjacency durumlarını inceler. FULL dışındaki durumlarda iki uçtaki parametreleri karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Inspects OSPF neighbor router IDs, areas and adjacency states. For states other than FULL, compare parameters on both ends.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص معرفات موجّهات OSPF والمناطق وحالات المجاورة. في الحالات غير FULL قارن الإعدادات على الطرفين.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "ospf-interface-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "OSPF etkin arayüzlerin area, cost, network type ve timer bilgilerini kontrol eder. Komşuluk sorunlarında iki uçta eşleşmeyi doğrulayın.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Checks area, cost, network type and timer information for OSPF-enabled interfaces. Verify matching parameters on both ends when troubleshooting adjacency.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص المنطقة والتكلفة ونوع الشبكة والمؤقتات للواجهات التي تشغّل OSPF. تحقق من تطابق الإعدادات على الطرفين.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "ospf-database-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Link State Database içindeki LSA türü ve sayılarını inceleyerek OSPF topoloji bilgisinin dağılımını kontrol eder.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Inspects LSA types and counts in the Link State Database to review OSPF topology information.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص أنواع LSA وأعدادها في قاعدة بيانات Link State لمراجعة معلومات طوبولوجيا OSPF.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "routing-table-protocol": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Rota kaynağını ve seçilmiş next-hop bilgisini inceleyin. Birden fazla protokol aynı prefixi duyuruyorsa administrative distance/preference etkisini değerlendirin.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Reviews route source and selected next-hop. If multiple protocols advertise a prefix, consider administrative distance/preference.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يراجع مصدر المسار والقفزة التالية المختارة. إذا أعلنت بروتوكولات متعددة عن بادئة، فضع administrative distance/preference في الاعتبار.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "static-route-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Yapılandırılmış statik rotaları ve next-hop değerlerini kontrol eder. Recursive next-hop çözümlemesini ve VRF kapsamını ayrıca doğrulayın.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Checks configured static routes and next hops. Verify recursive next-hop resolution and VRF scope separately.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص المسارات الثابتة والقفزات التالية المعرّفة. تحقق بشكل منفصل من حل next-hop ونطاق VRF.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "route-map-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Route-map sequence, match ve set koşullarını inceler. Politikanın doğru BGP neighbor veya redistribution noktasına bağlandığını doğrulayın.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Inspects route-map sequence, match and set conditions. Verify that the policy is attached to the intended BGP neighbor or redistribution point.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص تسلسل route-map وشروط match وset. تحقق من ربط السياسة بنظير BGP أو نقطة إعادة التوزيع المطلوبة.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "prefix-list-ipv4": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "IPv4 prefix-list kurallarını ve ge/le sınırlarını inceler. Sıra ve permit/deny mantığını ilgili routing policy ile birlikte kontrol edin.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Inspects IPv4 prefix-list rules and ge/le bounds. Review sequence and permit/deny logic with the related routing policy.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص قواعد IPv4 prefix-list وحدود ge/le. راجع التسلسل ومنطق permit/deny مع سياسة التوجيه المرتبطة.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "hsrp-brief": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "HSRP gruplarının Active/Standby durumlarını, sanal IP ve öncelik bilgilerini kontrol eder. Grup ve VLAN eşleşmesini doğrulayın.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Checks HSRP group Active/Standby state, virtual IP and priority. Verify group and VLAN mapping.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص حالة Active/Standby لمجموعات HSRP وعنوان IP الافتراضي والأولوية. تحقق من ربط المجموعة مع VLAN.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "vrrp-brief": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "VRRP master/backup durumlarını ve sanal router bilgilerini inceler. Öncelik, advertisement timer ve preempt ayarlarını karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Inspects VRRP master/backup state and virtual router information. Compare priority, advertisement timer and preempt settings.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص حالة master/backup في VRRP ومعلومات الموجّه الافتراضي. قارن الأولوية ومؤقت الإعلان وإعداد preempt.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "stack-member-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Stack üyelerinin rol, durum ve donanım bilgilerini kontrol eder. Stack ring/port sağlığını ayrıca inceleyin.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Checks stack member roles, states and hardware details. Inspect stack ring/port health separately.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص أدوار وحالات أعضاء stack وتفاصيل الأجهزة. افحص صحة منافذ وحلقة stack بشكل منفصل.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "device-uptime": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Son yeniden başlatmadan bu yana geçen süreyi kontrol eder. Uptime değerini reload ve güç olaylarıyla karşılaştırın.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Checks elapsed time since the last reboot. Correlate uptime with reload and power events.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص الوقت المنقضي منذ آخر إعادة تشغيل. قارن مدة التشغيل مع أحداث reload والطاقة.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "memory-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Kullanılan ve boş bellek miktarını kontrol eder. Ani değişimleri süreç belleği ve cihaz loglarıyla birlikte değerlendirin.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Checks used and free memory. Review sudden changes together with process memory and device logs.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص الذاكرة المستخدمة والمتاحة. راجع التغييرات المفاجئة مع ذاكرة العمليات وسجلات الجهاز.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "flash-filesystem": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Flash depolama alanını ve dosya sistemindeki dosyaları kontrol eder. Yedekleme veya yükseltme öncesi boş alanı doğrulayın.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Checks flash storage and filesystem contents. Verify free space before backups or upgrades.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص مساحة تخزين flash ومحتويات نظام الملفات. تحقق من المساحة المتاحة قبل النسخ الاحتياطي أو الترقية.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "startup-config-check": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Cihazın açılışta yükleyeceği yapılandırmayı inceleyerek kaydedilmiş ayarları doğrular. Hassas bilgileri paylaşmadan önce maskeleyin.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Inspects the configuration loaded at startup. Mask sensitive information before sharing output.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص الإعداد الذي سيتم تحميله عند بدء التشغيل. أخفِ المعلومات الحساسة قبل مشاركة المخرجات.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "running-config-section": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Çalışan yapılandırmada belirli bir arayüz, VLAN veya protokol bölümünü bulmaya yardımcı olur. Filtre sözdizimi platforma göre değişir.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Helps locate a specific interface, VLAN or protocol section in the running configuration. Filter syntax varies by platform.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يساعد في العثور على قسم واجهة أو VLAN أو بروتوكول في الإعداد الجاري. تختلف صياغة التصفية حسب المنصة.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "interface-flap-log": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Link up/down olaylarını inceleyerek fiziksel bağlantı kesintilerinin zamanını ve tekrar sıklığını belirlemeye yardımcı olur.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Inspects link up/down events to identify timing and recurrence of physical connectivity interruptions.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص أحداث link up/down لتحديد توقيت وتكرار انقطاعات الاتصال الفيزيائي.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "ping-source-interface": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Belirli bir kaynak IP veya arayüzden erişilebilirliği test eder. Test sonucu routing, ACL ve dönüş yolunu birlikte değerlendirmeyi gerektirir.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Tests reachability using a specified source IP or interface. Interpret results together with routing, ACL and return path.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يختبر إمكانية الوصول باستخدام عنوان IP أو واجهة مصدر محددة. قيّم النتيجة مع التوجيه وACL ومسار العودة.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "traceroute-source": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kontrol",
+            "d": "Komutun doğru görünümde çalıştırıldığını ve ilgili protokol/arayüz kapsamını doğrulayın."
+          }
+        ],
+        "example": "Belirli bir kaynak IP ile hedefe giden L3 yolu inceler. Ara cihazların ICMP yanıtlarını filtrelemesi sonucu etkileyebilir.",
+        "mistakes": [
+          "Farklı işletim sistemlerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "check",
+            "d": "Confirm the command is run in the correct view and protocol/interface scope."
+          }
+        ],
+        "example": "Inspects the Layer 3 path to a destination using a specified source IP. Intermediate devices filtering ICMP may affect results.",
+        "mistakes": [
+          "Assuming syntax is identical across operating systems.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "الفحص",
+            "d": "تحقق من تنفيذ الأمر في وضع العرض ونطاق البروتوكول أو الواجهة الصحيح."
+          }
+        ],
+        "example": "يفحص مسار الطبقة الثالثة إلى الوجهة باستخدام عنوان مصدر محدد. قد تؤثر تصفية ICMP في الأجهزة الوسيطة على النتيجة.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  }
+}
