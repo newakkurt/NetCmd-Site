@@ -1,0 +1,5474 @@
+[
+  {
+    "slug": "ref-interfaces-1-1",
+    "title": "Interface Durumu: GigabitEthernet1/0/1",
+    "cat": "Arayüzler",
+    "note": "Interface Durumu: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-1-2",
+    "title": "Interface Durumu: GigabitEthernet1/0/2",
+    "cat": "Arayüzler",
+    "note": "Interface Durumu: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-1-3",
+    "title": "Interface Durumu: GigabitEthernet1/0/3",
+    "cat": "Arayüzler",
+    "note": "Interface Durumu: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-1-4",
+    "title": "Interface Durumu: GigabitEthernet1/0/4",
+    "cat": "Arayüzler",
+    "note": "Interface Durumu: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-1-5",
+    "title": "Interface Durumu: GigabitEthernet1/0/5",
+    "cat": "Arayüzler",
+    "note": "Interface Durumu: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-1-6",
+    "title": "Interface Durumu: GigabitEthernet1/0/6",
+    "cat": "Arayüzler",
+    "note": "Interface Durumu: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-1-7",
+    "title": "Interface Durumu: GigabitEthernet1/0/7",
+    "cat": "Arayüzler",
+    "note": "Interface Durumu: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-1-8",
+    "title": "Interface Durumu: GigabitEthernet1/0/8",
+    "cat": "Arayüzler",
+    "note": "Interface Durumu: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-1-9",
+    "title": "Interface Durumu: Vlan10",
+    "cat": "Arayüzler",
+    "note": "Interface Durumu: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-1-10",
+    "title": "Interface Durumu: Vlan20",
+    "cat": "Arayüzler",
+    "note": "Interface Durumu: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-1-11",
+    "title": "Interface Durumu: Vlan30",
+    "cat": "Arayüzler",
+    "note": "Interface Durumu: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-1-12",
+    "title": "Interface Durumu: Vlan40",
+    "cat": "Arayüzler",
+    "note": "Interface Durumu: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-2-1",
+    "title": "Interface Hataları: GigabitEthernet1/0/1",
+    "cat": "Arayüzler",
+    "note": "Interface Hataları: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors GigabitEthernet1/0/1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-2-2",
+    "title": "Interface Hataları: GigabitEthernet1/0/2",
+    "cat": "Arayüzler",
+    "note": "Interface Hataları: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors GigabitEthernet1/0/2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-2-3",
+    "title": "Interface Hataları: GigabitEthernet1/0/3",
+    "cat": "Arayüzler",
+    "note": "Interface Hataları: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors GigabitEthernet1/0/3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-2-4",
+    "title": "Interface Hataları: GigabitEthernet1/0/4",
+    "cat": "Arayüzler",
+    "note": "Interface Hataları: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors GigabitEthernet1/0/4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-2-5",
+    "title": "Interface Hataları: GigabitEthernet1/0/5",
+    "cat": "Arayüzler",
+    "note": "Interface Hataları: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors GigabitEthernet1/0/5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-2-6",
+    "title": "Interface Hataları: GigabitEthernet1/0/6",
+    "cat": "Arayüzler",
+    "note": "Interface Hataları: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors GigabitEthernet1/0/6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-2-7",
+    "title": "Interface Hataları: GigabitEthernet1/0/7",
+    "cat": "Arayüzler",
+    "note": "Interface Hataları: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors GigabitEthernet1/0/7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-2-8",
+    "title": "Interface Hataları: GigabitEthernet1/0/8",
+    "cat": "Arayüzler",
+    "note": "Interface Hataları: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors GigabitEthernet1/0/8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-2-9",
+    "title": "Interface Hataları: Vlan10",
+    "cat": "Arayüzler",
+    "note": "Interface Hataları: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-2-10",
+    "title": "Interface Hataları: Vlan20",
+    "cat": "Arayüzler",
+    "note": "Interface Hataları: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-2-11",
+    "title": "Interface Hataları: Vlan30",
+    "cat": "Arayüzler",
+    "note": "Interface Hataları: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-2-12",
+    "title": "Interface Hataları: Vlan40",
+    "cat": "Arayüzler",
+    "note": "Interface Hataları: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-3-1",
+    "title": "Interface Açıklaması: GigabitEthernet1/0/1",
+    "cat": "Arayüzler",
+    "note": "Interface Açıklaması: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description GigabitEthernet1/0/1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description GigabitEthernet1/0/1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief GigabitEthernet1/0/1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-3-2",
+    "title": "Interface Açıklaması: GigabitEthernet1/0/2",
+    "cat": "Arayüzler",
+    "note": "Interface Açıklaması: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description GigabitEthernet1/0/2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description GigabitEthernet1/0/2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief GigabitEthernet1/0/2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-3-3",
+    "title": "Interface Açıklaması: GigabitEthernet1/0/3",
+    "cat": "Arayüzler",
+    "note": "Interface Açıklaması: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description GigabitEthernet1/0/3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description GigabitEthernet1/0/3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief GigabitEthernet1/0/3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-3-4",
+    "title": "Interface Açıklaması: GigabitEthernet1/0/4",
+    "cat": "Arayüzler",
+    "note": "Interface Açıklaması: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description GigabitEthernet1/0/4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description GigabitEthernet1/0/4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief GigabitEthernet1/0/4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-3-5",
+    "title": "Interface Açıklaması: GigabitEthernet1/0/5",
+    "cat": "Arayüzler",
+    "note": "Interface Açıklaması: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description GigabitEthernet1/0/5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description GigabitEthernet1/0/5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief GigabitEthernet1/0/5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-3-6",
+    "title": "Interface Açıklaması: GigabitEthernet1/0/6",
+    "cat": "Arayüzler",
+    "note": "Interface Açıklaması: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description GigabitEthernet1/0/6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description GigabitEthernet1/0/6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief GigabitEthernet1/0/6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-3-7",
+    "title": "Interface Açıklaması: GigabitEthernet1/0/7",
+    "cat": "Arayüzler",
+    "note": "Interface Açıklaması: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description GigabitEthernet1/0/7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description GigabitEthernet1/0/7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief GigabitEthernet1/0/7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-3-8",
+    "title": "Interface Açıklaması: GigabitEthernet1/0/8",
+    "cat": "Arayüzler",
+    "note": "Interface Açıklaması: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description GigabitEthernet1/0/8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description GigabitEthernet1/0/8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief GigabitEthernet1/0/8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-3-9",
+    "title": "Interface Açıklaması: Vlan10",
+    "cat": "Arayüzler",
+    "note": "Interface Açıklaması: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-3-10",
+    "title": "Interface Açıklaması: Vlan20",
+    "cat": "Arayüzler",
+    "note": "Interface Açıklaması: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-3-11",
+    "title": "Interface Açıklaması: Vlan30",
+    "cat": "Arayüzler",
+    "note": "Interface Açıklaması: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-3-12",
+    "title": "Interface Açıklaması: Vlan40",
+    "cat": "Arayüzler",
+    "note": "Interface Açıklaması: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-4-1",
+    "title": "Interface Trafiği: GigabitEthernet1/0/1",
+    "cat": "Arayüzler",
+    "note": "Interface Trafiği: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-4-2",
+    "title": "Interface Trafiği: GigabitEthernet1/0/2",
+    "cat": "Arayüzler",
+    "note": "Interface Trafiği: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-4-3",
+    "title": "Interface Trafiği: GigabitEthernet1/0/3",
+    "cat": "Arayüzler",
+    "note": "Interface Trafiği: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-4-4",
+    "title": "Interface Trafiği: GigabitEthernet1/0/4",
+    "cat": "Arayüzler",
+    "note": "Interface Trafiği: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-4-5",
+    "title": "Interface Trafiği: GigabitEthernet1/0/5",
+    "cat": "Arayüzler",
+    "note": "Interface Trafiği: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-4-6",
+    "title": "Interface Trafiği: GigabitEthernet1/0/6",
+    "cat": "Arayüzler",
+    "note": "Interface Trafiği: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-4-7",
+    "title": "Interface Trafiği: GigabitEthernet1/0/7",
+    "cat": "Arayüzler",
+    "note": "Interface Trafiği: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-4-8",
+    "title": "Interface Trafiği: GigabitEthernet1/0/8",
+    "cat": "Arayüzler",
+    "note": "Interface Trafiği: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface GigabitEthernet1/0/8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces GigabitEthernet1/0/8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-4-9",
+    "title": "Interface Trafiği: Vlan10",
+    "cat": "Arayüzler",
+    "note": "Interface Trafiği: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-4-10",
+    "title": "Interface Trafiği: Vlan20",
+    "cat": "Arayüzler",
+    "note": "Interface Trafiği: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-4-11",
+    "title": "Interface Trafiği: Vlan30",
+    "cat": "Arayüzler",
+    "note": "Interface Trafiği: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-4-12",
+    "title": "Interface Trafiği: Vlan40",
+    "cat": "Arayüzler",
+    "note": "Interface Trafiği: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-5-1",
+    "title": "Optik Tanılama: GigabitEthernet1/0/1",
+    "cat": "Arayüzler",
+    "note": "Optik Tanılama: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail GigabitEthernet1/0/1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface GigabitEthernet1/0/1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver GigabitEthernet1/0/1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-5-2",
+    "title": "Optik Tanılama: GigabitEthernet1/0/2",
+    "cat": "Arayüzler",
+    "note": "Optik Tanılama: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail GigabitEthernet1/0/2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface GigabitEthernet1/0/2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver GigabitEthernet1/0/2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-5-3",
+    "title": "Optik Tanılama: GigabitEthernet1/0/3",
+    "cat": "Arayüzler",
+    "note": "Optik Tanılama: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail GigabitEthernet1/0/3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface GigabitEthernet1/0/3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver GigabitEthernet1/0/3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-5-4",
+    "title": "Optik Tanılama: GigabitEthernet1/0/4",
+    "cat": "Arayüzler",
+    "note": "Optik Tanılama: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail GigabitEthernet1/0/4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface GigabitEthernet1/0/4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver GigabitEthernet1/0/4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-5-5",
+    "title": "Optik Tanılama: GigabitEthernet1/0/5",
+    "cat": "Arayüzler",
+    "note": "Optik Tanılama: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail GigabitEthernet1/0/5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface GigabitEthernet1/0/5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver GigabitEthernet1/0/5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-5-6",
+    "title": "Optik Tanılama: GigabitEthernet1/0/6",
+    "cat": "Arayüzler",
+    "note": "Optik Tanılama: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail GigabitEthernet1/0/6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface GigabitEthernet1/0/6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver GigabitEthernet1/0/6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-5-7",
+    "title": "Optik Tanılama: GigabitEthernet1/0/7",
+    "cat": "Arayüzler",
+    "note": "Optik Tanılama: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail GigabitEthernet1/0/7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface GigabitEthernet1/0/7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver GigabitEthernet1/0/7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-5-8",
+    "title": "Optik Tanılama: GigabitEthernet1/0/8",
+    "cat": "Arayüzler",
+    "note": "Optik Tanılama: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail GigabitEthernet1/0/8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface GigabitEthernet1/0/8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver GigabitEthernet1/0/8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-5-9",
+    "title": "Optik Tanılama: Vlan10",
+    "cat": "Arayüzler",
+    "note": "Optik Tanılama: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-5-10",
+    "title": "Optik Tanılama: Vlan20",
+    "cat": "Arayüzler",
+    "note": "Optik Tanılama: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-5-11",
+    "title": "Optik Tanılama: Vlan30",
+    "cat": "Arayüzler",
+    "note": "Optik Tanılama: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-interfaces-5-12",
+    "title": "Optik Tanılama: Vlan40",
+    "cat": "Arayüzler",
+    "note": "Optik Tanılama: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-6-1",
+    "title": "VLAN MAC Tablosu: GigabitEthernet1/0/1",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN MAC Tablosu: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-6-2",
+    "title": "VLAN MAC Tablosu: GigabitEthernet1/0/2",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN MAC Tablosu: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-6-3",
+    "title": "VLAN MAC Tablosu: GigabitEthernet1/0/3",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN MAC Tablosu: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-6-4",
+    "title": "VLAN MAC Tablosu: GigabitEthernet1/0/4",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN MAC Tablosu: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-6-5",
+    "title": "VLAN MAC Tablosu: GigabitEthernet1/0/5",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN MAC Tablosu: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-6-6",
+    "title": "VLAN MAC Tablosu: GigabitEthernet1/0/6",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN MAC Tablosu: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-6-7",
+    "title": "VLAN MAC Tablosu: GigabitEthernet1/0/7",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN MAC Tablosu: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-6-8",
+    "title": "VLAN MAC Tablosu: GigabitEthernet1/0/8",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN MAC Tablosu: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan 8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan 8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan 8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-6-9",
+    "title": "VLAN MAC Tablosu: Vlan10",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN MAC Tablosu: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-6-10",
+    "title": "VLAN MAC Tablosu: Vlan20",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN MAC Tablosu: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-6-11",
+    "title": "VLAN MAC Tablosu: Vlan30",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN MAC Tablosu: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-6-12",
+    "title": "VLAN MAC Tablosu: Vlan40",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN MAC Tablosu: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table vlan Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address vlan Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address vlan Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-7-1",
+    "title": "VLAN Bilgisi: GigabitEthernet1/0/1",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN Bilgisi: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id 1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan 1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans 1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-7-2",
+    "title": "VLAN Bilgisi: GigabitEthernet1/0/2",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN Bilgisi: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id 2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan 2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans 2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-7-3",
+    "title": "VLAN Bilgisi: GigabitEthernet1/0/3",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN Bilgisi: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id 3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan 3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans 3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-7-4",
+    "title": "VLAN Bilgisi: GigabitEthernet1/0/4",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN Bilgisi: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id 4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan 4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans 4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-7-5",
+    "title": "VLAN Bilgisi: GigabitEthernet1/0/5",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN Bilgisi: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id 5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan 5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans 5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-7-6",
+    "title": "VLAN Bilgisi: GigabitEthernet1/0/6",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN Bilgisi: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id 6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan 6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans 6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-7-7",
+    "title": "VLAN Bilgisi: GigabitEthernet1/0/7",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN Bilgisi: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id 7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan 7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans 7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-7-8",
+    "title": "VLAN Bilgisi: GigabitEthernet1/0/8",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN Bilgisi: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id 8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan 8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans 8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-7-9",
+    "title": "VLAN Bilgisi: Vlan10",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN Bilgisi: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-7-10",
+    "title": "VLAN Bilgisi: Vlan20",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN Bilgisi: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-7-11",
+    "title": "VLAN Bilgisi: Vlan30",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN Bilgisi: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-7-12",
+    "title": "VLAN Bilgisi: Vlan40",
+    "cat": "Switching ve VLAN",
+    "note": "VLAN Bilgisi: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show vlan id Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display vlan Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show vlans Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-8-1",
+    "title": "STP Bilgisi: GigabitEthernet1/0/1",
+    "cat": "Switching ve VLAN",
+    "note": "STP Bilgisi: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-8-2",
+    "title": "STP Bilgisi: GigabitEthernet1/0/2",
+    "cat": "Switching ve VLAN",
+    "note": "STP Bilgisi: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-8-3",
+    "title": "STP Bilgisi: GigabitEthernet1/0/3",
+    "cat": "Switching ve VLAN",
+    "note": "STP Bilgisi: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-8-4",
+    "title": "STP Bilgisi: GigabitEthernet1/0/4",
+    "cat": "Switching ve VLAN",
+    "note": "STP Bilgisi: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-8-5",
+    "title": "STP Bilgisi: GigabitEthernet1/0/5",
+    "cat": "Switching ve VLAN",
+    "note": "STP Bilgisi: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-8-6",
+    "title": "STP Bilgisi: GigabitEthernet1/0/6",
+    "cat": "Switching ve VLAN",
+    "note": "STP Bilgisi: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-8-7",
+    "title": "STP Bilgisi: GigabitEthernet1/0/7",
+    "cat": "Switching ve VLAN",
+    "note": "STP Bilgisi: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-8-8",
+    "title": "STP Bilgisi: GigabitEthernet1/0/8",
+    "cat": "Switching ve VLAN",
+    "note": "STP Bilgisi: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan 8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan 8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree 8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-8-9",
+    "title": "STP Bilgisi: Vlan10",
+    "cat": "Switching ve VLAN",
+    "note": "STP Bilgisi: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-8-10",
+    "title": "STP Bilgisi: Vlan20",
+    "cat": "Switching ve VLAN",
+    "note": "STP Bilgisi: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-8-11",
+    "title": "STP Bilgisi: Vlan30",
+    "cat": "Switching ve VLAN",
+    "note": "STP Bilgisi: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-switching-8-12",
+    "title": "STP Bilgisi: Vlan40",
+    "cat": "Switching ve VLAN",
+    "note": "STP Bilgisi: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree vlan Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp vlan Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-9-1",
+    "title": "IPv4 Rota: GigabitEthernet1/0/1",
+    "cat": "Yönlendirme",
+    "note": "IPv4 Rota: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route 1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table 1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route 1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-9-2",
+    "title": "IPv4 Rota: GigabitEthernet1/0/2",
+    "cat": "Yönlendirme",
+    "note": "IPv4 Rota: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route 2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table 2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route 2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-9-3",
+    "title": "IPv4 Rota: GigabitEthernet1/0/3",
+    "cat": "Yönlendirme",
+    "note": "IPv4 Rota: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route 3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table 3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route 3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-9-4",
+    "title": "IPv4 Rota: GigabitEthernet1/0/4",
+    "cat": "Yönlendirme",
+    "note": "IPv4 Rota: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route 4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table 4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route 4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-9-5",
+    "title": "IPv4 Rota: GigabitEthernet1/0/5",
+    "cat": "Yönlendirme",
+    "note": "IPv4 Rota: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route 5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table 5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route 5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-9-6",
+    "title": "IPv4 Rota: GigabitEthernet1/0/6",
+    "cat": "Yönlendirme",
+    "note": "IPv4 Rota: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route 6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table 6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route 6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-9-7",
+    "title": "IPv4 Rota: GigabitEthernet1/0/7",
+    "cat": "Yönlendirme",
+    "note": "IPv4 Rota: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route 7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table 7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route 7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-9-8",
+    "title": "IPv4 Rota: GigabitEthernet1/0/8",
+    "cat": "Yönlendirme",
+    "note": "IPv4 Rota: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route 8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table 8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route 8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-9-9",
+    "title": "IPv4 Rota: Vlan10",
+    "cat": "Yönlendirme",
+    "note": "IPv4 Rota: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-9-10",
+    "title": "IPv4 Rota: Vlan20",
+    "cat": "Yönlendirme",
+    "note": "IPv4 Rota: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-9-11",
+    "title": "IPv4 Rota: Vlan30",
+    "cat": "Yönlendirme",
+    "note": "IPv4 Rota: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-9-12",
+    "title": "IPv4 Rota: Vlan40",
+    "cat": "Yönlendirme",
+    "note": "IPv4 Rota: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-ipv6-10-1",
+    "title": "IPv6 Rota: GigabitEthernet1/0/1",
+    "cat": "IPv6",
+    "note": "IPv6 Rota: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route 1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table 1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route 1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-ipv6-10-2",
+    "title": "IPv6 Rota: GigabitEthernet1/0/2",
+    "cat": "IPv6",
+    "note": "IPv6 Rota: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route 2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table 2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route 2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-ipv6-10-3",
+    "title": "IPv6 Rota: GigabitEthernet1/0/3",
+    "cat": "IPv6",
+    "note": "IPv6 Rota: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route 3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table 3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route 3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-ipv6-10-4",
+    "title": "IPv6 Rota: GigabitEthernet1/0/4",
+    "cat": "IPv6",
+    "note": "IPv6 Rota: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route 4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table 4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route 4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-ipv6-10-5",
+    "title": "IPv6 Rota: GigabitEthernet1/0/5",
+    "cat": "IPv6",
+    "note": "IPv6 Rota: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route 5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table 5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route 5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-ipv6-10-6",
+    "title": "IPv6 Rota: GigabitEthernet1/0/6",
+    "cat": "IPv6",
+    "note": "IPv6 Rota: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route 6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table 6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route 6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-ipv6-10-7",
+    "title": "IPv6 Rota: GigabitEthernet1/0/7",
+    "cat": "IPv6",
+    "note": "IPv6 Rota: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route 7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table 7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route 7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-ipv6-10-8",
+    "title": "IPv6 Rota: GigabitEthernet1/0/8",
+    "cat": "IPv6",
+    "note": "IPv6 Rota: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route 8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table 8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route 8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-ipv6-10-9",
+    "title": "IPv6 Rota: Vlan10",
+    "cat": "IPv6",
+    "note": "IPv6 Rota: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-ipv6-10-10",
+    "title": "IPv6 Rota: Vlan20",
+    "cat": "IPv6",
+    "note": "IPv6 Rota: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-ipv6-10-11",
+    "title": "IPv6 Rota: Vlan30",
+    "cat": "IPv6",
+    "note": "IPv6 Rota: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-ipv6-10-12",
+    "title": "IPv6 Rota: Vlan40",
+    "cat": "IPv6",
+    "note": "IPv6 Rota: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 route Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 routing-table Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 route Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-11-1",
+    "title": "ARP Kaydı: GigabitEthernet1/0/1",
+    "cat": "Yönlendirme",
+    "note": "ARP Kaydı: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-11-2",
+    "title": "ARP Kaydı: GigabitEthernet1/0/2",
+    "cat": "Yönlendirme",
+    "note": "ARP Kaydı: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-11-3",
+    "title": "ARP Kaydı: GigabitEthernet1/0/3",
+    "cat": "Yönlendirme",
+    "note": "ARP Kaydı: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-11-4",
+    "title": "ARP Kaydı: GigabitEthernet1/0/4",
+    "cat": "Yönlendirme",
+    "note": "ARP Kaydı: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-11-5",
+    "title": "ARP Kaydı: GigabitEthernet1/0/5",
+    "cat": "Yönlendirme",
+    "note": "ARP Kaydı: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-11-6",
+    "title": "ARP Kaydı: GigabitEthernet1/0/6",
+    "cat": "Yönlendirme",
+    "note": "ARP Kaydı: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-11-7",
+    "title": "ARP Kaydı: GigabitEthernet1/0/7",
+    "cat": "Yönlendirme",
+    "note": "ARP Kaydı: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-11-8",
+    "title": "ARP Kaydı: GigabitEthernet1/0/8",
+    "cat": "Yönlendirme",
+    "note": "ARP Kaydı: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp 8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp 8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp 8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-11-9",
+    "title": "ARP Kaydı: Vlan10",
+    "cat": "Yönlendirme",
+    "note": "ARP Kaydı: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-11-10",
+    "title": "ARP Kaydı: Vlan20",
+    "cat": "Yönlendirme",
+    "note": "ARP Kaydı: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-11-11",
+    "title": "ARP Kaydı: Vlan30",
+    "cat": "Yönlendirme",
+    "note": "ARP Kaydı: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-11-12",
+    "title": "ARP Kaydı: Vlan40",
+    "cat": "Yönlendirme",
+    "note": "ARP Kaydı: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip arp Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display arp Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show arp Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-12-1",
+    "title": "ACL Bilgisi: GigabitEthernet1/0/1",
+    "cat": "Güvenlik",
+    "note": "ACL Bilgisi: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-12-2",
+    "title": "ACL Bilgisi: GigabitEthernet1/0/2",
+    "cat": "Güvenlik",
+    "note": "ACL Bilgisi: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-12-3",
+    "title": "ACL Bilgisi: GigabitEthernet1/0/3",
+    "cat": "Güvenlik",
+    "note": "ACL Bilgisi: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-12-4",
+    "title": "ACL Bilgisi: GigabitEthernet1/0/4",
+    "cat": "Güvenlik",
+    "note": "ACL Bilgisi: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-12-5",
+    "title": "ACL Bilgisi: GigabitEthernet1/0/5",
+    "cat": "Güvenlik",
+    "note": "ACL Bilgisi: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-12-6",
+    "title": "ACL Bilgisi: GigabitEthernet1/0/6",
+    "cat": "Güvenlik",
+    "note": "ACL Bilgisi: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-12-7",
+    "title": "ACL Bilgisi: GigabitEthernet1/0/7",
+    "cat": "Güvenlik",
+    "note": "ACL Bilgisi: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-12-8",
+    "title": "ACL Bilgisi: GigabitEthernet1/0/8",
+    "cat": "Güvenlik",
+    "note": "ACL Bilgisi: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists 8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl 8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list 8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-12-9",
+    "title": "ACL Bilgisi: Vlan10",
+    "cat": "Güvenlik",
+    "note": "ACL Bilgisi: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-12-10",
+    "title": "ACL Bilgisi: Vlan20",
+    "cat": "Güvenlik",
+    "note": "ACL Bilgisi: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-12-11",
+    "title": "ACL Bilgisi: Vlan30",
+    "cat": "Güvenlik",
+    "note": "ACL Bilgisi: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-12-12",
+    "title": "ACL Bilgisi: Vlan40",
+    "cat": "Güvenlik",
+    "note": "ACL Bilgisi: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show access-lists Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display acl Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show access-list Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-13-1",
+    "title": "DHCP Snooping: GigabitEthernet1/0/1",
+    "cat": "Güvenlik",
+    "note": "DHCP Snooping: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping 1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping 1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping 1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-13-2",
+    "title": "DHCP Snooping: GigabitEthernet1/0/2",
+    "cat": "Güvenlik",
+    "note": "DHCP Snooping: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping 2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping 2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping 2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-13-3",
+    "title": "DHCP Snooping: GigabitEthernet1/0/3",
+    "cat": "Güvenlik",
+    "note": "DHCP Snooping: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping 3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping 3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping 3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-13-4",
+    "title": "DHCP Snooping: GigabitEthernet1/0/4",
+    "cat": "Güvenlik",
+    "note": "DHCP Snooping: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping 4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping 4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping 4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-13-5",
+    "title": "DHCP Snooping: GigabitEthernet1/0/5",
+    "cat": "Güvenlik",
+    "note": "DHCP Snooping: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping 5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping 5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping 5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-13-6",
+    "title": "DHCP Snooping: GigabitEthernet1/0/6",
+    "cat": "Güvenlik",
+    "note": "DHCP Snooping: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping 6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping 6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping 6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-13-7",
+    "title": "DHCP Snooping: GigabitEthernet1/0/7",
+    "cat": "Güvenlik",
+    "note": "DHCP Snooping: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping 7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping 7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping 7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-13-8",
+    "title": "DHCP Snooping: GigabitEthernet1/0/8",
+    "cat": "Güvenlik",
+    "note": "DHCP Snooping: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping 8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping 8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping 8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-13-9",
+    "title": "DHCP Snooping: Vlan10",
+    "cat": "Güvenlik",
+    "note": "DHCP Snooping: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-13-10",
+    "title": "DHCP Snooping: Vlan20",
+    "cat": "Güvenlik",
+    "note": "DHCP Snooping: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-13-11",
+    "title": "DHCP Snooping: Vlan30",
+    "cat": "Güvenlik",
+    "note": "DHCP Snooping: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-security-13-12",
+    "title": "DHCP Snooping: Vlan40",
+    "cat": "Güvenlik",
+    "note": "DHCP Snooping: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip dhcp snooping Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp snooping Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-snooping Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-qos-14-1",
+    "title": "QoS Politika: GigabitEthernet1/0/1",
+    "cat": "QoS",
+    "note": "QoS Politika: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-qos-14-2",
+    "title": "QoS Politika: GigabitEthernet1/0/2",
+    "cat": "QoS",
+    "note": "QoS Politika: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-qos-14-3",
+    "title": "QoS Politika: GigabitEthernet1/0/3",
+    "cat": "QoS",
+    "note": "QoS Politika: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-qos-14-4",
+    "title": "QoS Politika: GigabitEthernet1/0/4",
+    "cat": "QoS",
+    "note": "QoS Politika: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-qos-14-5",
+    "title": "QoS Politika: GigabitEthernet1/0/5",
+    "cat": "QoS",
+    "note": "QoS Politika: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-qos-14-6",
+    "title": "QoS Politika: GigabitEthernet1/0/6",
+    "cat": "QoS",
+    "note": "QoS Politika: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-qos-14-7",
+    "title": "QoS Politika: GigabitEthernet1/0/7",
+    "cat": "QoS",
+    "note": "QoS Politika: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-qos-14-8",
+    "title": "QoS Politika: GigabitEthernet1/0/8",
+    "cat": "QoS",
+    "note": "QoS Politika: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface GigabitEthernet1/0/8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record GigabitEthernet1/0/8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface GigabitEthernet1/0/8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-qos-14-9",
+    "title": "QoS Politika: Vlan10",
+    "cat": "QoS",
+    "note": "QoS Politika: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-qos-14-10",
+    "title": "QoS Politika: Vlan20",
+    "cat": "QoS",
+    "note": "QoS Politika: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-qos-14-11",
+    "title": "QoS Politika: Vlan30",
+    "cat": "QoS",
+    "note": "QoS Politika: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-qos-14-12",
+    "title": "QoS Politika: Vlan40",
+    "cat": "QoS",
+    "note": "QoS Politika: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show policy-map interface Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display traffic-policy applied-record Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show qos interface Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-15-1",
+    "title": "NTP Durumu: GigabitEthernet1/0/1",
+    "cat": "İzleme",
+    "note": "NTP Durumu: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions GigabitEthernet1/0/1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-15-2",
+    "title": "NTP Durumu: GigabitEthernet1/0/2",
+    "cat": "İzleme",
+    "note": "NTP Durumu: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions GigabitEthernet1/0/2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-15-3",
+    "title": "NTP Durumu: GigabitEthernet1/0/3",
+    "cat": "İzleme",
+    "note": "NTP Durumu: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions GigabitEthernet1/0/3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-15-4",
+    "title": "NTP Durumu: GigabitEthernet1/0/4",
+    "cat": "İzleme",
+    "note": "NTP Durumu: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions GigabitEthernet1/0/4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-15-5",
+    "title": "NTP Durumu: GigabitEthernet1/0/5",
+    "cat": "İzleme",
+    "note": "NTP Durumu: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions GigabitEthernet1/0/5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-15-6",
+    "title": "NTP Durumu: GigabitEthernet1/0/6",
+    "cat": "İzleme",
+    "note": "NTP Durumu: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions GigabitEthernet1/0/6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-15-7",
+    "title": "NTP Durumu: GigabitEthernet1/0/7",
+    "cat": "İzleme",
+    "note": "NTP Durumu: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions GigabitEthernet1/0/7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-15-8",
+    "title": "NTP Durumu: GigabitEthernet1/0/8",
+    "cat": "İzleme",
+    "note": "NTP Durumu: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions GigabitEthernet1/0/8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations GigabitEthernet1/0/8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-15-9",
+    "title": "NTP Durumu: Vlan10",
+    "cat": "İzleme",
+    "note": "NTP Durumu: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-15-10",
+    "title": "NTP Durumu: Vlan20",
+    "cat": "İzleme",
+    "note": "NTP Durumu: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-15-11",
+    "title": "NTP Durumu: Vlan30",
+    "cat": "İzleme",
+    "note": "NTP Durumu: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-15-12",
+    "title": "NTP Durumu: Vlan40",
+    "cat": "İzleme",
+    "note": "NTP Durumu: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ntp associations Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ntp-service sessions Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ntp associations Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-16-1",
+    "title": "Log Kayıtları: GigabitEthernet1/0/1",
+    "cat": "İzleme",
+    "note": "Log Kayıtları: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging GigabitEthernet1/0/1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer GigabitEthernet1/0/1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging GigabitEthernet1/0/1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-16-2",
+    "title": "Log Kayıtları: GigabitEthernet1/0/2",
+    "cat": "İzleme",
+    "note": "Log Kayıtları: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging GigabitEthernet1/0/2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer GigabitEthernet1/0/2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging GigabitEthernet1/0/2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-16-3",
+    "title": "Log Kayıtları: GigabitEthernet1/0/3",
+    "cat": "İzleme",
+    "note": "Log Kayıtları: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging GigabitEthernet1/0/3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer GigabitEthernet1/0/3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging GigabitEthernet1/0/3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-16-4",
+    "title": "Log Kayıtları: GigabitEthernet1/0/4",
+    "cat": "İzleme",
+    "note": "Log Kayıtları: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging GigabitEthernet1/0/4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer GigabitEthernet1/0/4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging GigabitEthernet1/0/4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-16-5",
+    "title": "Log Kayıtları: GigabitEthernet1/0/5",
+    "cat": "İzleme",
+    "note": "Log Kayıtları: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging GigabitEthernet1/0/5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer GigabitEthernet1/0/5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging GigabitEthernet1/0/5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-16-6",
+    "title": "Log Kayıtları: GigabitEthernet1/0/6",
+    "cat": "İzleme",
+    "note": "Log Kayıtları: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging GigabitEthernet1/0/6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer GigabitEthernet1/0/6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging GigabitEthernet1/0/6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-16-7",
+    "title": "Log Kayıtları: GigabitEthernet1/0/7",
+    "cat": "İzleme",
+    "note": "Log Kayıtları: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging GigabitEthernet1/0/7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer GigabitEthernet1/0/7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging GigabitEthernet1/0/7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-16-8",
+    "title": "Log Kayıtları: GigabitEthernet1/0/8",
+    "cat": "İzleme",
+    "note": "Log Kayıtları: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging GigabitEthernet1/0/8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer GigabitEthernet1/0/8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging GigabitEthernet1/0/8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-16-9",
+    "title": "Log Kayıtları: Vlan10",
+    "cat": "İzleme",
+    "note": "Log Kayıtları: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-16-10",
+    "title": "Log Kayıtları: Vlan20",
+    "cat": "İzleme",
+    "note": "Log Kayıtları: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-16-11",
+    "title": "Log Kayıtları: Vlan30",
+    "cat": "İzleme",
+    "note": "Log Kayıtları: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-monitoring-16-12",
+    "title": "Log Kayıtları: Vlan40",
+    "cat": "İzleme",
+    "note": "Log Kayıtları: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-17-1",
+    "title": "CPU Kullanımı: GigabitEthernet1/0/1",
+    "cat": "Sistem",
+    "note": "CPU Kullanımı: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu GigabitEthernet1/0/1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage GigabitEthernet1/0/1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu GigabitEthernet1/0/1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-17-2",
+    "title": "CPU Kullanımı: GigabitEthernet1/0/2",
+    "cat": "Sistem",
+    "note": "CPU Kullanımı: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu GigabitEthernet1/0/2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage GigabitEthernet1/0/2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu GigabitEthernet1/0/2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-17-3",
+    "title": "CPU Kullanımı: GigabitEthernet1/0/3",
+    "cat": "Sistem",
+    "note": "CPU Kullanımı: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu GigabitEthernet1/0/3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage GigabitEthernet1/0/3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu GigabitEthernet1/0/3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-17-4",
+    "title": "CPU Kullanımı: GigabitEthernet1/0/4",
+    "cat": "Sistem",
+    "note": "CPU Kullanımı: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu GigabitEthernet1/0/4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage GigabitEthernet1/0/4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu GigabitEthernet1/0/4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-17-5",
+    "title": "CPU Kullanımı: GigabitEthernet1/0/5",
+    "cat": "Sistem",
+    "note": "CPU Kullanımı: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu GigabitEthernet1/0/5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage GigabitEthernet1/0/5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu GigabitEthernet1/0/5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-17-6",
+    "title": "CPU Kullanımı: GigabitEthernet1/0/6",
+    "cat": "Sistem",
+    "note": "CPU Kullanımı: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu GigabitEthernet1/0/6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage GigabitEthernet1/0/6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu GigabitEthernet1/0/6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-17-7",
+    "title": "CPU Kullanımı: GigabitEthernet1/0/7",
+    "cat": "Sistem",
+    "note": "CPU Kullanımı: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu GigabitEthernet1/0/7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage GigabitEthernet1/0/7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu GigabitEthernet1/0/7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-17-8",
+    "title": "CPU Kullanımı: GigabitEthernet1/0/8",
+    "cat": "Sistem",
+    "note": "CPU Kullanımı: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu GigabitEthernet1/0/8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage GigabitEthernet1/0/8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu GigabitEthernet1/0/8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-17-9",
+    "title": "CPU Kullanımı: Vlan10",
+    "cat": "Sistem",
+    "note": "CPU Kullanımı: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-17-10",
+    "title": "CPU Kullanımı: Vlan20",
+    "cat": "Sistem",
+    "note": "CPU Kullanımı: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-17-11",
+    "title": "CPU Kullanımı: Vlan30",
+    "cat": "Sistem",
+    "note": "CPU Kullanımı: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-17-12",
+    "title": "CPU Kullanımı: Vlan40",
+    "cat": "Sistem",
+    "note": "CPU Kullanımı: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes cpu Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display cpu-usage Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show cpu Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-18-1",
+    "title": "Bellek Kullanımı: GigabitEthernet1/0/1",
+    "cat": "Sistem",
+    "note": "Bellek Kullanımı: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory GigabitEthernet1/0/1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage GigabitEthernet1/0/1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory GigabitEthernet1/0/1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-18-2",
+    "title": "Bellek Kullanımı: GigabitEthernet1/0/2",
+    "cat": "Sistem",
+    "note": "Bellek Kullanımı: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory GigabitEthernet1/0/2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage GigabitEthernet1/0/2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory GigabitEthernet1/0/2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-18-3",
+    "title": "Bellek Kullanımı: GigabitEthernet1/0/3",
+    "cat": "Sistem",
+    "note": "Bellek Kullanımı: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory GigabitEthernet1/0/3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage GigabitEthernet1/0/3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory GigabitEthernet1/0/3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-18-4",
+    "title": "Bellek Kullanımı: GigabitEthernet1/0/4",
+    "cat": "Sistem",
+    "note": "Bellek Kullanımı: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory GigabitEthernet1/0/4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage GigabitEthernet1/0/4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory GigabitEthernet1/0/4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-18-5",
+    "title": "Bellek Kullanımı: GigabitEthernet1/0/5",
+    "cat": "Sistem",
+    "note": "Bellek Kullanımı: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory GigabitEthernet1/0/5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage GigabitEthernet1/0/5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory GigabitEthernet1/0/5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-18-6",
+    "title": "Bellek Kullanımı: GigabitEthernet1/0/6",
+    "cat": "Sistem",
+    "note": "Bellek Kullanımı: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory GigabitEthernet1/0/6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage GigabitEthernet1/0/6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory GigabitEthernet1/0/6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-18-7",
+    "title": "Bellek Kullanımı: GigabitEthernet1/0/7",
+    "cat": "Sistem",
+    "note": "Bellek Kullanımı: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory GigabitEthernet1/0/7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage GigabitEthernet1/0/7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory GigabitEthernet1/0/7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-18-8",
+    "title": "Bellek Kullanımı: GigabitEthernet1/0/8",
+    "cat": "Sistem",
+    "note": "Bellek Kullanımı: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory GigabitEthernet1/0/8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage GigabitEthernet1/0/8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory GigabitEthernet1/0/8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-18-9",
+    "title": "Bellek Kullanımı: Vlan10",
+    "cat": "Sistem",
+    "note": "Bellek Kullanımı: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-18-10",
+    "title": "Bellek Kullanımı: Vlan20",
+    "cat": "Sistem",
+    "note": "Bellek Kullanımı: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-18-11",
+    "title": "Bellek Kullanımı: Vlan30",
+    "cat": "Sistem",
+    "note": "Bellek Kullanımı: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-system-18-12",
+    "title": "Bellek Kullanımı: Vlan40",
+    "cat": "Sistem",
+    "note": "Bellek Kullanımı: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show processes memory Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display memory-usage Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show memory Vlan40"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-19-1",
+    "title": "BGP Komşuluğu: GigabitEthernet1/0/1",
+    "cat": "Yönlendirme",
+    "note": "BGP Komşuluğu: GigabitEthernet1/0/1 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 1"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 1"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp 1"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-19-2",
+    "title": "BGP Komşuluğu: GigabitEthernet1/0/2",
+    "cat": "Yönlendirme",
+    "note": "BGP Komşuluğu: GigabitEthernet1/0/2 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 2"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 2"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp 2"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-19-3",
+    "title": "BGP Komşuluğu: GigabitEthernet1/0/3",
+    "cat": "Yönlendirme",
+    "note": "BGP Komşuluğu: GigabitEthernet1/0/3 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 3"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 3"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp 3"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-19-4",
+    "title": "BGP Komşuluğu: GigabitEthernet1/0/4",
+    "cat": "Yönlendirme",
+    "note": "BGP Komşuluğu: GigabitEthernet1/0/4 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 4"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 4"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp 4"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-19-5",
+    "title": "BGP Komşuluğu: GigabitEthernet1/0/5",
+    "cat": "Yönlendirme",
+    "note": "BGP Komşuluğu: GigabitEthernet1/0/5 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 5"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 5"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp 5"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-19-6",
+    "title": "BGP Komşuluğu: GigabitEthernet1/0/6",
+    "cat": "Yönlendirme",
+    "note": "BGP Komşuluğu: GigabitEthernet1/0/6 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 6"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 6"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp 6"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-19-7",
+    "title": "BGP Komşuluğu: GigabitEthernet1/0/7",
+    "cat": "Yönlendirme",
+    "note": "BGP Komşuluğu: GigabitEthernet1/0/7 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 7"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 7"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp 7"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-19-8",
+    "title": "BGP Komşuluğu: GigabitEthernet1/0/8",
+    "cat": "Yönlendirme",
+    "note": "BGP Komşuluğu: GigabitEthernet1/0/8 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors 8"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer 8"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp 8"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-19-9",
+    "title": "BGP Komşuluğu: Vlan10",
+    "cat": "Yönlendirme",
+    "note": "BGP Komşuluğu: Vlan10 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors Vlan10"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer Vlan10"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp Vlan10"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-19-10",
+    "title": "BGP Komşuluğu: Vlan20",
+    "cat": "Yönlendirme",
+    "note": "BGP Komşuluğu: Vlan20 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors Vlan20"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer Vlan20"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp Vlan20"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-19-11",
+    "title": "BGP Komşuluğu: Vlan30",
+    "cat": "Yönlendirme",
+    "note": "BGP Komşuluğu: Vlan30 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors Vlan30"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer Vlan30"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp Vlan30"
+      ]
+    }
+  },
+  {
+    "slug": "ref-routing-19-12",
+    "title": "BGP Komşuluğu: Vlan40",
+    "cat": "Yönlendirme",
+    "note": "BGP Komşuluğu: Vlan40 için salt okunur kontrol. Örnek hedefi kendi cihazınızdaki arayüz veya VLAN adıyla eşleştirin; komut desteğini yazılım sürümünde doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp neighbors Vlan40"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer Vlan40"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp Vlan40"
+      ]
+    }
+  }
+]
