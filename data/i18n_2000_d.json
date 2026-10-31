@@ -1,5 +1,125 @@
 {
   "items": {
+    "cihaz-envanteri": {
+      "en": {
+        "title": "View device inventory",
+        "note": "Use this command to inventory model, serial number and hardware components. Output fields vary by platform."
+      },
+      "ar": {
+        "title": "عرض مخزون الجهاز",
+        "note": "استخدم الأمر لجمع الطراز والرقم التسلسلي ومكونات الأجهزة. تختلف حقول الإخراج حسب المنصة."
+      }
+    },
+    "poe-durum": {
+      "en": {
+        "title": "View PoE power status",
+        "note": "On PoE-capable models, inspect the power budget, per-port draw and power state."
+      },
+      "ar": {
+        "title": "عرض حالة طاقة PoE",
+        "note": "في الطرازات الداعمة لـ PoE، افحص ميزانية الطاقة والاستهلاك لكل منفذ وحالة الطاقة."
+      }
+    },
+    "lacp-ozeti": {
+      "en": {
+        "title": "View LACP / link aggregation summary",
+        "note": "Check whether port-channel or Eth-Trunk members are selected and operational."
+      },
+      "ar": {
+        "title": "عرض ملخص LACP وتجميع الروابط",
+        "note": "تحقق من أن أعضاء Port-channel أو Eth-Trunk محددون ويعملون."
+      }
+    },
+    "stp-ozeti": {
+      "en": {
+        "title": "View Spanning Tree summary",
+        "note": "Inspect the root bridge, active instances and spanning-tree state."
+      },
+      "ar": {
+        "title": "عرض ملخص Spanning Tree",
+        "note": "افحص الجسر الجذر ومثيلات STP النشطة والحالة."
+      }
+    },
+    "dhcp-snooping-kayitlari": {
+      "en": {
+        "title": "View DHCP Snooping bindings",
+        "note": "On supported platforms with DHCP Snooping enabled, inspect IP-MAC-VLAN-port bindings."
+      },
+      "ar": {
+        "title": "عرض ارتباطات DHCP Snooping",
+        "note": "على المنصات المدعومة وبعد تفعيل DHCP Snooping، افحص ارتباطات IP وMAC وVLAN والمنفذ."
+      }
+    },
+    "optik-modul-envanteri": {
+      "en": {
+        "title": "View optical transceiver information",
+        "note": "Inspect installed transceiver types and supported optical diagnostic fields."
+      },
+      "ar": {
+        "title": "عرض معلومات وحدة الإرسال الضوئية",
+        "note": "افحص أنواع وحدات الإرسال المثبتة وحقول التشخيص الضوئي المدعومة."
+      }
+    },
+    "vlan-ayrinti": {
+      "en": {
+        "title": "View details for a VLAN",
+        "note": "Inspect membership and state for a specific VLAN. Change the VLAN ID to match your environment."
+      },
+      "ar": {
+        "title": "عرض تفاصيل شبكة VLAN",
+        "note": "افحص الأعضاء والحالة لشبكة VLAN محددة. غيّر رقم VLAN ليتوافق مع بيئتك."
+      }
+    },
+    "port-security-ozeti": {
+      "en": {
+        "title": "View Port Security status",
+        "note": "Check interfaces with Port Security enabled, violation counters and learned MAC limits."
+      },
+      "ar": {
+        "title": "عرض حالة Port Security",
+        "note": "افحص المنافذ التي تم تفعيل Port Security عليها وعدادات الانتهاكات وحدود عناوين MAC."
+      }
+    },
+    "log-sistem": {
+      "en": {
+        "title": "View system logs",
+        "note": "Inspect event records with timestamps and sources. Correlate incidents with uptime and change records."
+      },
+      "ar": {
+        "title": "عرض سجلات النظام",
+        "note": "افحص سجلات الأحداث مع الطوابع الزمنية والمصادر، وقارنها بوقت التشغيل وسجلات التغيير."
+      }
+    },
+    "ntp-durum": {
+      "en": {
+        "title": "View NTP synchronization status",
+        "note": "Check the time source and synchronization state. Accurate time is important for log correlation."
+      },
+      "ar": {
+        "title": "عرض حالة مزامنة NTP",
+        "note": "تحقق من مصدر الوقت وحالة المزامنة. الوقت الدقيق مهم لربط السجلات."
+      }
+    },
+    "cpu-kullanimi-ozeti": {
+      "en": {
+        "title": "View CPU utilization",
+        "note": "Inspect current and historical CPU load. Correlate high values with the process list and event timeline."
+      },
+      "ar": {
+        "title": "عرض استخدام المعالج",
+        "note": "افحص حمل المعالج الحالي والسابق، وقارن القيم المرتفعة بقائمة العمليات ووقت الحدث."
+      }
+    },
+    "bellek-kullanimi-ozeti": {
+      "en": {
+        "title": "View memory utilization",
+        "note": "Monitor memory consumption. Displayed fields vary by vendor and software release."
+      },
+      "ar": {
+        "title": "عرض استخدام الذاكرة",
+        "note": "راقب استهلاك الذاكرة. تختلف الحقول المعروضة حسب الشركة المصنعة وإصدار البرنامج."
+      }
+    },
     "ipv6-interface-summary": {
       "en": {
         "title": "Display IPv6 interface summary",
