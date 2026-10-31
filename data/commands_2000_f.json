@@ -72,7 +72,7 @@
     }
   },
   {
-    "slug": "ospf-interface-detail",
+    "slug": "ospf-interface-parameters",
     "title": "OSPF arayüz ayrıntılarını görüntüleme",
     "cat": "Yönlendirme Protokolleri",
     "note": "OSPF etkin arayüzlerin area, cost, network type ve timer bilgilerini kontrol eder. Komşuluk sorunlarında iki uçta eşleşmeyi doğrulayın.",
@@ -96,7 +96,7 @@
     }
   },
   {
-    "slug": "ospf-database-summary",
+    "slug": "ospf-lsdb-count-summary",
     "title": "OSPF LSDB özetini görüntüleme",
     "cat": "Yönlendirme Protokolleri",
     "note": "Link State Database içindeki LSA türü ve sayılarını inceleyerek OSPF topoloji bilgisinin dağılımını kontrol eder.",
@@ -312,7 +312,7 @@
     }
   },
   {
-    "slug": "memory-summary",
+    "slug": "system-memory-usage-brief",
     "title": "Bellek kullanım özetini görüntüleme",
     "cat": "Sistem",
     "note": "Kullanılan ve boş bellek miktarını kontrol eder. Ani değişimleri süreç belleği ve cihaz loglarıyla birlikte değerlendirin.",
@@ -408,7 +408,7 @@
     }
   },
   {
-    "slug": "interface-flap-log",
+    "slug": "interface-link-flap-events",
     "title": "Arayüz link değişim loglarını görüntüleme",
     "cat": "Sorun Giderme",
     "note": "Link up/down olaylarını inceleyerek fiziksel bağlantı kesintilerinin zamanını ve tekrar sıklığını belirlemeye yardımcı olur.",
