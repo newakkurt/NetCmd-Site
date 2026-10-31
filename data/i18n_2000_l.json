@@ -1,0 +1,504 @@
+{
+  "items": {
+    "catalog-ospf-komsu-durumu": {
+      "en": {
+        "title": "Ospf Komsu Durumu",
+        "note": "Use this command to inspect ospf komsu durumu. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ospf Komsu Durumu",
+        "note": "يُستخدم هذا الأمر لفحص Ospf Komsu Durumu. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-ospf-interface-state": {
+      "en": {
+        "title": "Ospf Interface State",
+        "note": "Use this command to inspect ospf interface state. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ospf Interface State",
+        "note": "يُستخدم هذا الأمر لفحص Ospf Interface State. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-bgp-peer-capabilities": {
+      "en": {
+        "title": "Bgp Peer Capabilities",
+        "note": "Use this command to inspect bgp peer capabilities. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Bgp Peer Capabilities",
+        "note": "يُستخدم هذا الأمر لفحص Bgp Peer Capabilities. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-bgp-rotalari": {
+      "en": {
+        "title": "Bgp Rotalari",
+        "note": "Use this command to inspect bgp rotalari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Bgp Rotalari",
+        "note": "يُستخدم هذا الأمر لفحص Bgp Rotalari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-bfd-oturumlari": {
+      "en": {
+        "title": "Bfd Oturumlari",
+        "note": "Use this command to inspect bfd oturumlari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Bfd Oturumlari",
+        "note": "يُستخدم هذا الأمر لفحص Bfd Oturumlari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-vrf-listesi": {
+      "en": {
+        "title": "Vrf Listesi",
+        "note": "Use this command to inspect vrf listesi. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Vrf Listesi",
+        "note": "يُستخدم هذا الأمر لفحص Vrf Listesi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-ipv6-arayuzleri": {
+      "en": {
+        "title": "Ipv6 Arayuzleri",
+        "note": "Use this command to inspect ipv6 arayuzleri. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ipv6 Arayuzleri",
+        "note": "يُستخدم هذا الأمر لفحص Ipv6 Arayuzleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-ipv6-rotalari": {
+      "en": {
+        "title": "Ipv6 Rotalari",
+        "note": "Use this command to inspect ipv6 rotalari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ipv6 Rotalari",
+        "note": "يُستخدم هذا الأمر لفحص Ipv6 Rotalari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-ipv6-komsulari": {
+      "en": {
+        "title": "Ipv6 Komsulari",
+        "note": "Use this command to inspect ipv6 komsulari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ipv6 Komsulari",
+        "note": "يُستخدم هذا الأمر لفحص Ipv6 Komsulari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-lldp-detay": {
+      "en": {
+        "title": "Lldp Detay",
+        "note": "Use this command to inspect lldp detay. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Lldp Detay",
+        "note": "يُستخدم هذا الأمر لفحص Lldp Detay. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-cdp-detay": {
+      "en": {
+        "title": "Cdp Detay",
+        "note": "Use this command to inspect cdp detay. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Cdp Detay",
+        "note": "يُستخدم هذا الأمر لفحص Cdp Detay. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-stp-kok-koprusu": {
+      "en": {
+        "title": "Stp Kok Koprusu",
+        "note": "Use this command to inspect stp kok koprusu. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Stp Kok Koprusu",
+        "note": "يُستخدم هذا الأمر لفحص Stp Kok Koprusu. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-stp-arayuz-detay": {
+      "en": {
+        "title": "Stp Arayuz Detay",
+        "note": "Use this command to inspect stp arayuz detay. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Stp Arayuz Detay",
+        "note": "يُستخدم هذا الأمر لفحص Stp Arayuz Detay. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-etherchannel-ozet": {
+      "en": {
+        "title": "Etherchannel Ozet",
+        "note": "Use this command to inspect etherchannel ozet. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Etherchannel Ozet",
+        "note": "يُستخدم هذا الأمر لفحص Etherchannel Ozet. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-lacp-komsulari": {
+      "en": {
+        "title": "Lacp Komsulari",
+        "note": "Use this command to inspect lacp komsulari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Lacp Komsulari",
+        "note": "يُستخدم هذا الأمر لفحص Lacp Komsulari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-poe-port-power": {
+      "en": {
+        "title": "Poe Port Power",
+        "note": "Use this command to inspect poe port power. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Poe Port Power",
+        "note": "يُستخدم هذا الأمر لفحص Poe Port Power. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-optik-alici-verici": {
+      "en": {
+        "title": "Optik Alici Verici",
+        "note": "Use this command to inspect optik alici verici. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Optik Alici Verici",
+        "note": "يُستخدم هذا الأمر لفحص Optik Alici Verici. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-ortam-sensorleri": {
+      "en": {
+        "title": "Ortam Sensorleri",
+        "note": "Use this command to inspect ortam sensorleri. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ortam Sensorleri",
+        "note": "يُستخدم هذا الأمر لفحص Ortam Sensorleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-cpu-prosesleri": {
+      "en": {
+        "title": "Cpu Prosesleri",
+        "note": "Use this command to inspect cpu prosesleri. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Cpu Prosesleri",
+        "note": "يُستخدم هذا الأمر لفحص Cpu Prosesleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-bellek-kullanimi": {
+      "en": {
+        "title": "Bellek Kullanimi",
+        "note": "Use this command to inspect bellek kullanimi. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Bellek Kullanimi",
+        "note": "يُستخدم هذا الأمر لفحص Bellek Kullanimi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-log-buffer": {
+      "en": {
+        "title": "Log Buffer",
+        "note": "Use this command to inspect log buffer. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Log Buffer",
+        "note": "يُستخدم هذا الأمر لفحص Log Buffer. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-ntp-durum": {
+      "en": {
+        "title": "Ntp Durum",
+        "note": "Use this command to inspect ntp durum. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Ntp Durum",
+        "note": "يُستخدم هذا الأمر لفحص Ntp Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-snmp-durum": {
+      "en": {
+        "title": "Snmp Durum",
+        "note": "Use this command to inspect snmp durum. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Snmp Durum",
+        "note": "يُستخدم هذا الأمر لفحص Snmp Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-radius-istatistik": {
+      "en": {
+        "title": "Radius Istatistik",
+        "note": "Use this command to inspect radius istatistik. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Radius Istatistik",
+        "note": "يُستخدم هذا الأمر لفحص Radius Istatistik. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-tacacs-durum": {
+      "en": {
+        "title": "Tacacs Durum",
+        "note": "Use this command to inspect tacacs durum. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Tacacs Durum",
+        "note": "يُستخدم هذا الأمر لفحص Tacacs Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-acl-sayaclari": {
+      "en": {
+        "title": "Acl Sayaclari",
+        "note": "Use this command to inspect acl sayaclari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Acl Sayaclari",
+        "note": "يُستخدم هذا الأمر لفحص Acl Sayaclari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-dhcp-snooping": {
+      "en": {
+        "title": "Dhcp Snooping",
+        "note": "Use this command to inspect dhcp snooping. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Dhcp Snooping",
+        "note": "يُستخدم هذا الأمر لفحص Dhcp Snooping. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-dynamic-arp-inspection": {
+      "en": {
+        "title": "Dynamic Arp Inspection",
+        "note": "Use this command to inspect dynamic arp inspection. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Dynamic Arp Inspection",
+        "note": "يُستخدم هذا الأمر لفحص Dynamic Arp Inspection. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-port-security-ozet": {
+      "en": {
+        "title": "Port Security Ozet",
+        "note": "Use this command to inspect port security ozet. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Port Security Ozet",
+        "note": "يُستخدم هذا الأمر لفحص Port Security Ozet. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-storm-control": {
+      "en": {
+        "title": "Storm Control",
+        "note": "Use this command to inspect storm control. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Storm Control",
+        "note": "يُستخدم هذا الأمر لفحص Storm Control. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-errdisable-durum": {
+      "en": {
+        "title": "Errdisable Durum",
+        "note": "Use this command to inspect errdisable durum. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Errdisable Durum",
+        "note": "يُستخدم هذا الأمر لفحص Errdisable Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-arayuz-hata-sayaclari": {
+      "en": {
+        "title": "Arayuz Hata Sayaclari",
+        "note": "Use this command to inspect arayuz hata sayaclari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Arayuz Hata Sayaclari",
+        "note": "يُستخدم هذا الأمر لفحص Arayuz Hata Sayaclari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-stack-uyeleri": {
+      "en": {
+        "title": "Stack Uyeleri",
+        "note": "Use this command to inspect stack uyeleri. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Stack Uyeleri",
+        "note": "يُستخدم هذا الأمر لفحص Stack Uyeleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-vsf-durum": {
+      "en": {
+        "title": "Vsf Durum",
+        "note": "Use this command to inspect vsf durum. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Vsf Durum",
+        "note": "يُستخدم هذا الأمر لفحص Vsf Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-irf-durum": {
+      "en": {
+        "title": "Irf Durum",
+        "note": "Use this command to inspect irf durum. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Irf Durum",
+        "note": "يُستخدم هذا الأمر لفحص Irf Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-vrrp-durum": {
+      "en": {
+        "title": "Vrrp Durum",
+        "note": "Use this command to inspect vrrp durum. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Vrrp Durum",
+        "note": "يُستخدم هذا الأمر لفحص Vrrp Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-hsrp-durum": {
+      "en": {
+        "title": "Hsrp Durum",
+        "note": "Use this command to inspect hsrp durum. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Hsrp Durum",
+        "note": "يُستخدم هذا الأمر لفحص Hsrp Durum. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-track-objeleri": {
+      "en": {
+        "title": "Track Objeleri",
+        "note": "Use this command to inspect track objeleri. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Track Objeleri",
+        "note": "يُستخدم هذا الأمر لفحص Track Objeleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-route-map-listesi": {
+      "en": {
+        "title": "Route Map Listesi",
+        "note": "Use this command to inspect route map listesi. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Route Map Listesi",
+        "note": "يُستخدم هذا الأمر لفحص Route Map Listesi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-prefix-listesi": {
+      "en": {
+        "title": "Prefix Listesi",
+        "note": "Use this command to inspect prefix listesi. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Prefix Listesi",
+        "note": "يُستخدم هذا الأمر لفحص Prefix Listesi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-pbr-politikalari": {
+      "en": {
+        "title": "Pbr Politikalari",
+        "note": "Use this command to inspect pbr politikalari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Pbr Politikalari",
+        "note": "يُستخدم هذا الأمر لفحص Pbr Politikalari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-igmp-gruplari": {
+      "en": {
+        "title": "Igmp Gruplari",
+        "note": "Use this command to inspect igmp gruplari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Igmp Gruplari",
+        "note": "يُستخدم هذا الأمر لفحص Igmp Gruplari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-pim-komsulari": {
+      "en": {
+        "title": "Pim Komsulari",
+        "note": "Use this command to inspect pim komsulari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Pim Komsulari",
+        "note": "يُستخدم هذا الأمر لفحص Pim Komsulari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-nat-cevirileri": {
+      "en": {
+        "title": "Nat Cevirileri",
+        "note": "Use this command to inspect nat cevirileri. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Nat Cevirileri",
+        "note": "يُستخدم هذا الأمر لفحص Nat Cevirileri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-mac-hareket-kayitlari": {
+      "en": {
+        "title": "Mac Hareket Kayitlari",
+        "note": "Use this command to inspect mac hareket kayitlari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Mac Hareket Kayitlari",
+        "note": "يُستخدم هذا الأمر لفحص Mac Hareket Kayitlari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-dhcp-sunucu-havuzlari": {
+      "en": {
+        "title": "Dhcp Sunucu Havuzlari",
+        "note": "Use this command to inspect dhcp sunucu havuzlari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Dhcp Sunucu Havuzlari",
+        "note": "يُستخدم هذا الأمر لفحص Dhcp Sunucu Havuzlari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-dhcp-istemci-baglari": {
+      "en": {
+        "title": "Dhcp Istemci Baglari",
+        "note": "Use this command to inspect dhcp istemci baglari. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Dhcp Istemci Baglari",
+        "note": "يُستخدم هذا الأمر لفحص Dhcp Istemci Baglari. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-qos-sinif-eslemeleri": {
+      "en": {
+        "title": "Qos Sinif Eslemeleri",
+        "note": "Use this command to inspect qos sinif eslemeleri. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Qos Sinif Eslemeleri",
+        "note": "يُستخدم هذا الأمر لفحص Qos Sinif Eslemeleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-qos-politika-eslesmeleri": {
+      "en": {
+        "title": "Qos Politika Eslesmeleri",
+        "note": "Use this command to inspect qos politika eslesmeleri. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Qos Politika Eslesmeleri",
+        "note": "يُستخدم هذا الأمر لفحص Qos Politika Eslesmeleri. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "catalog-port-kanal-yuk-dagilimi": {
+      "en": {
+        "title": "Port Kanal Yuk Dagilimi",
+        "note": "Use this command to inspect port kanal yuk dagilimi. Check the command syntax and support for the target vendor, model, and software release."
+      },
+      "ar": {
+        "title": "عرض Port Kanal Yuk Dagilimi",
+        "note": "يُستخدم هذا الأمر لفحص Port Kanal Yuk Dagilimi. تحقق من الصياغة ودعم الأمر للطراز وإصدار البرنامج المستهدف."
+      }
+    }
+  }
+}
