@@ -1,0 +1,305 @@
+{
+  "cats": {},
+  "items": {
+    "bgp-summary-global": {
+      "en": {
+        "title": "BGP neighbor summary",
+        "note": "BGP oturumlarının Established durumunu, ASN bilgisini ve alınan prefix sayılarını hızlıca kontrol edin."
+      },
+      "ar": {
+        "title": "ملخص جيران BGP",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "bgp-neighbor-detail": {
+      "en": {
+        "title": "BGP neighbor details",
+        "note": "Bir komşunun remote AS, BGP durum geçişleri ve mesaj sayaçlarını inceleyin."
+      },
+      "ar": {
+        "title": "تفاصيل جار BGP",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "bgp-route-table": {
+      "en": {
+        "title": "BGP routing table",
+        "note": "BGP RIB içindeki prefix, next-hop, AS path ve path seçimini inceleyin."
+      },
+      "ar": {
+        "title": "جدول توجيه BGP",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "ospf-neighbor-detail": {
+      "en": {
+        "title": "OSPF neighbor status",
+        "note": "Komşuların FULL/2-WAY durumunu ve bağlı oldukları arayüzleri doğrulayın."
+      },
+      "ar": {
+        "title": "حالة جيران OSPF",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "ospf-interface-detail": {
+      "en": {
+        "title": "OSPF interface parameters",
+        "note": "Area, network type, cost, priority ve timer değerlerini komşu uçla karşılaştırın."
+      },
+      "ar": {
+        "title": "معلمات واجهة OSPF",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "ospf-database-summary": {
+      "en": {
+        "title": "OSPF LSDB summary",
+        "note": "LSA türü ve sayısını inceleyerek beklenmeyen topoloji değişikliklerini araştırın."
+      },
+      "ar": {
+        "title": "ملخص قاعدة بيانات OSPF",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "route-static-list": {
+      "en": {
+        "title": "Static route list",
+        "note": "Yapılandırılmış statik rotaları ve varsayılan yönlendirmeyi kontrol edin."
+      },
+      "ar": {
+        "title": "قائمة المسارات الثابتة",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "route-protocol-summary": {
+      "en": {
+        "title": "Routing protocol overview",
+        "note": "Routing table içindeki connected, static, OSPF ve BGP kaynaklarını karşılaştırın."
+      },
+      "ar": {
+        "title": "نظرة عامة على بروتوكولات التوجيه",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "ipv6-route-table": {
+      "en": {
+        "title": "IPv6 routing table",
+        "note": "IPv6 prefix'lerinin next-hop ve kaynak bilgilerini inceleyin."
+      },
+      "ar": {
+        "title": "جدول توجيه IPv6",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "ipv6-interface-brief": {
+      "en": {
+        "title": "IPv6 interface address summary",
+        "note": "Arayüzlerdeki global ve link-local IPv6 adreslerini ve durumlarını kontrol edin."
+      },
+      "ar": {
+        "title": "ملخص عناوين واجهات IPv6",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "ipv6-neighbor-cache": {
+      "en": {
+        "title": "IPv6 neighbor cache",
+        "note": "Neighbor Discovery kayıtlarını ve adres çözümleme durumlarını inceleyin."
+      },
+      "ar": {
+        "title": "ذاكرة جيران IPv6",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "acl-summary": {
+      "en": {
+        "title": "ACL inventory",
+        "note": "ACL adlarını ve numaralarını belirleyip ilgili kural setini ayrı inceleyin."
+      },
+      "ar": {
+        "title": "قائمة ACL",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "acl-interface-attachment": {
+      "en": {
+        "title": "Interface ACL attachment",
+        "note": "Giriş ve çıkış yönünde hangi ACL'nin uygulandığını kontrol edin."
+      },
+      "ar": {
+        "title": "ربط ACL بالواجهة",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "dhcp-binding-table": {
+      "en": {
+        "title": "DHCP lease table",
+        "note": "IP-MAC eşleşmelerini, lease kayıtlarını ve istemci dağıtımını kontrol edin."
+      },
+      "ar": {
+        "title": "جدول تأجيرات DHCP",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "dhcp-snooping-status": {
+      "en": {
+        "title": "DHCP snooping status",
+        "note": "Snooping'in VLAN bazında etkinliğini ve güvenilir portları doğrulayın."
+      },
+      "ar": {
+        "title": "حالة DHCP Snooping",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "arp-interface-filter": {
+      "en": {
+        "title": "ARP entries by interface",
+        "note": "ARP tablosunu arayüz bazında daraltarak IP-MAC eşleşmelerini araştırın."
+      },
+      "ar": {
+        "title": "سجلات ARP حسب الواجهة",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "lldp-neighbor-detail": {
+      "en": {
+        "title": "LLDP neighbor details",
+        "note": "Komşu cihazın sistem adı, port kimliği ve yeteneklerini doğrulayın."
+      },
+      "ar": {
+        "title": "تفاصيل جار LLDP",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "cdp-neighbor-detail": {
+      "en": {
+        "title": "CDP neighbor details",
+        "note": "Cisco komşularının platform, yerel/uzak port ve yönetim IP bilgilerini inceleyin."
+      },
+      "ar": {
+        "title": "تفاصيل جار CDP",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "port-channel-summary": {
+      "en": {
+        "title": "Link aggregation summary",
+        "note": "Üye portların bundle durumunu ve protokol eşleşmesini kontrol edin."
+      },
+      "ar": {
+        "title": "ملخص تجميع الروابط",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "lacp-neighbor-detail": {
+      "en": {
+        "title": "LACP neighbor details",
+        "note": "LACP partner bilgisi ve senkronize üyeleri iki uçta karşılaştırın."
+      },
+      "ar": {
+        "title": "تفاصيل جار LACP",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "poe-port-status": {
+      "en": {
+        "title": "PoE port power status",
+        "note": "Port başına güç tüketimini ve PoE durumunu inceleyerek güç bütçesi sorunlarını ayırın."
+      },
+      "ar": {
+        "title": "حالة طاقة PoE",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "ntp-associations": {
+      "en": {
+        "title": "NTP associations",
+        "note": "Seçili NTP kaynağını, stratum değerini ve senkronizasyon durumunu kontrol edin."
+      },
+      "ar": {
+        "title": "ارتباطات NTP",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "syslog-servers": {
+      "en": {
+        "title": "Syslog destinations",
+        "note": "Cihazın log gönderdiği sunucu adreslerini ve kayıt seviyelerini kontrol edin."
+      },
+      "ar": {
+        "title": "وجهات Syslog",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "aaa-method-lists": {
+      "en": {
+        "title": "AAA method configuration",
+        "note": "Kimlik doğrulama ve yetkilendirme yöntemlerinin sırasını gözden geçirin."
+      },
+      "ar": {
+        "title": "إعدادات طرق AAA",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "radius-server-status": {
+      "en": {
+        "title": "RADIUS server configuration",
+        "note": "RADIUS sunucu adresi ve erişim ayarlarını kontrol edin; paylaşılan gizli anahtarları çıktıda paylaşmayın."
+      },
+      "ar": {
+        "title": "إعدادات خادم RADIUS",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "cpu-processes": {
+      "en": {
+        "title": "CPU process utilization",
+        "note": "Anlık CPU tüketimini süreç bazında inceleyin; kısa süreli sıçramaları trend verisiyle doğrulayın."
+      },
+      "ar": {
+        "title": "استهلاك المعالج حسب العمليات",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "memory-summary": {
+      "en": {
+        "title": "Memory utilization summary",
+        "note": "Kullanılan ve boş bellek miktarını izleyerek kaynak baskısını değerlendirin."
+      },
+      "ar": {
+        "title": "ملخص استخدام الذاكرة",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "boot-version": {
+      "en": {
+        "title": "OS and boot version",
+        "note": "Yazılım sürümü, bootloader ve donanım modelini bakım öncesi kaydedin."
+      },
+      "ar": {
+        "title": "إصدار النظام والإقلاع",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "config-diff-startup": {
+      "en": {
+        "title": "Running vs startup configuration diff",
+        "note": "Kaydedilmemiş değişiklikleri belirlemek için running ve startup yapılandırmalarını karşılaştırın."
+      },
+      "ar": {
+        "title": "مقارنة الإعدادات الحالية والمحفوظة",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    },
+    "interface-traffic-rate": {
+      "en": {
+        "title": "Interface traffic rate",
+        "note": "Input/output bit rate ve packet rate değerlerini kontrol ederek kapasite kullanımını değerlendirin."
+      },
+      "ar": {
+        "title": "معدل حركة مرور الواجهة",
+        "note": "افحص النتائج وقارنها بالجهاز المقابل وسجلات المراقبة."
+      }
+    }
+  }
+}
