@@ -1,5 +1,10 @@
 {
-  "cats": {},
+  "cats": {
+    "Yönlendirme": {
+      "en": "Routing",
+      "ar": "التوجيه"
+    }
+  },
   "items": {
     "bgp-summary-global": {
       "en": {
