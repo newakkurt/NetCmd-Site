@@ -1,5 +1,4 @@
-/* Komut favorileri (Premium üyelere). Plan bilgisi Supabase'den okunur ve 12 saat önbelleğe alınır.
-   Not: bu özellik yalnızca kullanım kolaylığıdır; veriler yalnızca bu tarayıcıda (localStorage) tutulur. */
+/* Komut favorileri (tüm kullanıcılar). Veriler yalnızca bu tarayıcıda tutulur; hesaplar arasında senkronize edilmez. */
 (function () {
   'use strict';
   var me = document.currentScript;
@@ -74,5 +73,5 @@
     if (m && h1) h1.appendChild(starBtn(m[1]));
     refresh();
   }
-  checkPlan(function (ok) { if (ok) init(); });
+  init();
 })();
