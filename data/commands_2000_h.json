@@ -11500,7 +11500,7 @@
     }
   },
   {
-    "slug": "bgp-advertised-routes",
+    "slug": "bgp-peer-outbound-prefixes",
     "title": "BGP komşusuna duyurulan rotaları görüntüleme",
     "cat": "Routing",
     "note": "Belirli komşuya gönderilen BGP rotalarını kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
@@ -11548,7 +11548,7 @@
     }
   },
   {
-    "slug": "ipv6-route-table",
+    "slug": "ipv6-unicast-routing-table",
     "title": "IPv6 yönlendirme tablosunu görüntüleme",
     "cat": "Routing",
     "note": "IPv6 rotalarını ve seçilen next-hop bilgisini gösterir. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
@@ -11596,7 +11596,7 @@
     }
   },
   {
-    "slug": "stp-root-bridge",
+    "slug": "stp-root-election-status",
     "title": "STP kök köprüsünü görüntüleme",
     "cat": "VLAN / Port",
     "note": "STP kök köprü seçimini ve root port bilgisini kontrol eder. Komutların üretici, model ve yazılım sürümü uyumluluğunu cihaz üzerinde doğrulayın.",
