@@ -319,6 +319,506 @@
         "title": "عرض حالة مزود الطاقة",
         "note": "Güç kaynağı modüllerinin durumunu kontrol eder. تحقق من الصياغة على الطراز وإصدار البرنامج المستهدف."
       }
+    },
+    "catalog-ospf-komsu-durumu": {
+      "en": {
+        "title": "OSPF komşuluklarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "OSPF komşuluklarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-ospf-interface-state": {
+      "en": {
+        "title": "OSPF arayüz durum özetini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "OSPF arayüz durum özetini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-bgp-peer-capabilities": {
+      "en": {
+        "title": "BGP komşu yeteneklerini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "BGP komşu yeteneklerini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-bgp-rotalari": {
+      "en": {
+        "title": "BGP rotalarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "BGP rotalarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-bfd-oturumlari": {
+      "en": {
+        "title": "BFD oturumlarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "BFD oturumlarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-vrf-listesi": {
+      "en": {
+        "title": "VRF listesini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "VRF listesini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-ipv6-arayuzleri": {
+      "en": {
+        "title": "IPv6 arayüz özetini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "IPv6 arayüz özetini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-ipv6-rotalari": {
+      "en": {
+        "title": "IPv6 yönlendirme tablosunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "IPv6 yönlendirme tablosunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-ipv6-komsulari": {
+      "en": {
+        "title": "IPv6 komşu tablosunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "IPv6 komşu tablosunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-lldp-detay": {
+      "en": {
+        "title": "LLDP komşu detaylarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "LLDP komşu detaylarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-cdp-detay": {
+      "en": {
+        "title": "CDP komşu detaylarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "CDP komşu detaylarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-stp-kok-koprusu": {
+      "en": {
+        "title": "STP root bridge bilgisini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "STP root bridge bilgisini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-stp-arayuz-detay": {
+      "en": {
+        "title": "STP arayüz durumlarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "STP arayüz durumlarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-etherchannel-ozet": {
+      "en": {
+        "title": "EtherChannel / Eth-Trunk özetini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "EtherChannel / Eth-Trunk özetini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-lacp-komsulari": {
+      "en": {
+        "title": "LACP komşularını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "LACP komşularını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-poe-port-power": {
+      "en": {
+        "title": "PoE port güç ayrıntılarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "PoE port güç ayrıntılarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-optik-alici-verici": {
+      "en": {
+        "title": "Optik modül bilgilerini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Optik modül bilgilerini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-ortam-sensorleri": {
+      "en": {
+        "title": "Sıcaklık ve ortam sensörlerini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Sıcaklık ve ortam sensörlerini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-cpu-prosesleri": {
+      "en": {
+        "title": "CPU kullanımını ve süreçleri görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "CPU kullanımını ve süreçleri görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-bellek-kullanimi": {
+      "en": {
+        "title": "Bellek kullanımını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Bellek kullanımını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-log-buffer": {
+      "en": {
+        "title": "Yerel log kayıtlarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Yerel log kayıtlarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-ntp-durum": {
+      "en": {
+        "title": "NTP eşitleme durumunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "NTP eşitleme durumunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-snmp-durum": {
+      "en": {
+        "title": "SNMP çalışma durumunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "SNMP çalışma durumunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-radius-istatistik": {
+      "en": {
+        "title": "RADIUS sunucu istatistiklerini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "RADIUS sunucu istatistiklerini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-tacacs-durum": {
+      "en": {
+        "title": "TACACS sunucu durumunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "TACACS sunucu durumunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-acl-sayaclari": {
+      "en": {
+        "title": "ACL eşleşme sayaçlarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "ACL eşleşme sayaçlarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-dhcp-snooping": {
+      "en": {
+        "title": "DHCP Snooping bağlama tablosunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "DHCP Snooping bağlama tablosunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-dynamic-arp-inspection": {
+      "en": {
+        "title": "Dynamic ARP Inspection durumunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Dynamic ARP Inspection durumunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-port-security-ozet": {
+      "en": {
+        "title": "Port Security durumunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Port Security durumunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-storm-control": {
+      "en": {
+        "title": "Storm Control yapılandırmasını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Storm Control yapılandırmasını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-errdisable-durum": {
+      "en": {
+        "title": "Err-disabled arayüzleri görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Err-disabled arayüzleri görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-arayuz-hata-sayaclari": {
+      "en": {
+        "title": "Arayüz hata sayaçlarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Arayüz hata sayaçlarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-stack-uyeleri": {
+      "en": {
+        "title": "Switch stack üyelerini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Switch stack üyelerini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-vsf-durum": {
+      "en": {
+        "title": "Aruba VSF durumunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Aruba VSF durumunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-irf-durum": {
+      "en": {
+        "title": "Huawei IRF durumunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Huawei IRF durumunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-vrrp-durum": {
+      "en": {
+        "title": "VRRP durumunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "VRRP durumunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-hsrp-durum": {
+      "en": {
+        "title": "HSRP durumunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "HSRP durumunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-track-objeleri": {
+      "en": {
+        "title": "Track nesnelerini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Track nesnelerini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-route-map-listesi": {
+      "en": {
+        "title": "Route-map yapılandırmasını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Route-map yapılandırmasını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-prefix-listesi": {
+      "en": {
+        "title": "Prefix-list yapılandırmasını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Prefix-list yapılandırmasını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-pbr-politikalari": {
+      "en": {
+        "title": "Policy Based Routing durumunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Policy Based Routing durumunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-igmp-gruplari": {
+      "en": {
+        "title": "IGMP multicast gruplarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "IGMP multicast gruplarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-pim-komsulari": {
+      "en": {
+        "title": "PIM komşularını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "PIM komşularını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-nat-cevirileri": {
+      "en": {
+        "title": "NAT çeviri tablosunu görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "NAT çeviri tablosunu görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-mac-hareket-kayitlari": {
+      "en": {
+        "title": "MAC move kayıtlarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "MAC move kayıtlarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-dhcp-sunucu-havuzlari": {
+      "en": {
+        "title": "DHCP sunucu havuzlarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "DHCP sunucu havuzlarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-dhcp-istemci-baglari": {
+      "en": {
+        "title": "DHCP istemci bağlarını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "DHCP istemci bağlarını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-qos-sinif-eslemeleri": {
+      "en": {
+        "title": "QoS class-map eşleşmelerini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "QoS class-map eşleşmelerini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-qos-politika-eslesmeleri": {
+      "en": {
+        "title": "QoS policy-map eşleşmelerini görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "QoS policy-map eşleşmelerini görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
+    },
+    "catalog-port-kanal-yuk-dagilimi": {
+      "en": {
+        "title": "Port-channel yük dağılımını görüntüleme",
+        "note": "Read-only operational command. Availability and parameters vary by platform family and software release; verify on the target device."
+      },
+      "ar": {
+        "title": "Port-channel yük dağılımını görüntüleme",
+        "note": "أمر تشغيلي للقراءة فقط. يختلف الدعم والمعاملات حسب عائلة الجهاز وإصدار البرنامج؛ تحقق منه على الجهاز المستهدف."
+      }
     }
   }
 }
