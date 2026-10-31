@@ -57,238 +57,6 @@
       }
     }
   },
-  "interface-utilization": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
-          },
-          {
-            "p": "kapsam",
-            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
-          }
-        ],
-        "example": "Arayüzlerin giriş ve çıkış trafik hızlarını kapasiteyle karşılaştırın. Kısa süreli sıçramaları tek örnek yerine zaman içindeki ölçümlerle değerlendirin.",
-        "mistakes": [
-          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
-          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
-          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
-          },
-          {
-            "p": "scope",
-            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
-          }
-        ],
-        "example": "Compare ingress and egress rates with interface capacity. Assess bursts over time rather than from a single sample.",
-        "mistakes": [
-          "Assuming syntax is identical across operating-system families.",
-          "Running the command on an unsupported model or release.",
-          "Treating one snapshot as proof of historical state."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "المنصة",
-            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
-          },
-          {
-            "p": "النطاق",
-            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
-          }
-        ],
-        "example": "قارن معدلات الدخول والخروج بسعة الواجهة. قيّم الارتفاعات عبر الزمن بدلاً من الاعتماد على عينة واحدة.",
-        "mistakes": [
-          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
-          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
-          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
-        ]
-      }
-    }
-  },
-  "transceiver-diagnostics": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
-          },
-          {
-            "p": "kapsam",
-            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
-          }
-        ],
-        "example": "Desteklenen SFP/SFP+ modüllerde sıcaklık, voltaj, TX ve RX optik güç değerlerini kontrol eder. DOM desteği modül ve platforma bağlıdır.",
-        "mistakes": [
-          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
-          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
-          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
-          },
-          {
-            "p": "scope",
-            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
-          }
-        ],
-        "example": "Checks temperature, voltage and TX/RX optical power on supported SFP/SFP+ modules. DOM support depends on the module and platform.",
-        "mistakes": [
-          "Assuming syntax is identical across operating-system families.",
-          "Running the command on an unsupported model or release.",
-          "Treating one snapshot as proof of historical state."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "المنصة",
-            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
-          },
-          {
-            "p": "النطاق",
-            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
-          }
-        ],
-        "example": "يفحص درجة الحرارة والجهد والطاقة الضوئية TX/RX في وحدات SFP/SFP+ المدعومة. يعتمد دعم DOM على الوحدة والمنصة.",
-        "mistakes": [
-          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
-          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
-          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
-        ]
-      }
-    }
-  },
-  "lldp-neighbor-detail": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
-          },
-          {
-            "p": "kapsam",
-            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
-          }
-        ],
-        "example": "Komşu cihaz adı, port ID, yetenek ve yönetim adresini inceleyerek fiziksel topolojiyi doğrulamaya yardımcı olur.",
-        "mistakes": [
-          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
-          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
-          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
-          },
-          {
-            "p": "scope",
-            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
-          }
-        ],
-        "example": "Reviews neighbor device name, port ID, capabilities and management address to help validate physical topology.",
-        "mistakes": [
-          "Assuming syntax is identical across operating-system families.",
-          "Running the command on an unsupported model or release.",
-          "Treating one snapshot as proof of historical state."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "المنصة",
-            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
-          },
-          {
-            "p": "النطاق",
-            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
-          }
-        ],
-        "example": "يراجع اسم الجهاز المجاور ومعرف المنفذ والقدرات وعنوان الإدارة للمساعدة في التحقق من البنية الفيزيائية.",
-        "mistakes": [
-          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
-          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
-          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
-        ]
-      }
-    }
-  },
-  "cdp-neighbor-detail": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
-          },
-          {
-            "p": "kapsam",
-            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
-          }
-        ],
-        "example": "Cisco Discovery Protocol komşularının cihaz ve port bilgilerini gösterir. CDP yalnızca desteklenen cihazlarda ve etkin arayüzlerde görünür.",
-        "mistakes": [
-          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
-          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
-          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
-          },
-          {
-            "p": "scope",
-            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
-          }
-        ],
-        "example": "Displays Cisco Discovery Protocol neighbor and port details. CDP appears only on supported devices and enabled interfaces.",
-        "mistakes": [
-          "Assuming syntax is identical across operating-system families.",
-          "Running the command on an unsupported model or release.",
-          "Treating one snapshot as proof of historical state."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "المنصة",
-            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
-          },
-          {
-            "p": "النطاق",
-            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
-          }
-        ],
-        "example": "يعرض تفاصيل جيران CDP ومنافذهم. يظهر CDP فقط على الأجهزة المدعومة والواجهات المفعّلة.",
-        "mistakes": [
-          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
-          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
-          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
-        ]
-      }
-    }
-  },
   "mac-address-table-dynamic": {
     "details": {
       "tr": {
@@ -405,64 +173,6 @@
       }
     }
   },
-  "dhcp-snooping-status": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
-          },
-          {
-            "p": "kapsam",
-            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
-          }
-        ],
-        "example": "DHCP Snooping etkinliğini, VLAN kapsamını ve güvenilir port yaklaşımını kontrol eder. Binding tablosu ayrı komutla incelenebilir.",
-        "mistakes": [
-          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
-          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
-          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
-          },
-          {
-            "p": "scope",
-            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
-          }
-        ],
-        "example": "Checks DHCP Snooping enablement, VLAN scope and trusted-port approach. The binding table can be inspected separately.",
-        "mistakes": [
-          "Assuming syntax is identical across operating-system families.",
-          "Running the command on an unsupported model or release.",
-          "Treating one snapshot as proof of historical state."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "المنصة",
-            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
-          },
-          {
-            "p": "النطاق",
-            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
-          }
-        ],
-        "example": "يتحقق من تفعيل DHCP Snooping ونطاق VLAN ومفهوم المنافذ الموثوقة. يمكن فحص جدول الارتباطات بأمر منفصل.",
-        "mistakes": [
-          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
-          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
-          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
-        ]
-      }
-    }
-  },
   "dhcp-snooping-bindings": {
     "details": {
       "tr": {
@@ -521,64 +231,6 @@
       }
     }
   },
-  "port-security-addresses": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
-          },
-          {
-            "p": "kapsam",
-            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
-          }
-        ],
-        "example": "Port-security tarafından öğrenilen güvenli MAC adreslerini ve ilgili portları kontrol eder. Komut ve kayıt biçimi platforma göre değişir.",
-        "mistakes": [
-          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
-          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
-          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
-          },
-          {
-            "p": "scope",
-            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
-          }
-        ],
-        "example": "Checks secure MAC addresses learned by port security and their associated ports. Syntax and output vary by platform.",
-        "mistakes": [
-          "Assuming syntax is identical across operating-system families.",
-          "Running the command on an unsupported model or release.",
-          "Treating one snapshot as proof of historical state."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "المنصة",
-            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
-          },
-          {
-            "p": "النطاق",
-            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
-          }
-        ],
-        "example": "يفحص عناوين MAC الآمنة التي تعلمها Port Security والمنافذ المرتبطة بها. تختلف الصياغة والمخرجات حسب المنصة.",
-        "mistakes": [
-          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
-          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
-          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
-        ]
-      }
-    }
-  },
   "stp-interface-role": {
     "details": {
       "tr": {
@@ -629,64 +281,6 @@
           }
         ],
         "example": "يفحص أدوار منافذ STP مثل root وdesignated وalternate وحالات forwarding/blocking.",
-        "mistakes": [
-          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
-          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
-          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
-        ]
-      }
-    }
-  },
-  "stp-root-bridge": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
-          },
-          {
-            "p": "kapsam",
-            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
-          }
-        ],
-        "example": "Root bridge ID, root port ve path cost değerlerini kontrol ederek Layer 2 topolojisinin beklenen kök etrafında kurulduğunu doğrular.",
-        "mistakes": [
-          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
-          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
-          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
-          },
-          {
-            "p": "scope",
-            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
-          }
-        ],
-        "example": "Checks root bridge ID, root port and path cost to validate the Layer 2 topology.",
-        "mistakes": [
-          "Assuming syntax is identical across operating-system families.",
-          "Running the command on an unsupported model or release.",
-          "Treating one snapshot as proof of historical state."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "المنصة",
-            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
-          },
-          {
-            "p": "النطاق",
-            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
-          }
-        ],
-        "example": "يتحقق من معرف الجسر الجذر ومنفذ الجذر وتكلفة المسار للتحقق من بنية الطبقة الثانية.",
         "mistakes": [
           "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
           "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
@@ -869,64 +463,6 @@
       }
     }
   },
-  "trunk-allowed-vlans": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
-          },
-          {
-            "p": "kapsam",
-            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
-          }
-        ],
-        "example": "Trunk bağlantısında taşınmasına izin verilen VLAN'ları kontrol eder. Her iki uçta VLAN listesi ve native/PVID eşleşmesi karşılaştırılmalıdır.",
-        "mistakes": [
-          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
-          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
-          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
-          },
-          {
-            "p": "scope",
-            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
-          }
-        ],
-        "example": "Checks VLANs permitted across a trunk. Compare both ends for allowed VLAN and native/PVID consistency.",
-        "mistakes": [
-          "Assuming syntax is identical across operating-system families.",
-          "Running the command on an unsupported model or release.",
-          "Treating one snapshot as proof of historical state."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "المنصة",
-            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
-          },
-          {
-            "p": "النطاق",
-            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
-          }
-        ],
-        "example": "يفحص شبكات VLAN المسموح بمرورها عبر trunk. قارن الطرفين للتحقق من تطابق القائمة وnative/PVID.",
-        "mistakes": [
-          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
-          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
-          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
-        ]
-      }
-    }
-  },
   "interface-description-audit": {
     "details": {
       "tr": {
@@ -1043,64 +579,6 @@
       }
     }
   },
-  "logging-buffer": {
-    "details": {
-      "tr": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
-          },
-          {
-            "p": "kapsam",
-            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
-          }
-        ],
-        "example": "Cihazın bellekte tuttuğu olay kayıtlarını gösterir. Tampon boyutu ve kayıt seviyesi cihaz yapılandırmasına bağlıdır.",
-        "mistakes": [
-          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
-          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
-          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
-        ]
-      },
-      "en": {
-        "params": [
-          {
-            "p": "platform",
-            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
-          },
-          {
-            "p": "scope",
-            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
-          }
-        ],
-        "example": "Displays event records retained in the device's local memory buffer. Buffer size and severity depend on configuration.",
-        "mistakes": [
-          "Assuming syntax is identical across operating-system families.",
-          "Running the command on an unsupported model or release.",
-          "Treating one snapshot as proof of historical state."
-        ]
-      },
-      "ar": {
-        "params": [
-          {
-            "p": "المنصة",
-            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
-          },
-          {
-            "p": "النطاق",
-            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
-          }
-        ],
-        "example": "يعرض سجلات الأحداث المحتفظ بها في مخزن الذاكرة المحلي للجهاز. يعتمد حجم المخزن ومستوى الخطورة على الإعدادات.",
-        "mistakes": [
-          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
-          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
-          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
-        ]
-      }
-    }
-  },
   "environment-health": {
     "details": {
       "tr": {
@@ -1151,6 +629,528 @@
           }
         ],
         "example": "يفحص حساسات المراوح والحرارة ومزودات الطاقة لمراقبة إنذارات الأجهزة والحدود.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "interface-traffic-rate-check": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
+          }
+        ],
+        "example": "Arayüzlerin giriş ve çıkış trafik hızlarını kapasiteyle karşılaştırın. Kısa süreli sıçramaları tek örnek yerine zaman içindeki ölçümlerle değerlendirin.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "scope",
+            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
+          }
+        ],
+        "example": "Compare ingress and egress rates with interface capacity. Assess bursts over time rather than from a single sample.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "النطاق",
+            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
+          }
+        ],
+        "example": "قارن معدلات الدخول والخروج بسعة الواجهة. قيّم الارتفاعات عبر الزمن بدلاً من الاعتماد على عينة واحدة.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "optical-dom-dom-diagnostics": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
+          }
+        ],
+        "example": "Desteklenen SFP/SFP+ modüllerde sıcaklık, voltaj, TX ve RX optik güç değerlerini kontrol eder. DOM desteği modül ve platforma bağlıdır.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "scope",
+            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
+          }
+        ],
+        "example": "Checks temperature, voltage and TX/RX optical power on supported SFP/SFP+ modules. DOM support depends on the module and platform.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "النطاق",
+            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
+          }
+        ],
+        "example": "يفحص درجة الحرارة والجهد والطاقة الضوئية TX/RX في وحدات SFP/SFP+ المدعومة. يعتمد دعم DOM على الوحدة والمنصة.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "lldp-remote-device-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
+          }
+        ],
+        "example": "Komşu cihaz adı, port ID, yetenek ve yönetim adresini inceleyerek fiziksel topolojiyi doğrulamaya yardımcı olur.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "scope",
+            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
+          }
+        ],
+        "example": "Reviews neighbor device name, port ID, capabilities and management address to help validate physical topology.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "النطاق",
+            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
+          }
+        ],
+        "example": "يراجع اسم الجهاز المجاور ومعرف المنفذ والقدرات وعنوان الإدارة للمساعدة في التحقق من البنية الفيزيائية.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "cdp-remote-device-detail": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
+          }
+        ],
+        "example": "Cisco Discovery Protocol komşularının cihaz ve port bilgilerini gösterir. CDP yalnızca desteklenen cihazlarda ve etkin arayüzlerde görünür.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "scope",
+            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
+          }
+        ],
+        "example": "Displays Cisco Discovery Protocol neighbor and port details. CDP appears only on supported devices and enabled interfaces.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "النطاق",
+            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
+          }
+        ],
+        "example": "يعرض تفاصيل جيران CDP ومنافذهم. يظهر CDP فقط على الأجهزة المدعومة والواجهات المفعّلة.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "dhcp-snooping-global-status": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
+          }
+        ],
+        "example": "DHCP Snooping etkinliğini, VLAN kapsamını ve güvenilir port yaklaşımını kontrol eder. Binding tablosu ayrı komutla incelenebilir.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "scope",
+            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
+          }
+        ],
+        "example": "Checks DHCP Snooping enablement, VLAN scope and trusted-port approach. The binding table can be inspected separately.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "النطاق",
+            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
+          }
+        ],
+        "example": "يتحقق من تفعيل DHCP Snooping ونطاق VLAN ومفهوم المنافذ الموثوقة. يمكن فحص جدول الارتباطات بأمر منفصل.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "port-security-secure-mac-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
+          }
+        ],
+        "example": "Port-security tarafından öğrenilen güvenli MAC adreslerini ve ilgili portları kontrol eder. Komut ve kayıt biçimi platforma göre değişir.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "scope",
+            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
+          }
+        ],
+        "example": "Checks secure MAC addresses learned by port security and their associated ports. Syntax and output vary by platform.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "النطاق",
+            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
+          }
+        ],
+        "example": "يفحص عناوين MAC الآمنة التي تعلمها Port Security والمنافذ المرتبطة بها. تختلف الصياغة والمخرجات حسب المنصة.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "stp-root-bridge-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
+          }
+        ],
+        "example": "Root bridge ID, root port ve path cost değerlerini kontrol ederek Layer 2 topolojisinin beklenen kök etrafında kurulduğunu doğrular.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "scope",
+            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
+          }
+        ],
+        "example": "Checks root bridge ID, root port and path cost to validate the Layer 2 topology.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "النطاق",
+            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
+          }
+        ],
+        "example": "يتحقق من معرف الجسر الجذر ومنفذ الجذر وتكلفة المسار للتحقق من بنية الطبقة الثانية.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "trunk-vlan-allow-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
+          }
+        ],
+        "example": "Trunk bağlantısında taşınmasına izin verilen VLAN'ları kontrol eder. Her iki uçta VLAN listesi ve native/PVID eşleşmesi karşılaştırılmalıdır.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "scope",
+            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
+          }
+        ],
+        "example": "Checks VLANs permitted across a trunk. Compare both ends for allowed VLAN and native/PVID consistency.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "النطاق",
+            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
+          }
+        ],
+        "example": "يفحص شبكات VLAN المسموح بمرورها عبر trunk. قارن الطرفين للتحقق من تطابق القائمة وnative/PVID.",
+        "mistakes": [
+          "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
+          "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
+          "اعتبار لقطة واحدة دليلاً على الحالة السابقة."
+        ]
+      }
+    }
+  },
+  "local-event-log-buffer": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Cisco IOS/IOS-XE, Huawei VRP veya ArubaOS sürümünü doğrulayın."
+          },
+          {
+            "p": "kapsam",
+            "d": "Komutun desteklendiği model ve yazılım sürümünü doğrulayın; çıktıyı aynı zaman aralığındaki olay kayıtlarıyla karşılaştırın."
+          }
+        ],
+        "example": "Cihazın bellekte tuttuğu olay kayıtlarını gösterir. Tampon boyutu ve kayıt seviyesi cihaz yapılandırmasına bağlıdır.",
+        "mistakes": [
+          "Farklı işletim sistemi ailelerinin sözdizimini aynı kabul etmek.",
+          "Komutun desteklenmediği model veya sürümde çalıştırmak.",
+          "Tek bir anlık çıktıyı geçmiş durumun kanıtı saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "platform",
+            "d": "Confirm the Cisco IOS/IOS-XE, Huawei VRP or ArubaOS release."
+          },
+          {
+            "p": "scope",
+            "d": "Confirm model and software-release support; correlate the output with event records from the same time window."
+          }
+        ],
+        "example": "Displays event records retained in the device's local memory buffer. Buffer size and severity depend on configuration.",
+        "mistakes": [
+          "Assuming syntax is identical across operating-system families.",
+          "Running the command on an unsupported model or release.",
+          "Treating one snapshot as proof of historical state."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "المنصة",
+            "d": "تحقق من إصدار Cisco IOS/IOS-XE أو Huawei VRP أو ArubaOS."
+          },
+          {
+            "p": "النطاق",
+            "d": "تحقق من دعم الطراز وإصدار البرنامج، وقارن الناتج بسجلات الأحداث في الفترة الزمنية نفسها."
+          }
+        ],
+        "example": "يعرض سجلات الأحداث المحتفظ بها في مخزن الذاكرة المحلي للجهاز. يعتمد حجم المخزن ومستوى الخطورة على الإعدادات.",
         "mistakes": [
           "افتراض تطابق الصياغة بين عائلات أنظمة التشغيل.",
           "تنفيذ الأمر على طراز أو إصدار غير مدعوم.",
