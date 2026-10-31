@@ -1,0 +1,324 @@
+{
+  "items": {
+    "ospf-komsular": {
+      "en": {
+        "title": "View OSPF neighbors",
+        "note": "Checks OSPF adjacency state and neighboring router IDs. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض جيران OSPF",
+        "note": "يفحص حالة تجاور OSPF ومعرّفات الموجّهات المجاورة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ospf-lsdb": {
+      "en": {
+        "title": "View the OSPF link-state database",
+        "note": "Inspects OSPF LSA records in the link-state database. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض قاعدة بيانات حالة الارتباط OSPF",
+        "note": "يفحص سجلات LSA في قاعدة بيانات حالة الارتباط. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bgp-ozet": {
+      "en": {
+        "title": "View the BGP neighbor summary",
+        "note": "Checks BGP peer state, uptime and prefix counters. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض ملخص جيران BGP",
+        "note": "يفحص حالة نظراء BGP ومدة الاتصال وعدادات البادئات. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bgp-advertised": {
+      "en": {
+        "title": "View routes advertised to a BGP peer",
+        "note": "Checks routes advertised to a specified BGP peer. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض المسارات المعلنة إلى نظير BGP",
+        "note": "يفحص المسارات المعلنة إلى نظير BGP محدد. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "vrf-list": {
+      "en": {
+        "title": "View VRF instances",
+        "note": "Lists VRF instances configured on the device. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض مثيلات VRF",
+        "note": "يعرض مثيلات VRF المهيأة على الجهاز. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ipv6-route": {
+      "en": {
+        "title": "View the IPv6 routing table",
+        "note": "Displays IPv6 routes and selected next-hop information. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض جدول توجيه IPv6",
+        "note": "يعرض مسارات IPv6 ومعلومات القفزة التالية المختارة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bfd-sessions": {
+      "en": {
+        "title": "View BFD sessions",
+        "note": "Checks BFD session state and detection parameters. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض جلسات BFD",
+        "note": "يفحص حالة جلسات BFD ومعلمات اكتشاف الأعطال. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "stp-root": {
+      "en": {
+        "title": "View the spanning-tree root bridge",
+        "note": "Checks the STP root bridge election and root-port information. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض الجسر الجذر لبروتوكول STP",
+        "note": "يفحص انتخاب الجسر الجذر ومعلومات المنفذ الجذر في STP. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "stp-inconsistent": {
+      "en": {
+        "title": "View inconsistent spanning-tree ports",
+        "note": "Investigates ports placed in an inconsistent state by STP protections. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض منافذ STP غير المتوافقة",
+        "note": "يفحص المنافذ التي وضعتها آليات حماية STP في حالة غير متوافقة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "lacp-summary": {
+      "en": {
+        "title": "View the LACP port-channel summary",
+        "note": "Checks LAG membership and aggregation state. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض ملخص قناة منافذ LACP",
+        "note": "يفحص عضوية LAG وحالة التجميع. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "acl-counters": {
+      "en": {
+        "title": "View ACL match counters",
+        "note": "Inspects ACL rule match counters. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض عدادات مطابقة ACL",
+        "note": "يفحص عدادات مطابقة قواعد ACL. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "dhcp-snoop-stats": {
+      "en": {
+        "title": "View DHCP Snooping statistics",
+        "note": "Displays DHCP Snooping packet and drop counters. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض إحصاءات DHCP Snooping",
+        "note": "يعرض عدادات حزم DHCP Snooping والحزم المسقطة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "environment": {
+      "en": {
+        "title": "View hardware environmental status",
+        "note": "Checks temperature, fan and power-supply sensors. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض الحالة البيئية للأجهزة",
+        "note": "يفحص مستشعرات الحرارة والمراوح ومصادر الطاقة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ntp-associations": {
+      "en": {
+        "title": "View NTP associations",
+        "note": "Displays NTP server selection and synchronization state. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض ارتباطات NTP",
+        "note": "يعرض اختيار خوادم NTP وحالة المزامنة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "radius-stats": {
+      "en": {
+        "title": "View RADIUS statistics",
+        "note": "Inspects RADIUS request, response and error counters. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض إحصاءات RADIUS",
+        "note": "يفحص عدادات طلبات RADIUS والاستجابات والأخطاء. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "snmp-stats": {
+      "en": {
+        "title": "View SNMP statistics",
+        "note": "Inspects SNMP protocol counters and agent status. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض إحصاءات SNMP",
+        "note": "يفحص عدادات بروتوكول SNMP وحالة الوكيل. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "lldp-interface": {
+      "en": {
+        "title": "View LLDP interface details",
+        "note": "Inspects local LLDP advertisements for an interface. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض تفاصيل واجهة LLDP",
+        "note": "يفحص إعلانات LLDP المحلية لواجهة محددة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "cdp-detail": {
+      "en": {
+        "title": "View detailed CDP neighbors",
+        "note": "Displays neighbor platform, port and management address details. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض تفاصيل جيران CDP",
+        "note": "يعرض تفاصيل منصة الجار والمنفذ وعنوان الإدارة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "tcp-stats": {
+      "en": {
+        "title": "View TCP statistics",
+        "note": "Inspects TCP connection and segment counters. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض إحصاءات TCP",
+        "note": "يفحص عدادات اتصالات TCP والمقاطع. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ip-protocols": {
+      "en": {
+        "title": "View active IP routing protocols",
+        "note": "Checks active routing protocol processes and parameters. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض بروتوكولات توجيه IP النشطة",
+        "note": "يفحص عمليات بروتوكولات التوجيه النشطة ومعلماتها. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "cef-summary": {
+      "en": {
+        "title": "View the CEF forwarding summary",
+        "note": "Inspects forwarding-table capacity and summary information. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض ملخص إعادة توجيه CEF",
+        "note": "يفحص سعة جدول إعادة التوجيه ومعلوماته الموجزة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "arp-inspection": {
+      "en": {
+        "title": "View Dynamic ARP Inspection statistics",
+        "note": "Checks packets dropped by ARP inspection. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض إحصاءات فحص ARP الديناميكي",
+        "note": "يفحص الحزم التي أسقطها فحص ARP. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "mac-dynamic": {
+      "en": {
+        "title": "View dynamically learned MAC entries",
+        "note": "Lists dynamically learned MAC entries. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض عناوين MAC المتعلمة ديناميكياً",
+        "note": "يعرض عناوين MAC المتعلمة ديناميكياً. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "mst-region": {
+      "en": {
+        "title": "View the MST region configuration",
+        "note": "Checks MST region name, revision and VLAN mappings. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض إعداد منطقة MST",
+        "note": "يفحص اسم منطقة MST والمراجعة وتعيينات VLAN. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "loopback-interfaces": {
+      "en": {
+        "title": "View loopback interfaces",
+        "note": "Lists loopback interface address and status information. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض واجهات Loopback",
+        "note": "يعرض معلومات العنوان والحالة لواجهات Loopback. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "vlan-interface-counters": {
+      "en": {
+        "title": "View VLAN interface counters",
+        "note": "Checks packet and error counters on an SVI or VLAN interface. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض عدادات واجهة VLAN",
+        "note": "يفحص عدادات الحزم والأخطاء على واجهة SVI أو VLAN. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "bootvar": {
+      "en": {
+        "title": "View boot variables",
+        "note": "Checks the active and next-boot software and configuration selection. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض متغيرات الإقلاع",
+        "note": "يفحص اختيار البرنامج والإعدادات الحالية وعند الإقلاع التالي. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "redundancy": {
+      "en": {
+        "title": "View redundancy status",
+        "note": "Inspects control-plane or chassis redundancy state; model support varies. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض حالة التكرار",
+        "note": "يفحص حالة تكرار مستوى التحكم أو الهيكل؛ يختلف الدعم حسب الطراز. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "license-summary": {
+      "en": {
+        "title": "View the license summary",
+        "note": "Checks device license status and enabled features. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض ملخص التراخيص",
+        "note": "يفحص حالة ترخيص الجهاز والميزات المفعلة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "platform-inventory": {
+      "en": {
+        "title": "View the hardware inventory",
+        "note": "Lists chassis, modules and hardware components. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض مخزون الأجهزة",
+        "note": "يعرض الهيكل والوحدات ومكونات الأجهزة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "transceiver-diagnostics": {
+      "en": {
+        "title": "View transceiver diagnostics",
+        "note": "Inspects optical transceiver temperature, voltage and TX/RX power. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض تشخيصات وحدة الإرسال والاستقبال",
+        "note": "يفحص درجة حرارة وحدة الإرسال الضوئية والجهد وقدرة TX/RX. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    },
+    "ip-mtu": {
+      "en": {
+        "title": "View interface MTU values",
+        "note": "Checks interface MTU values and possible fragmentation mismatches. Verify command syntax on the target model and software release."
+      },
+      "ar": {
+        "title": "عرض قيم MTU للواجهة",
+        "note": "يفحص قيم MTU للواجهات واحتمالات عدم تطابق التجزئة. تحقق من صياغة الأمر على الطراز وإصدار البرنامج المستهدف."
+      }
+    }
+  }
+}
