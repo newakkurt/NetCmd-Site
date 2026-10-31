@@ -1,0 +1,578 @@
+[
+  {
+    "slug": "snmp-engine-status",
+    "title": "SNMP motoru durumunu görüntüleme",
+    "cat": "İzleme ve Loglama",
+    "note": "SNMP sürüm ve motor bilgilerini izleme altyapısıyla karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show snmp"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display snmp-agent sys-info"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show snmp-server"
+      ]
+    }
+  },
+  {
+    "slug": "snmp-trap-config",
+    "title": "SNMP trap hedeflerini görüntüleme",
+    "cat": "İzleme ve Loglama",
+    "note": "Trap alıcılarının adres ve bildirim yapılandırmasını doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show running-config | include snmp-server host"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display current-configuration | include snmp-agent target-host"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show snmp-server"
+      ]
+    }
+  },
+  {
+    "slug": "logging-source-interface",
+    "title": "Syslog kaynak arayüzünü görüntüleme",
+    "cat": "İzleme ve Loglama",
+    "note": "Syslog paketlerinin hangi kaynak IP ile gönderildiğini doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show running-config | include logging source-interface"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display current-configuration | include info-center loghost"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging"
+      ]
+    }
+  },
+  {
+    "slug": "dhcp-relay-status",
+    "title": "DHCP relay yapılandırmasını görüntüleme",
+    "cat": "Ağ Hizmetleri",
+    "note": "VLAN arayüzlerinde tanımlı DHCP sunucu hedeflerini kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show running-config | include ip helper-address"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dhcp relay all"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show dhcp-relay"
+      ]
+    }
+  },
+  {
+    "slug": "dns-client-config",
+    "title": "DNS istemci ayarlarını görüntüleme",
+    "cat": "Ağ Hizmetleri",
+    "note": "Cihazın kullandığı DNS sunucularını ve domain arama ayarlarını kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show running-config | include ip name-server|ip domain"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dns server"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip dns"
+      ]
+    }
+  },
+  {
+    "slug": "dns-cache",
+    "title": "DNS önbelleğini görüntüleme",
+    "cat": "Ağ Hizmetleri",
+    "note": "Cihazın DNS çözümleme önbelleğini ve kayıt sürelerini inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show hosts"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display dns dynamic-host"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show hosts"
+      ]
+    }
+  },
+  {
+    "slug": "tacacs-server-config",
+    "title": "TACACS+ sunucu ayarlarını görüntüleme",
+    "cat": "AAA ve Kimlik Doğrulama",
+    "note": "TACACS sunucu adresi ve bağlantı parametrelerini doğrulayın; anahtarları paylaşmayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show running-config | section tacacs"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display tacacs-server"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show tacacs"
+      ]
+    }
+  },
+  {
+    "slug": "aaa-sessions",
+    "title": "Aktif yönetim oturumlarını görüntüleme",
+    "cat": "AAA ve Kimlik Doğrulama",
+    "note": "Cihaz üzerinde açık yönetim oturumlarını ve kullanıcıları inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show users"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display users"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show sessions"
+      ]
+    }
+  },
+  {
+    "slug": "ssh-server-status",
+    "title": "SSH sunucu durumunu görüntüleme",
+    "cat": "AAA ve Kimlik Doğrulama",
+    "note": "SSH servisinin etkinliğini ve dinleme ayarlarını doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip ssh"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ssh server status"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip ssh"
+      ]
+    }
+  },
+  {
+    "slug": "http-server-status",
+    "title": "Web yönetim servis durumunu görüntüleme",
+    "cat": "AAA ve Kimlik Doğrulama",
+    "note": "HTTP/HTTPS yönetim servislerinin açık olup olmadığını kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show running-config | include ip http server|ip http secure-server"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display http server status"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show web-management"
+      ]
+    }
+  },
+  {
+    "slug": "clock-detail",
+    "title": "Cihaz tarih ve saatini görüntüleme",
+    "cat": "Sistem",
+    "note": "Saat dilimi ve sistem saatini NTP kaynaklarıyla karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show clock detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display clock"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show time"
+      ]
+    }
+  },
+  {
+    "slug": "uptime-detail",
+    "title": "Cihaz çalışma süresini görüntüleme",
+    "cat": "Sistem",
+    "note": "Son yeniden başlatma zamanını ve uptime bilgisini bakım kayıtlarıyla karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show version | include uptime"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display version"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show system"
+      ]
+    }
+  },
+  {
+    "slug": "interface-description-search",
+    "title": "Arayüz açıklamalarını listeleme",
+    "cat": "Görüntüleme",
+    "note": "Port açıklamalarını envanter ve kablolama kayıtlarıyla karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces description"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display interface description"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces brief"
+      ]
+    }
+  },
+  {
+    "slug": "interface-error-counters",
+    "title": "Arayüz hata sayaçlarını görüntüleme",
+    "cat": "Sorun Giderme",
+    "note": "CRC, input error, discard ve output error sayaçlarını inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces counters errors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display counters error"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces"
+      ]
+    }
+  },
+  {
+    "slug": "interface-flap-log",
+    "title": "Arayüz link değişim kayıtlarını görüntüleme",
+    "cat": "Sorun Giderme",
+    "note": "Up/down geçişlerinin zamanını sistem loglarıyla ilişkilendirin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging | include changed state"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display logbuffer | include UPDOWN"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging -r"
+      ]
+    }
+  },
+  {
+    "slug": "transceiver-detail",
+    "title": "Optik modül ayrıntılarını görüntüleme",
+    "cat": "PoE ve Fiziksel Katman",
+    "note": "Optik modül tipi, dalga boyu ve DOM değerlerini kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver verbose"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver"
+      ]
+    }
+  },
+  {
+    "slug": "transceiver-diagnostics",
+    "title": "Optik DOM alarm değerlerini görüntüleme",
+    "cat": "PoE ve Fiziksel Katman",
+    "note": "Tx/Rx güç, sıcaklık ve voltaj değerlerini modül eşikleriyle karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show interfaces transceiver detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display transceiver diagnosis interface"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show interfaces transceiver"
+      ]
+    }
+  },
+  {
+    "slug": "mac-address-count",
+    "title": "MAC adres tablosu toplamını görüntüleme",
+    "cat": "VLAN / Port",
+    "note": "Öğrenilen MAC sayısını kapasite ve VLAN dağılımıyla karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show mac address-table count"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address statistics"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show mac-address"
+      ]
+    }
+  },
+  {
+    "slug": "mac-move-log",
+    "title": "MAC adres hareket kayıtlarını görüntüleme",
+    "cat": "Sorun Giderme",
+    "note": "Aynı MAC'in portlar arasında taşınmasını loop veya kablolama sorunu açısından araştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show logging | include MACFLAP"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display mac-address flapping record"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show logging -r"
+      ]
+    }
+  },
+  {
+    "slug": "stp-topology-changes",
+    "title": "STP topoloji değişim sayaçlarını görüntüleme",
+    "cat": "Spanning Tree ve L2",
+    "note": "Topoloji değişim sayısı ve son değişim arayüzünü inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show spanning-tree detail"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display stp"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show spanning-tree"
+      ]
+    }
+  },
+  {
+    "slug": "bgp-prefix-count",
+    "title": "BGP prefix sayısını komşu bazında görüntüleme",
+    "cat": "BGP ve MPLS",
+    "note": "Komşu başına alınan ve gönderilen prefix sayılarını politika değişiklikleriyle karşılaştırın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip bgp summary"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display bgp peer"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip bgp summary"
+      ]
+    }
+  },
+  {
+    "slug": "ospf-route-summary",
+    "title": "OSPF tarafından öğrenilen rotaları görüntüleme",
+    "cat": "Yönlendirme Protokolleri",
+    "note": "OSPF kaynaklı rotaları metric ve next-hop değerleriyle doğrulayın.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route ospf"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table protocol ospf"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route ospf"
+      ]
+    }
+  },
+  {
+    "slug": "static-route-detail",
+    "title": "Belirli statik rotayı görüntüleme",
+    "cat": "Yönlendirme Protokolleri",
+    "note": "Hedef prefix için next-hop, distance ve aktiflik durumunu kontrol edin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ip route 192.0.2.0"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ip routing-table 192.0.2.0"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ip route 192.0.2.0"
+      ]
+    }
+  },
+  {
+    "slug": "ipv6-nd-table",
+    "title": "IPv6 Neighbor Discovery tablosunu görüntüleme",
+    "cat": "IPv6 ve Multicast",
+    "note": "IPv6 komşu durumlarını ve link-layer eşleşmelerini inceleyin.",
+    "cisco": {
+      "mode": "Privileged EXEC",
+      "cmds": [
+        "show ipv6 neighbors"
+      ]
+    },
+    "huawei": {
+      "mode": "User view",
+      "cmds": [
+        "display ipv6 neighbors"
+      ]
+    },
+    "aruba": {
+      "mode": "Operator / Manager",
+      "cmds": [
+        "show ipv6 neighbors"
+      ]
+    }
+  }
+]
