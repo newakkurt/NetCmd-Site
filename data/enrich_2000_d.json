@@ -550,5 +550,525 @@
         ]
       }
     }
+  },
+  "ipv6-interface-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kontrol",
+            "d": "IPv6 arayüz adreslerini ve line/protocol durumunu karşılaştırın."
+          },
+          {
+            "p": "sorun giderme",
+            "d": "Beklenen IPv6 adresi görünmüyorsa arayüzde IPv6 etkinliğini, adres/prefix atamasını ve link durumunu kontrol edin."
+          }
+        ],
+        "example": "Beklenen IPv6 adresi görünmüyorsa arayüzde IPv6 etkinliğini, adres/prefix atamasını ve link durumunu kontrol edin.",
+        "mistakes": [
+          "Yalnızca fiziksel linkin up olmasını IPv6 yönlendirmesinin çalıştığı şeklinde yorumlamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "check",
+            "d": "Compare IPv6 addresses with each interface's line/protocol state."
+          },
+          {
+            "p": "troubleshooting",
+            "d": "If an expected address is missing, check IPv6 enablement, address/prefix assignment and link state."
+          }
+        ],
+        "example": "If an expected address is missing, check IPv6 enablement, address/prefix assignment and link state.",
+        "mistakes": [
+          "Assuming an up physical link proves IPv6 routing is working."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الفحص",
+            "d": "قارن عناوين IPv6 مع حالة line/protocol لكل واجهة."
+          },
+          {
+            "p": "استكشاف الأخطاء",
+            "d": "إذا كان العنوان المتوقع غير ظاهر، فتحقق من تفعيل IPv6 وتعيين العنوان والبادئة وحالة الرابط."
+          }
+        ],
+        "example": "إذا كان العنوان المتوقع غير ظاهر، فتحقق من تفعيل IPv6 وتعيين العنوان والبادئة وحالة الرابط.",
+        "mistakes": [
+          "افتراض أن حالة الرابط up تثبت عمل توجيه IPv6."
+        ]
+      }
+    }
+  },
+  "ipv6-routing-table": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kontrol",
+            "d": "Hedef prefix, next-hop ve çıkış arayüzünü beklenen tasarımla karşılaştırın."
+          },
+          {
+            "p": "sorun giderme",
+            "d": "Bir hedefe rota yoksa bağlı prefixleri, statik rotaları ve dinamik IPv6 routing komşuluklarını ayrı ayrı kontrol edin."
+          }
+        ],
+        "example": "Bir hedefe rota yoksa bağlı prefixleri, statik rotaları ve dinamik IPv6 routing komşuluklarını ayrı ayrı kontrol edin.",
+        "mistakes": [
+          "IPv4 routing tablosunu IPv6 tablosuyla karıştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "check",
+            "d": "Compare the destination prefix, next hop and egress interface with the intended design."
+          },
+          {
+            "p": "troubleshooting",
+            "d": "If a destination has no route, inspect connected prefixes, static routes and dynamic IPv6 routing adjacencies separately."
+          }
+        ],
+        "example": "If a destination has no route, inspect connected prefixes, static routes and dynamic IPv6 routing adjacencies separately.",
+        "mistakes": [
+          "Confusing the IPv4 routing table with the IPv6 table."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الفحص",
+            "d": "قارن بادئة الوجهة والقفزة التالية وواجهة الخروج مع التصميم المطلوب."
+          },
+          {
+            "p": "استكشاف الأخطاء",
+            "d": "إذا لم يوجد مسار للوجهة، فتحقق بشكل منفصل من البادئات المتصلة والمسارات الثابتة وجيران التوجيه الديناميكي IPv6."
+          }
+        ],
+        "example": "إذا لم يوجد مسار للوجهة، فتحقق بشكل منفصل من البادئات المتصلة والمسارات الثابتة وجيران التوجيه الديناميكي IPv6.",
+        "mistakes": [
+          "الخلط بين جدول توجيه IPv4 وجدول IPv6."
+        ]
+      }
+    }
+  },
+  "ipv6-neighbor-table": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kontrol",
+            "d": "IPv6 adresi, link-layer adresi ve komşu durumunu eşleştirin."
+          },
+          {
+            "p": "sorun giderme",
+            "d": "Komşu eksikse aynı linkte IPv6 erişimini, NS/NA paketlerini ve VLAN/L2 bağlantısını inceleyin."
+          }
+        ],
+        "example": "Komşu eksikse aynı linkte IPv6 erişimini, NS/NA paketlerini ve VLAN/L2 bağlantısını inceleyin.",
+        "mistakes": [
+          "STALE durumunu tek başına bağlantı arızası saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "check",
+            "d": "Match the IPv6 address, link-layer address and neighbor state."
+          },
+          {
+            "p": "troubleshooting",
+            "d": "If a neighbor is missing, inspect IPv6 reachability on the link, NS/NA packets and VLAN/Layer 2 connectivity."
+          }
+        ],
+        "example": "If a neighbor is missing, inspect IPv6 reachability on the link, NS/NA packets and VLAN/Layer 2 connectivity.",
+        "mistakes": [
+          "Treating STALE by itself as a connectivity failure."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الفحص",
+            "d": "طابق عنوان IPv6 مع عنوان الطبقة الثانية وحالة الجار."
+          },
+          {
+            "p": "استكشاف الأخطاء",
+            "d": "إذا كان الجار مفقوداً، فتحقق من الوصول عبر IPv6 ورسائل NS/NA واتصال VLAN والطبقة الثانية."
+          }
+        ],
+        "example": "إذا كان الجار مفقوداً، فتحقق من الوصول عبر IPv6 ورسائل NS/NA واتصال VLAN والطبقة الثانية.",
+        "mistakes": [
+          "اعتبار حالة STALE وحدها دليلاً على فشل الاتصال."
+        ]
+      }
+    }
+  },
+  "ipv6-ospf-neighbors": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kontrol",
+            "d": "Komşu router ID, arayüz ve FULL gibi komşuluk durumlarını inceleyin."
+          },
+          {
+            "p": "sorun giderme",
+            "d": "Komşuluk kurulmuyorsa area, hello/dead timer, MTU, authentication ve IPv6 link-local erişimini iki uçta karşılaştırın."
+          }
+        ],
+        "example": "Komşuluk kurulmuyorsa area, hello/dead timer, MTU, authentication ve IPv6 link-local erişimini iki uçta karşılaştırın.",
+        "mistakes": [
+          "Arayüzün up olmasını OSPFv3 komşuluğunun kurulduğu anlamına yormak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "check",
+            "d": "Review neighbor router IDs, interfaces and states such as FULL."
+          },
+          {
+            "p": "troubleshooting",
+            "d": "If adjacency does not form, compare area, hello/dead timers, MTU, authentication and IPv6 link-local reachability on both ends."
+          }
+        ],
+        "example": "If adjacency does not form, compare area, hello/dead timers, MTU, authentication and IPv6 link-local reachability on both ends.",
+        "mistakes": [
+          "Assuming an up interface means the OSPFv3 adjacency is established."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الفحص",
+            "d": "راجع معرف الموجّه والواجهة وحالات الجوار مثل FULL."
+          },
+          {
+            "p": "استكشاف الأخطاء",
+            "d": "إذا لم تتشكل المجاورة، فقارن area ومؤقتات hello/dead وMTU والمصادقة وإمكانية الوصول إلى عنوان IPv6 link-local على الطرفين."
+          }
+        ],
+        "example": "إذا لم تتشكل المجاورة، فقارن area ومؤقتات hello/dead وMTU والمصادقة وإمكانية الوصول إلى عنوان IPv6 link-local على الطرفين.",
+        "mistakes": [
+          "افتراض أن حالة الواجهة up تعني اكتمال مجاورة OSPFv3."
+        ]
+      }
+    }
+  },
+  "bgp-ipv6-summary": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kontrol",
+            "d": "Peer IP, remote ASN, oturum durumu ve alınan prefix sayılarını kontrol edin."
+          },
+          {
+            "p": "sorun giderme",
+            "d": "Idle/Active durumunda TCP/179 erişimini, ASN, update-source, address-family ve policy ayarlarını karşılaştırın."
+          }
+        ],
+        "example": "Idle/Active durumunda TCP/179 erişimini, ASN, update-source, address-family ve policy ayarlarını karşılaştırın.",
+        "mistakes": [
+          "IPv6 BGP oturumunu IPv4 unicast address-family oturumuyla aynı kabul etmek."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "check",
+            "d": "Check peer IP, remote ASN, session state and received prefix counts."
+          },
+          {
+            "p": "troubleshooting",
+            "d": "For Idle/Active states, compare TCP/179 reachability, ASN, update-source, address-family and policy settings."
+          }
+        ],
+        "example": "For Idle/Active states, compare TCP/179 reachability, ASN, update-source, address-family and policy settings.",
+        "mistakes": [
+          "Treating an IPv6 BGP session as the same as an IPv4 unicast address-family session."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الفحص",
+            "d": "تحقق من عنوان النظير وASN البعيد وحالة الجلسة وعدد البادئات المستلمة."
+          },
+          {
+            "p": "استكشاف الأخطاء",
+            "d": "في حالتي Idle/Active، قارن الوصول إلى TCP/179 وASN وإعداد update-source وaddress-family والسياسات."
+          }
+        ],
+        "example": "في حالتي Idle/Active، قارن الوصول إلى TCP/179 وASN وإعداد update-source وaddress-family والسياسات.",
+        "mistakes": [
+          "اعتبار جلسة BGP IPv6 مطابقة لجلسة IPv4 unicast."
+        ]
+      }
+    }
+  },
+  "vrf-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kontrol",
+            "d": "VRF adlarını ve beklenen tenant/servis ayrımını kontrol edin."
+          },
+          {
+            "p": "sorun giderme",
+            "d": "VRF eksikse tanımın kaydedildiğini ve ilgili arayüzlerin doğru instance'a bağlandığını doğrulayın."
+          }
+        ],
+        "example": "VRF eksikse tanımın kaydedildiğini ve ilgili arayüzlerin doğru instance'a bağlandığını doğrulayın.",
+        "mistakes": [
+          "VRF listesini global routing tablosundaki rota sayısıyla karıştırmak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "check",
+            "d": "Check VRF names and the intended tenant/service separation."
+          },
+          {
+            "p": "troubleshooting",
+            "d": "If a VRF is missing, verify that its definition is saved and interfaces are assigned to the correct instance."
+          }
+        ],
+        "example": "If a VRF is missing, verify that its definition is saved and interfaces are assigned to the correct instance.",
+        "mistakes": [
+          "Confusing the VRF list with the number of routes in the global table."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الفحص",
+            "d": "تحقق من أسماء VRF والفصل المطلوب بين المستأجرين والخدمات."
+          },
+          {
+            "p": "استكشاف الأخطاء",
+            "d": "إذا كان VRF مفقوداً، فتأكد من حفظ تعريفه وربط الواجهات بالمثيل الصحيح."
+          }
+        ],
+        "example": "إذا كان VRF مفقوداً، فتأكد من حفظ تعريفه وربط الواجهات بالمثيل الصحيح.",
+        "mistakes": [
+          "الخلط بين قائمة VRF وعدد المسارات في الجدول العام."
+        ]
+      }
+    }
+  },
+  "vrf-interface-membership": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kontrol",
+            "d": "Her arayüzün beklenen VRF/instance altında olduğunu doğrulayın."
+          },
+          {
+            "p": "sorun giderme",
+            "d": "Arayüz yanlış VRF'teyse IP adresi, routing table, DHCP relay ve erişim politikalarının etkisini birlikte değerlendirin."
+          }
+        ],
+        "example": "Arayüz yanlış VRF'teyse IP adresi, routing table, DHCP relay ve erişim politikalarının etkisini birlikte değerlendirin.",
+        "mistakes": [
+          "Arayüzü taşımadan önce mevcut oturumun kesilebileceğini hesaba katmamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "check",
+            "d": "Verify that each interface belongs to the intended VRF/instance."
+          },
+          {
+            "p": "troubleshooting",
+            "d": "For an interface in the wrong VRF, consider the effects on its IP address, routing table, DHCP relay and access policies together."
+          }
+        ],
+        "example": "For an interface in the wrong VRF, consider the effects on its IP address, routing table, DHCP relay and access policies together.",
+        "mistakes": [
+          "Ignoring that moving an interface can interrupt the current management session."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الفحص",
+            "d": "تحقق من أن كل واجهة تنتمي إلى VRF/instance المطلوب."
+          },
+          {
+            "p": "استكشاف الأخطاء",
+            "d": "إذا كانت الواجهة في VRF غير صحيح، فقيّم تأثير ذلك على عنوان IP وجدول التوجيه وDHCP relay وسياسات الوصول معاً."
+          }
+        ],
+        "example": "إذا كانت الواجهة في VRF غير صحيح، فقيّم تأثير ذلك على عنوان IP وجدول التوجيه وDHCP relay وسياسات الوصول معاً.",
+        "mistakes": [
+          "تجاهل احتمال انقطاع جلسة الإدارة عند نقل الواجهة."
+        ]
+      }
+    }
+  },
+  "qos-policy-statistics": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kontrol",
+            "d": "Policy-map/policy sayaçlarında eşleşen paketleri ve drop değerlerini inceleyin."
+          },
+          {
+            "p": "sorun giderme",
+            "d": "Beklenen trafik eşleşmiyorsa sınıflandırma ACL'sini, policy yönünü, arayüz bağını ve sayaçların artıp artmadığını kontrol edin."
+          }
+        ],
+        "example": "Beklenen trafik eşleşmiyorsa sınıflandırma ACL'sini, policy yönünü, arayüz bağını ve sayaçların artıp artmadığını kontrol edin.",
+        "mistakes": [
+          "Sadece policy'nin tanımlı olmasını trafiğe uygulandığı şeklinde yorumlamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "check",
+            "d": "Inspect matching packets and drop counters in the policy statistics."
+          },
+          {
+            "p": "troubleshooting",
+            "d": "If expected traffic does not match, check the classifier ACL, policy direction, interface attachment and whether counters increase."
+          }
+        ],
+        "example": "If expected traffic does not match, check the classifier ACL, policy direction, interface attachment and whether counters increase.",
+        "mistakes": [
+          "Assuming a defined policy is necessarily applied to traffic."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الفحص",
+            "d": "افحص الحزم المطابقة وعدادات الإسقاط في إحصاءات السياسة."
+          },
+          {
+            "p": "استكشاف الأخطاء",
+            "d": "إذا لم تطابق الحركة المتوقعة، فتحقق من ACL المصنّف واتجاه السياسة وربط الواجهة وزيادة العدادات."
+          }
+        ],
+        "example": "إذا لم تطابق الحركة المتوقعة، فتحقق من ACL المصنّف واتجاه السياسة وربط الواجهة وزيادة العدادات.",
+        "mistakes": [
+          "افتراض أن تعريف السياسة يعني تطبيقها على الحركة."
+        ]
+      }
+    }
+  },
+  "acl-hit-counters": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kontrol",
+            "d": "Kural sıra numarası, eşleşme sayısı ve permit/deny davranışını inceleyin."
+          },
+          {
+            "p": "sorun giderme",
+            "d": "Sayaç artmıyorsa ACL'nin doğru arayüze ve doğru yönde uygulandığını, trafiğin kural sırasına uyduğunu kontrol edin."
+          }
+        ],
+        "example": "Sayaç artmıyorsa ACL'nin doğru arayüze ve doğru yönde uygulandığını, trafiğin kural sırasına uyduğunu kontrol edin.",
+        "mistakes": [
+          "Hit sayacı artmayan kuralı otomatik olarak gereksiz saymak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "check",
+            "d": "Review rule sequence, hit counts and permit/deny behavior."
+          },
+          {
+            "p": "troubleshooting",
+            "d": "If counters do not increase, verify the ACL is applied to the correct interface and direction and that traffic matches the rule order."
+          }
+        ],
+        "example": "If counters do not increase, verify the ACL is applied to the correct interface and direction and that traffic matches the rule order.",
+        "mistakes": [
+          "Automatically treating a rule with no hits as unnecessary."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الفحص",
+            "d": "راجع ترتيب القواعد وعدد مرات المطابقة وسلوك permit/deny."
+          },
+          {
+            "p": "استكشاف الأخطاء",
+            "d": "إذا لم تزد العدادات، فتحقق من تطبيق ACL على الواجهة والاتجاه الصحيحين ومن ترتيب القواعد."
+          }
+        ],
+        "example": "إذا لم تزد العدادات، فتحقق من تطبيق ACL على الواجهة والاتجاه الصحيحين ومن ترتيب القواعد.",
+        "mistakes": [
+          "اعتبار القاعدة التي لا تحتوي على hits غير ضرورية تلقائياً."
+        ]
+      }
+    }
+  },
+  "ipv6-prefix-list": {
+    "details": {
+      "tr": {
+        "params": [
+          {
+            "p": "kontrol",
+            "d": "Prefix, ge/le sınırları ve permit/deny sırasını beklenen routing policy ile karşılaştırın."
+          },
+          {
+            "p": "sorun giderme",
+            "d": "Prefix beklenmedik şekilde filtreleniyorsa prefix uzunluğunu, sıra numarasını ve policy'nin doğru neighbor/address-family üzerinde kullanıldığını inceleyin."
+          }
+        ],
+        "example": "Prefix beklenmedik şekilde filtreleniyorsa prefix uzunluğunu, sıra numarasını ve policy'nin doğru neighbor/address-family üzerinde kullanıldığını inceleyin.",
+        "mistakes": [
+          "Prefix-list sırasını ve ge/le aralıklarını hesaba katmamak."
+        ]
+      },
+      "en": {
+        "params": [
+          {
+            "p": "check",
+            "d": "Compare prefixes, ge/le bounds and permit/deny order with the intended routing policy."
+          },
+          {
+            "p": "troubleshooting",
+            "d": "If a prefix is filtered unexpectedly, inspect prefix length, sequence and whether the policy is used by the correct neighbor/address-family."
+          }
+        ],
+        "example": "If a prefix is filtered unexpectedly, inspect prefix length, sequence and whether the policy is used by the correct neighbor/address-family.",
+        "mistakes": [
+          "Ignoring prefix-list order and ge/le ranges."
+        ]
+      },
+      "ar": {
+        "params": [
+          {
+            "p": "الفحص",
+            "d": "قارن البادئات وحدود ge/le وترتيب permit/deny مع سياسة التوجيه المطلوبة."
+          },
+          {
+            "p": "استكشاف الأخطاء",
+            "d": "إذا تمت تصفية بادئة بشكل غير متوقع، فتحقق من طول البادئة ورقم التسلسل واستخدام السياسة مع الجار وaddress-family الصحيحين."
+          }
+        ],
+        "example": "إذا تمت تصفية بادئة بشكل غير متوقع، فتحقق من طول البادئة ورقم التسلسل واستخدام السياسة مع الجار وaddress-family الصحيحين.",
+        "mistakes": [
+          "تجاهل ترتيب prefix-list ونطاقات ge/le."
+        ]
+      }
+    }
   }
 }
