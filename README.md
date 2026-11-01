@@ -6,7 +6,7 @@ Render static site: build `python3 build.py`, publish `dist`, env `BASE_URL`.
 ## Düzenlenecek dosyalar (data/)
 - `commands.json`  komutlar (TR ana metin)
 - `i18n.json`      arayüz + EN/AR çevirileri (yeni komut eklerken `items` altına en/ar ekle, yoksa build hata verir)
-- `site.json`      `iban`, `holder`, `bank` (Destek ol sayfası); Supabase url + publishable key
+- `site.json`      public site config, BMC link, display pricing, Supabase URL + publishable key; never store payment secrets or bank details here
 - `projects.json`  Projeler sayfası (status: live | soon)
 
 ## Üyelik
@@ -19,7 +19,7 @@ BASE_URL=http://localhost:8000 python3 build.py && cd dist && python3 -m http.se
 ```
 
 ## Premium ve destek
-- `data/site.json`: `iban` (mod-97 doğrulanır), `holder`, `bank`, `bmc_url` (Buy Me a Coffee, https://...), `premium_price`.
+- `data/site.json`: `bmc_url` (optional support link) and display-only `premium_price`. Payment provider secrets and private billing data must stay in Supabase Edge Function secrets/database.
 - Premium araçlar: `assets/plib.js` (saf mantık, Node'da test edilir) + `assets/premium.js` (arayüz). Üyelik `profiles.is_premium` alanından okunur; kapı istemci tarafındadır.
 - Premium vermek için Supabase SQL: `update public.profiles set is_premium = true where id = '<user uuid>';` Talepler `premium_requests` tablosunda.
 
