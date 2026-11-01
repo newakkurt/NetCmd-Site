@@ -358,27 +358,26 @@
     });
   }
 
-  /* ---------- Premium sayfası: durum + talep ---------- */
+  /* ---------- Premium page: Buy Me a Coffee membership ---------- */
   function renderPremiumPage(plan) {
     var box = $('prem-box');
     if (!box) return;
-    if (plan.premium) { box.innerHTML = '<div class="msg ok">' + esc(T.p_already) + '</div>'; return; }
-    if (!plan.logged) { box.innerHTML = '<p>' + esc(T.p_login_req) + '</p><p><a class="btn" href="' + esc(C.loginPath) + '">' + esc(T.p_login) + '</a> <a class="btn sec" href="' + esc(C.signupPath) + '">' + esc(C.signupText) + '</a></p>'; return; }
-    box.innerHTML = '<h2>' + esc(T.p_req_title) + '</h2><form class="box" id="rq"><label for="rq-ref">' + esc(T.p_req_ref) + '</label>' +
-      '<input id="rq-ref" maxlength="200" minlength="3" required><p><button class="btn" id="rq-b" type="submit">' + esc(T.p_req_btn) + '</button></p></form><div id="rq-m" class="msg" hidden></div>';
-    function msg(t, ok) { var m = $('rq-m'); m.textContent = t; m.className = 'msg ' + (ok ? 'ok' : 'err'); m.hidden = false; }
-    plan.sb.from('premium_requests').select('status').eq('status', 'pending').limit(1).then(function (r) {
-      if (r.data && r.data.length) { msg(T.p_req_pending, true); }
-    });
-    $('rq').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var b = $('rq-b'); b.disabled = true;
-      plan.sb.from('premium_requests').insert({ reference: $('rq-ref').value.trim() }).then(function (r) {
-        b.disabled = false;
-        if (r.error) { msg(T.p_req_err, false); return; }
-        msg(T.p_req_ok, true); $('rq').reset();
-      }).catch(function () { b.disabled = false; msg(T.p_req_err, false); });
-    });
+    if (!plan.logged) {
+      box.innerHTML = '<p>' + esc(T.p_login_req) + '</p><p><a class="btn" href="' + esc(C.loginPath) + '">' + esc(T.p_login) + '</a> <a class="btn sec" href="' + esc(C.signupPath) + '">' + esc(C.signupText) + '</a></p>';
+      return;
+    }
+    if (plan.premium) {
+      box.innerHTML = '<div class="msg ok">' + esc(T.p_already) + '</div><p><a class="btn sec" href="' + esc(C.bmcUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(T.p_manage) + '</a></p>';
+      return;
+    }
+    if (!C.bmcUrl || !/^https:\/\//i.test(C.bmcUrl)) {
+      box.innerHTML = '<div class="msg err">' + esc(T.p_checkout_error) + '</div>';
+      return;
+    }
+    box.innerHTML = '<h2>' + esc(T.p_checkout_title) + '</h2><p>' + esc(T.p_billing_note) + '</p>' +
+      '<p class="note">' + esc(T.p_bmc_email_note) + '</p>' +
+      '<p><a class="btn" href="' + esc(C.bmcUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(T.p_checkout) + '</a></p>' +
+      '<p class="msg">' + esc(T.p_bmc_activation_note) + '</p>';
   }
 
   getPlan(function (plan) {
