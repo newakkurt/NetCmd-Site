@@ -106,9 +106,10 @@ begin
   where excluded.last_event_created >= public.bmc_memberships.last_event_created;
 
   select
-    (status = 'active' and not paused)
-    or (status = 'canceled' and cancel_at_period_end and current_period_end > now())
-  into v_premium
+    ((status = 'active' and not paused)
+    or (status = 'canceled' and cancel_at_period_end and current_period_end > now())),
+    current_period_end
+  into v_premium, v_period_end
   from public.bmc_memberships
   where bmc_membership_id = p_membership_id and user_id = v_user_id;
 
