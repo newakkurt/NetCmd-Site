@@ -358,7 +358,7 @@
     });
   }
 
-  /* ---------- Premium sayfası: durum + talep ---------- */
+  /* ---------- Premium page: Buy Me a Coffee membership ---------- */
   function renderPremiumPage(plan) {
     var box = $('prem-box');
     if (!box) return;
@@ -367,32 +367,17 @@
       return;
     }
     if (plan.premium) {
-      box.innerHTML = '<div class="msg ok">' + esc(T.p_already) + '</div><p><button class="btn sec" id="p-manage" type="button">' + esc(T.p_manage) + '</button></p><div id="p-msg" class="msg" hidden></div>';
-      $('p-manage').addEventListener('click', function () {
-        var b = this, m = $('p-msg'); b.disabled = true;
-        plan.sb.functions.invoke('paddle-portal').then(function (r) {
-          b.disabled = false;
-          if (r.error || !r.data || !r.data.url) { m.textContent = T.p_portal_error; m.className = 'msg err'; m.hidden = false; return; }
-          window.location.assign(r.data.url);
-        }).catch(function () { b.disabled = false; m.textContent = T.p_portal_error; m.className = 'msg err'; m.hidden = false; });
-      });
+      box.innerHTML = '<div class="msg ok">' + esc(T.p_already) + '</div><p><a class="btn sec" href="' + esc(C.bmcUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(T.p_manage) + '</a></p>';
       return;
     }
-    box.innerHTML = '<h2>' + esc(T.p_checkout_title) + '</h2><p>' + esc(T.p_billing_note) + '</p><p><button class="btn" id="p-buy" type="button">' + esc(T.p_checkout) + '</button></p><div id="p-msg" class="msg" hidden></div>';
-    var query = new URLSearchParams(window.location.search);
-    if (query.get('checkout') === 'success') {
-      var note = $('p-msg'); note.textContent = T.p_paid_success; note.className = 'msg ok'; note.hidden = false;
+    if (!C.bmcUrl || !/^https:\/\//i.test(C.bmcUrl)) {
+      box.innerHTML = '<div class="msg err">' + esc(T.p_checkout_error) + '</div>';
+      return;
     }
-    $('p-buy').addEventListener('click', function () {
-      var b = this, m = $('p-msg'); b.disabled = true; b.textContent = T.p_checkout_loading;
-      plan.sb.functions.invoke('paddle-checkout').then(function (r) {
-        if (r.error || !r.data || !r.data.url) throw new Error('checkout');
-        window.location.assign(r.data.url);
-      }).catch(function () {
-        b.disabled = false; b.textContent = T.p_checkout;
-        m.textContent = T.p_checkout_error; m.className = 'msg err'; m.hidden = false;
-      });
-    });
+    box.innerHTML = '<h2>' + esc(T.p_checkout_title) + '</h2><p>' + esc(T.p_billing_note) + '</p>' +
+      '<p class="note">' + esc(T.p_bmc_email_note) + '</p>' +
+      '<p><a class="btn" href="' + esc(C.bmcUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(T.p_checkout) + '</a></p>' +
+      '<p class="msg">' + esc(T.p_bmc_activation_note) + '</p>';
   }
 
   getPlan(function (plan) {
