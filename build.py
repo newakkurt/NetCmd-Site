@@ -843,7 +843,7 @@ def premium_script(lang, tool):
     cfg = {
         "url": SITECFG.get("supabase_url", ""), "key": SITECFG.get("supabase_key", ""),
         "loginPath": lurl(lang, "login/"), "resetPath": lurl(lang, "reset/"), "signupPath": lurl(lang, "signup/"), "signupText": T(lang, "nav_signup"),
-        "premiumPath": lurl(lang, "premium/"),
+        "premiumPath": lurl(lang, "premium/"), "bmcUrl": SITECFG.get("bmc_url", ""),
     }
     payload = json.dumps({"t": pt, "cfg": cfg}, ensure_ascii=False).replace("</", "<\\/")
     return (
