@@ -240,7 +240,7 @@ table.cheat td,table.cheat th{font-size:.85rem}table.cheat td code{white-space:p
 .com-item h3{margin:0 0 4px}.com-item pre{margin:8px 0;border-radius:6px}
 form.wide{max-width:640px}
 html[data-theme=light]{--bg:#f3f7f9;--fg:#0e2230;--mut:#4a6472;--bd:#c3d4db;--ac:#0b6fa0;--ac2:#0a7a4a;--card:rgba(255,255,255,.9);--ok:#0a7a4a;--err:#c62828;color-scheme:light;background:#f3f7f9}
-html[data-theme=light] canvas#bg-rain,html[data-theme=light] canvas#bg-net,html[data-theme=light] body::before{display:none}
+html[data-theme=light] body::before{display:none}
 html[data-theme=light] header{background:rgba(243,247,249,.9)}
 html[data-theme=light] header a.logo{text-shadow:none}
 html[data-theme=light] main p,html[data-theme=light] main li,html[data-theme=light] main h1,html[data-theme=light] main h2,html[data-theme=light] main h3,html[data-theme=light] a:hover{text-shadow:none}
@@ -293,6 +293,11 @@ html[data-theme=light] .tag{background:rgba(244,250,252,.9)}
  html[data-theme=light] .panel,html[data-theme=light] .card{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
  html[data-theme=light] .panel:hover,html[data-theme=light] .card:hover{transform:translateY(-2px);border-color:rgba(0,125,155,.42);box-shadow:0 16px 36px rgba(23,67,86,.11)}
 }
+/* Light theme: keep the live network canvas running with a readable light palette. */
+html[data-theme=light] canvas#bg-rain,html[data-theme=light] canvas#bg-net{display:block!important;z-index:-1;pointer-events:none}
+html[data-theme=light] #bg-rain{opacity:.13}
+html[data-theme=light] #bg-net{opacity:.48}
+
 
 """
 
