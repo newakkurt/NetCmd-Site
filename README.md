@@ -38,3 +38,20 @@ BASE_URL=http://localhost:8000 python3 build.py && cd dist && python3 -m http.se
 - Create a Paddle notification destination pointing to `https://olbyrzqjdbxxsfaonsew.supabase.co/functions/v1/paddle-webhook` and subscribe to subscription lifecycle events: created, updated, canceled, paused, resumed, trialing, and past_due.
 - The Paddle price must be a recurring USD 22/month price. Configure `netcmd-site.onrender.com` as an approved checkout domain in Paddle.
 - Apply `supabase/paddle_billing.sql`, then deploy the `paddle-checkout`, `paddle-portal`, and `paddle-webhook` Edge Functions.
+
+
+## Buy Me a Coffee PRO membership
+
+NetCmd PRO membership is sold through the Buy Me a Coffee page configured as `bmc_url` in `data/site.json`. The configured launch price is USD $22/month. The supporter must use the same email address as their NetCmd account; the signed membership webhook matches that email to `auth.users`.
+
+1. Create a monthly membership tier named **NetCmd PRO** for **$22/month** in Buy Me a Coffee.
+2. Copy its numeric membership level ID from the creator dashboard.
+3. Apply `supabase/bmc_membership.sql` to the Supabase project.
+4. Deploy `supabase/functions/bmc-webhook` as an Edge Function with JWT verification disabled (BMC sends no Supabase JWT; the function verifies `x-signature-sha256` itself).
+5. Add these Edge Function secrets: `BMC_WEBHOOK_SECRET`, `BMC_PRO_MEMBERSHIP_LEVEL_ID`. Supabase supplies its standard URL and service-role key.
+6. In Buy Me a Coffee → Integrations → New webhook, use:
+   `https://olbyrzqjdbxxsfaonsew.supabase.co/functions/v1/bmc-webhook`
+   Subscribe to `membership.started`, `membership.updated`, `membership.cancelled`, and `membership.paused`.
+7. Send a test event, then test a real Sandbox/test membership if available before promoting the tier.
+
+Only the configured PRO membership level grants Premium. One-time coffee donations do not grant Premium. Refunds, cancellation, and pause behavior must be verified against real event deliveries before public launch.
