@@ -28,3 +28,13 @@ BASE_URL=http://localhost:8000 python3 build.py && cd dist && python3 -m http.se
 - Yayınlamak için: `python3 tools/make_bundle_sql.py` → `private/premium_bundle.sql` üretir; Supabase SQL Editor'de çalıştırın. Modül `premium_assets` tablosunda, RLS ile yalnızca Premium üyeye okunur.
 - Premium kodunu değiştirirseniz SQL'i yeniden üretip çalıştırın.
 - Not: repo herkese açık olduğu sürece geçmiş commit'lerdeki eski (tam) Premium kodu görülebilir; tam koruma için repoyu özel (private) yapın.
+
+
+## Paddle monthly subscriptions
+
+- NetCmd PRO display price: USD 22/month. The authoritative recurring price and billing interval must be configured in Paddle Catalog.
+- Required Supabase Edge Function secrets: `PADDLE_API_KEY`, `PADDLE_PRICE_ID`, `PADDLE_WEBHOOK_SECRET`, `PADDLE_ENV` (`sandbox` or `production`), and `SITE_URL`.
+- Keep Paddle credentials only in Supabase Edge Function secrets. Never commit them to GitHub or expose them in browser code.
+- Create a Paddle notification destination pointing to `https://olbyrzqjdbxxsfaonsew.supabase.co/functions/v1/paddle-webhook` and subscribe to subscription lifecycle events: created, updated, canceled, paused, resumed, trialing, and past_due.
+- The Paddle price must be a recurring USD 22/month price. Configure `netcmd-site.onrender.com` as an approved checkout domain in Paddle.
+- Apply `supabase/paddle_billing.sql`, then deploy the `paddle-checkout`, `paddle-portal`, and `paddle-webhook` Edge Functions.
