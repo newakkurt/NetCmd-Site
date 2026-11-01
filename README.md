@@ -21,23 +21,13 @@ BASE_URL=http://localhost:8000 python3 build.py && cd dist && python3 -m http.se
 ## Premium ve destek
 - `data/site.json`: `bmc_url` (optional support link) and display-only `premium_price`. Payment provider secrets and private billing data must stay in Supabase Edge Function secrets/database.
 - Premium araçlar: `assets/plib.js` (saf mantık, Node'da test edilir) + `assets/premium.js` (arayüz). Üyelik `profiles.is_premium` alanından okunur; kapı istemci tarafındadır.
-- Premium vermek için Supabase SQL: `update public.profiles set is_premium = true where id = '<user uuid>';` Talepler `premium_requests` tablosunda.
+- Premium üyelik BMC'nin imzalı webhook bildirimiyle otomatik yönetilir; manuel yetki verme yalnızca yönetici kurtarma işlemi olarak kullanılmalıdır.
 
 ### Premium modülü (sunucu tarafı)
 - Herkese açık: `assets/plib.js` (temel kurallar, sorun giderme). Premium kodu: `private/plib-premium.js` (**gitignore'da**, repoya girmez).
 - Yayınlamak için: `python3 tools/make_bundle_sql.py` → `private/premium_bundle.sql` üretir; Supabase SQL Editor'de çalıştırın. Modül `premium_assets` tablosunda, RLS ile yalnızca Premium üyeye okunur.
 - Premium kodunu değiştirirseniz SQL'i yeniden üretip çalıştırın.
 - Not: repo herkese açık olduğu sürece geçmiş commit'lerdeki eski (tam) Premium kodu görülebilir; tam koruma için repoyu özel (private) yapın.
-
-
-## Paddle monthly subscriptions
-
-- NetCmd PRO display price: USD 22/month. The authoritative recurring price and billing interval must be configured in Paddle Catalog.
-- Required Supabase Edge Function secrets: `PADDLE_API_KEY`, `PADDLE_PRICE_ID`, `PADDLE_WEBHOOK_SECRET`, `PADDLE_ENV` (`sandbox` or `production`), and `SITE_URL`.
-- Keep Paddle credentials only in Supabase Edge Function secrets. Never commit them to GitHub or expose them in browser code.
-- Create a Paddle notification destination pointing to `https://olbyrzqjdbxxsfaonsew.supabase.co/functions/v1/paddle-webhook` and subscribe to subscription lifecycle events: created, updated, canceled, paused, resumed, trialing, and past_due.
-- The Paddle price must be a recurring USD 22/month price. Configure `netcmd-site.onrender.com` as an approved checkout domain in Paddle.
-- Apply `supabase/paddle_billing.sql`, then deploy the `paddle-checkout`, `paddle-portal`, and `paddle-webhook` Edge Functions.
 
 
 ## Buy Me a Coffee PRO membership
