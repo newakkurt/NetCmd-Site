@@ -256,6 +256,44 @@ html[data-theme=light] .risk-medium{color:#a85d00;border-color:#a85d00}
 @media print{header,footer,.cheat-tools,#qs-ov{display:none!important}table.cheat{font-size:9pt}table.cheat td,table.cheat th{border-color:#999!important;color:#000!important}@page{size:A4 landscape;margin:10mm}}
 
 @media print{html,body{background:#fff!important;color:#000!important}canvas,body::before{display:none!important}.card,.vend,table,.note,.panel{background:#fff!important}}
+/* Light theme: subtle network and cybersecurity visual identity. */
+html[data-theme=light] body{background:transparent}
+html[data-theme=light] body::before{
+ display:block;opacity:1;
+ background-image:
+ radial-gradient(circle at 12% 18%,rgba(0,145,190,.12) 0 1.5px,transparent 2px),
+ radial-gradient(circle at 82% 26%,rgba(0,135,105,.11) 0 1.5px,transparent 2px),
+ radial-gradient(ellipse at 8% 5%,rgba(0,153,204,.12),transparent 38%),
+ radial-gradient(ellipse at 92% 88%,rgba(0,145,110,.10),transparent 42%),
+ linear-gradient(rgba(25,105,135,.045) 1px,transparent 1px),
+ linear-gradient(90deg,rgba(25,105,135,.045) 1px,transparent 1px),
+ repeating-linear-gradient(135deg,transparent 0 74px,rgba(18,125,155,.035) 75px 76px,transparent 77px 150px);
+ background-size:34px 34px,42px 42px,auto,auto,32px 32px,32px 32px,auto;
+ background-position:0 0,18px 12px,0 0,0 0,center top,center top,center top;
+}
+html[data-theme=light] header{background:rgba(246,250,252,.88);border-bottom-color:rgba(72,126,148,.24);box-shadow:0 8px 28px rgba(18,65,85,.055)}
+html[data-theme=light] header a.logo{color:#087b78}
+html[data-theme=light] header a.logo::before{color:#087fae}
+html[data-theme=light] h1{color:#102d3c}
+html[data-theme=light] h2{color:#087b78}
+html[data-theme=light] .lead{color:#496574}
+html[data-theme=light] .panel,html[data-theme=light] .card,html[data-theme=light] .vend,html[data-theme=light] .note,html[data-theme=light] form.box{
+ background:rgba(255,255,255,.82);border-color:rgba(77,132,153,.24);
+ box-shadow:0 12px 32px rgba(23,67,86,.065);-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px);
+}
+html[data-theme=light] .panel{border-radius:14px}
+html[data-theme=light] .panel h2{color:#087b78}
+html[data-theme=light] .btn{background:linear-gradient(135deg,#087d83,#087eae);color:#fff;box-shadow:0 5px 16px rgba(0,112,145,.17)}
+html[data-theme=light] .btn.sec{background:rgba(255,255,255,.8);color:#08749a;border-color:#72a9bd}
+html[data-theme=light] a{color:#08749a}
+html[data-theme=light] a:hover{color:#075b79}
+html[data-theme=light] .support-grid .panel{min-height:190px}
+html[data-theme=light] .tag{background:rgba(244,250,252,.9)}
+@media(prefers-reduced-motion:no-preference){
+ html[data-theme=light] .panel,html[data-theme=light] .card{transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+ html[data-theme=light] .panel:hover,html[data-theme=light] .card:hover{transform:translateY(-2px);border-color:rgba(0,125,155,.42);box-shadow:0 16px 36px rgba(23,67,86,.11)}
+}
+
 """
 
 NAV_SWAP_JS = (
