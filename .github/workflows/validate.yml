@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main]
   push:
-    branches: [main, feature/netcmd-2.0]
+    branches: [main, feature/netcmd-2.0, feature/global-monetization-paddle]
 
 permissions:
   contents: read
