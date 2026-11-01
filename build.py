@@ -865,8 +865,8 @@ def build_premium(lang, paths):
     new_p = SITECFG.get("premium_price", "").strip()
     old_p = SITECFG.get("premium_price_old", "").strip()
     if new_p:
-        price = ('<s class="oldprice">{c}{o}</s> ' if old_p else "") + '<strong class="newprice">{c}{n}</strong> <span class="badge">{l}</span>'
-        price = price.format(c=cur, o=esc(old_p), n=esc(new_p), l=t("pg_launch"))
+        price = '<strong class="newprice">{c}{n}</strong> <span class="tag">{interval}</span>'
+        price = price.format(c=cur, n=esc(new_p), interval=t("pg_interval"))
     else:
         price = t("pg_price_soon")
     body = (
