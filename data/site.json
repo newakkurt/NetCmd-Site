@@ -3,7 +3,8 @@
   "supabase_key": "sb_publishable_3uplhl_RyCSuhdageviDuw_SwLpVVQ8",
   "bmc_url": "https://buymeacoffee.com/sevketkaynar",
   "premium_price": "22",
-  "premium_price_old": "30",
+  "premium_price_old": "",
   "premium_currency": "$",
-  "contact_email": ""
+  "contact_email": "",
+  "premium_billing_interval": "month"
 }
