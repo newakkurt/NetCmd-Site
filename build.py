@@ -814,7 +814,8 @@ def build_legal(lang, paths):
 
 def build_support(lang, paths):
     t = lambda k: esc(T(lang, k))
-    # 1) Buy Me a Coffee
+    # Support page: voluntary support and the PRO product. Payments are handled
+    # through the secure checkout flow, never by publishing bank details.
     bmc = SITECFG.get("bmc_url", "").strip()
     if bmc.startswith("https://"):
         bmc_html = '<p><a class="btn" href="{}" target="_blank" rel="noopener noreferrer">☕ {}</a></p>'.format(esc(bmc), t("sup_bmc_btn"))
@@ -822,49 +823,16 @@ def build_support(lang, paths):
         bmc_html = "<p>{}</p>".format(t("sup_bmc_soon"))
     bmc_panel = '<div class="panel"><h2>☕ {}</h2><p>{}</p>{}</div>'.format(t("sup_bmc_title"), t("sup_bmc_text"), bmc_html)
 
-    # 2) IBAN (TL + USD)
-    script = ""
-    ibans = SITECFG.get("ibans", [])
-    if ibans:
-        blocks = ""
-        for n, e in enumerate(ibans):
-            raw = e["iban"].replace(" ", "").upper()
-            if not iban_valid(raw):
-                log.error("site.json: IBAN doğrulaması başarısız (mod-97): %s", raw)
-                sys.exit(1)
-            spaced = " ".join(raw[i:i + 4] for i in range(0, len(raw), 4))
-            blocks += (
-                '<p><strong>{lbl} ({cur})</strong></p><p class="iban" dir="ltr" id="ib{n}" data-v="{raw}">{sp}</p>'
-                '<button class="btn copy" type="button" data-t="ib{n}" data-done="{done}">{copy}</button>'
-            ).format(lbl=t("iban_label"), cur=esc(e["cur"]), n=n, raw=esc(raw), sp=esc(spaced), done=t("copied"), copy=t("copy"))
-        rows = ""
-        if SITECFG.get("holder"):
-            rows += "<p><strong>{}:</strong> {}</p>".format(t("holder_label"), esc(SITECFG["holder"]))
-        if SITECFG.get("bank"):
-            rows += "<p><strong>{}:</strong> {}</p>".format(t("bank_label"), esc(SITECFG["bank"]))
-        iban_body = rows + blocks + "<p>{}</p>".format(t("support_note"))
-        script = "<script>{}</script>".format(
-            "(function(){[].forEach.call(document.querySelectorAll('button.copy'),function(b){"
-            "b.addEventListener('click',function(){var t=document.getElementById(b.getAttribute('data-t')).getAttribute('data-v');"
-            "var done=function(){var o=b.textContent;b.textContent=b.getAttribute('data-done');setTimeout(function(){b.textContent=o;},1500);};"
-            "if(navigator.clipboard){navigator.clipboard.writeText(t).then(done);}});});})();"
-        )
-    else:
-        iban_body = "<p>{}</p>".format(t("support_soon"))
-    iban_panel = '<div class="panel"><h2>🏦 {}</h2><p>{}</p>{}</div>'.format(t("sup_iban_title"), t("sup_iban_text"), iban_body)
-
-    # 3) Premium
     prem_panel = '<div class="panel"><h2>⚡ {}</h2><p>{}</p><p><a class="btn" href="{}">{}</a></p></div>'.format(
         t("sup_prem_title"), t("sup_prem_text"), lurl(lang, "premium/"), t("sup_prem_btn"))
 
-    body = '<h1>{}</h1><p class="lead">{}</p><div class="support-grid">{}{}{}</div>'.format(
-        t("support_title"), t("support_lead"), bmc_panel, iban_panel, prem_panel)
+    body = '<h1>{}</h1><p class="lead">{}</p><div class="support-grid">{}{}</div>'.format(
+        t("support_title"), t("support_lead"), bmc_panel, prem_panel)
     write(
         "{}/support/index.html".format(lang),
-        page(lang, T(lang, "support_title") + " | " + SITE, T(lang, "support_lead"), "support/", body, script=script),
+        page(lang, T(lang, "support_title") + " | " + SITE, T(lang, "support_lead"), "support/", body),
     )
     paths.add("support/")
-
 
 PREMIUM_TOOLS = [("aud", "aud", "aud"), ("trouble", "trouble", "trouble"), ("comp", "comp", "comp"), ("topo", "topo", "topo"),
                  ("bulk", "bulk", "bulk"), ("coll", "coll", "coll")]
