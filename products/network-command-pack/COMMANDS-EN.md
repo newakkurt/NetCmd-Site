@@ -801,3 +801,74 @@ show interface transceiver
 
 ---
 NetCmd Network Command Pack • Content draft. Verify vendor documentation before production changes.
+ 
+### 29. Display detailed LLDP neighbors
+**Huawei VRP:** `display lldp neighbor`  
+**Cisco IOS/IOS-XE:** `show lldp neighbors detail`  
+**Aruba AOS-S:** `show lldp info remote-device`  
+**Aruba AOS-CX:** `show lldp neighbor-info detail`  
+**Type:** READ. Inspect neighbor identity and remote port details.
+
+### 30. Display CDP neighbors (Cisco)
+`show cdp neighbors`  
+`show cdp neighbors detail`  
+**Type:** READ. CDP is Cisco-specific; prefer LLDP in multi-vendor networks.
+
+### 31. Test reachability with ping
+**Huawei / Cisco / Aruba:** `ping 10.0.0.1`  
+**Type:** TEST. Consider source interface, VRF and ICMP filtering.
+
+### 32. Trace the network path
+**Huawei VRP:** `tracert 10.0.0.1`  
+**Cisco / Aruba:** `traceroute 10.0.0.1`  
+**Type:** TEST. Intermediate hops are shown; filtering may affect results.
+
+### 33. Display LAG / EtherChannel status
+**Huawei VRP:** `display eth-trunk`  
+**Cisco IOS/IOS-XE:** `show etherchannel summary`  
+**Aruba AOS-S:** `show trunks` and `show lacp`  
+**Aruba AOS-CX:** `show lacp aggregates`  
+**Type:** READ. Check whether member links joined the aggregate.
+
+### 34. Inspect STP root and port roles
+**Huawei VRP:** `display stp`  
+**Cisco IOS/IOS-XE:** `show spanning-tree root`  
+**Aruba AOS-S/AOS-CX:** `show spanning-tree`  
+**Type:** READ. An unexpected root bridge can alter traffic paths.
+
+### 35. Display optical transceiver information
+**Huawei VRP:** `display transceiver interface GigabitEthernet 0/0/1 verbose`  
+**Cisco IOS/IOS-XE:** `show interfaces transceiver detail`  
+**Aruba AOS-CX:** `show interface transceiver`  
+**Type:** READ. DOM support depends on model and optic.
+
+### 36. Display PoE status
+**Huawei VRP:** `display poe power` and `display poe interface`  
+**Cisco IOS/IOS-XE:** `show power inline`  
+**Aruba AOS-S/AOS-CX:** `show power-over-ethernet`  
+**Type:** READ. Verify command support for the exact model and release.
+
+### 37. Display CPU utilization
+**Huawei VRP:** `display cpu-usage`  
+**Cisco IOS/IOS-XE:** `show processes cpu`  
+**Aruba AOS-S:** `show cpu`  
+**Aruba AOS-CX:** `show system resource-utilization`  
+**Type:** READ. Correlate instantaneous values with processes and trends.
+
+### 38. Display memory utilization
+**Huawei VRP:** `display memory-usage`  
+**Cisco IOS/IOS-XE:** `show processes memory`  
+**Aruba AOS-CX:** `show system resource-utilization`  
+**Type:** READ. Command availability and output vary by release.
+
+### 39. Display clock and NTP status
+**Huawei VRP:** `display clock` and `display ntp-service status`  
+**Cisco IOS/IOS-XE:** `show clock detail` and `show ntp status`  
+**Aruba AOS-S/AOS-CX:** `show time` and `show ntp status`  
+**Type:** READ. Clock drift damages log correlation.
+
+### 40. Filter the MAC table by VLAN
+**Huawei VRP:** `display mac-address vlan 10`  
+**Cisco IOS/IOS-XE:** `show mac address-table vlan 10`  
+**Aruba AOS-S/AOS-CX:** `show mac-address vlan 10`  
+**Type:** READ. Find learned endpoints and their ports in a VLAN.
