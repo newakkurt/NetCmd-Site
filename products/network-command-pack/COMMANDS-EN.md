@@ -791,6 +791,8 @@ show interface transceiver
 
 ---
 
+
+
 ## Operational checklist
 
 1. Confirm vendor, model, OS family and software release.
