@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "products/network-command-pack/**"
+      - "products/network-command-pack/**"\n      - "products/catalog.json"
       - "scripts/build_command_pack.py"
       - ".github/workflows/build-command-pack.yml"
 
@@ -28,7 +28,7 @@ jobs:
       - name: Upload release files
         uses: actions/upload-artifact@v4
         with:
-          name: NetCmd-Network-Command-Pack-v1
-          path: dist/network-command-pack/*
+          name: NetCmd-10-Network-Command-Packs
+          path: dist/**
           if-no-files-found: error
           retention-days: 30
