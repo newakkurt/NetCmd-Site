@@ -1,0 +1,597 @@
+{
+  "version": 1,
+  "price_usd": 19,
+  "currency": "USD",
+  "products": [
+    {
+      "id": "vlan-switch-port",
+      "slug": "vlan-switch-port",
+      "title_tr": "VLAN ve Switch Port Yönetimi",
+      "title_en": "VLAN & Switch Port Management",
+      "subtitle_tr": "Access/trunk portları, VLAN oluşturma, port açıklamaları ve uç cihaz bağlantıları.",
+      "subtitle_en": "Access/trunk ports, VLAN creation, interface descriptions and endpoint connectivity.",
+      "topics": [
+        "VLAN oluşturma ve silme",
+        "Access ve trunk port yapılandırma",
+        "Allowed VLAN ve native VLAN kontrolü",
+        "Port açıklamaları ve hız/duplex",
+        "Port durumları ve hata sayaçları"
+      ],
+      "commands": [
+        {
+          "name": "Arayüz durumlarını listele",
+          "cisco": "show interfaces status",
+          "huawei": "display interface brief",
+          "aruba": "show interfaces brief",
+          "risk": "read"
+        },
+        {
+          "name": "VLAN listesini görüntüle",
+          "cisco": "show vlan brief",
+          "huawei": "display vlan",
+          "aruba": "show vlans",
+          "risk": "read"
+        },
+        {
+          "name": "Arayüz yapılandırmasını görüntüle",
+          "cisco": "show running-config interface GigabitEthernet1/0/1",
+          "huawei": "display current-configuration interface GigabitEthernet 0/0/1",
+          "aruba": "show running-config interface 1",
+          "risk": "read"
+        },
+        {
+          "name": "Access VLAN yapılandır",
+          "cisco": "interface GigabitEthernet1/0/1\\nswitchport mode access\\nswitchport access vlan 20",
+          "huawei": "interface GigabitEthernet 0/0/1\\nport link-type access\\nport default vlan 20",
+          "aruba": "interface 1\\nuntagged vlan 20",
+          "risk": "change"
+        },
+        {
+          "name": "Trunk port yapılandır",
+          "cisco": "interface GigabitEthernet1/0/24\\nswitchport mode trunk\\nswitchport trunk allowed vlan 10,20,30",
+          "huawei": "interface GigabitEthernet 0/0/24\\nport link-type trunk\\nport trunk allow-pass vlan 10 20 30",
+          "aruba": "interface 24\\ntagged vlan 10,20,30",
+          "risk": "change"
+        },
+        {
+          "name": "MAC adres tablosunu görüntüle",
+          "cisco": "show mac address-table",
+          "huawei": "display mac-address",
+          "aruba": "show mac-address",
+          "risk": "read"
+        }
+      ]
+    },
+    {
+      "id": "routing-ospf",
+      "slug": "routing-ospf",
+      "title_tr": "Routing ve OSPF",
+      "title_en": "Routing & OSPF",
+      "subtitle_tr": "Statik rotalar, varsayılan ağ geçidi, OSPF komşulukları ve routing tablosu.",
+      "subtitle_en": "Static routes, default gateways, OSPF neighbors and routing tables.",
+      "topics": [
+        "Routing tablosu analizi",
+        "Statik ve varsayılan rota",
+        "OSPF komşuluk ve alan kontrolü",
+        "Next-hop erişilebilirliği",
+        "Rota doğrulama ve geri alma"
+      ],
+      "commands": [
+        {
+          "name": "Routing tablosu",
+          "cisco": "show ip route",
+          "huawei": "display ip routing-table",
+          "aruba": "show ip route",
+          "risk": "read"
+        },
+        {
+          "name": "OSPF komşuları",
+          "cisco": "show ip ospf neighbor",
+          "huawei": "display ospf peer",
+          "aruba": "show ip ospf neighbors",
+          "risk": "read"
+        },
+        {
+          "name": "OSPF süreçleri",
+          "cisco": "show ip ospf",
+          "huawei": "display ospf",
+          "aruba": "show ip ospf",
+          "risk": "read"
+        },
+        {
+          "name": "Statik rota örneği",
+          "cisco": "ip route 10.20.0.0 255.255.0.0 192.0.2.1",
+          "huawei": "ip route-static 10.20.0.0 255.255.0.0 192.0.2.1",
+          "aruba": "ip route 10.20.0.0/16 192.0.2.1",
+          "risk": "change"
+        },
+        {
+          "name": "Arayüz IP bilgisi",
+          "cisco": "show ip interface brief",
+          "huawei": "display ip interface brief",
+          "aruba": "show ip",
+          "risk": "read"
+        },
+        {
+          "name": "Hedefe ping testi",
+          "cisco": "ping 192.0.2.1",
+          "huawei": "ping 192.0.2.1",
+          "aruba": "ping 192.0.2.1",
+          "risk": "test"
+        }
+      ]
+    },
+    {
+      "id": "stp-lacp-redundancy",
+      "slug": "stp-lacp-redundancy",
+      "title_tr": "STP, LACP ve Yedeklilik",
+      "title_en": "STP, LACP & Redundancy",
+      "subtitle_tr": "Loop önleme, root bridge, port-channel ve link yedekliliği.",
+      "subtitle_en": "Loop prevention, root bridge, port-channels and link redundancy.",
+      "topics": [
+        "STP/RSTP durum analizi",
+        "Root bridge ve port rolleri",
+        "LACP üyeleri ve bundle durumu",
+        "Loop ve topology change teşhisi",
+        "Değişiklik öncesi doğrulama"
+      ],
+      "commands": [
+        {
+          "name": "STP genel durumu",
+          "cisco": "show spanning-tree",
+          "huawei": "display stp",
+          "aruba": "show spanning-tree",
+          "risk": "read"
+        },
+        {
+          "name": "STP arayüz detayları",
+          "cisco": "show spanning-tree interface GigabitEthernet1/0/1 detail",
+          "huawei": "display stp interface GigabitEthernet 0/0/1",
+          "aruba": "show spanning-tree 1",
+          "risk": "read"
+        },
+        {
+          "name": "EtherChannel/LAG özeti",
+          "cisco": "show etherchannel summary",
+          "huawei": "display eth-trunk",
+          "aruba": "show trunks",
+          "risk": "read"
+        },
+        {
+          "name": "LACP komşu bilgisi",
+          "cisco": "show lacp neighbor",
+          "huawei": "display lacp peer",
+          "aruba": "show lacp",
+          "risk": "read"
+        },
+        {
+          "name": "Port-channel yapılandırma örneği",
+          "cisco": "interface range GigabitEthernet1/0/1-2\\nchannel-group 1 mode active",
+          "huawei": "interface Eth-Trunk 1\\nmode lacp-static",
+          "aruba": "trunk 1-2 trk1 lacp",
+          "risk": "change"
+        },
+        {
+          "name": "STP olay kayıtları",
+          "cisco": "show spanning-tree detail | include ieee|occur|from",
+          "huawei": "display logbuffer",
+          "aruba": "show log -r",
+          "risk": "read"
+        }
+      ]
+    },
+    {
+      "id": "acl-layer2-security",
+      "slug": "acl-layer2-security",
+      "title_tr": "ACL ve Layer 2 Güvenliği",
+      "title_en": "ACL & Layer 2 Security",
+      "subtitle_tr": "ACL mantığı, port security, DHCP snooping, DAI ve güvenli erişim kontrolleri.",
+      "subtitle_en": "ACL logic, port security, DHCP snooping, DAI and access-layer security checks.",
+      "topics": [
+        "ACL eşleşme ve sayaç kontrolü",
+        "Port security ihlalleri",
+        "DHCP snooping binding",
+        "Dynamic ARP Inspection",
+        "Üretim öncesi etki analizi"
+      ],
+      "commands": [
+        {
+          "name": "ACL listesini görüntüle",
+          "cisco": "show access-lists",
+          "huawei": "display acl all",
+          "aruba": "show access-list",
+          "risk": "read"
+        },
+        {
+          "name": "Port security durumu",
+          "cisco": "show port-security",
+          "huawei": "display port-security",
+          "aruba": "show port-security",
+          "risk": "read"
+        },
+        {
+          "name": "Port security arayüz detayı",
+          "cisco": "show port-security interface GigabitEthernet1/0/1",
+          "huawei": "display port-security interface GigabitEthernet 0/0/1",
+          "aruba": "show port-security 1",
+          "risk": "read"
+        },
+        {
+          "name": "DHCP snooping durumu",
+          "cisco": "show ip dhcp snooping",
+          "huawei": "display dhcp snooping",
+          "aruba": "show dhcp-snooping",
+          "risk": "read"
+        },
+        {
+          "name": "ARP inspection durumu",
+          "cisco": "show ip arp inspection",
+          "huawei": "display arp anti-attack",
+          "aruba": "show arp protection",
+          "risk": "read"
+        },
+        {
+          "name": "MAC öğrenme kontrolü",
+          "cisco": "show mac address-table dynamic",
+          "huawei": "display mac-address dynamic",
+          "aruba": "show mac-address",
+          "risk": "read"
+        }
+      ]
+    },
+    {
+      "id": "snmp-oid-traps",
+      "slug": "snmp-oid-traps",
+      "title_tr": "SNMP, OID ve Trap İzleme",
+      "title_en": "SNMP, OID & Trap Monitoring",
+      "subtitle_tr": "SNMPv2c/v3, OID, trap hedefleri, linkUp/linkDown ve erişim teşhisi.",
+      "subtitle_en": "SNMPv2c/v3, OIDs, trap destinations, linkUp/linkDown and access troubleshooting.",
+      "topics": [
+        "SNMP agent ve engine ID",
+        "SNMPv3 user/group/view",
+        "Trap/inform hedefleri",
+        "LinkUp/linkDown OID'leri",
+        "ACL, VRF ve UDP 161/162 kontrolü"
+      ],
+      "commands": [
+        {
+          "name": "SNMP yapılandırmasını görüntüle",
+          "cisco": "show running-config | section snmp",
+          "huawei": "display current-configuration | include snmp",
+          "aruba": "show snmp-server",
+          "risk": "read"
+        },
+        {
+          "name": "SNMP engine bilgisi",
+          "cisco": "show snmp engineID",
+          "huawei": "display snmp-agent local-engineid",
+          "aruba": "show snmpv3 engine-id",
+          "risk": "read"
+        },
+        {
+          "name": "SNMP kullanıcıları",
+          "cisco": "show snmp user",
+          "huawei": "display snmp-agent usm-user",
+          "aruba": "show snmpv3 user",
+          "risk": "read"
+        },
+        {
+          "name": "Trap hedeflerini kontrol et",
+          "cisco": "show snmp host",
+          "huawei": "display snmp-agent target-host",
+          "aruba": "show snmp-server host",
+          "risk": "read"
+        },
+        {
+          "name": "SNMP sayaçları",
+          "cisco": "show snmp",
+          "huawei": "display snmp-agent statistics",
+          "aruba": "show snmp-server statistics",
+          "risk": "read"
+        },
+        {
+          "name": "Arayüz link olayları",
+          "cisco": "show logging | include LINK|LINEPROTO",
+          "huawei": "display logbuffer",
+          "aruba": "show logging -r",
+          "risk": "read"
+        }
+      ]
+    },
+    {
+      "id": "network-troubleshooting",
+      "slug": "network-troubleshooting",
+      "title_tr": "Network Troubleshooting",
+      "title_en": "Network Troubleshooting",
+      "subtitle_tr": "Katmanlı arıza analizi, ping, traceroute, log ve interface sayaçları.",
+      "subtitle_en": "Layered fault isolation, ping, traceroute, logs and interface counters.",
+      "topics": [
+        "Fiziksel katman ve link kontrolü",
+        "IP ve gateway doğrulama",
+        "Ping/traceroute yorumlama",
+        "CRC, drop ve error sayaçları",
+        "Log ve olay korelasyonu"
+      ],
+      "commands": [
+        {
+          "name": "Arayüz hata sayaçları",
+          "cisco": "show interfaces counters errors",
+          "huawei": "display interface",
+          "aruba": "show interfaces counters",
+          "risk": "read"
+        },
+        {
+          "name": "Ping testi",
+          "cisco": "ping 198.51.100.1",
+          "huawei": "ping 198.51.100.1",
+          "aruba": "ping 198.51.100.1",
+          "risk": "test"
+        },
+        {
+          "name": "Traceroute testi",
+          "cisco": "traceroute 198.51.100.1",
+          "huawei": "tracert 198.51.100.1",
+          "aruba": "traceroute 198.51.100.1",
+          "risk": "test"
+        },
+        {
+          "name": "Sistem logları",
+          "cisco": "show logging",
+          "huawei": "display logbuffer",
+          "aruba": "show logging -r",
+          "risk": "read"
+        },
+        {
+          "name": "CPU kullanımı",
+          "cisco": "show processes cpu sorted",
+          "huawei": "display cpu-usage",
+          "aruba": "show cpu",
+          "risk": "read"
+        },
+        {
+          "name": "Bellek kullanımı",
+          "cisco": "show processes memory",
+          "huawei": "display memory-usage",
+          "aruba": "show system",
+          "risk": "read"
+        }
+      ]
+    },
+    {
+      "id": "dhcp-arp-mac",
+      "slug": "dhcp-arp-mac",
+      "title_tr": "DHCP, ARP ve MAC Yönetimi",
+      "title_en": "DHCP, ARP & MAC Management",
+      "subtitle_tr": "IP-MAC eşleşmesi, DHCP lease/binding, ARP tablosu ve uç cihaz takibi.",
+      "subtitle_en": "IP-to-MAC mapping, DHCP leases/bindings, ARP tables and endpoint tracing.",
+      "topics": [
+        "ARP tablosu sorgulama",
+        "MAC adresinden port bulma",
+        "DHCP snooping binding",
+        "IP çakışması teşhisi",
+        "VLAN bazlı uç cihaz takibi"
+      ],
+      "commands": [
+        {
+          "name": "ARP tablosu",
+          "cisco": "show ip arp",
+          "huawei": "display arp",
+          "aruba": "show arp",
+          "risk": "read"
+        },
+        {
+          "name": "Belirli MAC adresini ara",
+          "cisco": "show mac address-table address aaaa.bbbb.cccc",
+          "huawei": "display mac-address aaaa-bbbb-cccc",
+          "aruba": "show mac-address aaaa.bbbb.cccc",
+          "risk": "read"
+        },
+        {
+          "name": "MAC tablosunu VLAN bazında göster",
+          "cisco": "show mac address-table vlan 20",
+          "huawei": "display mac-address vlan 20",
+          "aruba": "show mac-address vlan 20",
+          "risk": "read"
+        },
+        {
+          "name": "DHCP snooping binding tablosu",
+          "cisco": "show ip dhcp snooping binding",
+          "huawei": "display dhcp snooping user-bind all",
+          "aruba": "show dhcp-snooping binding",
+          "risk": "read"
+        },
+        {
+          "name": "DHCP sunucu/relay yapılandırması",
+          "cisco": "show running-config | section dhcp",
+          "huawei": "display current-configuration | include dhcp",
+          "aruba": "show running-config | include dhcp",
+          "risk": "read"
+        },
+        {
+          "name": "IP arayüz özeti",
+          "cisco": "show ip interface brief",
+          "huawei": "display ip interface brief",
+          "aruba": "show ip",
+          "risk": "read"
+        }
+      ]
+    },
+    {
+      "id": "device-system-admin",
+      "slug": "device-system-admin",
+      "title_tr": "Network Cihazı Sistem Yönetimi",
+      "title_en": "Network Device System Administration",
+      "subtitle_tr": "Kullanıcılar, SSH, NTP, konfigürasyon yedeği, sürüm ve kaynak yönetimi.",
+      "subtitle_en": "Users, SSH, NTP, configuration backups, software versions and resource management.",
+      "topics": [
+        "Cihaz sürümü ve uptime",
+        "NTP ve saat senkronizasyonu",
+        "SSH yönetim erişimi",
+        "Kullanıcı/AAA kontrolü",
+        "Konfigürasyon yedekleme ve kayıt"
+      ],
+      "commands": [
+        {
+          "name": "Sürüm ve uptime",
+          "cisco": "show version",
+          "huawei": "display version",
+          "aruba": "show version",
+          "risk": "read"
+        },
+        {
+          "name": "Saat ve NTP durumu",
+          "cisco": "show clock\\nshow ntp associations",
+          "huawei": "display clock\\ndisplay ntp-service status",
+          "aruba": "show time\\nshow ntp status",
+          "risk": "read"
+        },
+        {
+          "name": "Kullanıcı/AAA yapılandırması",
+          "cisco": "show running-config | include username|aaa",
+          "huawei": "display current-configuration | include local-user|aaa",
+          "aruba": "show running-config | include password|aaa",
+          "risk": "read"
+        },
+        {
+          "name": "SSH durum kontrolü",
+          "cisco": "show ip ssh",
+          "huawei": "display ssh server status",
+          "aruba": "show ip ssh",
+          "risk": "read"
+        },
+        {
+          "name": "Başlangıç ve aktif config",
+          "cisco": "show running-config\\nshow startup-config",
+          "huawei": "display current-configuration\\ndisplay saved-configuration",
+          "aruba": "show running-config\\nshow config",
+          "risk": "read"
+        },
+        {
+          "name": "Yapılandırmayı kaydet",
+          "cisco": "copy running-config startup-config",
+          "huawei": "save",
+          "aruba": "write memory",
+          "risk": "change"
+        }
+      ]
+    },
+    {
+      "id": "datacenter-optics-10g",
+      "slug": "datacenter-optics-10g",
+      "title_tr": "Data Center, 10G ve Optik Modüller",
+      "title_en": "Data Center, 10G & Optical Modules",
+      "subtitle_tr": "SFP/SFP+, DOM değerleri, fiber link, hız, duplex, PoE ve stack kontrolleri.",
+      "subtitle_en": "SFP/SFP+, DOM readings, fiber links, speed, duplex, PoE and stacking checks.",
+      "topics": [
+        "SFP/SFP+ envanteri",
+        "Optik TX/RX güç seviyeleri",
+        "Fiber link ve CRC teşhisi",
+        "PoE bütçesi ve port tüketimi",
+        "Stack ve uplink doğrulama"
+      ],
+      "commands": [
+        {
+          "name": "Transceiver envanteri",
+          "cisco": "show inventory",
+          "huawei": "display transceiver",
+          "aruba": "show tech transceivers",
+          "risk": "read"
+        },
+        {
+          "name": "Optik DOM değerleri",
+          "cisco": "show interfaces transceiver detail",
+          "huawei": "display transceiver diagnosis interface XGigabitEthernet 0/0/1",
+          "aruba": "show interfaces transceiver",
+          "risk": "read"
+        },
+        {
+          "name": "10G arayüz durumu",
+          "cisco": "show interfaces TenGigabitEthernet1/0/1",
+          "huawei": "display interface XGigabitEthernet 0/0/1",
+          "aruba": "show interfaces 49",
+          "risk": "read"
+        },
+        {
+          "name": "PoE durumu",
+          "cisco": "show power inline",
+          "huawei": "display poe power",
+          "aruba": "show power-over-ethernet",
+          "risk": "read"
+        },
+        {
+          "name": "Stack/VSF/IRF özeti",
+          "cisco": "show switch",
+          "huawei": "display device",
+          "aruba": "show vsf",
+          "risk": "read"
+        },
+        {
+          "name": "LLDP komşuları",
+          "cisco": "show lldp neighbors detail",
+          "huawei": "display lldp neighbor brief",
+          "aruba": "show lldp info remote-device",
+          "risk": "read"
+        }
+      ]
+    },
+    {
+      "id": "network-automation",
+      "slug": "network-automation",
+      "title_tr": "Network Otomasyonu: Ansible ve Python",
+      "title_en": "Network Automation: Ansible & Python",
+      "subtitle_tr": "CLI otomasyonu, envanter, yedekleme, DRY-RUN, raporlama ve güvenli değişiklik akışı.",
+      "subtitle_en": "CLI automation, inventory, backups, dry-runs, reporting and safe change workflows.",
+      "topics": [
+        "Ansible inventory ve group_vars",
+        "Network CLI read-only komutları",
+        "Python Netmiko/Paramiko oturumu",
+        "Config backup ve diff",
+        "DRY-RUN, onay ve rollback tasarımı"
+      ],
+      "commands": [
+        {
+          "name": "Ansible bağlantı testi",
+          "cisco": "ansible cisco -i inventory.yml -m ansible.netcommon.cli_command -a 'command=show version'",
+          "huawei": "ansible huawei -i inventory.yml -m ansible.netcommon.cli_command -a 'command=display version'",
+          "aruba": "ansible aruba -i inventory.yml -m ansible.netcommon.cli_command -a 'command=show version'",
+          "risk": "test"
+        },
+        {
+          "name": "Ansible playbook kontrolü",
+          "cisco": "ansible-playbook audit.yml --syntax-check",
+          "huawei": "ansible-playbook audit.yml --syntax-check",
+          "aruba": "ansible-playbook audit.yml --syntax-check",
+          "risk": "test"
+        },
+        {
+          "name": "DRY-RUN çalıştırma",
+          "cisco": "ansible-playbook audit.yml --check --diff",
+          "huawei": "ansible-playbook audit.yml --check --diff",
+          "aruba": "ansible-playbook audit.yml --check --diff",
+          "risk": "test"
+        },
+        {
+          "name": "Python sanal ortam",
+          "cisco": "python3 -m venv .venv\\nsource .venv/bin/activate",
+          "huawei": "python3 -m venv .venv\\nsource .venv/bin/activate",
+          "aruba": "python3 -m venv .venv\\nsource .venv/bin/activate",
+          "risk": "test"
+        },
+        {
+          "name": "Yapılandırma yedeği yaklaşımı",
+          "cisco": "show running-config",
+          "huawei": "display current-configuration",
+          "aruba": "show running-config",
+          "risk": "read"
+        },
+        {
+          "name": "Değişiklik öncesi doğrulama",
+          "cisco": "show interfaces status\\nshow ip route",
+          "huawei": "display interface brief\\ndisplay ip routing-table",
+          "aruba": "show interfaces brief\\nshow ip route",
+          "risk": "read"
+        }
+      ]
+    }
+  ]
+}
