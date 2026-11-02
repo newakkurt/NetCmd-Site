@@ -622,6 +622,7 @@ def header(lang, path):
         "<nav>"
         '<a href="{home}">{n_home}</a>'
         '<a href="{tools}">{n_tools}</a>'
+        '<a href="{products}">{n_products}</a>'
         '<a href="{prem}">{n_prem}</a>'
         '<a href="{proj}">{n_proj}</a>'
         '<a href="{asst}">{n_asst}</a>'
@@ -636,6 +637,8 @@ def header(lang, path):
     ).format(
         home=lurl(lang), site=esc(SITE), n_home=t("nav_home"),
         tools=lurl(lang, "tools/"), n_tools=t("nav_tools"),
+        products=lurl(lang, "products/network-command-packs/"),
+        n_products=("Ürünler" if lang == "tr" else "Products"),
         prem=lurl(lang, "premium/"), n_prem=t("pg_nav"),
         proj=lurl(lang, "projects/"), n_proj=t("nav_projects"),
         sup=lurl(lang, "support/"), n_sup=t("nav_support"),
