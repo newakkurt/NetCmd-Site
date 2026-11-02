@@ -24,7 +24,7 @@ def render(source: Path, target: Path, language: str):
         line = raw.rstrip()
         if line.strip().startswith("```"):
             if in_code:
-                story.append(Preformatted("\\n".join(code), styles["PackCode"]))
+                story.append(Preformatted("\n".join(code), styles["PackCode"]))
                 code, in_code = [], False
             else:
                 in_code = True
@@ -44,11 +44,11 @@ def render(source: Path, target: Path, language: str):
             story.append(Paragraph("<b>" + line[2:-2] + "</b>", styles["PackBody"]))
         else:
             safe = line.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
-            safe = re.sub(r"\\*\\*(.+?)\\*\\*", r"<b>\\1</b>", safe)
-            safe = re.sub(r"`([^`]+)`", r"<font name='Courier'>\\1</font>", safe)
+            safe = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", safe)
+            safe = re.sub(r"`([^`]+)`", r"<font name='Courier'>\1</font>", safe)
             story.append(Paragraph(safe, styles["PackBody"]))
     if code:
-        story.append(Preformatted("\\n".join(code), styles["PackCode"]))
+        story.append(Preformatted("\n".join(code), styles["PackCode"]))
     SimpleDocTemplate(str(target), pagesize=A4, rightMargin=16*mm, leftMargin=16*mm, topMargin=15*mm, bottomMargin=15*mm, title=target.stem).build(story)
 
 tr = SRC / "COMMANDS-TR.md"
