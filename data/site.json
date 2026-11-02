@@ -6,5 +6,6 @@
   "premium_price_old": "",
   "premium_currency": "$",
   "contact_email": "",
-  "premium_billing_interval": "month"
+  "premium_billing_interval": "month",
+  "digital_product_checkout_url": ""
 }
