@@ -1345,6 +1345,46 @@ def build_community(lang, paths):
     paths.add("community/")
 
 
+
+def build_digital_product(lang, paths):
+    tr = lang == "tr"
+    title = "Huawei + Cisco + Aruba Komut Paketi" if tr else "Huawei + Cisco + Aruba Command Pack"
+    lead = ("Üç büyük ağ platformu için düzenli, açıklamalı ve günlük operasyon odaklı komut referansı."
+            if tr else "A structured, explained, operations-focused command reference for three major network platforms.")
+    sections = ([
+        ("Huawei VRP", "VLAN, port, trunk, routing, STP, ACL, SNMP, log, kullanıcı ve sorun giderme"),
+        ("Cisco IOS / IOS-XE", "VLAN, interface, EtherChannel, routing, STP, ACL, SNMP ve troubleshooting"),
+        ("Aruba AOS-S / AOS-CX", "VLAN, access/trunk, LAG, routing, güvenlik, yönetim ve troubleshooting"),
+        ("Kullanım notları", "Komut modu, amaç, dikkat notu ve sürüm/lab doğrulama uyarıları")
+    ] if tr else [
+        ("Huawei VRP", "VLAN, ports, trunks, routing, STP, ACL, SNMP, logs, users and troubleshooting"),
+        ("Cisco IOS / IOS-XE", "VLAN, interfaces, EtherChannel, routing, STP, ACL, SNMP and troubleshooting"),
+        ("Aruba AOS-S / AOS-CX", "VLAN, access/trunk, LAG, routing, security, management and troubleshooting"),
+        ("Usage notes", "CLI mode, purpose, cautions and software-version/lab verification notes")
+    ])
+    cards = "".join('<article class="card"><h2>{}</h2><p>{}</p></article>'.format(esc(a), esc(b)) for a,b in sections)
+    note = ("Komutlar cihaz modeli ve yazılım sürümüne göre değişebilir. Üretimde uygulamadan önce lab ortamında doğrulayın."
+            if tr else "Commands vary by model and software release. Verify in a lab before production use.")
+    checkout = str(SITECFG.get("digital_product_checkout_url", "")).strip()
+    cta = ('<a class="btn" href="{}" rel="noopener">{} · $19</a>'.format(esc(checkout), "Paketi satın al" if tr else "Buy the pack")
+           if checkout.startswith("https://") else
+           '<span class="tag">{}</span>'.format("Satış bağlantısı hazırlanıyor" if tr else "Checkout link setup pending"))
+    body = ('<div class="crumbs"><a href="{home}">{crumb}</a> › {label}</div>'
+            '<h1>{title}</h1><p class="lead">{lead}</p>'
+            '<div class="pricebox"><strong class="newprice">$19</strong> <span class="tag">{once}</span></div>'
+            '<div class="grid">{cards}</div><div class="note">{note}</div>'
+            '<h2>{delivery_h}</h2><p>{delivery}</p><p>{cta}</p>').format(
+        home=lurl(lang), crumb=esc(T(lang,"crumb_home")), label=esc("Dijital ürün" if tr else "Digital product"),
+        title=esc(title), lead=esc(lead), once=esc("Tek seferlik ödeme" if tr else "One-time payment"),
+        cards=cards, note=esc(note), delivery_h=esc("Otomatik teslimat" if tr else "Automatic delivery"),
+        delivery=esc("BMC üzerinde dijital ürün ve dosya teslimi etkinleştirildiğinde satın alma sonrası indirme bağlantısı otomatik gönderilir. Ödeme bağlantısı henüz yapılandırılmadı."
+                     if tr else "After the digital product and file delivery are configured in BMC, buyers receive the download automatically. Checkout is not configured yet."),
+        cta=cta)
+    path="products/network-command-pack/"
+    write("{}/{}index.html".format(lang,path), page(lang, title+" | NetCmd", lead, path, body))
+    paths.add(path)
+
+
 def write_meta(sitemap_paths):
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
