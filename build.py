@@ -216,6 +216,25 @@ html[dir=rtl] .hero h1::before{content:""}
 a.tag.chip{text-decoration:none;color:var(--ac)}a.tag.chip:hover{border-color:var(--ac);background:rgba(61,224,255,.1)}
 .cmd-card small{display:block;color:var(--mut);font:12px ui-monospace,Menlo,Consolas,monospace;margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;direction:ltr;text-align:left}
 section.cat h2 .tag{font-size:.7rem;vertical-align:middle}
+/* Compact homepage navigation: progressive disclosure */
+.architecture-group{margin:14px 0;border:1px solid var(--bd);border-radius:14px;background:var(--card);overflow:hidden}
+.architecture-group>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 17px;list-style:none}
+.architecture-group>summary::-webkit-details-marker,.category-fold>summary::-webkit-details-marker,.topology-fold>summary::-webkit-details-marker{display:none}
+.architecture-group>summary::after,.category-fold>summary::after,.topology-fold>summary::after{content:'+';color:var(--ac2);font:700 1.25rem ui-monospace,monospace}
+.architecture-group[open]>summary::after,.category-fold[open]>summary::after,.topology-fold[open]>summary::after{content:'−'}
+.arch-title{font:700 1.05rem ui-monospace,monospace;color:var(--ac2)}
+.arch-meta{font-size:.78rem;color:var(--mut);text-align:end}
+.architecture-content{padding:0 14px 14px}
+.category-fold{margin:9px 0;border:1px solid var(--bd);border-radius:10px;background:rgba(5,10,15,.24);overflow:hidden}
+.category-fold>summary,.topology-fold>summary{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 13px;list-style:none}
+.category-fold .cat{padding:0 12px 12px}
+.category-fold .cat .grid{gap:8px;grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.category-fold .cmd-card{padding:9px 11px}
+.topology-fold{margin:10px 0 14px;border:1px dashed var(--bd);border-radius:10px;padding:0 10px 8px}
+.topology-fold>summary{padding:10px 2px}
+.topology-fold>p{margin:0 2px 8px}
+@media(max-width:600px){.architecture-group>summary{align-items:flex-start;flex-direction:column}.arch-meta{text-align:start}.architecture-content{padding:0 8px 10px}.category-fold .cat .grid{grid-template-columns:1fr}}
+
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 .hbtn{background:transparent;border:1px solid var(--bd);color:var(--ac);border-radius:8px;padding:2px 9px;font:inherit;cursor:pointer;line-height:1.5}
 .hbtn:hover{border-color:var(--ac)}
@@ -772,21 +791,14 @@ def build_categories(lang, items, paths):
 
 
 def build_home(lang, items, cats, paths):
-    chips = " ".join(
-        '<a class="tag chip" href="{}">{} ({})</a>'.format(lurl(lang, "category/{}/".format(slugify(c))), esc(cat_name(c, lang)), len(l))
-        for c, l in cats.items()
-    )
-    sections = ""
-    network_heading_added = False
-    dc_heading_added = False
+    network_sections = []
+    dc_sections = []
+    network_count = 0
+    dc_count = 0
+    network_cats = 0
+    dc_cats = 0
+
     for cat, lst in cats.items():
-        if cat.startswith("DC -"):
-            if not dc_heading_added:
-                sections += '<h2 class="architecture-group">{}</h2>'.format(esc(T(lang, "home_arch_dc")))
-                dc_heading_added = True
-        elif not network_heading_added:
-            sections += '<h2 class="architecture-group">{}</h2>'.format(esc(T(lang, "home_arch_network")))
-            network_heading_added = True
         cards = ""
         for i in lst:
             hay = " ".join(
@@ -798,22 +810,51 @@ def build_home(lang, items, cats, paths):
                 '<small>{} · {}</small></div>'
             ).format(esc(hay), lurl(lang, "cmd/{}/".format(i["slug"])), esc(item_title(i, lang)),
                      esc(i["cisco"]["cmds"][0]), esc(i["huawei"]["cmds"][0]))
-        sections += '<section class="cat"><h2 id="{}">{} <span class="tag">{}</span></h2><div class="grid">{}</div></section>'.format(
-            slugify(cat), esc(cat_name(cat, lang)), len(lst), cards
-        )
-    if dc_heading_added:
+        section = (
+            '<details class="category-fold"><summary><span>{}</span>'
+            '<span class="tag">{} {}</span></summary>'
+            '<section class="cat" id="{}"><div class="grid">{}</div></section></details>'
+        ).format(esc(cat_name(cat, lang)), len(lst), esc(T(lang, "commands_short")),
+                 slugify(cat), cards)
+        if cat.startswith("DC -"):
+            dc_sections.append(section)
+            dc_count += len(lst)
+            dc_cats += 1
+        else:
+            network_sections.append(section)
+            network_count += len(lst)
+            network_cats += 1
+
+    sections = ""
+    if network_sections:
+        sections += (
+            '<details class="architecture-group"><summary><span class="arch-title">{}</span>'
+            '<span class="arch-meta">{} {} · {} {}</span></summary>'
+            '<div class="architecture-content">{}</div></details>'
+        ).format(esc(T(lang, "home_arch_network")), network_cats,
+                 esc(T(lang, "categories_short")), network_count,
+                 esc(T(lang, "commands_short")), "".join(network_sections))
+
+    if dc_sections:
         topology_cards = [
             ("topology_spine", "LEAF-01/02  →  SPINE-01/02  →  BORDER LEAF  →  WAN"),
             ("topology_3tier", "ACCESS  →  AGGREGATION  →  CORE  →  EDGE"),
             ("topology_evpn", "LEAF VTEP  ⇄  SPINE UNDERLAY  ⇄  LEAF VTEP  |  EVPN control-plane"),
-            ("topology_san", "HOST HBA-A  →  FABRIC-A  →  STORAGE\nHOST HBA-B  →  FABRIC-B  →  STORAGE"),
+            ("topology_san", "HOST HBA-A  →  FABRIC-A  →  STORAGE\\nHOST HBA-B  →  FABRIC-B  →  STORAGE"),
         ]
-        sections += '<section class="cat dc-topologies"><h2>{}</h2><p class="lead">{}</p><div class="grid">'.format(
+        topology = '<details class="topology-fold"><summary>{}</summary><p class="lead">{}</p><div class="grid">'.format(
             esc(T(lang, "topology_title")), esc(T(lang, "topology_desc")))
         for key, diagram in topology_cards:
-            sections += '<article class="card"><h3>{}</h3><pre dir="ltr"><code>{}</code></pre></article>'.format(
+            topology += '<article class="card"><h3>{}</h3><pre dir="ltr"><code>{}</code></pre></article>'.format(
                 esc(T(lang, key)), esc(diagram))
-        sections += '</div></section>'
+        topology += '</div></details>'
+        sections += (
+            '<details class="architecture-group"><summary><span class="arch-title">{}</span>'
+            '<span class="arch-meta">{} {} · {} {}</span></summary>'
+            '<div class="architecture-content">{} {}</div></details>'
+        ).format(esc(T(lang, "home_arch_dc")), dc_cats, esc(T(lang, "categories_short")),
+                 dc_count, esc(T(lang, "commands_short")), topology, "".join(dc_sections))
+
     n = len(items)
     hero = (
         '<section class="hero"><h1>{h1}</h1><p class="lead">{lead}</p>@@SEARCH@@'
@@ -831,13 +872,12 @@ def build_home(lang, items, cats, paths):
         '<div class="searchbar"><input id="q" type="search" placeholder="{ph}" aria-label="{ph}" autocomplete="off">'
         '<span class="tag" id="cnt" data-fmt="{fmt}">{count}</span></div>'
     ).format(ph=esc(T(lang, "search_ph")), fmt=esc(I18N["ui"][lang]["search_count"]), count=esc(T(lang, "search_count", n=n, t=n)))
-    body = "{}<p class=\"chips\">{}</p>{}{}<p id=\"none\" class=\"lead\" hidden>{}</p>".format(
-        hero.replace("@@SEARCH@@", search), chips, ad_slot(), sections, esc(T(lang, "no_results"))
+    body = "{}{}<p id=\"none\" class=\"lead\" hidden>{}</p>".format(
+        hero.replace("@@SEARCH@@", search), sections, esc(T(lang, "no_results"))
     )
     script = '<script src="{}/assets/home.js?v={}" defer></script>'.format(BASE_PATH, TODAY)
     write("{}/index.html".format(lang), page(lang, T(lang, "home_title"), T(lang, "home_desc"), "", body, script=script))
     paths.add("")
-
 
 def build_projects(lang, paths):
     cards = ""
