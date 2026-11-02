@@ -106,7 +106,7 @@ save
 
 ```text
 write memory
-! veya
+! or
 copy running-config startup-config
 ```
 
@@ -116,7 +116,7 @@ copy running-config startup-config
 write memory
 ```
 
-**Type:** READ — show/display reference
+**Type:** CHANGE — writes the running configuration to startup storage
 
 ---
 
