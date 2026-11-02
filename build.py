@@ -886,9 +886,15 @@ def build_home(lang, items, cats, paths):
         ({"tr":"Network Automation","en":"Network Automation","ar":"أتمتة الشبكات"}, "SOURCE OF TRUTH → API/ANSIBLE → DEVICES → AUDIT"),
         ({"tr":"Storage SAN","en":"Storage SAN","ar":"شبكة التخزين SAN"}, "HOST HBA → FC FABRIC → STORAGE ARRAY"),
     ]
-    topology = ('<section class="topology-section"><div class="topology-heading"><div><span class="eyebrow">NETWORK DESIGN</span>'
+    architecture_heading = {
+        "tr": ("AĞ MİMARİLERİ", "Kurumsal ağ, veri merkezi, WAN, kablosuz, bulut ve endüstriyel ağ tasarımları"),
+        "en": ("NETWORK ARCHITECTURES", "Campus, data center, WAN, wireless, cloud and industrial network designs"),
+        "ar": ("هندسة الشبكات", "تصميمات شبكات المؤسسات ومراكز البيانات وWAN واللاسلكية والسحابة والشبكات الصناعية"),
+    }
+    architecture_title, architecture_desc = architecture_heading.get(lang, architecture_heading["en"])
+    topology = ('<section class="topology-section" id="network-architectures"><div class="topology-heading"><div><span class="eyebrow">NETWORK DESIGN · 14 MODELS</span>'
                 '<h2>{}</h2><p>{}</p></div></div><div class="topology-grid">').format(
-        esc(T(lang, "topology_title")), esc(T(lang, "topology_desc")))
+        esc(architecture_title), esc(architecture_desc))
     for title_map, diagram in architecture_cards:
         title = title_map.get(lang, title_map["en"])
         topology += ('<article class="topology-card"><span class="topology-symbol">⌘</span><h3>{}</h3>'
@@ -919,8 +925,8 @@ def build_home(lang, items, cats, paths):
              '<div><strong>{}</strong><span>{}</span></div><div><strong>3</strong><span>TR · EN · AR</span></div>'
              '<div><strong>5</strong><span>Cisco · Huawei · Aruba · Juniper · MikroTik</span></div></div>').format(
         n, esc(T(lang, "commands_short")), len(cats), esc(T(lang, "categories_short")))
-    body = '{}<div class="architecture-layout">{}{}</div>{}{}<p id="none" class="lead" hidden>{}</p>'.format(
-        hero, network, dc, topology, stats, esc(T(lang, "no_results")))
+    body = '{}{}<div class="architecture-layout">{}{}</div>{}<p id="none" class="lead" hidden>{}</p>'.format(
+        hero, topology, network, dc, stats, esc(T(lang, "no_results")))
     script = '<script src="{}/assets/home.js?v={}" defer></script>'.format(BASE_PATH, TODAY)
     write("{}/index.html".format(lang), page(lang, T(lang, "home_title"), T(lang, "home_desc"), "", body, script=script))
     paths.add("")
