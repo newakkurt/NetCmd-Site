@@ -1347,43 +1347,51 @@ def build_community(lang, paths):
 
 
 def build_digital_product(lang, paths):
+    import json
     tr = lang == "tr"
-    title = "Huawei + Cisco + Aruba Komut Paketi" if tr else "Huawei + Cisco + Aruba Command Pack"
-    lead = ("Üç büyük ağ platformu için düzenli, açıklamalı ve günlük operasyon odaklı komut referansı."
-            if tr else "A structured, explained, operations-focused command reference for three major network platforms.")
-    sections = ([
-        ("Huawei VRP", "VLAN, port, trunk, routing, STP, ACL, SNMP, log, kullanıcı ve sorun giderme"),
-        ("Cisco IOS / IOS-XE", "VLAN, interface, EtherChannel, routing, STP, ACL, SNMP ve troubleshooting"),
-        ("Aruba AOS-S / AOS-CX", "VLAN, access/trunk, LAG, routing, güvenlik, yönetim ve troubleshooting"),
-        ("Kullanım notları", "Komut modu, amaç, dikkat notu ve sürüm/lab doğrulama uyarıları")
-    ] if tr else [
-        ("Huawei VRP", "VLAN, ports, trunks, routing, STP, ACL, SNMP, logs, users and troubleshooting"),
-        ("Cisco IOS / IOS-XE", "VLAN, interfaces, EtherChannel, routing, STP, ACL, SNMP and troubleshooting"),
-        ("Aruba AOS-S / AOS-CX", "VLAN, access/trunk, LAG, routing, security, management and troubleshooting"),
-        ("Usage notes", "CLI mode, purpose, cautions and software-version/lab verification notes")
-    ])
-    cards = "".join('<article class="card"><h2>{}</h2><p>{}</p></article>'.format(esc(a), esc(b)) for a,b in sections)
-    note = ("Komutlar cihaz modeli ve yazılım sürümüne göre değişebilir. Üretimde uygulamadan önce lab ortamında doğrulayın."
-            if tr else "Commands vary by model and software release. Verify in a lab before production use.")
-    checkout = str(SITECFG.get("digital_product_checkout_url", "")).strip()
-    cta = ('<a class="btn" href="{}" rel="noopener">{} · $19</a>'.format(esc(checkout), "Paketi satın al" if tr else "Buy the pack")
-           if checkout.startswith("https://") else
-           '<span class="tag">{}</span>'.format("Satış bağlantısı hazırlanıyor" if tr else "Checkout link setup pending"))
-    body = ('<div class="crumbs"><a href="{home}">{crumb}</a> › {label}</div>'
-            '<h1>{title}</h1><p class="lead">{lead}</p>'
-            '<div class="pricebox"><strong class="newprice">$19</strong> <span class="tag">{once}</span></div>'
-            '<div class="grid">{cards}</div><div class="note">{note}</div>'
-            '<h2>{delivery_h}</h2><p>{delivery}</p><p>{cta}</p>').format(
-        home=lurl(lang), crumb=esc(T(lang,"crumb_home")), label=esc("Dijital ürün" if tr else "Digital product"),
-        title=esc(title), lead=esc(lead), once=esc("Tek seferlik ödeme" if tr else "One-time payment"),
-        cards=cards, note=esc(note), delivery_h=esc("Otomatik teslimat" if tr else "Automatic delivery"),
-        delivery=esc("BMC üzerinde dijital ürün ve dosya teslimi etkinleştirildiğinde satın alma sonrası indirme bağlantısı otomatik gönderilir. Ödeme bağlantısı henüz yapılandırılmadı."
-                     if tr else "After the digital product and file delivery are configured in BMC, buyers receive the download automatically. Checkout is not configured yet."),
-        cta=cta)
-    path="products/network-command-pack/"
-    write("{}/{}index.html".format(lang,path), page(lang, title+" | NetCmd", lead, path, body))
-    paths.add(path)
-
+    catalog_file = ROOT / "products" / "catalog.json"
+    products = json.loads(catalog_file.read_text(encoding="utf-8")).get("products", []) if catalog_file.exists() else []
+    cards = []
+    for product in products:
+        title = product["title_tr" if tr else "title_en"]
+        subtitle = product["subtitle_tr" if tr else "subtitle_en"]
+        slug = product["slug"]
+        detail_path = "products/" + slug + "/"
+        cards.append('<article class="card"><h2><a href="{}">{}</a></h2><p>{}</p><p><strong>$19</strong> · {}</p></article>'.format(
+            esc(lurl(lang, detail_path)), esc(title), esc(subtitle), esc("Tek seferlik" if tr else "One-time")))
+        topic_html = "".join("<li>{}</li>".format(esc(x)) for x in product.get("topics", []))
+        command_html = []
+        for idx, command in enumerate(product.get("commands", []), 1):
+            blocks = []
+            for label, key in [("Cisco IOS / IOS-XE","cisco"),("Huawei VRP","huawei"),("Aruba AOS-S / AOS-CX","aruba")]:
+                blocks.append("<h4>{}</h4><pre><code>{}</code></pre>".format(label, esc(command[key])))
+            risk = command.get("risk", "read")
+            risk_label = ({"read":"Salt okunur","test":"Test/teşhis","change":"Yapılandırma değişikliği"} if tr else {"read":"Read-only","test":"Test/diagnostic","change":"Configuration change"}).get(risk, risk)
+            command_html.append('<section class="card"><h3>{}. {}</h3>{}<p class="tag">{}</p></section>'.format(idx, esc(command["name"]), "".join(blocks), esc(risk_label)))
+        note = ("Komut sözdizimi cihaz modeli ve yazılım sürümüne göre değişebilir. Aruba AOS-S ve AOS-CX farklıdır. Üretimde kullanmadan önce tam model/sürüm üzerinde laboratuvarda doğrulayın. Değişiklik komutlarını bakım penceresi ve geri dönüş planı olmadan uygulamayın."
+                if tr else "Syntax varies by model and software release. Aruba AOS-S and AOS-CX differ. Validate on the exact model/release in a lab before production. Do not apply changes without a maintenance window and rollback plan.")
+        checkout = str(SITECFG.get("digital_product_checkout_url", "")).strip()
+        cta = ('<a class="btn" href="{}" rel="noopener">{}</a>'.format(esc(checkout), "Satın al · $19" if tr else "Buy · $19")
+               if checkout.startswith("https://") else '<span class="tag">{}</span>'.format("Satış bağlantısı hazırlanıyor" if tr else "Checkout link pending"))
+        body = '<div class="crumbs"><a href="{}">{}</a> › {}</div><h1>{}</h1><p class="lead">{}</p><div class="pricebox"><strong class="newprice">$19</strong> <span class="tag">{}</span></div><h2>{}</h2><ul>{}</ul><h2>{}</h2><div class="grid">{}</div><div class="note">{}</div><p>{}</p>'.format(
+            lurl(lang), esc(T(lang,"crumb_home")), esc("Network Command Packs" if not tr else "Ağ Komut Paketleri"),
+            esc(title), esc(subtitle), esc("Tek seferlik ödeme" if tr else "One-time payment"),
+            esc("Kapsam" if tr else "Coverage"), topic_html,
+            esc("Komut referansı" if tr else "Command reference"), "".join(command_html), esc(note), cta)
+        write("{}/{}index.html".format(lang, detail_path), page(lang, title + " | NetCmd", subtitle, detail_path, body))
+        paths.add(detail_path)
+    listing_path = "products/network-command-packs/"
+    listing_title = "10 Ağ Komut Paketi" if tr else "10 Network Command Packs"
+    listing_lead = ("Ağ operasyonları için 10 ayrı uzmanlık paketi. Her pakette Türkçe ve İngilizce komut referansı bulunur."
+                    if tr else "Ten focused network operations packs, each with Turkish and English command references.")
+    listing_body = '<h1>{}</h1><p class="lead">{}</p><div class="grid">{}</div>'.format(esc(listing_title), esc(listing_lead), "".join(cards))
+    write("{}/{}index.html".format(lang, listing_path), page(lang, listing_title + " | NetCmd", listing_lead, listing_path, listing_body))
+    paths.add(listing_path)
+    legacy_path = "products/network-command-pack/"
+    legacy_body = '<h1>{}</h1><p class="lead">{}</p><p><a class="btn" href="{}">{}</a></p>'.format(
+        esc(listing_title), esc(listing_lead), esc(lurl(lang, listing_path)), esc("10 paketi incele" if tr else "Explore all 10 packs"))
+    write("{}/{}index.html".format(lang, legacy_path), page(lang, listing_title + " | NetCmd", listing_lead, legacy_path, legacy_body))
+    paths.add(legacy_path)
 
 def write_meta(sitemap_paths):
     lines = [
