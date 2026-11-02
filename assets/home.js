@@ -25,6 +25,11 @@
       sections.forEach(function (s) {
         var any = s.querySelector('.cmd-card:not([hidden])');
         s.hidden = !any;
+        var fold = s.closest('.category-fold');
+        if (fold) fold.open = !!term && !!any;
+      });
+      document.querySelectorAll('.architecture-group').forEach(function (g) {
+        g.open = !!term && !!g.querySelector('.cmd-card:not([hidden])');
       });
       if (cnt) cnt.textContent = fmt.replace('{n}', shown).replace('{t}', total);
       if (none) none.hidden = shown !== 0;
