@@ -63,3 +63,47 @@ with ZipFile(archive, "w", ZIP_DEFLATED) as z:
         if path.exists():
             z.write(path, path.name)
 print(f"Generated: {tr_pdf.stat().st_size} bytes; {en_pdf.stat().st_size} bytes; {archive.stat().st_size} bytes")
+
+# Build ten focused bilingual product packs from products/catalog.json.
+import json
+CATALOG = ROOT / "products" / "catalog.json"
+if CATALOG.exists():
+    catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
+    for product in catalog.get("products", []):
+        slug = product["slug"]
+        product_out = ROOT / "dist" / "products" / slug
+        product_out.mkdir(parents=True, exist_ok=True)
+        for lang in ("tr", "en"):
+            title = product["title_tr" if lang == "tr" else "title_en"]
+            subtitle = product["subtitle_tr" if lang == "tr" else "subtitle_en"]
+            lines = ["# " + title, "", subtitle, "",
+                     ("Fiyat: 19 USD — tek seferlik" if lang == "tr" else "Price: USD 19 — one-time"),
+                     "", "## Kapsam" if lang == "tr" else "## Coverage"]
+            lines.extend(["- " + topic for topic in product["topics"]])
+            lines += ["", "## Komut referansı" if lang == "tr" else "## Command reference", ""]
+            for idx, command in enumerate(product["commands"], 1):
+                lines += ["### {}. {}".format(idx, command["name"]),
+                          "", "**Cisco IOS / IOS-XE**", "\x60\x60\x60text", command["cisco"], "\x60\x60\x60",
+                          "", "**Huawei VRP**", "\x60\x60\x60text", command["huawei"], "\x60\x60\x60",
+                          "", "**Aruba (AOS-S / AOS-CX)**", "\x60\x60\x60text", command["aruba"], "\x60\x60\x60", ""]
+                risk = command.get("risk", "read")
+                risk_tr = {"read":"Salt okunur", "test":"Test/teşhis", "change":"Yapılandırma değişikliği"}
+                risk_en = {"read":"Read-only", "test":"Test/diagnostic", "change":"Configuration change"}
+                lines.append("**Risk:** " + (risk_tr if lang == "tr" else risk_en).get(risk, risk))
+                lines.append("")
+            caveat = ("Önemli: Komut sözdizimi cihaz modeli ve yazılım sürümüne göre değişebilir. Aruba AOS-S ve AOS-CX komutları aynı değildir. Üretim ortamında uygulamadan önce tam model/sürüm üzerinde ve laboratuvarda doğrulayın. Yapılandırma değiştiren komutları bakım penceresi ve geri dönüş planı olmadan uygulamayın."
+                      if lang == "tr" else
+                      "Important: Syntax varies by device model and software release. Aruba AOS-S and AOS-CX are not interchangeable. Validate on the exact model/release and in a lab before production use. Do not apply configuration-changing commands without a maintenance window and rollback plan.")
+            lines += ["## Güvenlik ve uyumluluk notu" if lang == "tr" else "## Safety and compatibility note", "", caveat, ""]
+            md_path = product_out / ("COMMANDS-TR.md" if lang == "tr" else "COMMANDS-EN.md")
+            md_path.write_text("\\n".join(lines), encoding="utf-8")
+            pdf_path = product_out / ("NetCmd_{}_{}.pdf".format(slug, lang.upper()))
+            render(md_path, pdf_path, lang)
+        readme = product_out / "README.txt"
+        readme.write_text("{}\\n{}\\nUSD 19 one-time. Draft reference: verify syntax against exact hardware and software before production use.\\n".format(product["title_en"], product["subtitle_en"]), encoding="utf-8")
+        zip_path = product_out / ("NetCmd_{}_TR-EN.zip".format(slug))
+        with ZipFile(zip_path, "w", ZIP_DEFLATED) as z:
+            for file in sorted(product_out.iterdir()):
+                if file.is_file() and file != zip_path:
+                    z.write(file, file.name)
+        print("Generated product pack:", slug, "files:", len(list(product_out.iterdir())))
