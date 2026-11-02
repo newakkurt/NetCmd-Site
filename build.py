@@ -123,7 +123,7 @@ def vends(it):
 CSS = """
 :root{--bg:#050a0f;--fg:#e2f0ea;--mut:#8fa8a0;--bd:#16323a;--ac:#3de0ff;--ac2:#39ff9c;--code:#02060a;--codefg:#b8ffd9;--card:rgba(9,20,26,.74);--ok:#39ff9c;--err:#ff6b6b}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Tahoma,sans-serif}
-a{color:var(--ac)}header,main,footer{max-width:980px;margin:0 auto;padding:0 16px}
+a{color:var(--ac)}header,main,footer{max-width:1480px;margin:0 auto;padding:0 16px}
 header{display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px;border-bottom:1px solid var(--bd)}
 header a.logo{font-weight:700;font-size:1.2rem;text-decoration:none;color:var(--fg)}
 nav{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}nav a{text-decoration:none}
@@ -216,6 +216,55 @@ html[dir=rtl] .hero h1::before{content:""}
 a.tag.chip{text-decoration:none;color:var(--ac)}a.tag.chip:hover{border-color:var(--ac);background:rgba(61,224,255,.1)}
 .cmd-card small{display:block;color:var(--mut);font:12px ui-monospace,Menlo,Consolas,monospace;margin-top:4px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;direction:ltr;text-align:left}
 section.cat h2 .tag{font-size:.7rem;vertical-align:middle}
+
+/* Premium command-hub landing page */
+.hero-modern{display:grid;grid-template-columns:1.05fr .95fr;gap:18px;align-items:center;min-height:320px;margin:8px 0 20px;padding:32px 5%;border:1px solid rgba(40,160,255,.4);border-radius:22px;overflow:hidden;background:radial-gradient(ellipse at 78% 45%,rgba(0,125,255,.24),transparent 43%),linear-gradient(112deg,rgba(3,13,32,.98),rgba(5,23,52,.94) 55%,rgba(8,17,49,.98));box-shadow:0 22px 70px rgba(0,35,90,.24)}
+.hero-modern:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(57,169,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(57,169,255,.07) 1px,transparent 1px);background-size:34px 34px}
+.hero-copy,.hero-visual,.hero-search,.hero-bottom{position:relative;z-index:1}.hero-modern .eyebrow,.eyebrow{font:700 .72rem ui-monospace,monospace;letter-spacing:.15em;color:#4ccfff}
+.hero-modern h1{font-size:clamp(2.7rem,6vw,5.2rem);line-height:1.02;margin:12px 0;color:#f4f9ff;letter-spacing:-.055em}.hero-modern h1:before{content:none}
+.hero-modern .lead{max-width:600px;color:#d2e5fa;font-size:1.12rem}.hero-features{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.hero-features span{border:1px solid rgba(83,174,255,.3);border-radius:99px;padding:7px 12px;background:rgba(2,20,46,.65);color:#e3f2ff;font-size:.82rem}
+.hero-visual{min-height:220px;display:flex;align-items:center;justify-content:center;isolation:isolate}
+.server-stack{position:relative;z-index:2;width:150px;padding:14px;border:1px solid #25baff;border-radius:16px;background:linear-gradient(145deg,rgba(8,64,120,.95),rgba(4,17,48,.96));box-shadow:0 0 45px rgba(0,148,255,.42),inset 0 0 22px rgba(52,177,255,.18)}
+.server-stack i{display:block;height:35px;margin:7px 0;border:1px solid rgba(85,195,255,.7);border-radius:7px;background:linear-gradient(90deg,rgba(20,112,194,.7),rgba(6,31,72,.9));position:relative}
+.server-stack i:after{content:"•••";position:absolute;right:10px;top:3px;color:#4ee0ff;letter-spacing:4px}
+.orbit{position:absolute;border:1px solid rgba(36,180,255,.48);border-radius:50%;width:310px;height:150px;transform:rotate(-25deg);animation:orbitPulse 6s ease-in-out infinite}
+.orbit-two{width:360px;height:190px;transform:rotate(35deg);border-color:rgba(120,89,255,.38);animation-delay:-3s}
+.node{position:absolute;z-index:3;display:grid;place-items:center;width:43px;height:43px;border:1px solid #43caff;border-radius:50%;background:#071d42;color:#73ddff;box-shadow:0 0 22px rgba(0,157,255,.45)}
+.node-a{top:12%;left:23%}.node-b{right:16%;top:22%}.node-c{bottom:12%;right:25%}.visual-caption{position:absolute;bottom:0;font:10px ui-monospace,monospace;letter-spacing:.15em;color:#79caff}
+@keyframes orbitPulse{0%,100%{opacity:.45;filter:brightness(.85)}50%{opacity:1;filter:brightness(1.4)}}
+.hero-search{grid-column:1/-1;margin-top:6px}.hero-search .searchbar{margin:0 auto;max-width:1020px;padding:7px;border:1px solid #16baff;border-radius:15px;background:rgba(2,12,30,.9);box-shadow:0 0 28px rgba(0,156,255,.2)}
+.hero-search .searchbar input{flex:1;border:0;background:transparent;color:#f1f8ff}.hero-search .search-icon{font-size:1.6rem;color:#29c7ff;padding:0 8px}
+.search-action{padding:9px 17px;border-radius:10px;background:linear-gradient(135deg,#13a9ff,#1265f4);color:white;font-weight:700;white-space:nowrap}.hero-search #cnt{display:none}
+.hero-bottom{grid-column:1/-1;display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap}.hero-bottom .term{margin:0;max-width:460px;min-height:42px;padding:8px 12px;font-size:12px}.hero-bottom .plats{margin:0}
+.architecture-layout{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:18px 0}
+.architecture-group{margin:0;border:1px solid rgba(34,151,255,.68);border-radius:18px;background:linear-gradient(145deg,rgba(5,28,62,.97),rgba(5,17,42,.97));overflow:hidden;box-shadow:0 16px 42px rgba(0,20,55,.2)}
+.dc-panel{border-color:rgba(157,92,255,.72);background:linear-gradient(145deg,rgba(34,20,75,.97),rgba(13,14,48,.98))}
+.architecture-heading{display:flex;align-items:center;gap:15px;padding:20px 22px 13px}.architecture-icon{display:grid;place-items:center;width:54px;height:54px;flex:0 0 54px;border-radius:15px;background:rgba(18,147,255,.15);color:#39baff;font-size:2rem}
+.dc-panel .architecture-icon{background:rgba(156,91,255,.18);color:#a77bff}.architecture-heading>div{min-width:0;flex:1}.architecture-heading .arch-title{margin:0;color:#f1f7ff;font-size:1.32rem}.architecture-heading p{margin:2px 0 0;color:#c1d6ef;font-size:.87rem}
+.arch-total{border:1px solid rgba(64,177,255,.4);border-radius:99px;padding:6px 11px;color:#eaf7ff;font-size:.76rem;white-space:nowrap}.dc-panel .arch-total{border-color:rgba(168,115,255,.45)}
+.architecture-content.category-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;padding:8px 16px 17px}
+.category-fold{margin:0;border:1px solid rgba(89,160,219,.28);border-radius:11px;background:rgba(4,19,45,.58);overflow:hidden;min-width:0}.dc-panel .category-fold{border-color:rgba(160,122,255,.28);background:rgba(14,12,48,.58)}
+.category-fold>summary{min-height:58px;padding:10px 12px;color:#f0f6ff;gap:7px}.category-name{font-size:.88rem;font-weight:650}.category-count{font-size:.68rem;color:#8fcaff;white-space:nowrap}.dc-panel .category-count{color:#c3a7ff}
+.category-fold .cat{padding:0 10px 10px}.category-fold .cat .grid{grid-template-columns:1fr;gap:7px}.category-fold .cmd-card{background:rgba(3,12,29,.85);padding:9px 11px}
+.topology-section{margin:18px 0;padding:18px 20px;border:1px solid rgba(0,204,184,.65);border-radius:17px;background:linear-gradient(100deg,rgba(3,44,53,.96),rgba(4,27,49,.96))}
+.topology-heading{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:13px}.topology-heading h2{margin:2px 0;color:#f0fffd}.topology-heading p{margin:0;color:#a8d5d5;font-size:.84rem}
+.topology-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.topology-card{min-width:0;border:1px solid rgba(0,205,196,.35);border-radius:12px;padding:12px;background:rgba(1,20,38,.58);text-align:center}
+.topology-symbol{font-size:1.5rem;color:#27d9d1}.topology-card h3{font-size:.86rem;color:#efffff;margin:5px 0}.topology-card pre{padding:8px;background:transparent;color:#9ee9ee;font-size:10px;white-space:pre-wrap;overflow-wrap:anywhere}
+.home-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 30px}.home-stats>div{display:flex;align-items:center;gap:12px;padding:15px;border:1px solid rgba(75,148,213,.3);border-radius:13px;background:rgba(5,18,42,.9)}
+.home-stats strong{font-size:1.45rem;color:#45c5ff}.home-stats span{font-size:.78rem;color:#c4d9ef}
+html[data-theme=light] .hero-modern{background:linear-gradient(112deg,rgba(232,246,252,.98),rgba(220,239,250,.97) 55%,rgba(237,233,255,.97));border-color:rgba(20,125,174,.28);box-shadow:0 18px 50px rgba(20,85,115,.12)}
+html[data-theme=light] .hero-modern h1{color:#102e43}html[data-theme=light] .hero-modern .lead{color:#34576b}html[data-theme=light] .hero-modern .eyebrow{color:#087ca5}
+html[data-theme=light] .hero-features span{background:rgba(255,255,255,.75);color:#17475d;border-color:rgba(31,125,160,.2)}html[data-theme=light] .hero-search .searchbar{background:rgba(255,255,255,.96);box-shadow:0 8px 28px rgba(0,100,145,.1)}html[data-theme=light] .hero-search .searchbar input{color:#15384a}
+html[data-theme=light] .architecture-group{background:linear-gradient(145deg,rgba(235,248,255,.98),rgba(225,241,252,.98));border-color:rgba(16,127,189,.35)}html[data-theme=light] .dc-panel{background:linear-gradient(145deg,rgba(245,239,255,.98),rgba(235,231,252,.98));border-color:rgba(130,87,206,.36)}
+html[data-theme=light] .architecture-heading .arch-title,html[data-theme=light] .category-fold>summary,html[data-theme=light] .topology-heading h2,html[data-theme=light] .topology-card h3{color:#17364a}
+html[data-theme=light] .architecture-heading p,html[data-theme=light] .topology-heading p{color:#486579}html[data-theme=light] .category-fold,html[data-theme=light] .dc-panel .category-fold{background:rgba(255,255,255,.78);border-color:rgba(66,130,166,.22)}
+html[data-theme=light] .category-count{color:#08749a}html[data-theme=light] .category-fold .cmd-card{background:#fff}
+html[data-theme=light] .topology-section{background:linear-gradient(100deg,rgba(226,249,247,.98),rgba(231,244,252,.98));border-color:rgba(0,145,135,.32)}html[data-theme=light] .topology-card{background:rgba(255,255,255,.8);border-color:rgba(0,145,135,.24)}html[data-theme=light] .topology-card pre{color:#245e70}
+html[data-theme=light] .home-stats>div{background:rgba(255,255,255,.88);border-color:rgba(55,125,158,.2)}html[data-theme=light] .home-stats span{color:#456477}
+@media(max-width:900px){.architecture-layout{grid-template-columns:1fr}.topology-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-modern{grid-template-columns:1fr}.hero-visual{min-height:190px}}
+@media(max-width:600px){header,main,footer{padding-left:12px;padding-right:12px}.hero-modern{padding:24px 16px;min-height:0}.hero-modern h1{font-size:2.5rem}.hero-visual{min-height:155px}.orbit{width:230px;height:120px}.orbit-two{width:260px;height:145px}.hero-bottom{align-items:flex-start}.hero-bottom .term{width:100%;max-width:none}.hero-features span{font-size:.72rem}.hero-search .searchbar{gap:4px}.search-action{display:none}.architecture-heading{padding:16px 14px 10px;gap:10px}.architecture-icon{width:42px;height:42px;flex-basis:42px;font-size:1.5rem}.architecture-heading .arch-title{font-size:1rem}.arch-total{font-size:.65rem;padding:5px 7px}.architecture-content.category-grid{padding:7px 10px 12px;gap:7px}.category-fold>summary{min-height:54px;padding:9px}.category-name{font-size:.78rem}.category-count{font-size:.62rem}.topology-section{padding:14px 12px}.topology-grid{grid-template-columns:1fr 1fr;gap:7px}.topology-card{padding:9px 6px}.topology-card h3{font-size:.75rem}.topology-card pre{font-size:9px}.home-stats{grid-template-columns:1fr 1fr;gap:8px}.home-stats>div{padding:11px;gap:7px}.home-stats strong{font-size:1.1rem}.home-stats span{font-size:.68rem}}
+
 /* Compact homepage navigation: progressive disclosure */
 .architecture-group{margin:14px 0;border:1px solid var(--bd);border-radius:14px;background:var(--card);overflow:hidden}
 .architecture-group>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 17px;list-style:none}
@@ -791,90 +840,74 @@ def build_categories(lang, items, paths):
 
 
 def build_home(lang, items, cats, paths):
-    network_sections = []
-    dc_sections = []
-    network_count = 0
-    dc_count = 0
-    network_cats = 0
-    dc_cats = 0
-
+    network_sections, dc_sections = [], []
+    network_count = dc_count = network_cats = dc_cats = 0
     for cat, lst in cats.items():
         cards = ""
         for i in lst:
-            hay = " ".join(
-                [item_title(i, lang), i["title"], i["slug"], cat_name(cat, lang)]
-                + [c for v in vends(i) for c in i[v]["cmds"]]
-            ).lower()
-            cards += (
-                '<div class="card cmd-card" data-s="{}"><a href="{}">{}</a>'
-                '<small>{} · {}</small></div>'
-            ).format(esc(hay), lurl(lang, "cmd/{}/".format(i["slug"])), esc(item_title(i, lang)),
-                     esc(i["cisco"]["cmds"][0]), esc(i["huawei"]["cmds"][0]))
-        section = (
-            '<details class="category-fold"><summary><span>{}</span>'
-            '<span class="tag">{} {}</span></summary>'
-            '<section class="cat" id="{}"><div class="grid">{}</div></section></details>'
-        ).format(esc(cat_name(cat, lang)), len(lst), esc(T(lang, "commands_short")),
-                 slugify(cat), cards)
+            hay = " ".join([item_title(i, lang), i["title"], i["slug"], cat_name(cat, lang)] +
+                           [c for v in vends(i) for c in i[v]["cmds"]]).lower()
+            cards += ('<div class="card cmd-card" data-s="{}"><a href="{}">{}</a><small>{} · {}</small></div>').format(
+                esc(hay), lurl(lang, "cmd/{}/".format(i["slug"])), esc(item_title(i, lang)),
+                esc(i["cisco"]["cmds"][0]), esc(i["huawei"]["cmds"][0]))
+        section = ('<details class="category-fold"><summary><span class="category-name">{}</span>'
+                   '<span class="category-count">{} {}</span></summary><section class="cat" id="{}">'
+                   '<div class="grid">{}</div></section></details>').format(
+            esc(cat_name(cat, lang)), len(lst), esc(T(lang, "commands_short")), slugify(cat), cards)
         if cat.startswith("DC -"):
-            dc_sections.append(section)
-            dc_count += len(lst)
-            dc_cats += 1
+            dc_sections.append(section); dc_count += len(lst); dc_cats += 1
         else:
-            network_sections.append(section)
-            network_count += len(lst)
-            network_cats += 1
+            network_sections.append(section); network_count += len(lst); network_cats += 1
 
-    sections = ""
-    if network_sections:
-        sections += (
-            '<details class="architecture-group"><summary><span class="arch-title">{}</span>'
-            '<span class="arch-meta">{} {} · {} {}</span></summary>'
-            '<div class="architecture-content">{}</div></details>'
-        ).format(esc(T(lang, "home_arch_network")), network_cats,
-                 esc(T(lang, "categories_short")), network_count,
-                 esc(T(lang, "commands_short")), "".join(network_sections))
+    network = ('<section class="architecture-group network-panel"><div class="architecture-heading">'
+               '<span class="architecture-icon">⌘</span><div><h2 class="arch-title">{}</h2><p>{}</p></div>'
+               '<span class="arch-total">{} {}</span></div><div class="architecture-content category-grid">{}</div></section>').format(
+        esc(T(lang, "home_arch_network")), esc(T(lang, "home_lead")), network_count,
+        esc(T(lang, "commands_short")), "".join(network_sections))
+    dc = ('<section class="architecture-group dc-panel"><div class="architecture-heading">'
+          '<span class="architecture-icon">▤</span><div><h2 class="arch-title">{}</h2><p>{}</p></div>'
+          '<span class="arch-total">{} {}</span></div><div class="architecture-content category-grid">{}</div></section>').format(
+        esc(T(lang, "home_arch_dc")), esc(T(lang, "topology_desc")), dc_count,
+        esc(T(lang, "commands_short")), "".join(dc_sections))
 
-    if dc_sections:
-        topology_cards = [
-            ("topology_spine", "LEAF-01/02  →  SPINE-01/02  →  BORDER LEAF  →  WAN"),
-            ("topology_3tier", "ACCESS  →  AGGREGATION  →  CORE  →  EDGE"),
-            ("topology_evpn", "LEAF VTEP  ⇄  SPINE UNDERLAY  ⇄  LEAF VTEP  |  EVPN control-plane"),
-            ("topology_san", "HOST HBA-A  →  FABRIC-A  →  STORAGE\\nHOST HBA-B  →  FABRIC-B  →  STORAGE"),
-        ]
-        topology = '<details class="topology-fold"><summary>{}</summary><p class="lead">{}</p><div class="grid">'.format(
-            esc(T(lang, "topology_title")), esc(T(lang, "topology_desc")))
-        for key, diagram in topology_cards:
-            topology += '<article class="card"><h3>{}</h3><pre dir="ltr"><code>{}</code></pre></article>'.format(
-                esc(T(lang, key)), esc(diagram))
-        topology += '</div></details>'
-        sections += (
-            '<details class="architecture-group"><summary><span class="arch-title">{}</span>'
-            '<span class="arch-meta">{} {} · {} {}</span></summary>'
-            '<div class="architecture-content">{} {}</div></details>'
-        ).format(esc(T(lang, "home_arch_dc")), dc_cats, esc(T(lang, "categories_short")),
-                 dc_count, esc(T(lang, "commands_short")), topology, "".join(dc_sections))
+    topology_cards = [("topology_3tier", "ACCESS → AGGREGATION → CORE → EDGE"),
+                      ("topology_spine", "LEAF-01/02 → SPINE-01/02 → BORDER LEAF"),
+                      ("topology_evpn", "LEAF VTEP ⇄ SPINE UNDERLAY ⇄ LEAF VTEP"),
+                      ("topology_san", "HOST HBA → FABRIC → STORAGE")]
+    topology = ('<section class="topology-section"><div class="topology-heading"><div><span class="eyebrow">NETWORK DESIGN</span>'
+                '<h2>{}</h2><p>{}</p></div></div><div class="topology-grid">').format(
+        esc(T(lang, "topology_title")), esc(T(lang, "topology_desc")))
+    for key, diagram in topology_cards:
+        topology += ('<article class="topology-card"><span class="topology-symbol">⌘</span><h3>{}</h3>'
+                     '<pre dir="ltr"><code>{}</code></pre></article>').format(esc(T(lang, key)), esc(diagram))
+    topology += '</div></section>'
 
     n = len(items)
-    hero = (
-        '<section class="hero"><h1>{h1}</h1><p class="lead">{lead}</p>@@SEARCH@@'
-        '<div class="term" aria-hidden="true"><span class="tp" id="tp"></span> <span class="tc" id="tc"></span><span class="cursor"></span></div>'
-        '<p class="plats"><span class="tag plat">Cisco IOS</span><span class="tag plat">Huawei VRP</span><span class="tag plat">Aruba AOS</span><span class="tag plat">Juniper Junos</span><span class="tag plat">MikroTik RouterOS</span></p>'
-        '<p class="stat">{stat}</p>'
-        '<p><a class="btn" href="{tools}">{tools_t}</a> <a class="btn sec" href="{signup}">{signup_t}</a></p></section>'
-    ).format(
-        h1=esc(T(lang, "home_h1")), lead=esc(T(lang, "home_lead")),
-        stat=esc(T(lang, "hero_stat", n=n, c=len(cats))),
-        tools=lurl(lang, "tools/"), tools_t=esc(T(lang, "tools_title")),
-        signup=lurl(lang, "signup/"), signup_t=esc(T(lang, "nav_signup")),
-    )
-    search = (
-        '<div class="searchbar"><input id="q" type="search" placeholder="{ph}" aria-label="{ph}" autocomplete="off">'
-        '<span class="tag" id="cnt" data-fmt="{fmt}">{count}</span></div>'
-    ).format(ph=esc(T(lang, "search_ph")), fmt=esc(I18N["ui"][lang]["search_count"]), count=esc(T(lang, "search_count", n=n, t=n)))
-    body = "{}{}<p id=\"none\" class=\"lead\" hidden>{}</p>".format(
-        hero.replace("@@SEARCH@@", search), sections, esc(T(lang, "no_results"))
-    )
+    hero = ('<section class="hero hero-modern"><div class="hero-copy"><span class="eyebrow">NETWORK &amp; DATA CENTER COMMAND HUB</span>'
+            '<h1>{}</h1><p class="lead">{}</p><div class="hero-features"><span>⚡ {}</span><span>◈ {}</span>'
+            '<span>◎ TR / EN / AR</span><span>★ {}</span></div></div>'
+            '<div class="hero-visual" aria-hidden="true"><div class="server-stack"><i></i><i></i><i></i></div>'
+            '<div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="node node-a">⌘</span>'
+            '<span class="node node-b">◉</span><span class="node node-c">◆</span>'
+            '<span class="visual-caption">CONNECTED · SECURE · AUTOMATED</span></div>'
+            '<div class="hero-search">@@SEARCH@@</div><div class="hero-bottom"><div class="term" aria-hidden="true">'
+            '<span class="tp" id="tp"></span> <span class="tc" id="tc"></span><span class="cursor"></span></div>'
+            '<p class="plats"><span class="tag plat">Cisco IOS</span><span class="tag plat">Huawei VRP</span>'
+            '<span class="tag plat">Aruba AOS</span><span class="tag plat">Juniper Junos</span>'
+            '<span class="tag plat">MikroTik RouterOS</span></p></div></section>').format(
+        esc(T(lang, "home_h1")), esc(T(lang, "home_lead")), esc(T(lang, "tools_title")),
+        esc(T(lang, "det_example")), esc(T(lang, "home_arch_network")))
+    search = ('<div class="searchbar"><span class="search-icon">⌕</span><input id="q" type="search" placeholder="{}" '
+              'aria-label="{}" autocomplete="off"><span class="search-action">{}</span>'
+              '<span class="tag" id="cnt" data-fmt="{}">{}</span></div>').format(
+        esc(T(lang, "search_ph")), esc(T(lang, "search_ph")), esc(T(lang, "open")),
+        esc(I18N["ui"][lang]["search_count"]), esc(T(lang, "search_count", n=n, t=n)))
+    stats = ('<div class="home-stats"><div><strong>{}</strong><span>{}</span></div>'
+             '<div><strong>{}</strong><span>{}</span></div><div><strong>3</strong><span>TR · EN · AR</span></div>'
+             '<div><strong>5</strong><span>Cisco · Huawei · Aruba · Juniper · MikroTik</span></div></div>').format(
+        n, esc(T(lang, "commands_short")), len(cats), esc(T(lang, "categories_short")))
+    body = '{}<div class="architecture-layout">{}{}</div>{}{}<p id="none" class="lead" hidden>{}</p>'.format(
+        hero, network, dc, topology, stats, esc(T(lang, "no_results")))
     script = '<script src="{}/assets/home.js?v={}" defer></script>'.format(BASE_PATH, TODAY)
     write("{}/index.html".format(lang), page(lang, T(lang, "home_title"), T(lang, "home_desc"), "", body, script=script))
     paths.add("")
