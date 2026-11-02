@@ -801,3 +801,74 @@ show interface transceiver
 
 ---
 NetCmd Ağ Komut Paketi • İçerik taslağı. Üretim değişikliklerinden önce üretici dokümantasyonunu doğrulayın.
+ 
+### 29. LLDP komşu detayını görüntüleme
+**Huawei VRP:** `display lldp neighbor`  
+**Cisco IOS/IOS-XE:** `show lldp neighbors detail`  
+**Aruba AOS-S:** `show lldp info remote-device`  
+**Aruba AOS-CX:** `show lldp neighbor-info detail`  
+**Tür:** OKUMA. Komşu cihaz ve port bilgilerini inceler.
+
+### 30. CDP komşularını görüntüleme (Cisco)
+`show cdp neighbors`  
+`show cdp neighbors detail`  
+**Tür:** OKUMA. CDP Cisco'ya özgüdür; çok üreticili ağlarda LLDP tercih edilir.
+
+### 31. Ping ile erişilebilirlik testi
+**Huawei / Cisco / Aruba:** `ping 10.0.0.1`  
+**Tür:** TEST. Kaynak arayüzü, VRF'i ve ICMP filtrelerini dikkate alın.
+
+### 32. Traceroute ile yolu inceleme
+**Huawei VRP:** `tracert 10.0.0.1`  
+**Cisco / Aruba:** `traceroute 10.0.0.1`  
+**Tür:** TEST. Ara atlamaları gösterir; filtreleme çıktıyı etkileyebilir.
+
+### 33. LAG / EtherChannel durumunu görüntüleme
+**Huawei VRP:** `display eth-trunk`  
+**Cisco IOS/IOS-XE:** `show etherchannel summary`  
+**Aruba AOS-S:** `show trunks` ve `show lacp`  
+**Aruba AOS-CX:** `show lacp aggregates`  
+**Tür:** OKUMA. Üye bağlantıların topluluğa katılımını denetler.
+
+### 34. STP kök ve port rollerini inceleme
+**Huawei VRP:** `display stp`  
+**Cisco IOS/IOS-XE:** `show spanning-tree root`  
+**Aruba AOS-S/AOS-CX:** `show spanning-tree`  
+**Tür:** OKUMA. Beklenmeyen root bridge trafik yolunu değiştirebilir.
+
+### 35. Optik modül bilgisi
+**Huawei VRP:** `display transceiver interface GigabitEthernet 0/0/1 verbose`  
+**Cisco IOS/IOS-XE:** `show interfaces transceiver detail`  
+**Aruba AOS-CX:** `show interface transceiver`  
+**Tür:** OKUMA. DOM sensör desteği model ve optiğe bağlıdır.
+
+### 36. PoE durumunu görüntüleme
+**Huawei VRP:** `display poe power` ve `display poe interface`  
+**Cisco IOS/IOS-XE:** `show power inline`  
+**Aruba AOS-S/AOS-CX:** `show power-over-ethernet`  
+**Tür:** OKUMA. Komut desteğini model/yazılım sürümünde doğrulayın.
+
+### 37. CPU kullanımını görüntüleme
+**Huawei VRP:** `display cpu-usage`  
+**Cisco IOS/IOS-XE:** `show processes cpu`  
+**Aruba AOS-S:** `show cpu`  
+**Aruba AOS-CX:** `show system resource-utilization`  
+**Tür:** OKUMA. Anlık değerleri süreç ve zaman trendiyle değerlendirin.
+
+### 38. Bellek kullanımını görüntüleme
+**Huawei VRP:** `display memory-usage`  
+**Cisco IOS/IOS-XE:** `show processes memory`  
+**Aruba AOS-CX:** `show system resource-utilization`  
+**Tür:** OKUMA. Çıktı ve komut desteği sürüme göre değişebilir.
+
+### 39. Saat ve NTP durumunu görüntüleme
+**Huawei VRP:** `display clock` ve `display ntp-service status`  
+**Cisco IOS/IOS-XE:** `show clock detail` ve `show ntp status`  
+**Aruba AOS-S/AOS-CX:** `show time` ve `show ntp status`  
+**Tür:** OKUMA. Saat sapması log korelasyonunu bozar.
+
+### 40. VLAN'a göre MAC tablosunu filtreleme
+**Huawei VRP:** `display mac-address vlan 10`  
+**Cisco IOS/IOS-XE:** `show mac address-table vlan 10`  
+**Aruba AOS-S/AOS-CX:** `show mac-address vlan 10`  
+**Tür:** OKUMA. VLAN içindeki uç cihazların öğrenildiği portları bulmaya yardım eder.
