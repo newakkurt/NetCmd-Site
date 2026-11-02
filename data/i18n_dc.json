@@ -5042,5 +5042,19 @@
     "note": "عملية في مركز البيانات: Loglarda link flap ara. القيمة 50 مثال؛ تحقق من الصياغة وفق المنصة والإصدار قبل الإنتاج."
    }
   }
+ },
+ "ui": {
+  "tr": {
+   "home_arch_network": "Network Mimarisi",
+   "home_arch_dc": "Veri Merkezi Mimarisi"
+  },
+  "en": {
+   "home_arch_network": "Network Architecture",
+   "home_arch_dc": "Data Center Architecture"
+  },
+  "ar": {
+   "home_arch_network": "بنية الشبكات",
+   "home_arch_dc": "بنية مركز البيانات"
+  }
  }
 }
