@@ -907,7 +907,7 @@ def build_home(lang, items, cats, paths):
         ("zero-trust-microsegmentation", ["zero trust", "microsegmentation", "micro-segmentation", "dc - security / segmentation", "trustsec", "sase", "identity", "dot1x", "802.1x", "acl", "firewall", "nac"]),
         ("dmz-nac-security", ["dmz", "nac", "fortinac", "ise", "radius", "tacacs", "acl", "firewall", "security", "segmentation", "dot1x", "802.1x"]),
         ("hybrid-cloud-networking", ["hybrid cloud", "cloud", "vpc", "vnet", "vpn", "ipsec", "bgp", "expressroute", "direct connect", "tunnel", "vrf"]),
-        ("industrial-ot-ics", ["industrial", "ot", "ics", "scada", "modbus", "profinet", "dnp3", "idmz", "dmz", "qos", "redundancy", "acl"]),
+        ("industrial-ot-ics", ["industrial", "ics", "scada", "modbus", "profinet", "dnp3", "idmz", "dmz", "qos", "redundancy", "acl"]),
         ("network-automation", ["automation", "ansible", "netconf", "restconf", "api", "python", "snmp", "ssh", "telemetry", "yang", "config backup"]),
         ("storage-san", ["dc - storage / san", "san", "fibre channel", "fiber channel", "fc fabric", "hba", "wwn", "zoning", "iscsi", "nvme", "storage array"]),
     ]
@@ -945,7 +945,7 @@ def build_home(lang, items, cats, paths):
             esc(title), esc(desc),
             ("İlgili komut sayısı" if lang == "tr" else "Related commands" if lang == "en" else "الأوامر المرتبطة"),
             len(matches), cards)
-        write("{}/{}/index.html".format(lang, path), page(lang, page_title, desc, path, body, tech_ld(page_title, desc, lang)))
+        write("{}/{}/index.html".format(lang, path.rstrip("/")), page(lang, page_title, desc, path, body, tech_ld(page_title, desc, lang)))
         paths.add(path)
         topology += ('<a class="topology-card" href="{}"><span class="topology-symbol">⌘</span><h3>{}</h3>'
                      '<pre dir="ltr"><code>{}</code></pre><span class="tag">{} {}</span></a>').format(
