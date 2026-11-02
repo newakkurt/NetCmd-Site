@@ -116,7 +116,7 @@ copy running-config startup-config
 write memory
 ```
 
-**Tür:** OKUMA — show/display referansı
+**Tür:** DEĞİŞİKLİK — yapılandırmayı diske kaydeder
 
 ---
 
