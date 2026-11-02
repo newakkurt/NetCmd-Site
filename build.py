@@ -895,10 +895,62 @@ def build_home(lang, items, cats, paths):
     topology = ('<section class="topology-section" id="network-architectures"><div class="topology-heading"><div><span class="eyebrow">NETWORK DESIGN · 14 MODELS</span>'
                 '<h2>{}</h2><p>{}</p></div></div><div class="topology-grid">').format(
         esc(architecture_title), esc(architecture_desc))
-    for title_map, diagram in architecture_cards:
+    architecture_rules = [
+        ("three-tier-campus", ["vlan", "switching", "spanning tree", "stp", "etherchannel", "lacp", "hsrp", "vrrp", "ospf", "campus", "poe", "access port", "trunk"]),
+        ("collapsed-core", ["vlan", "switching", "spanning tree", "stp", "etherchannel", "lacp", "hsrp", "vrrp", "ospf", "access port", "trunk", "redundancy"]),
+        ("sd-access-fabric", ["sd-access", "fabric", "lisp", "vxlan", "trustsec", "cts", "ise", "dot1x", "802.1x", "radius", "aaa", "sda"]),
+        ("spine-leaf-datacenter", ["dc - spine / leaf", "dc - bgp / ecmp", "dc - switching / fabric", "dc - high availability", "dc - troubleshooting", "spine", "leaf", "ecmp"]),
+        ("vxlan-evpn", ["dc - vxlan / evpn", "dc - bgp / ecmp", "vxlan", "evpn", "vtep", "nve", "anycast gateway"]),
+        ("sd-wan", ["sd-wan", "sdwan", "ipsec", "ike", "tunnel", "overlay", "sla", "dmvpn", "gre"]),
+        ("mpls-service-provider", ["mpls", "ldp", "label", "vpnv4", "vpnv6", "vrf", "segment routing", "isis", "bgp", "service provider"]),
+        ("enterprise-wlan", ["kablosuz ağ", "wlan", "wireless", "wifi", "wi-fi", "access point", "controller", "wlc", "ssid", "radio", "dot1x", "radius"]),
+        ("zero-trust-microsegmentation", ["zero trust", "microsegmentation", "micro-segmentation", "dc - security / segmentation", "trustsec", "sase", "identity", "dot1x", "802.1x", "acl", "firewall", "nac"]),
+        ("dmz-nac-security", ["dmz", "nac", "fortinac", "ise", "radius", "tacacs", "acl", "firewall", "security", "segmentation", "dot1x", "802.1x"]),
+        ("hybrid-cloud-networking", ["hybrid cloud", "cloud", "vpc", "vnet", "vpn", "ipsec", "bgp", "expressroute", "direct connect", "tunnel", "vrf"]),
+        ("industrial-ot-ics", ["industrial", "ot", "ics", "scada", "modbus", "profinet", "dnp3", "idmz", "dmz", "qos", "redundancy", "acl"]),
+        ("network-automation", ["automation", "ansible", "netconf", "restconf", "api", "python", "snmp", "ssh", "telemetry", "yang", "config backup"]),
+        ("storage-san", ["dc - storage / san", "san", "fibre channel", "fiber channel", "fc fabric", "hba", "wwn", "zoning", "iscsi", "nvme", "storage array"]),
+    ]
+    architecture_counts = {}
+    for (title_map, diagram), (arch_slug, terms) in zip(architecture_cards, architecture_rules):
         title = title_map.get(lang, title_map["en"])
-        topology += ('<article class="topology-card"><span class="topology-symbol">⌘</span><h3>{}</h3>'
-                     '<pre dir="ltr"><code>{}</code></pre></article>').format(esc(title), esc(diagram))
+        path = "architecture/{}/".format(arch_slug)
+        matches = []
+        for it in items:
+            hay = " ".join([it.get("slug", ""), it.get("title", ""), it.get("cat", ""), it.get("note", "")] +
+                           [cmd for v in vends(it) for cmd in it[v]["cmds"]]).lower()
+            if any(term in hay for term in terms):
+                matches.append(it)
+        architecture_counts[arch_slug] = len(matches)
+        cards = "".join(
+            '<div class="card cmd-card"><a href="{}">{}</a><small>{} · {}</small></div>'.format(
+                lurl(lang, "cmd/{}/".format(it["slug"])), esc(item_title(it, lang)),
+                esc(it["cisco"]["cmds"][0]), esc(it["huawei"]["cmds"][0]))
+            for it in matches
+        )
+        if not cards:
+            cards = '<p class="lead">Bu mimariyle eşleşen komut bulunamadı.</p>' if lang == "tr" else (
+                '<p class="lead">No matching commands found for this architecture.</p>' if lang == "en" else
+                '<p class="lead">لا توجد أوامر مطابقة لهذه البنية.</p>')
+        desc = {
+            "tr": "{} mimarisi için {} ilgili komut; Cisco, Huawei, Aruba ve desteklenen diğer üreticiler.",
+            "en": "{} architecture: {} related commands across Cisco, Huawei, Aruba and other supported vendors.",
+            "ar": "{}: {} أمرًا مرتبطًا عبر Cisco وHuawei وAruba والموردين الآخرين المدعومين."
+        }[lang].format(title, len(matches))
+        page_title = title + " | NetCmd"
+        body = ('<div class="crumbs"><a href="{}">{}</a> › <a href="{}">{}</a></div>'
+                '<h1>{}</h1><p class="lead">{}</p><div class="note">{}: {}</div>'
+                '<div class="grid">{}</div>').format(
+            lurl(lang), esc(T(lang, "crumb_home")), lurl(lang), esc(architecture_title),
+            esc(title), esc(desc),
+            ("İlgili komut sayısı" if lang == "tr" else "Related commands" if lang == "en" else "الأوامر المرتبطة"),
+            len(matches), cards)
+        write("{}/{}/index.html".format(lang, path), page(lang, page_title, desc, path, body, tech_ld(page_title, desc, lang)))
+        paths.add(path)
+        topology += ('<a class="topology-card" href="{}"><span class="topology-symbol">⌘</span><h3>{}</h3>'
+                     '<pre dir="ltr"><code>{}</code></pre><span class="tag">{} {}</span></a>').format(
+            lurl(lang, path), esc(title), esc(diagram), len(matches),
+            ("komut" if lang == "tr" else "commands" if lang == "en" else "أمر"))
     topology += '</div></section>'
 
     n = len(items)
