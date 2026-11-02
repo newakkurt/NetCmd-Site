@@ -791,6 +791,8 @@ show interface transceiver
 
 ---
 
+
+
 ## Operasyon kontrol listesi
 
 1. Marka, model, işletim sistemi ailesi ve yazılım sürümünü doğrulayın.
