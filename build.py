@@ -777,7 +777,16 @@ def build_home(lang, items, cats, paths):
         for c, l in cats.items()
     )
     sections = ""
+    network_heading_added = False
+    dc_heading_added = False
     for cat, lst in cats.items():
+        if cat.startswith("DC -"):
+            if not dc_heading_added:
+                sections += '<h2 class="architecture-group">{}</h2>'.format(esc(T(lang, "home_arch_dc")))
+                dc_heading_added = True
+        elif not network_heading_added:
+            sections += '<h2 class="architecture-group">{}</h2>'.format(esc(T(lang, "home_arch_network")))
+            network_heading_added = True
         cards = ""
         for i in lst:
             hay = " ".join(
