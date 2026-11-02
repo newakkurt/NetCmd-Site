@@ -1,0 +1,4102 @@
+{
+ "dc-5-01-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "Fibre Channel arayüz durumunu görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "Fibre Channel arayüz durumunu görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "Fibre Channel arayüz durumunu görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-01-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "Fibre Channel arayüz durumunu görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "Fibre Channel arayüz durumunu görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "Fibre Channel arayüz durumunu görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-01-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "Fibre Channel arayüz durumunu görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "Fibre Channel arayüz durumunu görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "Fibre Channel arayüz durumunu görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-01-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "Fibre Channel arayüz durumunu görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "Fibre Channel arayüz durumunu görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "Fibre Channel arayüz durumunu görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-01-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "Fibre Channel arayüz durumunu görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "Fibre Channel arayüz durumunu görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "Fibre Channel arayüz durumunu görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "Fibre Channel arayüz durumunu görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-02-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show log messages"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/log print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC fabric login listesini görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC fabric login listesini görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC fabric login listesini görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-02-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show log messages"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/log print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC fabric login listesini görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC fabric login listesini görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC fabric login listesini görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-02-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show log messages"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/log print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC fabric login listesini görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC fabric login listesini görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC fabric login listesini görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-02-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show log messages"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/log print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC fabric login listesini görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC fabric login listesini görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC fabric login listesini görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-02-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show log messages"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/log print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC fabric login listesini görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC fabric login listesini görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC fabric login listesini görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC fabric login listesini görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-03-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC name server kayıtlarını görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC name server kayıtlarını görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC name server kayıtlarını görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-03-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC name server kayıtlarını görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC name server kayıtlarını görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC name server kayıtlarını görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-03-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC name server kayıtlarını görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC name server kayıtlarını görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC name server kayıtlarını görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-03-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC name server kayıtlarını görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC name server kayıtlarını görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC name server kayıtlarını görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-03-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC name server kayıtlarını görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC name server kayıtlarını görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC name server kayıtlarını görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC name server kayıtlarını görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-04-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC zoning yapılandırmasını görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC zoning yapılandırmasını görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC zoning yapılandırmasını görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-04-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC zoning yapılandırmasını görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC zoning yapılandırmasını görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC zoning yapılandırmasını görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-04-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC zoning yapılandırmasını görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC zoning yapılandırmasını görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC zoning yapılandırmasını görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-04-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC zoning yapılandırmasını görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC zoning yapılandırmasını görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC zoning yapılandırmasını görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-04-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC zoning yapılandırmasını görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC zoning yapılandırmasını görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC zoning yapılandırmasını görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC zoning yapılandırmasını görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-05-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC port hata sayaçlarını görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC port hata sayaçlarını görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC port hata sayaçlarını görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-05-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC port hata sayaçlarını görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC port hata sayaçlarını görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC port hata sayaçlarını görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-05-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC port hata sayaçlarını görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC port hata sayaçlarını görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC port hata sayaçlarını görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-05-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC port hata sayaçlarını görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC port hata sayaçlarını görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC port hata sayaçlarını görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-05-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FC port hata sayaçlarını görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FC port hata sayaçlarını görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FC port hata sayaçlarını görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FC port hata sayaçlarını görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-06-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "iSCSI oturumlarını görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "iSCSI oturumlarını görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "iSCSI oturumlarını görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-06-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "iSCSI oturumlarını görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "iSCSI oturumlarını görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "iSCSI oturumlarını görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-06-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "iSCSI oturumlarını görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "iSCSI oturumlarını görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "iSCSI oturumlarını görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-06-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "iSCSI oturumlarını görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "iSCSI oturumlarını görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "iSCSI oturumlarını görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-06-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "iSCSI oturumlarını görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "iSCSI oturumlarını görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "iSCSI oturumlarını görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "iSCSI oturumlarını görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-07-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FCoE durumunu görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FCoE durumunu görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FCoE durumunu görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-07-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FCoE durumunu görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FCoE durumunu görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FCoE durumunu görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-07-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FCoE durumunu görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FCoE durumunu görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FCoE durumunu görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-07-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FCoE durumunu görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FCoE durumunu görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FCoE durumunu görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-07-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "FCoE durumunu görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "FCoE durumunu görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "FCoE durumunu görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "FCoE durumunu görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-08-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "Storage VLAN üyeliğini kontrol et (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "Storage VLAN üyeliğini kontrol et (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "Storage VLAN üyeliğini kontrol et (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-08-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "Storage VLAN üyeliğini kontrol et (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "Storage VLAN üyeliğini kontrol et (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "Storage VLAN üyeliğini kontrol et (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-08-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "Storage VLAN üyeliğini kontrol et (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "Storage VLAN üyeliğini kontrol et (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "Storage VLAN üyeliğini kontrol et (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-08-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "Storage VLAN üyeliğini kontrol et (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "Storage VLAN üyeliğini kontrol et (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "Storage VLAN üyeliğini kontrol et (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-08-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "Storage VLAN üyeliğini kontrol et (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "Storage VLAN üyeliğini kontrol et (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "Storage VLAN üyeliğini kontrol et (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "Storage VLAN üyeliğini kontrol et (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-09-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "MTU ve jumbo frame kontrolü (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "MTU ve jumbo frame kontrolü (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "MTU ve jumbo frame kontrolü (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-09-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "MTU ve jumbo frame kontrolü (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "MTU ve jumbo frame kontrolü (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "MTU ve jumbo frame kontrolü (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-09-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "MTU ve jumbo frame kontrolü (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "MTU ve jumbo frame kontrolü (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "MTU ve jumbo frame kontrolü (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-09-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "MTU ve jumbo frame kontrolü (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "MTU ve jumbo frame kontrolü (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "MTU ve jumbo frame kontrolü (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-09-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "MTU ve jumbo frame kontrolü (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "MTU ve jumbo frame kontrolü (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "MTU ve jumbo frame kontrolü (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "MTU ve jumbo frame kontrolü (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-10-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "SAN port yapılandırmasını görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "SAN port yapılandırmasını görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "SAN port yapılandırmasını görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-10-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "SAN port yapılandırmasını görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "SAN port yapılandırmasını görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "SAN port yapılandırmasını görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-10-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "SAN port yapılandırmasını görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "SAN port yapılandırmasını görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "SAN port yapılandırmasını görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-10-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "SAN port yapılandırmasını görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "SAN port yapılandırmasını görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "SAN port yapılandırmasını görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-5-10-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show interfaces terse | match fc"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/interface print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "SAN port yapılandırmasını görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "SAN port yapılandırmasını görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "SAN port yapılandırmasını görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "SAN port yapılandırmasını görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ }
+}
