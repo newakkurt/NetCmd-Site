@@ -801,6 +801,19 @@ def build_home(lang, items, cats, paths):
         sections += '<section class="cat"><h2 id="{}">{} <span class="tag">{}</span></h2><div class="grid">{}</div></section>'.format(
             slugify(cat), esc(cat_name(cat, lang)), len(lst), cards
         )
+    if dc_heading_added:
+        topology_cards = [
+            ("topology_spine", "LEAF-01/02  →  SPINE-01/02  →  BORDER LEAF  →  WAN"),
+            ("topology_3tier", "ACCESS  →  AGGREGATION  →  CORE  →  EDGE"),
+            ("topology_evpn", "LEAF VTEP  ⇄  SPINE UNDERLAY  ⇄  LEAF VTEP  |  EVPN control-plane"),
+            ("topology_san", "HOST HBA-A  →  FABRIC-A  →  STORAGE\nHOST HBA-B  →  FABRIC-B  →  STORAGE"),
+        ]
+        sections += '<section class="cat dc-topologies"><h2>{}</h2><p class="lead">{}</p><div class="grid">'.format(
+            esc(T(lang, "topology_title")), esc(T(lang, "topology_desc")))
+        for key, diagram in topology_cards:
+            sections += '<article class="card"><h3>{}</h3><pre dir="ltr"><code>{}</code></pre></article>'.format(
+                esc(T(lang, key)), esc(diagram))
+        sections += '</div></section>'
     n = len(items)
     hero = (
         '<section class="hero"><h1>{h1}</h1><p class="lead">{lead}</p>@@SEARCH@@'
