@@ -4,7 +4,8 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "products/network-command-pack/**"\n      - "products/catalog.json"
+      - "products/network-command-pack/**"
+      - "products/catalog.json"
       - "scripts/build_command_pack.py"
       - ".github/workflows/build-command-pack.yml"
 
