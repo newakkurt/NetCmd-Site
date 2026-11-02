@@ -870,16 +870,29 @@ def build_home(lang, items, cats, paths):
         esc(T(lang, "home_arch_dc")), esc(T(lang, "topology_desc")), dc_count,
         esc(T(lang, "commands_short")), "".join(dc_sections))
 
-    topology_cards = [("topology_3tier", "ACCESS → AGGREGATION → CORE → EDGE"),
-                      ("topology_spine", "LEAF-01/02 → SPINE-01/02 → BORDER LEAF"),
-                      ("topology_evpn", "LEAF VTEP ⇄ SPINE UNDERLAY ⇄ LEAF VTEP"),
-                      ("topology_san", "HOST HBA → FABRIC → STORAGE")]
+    architecture_cards = [
+        ({"tr":"Üç Katmanlı Campus","en":"Three-Tier Campus","ar":"بنية الحرم ثلاثية الطبقات"}, "ACCESS → DISTRIBUTION → CORE → WAN"),
+        ({"tr":"İki Katmanlı / Collapsed Core","en":"Two-Tier / Collapsed Core","ar":"النواة المدمجة ثنائية الطبقات"}, "ACCESS → CORE/DISTRIBUTION → EDGE"),
+        ({"tr":"SD-Access Fabric","en":"SD-Access Fabric","ar":"بنية SD-Access"}, "EDGE NODES ⇄ CONTROL PLANE ⇄ BORDER NODES"),
+        ({"tr":"Spine-Leaf Data Center","en":"Spine-Leaf Data Center","ar":"مركز بيانات Spine-Leaf"}, "LEAF-01/02 ⇄ SPINE-01/02 ⇄ BORDER LEAF"),
+        ({"tr":"VXLAN / EVPN","en":"VXLAN / EVPN","ar":"VXLAN / EVPN"}, "VTEP ⇄ EVPN CONTROL PLANE ⇄ VTEP"),
+        ({"tr":"SD-WAN","en":"SD-WAN","ar":"شبكة SD-WAN"}, "BRANCH EDGE ⇄ SD-WAN OVERLAY ⇄ HUB/CLOUD"),
+        ({"tr":"MPLS / Service Provider","en":"MPLS / Service Provider","ar":"MPLS ومزود الخدمة"}, "CE → PE → P/CORE → PE → CE"),
+        ({"tr":"Kurumsal WLAN","en":"Enterprise WLAN","ar":"شبكة WLAN مؤسسية"}, "CLIENT ⇄ AP ⇄ WLC ⇄ CORE"),
+        ({"tr":"Zero Trust / Mikro Segmentasyon","en":"Zero Trust / Microsegmentation","ar":"انعدام الثقة والتقسيم الدقيق"}, "IDENTITY → POLICY → VERIFY → LEAST PRIVILEGE"),
+        ({"tr":"DMZ / NAC Güvenliği","en":"DMZ / NAC Security","ar":"أمن DMZ وNAC"}, "INTERNET → FW → DMZ → INTERNAL / NAC"),
+        ({"tr":"Hybrid Cloud Networking","en":"Hybrid Cloud Networking","ar":"الشبكات السحابية الهجينة"}, "ON-PREMISES ⇄ VPN/SD-WAN ⇄ CLOUD VPC/VNET"),
+        ({"tr":"Industrial OT / ICS","en":"Industrial OT / ICS","ar":"الشبكات الصناعية OT / ICS"}, "LEVEL 4 IT → IDMZ → LEVEL 3 → OT CELL"),
+        ({"tr":"Network Automation","en":"Network Automation","ar":"أتمتة الشبكات"}, "SOURCE OF TRUTH → API/ANSIBLE → DEVICES → AUDIT"),
+        ({"tr":"Storage SAN","en":"Storage SAN","ar":"شبكة التخزين SAN"}, "HOST HBA → FC FABRIC → STORAGE ARRAY"),
+    ]
     topology = ('<section class="topology-section"><div class="topology-heading"><div><span class="eyebrow">NETWORK DESIGN</span>'
                 '<h2>{}</h2><p>{}</p></div></div><div class="topology-grid">').format(
         esc(T(lang, "topology_title")), esc(T(lang, "topology_desc")))
-    for key, diagram in topology_cards:
+    for title_map, diagram in architecture_cards:
+        title = title_map.get(lang, title_map["en"])
         topology += ('<article class="topology-card"><span class="topology-symbol">⌘</span><h3>{}</h3>'
-                     '<pre dir="ltr"><code>{}</code></pre></article>').format(esc(T(lang, key)), esc(diagram))
+                     '<pre dir="ltr"><code>{}</code></pre></article>').format(esc(title), esc(diagram))
     topology += '</div></section>'
 
     n = len(items)
