@@ -1254,7 +1254,7 @@ def build_indexes(lang, items):
 def _page_entries(lang):
     out = []
     for path, key in (("tools/", "tools_title"), ("assistant/", "as_title"), ("cheatsheet/", "nav_cheat"),
-                      ("community/", "com_title"), ("premium/", "pg_nav"), ("support/", "support_title"), ("projects/", "nav_projects")):
+                      ("community/", "com_title"), ("premium/", "pg_nav"), ("support/", "support_title"), ("projects/", "nav_projects"), ("products/network-command-pack/", "nav_projects")):
         title = T(lang, key)
         out.append({"t": title, "u": lurl(lang, path), "s": title.lower(), "c": "·", "k": ""})
     return out
@@ -1446,6 +1446,7 @@ def main():
         cats = build_categories(lang, items, paths)
         build_home(lang, items, cats, paths)
         build_projects(lang, paths)
+        build_digital_product(lang, paths)
         build_support(lang, paths)
         build_legal(lang, paths)
         build_auth(lang, paths)
