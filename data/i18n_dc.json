@@ -5046,15 +5046,33 @@
  "ui": {
   "tr": {
    "home_arch_network": "Network Mimarisi",
-   "home_arch_dc": "Veri Merkezi Mimarisi"
+   "home_arch_dc": "Veri Merkezi Mimarisi",
+   "topology_title": "Veri Merkezi Topolojileri",
+   "topology_desc": "Yaygın veri merkezi tasarımlarını, bağlantı katmanlarını ve trafik akışını inceleyin.",
+   "topology_spine": "Spine–Leaf Fabric",
+   "topology_3tier": "Klasik 3 Katmanlı Mimari",
+   "topology_evpn": "VXLAN / EVPN Fabric",
+   "topology_san": "Yedekli SAN Fabric"
   },
   "en": {
    "home_arch_network": "Network Architecture",
-   "home_arch_dc": "Data Center Architecture"
+   "home_arch_dc": "Data Center Architecture",
+   "topology_title": "Data Center Topologies",
+   "topology_desc": "Explore common data-center designs, network layers, and traffic paths.",
+   "topology_spine": "Spine–Leaf Fabric",
+   "topology_3tier": "Traditional 3-Tier Architecture",
+   "topology_evpn": "VXLAN / EVPN Fabric",
+   "topology_san": "Redundant SAN Fabric"
   },
   "ar": {
    "home_arch_network": "بنية الشبكات",
-   "home_arch_dc": "بنية مركز البيانات"
+   "home_arch_dc": "بنية مركز البيانات",
+   "topology_title": "طوبولوجيا مراكز البيانات",
+   "topology_desc": "استكشف التصاميم الشائعة وطبقات الشبكة ومسارات حركة المرور.",
+   "topology_spine": "بنية Spine–Leaf",
+   "topology_3tier": "البنية التقليدية ثلاثية الطبقات",
+   "topology_evpn": "بنية VXLAN / EVPN",
+   "topology_san": "بنية SAN احتياطية"
   }
  }
 }
