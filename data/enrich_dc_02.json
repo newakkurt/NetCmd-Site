@@ -1,0 +1,4102 @@
+{
+ "dc-2-01-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP IPv4 özetini görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP IPv4 özetini görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP IPv4 özetini görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-01-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP IPv4 özetini görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP IPv4 özetini görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP IPv4 özetini görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-01-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP IPv4 özetini görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP IPv4 özetini görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP IPv4 özetini görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-01-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP IPv4 özetini görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP IPv4 özetini görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP IPv4 özetini görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-01-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP IPv4 özetini görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP IPv4 özetini görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP IPv4 özetini görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP IPv4 özetini görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-02-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP IPv6 özetini görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP IPv6 özetini görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP IPv6 özetini görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-02-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP IPv6 özetini görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP IPv6 özetini görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP IPv6 özetini görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-02-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP IPv6 özetini görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP IPv6 özetini görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP IPv6 özetini görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-02-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP IPv6 özetini görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP IPv6 özetini görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP IPv6 özetini görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-02-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP IPv6 özetini görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP IPv6 özetini görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP IPv6 özetini görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP IPv6 özetini görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-03-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP belirli komşu detayını görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP belirli komşu detayını görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP belirli komşu detayını görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-03-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP belirli komşu detayını görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP belirli komşu detayını görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP belirli komşu detayını görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-03-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP belirli komşu detayını görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP belirli komşu detayını görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP belirli komşu detayını görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-03-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP belirli komşu detayını görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP belirli komşu detayını görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP belirli komşu detayını görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-03-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP belirli komşu detayını görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP belirli komşu detayını görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP belirli komşu detayını görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP belirli komşu detayını görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-04-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show route 10.0.0.0"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/ip route print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP route tablosunu görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP route tablosunu görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP route tablosunu görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-04-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show route 20.0.0.0"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/ip route print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP route tablosunu görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP route tablosunu görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP route tablosunu görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-04-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show route 30.0.0.0"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/ip route print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP route tablosunu görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP route tablosunu görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP route tablosunu görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-04-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show route 40.0.0.0"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/ip route print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP route tablosunu görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP route tablosunu görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP route tablosunu görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-04-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show route 50.0.0.0"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/ip route print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP route tablosunu görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP route tablosunu görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP route tablosunu görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP route tablosunu görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-05-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP belirli prefix aramasını yap (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP belirli prefix aramasını yap (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP belirli prefix aramasını yap (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-05-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP belirli prefix aramasını yap (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP belirli prefix aramasını yap (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP belirli prefix aramasını yap (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-05-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP belirli prefix aramasını yap (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP belirli prefix aramasını yap (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP belirli prefix aramasını yap (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-05-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP belirli prefix aramasını yap (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP belirli prefix aramasını yap (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP belirli prefix aramasını yap (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-05-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP belirli prefix aramasını yap (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP belirli prefix aramasını yap (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP belirli prefix aramasını yap (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP belirli prefix aramasını yap (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-06-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP policy listesini görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP policy listesini görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP policy listesini görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-06-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP policy listesini görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP policy listesini görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP policy listesini görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-06-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP policy listesini görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP policy listesini görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP policy listesini görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-06-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP policy listesini görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP policy listesini görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP policy listesini görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-06-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP policy listesini görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP policy listesini görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP policy listesini görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP policy listesini görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-07-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP community bilgisini görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP community bilgisini görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP community bilgisini görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-07-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP community bilgisini görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP community bilgisini görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP community bilgisini görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-07-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP community bilgisini görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP community bilgisini görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP community bilgisini görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-07-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP community bilgisini görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP community bilgisini görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP community bilgisini görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-07-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP community bilgisini görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP community bilgisini görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP community bilgisini görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP community bilgisini görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-08-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show route 10.0.0.0"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/ip route print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "ECMP next-hop sayısını görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "ECMP next-hop sayısını görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "ECMP next-hop sayısını görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-08-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show route 20.0.0.0"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/ip route print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "ECMP next-hop sayısını görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "ECMP next-hop sayısını görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "ECMP next-hop sayısını görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-08-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show route 30.0.0.0"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/ip route print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "ECMP next-hop sayısını görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "ECMP next-hop sayısını görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "ECMP next-hop sayısını görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-08-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show route 40.0.0.0"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/ip route print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "ECMP next-hop sayısını görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "ECMP next-hop sayısını görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "ECMP next-hop sayısını görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-08-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show route 50.0.0.0"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/ip route print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "ECMP next-hop sayısını görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "ECMP next-hop sayısını görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "ECMP next-hop sayısını görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "ECMP next-hop sayısını görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-09-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP hata istatistiklerini görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP hata istatistiklerini görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP hata istatistiklerini görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-09-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP hata istatistiklerini görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP hata istatistiklerini görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP hata istatistiklerini görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-09-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP hata istatistiklerini görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP hata istatistiklerini görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP hata istatistiklerini görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-09-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP hata istatistiklerini görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP hata istatistiklerini görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP hata istatistiklerini görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-09-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP hata istatistiklerini görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP hata istatistiklerini görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP hata istatistiklerini görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP hata istatistiklerini görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-10-10": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP yapılandırmasını görüntüle (10): veri merkezi ağında örnek 10 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (10). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP yapılandırmasını görüntüle (10); 10 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (10). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP yapılandırmasını görüntüle (10)؛ القيمة 10 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (10). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-10-20": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP yapılandırmasını görüntüle (20): veri merkezi ağında örnek 20 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (20). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP yapılandırmasını görüntüle (20); 20 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (20). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP yapılandırmasını görüntüle (20)؛ القيمة 20 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (20). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-10-30": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP yapılandırmasını görüntüle (30): veri merkezi ağında örnek 30 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (30). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP yapılandırmasını görüntüle (30); 30 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (30). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP yapılandırmasını görüntüle (30)؛ القيمة 30 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (30). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-10-40": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP yapılandırmasını görüntüle (40): veri merkezi ağında örnek 40 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (40). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP yapılandırmasını görüntüle (40); 40 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (40). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP yapılandırmasını görüntüle (40)؛ القيمة 40 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (40). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ },
+ "dc-2-10-50": {
+  "juniper": {
+   "mode": "Junos operational mode",
+   "cmds": [
+    "show bgp summary"
+   ]
+  },
+  "mikrotik": {
+   "mode": "RouterOS terminal",
+   "cmds": [
+    "/routing bgp session print"
+   ]
+  },
+  "details": {
+   "tr": {
+    "params": [
+     {
+      "p": "Hedef / kapsam",
+      "d": "BGP yapılandırmasını görüntüle (50): veri merkezi ağında örnek 50 kimliğiyle kontrol."
+     },
+     {
+      "p": "Çıktı doğrulama",
+      "d": "Durum, komşuluk, port üyeliği, rota veya sayaçları topoloji temel çizgisiyle karşılaştırın."
+     },
+     {
+      "p": "Platform uyumu",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos ve RouterOS sözdizimi sürüme göre değişebilir; üretici dokümanında doğrulayın."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (50). Salt okunur komutla başlayın ve karşı uç portu, komşu veya segment verisiyle korelasyon kurun.",
+    "mistakes": [
+     "Tek cihaz çıktısından uçtan uca fabric sağlığı sonucu çıkarmak.",
+     "VLAN, VNI, VRF ve subnet kavramlarını karıştırmak.",
+     "Sürümü doğrulamadan komutu üretimde uygulamak."
+    ]
+   },
+   "en": {
+    "params": [
+     {
+      "p": "Target / scope",
+      "d": "BGP yapılandırmasını görüntüle (50); 50 is an example identifier."
+     },
+     {
+      "p": "Output verification",
+      "d": "Compare state, adjacency, port membership, routes or counters with the topology baseline."
+     },
+     {
+      "p": "Platform compatibility",
+      "d": "NX-OS, CloudEngine VRP, AOS-CX, Junos and RouterOS syntax varies by release; verify vendor documentation."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (50). Start with read-only checks and correlate the result with the peer port, neighbor or segment.",
+    "mistakes": [
+     "Inferring end-to-end fabric health from one device output.",
+     "Confusing VLAN, VNI, VRF and subnet concepts.",
+     "Using syntax in production without checking platform and release."
+    ]
+   },
+   "ar": {
+    "params": [
+     {
+      "p": "الهدف / النطاق",
+      "d": "BGP yapılandırmasını görüntüle (50)؛ القيمة 50 مثال توضيحي."
+     },
+     {
+      "p": "التحقق من المخرجات",
+      "d": "قارن الحالة والجوار وعضوية المنافذ والمسارات والعدادات مع خط الأساس."
+     },
+     {
+      "p": "توافق المنصة",
+      "d": "تختلف صياغة NX-OS وCloudEngine VRP وAOS-CX وJunos وRouterOS حسب الإصدار؛ تحقق من وثائق الشركة."
+     }
+    ],
+    "example": "BGP yapılandırmasını görüntüle (50). ابدأ بفحوصات القراءة فقط وقارن النتائج مع المنفذ أو الجار أو الشبكة المقابلة.",
+    "mistakes": [
+     "استنتاج سلامة الشبكة بالكامل من مخرجات جهاز واحد.",
+     "الخلط بين VLAN وVNI وVRF والشبكة الفرعية.",
+     "استخدام الأمر في الإنتاج دون التحقق من المنصة والإصدار."
+    ]
+   }
+  }
+ }
+}
