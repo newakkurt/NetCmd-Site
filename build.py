@@ -779,9 +779,10 @@ def build_projects(lang, paths):
     for p in PROJECTS:
         live = p["status"] == "live"
         badge = '<span class="tag badge-live">{}</span>'.format(esc(T(lang, "status_live"))) if live else '<span class="tag">{}</span>'.format(esc(T(lang, "status_soon")))
-        link = '<p><a class="btn sec" href="{}">{}</a></p>'.format(lurl(lang, p.get("url", "")), esc(T(lang, "open"))) if live else ""
-        cards += '<div class="card"><h3 style="margin:0 0 4px">{} {}</h3><p style="margin:0">{}</p>{}</div>'.format(
-            esc(p["name"][lang]), badge, esc(p["desc"][lang]), link
+        link = '<p><a class="btn sec" href="{}">{}</a></p>'.format(lurl(lang, p.get("url", "")), esc(T(lang, "open"))) if live and p.get("url") else ""
+        price = '<p class="pricebox"><strong>{}30 USD</strong> <span class="tag">PRO</span></p>'.format(esc(T(lang, "pg_price"))) if p.get("price") == "30" else ""
+        cards += '<div class="card"><h3 style="margin:0 0 4px">{} {}</h3><p style="margin:0">{}</p>{}{}</div>'.format(
+            esc(p["name"][lang]), badge, esc(p["desc"][lang]), price, link
         )
     body = '<h1>{}</h1><p class="lead">{}</p><div class="grid">{}</div><p style="margin-top:20px"><a class="btn" href="{}">{}</a> {}</p>'.format(
         esc(T(lang, "projects_title")), esc(T(lang, "projects_lead")), cards,
