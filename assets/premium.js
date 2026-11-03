@@ -43,7 +43,7 @@
   }
   function loadPro(plan, cb) {
     if (P.PREMIUM_LOADED) { cb(true); return; }
-    if (!plan.premium || !plan.sb) { cb(false); return; }
+    if ((!plan.premium && !(plan.products && plan.products.length)) || !plan.sb) { cb(false); return; }
     function fromTable() {
       plan.sb.from('premium_assets').select('code').eq('name', 'plib-premium').maybeSingle().then(function (r) {
         var code = r && r.data && r.data.code;
