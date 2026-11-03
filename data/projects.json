@@ -15,18 +15,83 @@
     }
   },
   {
-    "id": "automation-templates",
+    "id": "config-auditor-pro",
     "status": "soon",
     "url": "",
+    "price": "30",
     "name": {
-      "tr": "Ağ otomasyon şablonları",
-      "en": "Network automation templates",
-      "ar": "قوالب أتمتة الشبكات"
+      "tr": "Config Auditor PRO",
+      "en": "Config Auditor PRO",
+      "ar": "مدقق الإعدادات الاحترافي"
     },
     "desc": {
-      "tr": "Ansible / Netmiko için hazır, hata yönetimli şablon paketleri.",
-      "en": "Ready-made Ansible / Netmiko template packs with error handling.",
-      "ar": "حزم قوالب جاهزة لـ Ansible / Netmiko مع معالجة الأخطاء."
+      "tr": "Cisco, Huawei ve Aruba yapılandırmalarında güvenlik, VLAN, yönetim erişimi ve best-practice kontrolleri; düzeltme önerileri ve dışa aktarılabilir rapor.",
+      "en": "Security, VLAN, management-access and best-practice checks for Cisco, Huawei and Aruba configurations, with remediation guidance and exportable reports.",
+      "ar": "فحوصات الأمان وVLAN وإدارة الوصول وأفضل الممارسات لإعدادات Cisco وHuawei وAruba مع توصيات وتقارير قابلة للتصدير."
+    }
+  },
+  {
+    "id": "topology-discovery-pro",
+    "status": "soon",
+    "url": "",
+    "price": "30",
+    "name": {
+      "tr": "Topology Discovery PRO",
+      "en": "Topology Discovery PRO",
+      "ar": "اكتشاف طوبولوجيا الشبكة الاحترافي"
+    },
+    "desc": {
+      "tr": "CDP/LLDP ve envanter çıktılarından otomatik cihaz-komşuluk haritası, port eşleşmeleri ve eksik bağlantı tespiti.",
+      "en": "Build device-neighbor maps, port mappings and missing-link checks from CDP/LLDP and inventory outputs.",
+      "ar": "إنشاء خرائط الجيران ومطابقة المنافذ واكتشاف الوصلات المفقودة من بيانات CDP/LLDP والمخزون."
+    }
+  },
+  {
+    "id": "troubleshooting-pro",
+    "status": "soon",
+    "url": "",
+    "price": "30",
+    "name": {
+      "tr": "Troubleshooting Assistant PRO",
+      "en": "Troubleshooting Assistant PRO",
+      "ar": "مساعد استكشاف الأخطاء الاحترافي"
+    },
+    "desc": {
+      "tr": "Switch ve router çıktılarından VLAN, STP, routing, DHCP, DNS ve erişim sorunları için kanıta dayalı teşhis adımları.",
+      "en": "Evidence-based diagnostic steps for VLAN, STP, routing, DHCP, DNS and reachability issues from switch and router outputs.",
+      "ar": "خطوات تشخيص قائمة على الأدلة لمشكلات VLAN وSTP والتوجيه وDHCP وDNS والاتصال."
+    }
+  },
+  {
+    "id": "bulk-automation-pro",
+    "status": "soon",
+    "url": "",
+    "price": "30",
+    "name": {
+      "tr": "Bulk Automation PRO",
+      "en": "Bulk Automation PRO",
+      "ar": "الأتمتة الجماعية الاحترافية"
+    },
+    "desc": {
+      "tr": "Çoklu cihaz için Ansible/Netmiko görevleri, DRY-RUN, onay adımı, yedekleme ve işlem sonuçlarının takibi.",
+      "en": "Ansible/Netmiko jobs for multiple devices with dry-run, approval gates, backups and execution tracking.",
+      "ar": "مهام Ansible وNetmiko لأجهزة متعددة مع التشغيل التجريبي والموافقة والنسخ الاحتياطي وتتبع التنفيذ."
+    }
+  },
+  {
+    "id": "network-intelligence-reports-pro",
+    "status": "soon",
+    "url": "",
+    "price": "30",
+    "name": {
+      "tr": "Network Intelligence Reports PRO",
+      "en": "Network Intelligence Reports PRO",
+      "ar": "تقارير ذكاء الشبكة الاحترافية"
+    },
+    "desc": {
+      "tr": "Port, VLAN, envanter, güvenlik ve değişiklik verilerinden aylık yönetim raporları; CSV, Excel ve PDF çıktıları.",
+      "en": "Monthly management reports from port, VLAN, inventory, security and change data, with CSV, Excel and PDF exports.",
+      "ar": "تقارير إدارية شهرية من بيانات المنافذ وVLAN والمخزون والأمان والتغييرات مع تصدير CSV وExcel وPDF."
     }
   }
 ]
