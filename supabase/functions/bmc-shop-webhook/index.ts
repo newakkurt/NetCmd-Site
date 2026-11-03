@@ -101,6 +101,24 @@ Deno.serve(async (req: Request) => {
       console.error("BMC Shop entitlement processing failed", rpc.status, await rpc.text());
       return new Response("processing_failed", { status: 500 });
     }
+
+    // PostgREST returns the scalar text result as JSON. HTTP 200 alone does
+    // not mean an entitlement was granted: the RPC can report a missing account.
+    let outcome: unknown;
+    try {
+      outcome = await rpc.json();
+    } catch {
+      console.error("BMC Shop entitlement RPC returned invalid JSON");
+      return new Response("invalid_processing_response", { status: 502 });
+    }
+    if (outcome === "netcmd_account_email_not_found") {
+      console.warn("BMC Shop buyer must register with the same email before access can be granted");
+      return new Response("buyer_account_not_found", { status: 409 });
+    }
+    if (outcome !== "processed" && outcome !== "duplicate") {
+      console.error("BMC Shop entitlement RPC returned unexpected result", outcome);
+      return new Response("entitlement_not_applied", { status: 500 });
+    }
   }
 
   return new Response("ok", { status: 200 });
