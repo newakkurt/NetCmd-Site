@@ -96,15 +96,11 @@
     sb.auth.getSession().then(function (r) {
       var s = r.data && r.data.session;
       if (!s) { cb({ premium: false, products: [], logged: false, sb: sb }); return; }
-      Promise.all([
-        sb.from('profiles').select('is_premium,premium_until').eq('id', s.user.id).maybeSingle(),
-        sb.from('netcmd_product_entitlements').select('product_slug').eq('user_id', s.user.id).eq('active', true)
-      ]).then(function (results) {
-        var p = results[0], e = results[1], d = p && p.data || {};
+      sb.from('profiles').select('is_premium,premium_until').eq('id', s.user.id).maybeSingle().then(function (p) {
+        var d = p.data || {};
         var ok = !!d.is_premium && (!d.premium_until || new Date(d.premium_until) > new Date());
-        var products = e && !e.error && Array.isArray(e.data) ? e.data.map(function (x) { return x.product_slug; }) : [];
-        cb({ premium: ok, products: products, logged: true, sb: sb, user: s.user });
-      }).catch(function () { cb({ premium: false, products: [], logged: true, sb: sb, user: s.user }); });
+        cb({ premium: ok, logged: true, sb: sb, user: s.user });
+      }).catch(function () { cb({ premium: false, logged: true, sb: sb, user: s.user }); });
     }).catch(function () { cb({ premium: false, products: [], logged: false, unavailable: true }); });
   }
 
@@ -187,18 +183,18 @@
       var vl = parseInt($('t-v').value, 10);
       var res = P.troubleshoot(txt, vl > 0 && vl < 4095 ? vl : 0);
       if (!res.length) { out.innerHTML = '<div class="msg ok">' + esc(T.p_none) + '</div>'; return; }
-      var shown = plan.pro ? res : res.slice(0, 1);
+      var shown = plan.premium ? res : res.slice(0, 1);
       var html = '';
       shown.forEach(function (f) {
         html += '<div class="panel"><h3 style="margin-top:0">' + sevCell(f.sev) + ' ' + esc(T['p_ts_' + f.id + '_t']) + '</h3>' +
           '<p dir="ltr"><code>' + esc(f.ev) + '</code></p>';
-        if (plan.pro) {
+        if (plan.premium) {
           html += '<p><strong>' + esc(T.p_ts_steps) + ':</strong></p><ol>' +
             String(T['p_ts_' + f.id + '_s']).split('|').map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') + '</ol>';
         }
         html += '</div>';
       });
-      if (!plan.pro) html += upsell(res.length > 1 ? fmt(T.p_ts_hidden, { n: res.length - 1 }) : T.p_limited);
+      if (!plan.premium) html += upsell(res.length > 1 ? fmt(T.p_ts_hidden, { n: res.length - 1 }) : T.p_limited);
       out.innerHTML = html;
     });
   }
