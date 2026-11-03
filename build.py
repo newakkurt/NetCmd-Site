@@ -993,8 +993,14 @@ def build_projects(lang, paths):
         badge = '<span class="tag badge-live">{}</span>'.format(esc(T(lang, "status_live"))) if live else '<span class="tag">{}</span>'.format(esc(T(lang, "status_soon")))
         link = '<p><a class="btn sec" href="{}">{}</a></p>'.format(lurl(lang, p.get("url", "")), esc(T(lang, "open"))) if live and p.get("url") else ""
         price = '<p class="pricebox"><strong>{}30 USD</strong> <span class="tag">PRO</span></p>'.format(esc(T(lang, "pg_price"))) if p.get("price") == "30" else ""
-        cards += '<div class="card"><h3 style="margin:0 0 4px">{} {}</h3><p style="margin:0">{}</p>{}{}</div>'.format(
-            esc(p["name"][lang]), badge, esc(p["desc"][lang]), price, link
+        checkout_url = str(p.get("checkout_url", "")).strip()
+        checkout_host = urlparse(checkout_url).hostname or ""
+        checkout = ""
+        if p.get("price") == "30" and checkout_url.startswith("https://") and checkout_host in ("buymeacoffee.com", "www.buymeacoffee.com"):
+            buy_label = {"tr": "Tek seferlik satın al", "en": "Buy once", "ar": "شراء لمرة واحدة"}[lang]
+            checkout = '<p><a class="btn" href="{}" target="_blank" rel="noopener noreferrer">{}</a></p>'.format(esc(checkout_url), esc(buy_label))
+        cards += '<div class="card"><h3 style="margin:0 0 4px">{} {}</h3><p style="margin:0">{}</p>{}{}{}</div>'.format(
+            esc(p["name"][lang]), badge, esc(p["desc"][lang]), price, checkout, link
         )
     body = '<h1>{}</h1><p class="lead">{}</p><div class="grid">{}</div><p style="margin-top:20px"><a class="btn" href="{}">{}</a> {}</p>'.format(
         esc(T(lang, "projects_title")), esc(T(lang, "projects_lead")), cards,
