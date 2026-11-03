@@ -32,15 +32,16 @@ Deno.serve(async (req: Request) => {
   const secret = Deno.env.get("BMC_SHOP_WEBHOOK_SECRET") ?? "";
   const supabaseUrl = Deno.env.get("SUPABASE_URL") ?? "";
   const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
-  const rawMap = Deno.env.get("BMC_SHOP_PRODUCT_MAP") ?? "";
-  if (!secret || !supabaseUrl || !serviceKey || !rawMap) {
+  // Keep the checked-in product map aligned with the five live BMC Shop Extra IDs.
+  const productMap: Record<string, string> = {
+    "594541": "config-auditor-pro",
+    "594543": "topology-discovery-pro",
+    "594544": "troubleshooting-pro",
+    "594545": "bulk-automation-pro",
+    "594548": "network-intelligence-reports-pro",
+  };
+  if (!secret || !supabaseUrl || !serviceKey) {
     return new Response("shop_webhook_not_configured", { status: 503 });
-  }
-
-  let productMap: Record<string, string>;
-  try { productMap = JSON.parse(rawMap); } catch { return new Response("invalid_product_map", { status: 503 }); }
-  if (!productMap || typeof productMap !== "object" || Array.isArray(productMap)) {
-    return new Response("invalid_product_map", { status: 503 });
   }
 
   const raw = await req.text();
