@@ -90,18 +90,18 @@
 
   /* ---------- üyelik durumu ---------- */
   function getPlan(cb) {
-    if (!C.url || !C.key || !window.supabase) { cb({ premium: false, logged: false, unavailable: true }); return; }
+    if (!C.url || !C.key || !window.supabase) { cb({ premium: false, products: [], logged: false, unavailable: true }); return; }
     var sb;
-    try { sb = window.supabase.createClient(C.url, C.key); } catch (e) { cb({ premium: false, logged: false, unavailable: true }); return; }
+    try { sb = window.supabase.createClient(C.url, C.key); } catch (e) { cb({ premium: false, products: [], logged: false, unavailable: true }); return; }
     sb.auth.getSession().then(function (r) {
       var s = r.data && r.data.session;
-      if (!s) { cb({ premium: false, logged: false, sb: sb }); return; }
+      if (!s) { cb({ premium: false, products: [], logged: false, sb: sb }); return; }
       sb.from('profiles').select('is_premium,premium_until').eq('id', s.user.id).maybeSingle().then(function (p) {
         var d = p.data || {};
         var ok = !!d.is_premium && (!d.premium_until || new Date(d.premium_until) > new Date());
         cb({ premium: ok, logged: true, sb: sb, user: s.user });
       }).catch(function () { cb({ premium: false, logged: true, sb: sb, user: s.user }); });
-    }).catch(function () { cb({ premium: false, logged: false, unavailable: true }); });
+    }).catch(function () { cb({ premium: false, products: [], logged: false, unavailable: true }); });
   }
 
   function planBar(plan) {
@@ -394,8 +394,10 @@
         app.innerHTML = '<div class="msg err">' + esc(String(e && e.message || e)) + '</div>';
       }
     }
+    // Until each product has a physically separate module and matching RLS policy,
+    // one-time Shop entitlements must not download the shared Premium bundle.
     if (tool === 'premium' || !plan.premium) { plan.pro = false; go(); return; }
     app.innerHTML = '<div class="note">' + esc(T.p_pro_loading) + '</div>';
-    loadPro(plan, function (ok) { plan.pro = ok; go(); });
+    loadPro(plan, function (ok) { plan.pro = !!ok; go(); });
   });
 })();
