@@ -28,7 +28,8 @@
       "tr": "Cisco, Huawei ve Aruba yapılandırmalarında güvenlik, VLAN, yönetim erişimi ve best-practice kontrolleri; düzeltme önerileri ve dışa aktarılabilir rapor.",
       "en": "Security, VLAN, management-access and best-practice checks for Cisco, Huawei and Aruba configurations, with remediation guidance and exportable reports.",
       "ar": "فحوصات الأمان وVLAN وإدارة الوصول وأفضل الممارسات لإعدادات Cisco وHuawei وAruba مع توصيات وتقارير قابلة للتصدير."
-    }
+    },
+    "checkout_url": ""
   },
   {
     "id": "topology-discovery-pro",
@@ -44,7 +45,8 @@
       "tr": "CDP/LLDP ve envanter çıktılarından otomatik cihaz-komşuluk haritası, port eşleşmeleri ve eksik bağlantı tespiti.",
       "en": "Build device-neighbor maps, port mappings and missing-link checks from CDP/LLDP and inventory outputs.",
       "ar": "إنشاء خرائط الجيران ومطابقة المنافذ واكتشاف الوصلات المفقودة من بيانات CDP/LLDP والمخزون."
-    }
+    },
+    "checkout_url": ""
   },
   {
     "id": "troubleshooting-pro",
@@ -60,7 +62,8 @@
       "tr": "Switch ve router çıktılarından VLAN, STP, routing, DHCP, DNS ve erişim sorunları için kanıta dayalı teşhis adımları.",
       "en": "Evidence-based diagnostic steps for VLAN, STP, routing, DHCP, DNS and reachability issues from switch and router outputs.",
       "ar": "خطوات تشخيص قائمة على الأدلة لمشكلات VLAN وSTP والتوجيه وDHCP وDNS والاتصال."
-    }
+    },
+    "checkout_url": ""
   },
   {
     "id": "bulk-automation-pro",
@@ -76,7 +79,8 @@
       "tr": "Çoklu cihaz için Ansible/Netmiko görevleri, DRY-RUN, onay adımı, yedekleme ve işlem sonuçlarının takibi.",
       "en": "Ansible/Netmiko jobs for multiple devices with dry-run, approval gates, backups and execution tracking.",
       "ar": "مهام Ansible وNetmiko لأجهزة متعددة مع التشغيل التجريبي والموافقة والنسخ الاحتياطي وتتبع التنفيذ."
-    }
+    },
+    "checkout_url": ""
   },
   {
     "id": "network-intelligence-reports-pro",
@@ -92,6 +96,7 @@
       "tr": "Port, VLAN, envanter, güvenlik ve değişiklik verilerinden aylık yönetim raporları; CSV, Excel ve PDF çıktıları.",
       "en": "Monthly management reports from port, VLAN, inventory, security and change data, with CSV, Excel and PDF exports.",
       "ar": "تقارير إدارية شهرية من بيانات المنافذ وVLAN والمخزون والأمان والتغييرات مع تصدير CSV وExcel وPDF."
-    }
+    },
+    "checkout_url": ""
   }
 ]
