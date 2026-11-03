@@ -43,7 +43,7 @@
   }
   function loadPro(plan, cb) {
     if (P.PREMIUM_LOADED) { cb(true); return; }
-    if ((!plan.premium && !(plan.products && plan.products.length)) || !plan.sb) { cb(false); return; }
+    if (!plan.premium || !plan.sb) { cb(false); return; }
     function fromTable() {
       plan.sb.from('premium_assets').select('code').eq('name', 'plib-premium').maybeSingle().then(function (r) {
         var code = r && r.data && r.data.code;
@@ -398,16 +398,10 @@
         app.innerHTML = '<div class="msg err">' + esc(String(e && e.message || e)) + '</div>';
       }
     }
-    var productForTool = {
-      aud: 'config-auditor-pro',
-      topo: 'topology-discovery-pro',
-      trouble: 'troubleshooting-pro',
-      bulk: 'bulk-automation-pro',
-      coll: 'network-intelligence-reports-pro'
-    };
-    var ownsTool = !!(productForTool[tool] && plan.products.indexOf(productForTool[tool]) !== -1);
-    if (tool === 'premium' || (!plan.premium && !plan.products.length)) { plan.pro = false; go(); return; }
+    // Until each product has a physically separate module and matching RLS policy,
+    // one-time Shop entitlements must not download the shared Premium bundle.
+    if (tool === 'premium' || !plan.premium) { plan.pro = false; go(); return; }
     app.innerHTML = '<div class="note">' + esc(T.p_pro_loading) + '</div>';
-    loadPro(plan, function (ok) { plan.pro = !!ok && (plan.premium || ownsTool); go(); });
+    loadPro(plan, function (ok) { plan.pro = !!ok; go(); });
   });
 })();
