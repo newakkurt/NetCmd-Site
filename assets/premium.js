@@ -90,18 +90,22 @@
 
   /* ---------- üyelik durumu ---------- */
   function getPlan(cb) {
-    if (!C.url || !C.key || !window.supabase) { cb({ premium: false, logged: false, unavailable: true }); return; }
+    if (!C.url || !C.key || !window.supabase) { cb({ premium: false, products: [], logged: false, unavailable: true }); return; }
     var sb;
-    try { sb = window.supabase.createClient(C.url, C.key); } catch (e) { cb({ premium: false, logged: false, unavailable: true }); return; }
+    try { sb = window.supabase.createClient(C.url, C.key); } catch (e) { cb({ premium: false, products: [], logged: false, unavailable: true }); return; }
     sb.auth.getSession().then(function (r) {
       var s = r.data && r.data.session;
-      if (!s) { cb({ premium: false, logged: false, sb: sb }); return; }
-      sb.from('profiles').select('is_premium,premium_until').eq('id', s.user.id).maybeSingle().then(function (p) {
-        var d = p.data || {};
+      if (!s) { cb({ premium: false, products: [], logged: false, sb: sb }); return; }
+      Promise.all([
+        sb.from('profiles').select('is_premium,premium_until').eq('id', s.user.id).maybeSingle(),
+        sb.from('netcmd_product_entitlements').select('product_slug').eq('user_id', s.user.id).eq('active', true)
+      ]).then(function (results) {
+        var p = results[0], e = results[1], d = p && p.data || {};
         var ok = !!d.is_premium && (!d.premium_until || new Date(d.premium_until) > new Date());
-        cb({ premium: ok, logged: true, sb: sb, user: s.user });
-      }).catch(function () { cb({ premium: false, logged: true, sb: sb, user: s.user }); });
-    }).catch(function () { cb({ premium: false, logged: false, unavailable: true }); });
+        var products = e && !e.error && Array.isArray(e.data) ? e.data.map(function (x) { return x.product_slug; }) : [];
+        cb({ premium: ok, products: products, logged: true, sb: sb, user: s.user });
+      }).catch(function () { cb({ premium: false, products: [], logged: true, sb: sb, user: s.user }); });
+    }).catch(function () { cb({ premium: false, products: [], logged: false, unavailable: true }); });
   }
 
   function planBar(plan) {
@@ -183,18 +187,18 @@
       var vl = parseInt($('t-v').value, 10);
       var res = P.troubleshoot(txt, vl > 0 && vl < 4095 ? vl : 0);
       if (!res.length) { out.innerHTML = '<div class="msg ok">' + esc(T.p_none) + '</div>'; return; }
-      var shown = plan.premium ? res : res.slice(0, 1);
+      var shown = plan.pro ? res : res.slice(0, 1);
       var html = '';
       shown.forEach(function (f) {
         html += '<div class="panel"><h3 style="margin-top:0">' + sevCell(f.sev) + ' ' + esc(T['p_ts_' + f.id + '_t']) + '</h3>' +
           '<p dir="ltr"><code>' + esc(f.ev) + '</code></p>';
-        if (plan.premium) {
+        if (plan.pro) {
           html += '<p><strong>' + esc(T.p_ts_steps) + ':</strong></p><ol>' +
             String(T['p_ts_' + f.id + '_s']).split('|').map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') + '</ol>';
         }
         html += '</div>';
       });
-      if (!plan.premium) html += upsell(res.length > 1 ? fmt(T.p_ts_hidden, { n: res.length - 1 }) : T.p_limited);
+      if (!plan.pro) html += upsell(res.length > 1 ? fmt(T.p_ts_hidden, { n: res.length - 1 }) : T.p_limited);
       out.innerHTML = html;
     });
   }
@@ -394,8 +398,16 @@
         app.innerHTML = '<div class="msg err">' + esc(String(e && e.message || e)) + '</div>';
       }
     }
-    if (tool === 'premium' || !plan.premium) { plan.pro = false; go(); return; }
+    var productForTool = {
+      aud: 'config-auditor-pro',
+      topo: 'topology-discovery-pro',
+      trouble: 'troubleshooting-pro',
+      bulk: 'bulk-automation-pro',
+      coll: 'network-intelligence-reports-pro'
+    };
+    var ownsTool = !!(productForTool[tool] && plan.products.indexOf(productForTool[tool]) !== -1);
+    if (tool === 'premium' || (!plan.premium && !plan.products.length)) { plan.pro = false; go(); return; }
     app.innerHTML = '<div class="note">' + esc(T.p_pro_loading) + '</div>';
-    loadPro(plan, function (ok) { plan.pro = ok; go(); });
+    loadPro(plan, function (ok) { plan.pro = !!ok && (plan.premium || ownsTool); go(); });
   });
 })();
