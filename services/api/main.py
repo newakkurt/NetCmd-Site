@@ -128,6 +128,30 @@ async def current_user(authorization: str | None = Header(default=None)) -> dict
     return {"id": user_id, "email": claims.get("email")}
 
 
+def premium_is_active(profile: dict[str, Any] | None) -> bool:
+    if not profile or not profile.get("is_premium"):
+        return False
+    until = profile.get("premium_until")
+    if not until:
+        return True
+    try:
+        expiry = datetime.fromisoformat(str(until).replace("Z", "+00:00"))
+        if expiry.tzinfo is None:
+            expiry = expiry.replace(tzinfo=timezone.utc)
+        return expiry > datetime.now(timezone.utc)
+    except (TypeError, ValueError):
+        return False
+
+
+async def require_active_premium(user_id: str) -> None:
+    rows = await supabase_request(
+        "GET", "profiles",
+        params={"select": "is_premium,premium_until", "id": f"eq.{user_id}", "limit": "1"},
+    )
+    if not rows or not premium_is_active(rows[0]):
+        raise HTTPException(status_code=403, detail="active_premium_required")
+
+
 def key_digest(raw_key: str) -> str:
     if not API_KEY_PEPPER:
         raise HTTPException(status_code=503, detail="api_key_service_not_configured")
@@ -150,6 +174,7 @@ async def api_key_context(x_api_key: str | None = Header(default=None)) -> dict[
     )
     if not rows or rows[0].get("revoked_at") is not None:
         raise HTTPException(status_code=401, detail="invalid_api_key")
+    await require_active_premium(str(rows[0]["user_id"]))
     return rows[0]
 
 
@@ -172,6 +197,7 @@ async def me(user: dict[str, Any] = Depends(current_user)) -> dict[str, Any]:
 async def create_api_key(
     data: ApiKeyCreate, user: dict[str, Any] = Depends(current_user)
 ) -> dict[str, str]:
+    await require_active_premium(user["id"])
     raw = "nc_live_" + secrets.token_urlsafe(32)
     prefix = raw[:16]
     rows = await supabase_request(
