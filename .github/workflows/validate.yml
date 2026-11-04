@@ -49,5 +49,11 @@ jobs:
       - name: Run network logic tests
         run: node --test tests/*.test.cjs
 
+      - name: Test SaaS API foundation
+        run: |
+          python3 -m pip install -r services/api/requirements.txt
+          cd services/api
+          python3 -m unittest discover -s . -p "test_*.py" -v
+
       - name: Validate generated sitemap XML
         run: python3 -c "import xml.etree.ElementTree as ET; ET.parse('dist/sitemap.xml')"
