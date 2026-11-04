@@ -233,18 +233,9 @@ async def create_job(
     if len(str(data.payload).encode("utf-8")) > 24_000:
         raise HTTPException(status_code=413, detail="payload_too_large")
     product_slug = JOB_PRODUCT[data.kind]
-    entitlements = await supabase_request(
-        "GET", "netcmd_product_entitlements",
-        params={
-            "select": "id",
-            "user_id": f"eq.{key['user_id']}",
-            "product_slug": f"eq.{product_slug}",
-            "active": "eq.true",
-            "limit": "1",
-        },
-    )
-    if not entitlements:
-        raise HTTPException(status_code=403, detail="active_product_entitlement_required")
+    # api_key_context already requires an active NetCmd PRO membership.
+    # Membership grants the full PRO suite; individual product entitlements
+    # are handled by the Edge Function path for separately sold add-ons.
     rows = await supabase_request(
         "POST", "netcmd_automation_jobs?select=id,status",
         body={
