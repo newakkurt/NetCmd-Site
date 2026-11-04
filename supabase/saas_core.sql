@@ -20,6 +20,10 @@ create table if not exists public.netcmd_automation_jobs (
   user_id uuid not null references auth.users(id) on delete cascade,
   api_key_id uuid references public.netcmd_api_keys(id) on delete set null,
   request_id text check (request_id is null or char_length(request_id) <= 80),
+  product_slug text not null check (product_slug in (
+    'config-auditor-pro','topology-discovery-pro','troubleshooting-pro',
+    'bulk-automation-pro','network-intelligence-reports-pro'
+  )),
   job_kind text not null check (job_kind in (
     'config_audit','topology_discovery','troubleshooting',
     'bulk_automation','network_report','snmp_poll'
@@ -72,3 +76,61 @@ comment on table public.netcmd_automation_jobs is
   'Backend-only job queue. A separately isolated worker must claim and execute allow-listed job kinds.';
 comment on table public.netcmd_api_usage is
   'Backend-only API usage audit trail; apply quotas/rate limits at the API gateway or worker layer.';
+
+
+-- Atomic queue claim: only service_role may claim jobs; SKIP LOCKED prevents
+-- two workers from processing the same queued row.
+create or replace function public.netcmd_claim_job()
+returns setof public.netcmd_automation_jobs
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  return query
+  with next_job as (
+    select id
+    from public.netcmd_automation_jobs
+    where status = 'queued'
+    order by created_at
+    for update skip locked
+    limit 1
+  )
+  update public.netcmd_automation_jobs j
+     set status = 'running', started_at = now(), updated_at = now()
+    from next_job
+   where j.id = next_job.id
+  returning j.*;
+end;
+$$;
+
+create or replace function public.netcmd_finish_job(
+  p_job_id uuid,
+  p_status text,
+  p_result jsonb default null,
+  p_error text default null
+)
+returns boolean
+language plpgsql
+security definer
+set search_path = public
+as $$
+begin
+  if p_status not in ('succeeded','failed','cancelled') then
+    raise exception 'invalid terminal status';
+  end if;
+  update public.netcmd_automation_jobs
+     set status = p_status,
+         result = p_result,
+         error = left(p_error, 1000),
+         finished_at = now(),
+         updated_at = now()
+   where id = p_job_id and status = 'running';
+  return found;
+end;
+$$;
+
+revoke all on function public.netcmd_claim_job() from public, anon, authenticated;
+revoke all on function public.netcmd_finish_job(uuid,text,jsonb,text) from public, anon, authenticated;
+grant execute on function public.netcmd_claim_job() to service_role;
+grant execute on function public.netcmd_finish_job(uuid,text,jsonb,text) to service_role;
