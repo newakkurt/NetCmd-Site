@@ -726,7 +726,7 @@ def page(lang, title, desc, path, body, jsonld=None, noindex=False, head_extra="
         header=header(lang, path), body=body, site=esc(SITE),
         footer=esc(T(lang, "footer")), upd=esc(T(lang, "updated")), today=TODAY,
         nav_js=NAV_SWAP_JS, script=script,
-        flinks='<a href="{}">{}</a> · <a href="{}">{}</a>'.format(lurl(lang, "privacy/"), esc(T(lang, "nav_privacy")), lurl(lang, "terms/"), esc(T(lang, "nav_terms"))),
+        flinks=" · ".join('<a href="{}">{}</a>'.format(lurl(lang, sl + "/"), esc(T(lang, k))) for sl, k in (("privacy", "nav_privacy"), ("terms", "nav_terms"), ("refund", "nav_refund"), ("distance-sales", "nav_dsales"))),
         bgjs='<script src="{}/assets/ui.js?v={}" data-idx="{}/assets/search-{}.json" data-url="{}" data-key="{}" defer></script><script src="{}/assets/bg.js?v={}" defer></script><script src="{}/assets/fav.js?v={}" data-url="{}" data-key="{}" data-sb="{}/assets/vendor/supabase.js" defer></script>'.format(
             BASE_PATH, TODAY, BASE_PATH, lang, esc(SITECFG.get("supabase_url", "")), esc(SITECFG.get("supabase_key", "")), BASE_PATH, TODAY, BASE_PATH, TODAY, esc(SITECFG.get("supabase_url", "")), esc(SITECFG.get("supabase_key", "")), BASE_PATH),
     )
@@ -996,13 +996,29 @@ def build_home(lang, items, cats, paths):
     write("{}/index.html".format(lang), page(lang, T(lang, "home_title"), T(lang, "home_desc"), "", body, script=script))
     paths.add("")
 
+def waitlist_block(lang, product="all"):
+    """Bekleme listesi formu (assets/waitlist.js; Supabase REST insert-only)."""
+    cfg = {
+        "url": SITECFG.get("supabase_url", ""), "key": SITECFG.get("supabase_key", ""), "lang": lang, "product": product,
+        "ok": T(lang, "wl_ok"), "err": T(lang, "wl_err"),
+    }
+    data = json.dumps(cfg, ensure_ascii=False).replace("</", "<\\/")
+    return (
+        '<div class="panel"><h2>{t}</h2><p>{l}</p>'
+        '<form id="wl-form" class="box" style="margin:0;padding:0;border:0;background:none"><label>{e}<input id="wl-email" type="email" required maxlength="160" autocomplete="email"></label>'
+        '<p><button class="btn" type="submit">{b}</button></p><div id="wl-msg" role="status"></div></form></div>'
+        '<script id="wl-data" type="application/json">{d}</script><script src="{base}/assets/waitlist.js?v={today}" defer></script>'
+    ).format(t=esc(T(lang, "wl_title")), l=esc(T(lang, "wl_lead")), e=esc(T(lang, "wl_email")), b=esc(T(lang, "wl_btn")),
+             d=data, base=BASE_PATH, today=TODAY)
+
+
 def build_projects(lang, paths):
     cards = ""
+    site_price = str(SITECFG.get("premium_price", "")).strip()
     for p in PROJECTS:
         live = p["status"] == "live"
         badge = '<span class="tag badge-live">{}</span>'.format(esc(T(lang, "status_live"))) if live else '<span class="tag">{}</span>'.format(esc(T(lang, "status_soon")))
         link = '<p><a class="btn sec" href="{}">{}</a></p>'.format(lurl(lang, p.get("url", "")), esc(T(lang, "open"))) if live and p.get("url") else ""
-        site_price = str(SITECFG.get("premium_price", "")).strip()
         price = ""
         if p.get("price") and site_price:
             price = '<p class="pricebox"><strong>{}{}{}</strong> <span class="tag">PRO</span> <span class="tag">{}</span></p>'.format(
@@ -1015,15 +1031,55 @@ def build_projects(lang, paths):
             checkout = '<p><a class="btn" href="{}" target="_blank" rel="noopener noreferrer">{}</a></p>'.format(esc(checkout_url), esc(buy_label))
         if p.get("price") and not checkout:
             checkout = '<p><a class="btn" href="{}">{}</a></p>'.format(lurl(lang, "premium/"), esc(T(lang, "p_upgrade")))
-        cards += '<div class="card"><h3 style="margin:0 0 4px">{} {}</h3><p style="margin:0">{}</p>{}{}{}</div>'.format(
-            esc(p["name"][lang]), badge, esc(p["desc"][lang]), price, checkout, link
+        detail = ""
+        if p.get("features"):
+            detail = '<p><a href="{}">{} →</a></p>'.format(lurl(lang, "projects/{}/".format(p["id"])), esc(T(lang, "pd_details")))
+        cards += '<div class="card"><h3 style="margin:0 0 4px">{} {}</h3><p style="margin:0">{}</p>{}{}{}{}</div>'.format(
+            esc(p["name"][lang]), badge, esc(p["desc"][lang]), price, checkout, link, detail
         )
-    body = '<h1>{}</h1><p class="lead">{}</p><div class="grid">{}</div><p style="margin-top:20px"><a class="btn" href="{}">{}</a> {}</p>'.format(
-        esc(T(lang, "projects_title")), esc(T(lang, "projects_lead")), cards,
+    body = '<h1>{}</h1><p class="lead">{}</p><div class="grid">{}</div>{}<p style="margin-top:20px"><a class="btn" href="{}">{}</a> {}</p>'.format(
+        esc(T(lang, "projects_title")), esc(T(lang, "projects_lead")), cards, waitlist_block(lang),
         lurl(lang, "signup/"), esc(T(lang, "nav_signup")), esc(T(lang, "projects_cta")),
     )
     write("{}/projects/index.html".format(lang), page(lang, T(lang, "projects_title") + " | " + SITE, T(lang, "projects_lead"), "projects/", body))
     paths.add("projects/")
+    for p in PROJECTS:
+        if p.get("features"):
+            build_project_detail(lang, p, paths)
+
+
+def build_project_detail(lang, p, paths):
+    name, desc = p["name"][lang], p["desc"][lang]
+    site_price = str(SITECFG.get("premium_price", "")).strip()
+    cur = esc(SITECFG.get("premium_currency", "$"))
+    price = ""
+    if p.get("price") and site_price:
+        price = '<p class="pricebox"><strong>{}{}{}</strong> <span class="tag">PRO</span> <span class="tag">{}</span></p>'.format(
+            esc(T(lang, "pg_price")) + " ", cur, esc(site_price), esc(T(lang, "pg_interval")))
+    feats = "".join("<li>{}</li>".format(esc(f)) for f in p["features"][lang])
+    faq = "".join(
+        "<details><summary>{}</summary><p>{}</p></details>".format(esc(T(lang, q)), esc(T(lang, a)))
+        for q, a in (("pd_faq_pay_q", "pd_faq_pay_a"), ("pd_faq_data_q", "pd_faq_data_a"), ("pd_faq_cancel_q", "pd_faq_cancel_a")))
+    open_btn = '<a class="btn sec" href="{}">{}</a> '.format(lurl(lang, p["url"]), esc(T(lang, "open"))) if p.get("url") else ""
+    body = (
+        '<div class="crumbs"><a href="{back}">{back_t}</a></div>'
+        '<h1>{name} <span class="badge">PRO</span></h1><p class="lead">{desc}</p>'
+        '<h2>{aud_t}</h2><p>{aud}</p><h2>{feat_t}</h2><ul>{feats}</ul>{price}'
+        '<p><a class="btn" href="{prem}">{upg}</a> {open_btn}</p>'
+        '<p class="note">{refund}</p>'
+        '<p><a href="{refund_u}">{refund_t}</a> · <a href="{ds_u}">{ds_t}</a></p>'
+        '<h2>{faq_t}</h2>{faq}{wl}'
+    ).format(
+        back=lurl(lang, "projects/"), back_t=esc(T(lang, "pd_back")), name=esc(name), desc=esc(desc),
+        aud_t=esc(T(lang, "pd_audience")), aud=esc(p["audience"][lang]), feat_t=esc(T(lang, "pd_features")), feats=feats, price=price,
+        prem=lurl(lang, "premium/"), upg=esc(T(lang, "p_upgrade")), open_btn=open_btn,
+        refund=esc(T(lang, "p_iban_refund")), refund_u=lurl(lang, "refund/"), refund_t=esc(T(lang, "nav_refund")),
+        ds_u=lurl(lang, "distance-sales/"), ds_t=esc(T(lang, "nav_dsales")),
+        faq_t=esc(T(lang, "pd_faq")), faq=faq, wl=waitlist_block(lang, p["id"]),
+    )
+    path = "projects/{}/".format(p["id"])
+    write("{}/{}index.html".format(lang, path), page(lang, name + " | " + SITE, desc, path, body, tech_ld(name, desc, lang)))
+    paths.add(path)
 
 
 def iban_valid(iban):
@@ -1035,20 +1091,46 @@ def iban_valid(iban):
     return int("".join(str(int(c, 36)) for c in r)) % 97 == 1
 
 
+def iban_cfg():
+    """IBAN bilgisi repoya girmez: Render ortam değişkenlerinden (BANK_IBAN, BANK_HOLDER, BANK_NAME) okunur."""
+    iban = os.environ.get("BANK_IBAN", "").replace(" ", "").upper()
+    holder = os.environ.get("BANK_HOLDER", "").strip()
+    if not iban or not holder:
+        return None
+    if not iban_valid(iban):
+        log.error("BANK_IBAN geçersiz (mod-97 doğrulaması başarısız); IBAN paneli yayınlanmayacak")
+        return None
+    spaced = " ".join(iban[i:i + 4] for i in range(0, len(iban), 4))
+    return {
+        "iban": spaced, "holder": holder, "bank": os.environ.get("BANK_NAME", "").strip(),
+        "try": str(SITECFG.get("premium_price_try", "")).strip(),
+        "usd": str(SITECFG.get("premium_price", "")).strip(),
+    }
+
+
+def seller_text(lang):
+    """Satıcı bilgisi: yalnızca dolu alanlar yayınlanır (boş placeholder yayınlanmaz)."""
+    sc = SITECFG.get("seller") or {}
+    labels = {
+        "tr": (("name", "Ad/Unvan"), ("address", "Adres"), ("tax_office", "Vergi dairesi"), ("tax_no", "Vergi/TCKN no"), ("phone", "Telefon")),
+        "en": (("name", "Name"), ("address", "Address"), ("tax_office", "Tax office"), ("tax_no", "Tax/ID no"), ("phone", "Phone")),
+        "ar": (("name", "الاسم"), ("address", "العنوان"), ("tax_office", "الدائرة الضريبية"), ("tax_no", "الرقم الضريبي"), ("phone", "الهاتف")),
+    }[lang]
+    parts = ["{}: {}".format(lab, str(sc.get(k, "")).strip()) for k, lab in labels if str(sc.get(k, "")).strip()]
+    em = SITECFG.get("contact_email", "").strip()
+    if em:
+        parts.append("E-posta: " + em if lang == "tr" else ("Email: " + em if lang == "en" else "البريد: " + em))
+    return "; ".join(parts)
+
+
 def build_legal(lang, paths):
     legal = load_json("legal.json")
     em = SITECFG.get("contact_email", "").strip()
     contact = '<a href="mailto:{0}">{0}</a>'.format(esc(em)) if em else esc(T(lang, "legal_contact_fallback"))
-    sl = SITECFG.get("seller", {}) or {}
-    lbl = {"tr": ("Vergi Dairesi", "Vergi No", "Adres"), "en": ("Tax office", "Tax no.", "Address"), "ar": ("مكتب الضرائب", "الرقم الضريبي", "العنوان")}[lang]
-    parts = [str(sl.get("name", "")).strip()]
-    for lab, key in zip(lbl, ("tax_office", "tax_no", "address")):
-        if str(sl.get(key, "")).strip():
-            parts.append("{}: {}".format(lab, str(sl[key]).strip()))
-    seller = ", ".join(x for x in parts if x)
-    for slug in ("privacy", "terms"):
+    seller = esc(seller_text(lang))
+    for slug in ("privacy", "terms", "refund", "distance-sales"):
         d = legal[slug][lang]
-        secs = "".join("<h2>{}</h2><p>{}</p>".format(esc(h), esc(x).replace("{seller}", esc(seller)).replace("{contact}", contact)) for h, x in d["sections"])
+        secs = "".join("<h2>{}</h2><p>{}</p>".format(esc(h), esc(x).replace("{contact}", contact).replace("{seller}", seller)) for h, x in d["sections"])
         body = "<h1>{}</h1><p class=\"lead\">{}</p>{}".format(esc(d["title"]), esc(d["lead"]), secs)
         write("{}/{}/index.html".format(lang, slug), page(lang, d["title"] + " | " + SITE, d["lead"], slug + "/", body))
         paths.add(slug + "/")
@@ -1086,6 +1168,8 @@ def premium_script(lang, tool):
         "url": SITECFG.get("supabase_url", ""), "key": SITECFG.get("supabase_key", ""),
         "loginPath": lurl(lang, "login/"), "resetPath": lurl(lang, "reset/"), "signupPath": lurl(lang, "signup/"), "signupText": T(lang, "nav_signup"),
         "premiumPath": lurl(lang, "premium/"), "bmcUrl": SITECFG.get("bmc_url", ""),
+        "refundPath": lurl(lang, "refund/"), "dsalesPath": lurl(lang, "distance-sales/"),
+        "iban": iban_cfg(),
     }
     payload = json.dumps({"t": pt, "cfg": cfg}, ensure_ascii=False).replace("</", "<\\/")
     return (
@@ -1508,6 +1592,13 @@ def main():
         # arama motoru için: auth sayfaları (noindex) sitemap dışında
         sitemap_paths |= {p for p in paths if p not in ("signup/", "login/", "account/", "forgot/", "reset/") and p not in NOINDEX_PATHS}
     write_meta(sitemap_paths)
+    if not SITECFG.get("contact_email", "").strip():
+        log.warning("site.json contact_email boş: İade/Mesafeli Satış sayfalarında iletişim adresi görünmüyor (satış öncesi doldurun)")
+    sc = SITECFG.get("seller") or {}
+    if not (str(sc.get("address", "")).strip() and str(sc.get("tax_no", "")).strip()):
+        log.warning("site.json seller.address / seller.tax_no boş: Mesafeli Satış satıcı bilgisi eksik (satış öncesi doldurun)")
+    if not iban_cfg():
+        log.warning("IBAN paneli kapalı: BANK_IBAN ve BANK_HOLDER ortam değişkenlerini ayarlayın (BANK_NAME isteğe bağlı)")
     log.info("SEO: %d çeviri yolu noindex (x%d dil), sitemap'te %d yol; analytics=%s",
              len(NOINDEX_PATHS), len(LANGS), len(sitemap_paths), analytics_cfg()[0] or "kapalı")
     log.info("Tamam: %d sayfa (%d dil) -> %s (BASE_URL=%s)", total, len(LANGS), OUT, BASE_URL)

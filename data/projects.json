@@ -29,7 +29,29 @@
       "en": "Security, VLAN, management-access and best-practice checks for Cisco, Huawei and Aruba configurations, with remediation guidance and exportable reports.",
       "ar": "فحوصات الأمان وVLAN وإدارة الوصول وأفضل الممارسات لإعدادات Cisco وHuawei وAruba مع توصيات وتقارير قابلة للتصدير."
     },
-    "checkout_url": ""
+    "checkout_url": "",
+    "audience": {
+      "tr": "Birden fazla markalı switch/router/AP altyapısını güvenlik ve standart açısından denetleyen ağ ve sistem mühendisleri.",
+      "en": "Network and systems engineers who audit multi-vendor switch, router and AP estates for security and standards.",
+      "ar": "مهندسو الشبكات والأنظمة الذين يدققون بنية متعددة الموردين من حيث الأمان والمعايير."
+    },
+    "features": {
+      "tr": [
+        "Cisco, Huawei ve Aruba yapılandırmalarında 15 kontrol",
+        "Yönetim erişimi, VLAN, Layer 2 güvenliği ve best-practice bulguları",
+        "Çoklu dosya analizi; CSV, Excel ve PDF rapor"
+      ],
+      "en": [
+        "15 checks across Cisco, Huawei and Aruba configs",
+        "Findings for management access, VLANs, Layer 2 security and best practice",
+        "Multi-file analysis with CSV, Excel and PDF reports"
+      ],
+      "ar": [
+        "15 فحصًا لإعدادات Cisco وHuawei وAruba",
+        "نتائج حول إدارة الوصول وVLAN وأمان الطبقة الثانية وأفضل الممارسات",
+        "تحليل ملفات متعددة وتقارير CSV وExcel وPDF"
+      ]
+    }
   },
   {
     "id": "topology-discovery-pro",
@@ -46,7 +68,29 @@
       "en": "Build device-neighbor maps, port mappings and missing-link checks from CDP/LLDP and inventory outputs.",
       "ar": "إنشاء خرائط الجيران ومطابقة المنافذ واكتشاف الوصلات المفقودة من بيانات CDP/LLDP والمخزون."
     },
-    "checkout_url": ""
+    "checkout_url": "",
+    "audience": {
+      "tr": "Elinde güncel şema olmayan ağlarda komşuluk ve port eşleşmelerini çıkarmak isteyenler.",
+      "en": "Engineers who need neighbor and port maps for networks without an up-to-date diagram.",
+      "ar": "المهندسون الذين يحتاجون إلى خرائط الجيران والمنافذ لشبكات لا تتوفر لها مخططات محدثة."
+    },
+    "features": {
+      "tr": [
+        "CDP/LLDP çıktılarından topoloji",
+        "Önceki çalıştırmayla envanter karşılaştırması ve değişiklik geçmişi",
+        "SVG ve CSV dışa aktarım; Discovery Collector betiği"
+      ],
+      "en": [
+        "Topology from CDP/LLDP output",
+        "Inventory comparison with the previous run and change history",
+        "SVG and CSV export; Discovery Collector script"
+      ],
+      "ar": [
+        "طوبولوجيا من مخرجات CDP/LLDP",
+        "مقارنة المخزون مع التشغيل السابق وسجل التغييرات",
+        "تصدير SVG وCSV وسكربت Discovery Collector"
+      ]
+    }
   },
   {
     "id": "troubleshooting-pro",
@@ -63,7 +107,29 @@
       "en": "Evidence-based diagnostic steps for VLAN, STP, routing, DHCP, DNS and reachability issues from switch and router outputs.",
       "ar": "خطوات تشخيص قائمة على الأدلة لمشكلات VLAN وSTP والتوجيه وDHCP وDNS والاتصال."
     },
-    "checkout_url": ""
+    "checkout_url": "",
+    "audience": {
+      "tr": "Saha ve NOC ekiplerinde arıza anında hızlı, kanıta dayalı teşhis yapmak isteyenler.",
+      "en": "Field and NOC engineers who want fast, evidence-based diagnosis during an incident.",
+      "ar": "مهندسو الميدان ومركز العمليات الذين يريدون تشخيصًا سريعًا قائمًا على الأدلة أثناء الأعطال."
+    },
+    "features": {
+      "tr": [
+        "Çıktıdan VLAN, STP, routing, DHCP ve DNS bulguları",
+        "Adım adım kontrol listesi",
+        "VLAN/trunk uyumsuzluk testi"
+      ],
+      "en": [
+        "VLAN, STP, routing, DHCP and DNS findings from pasted output",
+        "Step-by-step checklists",
+        "VLAN/trunk mismatch test"
+      ],
+      "ar": [
+        "نتائج VLAN وSTP والتوجيه وDHCP وDNS من المخرجات الملصقة",
+        "قوائم تحقق خطوة بخطوة",
+        "اختبار عدم تطابق VLAN/Trunk"
+      ]
+    }
   },
   {
     "id": "bulk-automation-pro",
@@ -80,7 +146,29 @@
       "en": "Ansible/Netmiko jobs for multiple devices with dry-run, approval gates, backups and execution tracking.",
       "ar": "مهام Ansible وNetmiko لأجهزة متعددة مع التشغيل التجريبي والموافقة والنسخ الاحتياطي وتتبع التنفيذ."
     },
-    "checkout_url": ""
+    "checkout_url": "",
+    "audience": {
+      "tr": "Onlarca-yüzlerce cihazda aynı değişikliği güvenle yürütmek isteyen otomasyon odaklı mühendisler.",
+      "en": "Automation-minded engineers who must roll out the same change safely across many devices.",
+      "ar": "مهندسو الأتمتة الذين يحتاجون إلى تنفيذ التغيير نفسه بأمان على عدد كبير من الأجهزة."
+    },
+    "features": {
+      "tr": [
+        "Ansible/Netmiko görevleri; çoklu cihaz ve paralel çalışma",
+        "DRY-RUN, retry ve otomatik yedek",
+        "CSV sonuç çıktısı"
+      ],
+      "en": [
+        "Ansible/Netmiko jobs with multi-device and parallel runs",
+        "Dry-run, retry and automatic backup",
+        "CSV result output"
+      ],
+      "ar": [
+        "مهام Ansible/Netmiko لعدة أجهزة وبالتوازي",
+        "تشغيل تجريبي وإعادة المحاولة ونسخ احتياطي تلقائي",
+        "مخرجات نتائج CSV"
+      ]
+    }
   },
   {
     "id": "network-intelligence-reports-pro",
@@ -97,7 +185,29 @@
       "en": "Monthly management reports from port, VLAN, inventory, security and change data, with CSV, Excel and PDF exports.",
       "ar": "تقارير إدارية شهرية من بيانات المنافذ وVLAN والمخزون والأمان والتغييرات مع تصدير CSV وExcel وPDF."
     },
-    "checkout_url": ""
+    "checkout_url": "",
+    "audience": {
+      "tr": "Yönetime port, VLAN, envanter ve güvenlik durumunu düzenli raporlayan ekipler.",
+      "en": "Teams that report port, VLAN, inventory and security status to management on a regular basis.",
+      "ar": "الفرق التي ترفع تقارير دورية للإدارة عن المنافذ وVLAN والمخزون والأمان."
+    },
+    "features": {
+      "tr": [
+        "Çoklu cihaz yönetim raporu ve güvenlik skoru",
+        "Önceki çalıştırmayla değişiklik karşılaştırması",
+        "CSV, Excel ve PDF çıktı"
+      ],
+      "en": [
+        "Multi-device management report with a security score",
+        "Change comparison against the previous run",
+        "CSV, Excel and PDF output"
+      ],
+      "ar": [
+        "تقرير إداري لعدة أجهزة مع درجة أمان",
+        "مقارنة التغييرات مع التشغيل السابق",
+        "مخرجات CSV وExcel وPDF"
+      ]
+    }
   },
   {
     "id": "configuration-compliance-pro",
@@ -114,7 +224,29 @@
       "en": "Define your own policy as rules, check configs against multiple profiles, and get a compliance score with exportable reports.",
       "ar": "عرّف سياسة مؤسستك كقواعد وافحص الإعدادات عبر عدة ملفات تعريف واحصل على درجة امتثال وتقارير قابلة للتصدير."
     },
-    "checkout_url": ""
+    "checkout_url": "",
+    "audience": {
+      "tr": "Config standardı ve denetim gereksinimi olan ağ ekipleri.",
+      "en": "Network teams with config standards and audit requirements.",
+      "ar": "فرق الشبكات التي لديها معايير إعدادات ومتطلبات تدقيق."
+    },
+    "features": {
+      "tr": [
+        "Kendi kurum politikanı kural olarak tanımla",
+        "Birden çok profil ve uyumluluk skoru",
+        "CSV, Excel ve PDF çıktı"
+      ],
+      "en": [
+        "Define your own policy as rules",
+        "Multiple profiles and a compliance score",
+        "CSV, Excel and PDF output"
+      ],
+      "ar": [
+        "عرّف سياسة مؤسستك كقواعد",
+        "ملفات تعريف متعددة ودرجة امتثال",
+        "مخرجات CSV وExcel وPDF"
+      ]
+    }
   },
   {
     "id": "discovery-collector-pro",
@@ -131,6 +263,28 @@
       "en": "Generates a read-only Python script that collects CDP/LLDP neighbor data on your own network (Cisco, Huawei, Aruba).",
       "ar": "يولّد سكربت Python للقراءة فقط يجمع بيانات جيران CDP/LLDP في شبكتك (Cisco وHuawei وAruba)."
     },
-    "checkout_url": ""
+    "checkout_url": "",
+    "audience": {
+      "tr": "Topoloji çıkarmak için cihazlardan CDP/LLDP verisini toplamak isteyen ekipler.",
+      "en": "Teams that need to collect CDP/LLDP data from devices to build a topology.",
+      "ar": "الفرق التي تحتاج إلى جمع بيانات CDP/LLDP من الأجهزة لبناء الطوبولوجيا."
+    },
+    "features": {
+      "tr": [
+        "Salt-okunur show komutlarıyla toplama",
+        "Cisco, Huawei ve Aruba AOS-S desteği",
+        "Çıktı doğrudan Topology Discovery'ye girdi olur"
+      ],
+      "en": [
+        "Collection with read-only show commands",
+        "Cisco, Huawei and Aruba AOS-S support",
+        "Output feeds straight into Topology Discovery"
+      ],
+      "ar": [
+        "جمع باستخدام أوامر show للقراءة فقط",
+        "دعم Cisco وHuawei وAruba AOS-S",
+        "المخرجات تُغذّي Topology Discovery مباشرة"
+      ]
+    }
   }
 ]

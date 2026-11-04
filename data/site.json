@@ -8,10 +8,13 @@
   "contact_email": "",
   "premium_billing_interval": "month",
   "digital_product_checkout_url": "",
+  "premium_price_try": "",
+  "premium_days": 30,
   "seller": {
     "name": "Şevket Kaynar",
+    "address": "",
     "tax_office": "",
     "tax_no": "",
-    "address": ""
+    "phone": ""
   }
 }

@@ -2,7 +2,7 @@
  "privacy": {
   "tr": {
    "title": "Gizlilik Politikası ve KVKK Aydınlatma Metni",
-   "lead": "Son güncelleme: 05.11.2026. Bu metin, NetCmd sitesini kullanırken hangi verilerin işlendiğini açıklar.",
+   "lead": "Son güncelleme: 06.11.2026. Bu metin, NetCmd sitesini kullanırken hangi verilerin işlendiğini açıklar.",
    "sections": [
     [
      "Veri sorumlusu",
@@ -10,7 +10,7 @@
     ],
     [
      "Hangi verileri işliyoruz",
-     "Hesap oluşturursanız e-posta adresiniz, görünen adınız ve şifreniz (yalnızca doğrulama altyapısında şifrelenmiş olarak). Premium üyelik için ödeme sağlayıcıdan (Buy Me a Coffee) gelen üyelik durumu, dönem bitiş tarihi ve e-posta eşleşmesi; yönetici onayıyla yapılan başvurularda yazdığınız ödeme referansı. Kart veya banka bilgilerinizi görmeyiz ve saklamayız. Topluluk bölümünde gönderdiğiniz komut, başlık ve açıklamalar. Araçlara (lab, config diff, denetim vb.) yapıştırdığınız metinler tarayıcınızda işlenir ve sunucumuza gönderilmez."
+     "Hesap oluşturursanız e-posta adresiniz, görünen adınız ve şifreniz (yalnızca doğrulama altyapısında şifrelenmiş olarak). Premium üyelik için ödeme sağlayıcıdan (Buy Me a Coffee) gelen üyelik durumu, dönem bitiş tarihi ve e-posta eşleşmesi; havale ile ödemede yazdığınız sipariş kodu ve ödeme notu. Kart bilgilerinizi görmeyiz ve saklamayız. Topluluk bölümünde gönderdiğiniz komut, başlık ve açıklamalar. Araçlara (lab, config diff, denetim vb.) yapıştırdığınız metinler tarayıcınızda işlenir ve sunucumuza gönderilmez. Havale/EFT ile ödeme yaparsanız sipariş kodunuz, ödeme bildirimi notunuz ve işlem durumu; bekleme listesine yazılırsanız e-posta adresiniz ve ilgilendiğiniz ürün kaydedilir. Premium araçlara yapıştırdığınız yapılandırma metinleri tarayıcınızda işlenir; sunucuya gönderilmez ve saklanmaz. Banka hesap bilgileriniz ve kart numaranız tarafımızca görülmez veya saklanmaz; kart ödemeleri Buy Me a Coffee altyapısında gerçekleşir."
     ],
     [
      "Tarayıcı depolaması ve çerezler",
@@ -26,7 +26,7 @@
     ],
     [
      "Veri işleyenler",
-     "Kimlik doğrulama, veritabanı ve dosya depolama için Supabase; barındırma için Render, Premium üyelik ödemeleri için Buy Me a Coffee hizmetlerini kullanıyoruz. Bu sağlayıcılar yurt dışında bulunabilir; verileriniz bu kapsamda yurt dışına aktarılabilir. Verilerinizi satmıyoruz ve üçüncü taraflarla pazarlama amacıyla paylaşmıyoruz."
+     "Kimlik doğrulama, veritabanı ve dosya depolama için Supabase; barındırma için Render, kartlı Premium üyelik ödemeleri için Buy Me a Coffee hizmetlerini kullanıyoruz. Bu sağlayıcılar yurt dışında bulunabilir; verileriniz bu kapsamda yurt dışına aktarılabilir. Verilerinizi satmıyoruz ve üçüncü taraflarla pazarlama amacıyla paylaşmıyoruz."
     ],
     [
      "Saklama süresi",
@@ -44,7 +44,7 @@
   },
   "en": {
    "title": "Privacy Policy",
-   "lead": "Last updated: 2026-11-05. This page explains what data is processed when you use NetCmd.",
+   "lead": "Last updated: 2026-11-06. This page explains what data is processed when you use NetCmd.",
    "sections": [
     [
      "Controller",
@@ -52,7 +52,7 @@
     ],
     [
      "Data we process",
-     "If you create an account: your email address, display name and password (stored only in encrypted form by the authentication service). For Premium membership: the membership status, period end date and email match received from the payment provider (Buy Me a Coffee), and the payment reference you enter in administrator-approved requests. We do not see or store your card or bank details. Commands, titles and descriptions you submit in the Community section. Text you paste into the tools (lab, config diff, audit, etc.) is processed in your browser and is not sent to our servers."
+     "If you create an account: your email address, display name and password (stored only in encrypted form by the authentication service). For Premium membership: the membership status, period end date and email match received from the payment provider (Buy Me a Coffee), and, for bank transfers, the order code and payment note you enter. We do not see or store your card details. Commands, titles and descriptions you submit in the Community section. Text you paste into the tools (lab, config diff, audit, etc.) is processed in your browser and is not sent to our servers. If you pay by bank transfer we store your order code, payment notice note and order status; if you join the waiting list we store your email address and the product you are interested in. Configuration text pasted into Premium tools is processed in your browser; it is not uploaded or stored. We do not see or store your card number or bank account details; card payments are handled by Buy Me a Coffee."
     ],
     [
      "Browser storage and cookies",
@@ -68,7 +68,7 @@
     ],
     [
      "Processors",
-     "We use Supabase for authentication, database and file storage, Render for hosting, and Buy Me a Coffee for Premium membership payments. These providers may be located outside your country, so your data may be transferred internationally. We do not sell your data or share it for marketing."
+     "We use Supabase for authentication, database and file storage, Render for hosting, and Buy Me a Coffee for card-based Premium membership payments. These providers may be located outside your country, so your data may be transferred internationally. We do not sell your data or share it for marketing."
     ],
     [
      "Retention",
@@ -86,7 +86,7 @@
   },
   "ar": {
    "title": "سياسة الخصوصية",
-   "lead": "آخر تحديث: 05-11-2026. توضح هذه الصفحة البيانات التي تتم معالجتها عند استخدام NetCmd.",
+   "lead": "آخر تحديث: 06-11-2026. توضح هذه الصفحة البيانات التي تتم معالجتها عند استخدام NetCmd.",
    "sections": [
     [
      "المسؤول عن البيانات",
@@ -94,7 +94,7 @@
     ],
     [
      "البيانات التي نعالجها",
-     "عند إنشاء حساب: بريدك الإلكتروني واسمك المعروض وكلمة المرور (مخزّنة مشفّرة فقط لدى خدمة المصادقة). لعضوية بريميوم: حالة العضوية وتاريخ نهاية الفترة ومطابقة البريد الإلكتروني الواردة من مزوّد الدفع (Buy Me a Coffee)، ومرجع الدفع الذي تدخله في الطلبات المعتمدة من المسؤول. لا نرى بيانات بطاقتك أو حسابك المصرفي ولا نخزّنها. الأوامر والعناوين والأوصاف التي ترسلها في قسم المجتمع. النصوص التي تلصقها في الأدوات تُعالج داخل متصفحك ولا تُرسل إلى خوادمنا."
+     "عند إنشاء حساب: بريدك الإلكتروني واسمك المعروض وكلمة المرور (مخزّنة مشفّرة فقط لدى خدمة المصادقة). لعضوية بريميوم: حالة العضوية وتاريخ نهاية الفترة ومطابقة البريد الإلكتروني الواردة من مزوّد الدفع (Buy Me a Coffee)، وفي الحوالة رمز الطلب وملاحظة الدفع التي تدخلها. لا نرى بيانات بطاقتك ولا نخزّنها. الأوامر والعناوين والأوصاف التي ترسلها في قسم المجتمع. النصوص التي تلصقها في الأدوات تُعالج داخل متصفحك ولا تُرسل إلى خوادمنا. إذا دفعت بالحوالة المصرفية نحفظ رمز طلبك وملاحظة إشعار الدفع وحالة الطلب؛ وإذا انضممت إلى قائمة الانتظار نحفظ بريدك الإلكتروني والمنتج الذي يهمك. تتم معالجة نصوص الإعدادات التي تلصقها في أدوات Premium داخل متصفحك دون رفعها أو تخزينها. لا نرى ولا نخزن رقم بطاقتك أو بيانات حسابك المصرفي؛ تتم مدفوعات البطاقات عبر Buy Me a Coffee."
     ],
     [
      "تخزين المتصفح وملفات الارتباط",
@@ -110,7 +110,7 @@
     ],
     [
      "مزودو المعالجة",
-     "نستخدم Supabase للمصادقة وقاعدة البيانات وتخزين الملفات، وRender للاستضافة، وBuy Me a Coffee لمدفوعات عضوية بريميوم. قد يقع هؤلاء المزودون خارج بلدك، وقد تُنقل بياناتك دوليًا. لا نبيع بياناتك ولا نشاركها لأغراض تسويقية."
+     "نستخدم Supabase للمصادقة وقاعدة البيانات وتخزين الملفات، وRender للاستضافة، وBuy Me a Coffee لمدفوعات عضوية بريميوم بالبطاقة. قد يقع هؤلاء المزودون خارج بلدك، وقد تُنقل بياناتك دوليًا. لا نبيع بياناتك ولا نشاركها لأغراض تسويقية."
     ],
     [
      "مدة الاحتفاظ",
@@ -130,7 +130,7 @@
  "terms": {
   "tr": {
    "title": "Kullanım Şartları",
-   "lead": "Son güncelleme: 05.11.2026. Siteyi kullanarak aşağıdaki şartları kabul etmiş olursunuz.",
+   "lead": "Son güncelleme: 06.11.2026. Siteyi kullanarak aşağıdaki şartları kabul etmiş olursunuz.",
    "sections": [
     [
      "Hizmet sağlayıcı",
@@ -153,20 +153,16 @@
      "Doğru bilgi vermeli ve hesabınızın güvenliğinden sorumlu olmalısınız. Kötüye kullanım halinde hesap askıya alınabilir."
     ],
     [
-     "PRO üyelik",
-     "NetCmd PRO, Buy Me a Coffee üzerinden aylık yenilenen bir üyeliktir. Ödeme sağlayıcının imzalı bildirimi doğrulandığında PRO hesabınıza otomatik tanımlanır; bunun için ödemede NetCmd hesabınızla aynı e-posta adresini kullanmalısınız. Manuel tanımlama yalnızca istisnai durumlarda ve yönetici onayıyla yapılır. Güncel fiyat ve kapsam Premium sayfasında yer alır ve değişebilir."
-    ],
-    [
-     "Abonelik, iptal ve yenileme",
-     "Üyelik, iptal edilene kadar her ay otomatik yenilenir. İptal veya duraklatma işlemini Buy Me a Coffee hesabınızdan yapabilirsiniz; iptal sonrasında erişim, ödenmiş dönemin sonuna kadar sürer. Dönem sona erdiğinde PRO özellikleri hesabınızdan otomatik kapatılır."
-    ],
-    [
-     "İade ve cayma",
-     "PRO, ödeme sonrasında anında erişim sağlanan ve elektronik ortamda ifa edilen bir hizmettir. Mesafeli Sözleşmeler Yönetmeliği uyarınca, ifasına onayınızla başlanan bu tür hizmetlerde cayma hakkı kullanılamayabilir. Teknik sorun, mükerrer çekim veya hatalı tahsilat durumunda yukarıdaki iletişim kanalından başvurabilirsiniz; talepler olay bazında değerlendirilir."
+     "Abonelik ve iptal",
+     "Kartlı üyeliği Buy Me a Coffee hesabınızdan istediğiniz zaman iptal edebilir veya duraklatabilirsiniz; iptalden sonra erişim ödenmiş dönemin sonuna kadar sürer."
     ],
     [
      "Gizli veri uyarısı",
      "Araçlara yapıştırdığınız yapılandırmalarda şifre, SNMP community, pre-shared key, TACACS+/RADIUS anahtarı gibi gizli bilgileri maskelemenizi öneririz. Araçlar veriyi tarayıcınızda işler; yine de gizli verinin paylaşılması sizin sorumluluğunuzdadır."
+    ],
+    [
+     "Premium (PRO) üyelik",
+     "NetCmd PRO iki şekilde alınabilir: (1) Buy Me a Coffee üzerinden kartla, iptal edilene kadar her ay otomatik yenilenen üyelik; (2) Türkiye'deki banka hesaplarından havale/EFT ile 30 günlük, otomatik yenilenmeyen erişim. Kartlı üyelikte ödeme sağlayıcının imzalı bildirimi doğrulandığında PRO hesabınıza otomatik tanımlanır; bunun için ödemede NetCmd hesabınızla aynı e-posta adresini kullanmalısınız. Havale ile ödemede erişim, ödeme kontrol edildikten sonra tanımlanır. Dönem sona erdiğinde PRO özellikleri hesabınızdan otomatik kapanır. Fiyat ve kapsam Premium sayfasında yer alır ve değişebilir. İade, cayma ve satıcı bilgileri için İade ve Cayma ile Mesafeli Satış sayfalarına bakın."
     ],
     [
      "Topluluk içeriği",
@@ -184,7 +180,7 @@
   },
   "en": {
    "title": "Terms of Use",
-   "lead": "Last updated: 2026-11-05. By using the site you accept the terms below.",
+   "lead": "Last updated: 2026-11-06. By using the site you accept the terms below.",
    "sections": [
     [
      "Service provider",
@@ -207,20 +203,16 @@
      "You must provide accurate information and keep your account secure. Accounts may be suspended for abuse."
     ],
     [
-     "PRO membership",
-     "NetCmd PRO is a monthly membership sold through Buy Me a Coffee. PRO is granted to your account automatically once the payment provider's signed notification is verified; to enable this you must use the same email address as your NetCmd account at checkout. Manual activation is used only in exceptional cases with administrator approval. Current pricing and scope are shown on the Premium page and may change."
-    ],
-    [
-     "Subscription, cancellation and renewal",
-     "The membership renews automatically every month until cancelled. You can cancel or pause it from your Buy Me a Coffee account; after cancellation, access continues until the end of the paid period. When the period ends, PRO features are switched off on your account automatically."
-    ],
-    [
-     "Refunds and withdrawal",
-     "PRO is a service delivered electronically with immediate access after payment. Under distance-selling rules, the right of withdrawal may not apply to services whose performance begins with your consent. For technical problems, duplicate charges or billing errors, contact us through the channel above; requests are reviewed case by case."
+     "Subscription and cancellation",
+     "You can cancel or pause a card membership at any time from your Buy Me a Coffee account; after cancellation, access continues until the end of the paid period."
     ],
     [
      "Confidential data notice",
      "Before pasting configurations into the tools, we recommend masking secrets such as passwords, SNMP communities, pre-shared keys and TACACS+/RADIUS keys. The tools process data in your browser, but sharing confidential data remains your responsibility."
+    ],
+    [
+     "Premium (PRO) membership",
+     "NetCmd PRO is available in two ways: (1) a card membership through Buy Me a Coffee that renews monthly until cancelled; (2) 30 days of non-renewing access paid by bank transfer/EFT from banks in Turkey. For card memberships, PRO is granted to your account automatically once the payment provider's signed notification is verified; you must use the same email address as your NetCmd account at checkout. For bank transfers, access is granted after the payment is checked. When the period ends, PRO features switch off on your account automatically. Pricing and scope are shown on the Premium page and may change. See the Refund and Distance Sales pages for refund, withdrawal and seller details."
     ],
     [
      "Community content",
@@ -238,7 +230,7 @@
   },
   "ar": {
    "title": "شروط الاستخدام",
-   "lead": "آخر تحديث: 05-11-2026. باستخدامك الموقع فإنك توافق على الشروط التالية.",
+   "lead": "آخر تحديث: 06-11-2026. باستخدامك الموقع فإنك توافق على الشروط التالية.",
    "sections": [
     [
      "مزوّد الخدمة",
@@ -261,20 +253,16 @@
      "يجب تقديم معلومات صحيحة والحفاظ على أمان حسابك. قد يُعلَّق الحساب عند إساءة الاستخدام."
     ],
     [
-     "عضوية PRO",
-     "NetCmd PRO عضوية شهرية تُباع عبر Buy Me a Coffee. تُفعَّل PRO على حسابك تلقائيًا بعد التحقق من إشعار مزوّد الدفع الموقَّع؛ ولذلك يجب استخدام نفس البريد الإلكتروني المسجَّل في حساب NetCmd عند الدفع. لا يُستخدم التفعيل اليدوي إلا في حالات استثنائية وبموافقة المسؤول. تظهر الأسعار والنطاق الحاليان في صفحة بريميوم وقد تتغير."
-    ],
-    [
-     "الاشتراك والإلغاء والتجديد",
-     "تتجدد العضوية تلقائيًا كل شهر حتى الإلغاء. يمكنك الإلغاء أو الإيقاف المؤقت من حسابك في Buy Me a Coffee؛ وبعد الإلغاء يستمر الوصول حتى نهاية الفترة المدفوعة. عند انتهاء الفترة تُعطَّل ميزات PRO على حسابك تلقائيًا."
-    ],
-    [
-     "الاسترداد والعدول",
-     "PRO خدمة تُقدَّم إلكترونيًا مع وصول فوري بعد الدفع. وبموجب قواعد البيع عن بُعد قد لا ينطبق حق العدول على الخدمات التي يبدأ تنفيذها بموافقتك. في حال وجود مشكلة تقنية أو خصم مكرر أو خطأ في الفوترة، تواصل معنا عبر القناة أعلاه؛ وتُراجَع الطلبات حسب كل حالة."
+     "الاشتراك والإلغاء",
+     "يمكنك إلغاء العضوية بالبطاقة أو إيقافها مؤقتًا في أي وقت من حسابك في Buy Me a Coffee؛ وبعد الإلغاء يستمر الوصول حتى نهاية الفترة المدفوعة."
     ],
     [
      "تنبيه بشأن البيانات السرية",
      "قبل لصق الإعدادات في الأدوات ننصح بإخفاء الأسرار مثل كلمات المرور وSNMP community والمفاتيح المشتركة ومفاتيح TACACS+/RADIUS. تعالج الأدوات البيانات داخل متصفحك، لكن مشاركة البيانات السرية تبقى مسؤوليتك."
+    ],
+    [
+     "عضوية بريميوم (PRO)",
+     "يمكن الحصول على NetCmd PRO بطريقتين: (1) عضوية بالبطاقة عبر Buy Me a Coffee تتجدد شهريًا حتى الإلغاء؛ (2) وصول لمدة 30 يومًا بدون تجديد تلقائي عبر حوالة/EFT من بنوك في تركيا. في العضوية بالبطاقة تُفعَّل PRO تلقائيًا بعد التحقق من إشعار مزوّد الدفع الموقَّع، ويجب استخدام نفس بريد حساب NetCmd عند الدفع. وفي الحوالة يُمنح الوصول بعد التحقق من الدفع. عند انتهاء الفترة تُعطَّل ميزات PRO تلقائيًا. تظهر الأسعار والنطاق في صفحة بريميوم وقد تتغير. راجع صفحتي الاسترداد والبيع عن بُعد لتفاصيل الاسترداد والعدول والبائع."
     ],
     [
      "محتوى المجتمع",
@@ -287,6 +275,202 @@
     [
      "التعديلات",
      "قد تُحدَّث هذه الشروط وتُنشر النسخة الحالية في هذه الصفحة."
+    ]
+   ]
+  }
+ },
+ "refund": {
+  "tr": {
+   "title": "İade ve Cayma Koşulları",
+   "lead": "Son güncelleme: 04.11.2026. NetCmd PRO üyeliği için iade, iptal ve cayma esasları.",
+   "sections": [
+    [
+     "Hizmetin niteliği",
+     "NetCmd PRO, elektronik ortamda sunulan ve ödemenin ardından hesabınıza tanımlanarak anında ifa edilen bir dijital hizmettir."
+    ],
+    [
+     "Cayma hakkı",
+     "6502 sayılı Kanun ve Mesafeli Sözleşmeler Yönetmeliği uyarınca, elektronik ortamda anında ifa edilen hizmetlerde tüketicinin onayıyla ifaya başlanması hâlinde cayma hakkı kullanılamaz. Satın alma sırasında hizmetin hemen başlayacağını ve bu nedenle cayma hakkının bulunmadığını kabul etmiş olursunuz. Bu kısıtlama, aşağıdaki iade değerlendirmesini ve kanundan doğan diğer haklarınızı ortadan kaldırmaz."
+    ],
+    [
+     "İade talepleri",
+     "Hizmete erişim sağlanamadıysa, mükerrer ödeme yapıldıysa veya hizmet tanıtılan özellikleri sunmuyorsa ödeme sonrası 7 gün içinde {contact} üzerinden iade talep edebilirsiniz. Talepler ödeme kaydı ve hesap kullanımı üzerinden değerlendirilir; uygun bulunan iadeler ödemenin yapıldığı yöntemle yapılır."
+    ],
+    [
+     "Kartla aylık üyelik (BMC)",
+     "Üyelik Buy Me a Coffee hesabınızdan istediğiniz zaman iptal edilebilir veya duraklatılabilir; iptal sonrası erişim içinde bulunduğunuz dönemin sonuna kadar sürer. Kısmi dönem iadesi yapılmaz."
+    ],
+    [
+     "Havale/EFT ile 30 günlük erişim",
+     "Havale ile alınan erişim 30 gün sürer ve kendiliğinden sona erer; otomatik yenilenmez. Sipariş kodu yazılmadan veya eksik/fazla tutarla yapılan ödemeler eşleştirilemeyebilir; bu durumda dekont ile {contact} üzerinden başvurun."
+    ],
+    [
+     "Hizmetin değişmesi",
+     "Araçların kapsamı ve fiyat zamanla değişebilir. Fiyat değişikliği, ödemesini yaptığınız dönemi etkilemez."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Refund and Withdrawal Terms",
+   "lead": "Last updated: 04.11.2026. Refund, cancellation and withdrawal terms for the NetCmd PRO membership.",
+   "sections": [
+    [
+     "Nature of the service",
+     "NetCmd PRO is a digital service delivered electronically and performed immediately once your account is enabled after payment."
+    ],
+    [
+     "Right of withdrawal",
+     "Under Turkish consumer law (Law No. 6502 and the Distance Contracts Regulation), the right of withdrawal does not apply to services performed immediately in electronic form once performance starts with the consumer's consent. By purchasing, you agree that the service starts immediately and that the withdrawal right does not apply. This does not remove the refund review below or any rights you have by law."
+    ],
+    [
+     "Refund requests",
+     "If you could not get access, paid twice, or the service does not provide the advertised features, you may request a refund within 7 days of payment at {contact}. Requests are reviewed against the payment record and account usage; approved refunds are returned by the original payment method."
+    ],
+    [
+     "Monthly card membership (BMC)",
+     "You can cancel or pause the membership at any time from your Buy Me a Coffee account; access continues until the end of the current period. Partial-period refunds are not given."
+    ],
+    [
+     "30-day access by bank transfer",
+     "Access bought by transfer lasts 30 days and ends by itself; it is not auto-renewed. Payments made without the order code or with a wrong amount may not be matched; in that case send the receipt to {contact}."
+    ],
+    [
+     "Changes to the service",
+     "Tool scope and price may change over time. A price change does not affect a period you have already paid for."
+    ]
+   ]
+  },
+  "ar": {
+   "title": "شروط الاسترداد والانسحاب",
+   "lead": "آخر تحديث: 04.11.2026. شروط الاسترداد والإلغاء والانسحاب لاشتراك NetCmd PRO.",
+   "sections": [
+    [
+     "طبيعة الخدمة",
+     "NetCmd PRO خدمة رقمية تُقدَّم إلكترونيًا وتُنفَّذ فورًا بعد تفعيل حسابك عقب الدفع."
+    ],
+    [
+     "حق الانسحاب",
+     "وفقًا لقانون حماية المستهلك التركي (القانون رقم 6502 ولائحة العقود عن بُعد) لا ينطبق حق الانسحاب على الخدمات التي تُنفَّذ فورًا بشكل إلكتروني متى بدأ التنفيذ بموافقة المستهلك. بإتمام الشراء توافق على بدء الخدمة فورًا وعلى عدم وجود حق الانسحاب. ولا يلغي ذلك مراجعة الاسترداد أدناه ولا حقوقك المقررة قانونًا."
+    ],
+    [
+     "طلبات الاسترداد",
+     "إذا تعذر الوصول إلى الخدمة أو دفعت مرتين أو لم تقدم الخدمة المزايا المعلنة، يمكنك طلب الاسترداد خلال 7 أيام من الدفع عبر {contact}. تُراجع الطلبات بحسب سجل الدفع واستخدام الحساب، ويُعاد المبلغ المقبول بطريقة الدفع نفسها."
+    ],
+    [
+     "الاشتراك الشهري بالبطاقة (BMC)",
+     "يمكنك إلغاء الاشتراك أو إيقافه مؤقتًا في أي وقت من حسابك في Buy Me a Coffee، ويستمر الوصول حتى نهاية الفترة الحالية. لا يوجد استرداد جزئي للفترة."
+    ],
+    [
+     "وصول 30 يومًا بالحوالة",
+     "ينتهي الوصول المشترى بالحوالة بعد 30 يومًا تلقائيًا ولا يتجدد. قد يتعذر مطابقة الدفعات التي تتم دون رمز الطلب أو بمبلغ خاطئ؛ في هذه الحالة أرسل الإيصال إلى {contact}."
+    ],
+    [
+     "تغيير الخدمة",
+     "قد يتغير نطاق الأدوات والسعر مع الوقت. لا يؤثر تغيير السعر على فترة دفعتَ ثمنها بالفعل."
+    ]
+   ]
+  }
+ },
+ "distance-sales": {
+  "tr": {
+   "title": "Mesafeli Satış Ön Bilgilendirme Formu",
+   "lead": "Son güncelleme: 04.11.2026. Satın almadan önce bilmeniz gereken bilgiler.",
+   "sections": [
+    [
+     "Satıcı",
+     "{seller}"
+    ],
+    [
+     "Ürün",
+     "NetCmd PRO: yapılandırma denetimi, uyumluluk, sorun giderme, topoloji, toplu otomasyon ve raporlama araçlarına erişim sağlayan, elektronik ortamda sunulan dijital hizmet. Teslimat, ödeme doğrulandıktan sonra hesabınıza erişim tanımlanarak yapılır; fiziksel gönderim yoktur."
+    ],
+    [
+     "Fiyat ve süre",
+     "Fiyat satın alma sayfasında gösterilir (vergiler dahil değilse ayrıca belirtilir). Kartla ödemede üyelik aylık yenilenir; havale/EFT ile ödemede erişim 30 gündür ve yenilenmez. Havale ile ödemede TL tutarı havale günündeki kura göre belirlenir."
+    ],
+    [
+     "Ödeme yöntemleri",
+     "Buy Me a Coffee üzerinden kart veya Türkiye'deki banka hesaplarından havale/EFT. Havale açıklamasına NetCmd sipariş kodu yazılmalıdır."
+    ],
+    [
+     "Cayma hakkı",
+     "Elektronik ortamda anında ifa edilen hizmetlerde, ifaya tüketicinin onayıyla başlanması hâlinde cayma hakkı kullanılamaz. Ayrıntılar ve iade değerlendirmesi için İade ve Cayma Koşulları sayfasına bakın."
+    ],
+    [
+     "Şikâyet ve başvuru",
+     "Şikâyetlerinizi {contact} üzerinden iletebilirsiniz. Ayrıca parasal sınırlar dâhilinde Tüketici Hakem Heyeti ve Tüketici Mahkemelerine başvurabilirsiniz."
+    ],
+    [
+     "Onay",
+     "Satın alma işlemini tamamlayarak bu ön bilgilendirmeyi okuduğunuzu ve elektronik ortamda onayladığınızı kabul etmiş olursunuz."
+    ]
+   ]
+  },
+  "en": {
+   "title": "Distance Sales Pre-Contract Information",
+   "lead": "Last updated: 04.11.2026. What you should know before you buy.",
+   "sections": [
+    [
+     "Seller",
+     "{seller}"
+    ],
+    [
+     "Product",
+     "NetCmd PRO: a digital service delivered electronically that gives access to configuration audit, compliance, troubleshooting, topology, bulk automation and reporting tools. Delivery means enabling access on your account after payment is verified; nothing is shipped."
+    ],
+    [
+     "Price and term",
+     "The price is shown on the purchase page (taxes are stated separately if not included). Card payment renews monthly; payment by bank transfer gives 30 days of access that does not renew. For transfers the TRY amount follows the exchange rate on the transfer day."
+    ],
+    [
+     "Payment methods",
+     "Card through Buy Me a Coffee, or bank transfer (EFT) from Turkish bank accounts. The NetCmd order code must be written in the transfer description."
+    ],
+    [
+     "Right of withdrawal",
+     "For services performed immediately in electronic form, the right of withdrawal does not apply once performance starts with your consent. See the Refund and Withdrawal Terms page for details and refund review."
+    ],
+    [
+     "Complaints",
+     "Send complaints to {contact}. Within the legal monetary limits you may also apply to the Consumer Arbitration Committee or Consumer Courts in Turkey."
+    ],
+    [
+     "Confirmation",
+     "By completing the purchase you confirm that you have read this pre-contract information and accept it electronically."
+    ]
+   ]
+  },
+  "ar": {
+   "title": "نموذج المعلومات المسبقة للبيع عن بُعد",
+   "lead": "آخر تحديث: 04.11.2026. ما يجب أن تعرفه قبل الشراء.",
+   "sections": [
+    [
+     "البائع",
+     "{seller}"
+    ],
+    [
+     "المنتج",
+     "NetCmd PRO: خدمة رقمية تُقدَّم إلكترونيًا تمنح الوصول إلى أدوات تدقيق الإعدادات والامتثال واستكشاف الأخطاء والطوبولوجيا والأتمتة الجماعية والتقارير. التسليم يعني تفعيل الوصول في حسابك بعد التحقق من الدفع؛ لا يوجد شحن."
+    ],
+    [
+     "السعر والمدة",
+     "يظهر السعر في صفحة الشراء (تُذكر الضرائب بشكل منفصل إن لم تكن مشمولة). الدفع بالبطاقة يتجدد شهريًا؛ والدفع بالحوالة يمنح وصولًا لمدة 30 يومًا دون تجديد. وفي الحوالة يُحدَّد المبلغ بالليرة التركية بسعر الصرف يوم الحوالة."
+    ],
+    [
+     "طرق الدفع",
+     "البطاقة عبر Buy Me a Coffee أو الحوالة المصرفية من حسابات تركية. يجب كتابة رمز طلب NetCmd في وصف الحوالة."
+    ],
+    [
+     "حق الانسحاب",
+     "لا ينطبق حق الانسحاب على الخدمات التي تُنفَّذ فورًا إلكترونيًا متى بدأ التنفيذ بموافقتك. راجع صفحة شروط الاسترداد والانسحاب للتفاصيل ومراجعة الاسترداد."
+    ],
+    [
+     "الشكاوى",
+     "أرسل شكاواك إلى {contact}. كما يمكنك، ضمن الحدود المالية القانونية، التقدم إلى لجنة التحكيم للمستهلك أو محاكم المستهلك في تركيا."
+    ],
+    [
+     "التأكيد",
+     "بإتمام الشراء تقر بأنك قرأت هذه المعلومات المسبقة ووافقت عليها إلكترونيًا."
     ]
    ]
   }
