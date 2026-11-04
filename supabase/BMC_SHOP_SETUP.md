@@ -31,28 +31,29 @@ The webhook grants only mapped line items whose amount is exactly USD 30 and who
 
 Migration `20261104120000_bmc_shop_product_asset_read_policies.sql` is applied to Supabase. It adds SELECT policies for exact product asset names in `premium_assets` and exact filenames in the private `premium` bucket. The existing monthly Premium policies are unchanged. Product entitlements are still empty until real purchases arrive.
 
-Expected asset names:
-- `plib-config-auditor` / `plib-config-auditor.js`
-- `plib-topology` / `plib-topology.js`
-- `plib-troubleshooting` / `plib-troubleshooting.js`
-- `plib-bulk-automation` / `plib-bulk-automation.js`
-- `plib-premium-intel` / `plib-premium-intel.js`
+Product asset rows now stored in `premium_assets`:
+- `plib-config-auditor` — premium audit rules + Compliance engine
+- `plib-topology` — topology parser/visualizer + read-only Discovery Collector
+- `plib-bulk-automation` — bulk script generator
+- `plib-premium-intel` — Network Intelligence Reports
+- Troubleshooting PRO does not require a separate JS asset; it uses the public troubleshooting engine and gates the expanded guidance by entitlement.
+
+The matching private Storage filenames remain reserved by RLS policy, but the frontend currently loads the isolated product code from `premium_assets`.
 
 ## Current integration status
 
 - `assets/premium.js` reads the signed-in user's active `product_slug` entitlements and loads only the exact asset associated with the current tool. A Shop buyer is never sent the shared monthly `plib-premium` bundle.
 - Monthly Premium continues to use the existing shared `plib-premium` bundle and its existing RLS policy.
-- Troubleshooting PRO uses the public troubleshooting engine and unlocks the expanded step-by-step guidance only for an active `troubleshooting-pro` entitlement; it does not need a separate JavaScript asset.
-- Network Intelligence Reports has a separate `tools/intel/` page and loads only `plib-premium-intel` for an active `network-intelligence-reports-pro` entitlement. The module uses the public `plib.js` helpers and does not load the private shared monthly bundle.
-- The Intelligence Reports module was exercised against sample Cisco IOS, Huawei VRP, and Aruba configurations. All three returned device/port/VLAN summaries, and the period-diff check detected a changed device. These are logic smoke tests, not production acceptance tests.
-- Three product-specific JavaScript assets are still missing: `plib-config-auditor`, `plib-topology`, and `plib-bulk-automation`. The Config Auditor asset should contain its premium audit rules and the Compliance engine. Topology Discovery should contain the topology parser/visualizer and read-only collector. Bulk Automation should contain only its generator and required export helpers.
-- The product-specific SELECT policies already map each slug to its exact row/file in `premium_assets` and the private `premium` bucket. Existing monthly policies are unchanged.
+- Troubleshooting PRO uses the public troubleshooting engine and unlocks expanded step-by-step guidance only for an active `troubleshooting-pro` entitlement.
+- Four isolated product modules are now stored in `premium_assets`: Config Auditor + Compliance, Topology Discovery + read-only Collector, Bulk Automation, and Network Intelligence Reports.
+- Smoke tests compiled and loaded all four modules together with the public `plib.js` base. The checks exercised extra audit findings, Compliance rules, five sample topology links, Collector generation, Bulk Automation generation and rejection of a dangerous `reload` command, and Intelligence Reports for Cisco IOS, Huawei VRP, and Aruba sample configurations. The report-diff check detected a changed device.
+- The product-specific SELECT policies map each slug to its exact asset row in `premium_assets`. Existing monthly policies are unchanged. Product JavaScript is currently fetched from this table; the private Storage files are not needed by the current loader.
 
 ## Remaining launch blockers — do not merge or announce working product unlocks yet
 
-1. Create and test the three missing isolated assets above; verify each module exports the exact flag expected by `assets/premium.js`.
-2. Add automated entitlement-loader tests: no session => no product assets; inactive entitlement => locked; active product A => only asset A requested; product A must not request B/C/D/E or `plib-premium`; monthly Premium retains its existing shared bundle.
-3. Test signed purchase, duplicate delivery, refund, stale-event ordering, wrong email, and buyer email/account matching with safe test events.
-4. Complete a real BMC test purchase and confirm the matching NetCmd account receives only the purchased product. Supabase currently reports 0 active Shop entitlements.
+1. Add automated browser/frontend entitlement-loader tests: no session => no product assets; inactive entitlement => locked; active product A => only asset A requested; product A must not request B/C/D/E or `plib-premium`; monthly Premium retains its existing shared bundle.
+2. Test signed purchase, duplicate delivery, refund, stale-event ordering, wrong email, and buyer email/account matching with safe test events.
+3. Complete a real BMC test purchase and confirm the matching NetCmd account receives only the purchased product. Supabase currently reports 0 active Shop entitlements.
+4. Run and review the full GitHub validation workflow and verify the generated `/tr/tools/intel/` and `/en/tools/intel/` pages before merging.
 
 Existing monthly membership behavior and secrets must remain unchanged.
