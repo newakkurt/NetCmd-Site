@@ -52,3 +52,16 @@ test('related pages share only their intended product entitlement', () => {
   assert.equal(shop.resolve('topo', ['topology-discovery-pro']).allowed, true);
   assert.equal(shop.resolve('coll', ['topology-discovery-pro']).allowed, true);
 });
+
+test('premium UI loads the tested entitlement helper before product checks', () => {
+  const build = fs.readFileSync('build.py', 'utf8');
+  const ui = fs.readFileSync('assets/premium.js', 'utf8');
+  assert.ok(build.indexOf('/assets/shop-entitlements.js') < build.indexOf('/assets/premium.js'));
+  assert.match(ui, /window\.NetCmdShop && window\.NetCmdShop\.resolve\(tool, plan\.products\)/);
+});
+
+test('Troubleshooting PRO uses Shop access for full diagnostic steps', () => {
+  const ui = fs.readFileSync('assets/premium.js', 'utf8');
+  assert.match(ui, /var hasTroublePro = plan\.premium \|\| plan\.productAccess/);
+  assert.match(ui, /if \(!hasTroublePro\) html \+= upsell/);
+});
