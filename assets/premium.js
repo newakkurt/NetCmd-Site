@@ -31,15 +31,25 @@
   function sevCell(s) { return '<span class="risk risk-' + s + '">' + esc(T['p_sev_' + s]) + '</span>'; }
 
   /* ---------- Premium modülü: yalnızca Premium üyeye Supabase'den verilir (RLS) ---------- */
-  function runPro(code, cb) {
+  function runModule(code, loadedFlag, cb) {
     try {
       var u = URL.createObjectURL(new Blob([code], { type: 'text/javascript' }));
       var sc = document.createElement('script');
       sc.src = u;
-      sc.onload = function () { URL.revokeObjectURL(u); cb(!!P.PREMIUM_LOADED); };
+      sc.onload = function () { URL.revokeObjectURL(u); cb(!!P[loadedFlag]); };
       sc.onerror = function () { URL.revokeObjectURL(u); cb(false); };
       document.head.appendChild(sc);
     } catch (e) { cb(false); }
+  }
+  function runPro(code, cb) {
+    runModule(code, 'PREMIUM_LOADED', cb);
+  }
+  function loadProductModule(plan, assetName, loadedFlag, cb) {
+    if (!plan.sb || !plan.productAccess) { cb(false); return; }
+    plan.sb.from('premium_assets').select('code').eq('name', assetName).maybeSingle().then(function (r) {
+      var code = r && r.data && r.data.code;
+      if (code) runModule(code, loadedFlag, cb); else cb(false);
+    }).catch(function () { cb(false); });
   }
   function loadPro(plan, cb) {
     if (P.PREMIUM_LOADED) { cb(true); return; }
@@ -116,8 +126,9 @@
   }
 
   function planBar(plan) {
+    var status = plan.premium ? T.p_plan_premium : (plan.productAccess ? 'Ürün erişimi aktif' : T.p_plan_free);
     var h = '<div class="note planbar"><strong>' + esc(T.p_plan) + ':</strong> ' +
-      esc(plan.premium ? T.p_plan_premium : T.p_plan_free) + ' ';
+      esc(status) + ' ';
     if (plan.unavailable) h += '<span>· ' + esc(T.p_unavailable) + '</span> ';
     if (plan.premium && !plan.pro) h += '<span class="msg err">' + esc(T.p_pro_fail) + '</span> ';
     if (!plan.premium) {
@@ -405,10 +416,32 @@
         app.innerHTML = '<div class="msg err">' + esc(String(e && e.message || e)) + '</div>';
       }
     }
-    // Until each product has a physically separate module and matching RLS policy,
-    // one-time Shop entitlements must not download the shared Premium bundle.
-    if (tool === 'premium' || !plan.premium) { plan.pro = false; go(); return; }
+    // Monthly Premium keeps the existing shared bundle and is not changed by Shop entitlements.
+    if (tool === 'premium') { plan.pro = false; go(); return; }
+    if (plan.premium) {
+      app.innerHTML = '<div class="note">' + esc(T.p_pro_loading) + '</div>';
+      loadPro(plan, function (ok) { plan.pro = !!ok; go(); });
+      return;
+    }
+
+    // One-time Shop access is tool-scoped. Never fetch the shared monthly Premium bundle.
+    var productModules = {
+      aud: { slug: 'config-auditor-pro', asset: 'plib-config-auditor', flag: 'CONFIG_AUDITOR_PRO_LOADED' },
+      trouble: { slug: 'troubleshooting-pro', asset: '', flag: '' },
+      comp: { slug: 'config-auditor-pro', asset: 'plib-config-auditor', flag: 'CONFIG_AUDITOR_PRO_LOADED' },
+      topo: { slug: 'topology-discovery-pro', asset: 'plib-topology', flag: 'TOPOLOGY_PRO_LOADED' },
+      bulk: { slug: 'bulk-automation-pro', asset: 'plib-bulk-automation', flag: 'BULK_AUTOMATION_PRO_LOADED' },
+      coll: { slug: 'topology-discovery-pro', asset: 'plib-topology', flag: 'TOPOLOGY_PRO_LOADED' }
+    };
+    var product = productModules[tool];
+    if (!product || plan.products.indexOf(product.slug) < 0) { plan.pro = false; go(); return; }
+    plan.productAccess = true;
+    if (tool === 'trouble') { plan.pro = true; go(); return; }
     app.innerHTML = '<div class="note">' + esc(T.p_pro_loading) + '</div>';
-    loadPro(plan, function (ok) { plan.pro = !!ok; go(); });
+    loadProductModule(plan, product.asset, product.flag, function (ok) {
+      plan.pro = !!ok;
+      if (!ok) plan.productAccess = false;
+      go();
+    });
   });
 })();
