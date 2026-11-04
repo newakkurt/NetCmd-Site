@@ -9,6 +9,7 @@ This branch does not provision a new Render API or background worker. The existi
 - Job execution: GitHub Actions runner, one job per workflow invocation.
 - Queue: additive SQL in `supabase/saas_core.sql`; it has not been applied to production.
 - API ingress: `supabase/functions/netcmd-jobs/index.ts` provides authenticated job submission and owner-scoped status lookup.
+- Access gate: active NetCmd PRO membership unlocks the PRO suite; an active product entitlement can also unlock its matching tool.
 - Python handler: `services/worker/worker.py`, with an allow-list and no arbitrary shell/Python execution.
 
 ## Required setup before enabling the queue
