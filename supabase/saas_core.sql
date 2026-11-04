@@ -77,13 +77,12 @@ comment on table public.netcmd_automation_jobs is
 comment on table public.netcmd_api_usage is
   'Backend-only API usage audit trail; apply quotas/rate limits at the API gateway or worker layer.';
 
-
--- Atomic queue claim: only service_role may claim jobs; SKIP LOCKED prevents
--- two workers from processing the same queued row.
+-- Use SECURITY INVOKER: service_role already has the required table privileges
+-- and RLS bypass. Execution remains restricted to service_role only.
 create or replace function public.netcmd_claim_job()
 returns setof public.netcmd_automation_jobs
 language plpgsql
-security definer
+security invoker
 set search_path = public
 as $$
 begin
@@ -112,7 +111,7 @@ create or replace function public.netcmd_finish_job(
 )
 returns boolean
 language plpgsql
-security definer
+security invoker
 set search_path = public
 as $$
 begin
