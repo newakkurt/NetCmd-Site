@@ -1068,8 +1068,8 @@ def premium_script(lang, tool):
     return (
         '<script src="' + BASE_PATH + '/assets/vendor/supabase.js"></script>'
         '<script id="tool-data" type="application/json">{}</script>'
-        '<script src="{}/assets/plib.js?v={}"></script><script src="{}/assets/premium.js?v={}"></script>'
-    ).format(payload, BASE_PATH, TODAY, BASE_PATH, TODAY)
+        '<script src="{}/assets/plib.js?v={}"></script><script src="{}/assets/shop-entitlements.js?v={}"></script><script src="{}/assets/premium.js?v={}"></script>'
+    ).format(payload, BASE_PATH, TODAY, BASE_PATH, TODAY, BASE_PATH, TODAY)
 
 
 def build_premium(lang, paths):
