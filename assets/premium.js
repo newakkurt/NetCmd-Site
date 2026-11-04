@@ -384,6 +384,8 @@
   var KEY_INTEL = 'netcmd.intel.snapshot.v1';
   function renderIntel(plan) {
     if (!plan.pro) { app.innerHTML = planBar(plan) + upsell(T.p_locked); return; }
+    var en = D.lang === 'en';
+    function tx(english, turkish) { return en ? english : turkish; }
     app.innerHTML = planBar(plan) +
       '<div class="row"><label for="i-v">' + esc(T.p_vendor) + '</label><select id="i-v"><option value="cisco">Cisco IOS</option><option value="huawei">Huawei VRP</option><option value="aruba">Aruba</option></select></div>' +
       '<label for="i-f">' + esc(T.p_aud_files) + '</label><input id="i-f" type="file" accept=".txt,.cfg,.conf,.log,text/plain" multiple>' +
@@ -411,9 +413,9 @@
       var vendor = $('i-v').value, rep = P.report(vendor, inputs), out = $('i-out');
       if (!rep.devices.length) { out.innerHTML = '<div class="msg err">' + esc(T.p_empty) + '</div>'; return; }
       var t = rep.totals;
-      var html = '<div class="note"><strong>Devices: ' + t.devices + '</strong> · Lines: ' + t.lines +
-        ' · Ports: ' + t.ports + ' · VLANs: ' + t.vlans + ' · Average security score: ' + t.score + '/100' +
-        '<br>High: ' + t.high + ' · Medium: ' + t.medium + ' · Low: ' + t.low + '</div>' +
+      var html = '<div class="note"><strong>' + tx('Devices: ', 'Cihaz: ') + t.devices + '</strong> · ' + tx('Lines: ', 'Satır: ') + t.lines +
+        ' · ' + tx('Ports: ', 'Port: ') + t.ports + ' · ' + tx('VLANs: ', 'VLAN: ') + t.vlans + ' · ' + tx('Average security score: ', 'Ortalama güvenlik puanı: ') + t.score + '/100' +
+        '<br>' + tx('High: ', 'Yüksek: ') + t.high + ' · ' + tx('Medium: ', 'Orta: ') + t.medium + ' · ' + tx('Low: ', 'Düşük: ') + t.low + '</div>' +
         '<div class="tablewrap"><table><tr><th>Device</th><th>Score</th><th>Ports</th><th>VLANs</th><th>Access</th><th>Trunk</th><th>Shutdown</th><th>High</th><th>Medium</th><th>Low</th></tr>';
       rep.devices.forEach(function (d) {
         html += '<tr><td>' + esc(d.host) + '</td><td>' + d.score + '/100</td><td>' + d.ports + '</td><td>' + d.vlans +
@@ -430,18 +432,18 @@
       var prev = store(KEY_INTEL), snap = P.reportSnapshot(rep);
       if (prev) {
         var diff = P.reportDiff(prev, rep);
-        html += '<h3>Period comparison</h3><p>New devices: ' + diff.added.length + ' · Removed devices: ' + diff.removed.length +
-          ' · Changed devices: ' + diff.changed.length + '</p>';
+        html += '<h3>' + tx('Period comparison', 'Dönem karşılaştırması') + '</h3><p>' + tx('New devices: ', 'Yeni cihaz: ') + diff.added.length + ' · ' + tx('Removed devices: ', 'Kaldırılan cihaz: ') + diff.removed.length +
+          ' · ' + tx('Changed devices: ', 'Değişen cihaz: ') + diff.changed.length + '</p>';
         if (diff.changed.length) html += '<ul>' + diff.changed.map(function (x) {
           return '<li>' + esc(x.host) + ': score ' + (x.score > 0 ? '+' : '') + x.score +
             ', ports ' + (x.ports > 0 ? '+' : '') + x.ports + ', VLANs ' + (x.vlans > 0 ? '+' : '') + x.vlans +
             ', new findings ' + x.newIds.length + ', fixed ' + x.fixed.length + '</li>';
         }).join('') + '</ul>';
-      } else html += '<p>First report saved as the comparison baseline.</p>';
+      } else html += '<p>' + tx('First report saved as the comparison baseline.', 'İlk rapor karşılaştırma başlangıcı olarak kaydedildi.') + '</p>';
       store(KEY_INTEL, snap);
       var csv = [['device','score','lines','vlans','ports','access','trunk','shutdown','high','medium','low']];
       rep.devices.forEach(function (d) { csv.push([d.host,d.score,d.lines,d.vlans,d.ports,d.access,d.trunk,d.shut,d.high,d.medium,d.low]); });
-      html += '<p><button class="btn sec" id="i-csv" type="button">Download CSV</button></p>';
+      html += '<p><button class="btn sec" id="i-csv" type="button">' + tx('Download CSV', 'CSV indir') + '</button></p>';
       out.innerHTML = html;
       $('i-csv').addEventListener('click', function () {
         download('netcmd-intelligence-report.csv', csv.map(function (r) { return r.map(csvCell).join(','); }).join('\\n'), 'text/csv;charset=utf-8');
