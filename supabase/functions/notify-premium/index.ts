@@ -17,7 +17,8 @@ Deno.serve(async (req) => {
   if (buttons) {
     payload.reply_markup = {
       inline_keyboard: [[
-        { text: "✅ 1 yıl onayla", callback_data: `a:${Number(r.id)}:365` },
+        { text: "✅ 30 gün", callback_data: `a:${Number(r.id)}:30` },
+        { text: "✅ 1 yıl", callback_data: `a:${Number(r.id)}:365` },
         { text: "❌ Reddet", callback_data: `r:${Number(r.id)}` },
       ]],
     };
