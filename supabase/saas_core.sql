@@ -44,6 +44,9 @@ create index if not exists netcmd_jobs_user_created_idx
 create index if not exists netcmd_jobs_queue_idx
   on public.netcmd_automation_jobs(status, created_at)
   where status = 'queued';
+create index if not exists netcmd_jobs_api_key_idx
+  on public.netcmd_automation_jobs(api_key_id)
+  where api_key_id is not null;
 create unique index if not exists netcmd_jobs_request_id_unique
   on public.netcmd_automation_jobs(user_id, request_id)
   where request_id is not null;
@@ -58,6 +61,9 @@ create table if not exists public.netcmd_api_usage (
 );
 create index if not exists netcmd_api_usage_user_created_idx
   on public.netcmd_api_usage(user_id, created_at desc);
+create index if not exists netcmd_api_usage_api_key_idx
+  on public.netcmd_api_usage(api_key_id)
+  where api_key_id is not null;
 
 alter table public.netcmd_api_keys enable row level security;
 alter table public.netcmd_automation_jobs enable row level security;
