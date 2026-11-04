@@ -380,6 +380,75 @@
     });
   }
 
+  /* ---------- 7) Network Intelligence Reports (bağımsız Shop modülü) ---------- */
+  var KEY_INTEL = 'netcmd.intel.snapshot.v1';
+  function renderIntel(plan) {
+    if (!plan.pro) { app.innerHTML = planBar(plan) + upsell(T.p_locked); return; }
+    app.innerHTML = planBar(plan) +
+      '<div class="row"><label for="i-v">' + esc(T.p_vendor) + '</label><select id="i-v"><option value="cisco">Cisco IOS</option><option value="huawei">Huawei VRP</option><option value="aruba">Aruba</option></select></div>' +
+      '<label for="i-f">' + esc(T.p_aud_files) + '</label><input id="i-f" type="file" accept=".txt,.cfg,.conf,.log,text/plain" multiple>' +
+      '<label for="i-in">' + esc(T.p_aud_paste) + '</label><textarea id="i-in" rows="10" dir="ltr" spellcheck="false"></textarea>' +
+      '<p><button class="btn" id="i-run" type="button">' + esc(T.p_run) + '</button></p><div id="i-out"></div>';
+    var files = [];
+    $('i-f').addEventListener('change', function (e) {
+      files = [];
+      var list = [].slice.call(e.target.files || []).slice(0, 50), left = list.length;
+      if (!left) return;
+      list.forEach(function (file) {
+        var reader = new FileReader();
+        reader.onload = function () {
+          files.push({ name: file.name, text: String(reader.result || '').slice(0, 2000000) });
+          left--;
+          if (!left) $('i-in').placeholder = files.map(function (x) { return x.name; }).join(', ');
+        };
+        reader.readAsText(file);
+      });
+    });
+    $('i-run').addEventListener('click', function () {
+      var inputs = files.slice(), pasted = $('i-in').value.trim();
+      if (pasted) inputs.unshift({ name: 'pasted-config.txt', text: pasted });
+      if (!inputs.length) { $('i-out').innerHTML = '<div class="msg err">' + esc(T.p_empty) + '</div>'; return; }
+      var vendor = $('i-v').value, rep = P.report(vendor, inputs), out = $('i-out');
+      if (!rep.devices.length) { out.innerHTML = '<div class="msg err">' + esc(T.p_empty) + '</div>'; return; }
+      var t = rep.totals;
+      var html = '<div class="note"><strong>Devices: ' + t.devices + '</strong> · Lines: ' + t.lines +
+        ' · Ports: ' + t.ports + ' · VLANs: ' + t.vlans + ' · Average security score: ' + t.score + '/100' +
+        '<br>High: ' + t.high + ' · Medium: ' + t.medium + ' · Low: ' + t.low + '</div>' +
+        '<div class="tablewrap"><table><tr><th>Device</th><th>Score</th><th>Ports</th><th>VLANs</th><th>Access</th><th>Trunk</th><th>Shutdown</th><th>High</th><th>Medium</th><th>Low</th></tr>';
+      rep.devices.forEach(function (d) {
+        html += '<tr><td>' + esc(d.host) + '</td><td>' + d.score + '/100</td><td>' + d.ports + '</td><td>' + d.vlans +
+          '</td><td>' + d.access + '</td><td>' + d.trunk + '</td><td>' + d.shut + '</td><td>' + d.high + '</td><td>' + d.medium + '</td><td>' + d.low + '</td></tr>';
+      });
+      html += '</table></div><h3>Findings</h3>';
+      rep.devices.forEach(function (d) {
+        if (!d.findings.length) return;
+        html += '<div class="panel"><h3>' + esc(d.host) + '</h3><ul>';
+        d.findings.forEach(function (f) { html += '<li>' + esc(f.sev.toUpperCase()) + ' · ' + esc(f.id) +
+          ' — <code>' + esc(f.ev) + '</code><br><small>Fix: <code>' + esc(f.fix) + '</code></small></li>'; });
+        html += '</ul></div>';
+      });
+      var prev = store(KEY_INTEL), snap = P.reportSnapshot(rep);
+      if (prev) {
+        var diff = P.reportDiff(prev, rep);
+        html += '<h3>Period comparison</h3><p>New devices: ' + diff.added.length + ' · Removed devices: ' + diff.removed.length +
+          ' · Changed devices: ' + diff.changed.length + '</p>';
+        if (diff.changed.length) html += '<ul>' + diff.changed.map(function (x) {
+          return '<li>' + esc(x.host) + ': score ' + (x.score > 0 ? '+' : '') + x.score +
+            ', ports ' + (x.ports > 0 ? '+' : '') + x.ports + ', VLANs ' + (x.vlans > 0 ? '+' : '') + x.vlans +
+            ', new findings ' + x.newIds.length + ', fixed ' + x.fixed.length + '</li>';
+        }).join('') + '</ul>';
+      } else html += '<p>First report saved as the comparison baseline.</p>';
+      store(KEY_INTEL, snap);
+      var csv = [['device','score','lines','vlans','ports','access','trunk','shutdown','high','medium','low']];
+      rep.devices.forEach(function (d) { csv.push([d.host,d.score,d.lines,d.vlans,d.ports,d.access,d.trunk,d.shut,d.high,d.medium,d.low]); });
+      html += '<p><button class="btn sec" id="i-csv" type="button">Download CSV</button></p>';
+      out.innerHTML = html;
+      $('i-csv').addEventListener('click', function () {
+        download('netcmd-intelligence-report.csv', csv.map(function (r) { return r.map(csvCell).join(','); }).join('\\n'), 'text/csv;charset=utf-8');
+      });
+    });
+  }
+
   /* ---------- Premium page: Buy Me a Coffee membership ---------- */
   function renderPremiumPage(plan) {
     var box = $('prem-box');
@@ -412,6 +481,7 @@
         else if (tool === 'topo') renderTopology(plan);
         else if (tool === 'bulk') renderBulk(plan);
         else if (tool === 'coll') renderCollector(plan);
+        else if (tool === 'intel') renderIntel(plan);
       } catch (e) {
         app.innerHTML = '<div class="msg err">' + esc(String(e && e.message || e)) + '</div>';
       }
@@ -431,7 +501,8 @@
       comp: { slug: 'config-auditor-pro', asset: 'plib-config-auditor', flag: 'CONFIG_AUDITOR_PRO_LOADED' },
       topo: { slug: 'topology-discovery-pro', asset: 'plib-topology', flag: 'TOPOLOGY_PRO_LOADED' },
       bulk: { slug: 'bulk-automation-pro', asset: 'plib-bulk-automation', flag: 'BULK_AUTOMATION_PRO_LOADED' },
-      coll: { slug: 'topology-discovery-pro', asset: 'plib-topology', flag: 'TOPOLOGY_PRO_LOADED' }
+      coll: { slug: 'topology-discovery-pro', asset: 'plib-topology', flag: 'TOPOLOGY_PRO_LOADED' },
+      intel: { slug: 'network-intelligence-reports-pro', asset: 'plib-premium-intel', flag: 'INTEL_LOADED' }
     };
     var product = productModules[tool];
     if (!product || plan.products.indexOf(product.slug) < 0) { plan.pro = false; go(); return; }
