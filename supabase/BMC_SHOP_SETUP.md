@@ -38,12 +38,21 @@ Expected asset names:
 - `plib-bulk-automation` / `plib-bulk-automation.js`
 - `plib-premium-intel` / `plib-premium-intel.js`
 
-## Launch blockers — do not publish product buttons as working unlocks yet
+## Current integration status
 
-- `assets/premium.js` now reads the signed-in user's active `product_slug` entitlements from `netcmd_product_entitlements`, but this is detection only. It still loads the shared `plib-premium` bundle for monthly members only; product-specific bundle loading is not implemented yet.
-- The private `premium` Storage bucket and `premium_assets` table now have product-specific read policies, but the four new product assets do not exist yet.
-- The shared `plib-premium` module contains multiple products' code. Granting that whole file to a one-product buyer would expose unrelated PRO features.
-- Network Intelligence Reports has a separate `plib-premium-intel` row, but its dependency on the shared core and its product-specific access policy still need to be separated and tested.
-- Split the shared core into independent product modules (including removing `plib-premium-intel`'s shared-core dependency), then add the entitlement-aware loader for the matching product only.\n- Add automated checks for: no session => no products; inactive entitlement => locked; active entitlement for product A => only asset A requested; product A must not load B/C/D/E or `plib-premium`; monthly Premium retains its existing shared bundle.\n- Test signed purchase, duplicate delivery, refund, stale-event ordering, and buyer email/account matching before merging the website checkout UI.
+- `assets/premium.js` reads the signed-in user's active `product_slug` entitlements and loads only the exact asset associated with the current tool. A Shop buyer is never sent the shared monthly `plib-premium` bundle.
+- Monthly Premium continues to use the existing shared `plib-premium` bundle and its existing RLS policy.
+- Troubleshooting PRO uses the public troubleshooting engine and unlocks the expanded step-by-step guidance only for an active `troubleshooting-pro` entitlement; it does not need a separate JavaScript asset.
+- Network Intelligence Reports has a separate `tools/intel/` page and loads only `plib-premium-intel` for an active `network-intelligence-reports-pro` entitlement. The module uses the public `plib.js` helpers and does not load the private shared monthly bundle.
+- The Intelligence Reports module was exercised against sample Cisco IOS, Huawei VRP, and Aruba configurations. All three returned device/port/VLAN summaries, and the period-diff check detected a changed device. These are logic smoke tests, not production acceptance tests.
+- Three product-specific JavaScript assets are still missing: `plib-config-auditor`, `plib-topology`, and `plib-bulk-automation`. The Config Auditor asset should contain its premium audit rules and the Compliance engine. Topology Discovery should contain the topology parser/visualizer and read-only collector. Bulk Automation should contain only its generator and required export helpers.
+- The product-specific SELECT policies already map each slug to its exact row/file in `premium_assets` and the private `premium` bucket. Existing monthly policies are unchanged.
+
+## Remaining launch blockers — do not merge or announce working product unlocks yet
+
+1. Create and test the three missing isolated assets above; verify each module exports the exact flag expected by `assets/premium.js`.
+2. Add automated entitlement-loader tests: no session => no product assets; inactive entitlement => locked; active product A => only asset A requested; product A must not request B/C/D/E or `plib-premium`; monthly Premium retains its existing shared bundle.
+3. Test signed purchase, duplicate delivery, refund, stale-event ordering, wrong email, and buyer email/account matching with safe test events.
+4. Complete a real BMC test purchase and confirm the matching NetCmd account receives only the purchased product. Supabase currently reports 0 active Shop entitlements.
 
 Existing monthly membership behavior and secrets must remain unchanged.
