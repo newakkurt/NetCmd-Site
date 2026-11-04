@@ -5,7 +5,7 @@ services:
     name: netcmd-cloud-api
     runtime: docker
     region: frankfurt
-    plan: free
+    plan: 0.5c-512mb
     branch: feature/netcmd-saas-foundation
     dockerfilePath: ./services/api/Dockerfile
     dockerContext: ./services/api
