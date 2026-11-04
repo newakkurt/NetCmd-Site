@@ -1083,6 +1083,10 @@ def build_premium(lang, paths):
     intel_name = "Network Intelligence Reports" if lang == "en" else "Ağ Zekâsı Raporları"
     intel_desc = ("Multi-device inventory, port, VLAN and security posture reports with period comparison."
                   if lang == "en" else "Çoklu cihaz envanteri, port, VLAN ve güvenlik durumu raporları; dönem karşılaştırması.")
+    rows += '<tr><td><a href="{}">{}</a></td><td>{}</td><td>{}</td></tr>'.format(
+        lurl(lang, "tools/intel/"), esc(intel_name),
+        "Multi-device reporting" if lang == "en" else "Çoklu cihaz raporlama",
+        "Detailed security and change reports" if lang == "en" else "Detaylı güvenlik ve değişim raporları")
     cur = esc(SITECFG.get("premium_currency", "$"))
     new_p = SITECFG.get("premium_price", "").strip()
     old_p = SITECFG.get("premium_price_old", "").strip()
