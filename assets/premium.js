@@ -131,7 +131,7 @@
       esc(status) + ' ';
     if (plan.unavailable) h += '<span>· ' + esc(T.p_unavailable) + '</span> ';
     if (plan.premium && !plan.pro) h += '<span class="msg err">' + esc(T.p_pro_fail) + '</span> ';
-    if (!plan.premium) {
+    if (!plan.premium && !plan.productAccess) {
       if (!plan.logged) h += '<a class="btn sec" href="' + esc(C.loginPath) + '">' + esc(T.p_login) + '</a> ';
       h += '<a class="btn" href="' + esc(C.premiumPath) + '">' + esc(T.p_upgrade) + '</a>';
     }
