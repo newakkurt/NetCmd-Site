@@ -46,6 +46,14 @@ jobs:
         run: |
           find assets -type f -name '*.js' -print0 | xargs -0 -r -n1 node --check
 
+      - name: Set up Deno for Edge Function validation
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Type-check NetCmd Edge Function
+        run: deno check supabase/functions/netcmd-jobs/index.ts
+
       - name: Run network logic tests
         run: node --test tests/*.test.cjs
 
