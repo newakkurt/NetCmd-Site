@@ -232,7 +232,7 @@ async def get_job(
     return rows[0]
 
 
-@app.delete("/v1/api-keys/{key_id}", status_code=status.HTTP_204_NO_CONTENT)
+@app.delete("/v1/api-keys/{key_id}", status_code=status.HTTP_200_OK)
 async def revoke_api_key(
     key_id: uuid.UUID, user: dict[str, Any] = Depends(current_user)
 ) -> None:
