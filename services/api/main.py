@@ -10,6 +10,7 @@ import hmac
 import os
 import secrets
 import uuid
+from datetime import datetime, timezone
 from functools import lru_cache
 from typing import Any, Literal
 
@@ -90,6 +91,8 @@ async def supabase_request(
         "Content-Type": "application/json",
         "Accept": "application/json",
     }
+    if method in {"POST", "PATCH"}:
+        headers["Prefer"] = "return=representation"
     async with httpx.AsyncClient(timeout=10.0) as client:
         response = await client.request(
             method, f"{SUPABASE_URL}/rest/v1/{path}",
@@ -236,5 +239,5 @@ async def revoke_api_key(
     await supabase_request(
         "PATCH", "netcmd_api_keys",
         params={"id": f"eq.{key_id}", "user_id": f"eq.{user['id']}", "revoked_at": "is.null"},
-        body={"revoked_at": "now()"},
+        body={"revoked_at": datetime.now(timezone.utc).isoformat()},
     )
