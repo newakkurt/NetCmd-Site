@@ -16,8 +16,8 @@
   },
   {
     "id": "config-auditor-pro",
-    "status": "soon",
-    "url": "",
+    "status": "live",
+    "url": "tools/aud/",
     "price": "30",
     "name": {
       "tr": "Config Auditor PRO",
@@ -33,8 +33,8 @@
   },
   {
     "id": "topology-discovery-pro",
-    "status": "soon",
-    "url": "",
+    "status": "live",
+    "url": "tools/topo/",
     "price": "30",
     "name": {
       "tr": "Topology Discovery PRO",
@@ -50,8 +50,8 @@
   },
   {
     "id": "troubleshooting-pro",
-    "status": "soon",
-    "url": "",
+    "status": "live",
+    "url": "tools/trouble/",
     "price": "30",
     "name": {
       "tr": "Troubleshooting Assistant PRO",
@@ -67,8 +67,8 @@
   },
   {
     "id": "bulk-automation-pro",
-    "status": "soon",
-    "url": "",
+    "status": "live",
+    "url": "tools/bulk/",
     "price": "30",
     "name": {
       "tr": "Bulk Automation PRO",
@@ -84,8 +84,8 @@
   },
   {
     "id": "network-intelligence-reports-pro",
-    "status": "soon",
-    "url": "",
+    "status": "live",
+    "url": "tools/intel/",
     "price": "30",
     "name": {
       "tr": "Network Intelligence Reports PRO",
