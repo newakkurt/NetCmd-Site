@@ -127,7 +127,7 @@
   }
 
   function planBar(plan) {
-    var status = plan.premium ? T.p_plan_premium : (plan.productAccess ? 'Ürün erişimi aktif' : T.p_plan_free);
+    var status = plan.premium ? T.p_plan_premium : (plan.productAccess ? (D.lang === 'en' ? 'Product access active' : 'Ürün erişimi aktif') : T.p_plan_free);
     var h = '<div class="note planbar"><strong>' + esc(T.p_plan) + ':</strong> ' +
       esc(status) + ' ';
     if (plan.unavailable) h += '<span>· ' + esc(T.p_unavailable) + '</span> ';
@@ -206,18 +206,19 @@
       var vl = parseInt($('t-v').value, 10);
       var res = P.troubleshoot(txt, vl > 0 && vl < 4095 ? vl : 0);
       if (!res.length) { out.innerHTML = '<div class="msg ok">' + esc(T.p_none) + '</div>'; return; }
-      var shown = plan.premium ? res : res.slice(0, 1);
+      var hasTroublePro = plan.premium || plan.productAccess;
+      var shown = hasTroublePro ? res : res.slice(0, 1);
       var html = '';
       shown.forEach(function (f) {
         html += '<div class="panel"><h3 style="margin-top:0">' + sevCell(f.sev) + ' ' + esc(T['p_ts_' + f.id + '_t']) + '</h3>' +
           '<p dir="ltr"><code>' + esc(f.ev) + '</code></p>';
-        if (plan.premium) {
+        if (hasTroublePro) {
           html += '<p><strong>' + esc(T.p_ts_steps) + ':</strong></p><ol>' +
             String(T['p_ts_' + f.id + '_s']).split('|').map(function (s) { return '<li>' + esc(s) + '</li>'; }).join('') + '</ol>';
         }
         html += '</div>';
       });
-      if (!plan.premium) html += upsell(res.length > 1 ? fmt(T.p_ts_hidden, { n: res.length - 1 }) : T.p_limited);
+      if (!hasTroublePro) html += upsell(res.length > 1 ? fmt(T.p_ts_hidden, { n: res.length - 1 }) : T.p_limited);
       out.innerHTML = html;
     });
   }
