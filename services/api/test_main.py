@@ -37,6 +37,14 @@ class SaaSApiTests(unittest.TestCase):
         with self.assertRaises(ValidationError):
             main.JobCreate(kind="run_shell", payload={"command": "whoami"})
 
+    def test_premium_expiry_is_enforced(self):
+        self.assertTrue(main.premium_is_active({"is_premium": True, "premium_until": None}))
+        self.assertFalse(main.premium_is_active({"is_premium": False, "premium_until": None}))
+        self.assertFalse(main.premium_is_active({
+            "is_premium": True, "premium_until": "2000-01-01T00:00:00Z"
+        }))
+        self.assertFalse(main.premium_is_active({"is_premium": True, "premium_until": "not-a-date"}))
+
     def test_scope_check_denies_missing_permission(self):
         with self.assertRaises(Exception):
             main.require_scope({"scopes": ["jobs:read"]}, "jobs:write")
