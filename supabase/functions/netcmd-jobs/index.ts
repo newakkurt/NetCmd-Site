@@ -92,7 +92,11 @@ Deno.serve(async (req: Request) => {
     if (new TextEncoder().encode(raw).length > 28_000) {
       return json({ error: "payload_too_large" }, 413, cors);
     }
-    input = JSON.parse(raw);
+    const parsed = JSON.parse(raw);
+    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) {
+      return json({ error: "request_body_must_be_object" }, 400, cors);
+    }
+    input = parsed as Record<string, unknown>;
   } catch {
     return json({ error: "invalid_json" }, 400, cors);
   }
