@@ -116,19 +116,37 @@ Deno.serve(async (req: Request) => {
   }
 
   const productSlug = productForKind[kind];
-  const entitlementUrl = new URL(`${supabaseUrl}/rest/v1/netcmd_product_entitlements`);
-  entitlementUrl.search = new URLSearchParams({
-    select: "id",
-    user_id: `eq.${userId}`,
-    product_slug: `eq.${productSlug}`,
-    active: "eq.true",
+  // Existing NetCmd PRO monthly membership grants the full PRO suite.
+  // A separately purchased product entitlement also grants access.
+  const profileUrl = new URL(`${supabaseUrl}/rest/v1/profiles`);
+  profileUrl.search = new URLSearchParams({
+    select: "is_premium,premium_until",
+    id: `eq.${userId}`,
     limit: "1",
   }).toString();
-  const entitlementResponse = await fetch(entitlementUrl, { headers: adminHeaders });
-  if (!entitlementResponse.ok) return json({ error: "database_operation_failed" }, 502, cors);
-  const entitlements = await entitlementResponse.json();
-  if (!Array.isArray(entitlements) || entitlements.length === 0) {
-    return json({ error: "active_product_entitlement_required" }, 403, cors);
+  const profileResponse = await fetch(profileUrl, { headers: adminHeaders });
+  if (!profileResponse.ok) return json({ error: "database_operation_failed" }, 502, cors);
+  const profiles = await profileResponse.json();
+  const profile = Array.isArray(profiles) ? profiles[0] : null;
+  const premiumExpiry = profile?.premium_until ? Date.parse(profile.premium_until) : null;
+  const membershipActive = profile?.is_premium === true &&
+    (premiumExpiry === null || (Number.isFinite(premiumExpiry) && premiumExpiry > Date.now()));
+
+  if (!membershipActive) {
+    const entitlementUrl = new URL(`${supabaseUrl}/rest/v1/netcmd_product_entitlements`);
+    entitlementUrl.search = new URLSearchParams({
+      select: "id",
+      user_id: `eq.${userId}`,
+      product_slug: `eq.${productSlug}`,
+      active: "eq.true",
+      limit: "1",
+    }).toString();
+    const entitlementResponse = await fetch(entitlementUrl, { headers: adminHeaders });
+    if (!entitlementResponse.ok) return json({ error: "database_operation_failed" }, 502, cors);
+    const entitlements = await entitlementResponse.json();
+    if (!Array.isArray(entitlements) || entitlements.length === 0) {
+      return json({ error: "active_product_entitlement_required" }, 403, cors);
+    }
   }
 
   // Simple per-user safety cap: at most five jobs in a rolling hour.
