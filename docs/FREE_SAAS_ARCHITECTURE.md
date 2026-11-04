@@ -8,7 +8,7 @@ This branch does not provision a new Render API or background worker. The existi
 - Authentication and database: existing Supabase project.
 - Job execution: GitHub Actions runner, one job per workflow invocation.
 - Queue: additive SQL in `supabase/saas_core.sql`; it has not been applied to production.
-- API ingress: Supabase Edge Function is the planned replacement for the paid FastAPI web service.
+- API ingress: `supabase/functions/netcmd-jobs/index.ts` provides authenticated job submission and owner-scoped status lookup.
 - Python handler: `services/worker/worker.py`, with an allow-list and no arbitrary shell/Python execution.
 
 ## Required setup before enabling the queue
@@ -24,7 +24,7 @@ Never put the service-role key in frontend files, commits, issue comments, or ch
 
 1. No production SQL has been applied by this branch.
 2. No GitHub secrets have been created or changed.
-3. The job API ingress still needs to be implemented as a Supabase Edge Function.
+3. The Edge Function is source-only until deployed; deployment requires the reviewed SQL migration and function secrets.
 4. Only `config_audit` is implemented; other job kinds fail closed.
 5. GitHub and Supabase free tiers have quotas and fair-use limits. Monitor usage and never upgrade or enable paid resources automatically.
 6. Existing Buy Me a Coffee membership and webhook logic is not changed by this free worker path.
