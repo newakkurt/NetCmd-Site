@@ -40,10 +40,10 @@ Expected asset names:
 
 ## Launch blockers — do not publish product buttons as working unlocks yet
 
-- `assets/premium.js` still loads the shared `plib-premium` bundle for monthly members only; product-specific bundle loading is not implemented yet.
+- `assets/premium.js` now reads the signed-in user's active `product_slug` entitlements from `netcmd_product_entitlements`, but this is detection only. It still loads the shared `plib-premium` bundle for monthly members only; product-specific bundle loading is not implemented yet.
 - The private `premium` Storage bucket and `premium_assets` table now have product-specific read policies, but the four new product assets do not exist yet.
 - The shared `plib-premium` module contains multiple products' code. Granting that whole file to a one-product buyer would expose unrelated PRO features.
 - Network Intelligence Reports has a separate `plib-premium-intel` row, but its dependency on the shared core and its product-specific access policy still need to be separated and tested.
-- Split the remaining products into independent modules, add product-specific entitlement-aware read policies, and test purchase, duplicate delivery, refund, stale-event ordering, and email/account matching before merging the website checkout UI.
+- Split the shared core into independent product modules (including removing `plib-premium-intel`'s shared-core dependency), then add the entitlement-aware loader for the matching product only.\n- Add automated checks for: no session => no products; inactive entitlement => locked; active entitlement for product A => only asset A requested; product A must not load B/C/D/E or `plib-premium`; monthly Premium retains its existing shared bundle.\n- Test signed purchase, duplicate delivery, refund, stale-event ordering, and buyer email/account matching before merging the website checkout UI.
 
 Existing monthly membership behavior and secrets must remain unchanged.
