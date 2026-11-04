@@ -9,6 +9,7 @@ on:
       - feature/netcmd-2.0
       - feature/global-monetization-paddle
       - feature/bmc-membership-premium
+      - feature/bmc-shop-products
 
 permissions:
   contents: read
