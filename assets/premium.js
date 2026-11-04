@@ -78,9 +78,10 @@
   }
   /* CSV + Excel + PDF(yazdır) düğmeleri; headers/rows dışa aktarılacak tablo */
   function exportBar(id, base, title, headers, rows) {
-    return '<p class="row"><button class="btn sec" id="' + id + '-csv" type="button">' + esc(T.p_dl_csv) + '</button> ' +
-      '<button class="btn sec" id="' + id + '-xlsx" type="button">' + esc(T.p_dl_xlsx) + '</button> ' +
-      '<button class="btn sec" id="' + id + '-pdf" type="button">' + esc(T.p_dl_pdf) + '</button></p>';
+    var h = '<p class="row"><button class="btn sec" id="' + id + '-csv" type="button">' + esc(T.p_dl_csv) + '</button>';
+    if (typeof P.xlsx === 'function') h += ' <button class="btn sec" id="' + id + '-xlsx" type="button">' + esc(T.p_dl_xlsx) + '</button>';
+    if (typeof P.printHtml === 'function') h += ' <button class="btn sec" id="' + id + '-pdf" type="button">' + esc(T.p_dl_pdf) + '</button>';
+    return h + '</p>';
   }
   function wireExport(id, base, title, headers, rows) {
     $(id + '-csv').addEventListener('click', function () {
@@ -88,10 +89,10 @@
       rows.forEach(function (r) { lines.push(r.map(csvCell).join(',')); });
       download(base + '.csv', lines.join('\n'), 'text/csv;charset=utf-8');
     });
-    $(id + '-xlsx').addEventListener('click', function () {
+    if (typeof P.xlsx === 'function' && $(id + '-xlsx')) $(id + '-xlsx').addEventListener('click', function () {
       bytesDownload(base + '.xlsx', P.xlsx([headers].concat(rows), title), 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
     });
-    $(id + '-pdf').addEventListener('click', function () {
+    if (typeof P.printHtml === 'function' && $(id + '-pdf')) $(id + '-pdf').addEventListener('click', function () {
       var w = window.open('', '_blank');
       if (!w) return;
       w.document.open(); w.document.write(P.printHtml(title, headers, rows)); w.document.close();
