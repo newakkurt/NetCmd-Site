@@ -1060,7 +1060,7 @@ PREMIUM_TOOLS = [("aud", "aud", "aud"), ("trouble", "trouble", "trouble"), ("com
 def premium_script(lang, tool):
     pt = {k: v for k, v in I18N["ui"][lang].items() if k.startswith("p_")}
     cfg = {
-        "url": SITECFG.get("supabase_url", ""), "key": SITECFG.get("supabase_key", ""),
+        "url": SITECFG.get("supabase_url", ""), "key": SITECFG.get("supabase_key", ""), "lang": lang,
         "loginPath": lurl(lang, "login/"), "resetPath": lurl(lang, "reset/"), "signupPath": lurl(lang, "signup/"), "signupText": T(lang, "nav_signup"),
         "premiumPath": lurl(lang, "premium/"), "bmcUrl": SITECFG.get("bmc_url", ""),
     }
@@ -1080,6 +1080,9 @@ def build_premium(lang, paths):
             lurl(lang, "tools/%s/" % key), t("tool_%s_name" % key), t("pg_%s_f" % key), t("pg_%s_p" % key))
     for key in ("fav", "exp"):
         rows += "<tr><td>{}</td><td>{}</td><td>{}</td></tr>".format(t("pg_%s_name" % key), t("pg_%s_f" % key), t("pg_%s_p" % key))
+    intel_name = "Network Intelligence Reports" if lang == "en" else "Ağ Zekâsı Raporları"
+    intel_desc = ("Multi-device inventory, port, VLAN and security posture reports with period comparison."
+                  if lang == "en" else "Çoklu cihaz envanteri, port, VLAN ve güvenlik durumu raporları; dönem karşılaştırması.")
     cur = esc(SITECFG.get("premium_currency", "$"))
     new_p = SITECFG.get("premium_price", "").strip()
     old_p = SITECFG.get("premium_price_old", "").strip()
@@ -1116,6 +1119,22 @@ def build_premium(lang, paths):
               page(lang, name + " | " + SITE, desc, path, body, tech_ld(name, desc, lang), script=premium_script(lang, js)))
         paths.add(path)
 
+
+    # Network Intelligence Reports is a separate one-time Shop product.
+    intel_path = "tools/intel/"
+    intel_body = (
+        '<div class="crumbs"><a href="{home}">{crumb}</a> › <a href="{tools}">{tools_n}</a></div>'
+        '<h1>{name} <span class="badge">PRO</span></h1><p class="lead">{desc}</p>'
+        '<div class="note">{priv}</div><div id="app" data-tool="intel"></div>'
+    ).format(
+        home=lurl(lang), crumb=esc(T(lang, "crumb_home")), tools=lurl(lang, "tools/"),
+        tools_n=esc(T(lang, "nav_tools")), name=esc(intel_name), desc=esc(intel_desc),
+        priv=esc(T(lang, "p_privacy")),
+    )
+    write("{}/{}index.html".format(lang, intel_path),
+          page(lang, intel_name + " | " + SITE, intel_desc, intel_path, intel_body,
+               tech_ld(intel_name, intel_desc, lang), script=premium_script(lang, "intel")))
+    paths.add(intel_path)
 
 def auth_script(lang, kind):
     keys = ["auth_unavailable", "generic_err", "signup_ok", "login_err", "forgot_ok", "reset_ok", "reset_bad", "reset_short"]
