@@ -25,7 +25,7 @@ services:
     name: netcmd-cloud-worker
     runtime: python
     region: frankfurt
-    plan: starter
+    plan: 0.5c-512mb
     branch: feature/netcmd-saas-foundation
     rootDir: services/worker
     buildCommand: pip install -r requirements.txt
