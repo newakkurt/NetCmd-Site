@@ -7,7 +7,7 @@ Edge Functions remain unchanged.
 
 - `GET /health`: liveness check.
 - `GET /v1/me`: validates a Supabase Auth access token using the project's JWKS.
-- `POST /v1/api-keys`: creates an API key; the raw key is returned once and only
+- API access requires an active NetCmd Premium profile; expiry is checked when keys are created and used.\n- `POST /v1/api-keys`: creates an API key; the raw key is returned once and only
   an HMAC-SHA256 digest is stored.
 - `DELETE /v1/api-keys/{id}`: revokes a key belonging to the authenticated user.
 - `POST /v1/jobs`: accepts an allow-listed job into the database queue.
