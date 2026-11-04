@@ -1,7 +1,8 @@
 """NetCmd queue worker.
 
-Only deterministic, local config text analysis is enabled in this first release.
-No shell commands, arbitrary Python, SSH, or device writes are executed here.
+Runs as a short-lived GitHub Actions job or a long-running worker.
+Only deterministic, local config text analysis is enabled in this release.
+No shell commands, arbitrary Python, SSH, or device writes are executed.
 """
 from __future__ import annotations
 
@@ -16,6 +17,7 @@ SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SERVICE_KEY = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
 POLL_SECONDS = float(os.getenv("POLL_SECONDS", "5"))
 RUN_ONCE = os.getenv("NETCMD_WORKER_ONCE", "0") == "1"
+MAX_JOBS_PER_RUN = max(1, min(int(os.getenv("NETCMD_MAX_JOBS_PER_RUN", "20")), 100))
 stopping = False
 
 HEADERS = {
@@ -35,7 +37,7 @@ def audit_config(payload: dict[str, Any]) -> dict[str, Any]:
     lines = [line.strip() for line in config.splitlines() if line.strip()]
     lowered = "\n".join(lines).lower()
     checks = [
-        (("telnet",), "warning", "Telnet configuration found; prefer SSH."),
+        (( "telnet",), "warning", "Telnet configuration found; prefer SSH."),
         (("snmp-server community", "snmp community"), "warning",
          "SNMP community string detected; review SNMPv3 migration."),
         (("no service password-encryption",), "critical",
@@ -99,19 +101,23 @@ async def run_job(client: httpx.AsyncClient, job: dict[str, Any]) -> None:
 
 async def main() -> None:
     global stopping
+    processed = 0
     async with httpx.AsyncClient(timeout=20.0) as client:
         while not stopping:
             try:
                 job = await rpc(client, "netcmd_claim_job")
                 if isinstance(job, list) and job:
                     await run_job(client, job[0])
-                    if RUN_ONCE:
+                    processed += 1
+                    if RUN_ONCE and processed >= MAX_JOBS_PER_RUN:
                         return
-                else:
-                    if RUN_ONCE:
-                        return
-                    await asyncio.sleep(POLL_SECONDS)
+                    continue
+                if RUN_ONCE:
+                    return
+                await asyncio.sleep(POLL_SECONDS)
             except httpx.HTTPError:
+                if RUN_ONCE:
+                    raise
                 await asyncio.sleep(max(POLL_SECONDS, 10))
 
 
