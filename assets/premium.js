@@ -96,11 +96,22 @@
     sb.auth.getSession().then(function (r) {
       var s = r.data && r.data.session;
       if (!s) { cb({ premium: false, products: [], logged: false, sb: sb }); return; }
-      sb.from('profiles').select('is_premium,premium_until').eq('id', s.user.id).maybeSingle().then(function (p) {
-        var d = p.data || {};
+      Promise.all([
+        sb.from('profiles').select('is_premium,premium_until').eq('id', s.user.id).maybeSingle(),
+        sb.from('netcmd_product_entitlements').select('product_slug').eq('user_id', s.user.id).eq('active', true)
+      ]).then(function (results) {
+        var p = results[0], e = results[1];
+        var d = p && p.data || {};
         var ok = !!d.is_premium && (!d.premium_until || new Date(d.premium_until) > new Date());
-        cb({ premium: ok, logged: true, sb: sb, user: s.user });
-      }).catch(function () { cb({ premium: false, logged: true, sb: sb, user: s.user }); });
+        // Shop ownership is recorded for isolated product modules only.
+        // It never grants access to the shared Premium bundle.
+        var products = e && !e.error && Array.isArray(e.data)
+          ? e.data.map(function (x) { return String(x.product_slug || ''); }).filter(Boolean)
+          : [];
+        cb({ premium: ok, products: products, logged: true, sb: sb, user: s.user });
+      }).catch(function () {
+        cb({ premium: false, products: [], logged: true, sb: sb, user: s.user });
+      });
     }).catch(function () { cb({ premium: false, products: [], logged: false, unavailable: true }); });
   }
 
