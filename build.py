@@ -1054,7 +1054,7 @@ def build_support(lang, paths):
     paths.add("support/")
 
 PREMIUM_TOOLS = [("aud", "aud", "aud"), ("trouble", "trouble", "trouble"), ("comp", "comp", "comp"), ("topo", "topo", "topo"),
-                 ("bulk", "bulk", "bulk"), ("coll", "coll", "coll")]
+                 ("bulk", "bulk", "bulk"), ("coll", "coll", "coll"), ("intel", "intel", "intel")]
 
 
 def premium_script(lang, tool):
@@ -1075,7 +1075,7 @@ def premium_script(lang, tool):
 def build_premium(lang, paths):
     t = lambda k: esc(T(lang, k))
     rows = ""
-    for key in ("aud", "trouble", "comp", "topo", "bulk", "coll"):
+    for key in ("aud", "trouble", "comp", "topo", "bulk", "coll", "intel"):
         rows += '<tr><td><a href="{}">{}</a></td><td>{}</td><td>{}</td></tr>'.format(
             lurl(lang, "tools/%s/" % key), t("tool_%s_name" % key), t("pg_%s_f" % key), t("pg_%s_p" % key))
     for key in ("fav", "exp"):

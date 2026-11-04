@@ -58,6 +58,23 @@
       }).catch(fromTable);
     } catch (e) { fromTable(); }
   }
+  /* Ek premium varlığı (ör. 'plib-premium-intel'): yalnızca premium_assets tablosundan, Premium üyeye (RLS) */
+  function loadExtra(plan, name, flag, cb) {
+    if (P[flag]) { cb(true); return; }
+    if (!plan.premium || !plan.sb) { cb(false); return; }
+    plan.sb.from('premium_assets').select('code').eq('name', name).maybeSingle().then(function (r) {
+      var code = r && r.data && r.data.code;
+      if (!code) { cb(false); return; }
+      try {
+        var u = URL.createObjectURL(new Blob([code], { type: 'text/javascript' }));
+        var sc = document.createElement('script');
+        sc.src = u;
+        sc.onload = function () { URL.revokeObjectURL(u); cb(!!P[flag]); };
+        sc.onerror = function () { URL.revokeObjectURL(u); cb(false); };
+        document.head.appendChild(sc);
+      } catch (e) { cb(false); }
+    }).catch(function () { cb(false); });
+  }
   function bytesDownload(name, bytes, type) {
     var a = document.createElement('a');
     a.href = URL.createObjectURL(new Blob([bytes], { type: type }));
@@ -358,6 +375,96 @@
     });
   }
 
+  /* ---------- 7) Network Intelligence Reports ---------- */
+  var KEY_INTEL = 'netcmd.intel.last.v1';
+  function renderIntel(plan) {
+    if (!plan.pro) { app.innerHTML = planBar(plan) + upsell(T.p_locked); return; }
+    app.innerHTML = planBar(plan) +
+      '<div class="row"><label for="i-v">' + esc(T.p_vendor) + '</label><select id="i-v"><option value="cisco">Cisco IOS</option><option value="huawei">Huawei VRP</option><option value="aruba">Aruba AOS-S / AOS-CX</option></select></div>' +
+      '<div class="note">' + esc(T.p_rep_hint) + '</div>' +
+      '<label for="i-in">' + esc(T.p_aud_paste) + '</label><textarea id="i-in" rows="10" dir="ltr" spellcheck="false"></textarea>' +
+      '<p><label for="i-f">' + esc(T.p_aud_files) + '</label> <input type="file" id="i-f" accept=".txt,.cfg,.conf,.log,text/plain" multiple></p>' +
+      '<p><button class="btn" id="i-run" type="button">' + esc(T.p_run) + '</button></p><div id="i-out"></div>';
+    var files = [];
+    $('i-f').addEventListener('change', function (e) {
+      files = [];
+      var list = [].slice.call(e.target.files || [], 0, 50), left = list.length;
+      if (!left) return;
+      list.forEach(function (f) {
+        var r = new FileReader();
+        r.onload = function () {
+          files.push({ name: f.name, text: String(r.result || '').slice(0, 2000000) });
+          left--;
+          if (!left) $('i-in').placeholder = files.length + ' file(s): ' + files.slice(0, 5).map(function (x) { return x.name; }).join(', ') + (files.length > 5 ? ', …' : '');
+        };
+        r.onerror = function () { left--; };
+        r.readAsText(f);
+      });
+    });
+    $('i-run').addEventListener('click', function () {
+      var out = $('i-out'), txt = $('i-in').value;
+      var inputs = (txt.trim() ? [{ name: '-', text: txt }] : []).concat(files);
+      if (!inputs.length) { out.innerHTML = '<div class="msg err">' + esc(T.p_empty) + '</div>'; return; }
+      var rep = P.report($('i-v').value, inputs);
+      if (!rep.devices.length) { out.innerHTML = '<div class="msg err">' + esc(T.p_empty) + '</div>'; return; }
+      var t = rep.totals;
+      var html = '<p><strong>' + esc(fmt(T.p_rep_summary, { d: t.devices, p: t.ports, v: t.vlans, s: t.score, h: t.high, m: t.medium, l: t.low })) + '</strong></p>';
+      html += '<h3>' + esc(T.p_rep_devices) + '</h3><div class="tablewrap"><table><tr>' +
+        ['host', 'ports', 'vlans', 'access', 'trunk', 'shut', 'empty', 'score'].map(function (k) { return '<th>' + esc(T['p_rep_col_' + k]) + '</th>'; }).join('') + '</tr>';
+      rep.devices.forEach(function (d) {
+        html += '<tr><td>' + esc(d.host) + '</td><td>' + d.ports + '</td><td>' + d.vlans + '</td><td>' + d.access + '</td><td>' + d.trunk + '</td><td>' + d.shut + '</td><td>' + d.empty +
+          '</td><td>' + sevCell(d.score < 50 ? 'high' : d.score < 80 ? 'medium' : 'low') + ' ' + d.score + '</td></tr>';
+      });
+      html += '</table></div>';
+      var fh = ['device', 'severity', 'finding', 'evidence', 'fix'], fr = [];
+      rep.devices.forEach(function (d) {
+        d.findings.forEach(function (f) { fr.push([d.host, f.sev, T['p_r_' + f.id] || f.id, f.ev, f.fix]); });
+      });
+      html += '<h3>' + esc(T.p_rep_findings) + ' (' + fr.length + ')</h3>';
+      if (fr.length) {
+        html += '<div class="tablewrap"><table><tr><th>' + esc(T.p_rep_col_host) + '</th><th>' + esc(T.p_col_sev) + '</th><th>' + esc(T.p_col_find) + '</th><th>' + esc(T.p_col_ev) + '</th><th>' + esc(T.p_col_fix) + '</th></tr>';
+        fr.forEach(function (r) {
+          html += '<tr><td>' + esc(r[0]) + '</td><td>' + sevCell(r[1]) + '</td><td>' + esc(r[2]) + '</td><td dir="ltr"><code>' + esc(r[3]) + '</code></td><td dir="ltr"><code>' + esc(r[4]) + '</code></td></tr>';
+        });
+        html += '</table></div>';
+      } else html += '<div class="msg ok">' + esc(T.p_none) + '</div>';
+      html += '<h3>' + esc(T.p_rep_changes) + '</h3>';
+      var prev = store(KEY_INTEL);
+      if (!Array.isArray(prev)) html += '<p>' + esc(T.p_rep_first) + '</p>';
+      else {
+        var df = P.reportDiff(prev, rep);
+        if (!df.added.length && !df.removed.length && !df.changed.length) html += '<p>' + esc(T.p_rep_nochange) + '</p>';
+        else {
+          html += '<ul dir="ltr">' +
+            df.added.map(function (h) { return '<li>+ ' + esc(T.p_rep_new_dev) + ': <code>' + esc(h) + '</code></li>'; }).join('') +
+            df.removed.map(function (h) { return '<li>− ' + esc(T.p_rep_gone_dev) + ': <code>' + esc(h) + '</code></li>'; }).join('') +
+            df.changed.map(function (c) {
+              var parts = [];
+              if (c.score) parts.push('score ' + (c.score > 0 ? '+' : '') + c.score);
+              if (c.ports) parts.push('ports ' + (c.ports > 0 ? '+' : '') + c.ports);
+              if (c.vlans) parts.push('vlans ' + (c.vlans > 0 ? '+' : '') + c.vlans);
+              if (c.newIds.length) parts.push(c.newIds.length + ' ' + T.p_rep_new_find);
+              if (c.fixed.length) parts.push(c.fixed.length + ' ' + T.p_rep_fixed);
+              return '<li>~ <code>' + esc(c.host) + '</code>: ' + esc(parts.join(', ')) + '</li>';
+            }).join('') + '</ul>';
+        }
+      }
+      store(KEY_INTEL, P.reportSnapshot(rep));
+      var dh = ['device', 'ports', 'vlans', 'access', 'trunk', 'shutdown', 'empty', 'score', 'high', 'medium', 'low'];
+      var dr = rep.devices.map(function (d) { return [d.host, d.ports, d.vlans, d.access, d.trunk, d.shut, d.empty, d.score, d.high, d.medium, d.low]; });
+      html += exportBar('i', 'netcmd-report', 'NetCmd Network Report', dh, dr) +
+        '<p><button class="btn sec" id="i-fcsv" type="button">' + esc(T.p_dl_csv) + ' – ' + esc(T.p_rep_findings) + '</button></p>' +
+        '<p class="stat">' + esc(T.p_rep_note) + '</p>';
+      out.innerHTML = html;
+      wireExport('i', 'netcmd-report', 'NetCmd Network Report', dh, dr);
+      $('i-fcsv').addEventListener('click', function () {
+        var lines = [fh.map(csvCell).join(',')];
+        fr.forEach(function (r) { lines.push(r.map(csvCell).join(',')); });
+        download('netcmd-report-findings.csv', lines.join('\n'), 'text/csv;charset=utf-8');
+      });
+    });
+  }
+
   /* ---------- Premium page: Buy Me a Coffee membership ---------- */
   function renderPremiumPage(plan) {
     var box = $('prem-box');
@@ -390,12 +497,17 @@
         else if (tool === 'topo') renderTopology(plan);
         else if (tool === 'bulk') renderBulk(plan);
         else if (tool === 'coll') renderCollector(plan);
+        else if (tool === 'intel') renderIntel(plan);
       } catch (e) {
         app.innerHTML = '<div class="msg err">' + esc(String(e && e.message || e)) + '</div>';
       }
     }
     if (tool === 'premium' || !plan.premium) { plan.pro = false; go(); return; }
     app.innerHTML = '<div class="note">' + esc(T.p_pro_loading) + '</div>';
-    loadPro(plan, function (ok) { plan.pro = ok; go(); });
+    loadPro(plan, function (ok) {
+      plan.pro = ok;
+      if (ok && tool === 'intel') loadExtra(plan, 'plib-premium-intel', 'INTEL_LOADED', function (ok2) { plan.pro = ok2; go(); });
+      else go();
+    });
   });
 })();
