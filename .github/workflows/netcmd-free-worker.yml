@@ -23,18 +23,28 @@ jobs:
       NETCMD_MAX_JOBS_PER_RUN: "20"
     steps:
       - name: Check required secrets
+        id: secrets
+        shell: bash
         run: |
           if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
             echo "::notice::Set SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY repository Actions secrets to enable queue processing."
             exit 0
           fi
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+          echo "enabled=true" >> "$GITHUB_OUTPUT"
+      - name: Checkout
+        if: steps.secrets.outputs.enabled == 'true'
+        uses: actions/checkout@v4
+      - name: Set up Python
+        if: steps.secrets.outputs.enabled == 'true'
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
           cache-dependency-path: services/worker/requirements.txt
       - name: Install worker dependencies
+        if: steps.secrets.outputs.enabled == 'true'
         run: python -m pip install -r services/worker/requirements.txt
       - name: Process queued jobs
+        if: steps.secrets.outputs.enabled == 'true'
         run: python services/worker/worker.py
