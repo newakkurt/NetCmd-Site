@@ -9,6 +9,7 @@ on:
       - feature/netcmd-2.0
       - feature/global-monetization-paddle
       - feature/bmc-membership-premium
+      - feature/netcmd-saas-foundation
 
 permissions:
   contents: read
@@ -62,6 +63,12 @@ jobs:
           python3 -m pip install -r services/api/requirements.txt
           cd services/api
           python3 -m unittest discover -s . -p "test_*.py" -v
+          cd ../..
+
+      - name: Test free queue worker
+        run: |
+          python3 -m pip install -r services/worker/requirements.txt
+          python3 -m unittest discover -s services/worker -p "test_*.py" -v
 
       - name: Validate generated sitemap XML
         run: python3 -c "import xml.etree.ElementTree as ET; ET.parse('dist/sitemap.xml')"
