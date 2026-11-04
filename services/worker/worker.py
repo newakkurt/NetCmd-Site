@@ -15,6 +15,7 @@ import httpx
 SUPABASE_URL = os.environ["SUPABASE_URL"].rstrip("/")
 SERVICE_KEY = os.environ["SUPABASE_SERVICE_ROLE_KEY"]
 POLL_SECONDS = float(os.getenv("POLL_SECONDS", "5"))
+RUN_ONCE = os.getenv("NETCMD_WORKER_ONCE", "0") == "1"
 stopping = False
 
 HEADERS = {
@@ -94,7 +95,11 @@ async def main() -> None:
                 job = await rpc(client, "netcmd_claim_job")
                 if isinstance(job, list) and job:
                     await run_job(client, job[0])
+                    if RUN_ONCE:
+                        return
                 else:
+                    if RUN_ONCE:
+                        return
                     await asyncio.sleep(POLL_SECONDS)
             except httpx.HTTPError:
                 await asyncio.sleep(max(POLL_SECONDS, 10))
