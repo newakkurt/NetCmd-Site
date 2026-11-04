@@ -1,35 +1,38 @@
 # Buy Me a Coffee Shop products (one-time $30 purchases)
 
-This flow is deliberately separate from the monthly NetCmd PRO membership and its existing webhook.
+This flow is separate from the monthly NetCmd PRO membership. Keep the monthly webhook, secret, and membership level unchanged.
 
-## Shop setup
+## Live BMC Shop items
 
-Create five digital Shop items in Buy Me a Coffee, each priced at **USD 30**:
+The five USD 30 Shop items already created by the owner are:
 
-- Config Auditor PRO
-- Topology Discovery PRO
-- Troubleshooting Assistant PRO
-- Bulk Automation PRO
-- Network Intelligence Reports PRO
+| Product slug | BMC Extra ID | Checkout |
+|---|---:|---|
+| config-auditor-pro | 594541 | https://buymeacoffee.com/sevketkaynar/e/594541 |
+| topology-discovery-pro | 594543 | https://buymeacoffee.com/sevketkaynar/e/594543 |
+| troubleshooting-pro | 594544 | https://buymeacoffee.com/sevketkaynar/e/594544 |
+| bulk-automation-pro | 594545 | https://buymeacoffee.com/sevketkaynar/e/594545 |
+| network-intelligence-reports-pro | 594548 | https://buymeacoffee.com/sevketkaynar/e/594548 |
 
-Use the same names as the NetCmd project cards. BMC Shop can deliver a downloadable file or redirect buyers after checkout; use the redirect option only after the NetCmd account-based access flow is finished.
+The webhook currently contains this exact Extra-ID-to-slug mapping in `supabase/functions/bmc-shop-webhook/index.ts`. It does **not** currently read `BMC_SHOP_PRODUCT_MAP` from environment variables; do not configure or rely on that variable unless the function is changed to support it.
 
-For each Shop item, note its numeric Extra ID from a real `extra_purchase.created` delivery. The BMC webhook schema includes `data.extras[].id`, title, amount, currency and quantity. The signed webhook uses the `x-signature-sha256` HMAC-SHA256 header.
+## Supabase webhook
 
-## Supabase setup
-
-1. Apply `supabase/bmc_shop_products.sql` to the existing Supabase project.
-2. Deploy `supabase/functions/bmc-shop-webhook/index.ts` as Edge Function `bmc-shop-webhook`, with JWT verification disabled (it verifies BMC's signature itself).
-3. Set Edge Function secrets:
-   - `BMC_SHOP_WEBHOOK_SECRET`: the signing secret for this Shop webhook (each BMC webhook has its own secret).
-   - `BMC_SHOP_PRODUCT_MAP`: JSON mapping BMC Extra IDs to NetCmd product slugs, e.g. `{"12345":"config-auditor-pro","23456":"topology-discovery-pro"}`.
-4. In BMC Integrations, create a separate webhook pointed at:
+1. Edge Function name: `bmc-shop-webhook`.
+2. Endpoint:
    `https://olbyrzqjdbxxsfaonsew.supabase.co/functions/v1/bmc-shop-webhook`
-   Subscribe to `extra_purchase.created`, `extra_purchase.updated`, and `extra_purchase.refunded`.
-5. Send test events, then make a real low-risk test purchase/refund before launch.
+3. JWT verification is disabled for this endpoint because the function verifies BMC's HMAC-SHA256 signature from `x-signature-sha256`.
+4. Required secrets: `BMC_SHOP_WEBHOOK_SECRET`, plus Supabase's platform-provided `SUPABASE_URL` and `SUPABASE_SERVICE_ROLE_KEY`.
+5. Subscribe to `extra_purchase.created`, `extra_purchase.updated`, and `extra_purchase.refunded`.
 
-## Important status
+The webhook grants only mapped line items whose amount is exactly USD 30 and whose payment status is `succeeded`. Refund events revoke the order's entitlement. Buyers must register in NetCmd with the same email used at BMC checkout. If the account does not exist yet, the webhook returns HTTP 409 so BMC can retry after signup.
 
-This is the server-side entitlement foundation only. Do not publish the Shop purchase buttons or claim that one-time purchases unlock a tool until the frontend checks `netcmd_product_entitlements` and the premium module's RLS policy is updated and tested. Existing monthly membership behavior is unchanged.
+## Launch blockers — do not publish product buttons as working unlocks yet
 
-The webhook only grants a mapped product when the item line is exactly USD 30 and the BMC payment status is `succeeded`; refunds revoke that order's entitlement. Buyers must register in NetCmd with the same email used at BMC checkout.
+- `assets/premium.js` currently checks only the monthly `profiles.is_premium` membership.
+- The `premium_assets` table and private `premium` Storage bucket currently allow reads only to monthly Premium members.
+- The shared `plib-premium` module contains multiple products' code. Granting that whole file to a one-product buyer would expose unrelated PRO features.
+- Network Intelligence Reports has a separate `plib-premium-intel` row, but its dependency on the shared core and its product-specific access policy still need to be separated and tested.
+- Split the remaining products into independent modules, add product-specific entitlement-aware read policies, and test purchase, duplicate delivery, refund, stale-event ordering, and email/account matching before merging the website checkout UI.
+
+Existing monthly membership behavior and secrets must remain unchanged.
