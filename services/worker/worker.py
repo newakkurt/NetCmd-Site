@@ -33,23 +33,34 @@ def audit_config(payload: dict[str, Any]) -> dict[str, Any]:
         raise ValueError("config_text_too_large")
 
     lines = [line.strip() for line in config.splitlines() if line.strip()]
-    findings = []
-    checks = [
-        ("telnet", "Telnet configuration found; prefer SSH."),
-        ("snmp-server community", "SNMP community string detected; review SNMPv3 migration."),
-        ("no service password-encryption", "Password encryption appears disabled."),
-        (" spanning-tree portfast", "PortFast configuration found; verify access-port scope."),
-    ]
     lowered = "\n".join(lines).lower()
-    for needle, message in checks:
-        if needle in lowered:
-            findings.append({"severity": "warning", "rule": needle, "message": message})
+    checks = [
+        (("telnet",), "warning", "Telnet configuration found; prefer SSH."),
+        (("snmp-server community", "snmp community"), "warning",
+         "SNMP community string detected; review SNMPv3 migration."),
+        (("no service password-encryption",), "critical",
+         "Password encryption appears disabled."),
+        (("spanning-tree portfast",), "info",
+         "PortFast configuration found; verify access-port scope."),
+        (("snmp-server host", "snmp-agent target-host"), "info",
+         "SNMP trap destination configured; verify receiver and security settings."),
+        (("undo telnet server enable", "no ip http server"), "info",
+         "A legacy management service is explicitly disabled."),
+    ]
+    findings = []
+    for needles, severity, message in checks:
+        if any(needle in lowered for needle in needles):
+            findings.append({
+                "severity": severity,
+                "rule": needles[0],
+                "message": message,
+            })
     return {
         "engine": "netcmd-config-audit-v1",
         "line_count": len(lines),
         "finding_count": len(findings),
         "findings": findings,
-        "note": "Initial cloud worker handler; vendor-specific rule packs are being added.",
+        "note": "Initial safe text-only checks; vendor-specific rule packs are being added.",
     }
 
 
@@ -78,7 +89,6 @@ async def run_job(client: httpx.AsyncClient, job: dict[str, Any]) -> None:
             "p_error": None,
         })
     except Exception as exc:
-        # Return only a bounded, non-secret error string to the job record.
         await rpc(client, "netcmd_finish_job", {
             "p_job_id": job_id,
             "p_status": "failed",
