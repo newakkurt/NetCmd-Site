@@ -47,6 +47,15 @@ app.add_middleware(
     allow_headers=["Authorization", "Content-Type", "X-API-Key"],
 )
 
+JOB_PRODUCT = {
+    "config_audit": "config-auditor-pro",
+    "topology_discovery": "topology-discovery-pro",
+    "troubleshooting": "troubleshooting-pro",
+    "bulk_automation": "bulk-automation-pro",
+    "network_report": "network-intelligence-reports-pro",
+    "snmp_poll": "network-intelligence-reports-pro",
+}
+
 JobKind = Literal[
     "config_audit",
     "topology_discovery",
@@ -223,12 +232,26 @@ async def create_job(
     require_scope(key, "jobs:write")
     if len(str(data.payload).encode("utf-8")) > 24_000:
         raise HTTPException(status_code=413, detail="payload_too_large")
+    product_slug = JOB_PRODUCT[data.kind]
+    entitlements = await supabase_request(
+        "GET", "netcmd_product_entitlements",
+        params={
+            "select": "id",
+            "user_id": f"eq.{key['user_id']}",
+            "product_slug": f"eq.{product_slug}",
+            "active": "eq.true",
+            "limit": "1",
+        },
+    )
+    if not entitlements:
+        raise HTTPException(status_code=403, detail="active_product_entitlement_required")
     rows = await supabase_request(
         "POST", "netcmd_automation_jobs?select=id,status",
         body={
             "user_id": key["user_id"],
             "api_key_id": key["id"],
             "job_kind": data.kind,
+            "product_slug": product_slug,
             "payload": data.payload,
             "request_id": data.request_id,
             "status": "queued",
