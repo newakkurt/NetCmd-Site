@@ -498,17 +498,9 @@
     }
 
     // One-time Shop access is tool-scoped. Never fetch the shared monthly Premium bundle.
-    var productModules = {
-      aud: { slug: 'config-auditor-pro', asset: 'plib-config-auditor', flag: 'CONFIG_AUDITOR_PRO_LOADED' },
-      trouble: { slug: 'troubleshooting-pro', asset: '', flag: '' },
-      comp: { slug: 'config-auditor-pro', asset: 'plib-config-auditor', flag: 'CONFIG_AUDITOR_PRO_LOADED' },
-      topo: { slug: 'topology-discovery-pro', asset: 'plib-topology', flag: 'TOPOLOGY_PRO_LOADED' },
-      bulk: { slug: 'bulk-automation-pro', asset: 'plib-bulk-automation', flag: 'BULK_AUTOMATION_PRO_LOADED' },
-      coll: { slug: 'topology-discovery-pro', asset: 'plib-topology', flag: 'TOPOLOGY_PRO_LOADED' },
-      intel: { slug: 'network-intelligence-reports-pro', asset: 'plib-premium-intel', flag: 'INTEL_LOADED' }
-    };
-    var product = productModules[tool];
-    if (!product || plan.products.indexOf(product.slug) < 0) { plan.pro = false; go(); return; }
+    var access = window.NetCmdShop && window.NetCmdShop.resolve(tool, plan.products);
+    var product = access && access.product;
+    if (!product || !access.allowed) { plan.pro = false; go(); return; }
     plan.productAccess = true;
     if (tool === 'trouble') { plan.pro = true; go(); return; }
     app.innerHTML = '<div class="note">' + esc(T.p_pro_loading) + '</div>';
