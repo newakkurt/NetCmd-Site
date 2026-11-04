@@ -6,7 +6,7 @@ This branch does not provision a new Render API or background worker. The existi
 
 - Frontend: existing Render Static Site.
 - Authentication and database: existing Supabase project.
-- Job execution: GitHub Actions runner, one job per workflow invocation.
+- Job execution: GitHub Actions runner, one scheduled invocation every 15 minutes, processing up to 20 queued jobs.
 - Queue: additive SQL in `supabase/saas_core.sql`; it has not been applied to production.
 - API ingress: `supabase/functions/netcmd-jobs/index.ts` provides authenticated job submission and owner-scoped status lookup.
 - Access gate: active NetCmd PRO membership unlocks the PRO suite; an active product entitlement can also unlock its matching tool.
@@ -19,7 +19,7 @@ After reviewing and applying the additive SQL migration, add these repository Ac
 - `SUPABASE_URL`
 - `SUPABASE_SERVICE_ROLE_KEY`
 
-Never put the service-role key in frontend files, commits, issue comments, or chat. The workflow is configured for one-shot processing and at most one queued job per run. Scheduled workflows run from the repository default branch; the cron schedule becomes active only after this workflow is merged to the default branch. Manual dispatch can be used for controlled testing on the feature branch.
+Never put the service-role key in frontend files, commits, issue comments, or chat. The workflow skips cleanly until both secrets are configured. It is manually dispatchable for controlled tests and scheduled on the default branch every 15 minutes. It processes up to 20 jobs per invocation, then exits. For private repositories, monitor the included Actions minutes; for public repositories, hosted standard runners are generally free subject to GitHub fair-use limits.
 
 ## Rollout gates
 
