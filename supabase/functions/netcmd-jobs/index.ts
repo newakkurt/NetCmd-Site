@@ -149,42 +149,28 @@ Deno.serve(async (req: Request) => {
     }
   }
 
-  // Simple per-user safety cap: at most five jobs in a rolling hour.
-  const since = new Date(Date.now() - 60 * 60 * 1000).toISOString();
-  const quotaUrl = new URL(`${supabaseUrl}/rest/v1/netcmd_automation_jobs`);
-  quotaUrl.search = new URLSearchParams({
-    select: "id",
-    user_id: `eq.${userId}`,
-    created_at: `gte.${since}`,
-    limit: "5",
-  }).toString();
-  const quotaResponse = await fetch(quotaUrl, { headers: adminHeaders });
-  if (!quotaResponse.ok) return json({ error: "database_operation_failed" }, 502, cors);
-  const recentJobs = await quotaResponse.json();
-  if (Array.isArray(recentJobs) && recentJobs.length >= 5) {
-    return json({ error: "hourly_job_limit_reached" }, 429, cors);
-  }
-
-  const insertResponse = await fetch(`${supabaseUrl}/rest/v1/netcmd_automation_jobs?select=id,status`, {
+  // Enqueue and enforce the rolling-hour quota atomically per user in Postgres.
+  const enqueueResponse = await fetch(`${supabaseUrl}/rest/v1/rpc/netcmd_enqueue_job`, {
     method: "POST",
-    headers: { ...adminHeaders, Prefer: "return=representation" },
+    headers: adminHeaders,
     body: JSON.stringify({
-      user_id: userId,
-      job_kind: kind,
-      product_slug: productSlug,
-      payload,
-      request_id: requestId ?? null,
-      status: "queued",
+      p_user_id: userId,
+      p_job_kind: kind,
+      p_product_slug: productSlug,
+      p_payload: payload,
+      p_request_id: requestId ?? null,
     }),
   });
-  if (!insertResponse.ok) {
-    // Do not disclose database details; a duplicate request_id is a conflict.
-    return json({ error: insertResponse.status === 409 ? "duplicate_request_id" : "job_submission_failed" },
-      insertResponse.status === 409 ? 409 : 502, cors);
+  if (!enqueueResponse.ok) return json({ error: "database_operation_failed" }, 502, cors);
+  const enqueued = await enqueueResponse.json();
+  if (enqueued?.error === "hourly_job_limit_reached") {
+    return json({ error: "hourly_job_limit_reached" }, 429, cors);
   }
-  const inserted = await insertResponse.json();
-  if (!Array.isArray(inserted) || inserted.length === 0) {
+  if (enqueued?.error === "duplicate_request_id") {
+    return json({ error: "duplicate_request_id" }, 409, cors);
+  }
+  if (!enqueued || typeof enqueued.id !== "string") {
     return json({ error: "job_submission_failed" }, 502, cors);
   }
-  return json({ job_id: inserted[0].id, status: inserted[0].status }, 202, cors);
+  return json({ job_id: enqueued.id, status: enqueued.status }, 202, cors);
 });
