@@ -1,31 +1,54 @@
-# NetCmd zero-extra-hosting-cost deployment path
+# NetCmd zero-extra-Render-cost deployment
 
-This branch does not provision a new Render API or background worker. The existing NetCmd static site remains untouched.
+The existing NetCmd static site remains on Render Static Site. This path adds
+no paid Render API or background worker.
 
-## Free-tier architecture (within provider quotas)
+## Architecture
 
 - Frontend: existing Render Static Site.
-- Authentication and database: existing Supabase project.
-- Job execution: GitHub Actions runner, one scheduled invocation every 15 minutes, processing up to 20 queued jobs.
-- Queue: additive SQL in `supabase/saas_core.sql`; it has not been applied to production.
-- API ingress: `supabase/functions/netcmd-jobs/index.ts` provides authenticated job submission and owner-scoped status lookup.
-- Access gate: active NetCmd PRO membership unlocks the PRO suite; an active product entitlement can also unlock its matching tool.
-- Python handler: `services/worker/worker.py`, with an allow-list and no arbitrary shell/Python execution.
+- Authentication/database: existing Supabase project.
+- API ingress: deployed Supabase Edge Function `netcmd-jobs`, with JWT
+  verification and server-side entitlement checks.
+- Queue: additive Supabase Postgres tables and service-role-only RPC functions.
+- Worker: `.github/workflows/netcmd-free-worker.yml`, scheduled every
+  15 minutes on the default branch and manually dispatchable.
+- Payment: existing Buy Me a Coffee membership and webhook flow remains
+  unchanged.
 
-## Required setup before enabling the queue
+## Production status
 
-After reviewing and applying the additive SQL migration, add these repository Actions secrets:
+- SaaS queue tables and RPC functions: applied to Supabase.
+- Edge Function `netcmd-jobs`: deployed and ACTIVE.
+- PR #22: merged to `main`; CI passed.
+- GitHub Actions secrets `SUPABASE_URL` and
+  `SUPABASE_SERVICE_ROLE_KEY`: must be added by a repository administrator.
+  Until both exist, the worker intentionally skips processing.
+- No paid Render service has been provisioned.
+- Supabase/GitHub free-tier quotas and fair-use limits still apply.
 
-- `SUPABASE_URL`
-- `SUPABASE_SERVICE_ROLE_KEY`
+## Current handler capabilities
 
-Never put the service-role key in frontend files, commits, issue comments, or chat. The workflow skips cleanly until both secrets are configured. It is manually dispatchable for controlled tests and scheduled on the default branch every 15 minutes. It processes up to 20 jobs per invocation, then exits. For private repositories, monitor the included Actions minutes; for public repositories, hosted standard runners are generally free subject to GitHub fair-use limits.
+The worker supports deterministic analysis of supplied payloads:
 
-## Rollout gates
+1. `config_audit`: configuration text checks.
+2. `topology_discovery`: supplied topology graph validation/summary, not live discovery.
+3. `troubleshooting`: evidence-based candidate diagnostics from supplied output.
+4. `bulk_automation`: vendor-specific configuration plan generation in dry-run only.
+5. `network_report`: supplied inventory and interface status aggregation.
+6. `snmp_poll`: analysis of supplied SNMP varbinds and unknown OIDs, not live polling.
 
-1. No production SQL has been applied by this branch.
-2. No GitHub secrets have been created or changed.
-3. The Edge Function is source-only until deployed; deployment requires the reviewed SQL migration and function secrets.
-4. Only `config_audit` is implemented; other job kinds fail closed.
-5. GitHub and Supabase free tiers have quotas and fair-use limits. Monitor usage and never upgrade or enable paid resources automatically.
-6. Existing Buy Me a Coffee membership and webhook logic is not changed by this free worker path.
+No handler connects to a switch, executes CLI commands, polls SNMP, or changes
+production configuration. Real network operations require separate secure
+credential storage, explicit approval, device-specific integration tests,
+audit logging, and an isolated execution environment.
+
+## Activation checklist
+
+1. Add the two GitHub Actions repository secrets listed above.
+2. Open Actions → NetCmd Free Queue Worker → Run workflow for a controlled test.
+3. Submit one test job using a valid authenticated PRO account and verify its
+   terminal status and result.
+4. Monitor Actions minutes and Supabase usage before increasing worker cadence
+   or job limits.
+5. Complete payment reconciliation and product usage metering before public
+   commercial launch.
