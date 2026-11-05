@@ -1,35 +1,49 @@
 # NetCmd Cloud Worker
 
-This queue consumer uses Supabase Postgres RPCs and atomic
-`FOR UPDATE SKIP LOCKED` job claiming, so concurrent workers cannot claim
-the same queued job.
+The queue worker claims jobs atomically through Supabase Postgres RPCs using
+`FOR UPDATE SKIP LOCKED`. It runs as a short-lived GitHub Actions job.
 
-## Zero-cost deployment option
+## Free-tier deployment
 
-The repository includes a GitHub Actions workflow at
-`.github/workflows/netcmd-worker.yml`. It runs every 15 minutes, can also be
-started manually, and processes up to 20 queued jobs per run. This avoids
-creating a paid Render background worker. Private repositories consume the
-account's included GitHub Actions minutes; public repositories use the
-standard hosted runner without per-minute charges, subject to GitHub limits.
+The active workflow is
+`.github/workflows/netcmd-free-worker.yml`. It is scheduled every 15 minutes,
+can be dispatched manually from GitHub Actions, and processes at most 20 jobs
+per invocation. It does not require a paid Render Worker.
 
-Add these repository Actions secrets to enable it:
+Configure these repository secrets under GitHub → Settings → Secrets and
+variables → Actions:
+
 - `SUPABASE_URL`
-- `SUPABASE_SERVICE_ROLE_KEY` (server-side secret; never expose in browser code)
+- `SUPABASE_SERVICE_ROLE_KEY`
 
-The workflow safely skips processing until both secrets exist.
+The workflow safely skips processing until both exist. Never put the service
+role key in browser code, source files, issues, or chat. Free-tier quotas and
+fair-use limits apply.
 
-## Supported job handlers
+## Implemented safe handlers
 
-The initial handler supports `config_audit` on supplied configuration text.
-Other job kinds are deliberately marked failed until their isolated handlers,
-credential storage, vendor-specific tests, and explicit change approvals exist.
-The worker never executes user-provided shell/Python, never makes SSH sessions,
-and never changes network devices.
+All handlers work only on data supplied in the job payload. The worker does
+not scan networks, open SSH/SNMP sessions, execute arbitrary shell/Python,
+or apply configuration to devices.
 
-The worker is capped at 20 jobs per scheduled run by default. Override
-`NETCMD_MAX_JOBS_PER_RUN` only after testing runtime and quota usage.
+- `config_audit`: deterministic checks on supplied configuration text.
+- `topology_discovery`: validates and summarizes a supplied nodes/links graph;
+  this is not live network discovery.
+- `troubleshooting`: matches supplied symptoms and command output against
+  initial diagnostic rules; results are hypotheses for human verification.
+- `bulk_automation`: creates a vendor-specific configuration plan in
+  mandatory dry-run mode; shutdown plans require an approval reference. It
+  never executes commands.
+- `network_report`: summarizes supplied device/interface inventory.
+- `snmp_poll`: classifies supplied SNMP varbinds and flags unknown OIDs; it
+  does not poll devices.
 
-Apply `supabase/saas_core.sql` through a reviewed migration before enabling
-queue processing. The API hosting path is separate; the GitHub Actions worker
-does not itself expose a public API endpoint.
+## Safety limits
+
+- Job payloads are validated and bounded.
+- Bulk configuration generation is dry-run only.
+- No network device credentials are accepted or used by these handlers.
+- No device changes occur. A separate credential vault, live polling design,
+  approval workflow, and isolated execution environment are required before
+  any real network operations are introduced.
+- The workflow processes up to 20 jobs per scheduled run by default.
