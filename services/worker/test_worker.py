@@ -4,7 +4,7 @@ import unittest
 os.environ.setdefault("SUPABASE_URL", "https://example.supabase.co")
 os.environ.setdefault("SUPABASE_SERVICE_ROLE_KEY", "unit-test-key")
 
-from worker import audit_config
+from worker import (\n    audit_config, discover_topology, troubleshoot, bulk_plan,\n    network_report, analyze_snmp,\n)
 
 
 class ConfigAuditTests(unittest.TestCase):
