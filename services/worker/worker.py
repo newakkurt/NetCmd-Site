@@ -191,13 +191,13 @@ def bulk_plan(payload: dict[str, Any]) -> dict[str, Any]:
             raise ValueError("invalid_interface_name")
         if vendor == "cisco":
             prefix, shutdown = f"interface {interface}", " shutdown"
-            desc = f" description {str(target.get('description','')).replace(chr(10),' ')[:80]}"
+            desc = f" description {str(target.get('description','')).replace(chr(10),' ').replace(chr(13),' ').replace(';',' ').replace('"','')[:80]}"
         elif vendor == "huawei":
             prefix, shutdown = f"interface {interface}", " shutdown"
-            desc = f" description {str(target.get('description','')).replace(chr(10),' ')[:80]}"
+            desc = f" description {str(target.get('description','')).replace(chr(10),' ').replace(chr(13),' ').replace(';',' ').replace('"','')[:80]}"
         else:
             prefix, shutdown = f"interface {interface}", " disable"
-            desc = f" name {str(target.get('description','')).replace(chr(10),' ')[:80]}"
+            desc = f" name {str(target.get('description','')).replace(chr(10),' ').replace(chr(13),' ').replace(';',' ').replace('"','')[:80]}"
         if operation == "set_description":
             if not str(target.get("description", "")).strip():
                 raise ValueError("description_required")
@@ -234,7 +234,7 @@ def network_report(payload: dict[str, Any]) -> dict[str, Any]:
             if not isinstance(port, dict):
                 raise ValueError("interface_entries_must_be_objects")
             pstatus = str(port.get("status", "unknown")).lower()
-            if pstatus not in interface_totals:
+            if pstatus not in {"up", "down", "unknown"}:
                 pstatus = "unknown"
             interface_totals["total"] += 1
             interface_totals[pstatus] += 1
