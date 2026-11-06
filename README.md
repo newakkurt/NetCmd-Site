@@ -46,3 +46,12 @@ NetCmd PRO membership is sold through the Buy Me a Coffee page configured as `bm
 7. Send a test event, then test a real Sandbox/test membership if available before promoting the tier.
 
 Only the configured PRO membership level grants Premium. One-time coffee donations do not grant Premium. Refunds, cancellation, and pause behavior must be verified against real event deliveries before public launch.
+
+## IBAN / havale ile ödeme (yarı otomatik)
+Akış: kullanıcı Premium sayfasında **sipariş kodu** alır → IBAN'a havale yapar, açıklamaya kodu yazar → **Ödedim** der → Telegram'a ✅ 30 gün / ✅ 1 yıl / ❌ butonları gelir → onayla Premium açılır, sipariş `paid` olur.
+1. Supabase SQL Editor'de sırayla: `community.sql` → `ops2.sql` → `iban_orders.sql` → `waitlist.sql`.
+2. `notify-premium` Edge Function'ı güncel kodla yeniden yayınla (30 gün butonu eklendi).
+3. Render → Environment: `BANK_IBAN`, `BANK_HOLDER` (zorunlu), `BANK_NAME` (isteğe bağlı). **IBAN repoya yazılmaz**; build sırasında mod-97 ile doğrulanır, geçersiz/boşsa panel yayınlanmaz.
+4. `data/site.json`: `premium_price_try` (TL tutarı; boşsa "USD karşılığı TL" yazar), `contact_email`, `seller` (adres, vergi dairesi/no). Boş alanlar için build uyarı verir.
+5. Hukuki sayfalar: `data/legal.json` (`refund`, `distance-sales`). Yayın öncesi hukuk/muhasebe danışmanıyla gözden geçirin.
+6. Bekleme listesi: `waitlist` tablosu (yalnızca insert). Liste: `select email, product, lang, created_at from waitlist order by created_at desc;`

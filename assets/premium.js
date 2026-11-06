@@ -484,7 +484,60 @@
     box.innerHTML = '<h2>' + esc(T.p_checkout_title) + '</h2><p>' + esc(T.p_billing_note) + '</p>' +
       '<p class="note">' + esc(T.p_bmc_email_note) + '</p>' +
       '<p><a class="btn" href="' + esc(C.bmcUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(T.p_checkout) + '</a></p>' +
-      '<p class="msg">' + esc(T.p_bmc_activation_note) + '</p>';
+      '<p class="msg">' + esc(T.p_bmc_activation_note) + '</p>' +
+      '<p class="note">' + esc(T.p_iban_refund) + ' <a href="' + esc(C.refundPath) + '">' + esc(T.nav_refund) + '</a> · <a href="' + esc(C.dsalesPath) + '">' + esc(T.nav_dsales) + '</a></p>' +
+      '<div id="iban-box"></div>';
+    if (C.iban && plan.sb) renderIban(plan, $('iban-box'));
+  }
+
+  /* ---------- Havale/EFT: sipariş kodu + "Ödedim" bildirimi ---------- */
+  function renderIban(plan, box) {
+    var I = C.iban;
+    var amount = I.try ? T.p_iban_amount_try.replace('{try}', I.try) : T.p_iban_amount_usd.replace('{usd}', I.usd);
+    box.innerHTML = '<h2>' + esc(T.p_iban_title) + '</h2><p>' + esc(T.p_iban_intro) + '</p>' +
+      '<p><button class="btn sec" id="iban-get" type="button">' + esc(T.p_iban_get) + '</button></p><div id="iban-out"></div>';
+    var out = $('iban-out');
+    function msg(text, ok) { out.innerHTML = '<div class="msg ' + (ok ? 'ok' : 'err') + '">' + esc(text) + '</div>'; }
+    function copyBtn(id, value) {
+      var b = $(id);
+      if (!b) return;
+      b.addEventListener('click', function () {
+        var done = function () { b.textContent = T.p_iban_copied; };
+        if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(value).then(done, function () {});
+      });
+    }
+    $('iban-get').addEventListener('click', function () {
+      var btn = $('iban-get');
+      btn.disabled = true;
+      plan.sb.rpc('iban_order_create', { p_days: 30 }).then(function (r) {
+        btn.disabled = false;
+        if (r.error || !r.data) { msg(T.p_iban_err, false); return; }
+        var code = String(r.data);
+        out.innerHTML = '<div class="panel">' +
+          '<p>' + esc(T.p_iban_code) + ': <strong class="iban" id="iban-code">' + esc(code) + '</strong> <button class="btn sec" id="iban-c1" type="button">' + esc(T.p_iban_copy) + '</button></p>' +
+          '<p class="note">' + esc(T.p_iban_steps) + '</p>' +
+          '<p>' + esc(T.p_iban_holder) + ': <strong>' + esc(I.holder) + '</strong></p>' +
+          (I.bank ? '<p>' + esc(T.p_iban_bank) + ': <strong>' + esc(I.bank) + '</strong></p>' : '') +
+          '<p>' + esc(T.p_iban_iban) + ': <span class="iban" id="iban-no">' + esc(I.iban) + '</span> <button class="btn sec" id="iban-c2" type="button">' + esc(T.p_iban_copy) + '</button></p>' +
+          '<p>' + esc(T.p_iban_amount) + ': <strong>' + esc(amount) + '</strong></p>' +
+          '<p><small>' + esc(T.p_iban_valid) + '</small></p>' +
+          '<label>' + esc(T.p_iban_note) + '<input id="iban-note" type="text" maxlength="120"></label>' +
+          '<p><button class="btn" id="iban-paid" type="button">' + esc(T.p_iban_paid) + '</button></p><div id="iban-res"></div></div>';
+        copyBtn('iban-c1', code);
+        copyBtn('iban-c2', I.iban.replace(/\s/g, ''));
+        $('iban-paid').addEventListener('click', function () {
+          var pb = $('iban-paid'), res = $('iban-res');
+          pb.disabled = true;
+          plan.sb.rpc('iban_order_report', { p_code: code, p_note: String($('iban-note').value || '').slice(0, 120) }).then(function (rr) {
+            var st = rr.error ? 'error' : String(rr.data);
+            var map = { reported: [T.p_iban_reported, true], paid: [T.p_already, true], already_pending: [T.p_iban_pending, false], expired: [T.p_iban_expired, false] };
+            var m = map[st] || [T.p_iban_err, false];
+            res.innerHTML = '<div class="msg ' + (m[1] ? 'ok' : 'err') + '">' + esc(m[0]) + '</div>';
+            if (st !== 'reported' && st !== 'already_pending') pb.disabled = false;
+          }).catch(function () { res.innerHTML = '<div class="msg err">' + esc(T.p_iban_err) + '</div>'; pb.disabled = false; });
+        });
+      }).catch(function () { btn.disabled = false; msg(T.p_iban_err, false); });
+    });
   }
 
   getPlan(function (plan) {
