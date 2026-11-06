@@ -98,5 +98,39 @@
       "ar": "تقارير إدارية شهرية من بيانات المنافذ وVLAN والمخزون والأمان والتغييرات مع تصدير CSV وExcel وPDF."
     },
     "checkout_url": ""
+  },
+  {
+    "id": "configuration-compliance-pro",
+    "status": "live",
+    "url": "tools/comp/",
+    "price": "30",
+    "name": {
+      "tr": "Configuration Compliance PRO",
+      "en": "Configuration Compliance PRO",
+      "ar": "مدقق الامتثال للإعدادات الاحترافي"
+    },
+    "desc": {
+      "tr": "Kurum politikanı kural olarak tanımla; birden çok profille config'lerini kontrol et, uyumluluk skoru ve dışa aktarılabilir rapor al.",
+      "en": "Define your own policy as rules, check configs against multiple profiles, and get a compliance score with exportable reports.",
+      "ar": "عرّف سياسة مؤسستك كقواعد وافحص الإعدادات عبر عدة ملفات تعريف واحصل على درجة امتثال وتقارير قابلة للتصدير."
+    },
+    "checkout_url": ""
+  },
+  {
+    "id": "discovery-collector-pro",
+    "status": "live",
+    "url": "tools/coll/",
+    "price": "30",
+    "name": {
+      "tr": "Discovery Collector PRO",
+      "en": "Discovery Collector PRO",
+      "ar": "أداة جمع بيانات الاكتشاف الاحترافية"
+    },
+    "desc": {
+      "tr": "Kendi ağında CDP/LLDP komşuluk verisini toplayan, salt-okunur Python betiği üretir (Cisco, Huawei, Aruba).",
+      "en": "Generates a read-only Python script that collects CDP/LLDP neighbor data on your own network (Cisco, Huawei, Aruba).",
+      "ar": "يولّد سكربت Python للقراءة فقط يجمع بيانات جيران CDP/LLDP في شبكتك (Cisco وHuawei وAruba)."
+    },
+    "checkout_url": ""
   }
 ]

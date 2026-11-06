@@ -1,0 +1,33 @@
+{
+ "cats": {},
+ "items": {},
+ "ui": {
+  "tr": {
+   "acc_plan": "Plan",
+   "acc_plan_free": "Ücretsiz",
+   "acc_plan_pro": "PRO",
+   "acc_until": "Dönem sonu",
+   "acc_upgrade": "PRO'ya geç",
+   "acc_manage": "Üyeliği yönet (BMC)",
+   "acc_hint": "BMC'de NetCmd hesabındaki e-posta ile ödeme yapılmalıdır; PRO birkaç dakika içinde burada görünür."
+  },
+  "en": {
+   "acc_plan": "Plan",
+   "acc_plan_free": "Free",
+   "acc_plan_pro": "PRO",
+   "acc_until": "Period end",
+   "acc_upgrade": "Upgrade to PRO",
+   "acc_manage": "Manage membership (BMC)",
+   "acc_hint": "Pay on BMC with the same email as your NetCmd account; PRO appears here within a few minutes."
+  },
+  "ar": {
+   "acc_plan": "الخطة",
+   "acc_plan_free": "مجانية",
+   "acc_plan_pro": "PRO",
+   "acc_until": "نهاية الفترة",
+   "acc_upgrade": "الترقية إلى PRO",
+   "acc_manage": "إدارة العضوية (BMC)",
+   "acc_hint": "ادفع عبر BMC بنفس البريد المستخدم في حساب NetCmd؛ تظهر PRO هنا خلال دقائق."
+  }
+ }
+}

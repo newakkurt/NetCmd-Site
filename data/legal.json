@@ -2,7 +2,7 @@
  "privacy": {
   "tr": {
    "title": "Gizlilik Politikası ve KVKK Aydınlatma Metni",
-   "lead": "Son güncelleme: 26.10.2026. Bu metin, NetCmd sitesini kullanırken hangi verilerin işlendiğini açıklar.",
+   "lead": "Son güncelleme: 05.11.2026. Bu metin, NetCmd sitesini kullanırken hangi verilerin işlendiğini açıklar.",
    "sections": [
     [
      "Veri sorumlusu",
@@ -10,7 +10,7 @@
     ],
     [
      "Hangi verileri işliyoruz",
-     "Hesap oluşturursanız e-posta adresiniz, görünen adınız ve şifreniz (yalnızca doğrulama altyapısında şifrelenmiş olarak). Premium talebinde yazdığınız ödeme referansı. Topluluk bölümünde gönderdiğiniz komut, başlık ve açıklamalar. Araçlara (lab, config diff, denetim vb.) yapıştırdığınız metinler tarayıcınızda işlenir ve sunucumuza gönderilmez."
+     "Hesap oluşturursanız e-posta adresiniz, görünen adınız ve şifreniz (yalnızca doğrulama altyapısında şifrelenmiş olarak). Premium üyelik için ödeme sağlayıcıdan (Buy Me a Coffee) gelen üyelik durumu, dönem bitiş tarihi ve e-posta eşleşmesi; yönetici onayıyla yapılan başvurularda yazdığınız ödeme referansı. Kart veya banka bilgilerinizi görmeyiz ve saklamayız. Topluluk bölümünde gönderdiğiniz komut, başlık ve açıklamalar. Araçlara (lab, config diff, denetim vb.) yapıştırdığınız metinler tarayıcınızda işlenir ve sunucumuza gönderilmez."
     ],
     [
      "Tarayıcı depolaması ve çerezler",
@@ -26,11 +26,11 @@
     ],
     [
      "Veri işleyenler",
-     "Kimlik doğrulama, veritabanı ve dosya depolama için Supabase; barındırma için Render hizmetlerini kullanıyoruz. Bu sağlayıcılar yurt dışında bulunabilir; verileriniz bu kapsamda yurt dışına aktarılabilir. Verilerinizi satmıyoruz ve üçüncü taraflarla pazarlama amacıyla paylaşmıyoruz."
+     "Kimlik doğrulama, veritabanı ve dosya depolama için Supabase; barındırma için Render, Premium üyelik ödemeleri için Buy Me a Coffee hizmetlerini kullanıyoruz. Bu sağlayıcılar yurt dışında bulunabilir; verileriniz bu kapsamda yurt dışına aktarılabilir. Verilerinizi satmıyoruz ve üçüncü taraflarla pazarlama amacıyla paylaşmıyoruz."
     ],
     [
      "Saklama süresi",
-     "Hesap verileri hesabınız açık olduğu sürece saklanır. Silme talebinizde hesabınız ve ilişkili kayıtlar silinir."
+     "Hesap verileri hesabınız açık olduğu sürece saklanır. Silme talebinizde hesabınız ve ilişkili kayıtlar silinir; vergi ve muhasebe mevzuatı gereği saklanması zorunlu kayıtlar yasal süre boyunca saklanır."
     ],
     [
      "Haklarınız (KVKK m.11)",
@@ -44,7 +44,7 @@
   },
   "en": {
    "title": "Privacy Policy",
-   "lead": "Last updated: 2026-10-26. This page explains what data is processed when you use NetCmd.",
+   "lead": "Last updated: 2026-11-05. This page explains what data is processed when you use NetCmd.",
    "sections": [
     [
      "Controller",
@@ -52,7 +52,7 @@
     ],
     [
      "Data we process",
-     "If you create an account: your email address, display name and password (stored only in encrypted form by the authentication service). The payment reference you enter in a Premium request. Commands, titles and descriptions you submit in the Community section. Text you paste into the tools (lab, config diff, audit, etc.) is processed in your browser and is not sent to our servers."
+     "If you create an account: your email address, display name and password (stored only in encrypted form by the authentication service). For Premium membership: the membership status, period end date and email match received from the payment provider (Buy Me a Coffee), and the payment reference you enter in administrator-approved requests. We do not see or store your card or bank details. Commands, titles and descriptions you submit in the Community section. Text you paste into the tools (lab, config diff, audit, etc.) is processed in your browser and is not sent to our servers."
     ],
     [
      "Browser storage and cookies",
@@ -68,11 +68,11 @@
     ],
     [
      "Processors",
-     "We use Supabase for authentication, database and file storage, and Render for hosting. These providers may be located outside your country, so your data may be transferred internationally. We do not sell your data or share it for marketing."
+     "We use Supabase for authentication, database and file storage, Render for hosting, and Buy Me a Coffee for Premium membership payments. These providers may be located outside your country, so your data may be transferred internationally. We do not sell your data or share it for marketing."
     ],
     [
      "Retention",
-     "Account data is kept while your account is open. On a deletion request, your account and related records are deleted."
+     "Account data is kept while your account is open. On a deletion request, your account and related records are deleted; records that must be kept under tax and accounting law are retained for the legal period."
     ],
     [
      "Your rights",
@@ -86,7 +86,7 @@
   },
   "ar": {
    "title": "سياسة الخصوصية",
-   "lead": "آخر تحديث: 26-10-2026. توضح هذه الصفحة البيانات التي تتم معالجتها عند استخدام NetCmd.",
+   "lead": "آخر تحديث: 05-11-2026. توضح هذه الصفحة البيانات التي تتم معالجتها عند استخدام NetCmd.",
    "sections": [
     [
      "المسؤول عن البيانات",
@@ -94,7 +94,7 @@
     ],
     [
      "البيانات التي نعالجها",
-     "عند إنشاء حساب: بريدك الإلكتروني واسمك المعروض وكلمة المرور (مخزّنة مشفّرة فقط لدى خدمة المصادقة). مرجع الدفع الذي تدخله في طلب بريميوم. الأوامر والعناوين والأوصاف التي ترسلها في قسم المجتمع. النصوص التي تلصقها في الأدوات تُعالج داخل متصفحك ولا تُرسل إلى خوادمنا."
+     "عند إنشاء حساب: بريدك الإلكتروني واسمك المعروض وكلمة المرور (مخزّنة مشفّرة فقط لدى خدمة المصادقة). لعضوية بريميوم: حالة العضوية وتاريخ نهاية الفترة ومطابقة البريد الإلكتروني الواردة من مزوّد الدفع (Buy Me a Coffee)، ومرجع الدفع الذي تدخله في الطلبات المعتمدة من المسؤول. لا نرى بيانات بطاقتك أو حسابك المصرفي ولا نخزّنها. الأوامر والعناوين والأوصاف التي ترسلها في قسم المجتمع. النصوص التي تلصقها في الأدوات تُعالج داخل متصفحك ولا تُرسل إلى خوادمنا."
     ],
     [
      "تخزين المتصفح وملفات الارتباط",
@@ -110,11 +110,11 @@
     ],
     [
      "مزودو المعالجة",
-     "نستخدم Supabase للمصادقة وقاعدة البيانات وتخزين الملفات، وRender للاستضافة. قد يقع هؤلاء المزودون خارج بلدك، وقد تُنقل بياناتك دوليًا. لا نبيع بياناتك ولا نشاركها لأغراض تسويقية."
+     "نستخدم Supabase للمصادقة وقاعدة البيانات وتخزين الملفات، وRender للاستضافة، وBuy Me a Coffee لمدفوعات عضوية بريميوم. قد يقع هؤلاء المزودون خارج بلدك، وقد تُنقل بياناتك دوليًا. لا نبيع بياناتك ولا نشاركها لأغراض تسويقية."
     ],
     [
      "مدة الاحتفاظ",
-     "تُحفظ بيانات الحساب ما دام الحساب مفتوحًا. عند طلب الحذف يُحذف حسابك والسجلات المرتبطة به."
+     "تُحفظ بيانات الحساب ما دام الحساب مفتوحًا. عند طلب الحذف يُحذف حسابك والسجلات المرتبطة به؛ وتُحفظ السجلات الواجب حفظها بموجب قوانين الضرائب والمحاسبة للمدة القانونية."
     ],
     [
      "حقوقك",
@@ -130,8 +130,12 @@
  "terms": {
   "tr": {
    "title": "Kullanım Şartları",
-   "lead": "Son güncelleme: 26.10.2026. Siteyi kullanarak aşağıdaki şartları kabul etmiş olursunuz.",
+   "lead": "Son güncelleme: 05.11.2026. Siteyi kullanarak aşağıdaki şartları kabul etmiş olursunuz.",
    "sections": [
+    [
+     "Hizmet sağlayıcı",
+     "{seller}. İletişim: {contact}"
+    ],
     [
      "Hizmetin niteliği",
      "NetCmd, ağ komutları için bir başvuru ve yardımcı araç sitesidir. İçerik bilgilendirme amaçlıdır; komutlar yazılım sürümüne, platforma ve yapılandırmaya göre farklılık gösterebilir."
@@ -149,8 +153,20 @@
      "Doğru bilgi vermeli ve hesabınızın güvenliğinden sorumlu olmalısınız. Kötüye kullanım halinde hesap askıya alınabilir."
     ],
     [
-     "Premium",
-     "Premium, ödeme doğrulandıktan sonra hesabınıza manuel olarak tanımlanır. Fiyat ve kapsam değişebilir; iade talepleri iletişim kanalı üzerinden durumuna göre değerlendirilir."
+     "PRO üyelik",
+     "NetCmd PRO, Buy Me a Coffee üzerinden aylık yenilenen bir üyeliktir. Ödeme sağlayıcının imzalı bildirimi doğrulandığında PRO hesabınıza otomatik tanımlanır; bunun için ödemede NetCmd hesabınızla aynı e-posta adresini kullanmalısınız. Manuel tanımlama yalnızca istisnai durumlarda ve yönetici onayıyla yapılır. Güncel fiyat ve kapsam Premium sayfasında yer alır ve değişebilir."
+    ],
+    [
+     "Abonelik, iptal ve yenileme",
+     "Üyelik, iptal edilene kadar her ay otomatik yenilenir. İptal veya duraklatma işlemini Buy Me a Coffee hesabınızdan yapabilirsiniz; iptal sonrasında erişim, ödenmiş dönemin sonuna kadar sürer. Dönem sona erdiğinde PRO özellikleri hesabınızdan otomatik kapatılır."
+    ],
+    [
+     "İade ve cayma",
+     "PRO, ödeme sonrasında anında erişim sağlanan ve elektronik ortamda ifa edilen bir hizmettir. Mesafeli Sözleşmeler Yönetmeliği uyarınca, ifasına onayınızla başlanan bu tür hizmetlerde cayma hakkı kullanılamayabilir. Teknik sorun, mükerrer çekim veya hatalı tahsilat durumunda yukarıdaki iletişim kanalından başvurabilirsiniz; talepler olay bazında değerlendirilir."
+    ],
+    [
+     "Gizli veri uyarısı",
+     "Araçlara yapıştırdığınız yapılandırmalarda şifre, SNMP community, pre-shared key, TACACS+/RADIUS anahtarı gibi gizli bilgileri maskelemenizi öneririz. Araçlar veriyi tarayıcınızda işler; yine de gizli verinin paylaşılması sizin sorumluluğunuzdadır."
     ],
     [
      "Topluluk içeriği",
@@ -168,8 +184,12 @@
   },
   "en": {
    "title": "Terms of Use",
-   "lead": "Last updated: 2026-10-26. By using the site you accept the terms below.",
+   "lead": "Last updated: 2026-11-05. By using the site you accept the terms below.",
    "sections": [
+    [
+     "Service provider",
+     "{seller}. Contact: {contact}"
+    ],
     [
      "Nature of the service",
      "NetCmd is a reference and utility site for network commands. Content is informational; commands may differ by software version, platform and configuration."
@@ -187,8 +207,20 @@
      "You must provide accurate information and keep your account secure. Accounts may be suspended for abuse."
     ],
     [
-     "Premium",
-     "Premium is granted to your account manually after payment is verified. Price and scope may change; refund requests are reviewed case by case through the contact channel."
+     "PRO membership",
+     "NetCmd PRO is a monthly membership sold through Buy Me a Coffee. PRO is granted to your account automatically once the payment provider's signed notification is verified; to enable this you must use the same email address as your NetCmd account at checkout. Manual activation is used only in exceptional cases with administrator approval. Current pricing and scope are shown on the Premium page and may change."
+    ],
+    [
+     "Subscription, cancellation and renewal",
+     "The membership renews automatically every month until cancelled. You can cancel or pause it from your Buy Me a Coffee account; after cancellation, access continues until the end of the paid period. When the period ends, PRO features are switched off on your account automatically."
+    ],
+    [
+     "Refunds and withdrawal",
+     "PRO is a service delivered electronically with immediate access after payment. Under distance-selling rules, the right of withdrawal may not apply to services whose performance begins with your consent. For technical problems, duplicate charges or billing errors, contact us through the channel above; requests are reviewed case by case."
+    ],
+    [
+     "Confidential data notice",
+     "Before pasting configurations into the tools, we recommend masking secrets such as passwords, SNMP communities, pre-shared keys and TACACS+/RADIUS keys. The tools process data in your browser, but sharing confidential data remains your responsibility."
     ],
     [
      "Community content",
@@ -206,8 +238,12 @@
   },
   "ar": {
    "title": "شروط الاستخدام",
-   "lead": "آخر تحديث: 26-10-2026. باستخدامك الموقع فإنك توافق على الشروط التالية.",
+   "lead": "آخر تحديث: 05-11-2026. باستخدامك الموقع فإنك توافق على الشروط التالية.",
    "sections": [
+    [
+     "مزوّد الخدمة",
+     "{seller}. للتواصل: {contact}"
+    ],
     [
      "طبيعة الخدمة",
      "NetCmd موقع مرجعي وأدوات مساعدة لأوامر الشبكات. المحتوى للتوعية فقط، وقد تختلف الأوامر بحسب إصدار البرنامج والمنصة والإعدادات."
@@ -225,8 +261,20 @@
      "يجب تقديم معلومات صحيحة والحفاظ على أمان حسابك. قد يُعلَّق الحساب عند إساءة الاستخدام."
     ],
     [
-     "بريميوم",
-     "يُفعَّل بريميوم يدويًا على حسابك بعد التحقق من الدفع. قد يتغير السعر والنطاق؛ وتُراجع طلبات الاسترداد حسب كل حالة عبر قناة التواصل."
+     "عضوية PRO",
+     "NetCmd PRO عضوية شهرية تُباع عبر Buy Me a Coffee. تُفعَّل PRO على حسابك تلقائيًا بعد التحقق من إشعار مزوّد الدفع الموقَّع؛ ولذلك يجب استخدام نفس البريد الإلكتروني المسجَّل في حساب NetCmd عند الدفع. لا يُستخدم التفعيل اليدوي إلا في حالات استثنائية وبموافقة المسؤول. تظهر الأسعار والنطاق الحاليان في صفحة بريميوم وقد تتغير."
+    ],
+    [
+     "الاشتراك والإلغاء والتجديد",
+     "تتجدد العضوية تلقائيًا كل شهر حتى الإلغاء. يمكنك الإلغاء أو الإيقاف المؤقت من حسابك في Buy Me a Coffee؛ وبعد الإلغاء يستمر الوصول حتى نهاية الفترة المدفوعة. عند انتهاء الفترة تُعطَّل ميزات PRO على حسابك تلقائيًا."
+    ],
+    [
+     "الاسترداد والعدول",
+     "PRO خدمة تُقدَّم إلكترونيًا مع وصول فوري بعد الدفع. وبموجب قواعد البيع عن بُعد قد لا ينطبق حق العدول على الخدمات التي يبدأ تنفيذها بموافقتك. في حال وجود مشكلة تقنية أو خصم مكرر أو خطأ في الفوترة، تواصل معنا عبر القناة أعلاه؛ وتُراجَع الطلبات حسب كل حالة."
+    ],
+    [
+     "تنبيه بشأن البيانات السرية",
+     "قبل لصق الإعدادات في الأدوات ننصح بإخفاء الأسرار مثل كلمات المرور وSNMP community والمفاتيح المشتركة ومفاتيح TACACS+/RADIUS. تعالج الأدوات البيانات داخل متصفحك، لكن مشاركة البيانات السرية تبقى مسؤوليتك."
     ],
     [
      "محتوى المجتمع",

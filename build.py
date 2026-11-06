@@ -444,9 +444,19 @@ if(C.kind==='account'){
     document.getElementById('acc-email').textContent=s.user.email||'';
     document.getElementById('acc-name').textContent=(s.user.user_metadata&&s.user.user_metadata.display_name)||'';
     info.hidden=false;
-    sb.from('profiles').select('display_name').eq('id',s.user.id).maybeSingle().then(function(p){
-      if(p.data&&p.data.display_name){document.getElementById('acc-name').textContent=p.data.display_name;}
-    });
+    sb.from('profiles').select('display_name,is_premium,premium_until').eq('id',s.user.id).maybeSingle().then(function(p){
+      var d=p.data||{};
+      if(d.display_name){document.getElementById('acc-name').textContent=d.display_name;}
+      var until=d.premium_until?new Date(d.premium_until):null;
+      var pro=!!d.is_premium&&(!until||until>new Date());
+      document.getElementById('acc-plan').textContent=pro?C.t.acc_plan_pro:C.t.acc_plan_free;
+      if(pro&&until){
+        document.getElementById('acc-until').textContent=until.toLocaleDateString(C.lang==='tr'?'tr-TR':(C.lang==='ar'?'ar':'en-GB'));
+        document.getElementById('acc-until-row').hidden=false;
+      }
+      document.getElementById('acc-up').hidden=pro;
+      document.getElementById('acc-mg').hidden=!pro;
+    }).catch(function(){document.getElementById('acc-plan').textContent=C.t.acc_plan_free;});
   }).catch(function(){show(C.t.generic_err,false);});
   document.getElementById('logout').addEventListener('click',function(){
     sb.auth.signOut().then(function(){location.href=C.loginPath;});
@@ -1029,9 +1039,16 @@ def build_legal(lang, paths):
     legal = load_json("legal.json")
     em = SITECFG.get("contact_email", "").strip()
     contact = '<a href="mailto:{0}">{0}</a>'.format(esc(em)) if em else esc(T(lang, "legal_contact_fallback"))
+    sl = SITECFG.get("seller", {}) or {}
+    lbl = {"tr": ("Vergi Dairesi", "Vergi No", "Adres"), "en": ("Tax office", "Tax no.", "Address"), "ar": ("مكتب الضرائب", "الرقم الضريبي", "العنوان")}[lang]
+    parts = [str(sl.get("name", "")).strip()]
+    for lab, key in zip(lbl, ("tax_office", "tax_no", "address")):
+        if str(sl.get(key, "")).strip():
+            parts.append("{}: {}".format(lab, str(sl[key]).strip()))
+    seller = ", ".join(x for x in parts if x)
     for slug in ("privacy", "terms"):
         d = legal[slug][lang]
-        secs = "".join("<h2>{}</h2><p>{}</p>".format(esc(h), esc(x).replace("{contact}", contact)) for h, x in d["sections"])
+        secs = "".join("<h2>{}</h2><p>{}</p>".format(esc(h), esc(x).replace("{seller}", esc(seller)).replace("{contact}", contact)) for h, x in d["sections"])
         body = "<h1>{}</h1><p class=\"lead\">{}</p>{}".format(esc(d["title"]), esc(d["lead"]), secs)
         write("{}/{}/index.html".format(lang, slug), page(lang, d["title"] + " | " + SITE, d["lead"], slug + "/", body))
         paths.add(slug + "/")
@@ -1124,7 +1141,7 @@ def build_premium(lang, paths):
 
 
 def auth_script(lang, kind):
-    keys = ["auth_unavailable", "generic_err", "signup_ok", "login_err", "forgot_ok", "reset_ok", "reset_bad", "reset_short"]
+    keys = ["auth_unavailable", "generic_err", "signup_ok", "login_err", "forgot_ok", "reset_ok", "reset_bad", "reset_short", "acc_plan_free", "acc_plan_pro"]
     cfg = {
         "url": SITECFG.get("supabase_url", ""), "key": SITECFG.get("supabase_key", ""),
         "kind": kind, "lang": lang,
@@ -1175,8 +1192,15 @@ def build_auth(lang, paths):
         '<h1>{h}</h1><div id="msg" class="msg" hidden></div>'
         '<div class="panel" id="info" hidden><p><strong>{le}:</strong> <span id="acc-email"></span></p>'
         '<p><strong>{ln}:</strong> <span id="acc-name"></span></p>'
+        '<p><strong>{lp}:</strong> <span id="acc-plan"></span></p>'
+        '<p id="acc-until-row" hidden><strong>{lu}:</strong> <span id="acc-until"></span></p>'
+        '<p class="stat">{hint}</p>'
+        '<p id="acc-actions"><a class="btn" id="acc-up" href="{prem}">{up}</a> '
+        '<a class="btn sec" id="acc-mg" href="{bmc}" target="_blank" rel="noopener noreferrer" hidden>{mg}</a></p>'
         '<p><button class="btn sec" id="logout" type="button">{lo}</button></p></div>'
-    ).format(h=t("account_title"), le=t("acc_email"), ln=t("acc_name"), lo=t("btn_logout"))
+    ).format(h=t("account_title"), le=t("acc_email"), ln=t("acc_name"), lo=t("btn_logout"),
+             lp=t("acc_plan"), lu=t("acc_until"), hint=t("acc_hint"), up=t("acc_upgrade"), mg=t("acc_manage"),
+             prem=lurl(lang, "premium/"), bmc=esc(SITECFG.get("bmc_url", "")))
 
     for kind, body, title_key in (
         ("signup", signup, "signup_title"), ("login", login, "login_title"), ("account", account, "account_title"),

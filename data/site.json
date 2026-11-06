@@ -7,5 +7,11 @@
   "premium_currency": "$",
   "contact_email": "",
   "premium_billing_interval": "month",
-  "digital_product_checkout_url": ""
+  "digital_product_checkout_url": "",
+  "seller": {
+    "name": "Şevket Kaynar",
+    "tax_office": "",
+    "tax_no": "",
+    "address": ""
+  }
 }
