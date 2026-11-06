@@ -60,7 +60,14 @@ import/manual reconciliation workflow; do not claim automatic confirmation.
 
 ## Current implementation status
 
-- IBAN order-code / admin approval work: open PR #21; not merged or deployed.
-- BMC per-product Shop entitlement work: open PR #18; not merged to the website.
-- SaaS API foundation: draft PR #22; job submissions are queued only and are
-  not executed until an isolated worker is implemented and tested.
+- IBAN order-code / admin approval flow: included in `feature/launch-readiness`
+  (`supabase/iban_orders.sql`, Premium page panel, Telegram one-tap approval).
+  The panel stays hidden until `BANK_IBAN` and `BANK_HOLDER` build env vars are set
+  on Render; the IBAN is mod-97 validated at build time and never committed.
+  No automatic bank reconciliation: an admin confirms each transfer.
+- BMC monthly membership: automatic via signed webhook; `premium_until` expires access.
+- Legal pages: Terms, Privacy/KVKK, Refund & Withdrawal, Distance Sales. Seller
+  `address` / `tax_no` in `data/site.json` must be filled before taking payments.
+- Account page shows plan and period end date.
+- SaaS API foundation / worker: merged earlier; worker stays idle until the
+  GitHub Actions secrets are added (see FREE_SAAS_ARCHITECTURE.md).
