@@ -19,9 +19,8 @@ alter table public.premium_request_audit enable row level security;
 revoke all on public.premium_request_audit from anon, authenticated;
 grant all on public.premium_request_audit to service_role;
 
-create or replace function public.approve_premium_request(
-  p_id bigint, p_days int default 365, p_actor uuid default null, p_note text default null
-) returns text language plpgsql security definer set search_path = public as $$
+create or replace function public.approve_premium_request_admin(
+  p_id bigint, p_days int, p_actor uuid, p_note text returns text language plpgsql security definer set search_path = public as $$
 declare r record;
 begin
   if p_days < 1 or p_days > 1095 then raise exception 'invalid premium duration'; end if;
@@ -41,9 +40,8 @@ begin
   return 'approved';
 end $$;
 
-create or replace function public.reject_premium_request(
-  p_id bigint, p_actor uuid default null, p_note text default null
-) returns text language plpgsql security definer set search_path = public as $$
+create or replace function public.reject_premium_request_admin(
+  p_id bigint, p_actor uuid, p_note text returns text language plpgsql security definer set search_path = public as $$
 declare r record;
 begin
   select * into r from public.premium_requests where id = p_id for update;
@@ -57,7 +55,7 @@ begin
   return 'rejected';
 end $$;
 
-revoke all on function public.approve_premium_request(bigint, int, uuid, text) from public, anon, authenticated;
-revoke all on function public.reject_premium_request(bigint, uuid, text) from public, anon, authenticated;
+revoke all on function public.approve_premium_request_admin(bigint, int, uuid, text) from public, anon, authenticated;
+revoke all on function public.reject_premium_request_admin(bigint, uuid, text) from public, anon, authenticated;
 grant execute on function public.approve_premium_request(bigint, int, uuid, text) to service_role;
 grant execute on function public.reject_premium_request(bigint, uuid, text) to service_role;
