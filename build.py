@@ -162,6 +162,7 @@ label{display:block;margin:10px 0 4px;font-size:.9rem}
 input{width:100%;padding:9px 11px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--fg);font:inherit}
 .msg{margin:12px 0;padding:9px 12px;border-radius:8px;border:1px solid var(--bd)}.msg.ok{color:var(--ok);border-color:var(--ok)}.msg.err{color:var(--err);border-color:var(--err)}
 .iban{font:600 1.15rem ui-monospace,Menlo,Consolas,monospace;direction:ltr;unicode-bidi:embed;word-break:break-all}
+.approval-panel{max-width:none;width:100%}
 footer{padding:24px 16px 40px;color:var(--mut);font-size:.85rem;border-top:1px solid var(--bd);margin-top:32px}
 
 [hidden]{display:none!important}
@@ -1300,7 +1301,7 @@ def build_auth(lang, paths):
         '<p id="acc-actions"><a class="btn" id="acc-up" href="{prem}">{up}</a> '
         '<a class="btn sec" id="acc-mg" href="{bmc}" target="_blank" rel="noopener noreferrer" hidden>{mg}</a></p>'
         '<p><button class="btn sec" id="logout" type="button">{lo}</button></p></div>'
-        '<section class="panel" id="approval-center" hidden><h2>{at}</h2><p class="lead">{ad}</p>'
+        '<section class="panel approval-panel" id="approval-center" hidden><h2>{at}</h2><p class="lead">{ad}</p>'
         '<div id="approval-msg" class="msg" hidden></div><div id="approval-list"></div></section>'
     ).format(h=t("account_title"), le=t("acc_email"), ln=t("acc_name"), lo=t("btn_logout"),
              lp=t("acc_plan"), lu=t("acc_until"), hint=t("acc_hint"), up=t("acc_upgrade"), mg=t("acc_manage"),
