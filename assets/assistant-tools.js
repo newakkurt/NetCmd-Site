@@ -91,7 +91,7 @@
     })[v];
     if(kind==='desc') return ({cisco:['interface '+iface,' description '+desc],huawei:['interface '+iface,' description '+desc,'quit'],aruba:['interface '+iface,' description '+desc],juniper:['set interfaces '+iface+' description "'+desc+'"'],mikrotik:['/interface ethernet set [find name="'+iface+'"] comment="'+desc+'"']})[v];
     if(kind==='ospf') return ({
-      cisco:['router ospf 1',' network '+ip+' area '+area],
+      cisco:['router ospf 1',' network '+ip.split(/\\s+/)[0]+' '+ip.split(/\\s+/)[1]+' area '+area],
       huawei:['ospf 1 router-id 1.1.1.1',' area '+area,'  network '+ip,'quit','quit'],
       juniper:['set protocols ospf area '+area+' interface '+(iface.indexOf('.')>=0?iface:iface+'.0')],
       aruba:null,
