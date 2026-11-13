@@ -1233,8 +1233,26 @@ def auth_script(lang, kind):
         "t": {k: T(lang, k) for k in keys},
     }
     js = AUTH_JS.replace("__CFG__", json.dumps(cfg, ensure_ascii=False).replace("</", "<\\/"))
+    extra = ""
+    if kind == "account":
+        extra = (
+            '<script>window.NETCMD_APPROVALS = ' + json.dumps({
+                "url": SITECFG.get("supabase_url", ""),
+                "key": SITECFG.get("supabase_key", ""),
+                "api": SITECFG.get("supabase_url", "").rstrip("/") + "/functions/v1/netcmd-approvals",
+                "lang": lang,
+                "labels": {k: T(lang, k) for k in (
+                    "approval_title", "approval_desc", "approval_pending", "approval_approved",
+                    "approval_rejected", "approval_empty", "approval_load_error", "approval_ref",
+                    "approval_date", "approval_status", "approval_actions", "approval_approve",
+                    "approval_reject", "approval_confirm", "approval_days", "approval_note",
+                    "approval_done", "approval_denied", "approval_working", "approval_user"
+                )}
+            }, ensure_ascii=False).replace("</", "<\\/") + ';</script>'
+            '<script src="' + BASE_PATH + '/assets/approvals.js?v=' + TODAY + '" defer></script>'
+        )
     return (
-        '<script src="' + BASE_PATH + '/assets/vendor/supabase.js"></script><script>' + js + '</script>'
+        '<script src="' + BASE_PATH + '/assets/vendor/supabase.js"></script><script>' + js + '</script>' + extra
     )
 
 
@@ -1282,8 +1300,11 @@ def build_auth(lang, paths):
         '<p id="acc-actions"><a class="btn" id="acc-up" href="{prem}">{up}</a> '
         '<a class="btn sec" id="acc-mg" href="{bmc}" target="_blank" rel="noopener noreferrer" hidden>{mg}</a></p>'
         '<p><button class="btn sec" id="logout" type="button">{lo}</button></p></div>'
+        '<section class="panel" id="approval-center" hidden><h2>{at}</h2><p class="lead">{ad}</p>'
+        '<div id="approval-msg" class="msg" hidden></div><div id="approval-list"></div></section>'
     ).format(h=t("account_title"), le=t("acc_email"), ln=t("acc_name"), lo=t("btn_logout"),
              lp=t("acc_plan"), lu=t("acc_until"), hint=t("acc_hint"), up=t("acc_upgrade"), mg=t("acc_manage"),
+             at=t("approval_title"), ad=t("approval_desc"),
              prem=lurl(lang, "premium/"), bmc=esc(SITECFG.get("bmc_url", "")))
 
     for kind, body, title_key in (
