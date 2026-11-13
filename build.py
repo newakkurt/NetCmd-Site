@@ -1460,8 +1460,8 @@ def build_assistant(lang, paths):
            "t": {k: T(lang, k) for k in ("as_none", "as_step", "as_values", "as_open", "as_ai_login", "as_ai_busy", "as_ai_err", "as_ai_quota", "as_ai_badge", "as_ai_left", "as_ai_refused", "as_ai_note")},
            "v": {v: vlabel(v) for v in VENDORS}, "url": SITECFG.get("supabase_url", ""), "key": SITECFG.get("supabase_key", ""),
            "login": lurl(lang, "login/")}
-    script = '<script src="' + BASE_PATH + '/assets/vendor/supabase.js"></script><script id="as-cfg" type="application/json">{}</script><script src="{}/assets/assistant.js?v={}" defer></script>'.format(
-        json.dumps(cfg, ensure_ascii=False).replace("</", "<\\/"), BASE_PATH, TODAY)
+    script = '<script src="' + BASE_PATH + '/assets/vendor/supabase.js"></script><script id="as-cfg" type="application/json">{}</script><script src="{}/assets/assistant.js?v={}" defer></script><script src="{}/assets/assistant-tools.js?v={}" defer></script>'.format(
+        json.dumps(cfg, ensure_ascii=False).replace("</", "<\\/"), BASE_PATH, TODAY, BASE_PATH, TODAY)
     write("{}/assistant/index.html".format(lang), page(lang, T(lang, "as_title") + " | " + SITE, T(lang, "as_lead"), "assistant/", body, script=script))
     paths.add("assistant/")
 
