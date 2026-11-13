@@ -111,23 +111,23 @@
           var fmt=document.getElementById('ast-format').value, pyTypes={cisco:'cisco_ios',huawei:'huawei',aruba:'aruba_aoscx',juniper:'juniper_junos',mikrotik:'mikrotik_routeros'};
           var output;
           if(fmt==='netmiko'){
-            output="import os\\nfrom getpass import getpass\\nfrom netmiko import ConnectHandler\\n\\n# Verify device model/OS and test in a lab first.\\ndevice = {\\n    'device_type': '"+pyTypes[vendor]+"',\\n    'host': os.getenv('NET_DEVICE_HOST', '192.0.2.10'),\\n    'username': os.getenv('NET_DEVICE_USER', 'netadmin'),\\n    'password': getpass('Device password: '),\\n}\\ncommands = "+JSON.stringify(commands)+"\\n\\nwith ConnectHandler(**device) as conn:\\n    print(conn.send_config_set(commands))\\n    print('Review the output, then save explicitly if appropriate.')\\n";
+            output="import os\nfrom getpass import getpass\nfrom netmiko import ConnectHandler\n\n# Verify device model/OS and test in a lab first.\ndevice = {\n    'device_type': '"+pyTypes[vendor]+"',\n    'host': os.getenv('NET_DEVICE_HOST', '192.0.2.10'),\n    'username': os.getenv('NET_DEVICE_USER', 'netadmin'),\n    'password': getpass('Device password: '),\n}\ncommands = "+JSON.stringify(commands)+"\n\nwith ConnectHandler(**device) as conn:\n    print(conn.send_config_set(commands))\n    print('Review the output, then save explicitly if appropriate.')\n";
           } else {
             var osMap={cisco:'cisco.ios.ios',huawei:'community.network.ce',aruba:'arubanetworks.aoscx.aoscx',juniper:'junipernetworks.junos.junos',mikrotik:'community.routeros.routeros'};
-            output="---\\n- name: NetCmd generated network change\\n  hosts: network_devices\\n  gather_facts: false\\n  connection: ansible.netcommon.network_cli\\n  vars:\\n    ansible_network_os: "+osMap[vendor]+"\\n  tasks:\\n    - name: Apply generated commands - review before execution\\n      ansible.netcommon.cli_config:\\n        config: |\\n"+commands.map(function(c){return"          "+c;}).join("\\n")+"\\n";
+            output="---\n- name: NetCmd generated network change\n  hosts: network_devices\n  gather_facts: false\n  connection: ansible.netcommon.network_cli\n  vars:\n    ansible_network_os: "+osMap[vendor]+"\n  tasks:\n    - name: Apply generated commands - review before execution\n      ansible.netcommon.cli_config:\n        config: |\n"+commands.map(function(c){return"          "+c;}).join("\n")+"\n";
           }
           var modelInfo=clean(document.getElementById('ast-model').value);
-          result((modelInfo?'# Target model/OS: '+modelInfo+'\\n':'')+output,labels.high+' · '+labels.rollback+' · '+labels.saved+' · '+(tr?'Model/sürüm uyumluluğu otomatik doğrulanmaz.':'Model/OS compatibility is not automatically validated.'));
+          result((modelInfo?'# Target model/OS: '+modelInfo+'\n':'')+output,labels.high+' · '+labels.rollback+' · '+labels.saved+' · '+(tr?'Model/sürüm uyumluluğu otomatik doğrulanmaz.':'Model/OS compatibility is not automatically validated.'));
         } else {
           var modelInfo=clean(document.getElementById('ast-model').value);
-          result('! '+names[vendor]+' — '+kind+(modelInfo?' — '+modelInfo:'')+'\\n'+commands.join('\\n')+'\\n\\n'+labels.rollback,labels.high+' · '+labels.saved+' · '+(tr?'Model alanı yalnızca not amaçlıdır; sürüm uyumluluğu otomatik doğrulanmaz.':'Model field is informational only; version compatibility is not automatically validated.'));
+          result('! '+names[vendor]+' — '+kind+(modelInfo?' — '+modelInfo:'')+'\n'+commands.join('\n')+'\n\n'+labels.rollback,labels.high+' · '+labels.saved+' · '+(tr?'Model alanı yalnızca not amaçlıdır; sürüm uyumluluğu otomatik doğrulanmaz.':'Model field is informational only; version compatibility is not automatically validated.'));
         }
       });
     } else if(active==='compare'){
       var left=field(tr?'Eski konfigürasyon (A)':'Old configuration (A)','ast-left','','textarea');left.rows=10;
       var right=field(tr?'Yeni konfigürasyon (B)':'New configuration (B)','ast-right','','textarea');right.rows=10;
       button(labels.run,function(){
-        var a=clean(left.value).split(/\\r?\\n/),b=clean(right.value).split(/\\r?\\n/);
+        var a=clean(left.value).split(/\r?\n/),b=clean(right.value).split(/\r?\n/);
         if(!clean(left.value)||!clean(right.value)){result(labels.empty);return;}
         if(a.length>400||b.length>400){result(tr?'Her iki konfigürasyon en fazla 400 satır olabilir.':'Each configuration is limited to 400 lines.');return;}
         var dp=Array.from({length:a.length+1},function(){return new Uint16Array(b.length+1);});
@@ -138,7 +138,7 @@
           else if(j<b.length&&(i===a.length||dp[i][j+1]>=dp[i+1][j])){lines.push('+ '+b[j]);j++;}
           else{lines.push('- '+a[i]);i++;}
         }
-        result((tr?'Config farkı (+ eklendi, - silindi)':'Configuration diff (+ added, - removed')+'\\n'+lines.join('\\n'),tr?'Karşılaştırma tarayıcıda yapıldı; config sunucuya gönderilmedi.':'Diff computed locally in your browser; configs were not uploaded.');
+        result((tr?'Config farkı (+ eklendi, - silindi)':'Configuration diff (+ added, - removed')+'\n'+lines.join('\n'),tr?'Karşılaştırma tarayıcıda yapıldı; config sunucuya gönderilmedi.':'Diff computed locally in your browser; configs were not uploaded.');
       });
     } else if(active==='audit'||active==='security'||active==='diagnose'||active==='logs'){
       var ta=field(labels.placeholder,'ast-input','', 'textarea');ta.rows=9;
@@ -160,10 +160,9 @@
           add(/snmp-server community|snmp-agent community/,'SNMP community kullanımı tespit edildi: SNMPv3 authPriv değerlendirin.');
           add(/no service password-encryption|password 0|plaintext/,'Düz metin parola ifadesi olabilir: sırları rotasyona alın ve güvenli secret yönetimi kullanın.');
           add(/ip http server|http server enable/,'HTTP yönetimi açık olabilir: HTTPS ile sınırlandırın veya gerekmiyorsa kapatın.');
-          add(/spanning-tree portfast|portfast/,'Edge portlarda BPDU Guard/Loop Guard politikasını ve uç cihaz istisnalarını doğrulayın.');
           add(/ip dhcp snooping|dhcp snooping/,'DHCP Snooping yapılandırmasını VLAN kapsamı ve trusted uplinklerle doğrulayın.');
           add(/aaa|radius|tacacs/,'AAA/RADIUS/TACACS yapılandırması bulundu: yedek yerel erişim ve failover testini doğrulayın.');
-          add(/permit ip any any|permit any any|0\.0\.0\.0/,'ACL içinde çok geniş izin kuralı olabilir: kaynak/hedef/servis kapsamını ve kural sırasını daraltın.');
+          add(/(?:access-list|ip access-list|rule)\b[^\n]*(?:permit\s+ip\s+any\s+any|permit\s+any\s+any|source\s+0\.0\.0\.0\s+0\.0\.0\.0)/,'ACL içinde çok geniş izin kuralı olabilir: kaynak/hedef/servis kapsamını ve kural sırasını daraltın.');
           add(/no spanning-tree|spanning-tree disable|stp disable/,'STP kapatılmış görünüyor: L2 döngü riski için tasarımı ve alternatif loop-prevention mekanizmasını doğrulayın.');
           add(/switchport mode access[\s\S]*switchport trunk|switchport trunk[\s\S]*switchport mode access/,'Aynı konfigürasyonda access ve trunk ifadeleri birlikte bulundu: arayüz bazında port modunu kontrol edin.');
           add(/snmp-server community public|snmp-agent community read public|community public/,'Varsayılan/kolay tahmin edilebilir SNMP community olabilir: kaldırın, SNMPv3 authPriv ve yönetim ACL kullanın.');
