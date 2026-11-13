@@ -18,6 +18,9 @@ create index if not exists premium_request_audit_request_idx
 alter table public.premium_request_audit enable row level security;
 revoke all on public.premium_request_audit from anon, authenticated;
 grant all on public.premium_request_audit to service_role;
+drop policy if exists premium_request_audit_service_role on public.premium_request_audit;
+create policy premium_request_audit_service_role on public.premium_request_audit
+  for all to service_role using (true) with check (true);
 
 create or replace function public.approve_premium_request_admin(
   p_id bigint, p_days int, p_actor uuid, p_note text
