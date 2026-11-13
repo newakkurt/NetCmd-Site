@@ -36,3 +36,14 @@ Topluluk tablosu, günlük gönderim sınırı, tek bekleyen premium talebi, `ap
 - `data/seo.json`: `pair_policy` = `index` (hepsi indekslenir) | `auto` (varsayılan: komutları aynı olan veya `pair_min_score`'un altındaki çeviri sayfaları `noindex,follow` + sitemap dışı) | `noindex` (tüm çeviri sayfaları). İstisnalar: `force_index` / `force_noindex` (`"huawei-cisco/vlan-listeleme"`), `noindex_slugs`.
 - Karar için Search Console → Sayfalar raporunda "Taranmış - dizine eklenmemiş" sayısını izle; çok yüksekse `pair_min_score`'u artır veya `noindex` yap.
 - OG görseli: `python3 tools/make_og.py` → `assets/og.png`.
+
+
+## 2c) Web Onay Merkezi (NetCmd Hesabım)
+1. Supabase SQL Editor'de `supabase/approval_center.sql` dosyasını çalıştır. Bu migration, talep kararlarını ve yönetici denetim kaydını ekler.
+2. Edge Functions → `netcmd-approvals` oluştur; `supabase/functions/netcmd-approvals/index.ts` içeriğini yayınla. **Verify JWT = kapalı** bırak (fonksiyon Supabase Auth token'ını kendi doğrular).
+3. Edge Functions → Secrets bölümüne `NETCMD_ADMIN_EMAILS` ekle. Değer, Onay Merkezi'ne erişecek yönetici NetCmd hesabının e-posta adresi olmalı. Birden fazla yönetici için virgülle ayır. Bu değer tarayıcıya gönderilmez.
+4. Fonksiyonun standart `SUPABASE_URL` ve `SUPABASE_SERVICE_ROLE_KEY` secret'larına erişebildiğini doğrula; `SUPABASE_PUBLISHABLE_KEY` veya `SUPABASE_ANON_KEY` de Auth doğrulaması için kullanılabilir.
+5. Render deploy tamamlandıktan sonra NetCmd'de aynı yönetici hesabıyla giriş yapıp **Hesabım** sayfasını aç. Yetkili hesapta Onay Merkezi görünür; diğer kullanıcılarda bölüm gizli kalır ve API 403 döndürür.
+6. SQL migration ve Edge Function deploy edilmeden önce onay arayüzü karar işlemi yapamaz. Her karar `premium_requests.reviewed_by/reviewed_at/review_note` alanlarına ve `premium_request_audit` tablosuna kaydedilir.
+
+Not: Bu panel mevcut `premium_requests` (IBAN/Premium talepleri) kayıtlarını yönetir. Otomasyon işlerini (network jobs) otomatik çalıştırmaz; sadece Premium üyelik taleplerini onaylar/reddeder.
