@@ -48,7 +48,7 @@ Deno.serve(async (req: Request) => {
   if (!Number.isSafeInteger(id) || id < 1 || !["approve", "reject"].includes(action)) return json({ error: "invalid_request" }, 400, headers);
   if (action === "approve" && (!Number.isInteger(days) || days < 1 || days > 1095)) return json({ error: "invalid_duration" }, 400, headers);
 
-  const fn = action === "approve" ? "approve_premium_request" : "reject_premium_request";
+  const fn = action === "approve" ? "approve_premium_request_admin" : "reject_premium_request_admin";
   const args = action === "approve"
     ? { p_id: id, p_days: days, p_actor: user.id, p_note: note }
     : { p_id: id, p_actor: user.id, p_note: note };
