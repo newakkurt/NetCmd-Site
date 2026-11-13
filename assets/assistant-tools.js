@@ -70,6 +70,9 @@
   }
   function clean(s){return String(s||'').trim();}
   function safeInt(v,min,max){var n=Number(v);return Number.isInteger(n)&&n>=min&&n<=max?n:null;}
+  function validIPv4(s){var a=String(s).split('.');return a.length===4&&a.every(function(x){return /^\\d{1,3}$/.test(x)&&Number(x)<=255;});}
+  function validOspfNetwork(s){var a=clean(s).split(/\\s+/);return a.length===2&&validIPv4(a[0])&&validIPv4(a[1]);}
+  function validOspfArea(s){return (/^\\d+$/.test(s)&&Number(s)<=4294967295)||validIPv4(s);}
   function cmd(v,kind,p) {
     var id=p.id, name=p.name, iface=p.iface, desc=p.desc, ip=p.ip, area=p.area;
     if(kind==='vlan') return ({
@@ -87,7 +90,13 @@
       mikrotik:['/interface bridge vlan add bridge=bridge1 vlan-ids='+id+' tagged='+iface+',bridge1']
     })[v];
     if(kind==='desc') return ({cisco:['interface '+iface,' description '+desc],huawei:['interface '+iface,' description '+desc,'quit'],aruba:['interface '+iface,' description '+desc],juniper:['set interfaces '+iface+' description "'+desc+'"'],mikrotik:['/interface ethernet set [find name="'+iface+'"] comment="'+desc+'"']})[v];
-    if(kind==='ospf') return ({cisco:['router ospf 1',' network '+ip+' '+area+' area 0'],huawei:['ospf 1 router-id 1.1.1.1',' area 0','  network '+ip,'quit'],aruba:['router ospf 1',' area 0',' network '+ip],juniper:['set protocols ospf area 0 interface '+iface],mikrotik:['/routing ospf instance add name=ospf1 router-id=1.1.1.1','/routing ospf area add name=backbone area-id=0.0.0.0']})[v];
+    if(kind==='ospf') return ({
+      cisco:['router ospf 1',' network '+ip+' area '+area],
+      huawei:['ospf 1 router-id 1.1.1.1',' area '+area,'  network '+ip,'quit','quit'],
+      juniper:['set protocols ospf area '+area+' interface '+(iface.indexOf('.')>=0?iface:iface+'.0')],
+      aruba:null,
+      mikrotik:null
+    })[v];
     return null;
   }
   function render() {
@@ -106,7 +115,9 @@
         var kind=document.getElementById('ast-kind').value,id=safeInt(document.getElementById('ast-id').value,1,4094);
         var p={id:id,name:clean(document.getElementById('ast-name').value).replace(/[^\w-]/g,'_'),iface:clean(document.getElementById('ast-iface').value),desc:clean(document.getElementById('ast-desc').value).replace(/[\r\n]/g,' ').slice(0,80),ip:clean(document.getElementById('ast-ip').value),area:clean(document.getElementById('ast-area').value)};
         if(!id||!p.iface||!p.name){result(labels.empty);return;}
-        var commands=cmd(vendor,kind,p); if(!commands){result(labels.noMatch);return;}
+        if(!/^[A-Za-z0-9/.:_-]{1,80}$/.test(p.iface)){result(tr?'Arayüz adı geçersiz karakter içeriyor.':'Interface name contains unsupported characters.');return;}
+        if(kind==='ospf'&&(!validOspfNetwork(p.ip)||!validOspfArea(p.area))){result(tr?'OSPF için ağ adresini wildcard mask ile (örn. 10.20.0.0 0.0.0.255) ve geçerli area değerini gir.':'For OSPF, enter network plus wildcard mask (e.g. 10.20.0.0 0.0.0.255) and a valid area.');return;}
+        var commands=cmd(vendor,kind,p); if(!commands){result(tr?'Bu üretici için güvenilir OSPF şablonu henüz eklenmedi.':'A reliable OSPF template is not available for this vendor yet.');return;}
         if(active==='automation'){
           var fmt=document.getElementById('ast-format').value, pyTypes={cisco:'cisco_ios',huawei:'huawei',aruba:'aruba_aoscx',juniper:'juniper_junos',mikrotik:'mikrotik_routeros'};
           var output;
