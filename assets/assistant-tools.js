@@ -10,7 +10,7 @@
   var labels = tr ? {
     title:'Network Engineer Araçları', intro:'AI ile sor butonu korunur. Aşağıdaki araçlar yerel ve anında çalışır.',
     task:'Araç', vendor:'Üretici', model:'Model / işletim sistemi', run:'Çalıştır', copy:'Çıktıyı kopyala',
-    config:'Konfigürasyon üret', audit:'Config analiz', diagnose:'Arıza teşhis', logs:'Log / çıktı analiz', translate:'Komut çevir', security:'Güvenlik denetimi', automation:'Otomasyon üret', learn:'Eğitim modu',
+    config:'Konfigürasyon üret', audit:'Config analiz', compare:'Config karşılaştır', diagnose:'Arıza teşhis', logs:'Log / çıktı analiz', translate:'Komut çevir', security:'Güvenlik denetimi', automation:'Otomasyon üret', learn:'Eğitim modu',
     placeholder:'İsteğini veya cihaz çıktısını buraya yaz. Örn: VLAN 20 oluştur ve GE0/0/1 portunu access yap.',
     note:'Bu araçlar cihazına bağlanmaz ve komut çalıştırmaz. Üretilen değişiklikleri uygulamadan önce model/sürüm, mevcut yapılandırma ve bakım penceresini doğrula.',
     empty:'Lütfen bir istek veya yapılandırma/çıktı gir.', noMatch:'Kesin bir eşleşme bulunamadı. Üretici dokümanını ve cihaz sürümünü doğrula.',
@@ -24,7 +24,7 @@
   } : {
     title:'Network Engineer Tools', intro:'The “Ask AI” button remains. These deterministic tools run locally.',
     task:'Tool', vendor:'Vendor', model:'Model / OS', run:'Run', copy:'Copy output',
-    config:'Generate config', audit:'Config audit', diagnose:'Troubleshoot', logs:'Log / output analysis', translate:'Command translator', security:'Security audit', automation:'Automation generator', learn:'Learning mode',
+    config:'Generate config', audit:'Config audit', compare:'Config diff', diagnose:'Troubleshoot', logs:'Log / output analysis', translate:'Command translator', security:'Security audit', automation:'Automation generator', learn:'Learning mode',
     placeholder:'Describe the task or paste device output. Example: create VLAN 20 and make GE0/0/1 an access port.',
     note:'These tools do not connect to or execute commands on devices. Verify model/version, current configuration and maintenance window before applying changes.',
     empty:'Enter a task or configuration/output.', noMatch:'No confident match. Verify the vendor documentation and device version.',
@@ -39,7 +39,7 @@
   var vendors = ['cisco','huawei','aruba','juniper','mikrotik'];
   var names = {cisco:'Cisco IOS/IOS-XE',huawei:'Huawei VRP',aruba:'Aruba AOS-CX',juniper:'Juniper Junos',mikrotik:'MikroTik RouterOS'};
   var tabs = [
-    ['config',labels.config],['audit',labels.audit],['diagnose',labels.diagnose],['logs',labels.logs],
+    ['config',labels.config],['audit',labels.audit],['compare',labels.compare],['diagnose',labels.diagnose],['logs',labels.logs],
     ['translate',labels.translate],['security',labels.security],['automation',labels.automation],['learn',labels.learn]
   ];
   function node(tag, cls, value) { var n=document.createElement(tag); if(cls)n.className=cls; if(value!==undefined)n.textContent=value; return n; }
@@ -120,6 +120,23 @@
         } else {
           result('! '+names[vendor]+' — '+kind+'\\n'+commands.join('\\n')+'\\n\\n'+labels.rollback,labels.high+' · '+labels.saved);
         }
+      });
+    } else if(active==='compare'){
+      var left=field(tr?'Eski konfigürasyon (A)':'Old configuration (A)','ast-left','','textarea');left.rows=10;
+      var right=field(tr?'Yeni konfigürasyon (B)':'New configuration (B)','ast-right','','textarea');right.rows=10;
+      button(labels.run,function(){
+        var a=clean(left.value).split(/\\r?\\n/),b=clean(right.value).split(/\\r?\\n/);
+        if(!clean(left.value)||!clean(right.value)){result(labels.empty);return;}
+        if(a.length>400||b.length>400){result(tr?'Her iki konfigürasyon en fazla 400 satır olabilir.':'Each configuration is limited to 400 lines.');return;}
+        var dp=Array.from({length:a.length+1},function(){return new Uint16Array(b.length+1);});
+        for(var i=a.length-1;i>=0;i--)for(var j=b.length-1;j>=0;j--)dp[i][j]=a[i]===b[j]?dp[i+1][j+1]+1:Math.max(dp[i+1][j],dp[i][j+1]);
+        var i=0,j=0,lines=[];
+        while(i<a.length||j<b.length){
+          if(i<a.length&&j<b.length&&a[i]===b[j]){lines.push('  '+a[i]);i++;j++;}
+          else if(j<b.length&&(i===a.length||dp[i][j+1]>=dp[i+1][j])){lines.push('+ '+b[j]);j++;}
+          else{lines.push('- '+a[i]);i++;}
+        }
+        result((tr?'Config farkı (+ eklendi, - silindi)':'Configuration diff (+ added, - removed')+'\\n'+lines.join('\\n'),tr?'Karşılaştırma tarayıcıda yapıldı; config sunucuya gönderilmedi.':'Diff computed locally in your browser; configs were not uploaded.');
       });
     } else if(active==='audit'||active==='security'||active==='diagnose'||active==='logs'){
       var ta=field(labels.placeholder,'ast-input','', 'textarea');ta.rows=9;
