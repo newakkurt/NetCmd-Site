@@ -127,7 +127,7 @@
         var text=clean(ta.value);if(!text){result(labels.empty);return;}
         var lines=[],low=text.toLowerCase();
         function add(re,msg){if(re.test(low))lines.push('• '+msg);}
-        add(/shutdown|administratively down|down\\/down/,'Arayüz kapalı veya link down: fiziksel bağlantı, admin state, speed/duplex ve karşı uç kontrol edilmeli.');
+        add(/shutdown|administratively down|down\/down/,'Arayüz kapalı veya link down: fiziksel bağlantı, admin state, speed/duplex ve karşı uç kontrol edilmeli.');
         add(/native vlan|pvid|allowed vlan|port trunk/,'Trunk VLAN uyumsuzluğu/izin listesi kontrol edilmeli; iki uçta native/PVID ve allowed VLAN eşleşmeli.');
         add(/%?ospf.*(neighbor|adjacency)|exstart|init/,'OSPF komşuluğu: area, hello/dead timer, MTU, authentication ve network type kontrol edilmeli.');
         add(/crc|input error|giant|collision/,'Fiziksel katman/optik modül/kablo ve hız-duplex sayaçları incelenmeli.');
