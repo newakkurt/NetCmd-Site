@@ -116,9 +116,11 @@
             var osMap={cisco:'cisco.ios.ios',huawei:'community.network.ce',aruba:'arubanetworks.aoscx.aoscx',juniper:'junipernetworks.junos.junos',mikrotik:'community.routeros.routeros'};
             output="---\\n- name: NetCmd generated network change\\n  hosts: network_devices\\n  gather_facts: false\\n  connection: ansible.netcommon.network_cli\\n  vars:\\n    ansible_network_os: "+osMap[vendor]+"\\n  tasks:\\n    - name: Apply generated commands - review before execution\\n      ansible.netcommon.cli_config:\\n        config: |\\n"+commands.map(function(c){return"          "+c;}).join("\\n")+"\\n";
           }
-          result(output,labels.high+' · '+labels.rollback+' · '+labels.saved);
+          var modelInfo=clean(document.getElementById('ast-model').value);
+          result((modelInfo?'# Target model/OS: '+modelInfo+'\\n':'')+output,labels.high+' · '+labels.rollback+' · '+labels.saved+' · '+(tr?'Model/sürüm uyumluluğu otomatik doğrulanmaz.':'Model/OS compatibility is not automatically validated.'));
         } else {
-          result('! '+names[vendor]+' — '+kind+'\\n'+commands.join('\\n')+'\\n\\n'+labels.rollback,labels.high+' · '+labels.saved);
+          var modelInfo=clean(document.getElementById('ast-model').value);
+          result('! '+names[vendor]+' — '+kind+(modelInfo?' — '+modelInfo:'')+'\\n'+commands.join('\\n')+'\\n\\n'+labels.rollback,labels.high+' · '+labels.saved+' · '+(tr?'Model alanı yalnızca not amaçlıdır; sürüm uyumluluğu otomatik doğrulanmaz.':'Model field is informational only; version compatibility is not automatically validated.'));
         }
       });
     } else if(active==='compare'){
@@ -161,6 +163,15 @@
           add(/spanning-tree portfast|portfast/,'Edge portlarda BPDU Guard/Loop Guard politikasını ve uç cihaz istisnalarını doğrulayın.');
           add(/ip dhcp snooping|dhcp snooping/,'DHCP Snooping yapılandırmasını VLAN kapsamı ve trusted uplinklerle doğrulayın.');
           add(/aaa|radius|tacacs/,'AAA/RADIUS/TACACS yapılandırması bulundu: yedek yerel erişim ve failover testini doğrulayın.');
+          add(/permit ip any any|permit any any|0\.0\.0\.0/,'ACL içinde çok geniş izin kuralı olabilir: kaynak/hedef/servis kapsamını ve kural sırasını daraltın.');
+          add(/no spanning-tree|spanning-tree disable|stp disable/,'STP kapatılmış görünüyor: L2 döngü riski için tasarımı ve alternatif loop-prevention mekanizmasını doğrulayın.');
+          add(/switchport mode access[\s\S]*switchport trunk|switchport trunk[\s\S]*switchport mode access/,'Aynı konfigürasyonda access ve trunk ifadeleri birlikte bulundu: arayüz bazında port modunu kontrol edin.');
+          add(/snmp-server community public|snmp-agent community read public|community public/,'Varsayılan/kolay tahmin edilebilir SNMP community olabilir: kaldırın, SNMPv3 authPriv ve yönetim ACL kullanın.');
+          add(/enable password|password 0 |password 7 /,'Enable/parola satırı tespit edildi: parola türünü, hash güvenliğini ve secret rotasyonunu kontrol edin.');
+          add(/switchport trunk allowed vlan all|port trunk allow-pass vlan all/,'Trunk üzerinde tüm VLAN’lara izin veriliyor olabilir: yalnızca gerekli VLAN listesini tanımlayın.');
+          add(/spanning-tree portfast|portfast/,'Edge portlarda BPDU Guard/Loop Guard politikasını ve uç cihaz istisnalarını doğrulayın.');
+          add(/switchport port-security|port-security enable/,'Port security ifadesi bulundu: maksimum MAC, violation aksiyonu ve istisna portlarını doğrulayın.');
+          add(/ip access-group|traffic-filter|firewall filter/,'ACL/filter yapılandırması bulundu: doğru arayüze ve doğru yönde bağlandığını, sayaçları kontrol edin.');
         }
         if(!lines.length)lines.push(labels.noFindings);
         result(labels.findings+'\n'+lines.join('\n')+'\n\n'+labels.next+': ilgili show/display komutlarıyla salt okunur doğrulama yap; ardından değişiklik planı ve rollback hazırla.',labels.safe);
