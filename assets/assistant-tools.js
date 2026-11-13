@@ -70,9 +70,9 @@
   }
   function clean(s){return String(s||'').trim();}
   function safeInt(v,min,max){var n=Number(v);return Number.isInteger(n)&&n>=min&&n<=max?n:null;}
-  function validIPv4(s){var a=String(s).split('.');return a.length===4&&a.every(function(x){return /^\\d{1,3}$/.test(x)&&Number(x)<=255;});}
-  function validOspfNetwork(s){var a=clean(s).split(/\\s+/);return a.length===2&&validIPv4(a[0])&&validIPv4(a[1]);}
-  function validOspfArea(s){return (/^\\d+$/.test(s)&&Number(s)<=4294967295)||validIPv4(s);}
+  function validIPv4(s){var a=String(s).split('.');return a.length===4&&a.every(function(x){return /^\d{1,3}$/.test(x)&&Number(x)<=255;});}
+  function validOspfNetwork(s){var a=clean(s).split(/\s+/);return a.length===2&&validIPv4(a[0])&&validIPv4(a[1]);}
+  function validOspfArea(s){return (/^\d+$/.test(s)&&Number(s)<=4294967295)||validIPv4(s);}
   function cmd(v,kind,p) {
     var id=p.id, name=p.name, iface=p.iface, desc=p.desc, ip=p.ip, area=p.area;
     if(kind==='vlan') return ({
