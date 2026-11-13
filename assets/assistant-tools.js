@@ -91,7 +91,7 @@
     })[v];
     if(kind==='desc') return ({cisco:['interface '+iface,' description '+desc],huawei:['interface '+iface,' description '+desc,'quit'],aruba:['interface '+iface,' description '+desc],juniper:['set interfaces '+iface+' description "'+desc+'"'],mikrotik:['/interface ethernet set [find name="'+iface+'"] comment="'+desc+'"']})[v];
     if(kind==='ospf') return ({
-      cisco:['router ospf 1',' network '+ip.split(/\\s+/)[0]+' '+ip.split(/\\s+/)[1]+' area '+area],
+      cisco:['router ospf 1',' network '+ip.trim().split(/\s+/)[0]+' '+ip.trim().split(/\s+/)[1]+' area '+area],
       huawei:['ospf 1 router-id 1.1.1.1',' area '+area,'  network '+ip,'quit','quit'],
       juniper:['set protocols ospf area '+area+' interface '+(iface.indexOf('.')>=0?iface:iface+'.0')],
       aruba:null,
@@ -113,7 +113,7 @@
       field(labels.desc,'ast-desc','Uplink-to-Core','text');field(labels.ip,'ast-ip','10.20.0.0 0.0.0.255','text');field(labels.area,'ast-area','0','text');
       button(labels.run,function(){
         var kind=document.getElementById('ast-kind').value,id=safeInt(document.getElementById('ast-id').value,1,4094);
-        var p={id:id,name:clean(document.getElementById('ast-name').value).replace(/[^\w-]/g,'_'),iface:clean(document.getElementById('ast-iface').value),desc:clean(document.getElementById('ast-desc').value).replace(/[\r\n]/g,' ').slice(0,80),ip:clean(document.getElementById('ast-ip').value),area:clean(document.getElementById('ast-area').value)};
+        var p={id:id,name:clean(document.getElementById('ast-name').value).replace(/[^\w-]/g,'_'),iface:clean(document.getElementById('ast-iface').value),desc:clean(document.getElementById('ast-desc').value).replace(/[^A-Za-z0-9 _.-]/g,'_').slice(0,80),ip:clean(document.getElementById('ast-ip').value),area:clean(document.getElementById('ast-area').value)};
         if(!id||!p.iface||!p.name){result(labels.empty);return;}
         if(!/^[A-Za-z0-9/.:_-]{1,80}$/.test(p.iface)){result(tr?'Arayüz adı geçersiz karakter içeriyor.':'Interface name contains unsupported characters.');return;}
         if(kind==='ospf'&&(!validOspfNetwork(p.ip)||!validOspfArea(p.area))){result(tr?'OSPF için ağ adresini wildcard mask ile (örn. 10.20.0.0 0.0.0.255) ve geçerli area değerini gir.':'For OSPF, enter network plus wildcard mask (e.g. 10.20.0.0 0.0.0.255) and a valid area.');return;}
