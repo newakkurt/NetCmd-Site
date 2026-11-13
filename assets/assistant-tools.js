@@ -98,6 +98,8 @@
     vsel.addEventListener('change',function(){vendor=vsel.value;});
     if(active==='config'||active==='automation'){
       selectField(labels.task,'ast-kind',[['vlan','VLAN access'],['trunk','Trunk VLAN'],['desc','Interface description'],['ospf','OSPF starter']], 'vlan');
+      if(active==='automation') selectField('Automation format','ast-format',[['netmiko','Python / Netmiko'],['ansible','Ansible playbook']],'netmiko');
+      field(labels.model,'ast-model','Cihaz sürümünü buraya yaz (isteğe bağlı)','text');
       field(labels.id,'ast-id','20','number');field(labels.name,'ast-name','USERS','text');field(labels.iface,'ast-iface','GigabitEthernet0/0/1','text');
       field(labels.desc,'ast-desc','Uplink-to-Core','text');field(labels.ip,'ast-ip','10.20.0.0 0.0.0.255','text');field(labels.area,'ast-area','0','text');
       button(labels.run,function(){
@@ -105,7 +107,19 @@
         var p={id:id,name:clean(document.getElementById('ast-name').value).replace(/[^\w-]/g,'_'),iface:clean(document.getElementById('ast-iface').value),desc:clean(document.getElementById('ast-desc').value).replace(/[\r\n]/g,' ').slice(0,80),ip:clean(document.getElementById('ast-ip').value),area:clean(document.getElementById('ast-area').value)};
         if(!id||!p.iface||!p.name){result(labels.empty);return;}
         var commands=cmd(vendor,kind,p); if(!commands){result(labels.noMatch);return;}
-        result('! '+names[vendor]+' — '+kind+'\n'+commands.join('\n')+'\n\n'+labels.rollback,labels.high+' · '+labels.saved);
+        if(active==='automation'){
+          var fmt=document.getElementById('ast-format').value, pyTypes={cisco:'cisco_ios',huawei:'huawei',aruba:'aruba_aoscx',juniper:'juniper_junos',mikrotik:'mikrotik_routeros'};
+          var output;
+          if(fmt==='netmiko'){
+            output="import os\\nfrom getpass import getpass\\nfrom netmiko import ConnectHandler\\n\\n# Verify device model/OS and test in a lab first.\\ndevice = {\\n    'device_type': '"+pyTypes[vendor]+"',\\n    'host': os.getenv('NET_DEVICE_HOST', '192.0.2.10'),\\n    'username': os.getenv('NET_DEVICE_USER', 'netadmin'),\\n    'password': getpass('Device password: '),\\n}\\ncommands = "+JSON.stringify(commands)+"\\n\\nwith ConnectHandler(**device) as conn:\\n    print(conn.send_config_set(commands))\\n    print('Review the output, then save explicitly if appropriate.')\\n";
+          } else {
+            var osMap={cisco:'cisco.ios.ios',huawei:'community.network.ce',aruba:'arubanetworks.aoscx.aoscx',juniper:'junipernetworks.junos.junos',mikrotik:'community.routeros.routeros'};
+            output="---\\n- name: NetCmd generated network change\\n  hosts: network_devices\\n  gather_facts: false\\n  connection: ansible.netcommon.network_cli\\n  vars:\\n    ansible_network_os: "+osMap[vendor]+"\\n  tasks:\\n    - name: Apply generated commands - review before execution\\n      ansible.netcommon.cli_config:\\n        config: |\\n"+commands.map(function(c){return"          "+c;}).join("\\n")+"\\n";
+          }
+          result(output,labels.high+' · '+labels.rollback+' · '+labels.saved);
+        } else {
+          result('! '+names[vendor]+' — '+kind+'\\n'+commands.join('\\n')+'\\n\\n'+labels.rollback,labels.high+' · '+labels.saved);
+        }
       });
     } else if(active==='audit'||active==='security'||active==='diagnose'||active==='logs'){
       var ta=field(labels.placeholder,'ast-input','', 'textarea');ta.rows=9;
