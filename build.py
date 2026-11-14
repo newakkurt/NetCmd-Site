@@ -1015,23 +1015,25 @@ def waitlist_block(lang, product="all"):
 
 def build_projects(lang, paths):
     cards = ""
-    site_price = str(SITECFG.get("premium_price", "")).strip()
     for p in PROJECTS:
         live = p["status"] == "live"
         badge = '<span class="tag badge-live">{}</span>'.format(esc(T(lang, "status_live"))) if live else '<span class="tag">{}</span>'.format(esc(T(lang, "status_soon")))
         link = '<p><a class="btn sec" href="{}">{}</a></p>'.format(lurl(lang, p.get("url", "")), esc(T(lang, "open"))) if live and p.get("url") else ""
-        price = ""
-        if p.get("price") and site_price:
-            price = '<p class="pricebox"><strong>{}{}{}</strong> <span class="tag">PRO</span> <span class="tag">{}</span></p>'.format(
-                esc(T(lang, "pg_price")) + " ", esc(SITECFG.get("premium_currency", "$")), esc(site_price), esc(T(lang, "pg_interval")))
         checkout_url = str(p.get("checkout_url", "")).strip()
         checkout_host = urlparse(checkout_url).hostname or ""
+        has_checkout = bool(p.get("bmc_product_id")) and checkout_url.startswith("https://") and checkout_host in ("buymeacoffee.com", "www.buymeacoffee.com")
+        price = ""
+        if p.get("price") and has_checkout and live:
+            one_time = {"tr": "Tek seferlik", "en": "One-time", "ar": "دفعة واحدة"}[lang]
+            price = '<p class="pricebox"><strong>{}{}</strong> <span class="tag">PRO</span> <span class="tag">{}</span></p>'.format(esc(SITECFG.get("premium_currency", "$")), esc(str(p["price"])), esc(one_time))
         checkout = ""
-        if p.get("price") == "30" and checkout_url.startswith("https://") and checkout_host in ("buymeacoffee.com", "www.buymeacoffee.com"):
-            buy_label = {"tr": "Tek seferlik satın al", "en": "Buy once", "ar": "شراء لمرة واحدة"}[lang]
-            checkout = '<p><a class="btn" href="{}" target="_blank" rel="noopener noreferrer">{}</a></p>'.format(esc(checkout_url), esc(buy_label))
-        if p.get("price") and not checkout:
-            checkout = '<p><a class="btn" href="{}">{}</a></p>'.format(lurl(lang, "premium/"), esc(T(lang, "p_upgrade")))
+        if has_checkout and live:
+            buy_label = {"tr": "BMC mağazasında satın al", "en": "Buy in BMC shop", "ar": "اشترِ من متجر BMC"}[lang]
+            product_ref = {"tr": "Ürün kodu", "en": "Item ID", "ar": "رقم المنتج"}[lang]
+            checkout = '<p><a class="btn" href="{}" target="_blank" rel="noopener noreferrer">{}</a> <span class="tag">{} #{}</span></p>'.format(esc(checkout_url), esc(buy_label), esc(product_ref), esc(str(p["bmc_product_id"])))
+        elif p.get("price"):
+            pending = {"tr": "Satış bağlantısı hazırlanıyor", "en": "Checkout link pending", "ar": "رابط الشراء قيد الإعداد"}[lang]
+            checkout = '<p><span class="tag">{}</span></p>'.format(esc(pending))
         detail = ""
         if p.get("features"):
             detail = '<p><a href="{}">{} →</a></p>'.format(lurl(lang, "projects/{}/".format(p["id"])), esc(T(lang, "pd_details")))
@@ -1051,29 +1053,38 @@ def build_projects(lang, paths):
 
 def build_project_detail(lang, p, paths):
     name, desc = p["name"][lang], p["desc"][lang]
-    site_price = str(SITECFG.get("premium_price", "")).strip()
     cur = esc(SITECFG.get("premium_currency", "$"))
+    checkout_url = str(p.get("checkout_url", "")).strip()
+    checkout_host = urlparse(checkout_url).hostname or ""
+    has_checkout = bool(p.get("bmc_product_id")) and checkout_url.startswith("https://") and checkout_host in ("buymeacoffee.com", "www.buymeacoffee.com") and p.get("status") == "live"
     price = ""
-    if p.get("price") and site_price:
-        price = '<p class="pricebox"><strong>{}{}{}</strong> <span class="tag">PRO</span> <span class="tag">{}</span></p>'.format(
-            esc(T(lang, "pg_price")) + " ", cur, esc(site_price), esc(T(lang, "pg_interval")))
+    if p.get("price") and has_checkout:
+        one_time = {"tr": "Tek seferlik ödeme", "en": "One-time payment", "ar": "دفعة واحدة"}[lang]
+        price = '<p class="pricebox"><strong>{}{}</strong> <span class="tag">PRO</span> <span class="tag">{}</span></p>'.format(cur, esc(str(p["price"])), esc(one_time))
     feats = "".join("<li>{}</li>".format(esc(f)) for f in p["features"][lang])
     faq = "".join(
         "<details><summary>{}</summary><p>{}</p></details>".format(esc(T(lang, q)), esc(T(lang, a)))
         for q, a in (("pd_faq_pay_q", "pd_faq_pay_a"), ("pd_faq_data_q", "pd_faq_data_a"), ("pd_faq_cancel_q", "pd_faq_cancel_a")))
     open_btn = '<a class="btn sec" href="{}">{}</a> '.format(lurl(lang, p["url"]), esc(T(lang, "open"))) if p.get("url") else ""
+    if has_checkout:
+        buy_label = {"tr": "BMC mağazasında satın al", "en": "Buy in BMC shop", "ar": "اشترِ من متجر BMC"}[lang]
+        product_ref = {"tr": "Ürün kodu", "en": "Item ID", "ar": "رقم المنتج"}[lang]
+        purchase_btn = '<a class="btn" href="{}" target="_blank" rel="noopener noreferrer">{}</a> <span class="tag">{} #{}</span>'.format(esc(checkout_url), esc(buy_label), esc(product_ref), esc(str(p["bmc_product_id"])))
+    else:
+        pending = {"tr": "Bu ürün için satın alma bağlantısı hazırlanıyor.", "en": "The checkout link for this product is being prepared.", "ar": "رابط شراء هذا المنتج قيد الإعداد."}[lang]
+        purchase_btn = '<span class="tag">{}</span>'.format(esc(pending))
     body = (
         '<div class="crumbs"><a href="{back}">{back_t}</a></div>'
         '<h1>{name} <span class="badge">PRO</span></h1><p class="lead">{desc}</p>'
         '<h2>{aud_t}</h2><p>{aud}</p><h2>{feat_t}</h2><ul>{feats}</ul>{price}'
-        '<p><a class="btn" href="{prem}">{upg}</a> {open_btn}</p>'
+        '<p>{purchase_btn} {open_btn}</p>'
         '<p class="note">{refund}</p>'
         '<p><a href="{refund_u}">{refund_t}</a> · <a href="{ds_u}">{ds_t}</a></p>'
         '<h2>{faq_t}</h2>{faq}{wl}'
     ).format(
         back=lurl(lang, "projects/"), back_t=esc(T(lang, "pd_back")), name=esc(name), desc=esc(desc),
         aud_t=esc(T(lang, "pd_audience")), aud=esc(p["audience"][lang]), feat_t=esc(T(lang, "pd_features")), feats=feats, price=price,
-        prem=lurl(lang, "premium/"), upg=esc(T(lang, "p_upgrade")), open_btn=open_btn,
+        purchase_btn=purchase_btn, open_btn=open_btn,
         refund=esc(T(lang, "p_iban_refund")), refund_u=lurl(lang, "refund/"), refund_t=esc(T(lang, "nav_refund")),
         ds_u=lurl(lang, "distance-sales/"), ds_t=esc(T(lang, "nav_dsales")),
         faq_t=esc(T(lang, "pd_faq")), faq=faq, wl=waitlist_block(lang, p["id"]),
