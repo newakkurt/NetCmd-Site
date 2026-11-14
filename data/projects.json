@@ -29,7 +29,7 @@
       "en": "Security, VLAN, management-access and best-practice checks for Cisco, Huawei and Aruba configurations, with remediation guidance and exportable reports.",
       "ar": "فحوصات الأمان وVLAN وإدارة الوصول وأفضل الممارسات لإعدادات Cisco وHuawei وAruba مع توصيات وتقارير قابلة للتصدير."
     },
-    "checkout_url": "",
+    "checkout_url": "https://buymeacoffee.com/sevketkaynar/extras",
     "audience": {
       "tr": "Birden fazla markalı switch/router/AP altyapısını güvenlik ve standart açısından denetleyen ağ ve sistem mühendisleri.",
       "en": "Network and systems engineers who audit multi-vendor switch, router and AP estates for security and standards.",
@@ -51,7 +51,8 @@
         "نتائج حول إدارة الوصول وVLAN وأمان الطبقة الثانية وأفضل الممارسات",
         "تحليل ملفات متعددة وتقارير CSV وExcel وPDF"
       ]
-    }
+    },
+    "bmc_product_id": "594541"
   },
   {
     "id": "topology-discovery-pro",
@@ -68,7 +69,7 @@
       "en": "Build device-neighbor maps, port mappings and missing-link checks from CDP/LLDP and inventory outputs.",
       "ar": "إنشاء خرائط الجيران ومطابقة المنافذ واكتشاف الوصلات المفقودة من بيانات CDP/LLDP والمخزون."
     },
-    "checkout_url": "",
+    "checkout_url": "https://buymeacoffee.com/sevketkaynar/extras",
     "audience": {
       "tr": "Elinde güncel şema olmayan ağlarda komşuluk ve port eşleşmelerini çıkarmak isteyenler.",
       "en": "Engineers who need neighbor and port maps for networks without an up-to-date diagram.",
@@ -90,7 +91,8 @@
         "مقارنة المخزون مع التشغيل السابق وسجل التغييرات",
         "تصدير SVG وCSV وسكربت Discovery Collector"
       ]
-    }
+    },
+    "bmc_product_id": "594543"
   },
   {
     "id": "troubleshooting-pro",
@@ -107,7 +109,7 @@
       "en": "Evidence-based diagnostic steps for VLAN, STP, routing, DHCP, DNS and reachability issues from switch and router outputs.",
       "ar": "خطوات تشخيص قائمة على الأدلة لمشكلات VLAN وSTP والتوجيه وDHCP وDNS والاتصال."
     },
-    "checkout_url": "",
+    "checkout_url": "https://buymeacoffee.com/sevketkaynar/extras",
     "audience": {
       "tr": "Saha ve NOC ekiplerinde arıza anında hızlı, kanıta dayalı teşhis yapmak isteyenler.",
       "en": "Field and NOC engineers who want fast, evidence-based diagnosis during an incident.",
@@ -129,7 +131,8 @@
         "قوائم تحقق خطوة بخطوة",
         "اختبار عدم تطابق VLAN/Trunk"
       ]
-    }
+    },
+    "bmc_product_id": "594544"
   },
   {
     "id": "bulk-automation-pro",
@@ -146,7 +149,7 @@
       "en": "Ansible/Netmiko jobs for multiple devices with dry-run, approval gates, backups and execution tracking.",
       "ar": "مهام Ansible وNetmiko لأجهزة متعددة مع التشغيل التجريبي والموافقة والنسخ الاحتياطي وتتبع التنفيذ."
     },
-    "checkout_url": "",
+    "checkout_url": "https://buymeacoffee.com/sevketkaynar/extras",
     "audience": {
       "tr": "Onlarca-yüzlerce cihazda aynı değişikliği güvenle yürütmek isteyen otomasyon odaklı mühendisler.",
       "en": "Automation-minded engineers who must roll out the same change safely across many devices.",
@@ -168,7 +171,8 @@
         "تشغيل تجريبي وإعادة المحاولة ونسخ احتياطي تلقائي",
         "مخرجات نتائج CSV"
       ]
-    }
+    },
+    "bmc_product_id": "594545"
   },
   {
     "id": "network-intelligence-reports-pro",
@@ -185,7 +189,7 @@
       "en": "Monthly management reports from port, VLAN, inventory, security and change data, with CSV, Excel and PDF exports.",
       "ar": "تقارير إدارية شهرية من بيانات المنافذ وVLAN والمخزون والأمان والتغييرات مع تصدير CSV وExcel وPDF."
     },
-    "checkout_url": "",
+    "checkout_url": "https://buymeacoffee.com/sevketkaynar/extras",
     "audience": {
       "tr": "Yönetime port, VLAN, envanter ve güvenlik durumunu düzenli raporlayan ekipler.",
       "en": "Teams that report port, VLAN, inventory and security status to management on a regular basis.",
@@ -207,11 +211,12 @@
         "مقارنة التغييرات مع التشغيل السابق",
         "مخرجات CSV وExcel وPDF"
       ]
-    }
+    },
+    "bmc_product_id": "594548"
   },
   {
     "id": "configuration-compliance-pro",
-    "status": "live",
+    "status": "soon",
     "url": "tools/comp/",
     "price": "30",
     "name": {
@@ -250,7 +255,7 @@
   },
   {
     "id": "discovery-collector-pro",
-    "status": "live",
+    "status": "soon",
     "url": "tools/coll/",
     "price": "30",
     "name": {
